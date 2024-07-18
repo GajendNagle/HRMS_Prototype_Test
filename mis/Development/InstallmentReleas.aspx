@@ -174,14 +174,15 @@
                                         गतिविधि स्थिति</th>--%>
                                         <%--  <th>Work Place  /<br />
                                         कार्य स्थल</th>--%>
-                                        <th>Work Description<br />
-                                            कार्य का विवरण</th>
+                                      
                                         <th>Estimated Budget Cost(In Rs) 
                                             <br />
                                             अनुमानित बजट</th>
                                         <th>Acceptor Amount(In Rs) 
                                             <br />
                                             स्वीकर्ता राशि</th>
+                                          <th>Work Description<br />
+      कार्य का विवरण</th>
                                         <th>View Document<br>
                                             दस्तावेज़ देखें</th>
                                         <%-- <th>Edit<br>
@@ -203,9 +204,11 @@
                                         <td>Delhi Public School_44561</td>
                                         <td>Bhopal M.P</td>
                                         <%--<td>Working Mode</td>--%>
-                                        <td>Work For Bhopal Office</td>
+                                       <%-- <td>Work For Bhopal Office</td>--%>
                                         <td>10000.00</td>
                                         <td>10000.00</td>
+                                                                                                                    <td>
+<button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#WorkDescription"><i class="	far fa-comment-alt"></i></button></td>
 
                                         <td><%--<a class="btn btn-info btn-rounded" href="#">--%>  <a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-file"></i></a></td>
                                        
@@ -216,13 +219,22 @@
                     </div>
                 </div>
             </fieldset>
+
+
+
             <fieldset id="hide" style="display: none;">
                 <legend>Installment Document Upload/किस्त के दस्तावेज़ अपलोड करे</legend>
-                <div class="col-md-12">
-                    <div class="table-responsive">
-                        <table class="table-bordered">
-                            <tbody>
-                                <tr style="white-space: nowrap;" class="text-center">
+                <div class="row">
+     <div class="col-md-4">
+         <div class="form-group">
+         </div>
+     </div>
+ </div>
+ <div class="row form-group">
+     <div class="col-md-12">
+         <div class="table-responsive">
+             <table class="table table-bordered text-center" id="Table1">
+                 <thead>  <tr style="white-space: nowrap;" class="text-center">
                                     <th>Sr.No.<br />
                                         सरल क्रमांक</th>
                                     <th class="text-center">Milestone
@@ -251,35 +263,15 @@
                                         <br />
                                         किस्त जारी</th>
                                 </tr>
-
-                                <tr>
+                          </thead>
+                                  <tbody>
+                                <tr style="white-space:nowrap;" class="text-center">
                                     <td align="center">1</td>
                                     <%-- <td align="center">1</td>--%>
                                     <td align="center">Foundation
-                                        <%--<input type="Text" name="birthday" class="form-control" value="Foundation" style="width: 200px" readonly autocomplete="off" />--%>
-                                        <%-- <select class="form-control" disabled>--%>
-                                        <%--   <option value="--select--">--Select--</option>--%>
-                                        <%--     <option value="Foundation">Foundation</option>--%>
-                                        <%-- <option value="Plinth">Plinth</option>
-             <option value="Mid level completion">Mid level completion</option>
-             <option value="Final level completion">Final level completion</option>--%>
-                                        <%--  </select>--%></td>
-                                    <%--    <td>
-                    <input type="date" id="txtExpStartDate11" name="birthday" placeholder="Enter Project Exp. Start Date" class="form-control">
-                </td>
-                <td>
-                    <input type="date" id="txtExpStartDate12" name="birthday" class="form-control">
-                </td>--%>
-                                    <td>स्कूल नया निमार्ण
-                                       <%-- <select class="form-control " disabled>--%>
-                                            <%--   <option value="--Select--">--Select--</option>--%>
-                                            <%-- <option value="A">कक्षा निमार्ण</option>
-      <option value="A">इमारत मरम्मत</option>--%>
-                                            <<%--option value="A">स्कूल नया निमार्ण</option>--%>
-
-
-                                            <%--selection of this next textbox will visible--%>
-                                       <%-- </select>--%>
+                                        </td>
+                                 <td>स्कूल नया निमार्ण
+                                    
                                     </td>
                                     <td>60000
                                       <%--  <input type="Text" name="birthday" class="form-control text-center" value="60000" readonly autocomplete="off" />--%>
@@ -296,211 +288,115 @@
 
 
                                     <td>
-                                        <button id="BtnBack1" class="Alert-Save btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+                                        <button id="BtnBack" class="Alert-Save1 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
                                             <%--<i class="ri-arrow-go-back-line label-icon align-middle fs-13 me-2"></i>--%>
                                             <%-- <i class="fa-regular fa-paper-plane-top  fs-13 me-2"></i>--%>  Release
                                         </button>
                                     </td>
                                 </tr>
-                                <tr id="TableRow1" style="display:none;">
+                                <tr id="TableRow1" style="display:none; white-space:nowrap;" class="text-center">
                                     <td align="center">2</td>
                                     <%-- <td align="center">1</td>--%>
                                     <td align="center">Plinth
-                                       <%-- <input type="Text" name="birthday" class="form-control" value="Plinth" readonly autocomplete="off" />--%>
-                                        <%--   <select class="form-control" disabled>--%>
-                                        <%--   <option value="--select--">--Select--</option>
-            <option value="Foundation">Foundation</option>--%>
-                                        <%--<option value="Plinth">Plinth</option>
-                                        --%>   <%-- <option value="Mid level completion">Mid level completion</option>
-            <option value="Final level completion">Final level completion</option>--%>
+                                
                                         <%--</select>--%></td>
-                                    <%--    <td>
-                   <input type="date" id="txtExpStartDate11" name="birthday" placeholder="Enter Project Exp. Start Date" class="form-control">
-               </td>
-               <td>
-                   <input type="date" id="txtExpStartDate12" name="birthday" class="form-control">
-               </td>--%>
+                                   
                                     <td>स्कूल नया निमार्ण
-                                      <%--  <select class="form-control " disabled>--%>
-                                            <%--   <option value="--Select--">--Select--</option>--%>
-                                            <%-- <option value="A">कक्षा निमार्ण</option>
-     <option value="A">इमारत मरम्मत</option>--%>
-                                        <%--    <option value="A">स्कूल नया निमार्ण</option>--%>
-                                            <%--   <option value="B">हेंडपंप खनन</option>
-     <option value="B">बोरबेल खनन</option>
-     <option value="B">पानी की टंकी निर्माण</option>
-     <option value="B">पेयजल हेतु पाइपलाइन निर्माण</option>
-     <option value="C">WBM / कच्ची सड़क निमार्ण</option>
-     <option value="C">CC Road निर्माण</option>
-     <option value="C">मार्ग मरम्मत</option>
-     <option value="C">मुरम रोड निर्माण</option>
-     <option value="C">डामर रोड निर्माण</option>
-     <option value="D">नाली निर्माण</option>
-     <option value="D">पेपर ब्लाक निर्माण</option>--%>
+                                      
 
+                                         
+                                    </td>
+                                    <td>60000
+                                    
+                                    </td>
+                                    <td>10000
+                                  </td>
+                                   
+                                    
+                                    <td>completed tasks
+                                      <%--  <textarea class="form-control color-black fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="completed tasks"></textarea>--%>
+                                    </td>
+
+                                    <td class="text-center"><a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+
+                                    <td>
+                                        <button id="BtnBack1" class="Alert-Save2 btn btn-outline-primary w-lg  fs-13 me-4 rounded-4 " type="button">
+                                          Release
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr  id="TableRow2" style="white-space:nowrap; display:none;" class="text-center">
+                                    <td align="center">3</td>
+                                    <%-- <td align="center">1</td>--%>
+                                    <td align="center">Mid level completion
+                                        <%--<input type="Text" name="birthday" class="form-control" value="Mid level completion" readonly autocomplete="off" />--%>
+                                     </td>
+                                   
+                                    <td>
+                                        <%--<select id="school-subcategory" class="form-control " disabled>
+                                           
+                                            <option value="A">--%>स्कूल नया निमार्ण<%--</option>--%>
+                                           
                                             <%--selection of this next textbox will visible--%>
-                                       <%-- </select>--%>
+                                        <%--</select>--%>
                                     </td>
                                     <td>60000
                                         <%--<input type="Text" name="birthday" class="form-control text-center" value="60000" readonly autocomplete="off" />--%>
                                     </td>
-                                    <td>10000
-                                        <%--<input type="Text" value="10000" name="birthday" class="form-control text-center" disabled>--%></td>
-                                    <%--<td>
-                                   <input type="file" id="docDeathCertificate" asp-for="docDeathCertificate" required pattern=".+\.pdf$" data-pattern-msg="Only Pdf Accept" class="form-control getfileinfo" data-msg="Field is required." onchange="ValidateUploadFile(this,'lnkDeathofCertificate')" />
-                                   <span id="spndocDeathCertificateName" style="display: none"></span>
-                                   <span asp-validation-for="docDeathCertificate" class="text-danger"></span>
-                               </td>--%>
+                                    <td>20000
+                                       <%-- <input type="Text" value="20000" name="birthday" class="form-control text-center" disabled>--%></td>
+                                 
+                                    
+                                    <td>completed tasks
+                                        <%--<textarea class="form-control color-black fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="completed tasks"></textarea>--%>
+                                    </td>
                                     <td class="text-center"><a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
-                                    <td>
-                                        <textarea class="form-control color-black fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="completed tasks"></textarea>
-                                    </td>
-
-
 
                                     <td>
-                                        <button id="BtnBack" class="Alert-Save btn btn-outline-primary w-lg  fs-13 me-4 rounded-4 " type="button">
-                                            <%--<i class="ri-arrow-go-back-line label-icon align-middle fs-13 me-2"></i>--%>
-                                            <%-- <i class="fa-regular fa-paper-plane-top  fs-13 me-2"></i>--%>  Release
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="center">3</td>
-                                    <%-- <td align="center">1</td>--%>
-                                    <td align="center">
-                                        <input type="Text" name="birthday" class="form-control" value="Mid level completion" readonly autocomplete="off" />
-                                        <%--  <select class="form-control select2">
-            <option value="--select--">--Select--</option>
-            <option value="Foundation">Foundation</option>
-            <option value="Plinth">Plinth</option>
-            <option value="Mid level completion">Mid level completion</option>
-            <option value="Final level completion">Final level completion</option>
-        </select>--%></td>
-                                    <%--    <td>
-                   <input type="date" id="txtExpStartDate11" name="birthday" placeholder="Enter Project Exp. Start Date" class="form-control">
-               </td>
-               <td>
-                   <input type="date" id="txtExpStartDate12" name="birthday" class="form-control">
-               </td>--%>
-                                    <td>
-                                        <select id="school-subcategory" class="form-control " disabled>
-                                            <%--   <option value="--Select--">--Select--</option>--%>
-                                            <%-- <option value="A">कक्षा निमार्ण</option>
-     <option value="A">इमारत मरम्मत</option>--%>
-                                            <option value="A">स्कूल नया निमार्ण</option>
-                                            <%--   <option value="B">हेंडपंप खनन</option>
-     <option value="B">बोरबेल खनन</option>
-     <option value="B">पानी की टंकी निर्माण</option>
-     <option value="B">पेयजल हेतु पाइपलाइन निर्माण</option>
-     <option value="C">WBM / कच्ची सड़क निमार्ण</option>
-     <option value="C">CC Road निर्माण</option>
-     <option value="C">मार्ग मरम्मत</option>
-     <option value="C">मुरम रोड निर्माण</option>
-     <option value="C">डामर रोड निर्माण</option>
-     <option value="D">नाली निर्माण</option>
-     <option value="D">पेपर ब्लाक निर्माण</option>--%>
-
-                                            <%--selection of this next textbox will visible--%>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <input type="Text" name="birthday" class="form-control text-center" value="60000" readonly autocomplete="off" />
-                                    </td>
-                                    <td>
-                                        <input type="Text" value="20000" name="birthday" class="form-control text-center" disabled></td>
-                                    <%--<td>
-                                   <input type="file" id="docDeathCertificate" asp-for="docDeathCertificate" required pattern=".+\.pdf$" data-pattern-msg="Only Pdf Accept" class="form-control getfileinfo" data-msg="Field is required." onchange="ValidateUploadFile(this,'lnkDeathofCertificate')" />
-                                   <span id="spndocDeathCertificateName" style="display: none"></span>
-                                   <span asp-validation-for="docDeathCertificate" class="text-danger"></span>
-                               </td>--%>
-                                    <td class="text-center"><a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
-                                    <td>
-                                        <textarea class="form-control color-black fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="completed tasks"></textarea>
-                                    </td>
-
-
-                                    <td>
-                                        <button id="BtnBack" class="Alert-Save btn btn-outline-primary w-lg fs-13 me-4 rounded-4 " type="button">
+                                        <button id="BtnBack2" class="Alert-Save3 btn btn-outline-primary w-lg fs-13 me-4 rounded-4 " type="button">
                                             <%--<i class="ri-arrow-go-back-line label-icon align-middle fs-13 me-2"></i>--%>
                                             <%-- <i class="fa-regular fa-paper-plane-top  fs-13 me-2"></i>--%> Release
                                         </button>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr  id="TableRow3" style="white-space:nowrap; display:none;">
                                     <td align="center">4</td>
                                     <%-- <td align="center">1</td>--%>
-                                    <td align="center">
-                                        <input type="Text" name="birthday" class="form-control " value="Final level completion" readonly autocomplete="off" />
-                                        <%--  <select class="form-control select2" id="ddlInstallment" onchange="myaddbtn2()">--%>
-                                        <%--    <option value="--select--">--Select--</option>
-            <option value="Foundation">Foundation</option>
-            <option value="Plinth">Plinth</option>
-            <option value="Mid level completion">Mid level completion</option>
-            <option value="Final level completion">Final level completion</option>
-        </select>--%></td>
-                                    <%--    <td>
-                   <input type="date" id="txtExpStartDate11" name="birthday" placeholder="Enter Project Exp. Start Date" class="form-control">
-               </td>
-               <td>
-                   <input type="date" id="txtExpStartDate12" name="birthday" class="form-control">
-               </td>--%>
-                                    <td>
-                                        <select class="form-control " disabled>
+                                    <td align="center">Final level completion
+                                        <%--<input type="Text" name="birthday" class="form-control " value="Final level completion" readonly autocomplete="off" />--%>
+                                        
+                                    <td>स्कूल नया निमार्ण
+                                    <%--    <select class="form-control " disabled>--%>
                                             <%--   <option value="--Select--">--Select--</option>--%>
                                             <%-- <option value="A">कक्षा निमार्ण</option>
      <option value="A">इमारत मरम्मत</option>--%>
-                                            <option value="A">स्कूल नया निमार्ण</option>
-                                            <%--   <option value="B">हेंडपंप खनन</option>
-     <option value="B">बोरबेल खनन</option>
-     <option value="B">पानी की टंकी निर्माण</option>
-     <option value="B">पेयजल हेतु पाइपलाइन निर्माण</option>
-     <option value="C">WBM / कच्ची सड़क निमार्ण</option>
-     <option value="C">CC Road निर्माण</option>
-     <option value="C">मार्ग मरम्मत</option>
-     <option value="C">मुरम रोड निर्माण</option>
-     <option value="C">डामर रोड निर्माण</option>
-     <option value="D">नाली निर्माण</option>
-     <option value="D">पेपर ब्लाक निर्माण</option>--%>
-
+                                            <%--option value="A">स्कूल नया निमार्ण</option>--%>
+                                         
                                             <%--selection of this next textbox will visible--%>
-                                        </select>
+                                        <%--</select>--%>
                                     </td>
-                                    <td>
-                                        <input type="Text" id="txtInstallmentPer1" name="birthday" class="form-control text-center" value="60000" readonly autocomplete="off" />
+                                    <td>60000
+                                        <%--<input type="Text" id="txtInstallmentPer1" name="birthday" class="form-control text-center" value="60000" readonly autocomplete="off" />--%>
                                     </td>
-                                    <td>
-                                        <input type="Text" id="txtInstallmentAmount1" value="20000" name="birthday" class="form-control text-center" disabled></td>
-                                    <%--<td>
-                                   <input type="file" id="docDeathCertificate" asp-for="docDeathCertificate" required pattern=".+\.pdf$" data-pattern-msg="Only Pdf Accept" class="form-control getfileinfo" data-msg="Field is required." onchange="ValidateUploadFile(this,'lnkDeathofCertificate')" />
-                                   <span id="spndocDeathCertificateName" style="display: none"></span>
-                                   <span asp-validation-for="docDeathCertificate" class="text-danger"></span>
-                               </td>--%>
+                                    <td>20000
+                                       <%-- <input type="Text" id="txtInstallmentAmount1" value="20000" name="birthday" class="form-control text-center" disabled></td>--%>
+                      
+                                    <td>completed tasks
+                                      <%--  <textarea class="form-control color-black fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="completed tasks"></textarea>--%>
+                                    </td>
+                                                 
                                     <td class="text-center"><a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
                                     <td>
-                                        <textarea class="form-control color-black fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="completed tasks"></textarea>
-                                    </td>
-
-                                    <td>
-                                        <button id="BtnBack" class="Alert-Save btn btn-outline-primary w-lg  fs-13  rounded-4 " type="button">
+                                        <button id="BtnBack3" class="Alert-Save btn btn-outline-primary w-lg  fs-13  rounded-4 " type="button">
                                             Release
                                         </button>
                                     </td>
                                 </tr>
-                                <%--<tr>
-                <td></td>
-                <td></td>
-                <td>Total</td>
-                <td>
-                    <input type="Text" id="txtInstallmentPer_Total" name="birthday" class="form-control" value="60000" readonly />
-                </td>
-                <td>
-                    <input type="text" id="txtInstallmentAmount_Total" class="form-control" maxlength="15"  ></td>
-            </tr>--%>
+                       
                             </tbody>
                         </table>
                     </div>
-                </div>
+                </div></div>
             </fieldset>
             <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
@@ -596,6 +492,46 @@
                     </div>
                 </div>
             </div>
+
+                          <div class="modal" id="WorkDescription">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header" style="background-color: var(--vz-primary); color: white">
+                  <h4 class="modal-title text-white">Work Description</h4>
+                  <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+              </div>
+              <!-- Modal Body -->
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-md-12">
+
+                      
+                  <div class="form-group">
+                    <%--  <h5>Work Description</h5>--%>
+                                           <p class="border p-2 border-primary fs-5 rounded-4">Buildings serve several needs of society primarily as shelter from weather, security, living space, privacy, to store belongings, and to comfortably live and work. A building as a shelter represents a physical division of the human habitat (a place of comfort and safety) and the outside (a place that at times may be harsh and harmful),
+
+</p>
+                   <%--   <textarea class="form-control" rows="1" style="resize: vertical" placeholder="project approval & Installment Creation/ परियोजना अनुमोदन एवं किस्त निर्माण
+
+"></textarea>--%>
+                  </div>
+              </div>
+                          </div>
+
+              <!-- Modal Footer -->
+          <%--    <div class="modal-footer justify-content-center">
+
+                  <button type="button" class="btn btn-success Alert-Reject btn-rounded" data-dismiss="modal" id="saveButton">Reject</button>
+                  <button type="button" class="btn btn-danger btn-rounded" data-dismiss="modal">Close</button>
+              </div>--%>
+          </div>
+              </div>
+      </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         </div>
     </div>
 </asp:Content>
@@ -642,6 +578,7 @@
                                 // }
                             }
                             )
+                            document.getElementById("BtnBack3").innerText = 'DONE';
 
                         }
                     })
@@ -655,6 +592,136 @@
                 "use strict";
                 $.SweetAlert.init()
             }(window.jQuery);
+    </script>
+   
+  <script>
+      !function ($) {
+          "use strict";
+          var SweetAlert = function () {
+              return this;
+          };
+
+          SweetAlert.prototype.init = function () {
+              //Basic
+              //Success Message
+              $(document).on('click', '.Alert-Save1', function () {
+                  Swal.fire({
+                      title: 'Are you sure?',
+                      text: "Do you want to Send this record ?",
+                      type: 'warning',
+                      showCancelButton: true,
+                      confirmButtonColor: '#3085D6',
+                      cancelButtonColor: '#d33',
+                      confirmButtonText: 'Yes'
+                  }).then((result) => {
+                      if (result.value) {
+                          Swal.fire({
+                              type: 'success',
+                              title: 'Success!',
+                              text: 'Project Record Send Successfully!',
+                              timer: 2000
+                          })
+                          var table = document.getElementById("Table1");
+                          table.style.display = "";
+                          document.getElementById("TableRow1").style.display = "";
+                          document.getElementById("BtnBack").innerText = 'DONE';
+                          // changed to block
+                      }
+                  })
+              });
+          };
+
+          $.SweetAlert = new SweetAlert();
+          $.SweetAlert.Constructor = SweetAlert;
+
+          $.SweetAlert.init();
+      }(window.jQuery);
+  </script>
+  <script>
+      $(document).ready(function () {
+          !function ($) {
+              "use strict";
+              var SweetAlert = function () {
+                  return this;
+              };
+
+              SweetAlert.prototype.init = function () {
+                  //Basic
+                  //Success Message
+                  $('.Alert-Save2').on('click', function () {
+                      Swal.fire({
+                          title: 'Are you sure?',
+                          text: "Do you want to Send this record ?",
+                          type: 'warning',
+                          showCancelButton: true,
+                          confirmButtonColor: '#3085D6',
+                          cancelButtonColor: '#d33',
+                          confirmButtonText: 'Yes'
+                      }).then((result) => {
+                          if (result.value) {
+                              Swal.fire({
+                                  type: 'success',
+                                  title: 'Success!',
+                                  text: 'Project Record  Send Successfully!',
+                                  timer: 2000
+                              })
+                              var table = document.getElementById("Table1");
+                              table.style.display = "";
+                              document.getElementById("TableRow2").style.display = "";
+                              document.getElementById("BtnBack1").innerText = 'DONE';
+                          }
+                      })
+                  });
+              };
+
+              $.SweetAlert = new SweetAlert();
+              $.SweetAlert.Constructor = SweetAlert;
+
+              $.SweetAlert.init();
+          }(window.jQuery);
+      });
+  </script>
+    <script>
+        !function ($) {
+            "use strict";
+            var SweetAlert = function () {
+                return this;
+            };
+
+            SweetAlert.prototype.init = function () {
+                //Basic
+                //Success Message
+                $('.Alert-Save3').on('click', function () {
+                    Swal.fire({
+                        title: 'Are you sure?',
+                        text: "Do you want to Send this record ?",
+                        type: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#3085D6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'Yes'
+                    }).then((result) => {
+                        if (result.value) {
+                            Swal.fire({
+                                type: 'success',
+                                title: 'Success!',
+                                text: 'Project Record  Send Successfully!',
+                                timer: 2000
+                            })
+                            var table = document.getElementById("Table1");
+                            table.style.display = "contents";
+                            document.getElementById("TableRow3").style.display = "contents";
+                            document.getElementById("BtnBack2").innerText = 'DONE';
+                        }
+                    })
+                });
+            };
+
+            $.SweetAlert = new SweetAlert();
+            $.SweetAlert.Constructor = SweetAlert;
+
+            $.SweetAlert.init();
+        }(window.jQuery);
     </script>
 </asp:Content>
 

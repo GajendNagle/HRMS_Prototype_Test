@@ -171,7 +171,7 @@
       <legend> OIS Information/ OIS सूचना</legend>
       <div class="row align-items-end">
 
-          
+        <%--  
           <div class="col-md-3">
               <div class="form-group">
                   <label>
@@ -197,8 +197,8 @@
 
                   </select>
               </div>
-          </div>
-          <div class="col-md-3">
+          </div>--%>
+          <div class="col-md-4">
               <div class="form-group">
                   <label>
                      Office Name/Office Code
@@ -220,7 +220,7 @@
           </div>--%>
 
 
-          <div class="col-md-3">
+          <div class="col-md-4">
               <div class="form-group">
                   <label>
                        Incharge Name<br />
@@ -228,7 +228,7 @@
                   <input type="text" class="form-control" autocomplete="off" value="Neha Gupta" readonly />
               </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
               <div class="form-group">
                   <label>
                       Incharge Mob.No<br />

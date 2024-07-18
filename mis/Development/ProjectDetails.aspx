@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="ProjectDetails.aspx.cs" Inherits="mis_Development_ProjectDetails" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .modal-body {
@@ -40,11 +40,15 @@
 
         textarea {
             resize: vertical;
-            min-height: 40px; /* Set a minimum height */
+            min-height: 60px; /* Set a minimum height */
         }
 
         .table th {
             background-color: white;
+        }
+        .form-control:read-only{
+             background-color: white;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -193,11 +197,12 @@
                                         गतिविधि स्थिति</th>--%>
                                         <%--  <th>Work Place  /<br />
                                         कार्य स्थल</th>--%>
-                                        <th>Work Description<br />
-                                            कार्य का विवरण</th>
+                                      
                                         <th>Estimated Budget Cost(In Rs) 
                                             <br />
                                             अनुमानित बजट</th>
+                                          <th>Work Description<br />
+      कार्य का विवरण</th>
                                         <th id="View">View Document<br>
                                             दस्तावेज़ देखें</th>
                                         <th id="edit">Edit<br>
@@ -224,8 +229,10 @@
                                         <td>Delhi Public School_44561</td>
                                         <td>Bhopal M.P</td>
                                         <%--<td>Working Mode</td>--%>
-                                        <td>Work For Bhopal Office</td>
+                                      
                                         <td>10000.00</td>
+                                                                            <td>
+<button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#WorkDescription"><i class="	far fa-comment-alt"></i></button></td>
 
                                         <td id="Document"><%--<a class="btn btn-info btn-rounded" href="#">--%>  <a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-file"></i></a></td>
                                         <td id="Edit">
@@ -418,6 +425,47 @@
                     </div>
                 </div>
             </div>
+
+            <%--Work Description--%>
+              <div class="modal" id="WorkDescription">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header" style="background-color: var(--vz-primary); color: white">
+                  <h4 class="modal-title text-white">Work Description</h4>
+                  <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+              </div>
+              <!-- Modal Body -->
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-md-12">
+
+                      
+                  <div class="form-group">
+                    <%--  <h5>Work Description</h5>--%>
+                      <p class="border p-2 border-primary fs-5 rounded-4">Buildings serve several needs of society primarily as shelter from weather, security, living space, privacy, to store belongings, and to comfortably live and work. A building as a shelter represents a physical division of the human habitat (a place of comfort and safety) and the outside (a place that at times may be harsh and harmful),
+
+</p>
+                   <%--   <textarea class="form-control" rows="1" style="resize: vertical" placeholder="project approval & Installment Creation/ परियोजना अनुमोदन एवं किस्त निर्माण
+
+"></textarea>--%>
+                  </div>
+              </div>
+                          </div>
+
+              <!-- Modal Footer -->
+          <%--    <div class="modal-footer justify-content-center">
+
+                  <button type="button" class="btn btn-success Alert-Reject btn-rounded" data-dismiss="modal" id="saveButton">Reject</button>
+                  <button type="button" class="btn btn-danger btn-rounded" data-dismiss="modal">Close</button>
+              </div>--%>
+          </div>
+              </div>
+      </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         </div>
     </div>
 </asp:Content>

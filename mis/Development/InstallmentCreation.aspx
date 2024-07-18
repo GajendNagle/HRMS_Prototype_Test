@@ -190,10 +190,12 @@
                                         गतिविधि स्थिति</th>--%>
                                   <%--  <th>Work Place  /<br />
                                         कार्य स्थल</th>--%>
-                                    <th> Work Description<br />
+                                  
+                                    <th>Estimated Budget Cost(In Rs)  <br />अनुमानित बजट
+                                                                           
+                                        <th> Work Description<br />
 कार्य का विवरण</th>
-                                    <th>Estimated Budget Cost(In Rs)  <br />
-                                        अनुमानित बजट</th>
+                                        </th>
                                        <th>View Document<br>
        दस्तावेज़ देखें</th>
                                     <%--  <th>Edit<br>
@@ -214,9 +216,10 @@
                                     <td>Delhi Public School_44561</td>
                                     <td>Bhopal M.P</td>
                                     <%--<td>Working Mode</td>--%>
-                                    <td>Work For Bhopal Office</td>
+                                  <%--  <td>Work For Bhopal Office</td>--%>
                                     <td>10000.00</td>
-
+                                                                        <td>
+<button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#WorkDescription"><i class="	far fa-comment-alt"></i></button></td>
                                     <td><%--<a class="btn btn-info btn-rounded" href="#">--%>  <a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-file"></i></a></td>
                                 
                                 </tr>
@@ -448,7 +451,45 @@ onclick="">Reject</button>--%>
    </div>
 
 
+                  <div class="modal" id="WorkDescription">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header" style="background-color: var(--vz-primary); color: white">
+                  <h4 class="modal-title text-white">Work Description</h4>
+                  <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+              </div>
+              <!-- Modal Body -->
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-md-12">
 
+                      
+                  <div class="form-group">
+                    <%--  <h5>Work Description</h5>--%>
+                      <p class="border p-2 border-primary fw-bold fs-5 rounded-4">Buildings serve several needs of society primarily as shelter from weather, security, living space, privacy, to store belongings, and to comfortably live and work. A building as a shelter represents a physical division of the human habitat (a place of comfort and safety) and the outside (a place that at times may be harsh and harmful),
+
+</p>
+                   <%--   <textarea class="form-control" rows="1" style="resize: vertical" placeholder="project approval & Installment Creation/ परियोजना अनुमोदन एवं किस्त निर्माण
+
+"></textarea>--%>
+                  </div>
+              </div>
+                          </div>
+
+              <!-- Modal Footer -->
+          <%--    <div class="modal-footer justify-content-center">
+
+                  <button type="button" class="btn btn-success Alert-Reject btn-rounded" data-dismiss="modal" id="saveButton">Reject</button>
+                  <button type="button" class="btn btn-danger btn-rounded" data-dismiss="modal">Close</button>
+              </div>--%>
+          </div>
+              </div>
+      </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 </asp:Content>
@@ -876,64 +917,76 @@ onclick="">Reject</button>--%>
 
         }
     </script>--%>
-    <script>
-        function addData2() {
-            // Get input values
-            let project = document.getElementById("Project").value;
-            let installment = document.getElementById("ddlInstallment").value;
-            let installmentNo = document.getElementById("InstallmentNo").value;
-            let prevGradeA = document.getElementById("c3").value;
-          /*  let prevGradeB = document.getElementById("c4").value;*/
-            let email = document.getElementById("c1").value;
-            let mobile = document.getElementById("c2").value;
+  <script>
+      function addData2() {
+          // Get input values
+          let project = document.getElementById("Project").value;
+          let installment = document.getElementById("ddlInstallment").value;
+          let installmentNo = document.getElementById("InstallmentNo").value;
 
-            // Get the table and insert a new row at the end
-            let table = document.getElementById('Table1');
+          let email = document.getElementById("c1").value;
+          let mobileNo1 = document.getElementById("c2").value;
+          let prevGradeA = document.getElementById("c3").value;
+          let prevGradeB = document.getElementById("c4").value;
 
-            // Check if the maximum limit is reached
-            if (table.rows.length >= 7) {
-                alert("Maximum 4 rows allowed.");
-                return; // Exit the function if the maximum limit is reached
-            }
+          // Get the table and insert a new row at the end
+          let table = document.getElementById('Table1');
 
-            // Insert data into cells of the new row
-            let newRow = table.insertRow(table.rows.length - 1);
-            newRow.insertCell(0).innerHTML = table.rows.length - 3;
-            newRow.insertCell(1).innerHTML = project;
+          // Check if the maximum limit is reached
+          if (table.rows.length >= 7) {
+              alert("Maximum 4 rows allowed.");
+              return; // Exit the function if the maximum limit is reached
+          }
 
-            newRow.insertCell(2).innerHTML = installment;
-            newRow.insertCell(3).innerHTML = installmentNo;
-            newRow.insertCell(4).innerHTML = email; // Column 1: Name
-            newRow.insertCell(5).innerHTML = mobile; // Column 2: Email
-            newRow.insertCell(6).innerHTML = prevGradeA; // Column 3: Mobile
-            newRow.insertCell(7).innerHTML = prevGradeB; // Column 4: Previous Grade A
+          // Insert data into cells of the new row
+          let newRow = table.insertRow(table.rows.length - 1);
+          newRow.insertCell(0).innerHTML = table.rows.length - 3;
+          newRow.insertCell(1).innerHTML = project;
 
-            // Update total values
-            let InstallmentPer_Total = parseFloat(document.getElementById('<%=txtInstallmentPer_Total.ClientID %>').value);
-        let InstallmentAmount_Total = parseFloat(document.getElementById('<%=txtInstallmentAmount_Total.ClientID %>').value);
-    document.getElementById('<%=txtInstallmentPer_Total.ClientID %>').value = InstallmentPer_Total + parseFloat(prevGradeA);
-    document.getElementById('<%=txtInstallmentAmount_Total.ClientID %>').value = InstallmentAmount_Total + parseFloat(prevGradeB);
+          newRow.insertCell(2).innerHTML = installment;
+          newRow.insertCell(3).innerHTML = installmentNo;
+          newRow.insertCell(4).innerHTML = email; // Column 1: Name
+          newRow.insertCell(5).innerHTML = mobileNo1; // Column 2: Email
+          newRow.insertCell(6).innerHTML = prevGradeA; // Column 3: Mobile
+          newRow.insertCell(7).innerHTML = prevGradeB; // Column 4: Previous Grade A
 
-            clearInputs3();
-        }
+          // Update total values
+          let InstallmentPer_Total = parseFloat($("#txtInstallmentPer_Total").val());
+          let InstallmentAmount_Total = parseFloat($("#txtInstallmentAmount_Total").val());
+          $("#txtInstallmentPer_Total").val(InstallmentPer_Total + parseFloat(prevGradeA));
+          $("#txtInstallmentAmount_Total").val(InstallmentAmount_Total + parseFloat(prevGradeB));
 
-        function clearInputs3() {
-            // Clear input fields
-            
-            document.getElementById("Project").selectedIndex = 0;
-            $('#Project').trigger('change');
-            document.getElementById("ddlInstallment").selectedIndex = 0;
-            $('#ddlInstallment').trigger('change');
+          clearInputs3();
+      }
 
-            document.getElementById("InstallmentNo").selectedIndex = 0;
-            $('#InstallmentNo').trigger('change');
+      function clearInputs3() {
+          // Clear input fields
+          document.getElementById("Project").selectedIndex = 0;
+          $('#Project').trigger('change');
+          document.getElementById("ddlInstallment").selectedIndex = 0;
+          $('#ddlInstallment').trigger('change');
 
-            document.getElementById("c1").value = "";
-            document.getElementById("c2").value = "";
-            document.getElementById("c3").value = "";
-         /*   document.getElementById("c4").value = "";*/
-        }
-    </script>
+          document.getElementById("InstallmentNo").selectedIndex = 0;
+          $('#InstallmentNo').trigger('change');
+
+          document.getElementById("c1").value = "";
+          document.getElementById("c2").value = "";
+          document.getElementById("c3").value = "";
+          /*   document.getElementById("c4").value = "";*/
+      }
+  </script>
+     <%-- function clearInputs3() {
+          // Clear input fields
+          document.getElementById("Project").selectedIndex = 0;
+          document.getElementById("ddlInstallment").selectedIndex = 0;
+          document.getElementById("InstallmentNo").selectedIndex = 0;
+
+          document.getElementById("c1").value = "";
+          document.getElementById("c2").value = "";
+          document.getElementById("c3").value = "";
+          /*   document.getElementById("c4").value = "";*/
+      }
+  </script>--%>
    <%-- <script>function myaddbtn2() {
             var ForwordTo = document.getElementById("ddlInstallment").value;
             if (ForwordTo != "0") {
