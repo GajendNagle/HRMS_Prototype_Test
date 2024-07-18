@@ -71,7 +71,7 @@
                     <div class="col-md-12 form-group">
                         <button id="searchButton" type="button" class="btn btn-outline-success w-lg btn-border" onclick="document.getElementById('showdetails').style.display='block'">Find Details</button>
 
-                        <a href="RouteWisePicupDroup.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                        <a href="Rpt_RouteHistory.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
                 </div>
             </fieldset>

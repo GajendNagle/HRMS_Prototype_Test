@@ -64,7 +64,7 @@
                     <div class="col-md-12 form-group">
                         <asp:Button runat="server" ID="searchButton" type="button" Text="Find Details" class="btn btn-outline-success w-lg btn-border" OnClick="searchButton_Click" />
 
-                        <a href="ViewRouteDetails.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                        <a href="Rpt_RouteDetails.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
                 </div>
 
