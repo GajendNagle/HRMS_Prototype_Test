@@ -49,8 +49,8 @@
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Student Name<br />
-                                छात्र का नाम दर्ज करें<span style="color: red">*</span></label>
+                                Student Name<br />
+                                छात्र का नाम<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Rohan Pandey" onkeypress="return hindiOnly();" />
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                             <label>
                                 Date<br />
                                 दिनांक<span style="color: red">*</span></label>
-                            <input name="ctl00$ContentBody$ctl00" type="date" value="18-07-2024" class="form-control" />
+                            <input name="ctl00$ContentBody$ctl00" type="date" value="2024-07-18" class="form-control" />
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3">

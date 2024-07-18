@@ -19,7 +19,7 @@
                             <a href="#ParentProcess" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
                                 <span>Parent Process</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Pickup / Drop Details</span></li>
+                        <li class="breadcrumb-item"><span>Pickup/Drop Details</span></li>
                     </ol>
                 </div>
             </div>
@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="col-xxl-12 col-md-12">
                     <div class="marqueecontainerinfo">
-                        <div class="headertext btn btn-primary rounded-pill">PickUp / Drop Details</div>
+                        <div class="headertext btn btn-primary rounded-pill">PickUp/Drop Details</div>
                         <div>
                             <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">Empty </marquee>
                         </div>
@@ -43,35 +43,43 @@
         <div class="card-body">
             <asp:Label runat="server" ID="lblMsg"></asp:Label>
             <fieldset>
-                <legend>PickUp / Drop Details  / </legend>
+                <legend>PickUp/Drop Details</legend>
                 <div class="row align-items-end">
+                     <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="form-group">
+                        <label>
+                            Student Name <br />
+                            विद्यार्थी का नाम<span style="color: red">*</span></label>
+                        <input name="ctl00$ContentBody$ctl00" type="TEXT" PlaceHolder="Arpana" class="form-control" />
+                    </div>
+                </div>
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                From Date<br />
-                                दिनांक<span style="color: red">*</span></label>
-                            <input name="ctl00$ContentBody$ctl00" type="date" value="18-07-2024" class="form-control" />
+                                Select From Date<br />
+                                प्रारंभिक दिनांक का चयन करें<span style="color: red">*</span></label>
+                            <input name="ctl00$ContentBody$ctl00" type="date" class="form-control" />
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                To Date<br />
-                                दिनांक<span style="color: red">*</span></label>
-                            <input name="ctl00$ContentBody$ctl00" type="date" value="18-07-2024" class="form-control" />
+                                Select To Date<br />
+                                अंतिम दिनांक का चयन करें<span style="color: red">*</span></label>
+                            <input name="ctl00$ContentBody$ctl00" type="date" class="form-control" />
                         </div>
                     </div>
                     <div class="col-md-12">
                         <hr />
                         <div class="form-group">
                             <button type="button" class="btn btn-outline-success btn-border  w-lg">Search</button>
-                            <a href="/mis/Masters/InformToStudent.aspx" class="btn btn-outline-danger w-lg">Clear</a>
+                            <a href="/mis/Masters/PickUp_Drop_Details.aspx" class="btn btn-outline-danger w-lg">Clear</a>
                         </div>
                     </div>
                 </div>
             </fieldset>
             <fieldset>
-                <legend>View Pickup / Drop Details</legend>
+                <legend>View Pickup/Drop Details</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -116,15 +124,15 @@
                                     <td>2</td>
                                     <td>18/07/2024</td>
                                     <td>---</td>
-                                    <td>Yes 9:45</td>
-                                    <td>Yes 5:10</td>
+                                    <td> 09:45 AM</td>
+                                    <td> 05:10 PM</td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
                                     <td>12/07/2024</td>
                                     <td>---</td>
-                                    <td>Yes 9:46</td>
-                                    <td>Yes 5:10</td>
+                                    <td> 09:46 AM</td>
+                                    <td> 05:10 PM</td>
                                 </tr>
                             </table>
                         </div>

@@ -97,11 +97,11 @@
                                         <th>Bus Stop Name
                                      <br />
                                             बस स्टॉप का नाम</th>
-                                        <th>Bus Stop Arrival Time<br />
-                                            बस स्टॉप आगमन का समय</th>
-                                        <th>Bus Stop Departure Time
+                                        <th>Arrival In Time<br />
+                                            आगमन का समय</th>
+                                        <th>Departure Out Time
                                      <br />
-                                            बस स्टॉप प्रस्थान समय</th>
+                                            प्रस्थान का समय</th>
                                     </tr>
                                 </thead>
                                 <tr>
