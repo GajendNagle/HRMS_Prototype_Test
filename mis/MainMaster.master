@@ -1399,6 +1399,17 @@
                                                 </ul>
                                             </div>
                                         </li>
+                                        <li class="nav-item">
+                                            <a href="#Gatekeeper" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="ParentProcess"><i class="ri-menu-line"></i>Gatekeeper Transport System</a>
+                                            <div class="collapse menu-dropdown" id="Gatekeeper">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/E-ChallanProcess.aspx"><i class="ri-file-list-3-line"></i>E-Challan Process</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/E-ChallanDetails.aspx"><i class="ri-file-list-3-line"></i>E-Challan Details</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/Rpt_CheckVehicalDetails.aspx"><i class="ri-file-list-3-line"></i>Check Vehical Details</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
