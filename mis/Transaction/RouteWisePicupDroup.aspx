@@ -75,11 +75,22 @@
                             <option>RTU005</option>
                         </select>
                     </div>
+                    <div class="col-md-3">
+                        <label>
+                            Select Type<span style="color: red">*</span><br />
+                            प्रकार का चयन करें
+                        </label>
+                        <select class="form-control select2">
+                            <option>Select</option>
+                            <option>Picup</option>
+                            <option>Droup</option>
+                        </select>
+                    </div>
                 </div>
                 <hr />
                 <div class="row align-items-end">
                     <div class="col-md-12 form-group">
-                        <button id="searchButton" type="button" class="btn btn-outline-success w-lg btn-border" onclick="document.getElementById('showdetails').style.display='block'">Find Details</button>
+                        <button id="searchButton" type="button" class="btn btn-outline-success w-lg btn-border" onclick="document.getElementById('showdetails').style.display='block'">Search</button>
 
                         <a href="RouteWisePicupDroup.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>

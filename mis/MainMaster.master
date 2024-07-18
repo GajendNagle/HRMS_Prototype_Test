@@ -1380,9 +1380,9 @@
                                                 aria-controls="BusDriverToAttender"><i class="ri-menu-line"></i>Bus Driver & Attender Process</a>
                                             <div class="collapse menu-dropdown" id="BusDriverToAttender">
                                                 <ul class="nav nav-sm flex-column">
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/Rpt_RouteDetails.aspx"><i class="ri-file-list-3-line"></i>Route Details </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/Rpt_RouteDetails.aspx"><i class="ri-file-list-3-line"></i>View Route Location </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/RouteWisePicupDroup.aspx"><i class="ri-file-list-3-line"></i>Route Wise Picup/Droup </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/Rpt_RouteHistory.aspx"><i class="ri-file-list-3-line"></i>Route History </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/Rpt_RouteHistory.aspx"><i class="ri-file-list-3-line"></i>Route Details </a></li>
 
                                                 </ul>
                                             </div>

@@ -19,7 +19,7 @@
                         <li class="breadcrumb-item">
                             <a href="#BusDriverToAttender" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
                                 <span>Bus Driver & Attender Process</span></a>
-                        <li class="breadcrumb-item"><span>Route History</span></li>
+                        <li class="breadcrumb-item"><span>Route Details</span></li>
                     </ol>
                 </div>
             </div>
@@ -60,6 +60,7 @@
                         </label>
                         <select class="form-control select2">
                             <option>Select</option>
+                            <option>All</option>
                             <option>RTU001</option>
                             <option>RTU002</option>
                             <option>RTU003</option>

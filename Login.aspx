@@ -9,20 +9,21 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-    <div class="container-fluid" >
-        <div class="row bg" >
+    <div class="container-fluid">
+        <div class="row bg">
             <div class="col-lg-6">
-                <img src="mis/assets/images/LoginImage.png" style="width:100%;" />
+                <img src="mis/assets/images/LoginImage.png" style="width: 100%;" />
             </div>
             <div class="col-lg-6">
-         
+
                 <div class="container">
 
                     <div class="row justify-content-end">
                         <div class="col-xl-7">
                             <div class="card mt-4 card-bg-fill">
 
-                                <div class="card-body p-4">`
+                                <div class="card-body p-4">
+                                    `
                                     <div class="text-center mt-2">
                                         <img src="../mis/assets/images/logo-sm.svg" alt="" height="100">
 
@@ -48,20 +49,29 @@
                                                 </div>
                                             </div>
 
-                                          <div class="row text-center justify-content-center">
-                                            <div class="col-lg-12 mb-3">
-                                              <img src="../mis/assets/images/captcha.png" height="60" />
+                                            <div class="row text-center justify-content-center">
+                                                <div class="col-lg-12 mb-3">
+                                                    <img src="../mis/assets/images/captcha.png" height="60" />
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <input type="text" class="form-control" placeholder="Enter Captcha">
+                                                </div>
                                             </div>
-                                              <div class="col-lg-12">
-                                                  <input type="text" class="form-control" placeholder="Enter Captcha" >
-                                              </div>
-                                          </div>
                                             <div class="mt-4">
                                                 <%--<button class="btn btn-success w-100" type="submit">Sign In</button>--%>
                                                 <a href="../mis/Dashboard/AdminDashboard.aspx" class="btn btn-secondary w-100" type="submit">Sign In</a>
                                             </div>
 
-                                         
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row align-items-end mt-3">
+                                        <div class="col-md-6">
+                                            <a href="ModuleWiseProcessFlowDiagram.aspx">Process Flow Diagram</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="ModuleWiseBugsheet.aspx">Module Wise Bugsheet</a>
                                         </div>
                                     </div>
                                 </div>

@@ -20,7 +20,7 @@
                             <a href="#BusDriverToAttender" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
                                 <span>Bus Driver & Attender Process</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Route Details</span></li>
+                        <li class="breadcrumb-item"><span>View Route Location</span></li>
                     </ol>
                 </div>
             </div>
