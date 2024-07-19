@@ -524,31 +524,31 @@
                             <div class="col-md-3 text-end">
                                 <div class="form-group">
 
-                                  
-                                    <select id="dates-field2" class="multiselect-ui" multiple="multiple" onchange="DDLGrid()">
-                                        <option value="1" selected="selected">Sr.No.</option>
-                                        <option value="2" selected="selected">Academic Year</option>
-                                        <option value="3" selected="selected">District Name</option>
-                                        <option value="4">Block Name</option>
-                                        <option value="5">Village Name</option>
-                                        <option value="6" selected="selected">Student Name</option>
-                                        <option value="7" selected="selected">Samagra ID</option>
-                                        <option value="8">Gender</option>
-                                        <option value="9">Date of Birth</option>
-                                        <option value="10">Category</option>
-                                        <option value="11">Father's Name</option>
-                                        <option value="12">Mother's Name</option>
-                                        <option value="13">Mobile No</option>
-                                        <option value="14">BPL</option>
-                                        <option value="15">Physical Disability</option>
-                                        <option value="16">Is there a Freed/Nomadic/Semi-Nomadic Caste</option>
-                                        <option value="17">Only Girl Child</option>
-                                        <option value="18">Father Dead</option>
-                                        <option value="19">Students Unparented</option>
-                                        <option value="20">Current School UDISE Code</option>
-                                        <option value="21">Current Class</option>
-                                        <option value="22">Account No.</option>
-                                        <option value="23">IFSC Code</option>
+
+                                    <select id="dates-field2" class="multiselect-ui" multiple="multiple" onchange="DDLGrid() ">
+                                        <option value="Sr">Sr</option>
+                                        <option value="Academic">Academic</option>
+                                        <option value="District">District</option>
+                                        <option value="Block">Block</option>
+                                        <option value="Village">Village</option>
+                                        <option value="Student">Student</option>
+                                        <option value="Samagra">Samagra</option>
+                                        <option value="Gender">Gender</option>
+                                        <option value="Birth">Birth</option>
+                                        <option value="Category">Category</option>
+                                        <option value="Father">Father</option>
+                                        <option value="Mother">Mother</option>
+                                        <option value="Mobile">Mobile</option>
+                                        <option value="BPL">BPL</option>
+                                        <option value="Physical">Physical</option>
+                                        <option value="Freed">Freed</option>
+                                        <option value="Child">Child</option>
+                                        <option value="Dead">Dead</option>
+                                        <option value="Unparented">Unparented</option>
+                                        <option value="School">School</option>
+                                        <option value="id">id</option>
+                                        <option value="Account">Account</option>
+                                        <option value="IFSC">IFSC</option>
                                     </select>
                                 </div>
                             </div>
@@ -561,66 +561,115 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="table-responsive" >
-                                   <table class="table" id="hideshowTable">
-    <thead>
-        <tr style="white-space: nowrap" class="text-center">
-            <th id="Sr">Sr.No.<br /> सरक क्र. </th>
-            <th id="Academic">Academic Year<br /> शैक्षणिक वर्ष </th>
-            <th id="District">District Name<br /> ज़िला का नाम </th>
-            <th id="Block" style="display:none;">Block Name<br /> विकासखण्ड का नाम </th>
-            <th id="Village" style="display:none;">Village Name<br /> गाँव का नाम</th>
-            <th id="Student">Student Name<br /> विद्यार्थी का नाम</th>
-            <th id="Samagra">Samagra ID<br /> समग्र आईडी </th>
-            <th id="Gender" style="display:none;">Gender<br /> लिंग </th>
-            <th id="Birth" style="display:none;">Date of Birth<br /> जन्म तिथि</th>
-            <th id="Category" style="display:none;">Category<br /> श्रेणी</th>
-            <th id="Father" style="display:none;">Father's Name<br /> पिता का नाम</th>
-            <th id="Mother" style="display:none;">Mother's Name<br /> माता का नाम</th>
-            <th id="Mobile" style="display:none;">Mobile No<br /> मोबाइल नंबर</th>
-            <th id="BPL" style="display:none;">BPL<br /> गरीबी रेखा से नीचे</th>
-            <th id="Physical" style="display:none;">Physical Disability<br /> शारीरिक विकलांगता</th>
-            <th id="Freed" style="display:none;">Is there a Freed/Nomadic/Semi-Nomadic Caste<br /> क्या विमुक्त/घुमक्कड़/अर्ध घुमक्कड़ जाति है</th>
-            <th id="Child" style="display:none;">Only Girl Child<br /> एकमात्र बालिका</th>
-            <th id="Dead" style="display:none;">Father Dead?<br /> पिता स्वर्गवासी हैं ?</th>
-            <th id="Unparented" style="display:none;">Students Unparented ?<br /> विद्यार्थी अनाथ हैं ? </th>
-            <th id="School" style="display:none;">Current School UDISE Code<br /> वर्तमान स्कूल UDISE कोड </th>
-            <th id="Class" style="display:none;">Current Class<br /> वर्तमान कक्षा  </th>
-            <th id="Account" style="display:none;">Account No.<br /> खाता नंबर</th>
-            <th id="IFSC" style="display:none;">IFSC Code<br /> आई.एफ.एस.सी कोड</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="text-center">
-            <td id="SrN">1</td>
-            <td id="AcademicY">2024-2025</td>
-            <td id="DistrictN">Bhopal</td>
-            <td id="BlockN" style="display:none;">Hujoor</td>
-            <td id="VillageN" style="display:none;">Rajgarh</td>
-            <td id="StudentN">Rina Gupta</td>
-            <td id="SamagraID">989305529512</td>
-            <td id="GenderS" style="display:none;">Female</td>
-            <td id="BirthDOB" style="display:none;">12/07/1998</td>
-            <td id="CategoryS" style="display:none;">>OBC</td>
-            <td id="FatherS" style="display:none;">Rajesh Gupta</td>
-            <td id="MotherS" style="display:none;">Radha Gupta</td>
-            <td id="MobileN" style="display:none;">963258741</td>
-            <td id="BPLCARD" style="display:none;">Yes</td>
-            <td id="PhysicalD" style="display:none;">Yes</td>
-            <td id="FreedS" style="display:none;">No</td>
-            <td id="ChildS" style="display:none;">No</td>
-            <td id="DeadS" style="display:none;">No</td>
-            <td id="UnparentedS" style="display:none;">No</td>
-            <td id="SchoolN" style="display:none;">23145484551-Sarasvati Gyan Mandir</td>
-            <td id="ClassN" style="display:none;">11th</td>
-            <td id="AccountNO" style="display:none;">9910110011189</td>
-            <td id="IFSCCode" style="display:none;">IBKID0009536</td>
-        </tr>
-        <!-- Add more rows here -->
-    </tbody>
-                                      
-                                       
-</table>
+                                <div class="table-responsive">
+                                    <table class="table" id="hideshowTable">
+                                        <thead>
+
+                                            <tr style="white-space: nowrap">
+                                                <th id="Sr">Sr.No.<br />
+                                                    सरक क्र. </th>
+                                                <th id="Academic">Academic Year<br />
+                                                    शैक्षणिक वर्ष </th>
+                                                <th id="District">District Name<br />
+                                                    ज़िला का नाम </th>
+                                                <th id="Block">Block Name<br />
+                                                    विकासखण्ड का नाम </th>
+                                                <th id="Village">Village Name<br />
+                                                    गाँव का नाम</th>
+                                                <th id="Student">Student Name<br />
+                                                    विद्यार्थी का नाम</th>
+                                                <th id="Samagra">Samagra ID<br />
+                                                    समग्र आईडी </th>
+                                                <th id="Gender">Gender<br />
+                                                    लिंग </th>
+                                                <th id="Birth">Date of Birth<br />
+                                                    जन्म तिथि</th>
+                                                <th id="Category">Category<br />
+                                                    श्रेणी</th>
+                                                <th id="Father">Father's Name<br />
+                                                    पिता का नाम</th>
+                                                <th id="Mother">Mother's Name<br />
+                                                    माता का नाम</th>
+                                                <th id="Mobile">Mobile No<br />
+                                                    मोबाइल नंबर</th>
+                                                <th id="BPL">BPL<br />
+                                                    गरीबी रेखा से नीचे</th>
+                                                <th id="Physical">Physical Disability<br />
+                                                    शारीरिक विकलांगता</th>
+                                                <th id="Freed">Is there a Freed/Nomadic/Semi-Nomadic Caste<br />
+                                                    क्या विमुक्त/घुमक्कड़/अर्ध घुमक्कड़ जाति है</th>
+                                                <th id="Child">Only Girl Child<br />
+                                                    एकमात्र बालिका</th>
+                                                <th id="Dead">Father Dead?<br />
+                                                    पिता स्वर्गवासी हैं ?</th>
+                                                <th id="Unparented">Students Unparented ?<br />
+                                                    विद्यार्थी अनाथ हैं ? </th>
+                                                <th id="School">Current School UDISE Code<br />
+                                                    वर्तमान स्कूल UDISE कोड </th>
+                                                <th id="id">Current id<br />
+                                                    वर्तमान कक्षा  </th>
+                                                <th id="Account">Account No.<br />
+                                                    खाता नंबर</th>
+                                                <th id="IFSC">IFSC Code<br />
+                                                    आई.एफ.एस.सी कोड</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="text-center">
+                                                <td>1</td>
+                                                <td>2024-2025</td>
+                                                <td>Bhopal</td>
+                                                <td>Hujoor</td>
+                                                <td>Rajgarh</td>
+                                                <td>Rina Gupta</td>
+                                                <td>989305529512</td>
+                                                <td>Female</td>
+                                                <td>12/07/1998</td>
+                                                <td>OBC</td>
+                                                <td>Rajesh Gupta</td>
+                                                <td>Radha Gupta</td>
+                                                <td>963258741</td>
+                                                <td>Yes</td>
+                                                <td>Yes</td>
+                                                <td>No</td>
+                                                <td>No</td>
+                                                <td>No</td>
+                                                <td>No</td>
+                                                <td>23145484551-Sarasvati Gyan Mandir</td>
+                                                <td>11th</td>
+                                                <td>9910110011189</td>
+                                                <td>IBKID0009536</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>2</td>
+                                                <td>2024-2025</td>
+                                                <td>Bhopal</td>
+                                                <td>Hujoor</td>
+                                                <td>Rajgarh</td>
+                                                <td>Rina Gupta</td>
+                                                <td>989305529512</td>
+                                                <td>Female</td>
+                                                <td>12/07/1998</td>
+                                                <td>>OBC</td>
+                                                <td>Rajesh Gupta</td>
+                                                <td>Radha Gupta</td>
+                                                <td>963258741</td>
+                                                <td>Yes</td>
+                                                <td>Yes</td>
+                                                <td>No</td>
+                                                <td>No</td>
+                                                <td>No</td>
+                                                <td>No</td>
+                                                <td>23145484551-Sarasvati Gyan Mandir</td>
+                                                <td>11th</td>
+                                                <td>9910110011189</td>
+                                                <td>IBKID0009536</td>
+                                            </tr>
+                                            <!-- Add more rows here -->
+                                        </tbody>
+
+
+                                    </table>
 
                                 </div>
                             </div>
@@ -925,135 +974,7 @@
             });
         }
     </script>--%>
-    <script>
-        function DDLGrid() {
-          var multiselect = document.getElementById("multiselect-ui");
-            var selectedValue = document.getElementById("dates-field2");
-            let table = document.getElementById('hideshowTable');
-          /*  var Table = document.getElementById("hideshowTable");*/
-             // get the selected value from the multiselect element
 
-            if (selectedValue === "4") {
-                Block.style.display = "block";
-                BlockN.style.display = "block";
-            }
-            else if (selectedValue === "5") {
-                Village.style.display = "block";
-                VillageN.style.display = "block";
-            }
-            else if (selectedValue === "8") {
-                Gender.style.display = "block";
-                GenderS.style.display = "block";
-            }
-
-            else if (selectedValue === "9") {
-                Birth.style.display = "block";
-                BirthDOB.style.display = "block";
-            }
-            else if (selectedValue === "10") {
-                Category.style.display = "block";
-                CategoryS.style.display = "block";
-            }
-            else if (selectedValue === "11") {
-                Father.style.display = "block";
-                FatherS.style.display = "block";
-
-            }
-            else if (selectedValue === "12") {
-                Mother.style.display = "block";
-                MotherS.style.display = "block";
-            }
-            else if (selectedValue === "13") {
-                Mobile.style.display = "block";
-                MobileN.style.display = "block";
-            }
-            else if (selectedValue === "14") {
-                BPL.style.display = "block";
-                BPLCARD.style.display = "block";
-            }
-            else if (selectedValue === "15") {
-                Physical.style.display = "block";
-                PhysicalD.style.display = "block";
-            }
-            else if (selectedValue === "16") {
-                Freed.style.display = "block";
-                FreedS.style.display = "block";
-            }
-            else if (selectedValue === "17") {
-                Child.style.display = "block";
-                ChildS.style.display = "block";
-            }
-            else if (selectedValue === "18") {
-                Dead.style.display = "block";
-                DeadS.style.display = "block";
-            }
-            else if (selectedValue === "19") {
-                Unparented.style.display = "block";
-                UnparentedS.style.display = "block";
-            }
-            else if (selectedValue === "20") {
-                School.style.display = "block";
-                SchoolN.style.display = "block";
-            }
-            else if (selectedValue === "21") {
-                Class.style.display = "block";
-                ClassN.style.display = "block";
-            }
-            else if (selectedValue === "22") {
-                Account.style.display = "block";
-                AccountNO.style.display = "block";
-            }
-            else if (selectedValue === "23") {
-                IFSC.style.display = "block";
-                IFSCCode.style.display = "block";
-            }
-
-            else {
-                Block.style.display = "none";
-                BlockN.style.display = "none";
-                Village.style.display = "none";
-                VillageN.style.display = "none";
-                Gender.style.display = "none";
-                GenderS.style.display = "none";
-                Birth.style.display = "none";
-                BirthDOB.style.display = "none";
-                Category.style.display = "none";
-                CategoryS.style.display = "none";
-                Father.style.display = "none";
-                FatherS.style.display = "none";
-                Mother.style.display = "none";
-                MotherS.style.display = "none";
-                Mobile.style.display = "none";
-                MobileN.style.display = "none";
-                BPL.style.display = "none";
-                BPLCARD.style.display = "none";
-                Physical.style.display = "none";
-                PhysicalD.style.display="none";
-                Freed.style.display = "none";
-                FreedS.style.display ="none";
-                Child.style.display = "none";
-                ChildS.style.display="none";
-                Dead.style.display = "none";
-                DeadS.style.display="none";
-                Unparented.style.display = "none";
-                UnparentedS.style.display ="none";
-                School.style.display = "none";
-                SchoolN.style.display ="none";
-                Class.style.display = "none";
-                ClassN.style.display="none";
-                Account.style.display = "none";
-                AccountNO.style.display="none";
-                IFSC.style.display ="none";
-                IFSCCode.style.display="none";
-
-            }
-
-        }
-
-        // Call the function when the page loads or when the multiselect value changes
-        document.addEventListener(DDLGrid , 'hideshowTable');
-     
-    </script>
     <script>
         $('.datepickerYear').datepicker({
             format: "yyyy",
@@ -1150,6 +1071,31 @@
                 includeSelectAllOption: true
             })
         });
+    </script>
+    <script>
+        function DDLGrid() {
+            var selectedValues = $('#dates-field2').val(); // selected option
+
+
+            $("#hideshowTable tr td, #hideshowTable thead th").each(function () {  // hiding All data
+                $(this).css("display", "none");
+            });
+
+            function hideShowCellsAndHeaders(columnIndex) {   // displaying required data only
+                var selector = "#hideshowTable tr td:nth-child(" + (columnIndex + 1) + "), #hideshowTable thead th:nth-child(" + (columnIndex + 1) + ")";
+                $(selector).each(function () {      
+                    $(this).style = "display:table-cell";
+                });
+            }
+            for (var i = 0; i < selectedValues.length; i++) {
+                var selectedValue = selectedValues[i];
+                var header = $("#hideshowTable thead th#" + selectedValue);
+
+                if (header.length) {
+                    hideShowCellsAndHeaders(header.index());
+                }
+            }
+        }
     </script>
 </asp:Content>
 
