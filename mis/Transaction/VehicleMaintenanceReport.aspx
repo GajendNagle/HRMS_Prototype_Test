@@ -34,20 +34,29 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
-                <div class="col-lg-6">
-                    <h4 class="card-title">Vehicle Maintenance Report / वाहन रखरखाव विवरण</h4>
+                <div class="col-xl-10 col-md-12">
+                    <div class="marqueecontainerinfo">
+                        <div class="headertext btn btn-primary rounded-pill">Vehicle Maintanance Report</div>
+                        <div>
+                            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">Empty </marquee>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-12 text-end">
+                    <a role="button" href="VehicleMaintenance.aspx" class="btn btn-primary btn-label waves-effect waves-light rounded-pill" id="btnBack"
+                        onclick="funBack()"><i class="ri-arrow-go-back-line label-icon align-middle  me-2"></i>Back</a>
                 </div>
             </div>
         </div>
         <div class="card-body">
-            <fieldset>
+            <fieldset >
                 <legend>Vehicle Maintenance Report / वाहन रखरखाव विवरण</legend>
-                <div class="row">
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Financial Year
+                            <span>Select Year
                                 <br />
-                                वित्तीय वर्ष<span style="color: red">*</span></span>
+                                वर्ष का चयन करें<span style="color: red">*</span></span>
                             <select class="form-control select2">
                                 <option value="0">--Select--</option>
                                 <option value="1">2000</option>
@@ -84,6 +93,7 @@
                                 ज़िला<span style="color: red">*</span></span>
                             <select class="select2 form-control">
                                 <option value="0">--Select--</option>
+                                <option value="All">All</option>
                                 <option value="51">Agar Malwa</option>
                                 <option value="49">Alirajpur</option>
                                 <option value="47">Anuppur</option>
@@ -141,6 +151,38 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
+                            <span>Select Office Type
+                                <br />
+                                कार्यालय प्रकार का चयन करें<span style="color: red">*</span></span>
+                            <select id="OffType" class="form-control select2">
+                                <option value="0">Select</option>
+                                <option value="1">HO</option>
+                                <option value="2">SD</option>
+                                <option value="3">Block</option>
+                                <option value="4">DEO</option>
+                                <option value="5">Sankul</option>
+                                <option value="6">School</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>Select Office Name
+                                <br />
+                                कार्यालय नाम का चयन करें<span style="color: red">*</span></span>
+                            <select id="OffName" class="form-control select2">
+                                <option value="0">Select</option>
+                                <option value="1">All</option>
+                                <option value="2">HO-Office</option>
+                                <option value="3">JD-Office</option>
+                                <option value="4">DEO-Ofice</option>
+                                <option value="5">Sankul-Ofice</option>
+                                <option value="6">School-Ofice</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
                             <span>Maintenance Type
                                 <br />
                                 रखरखाव का प्रकार<span style="color: red">*</span></span>
@@ -154,46 +196,31 @@
                         </div>
                     </div>
                 </div>
-                <hr />
                 <div class="row">
                     <div class="col-md-12">
-                        <button id="toggleButton" type="button" class="fw-bold btn w-lg btn-outline-success btn-border">Search</button>
+                <hr />
+                        <button id="toggleButton" type="button" class="fw-bold btn w-lg btn-outline-success btn-border">Save</button>
                         <a href="VehicleMaintenanceReport.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
                 </div>
             </fieldset>
-            <br />
             <fieldset>
                 <legend>Details / विवरण</legend>
-                <div class="row" id="NoRcdTable">
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <table class="table table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_grvVehicleAllotment" style="border-collapse: collapse; text-align: center;">
-                                <tbody>
-                                    <tr>
-                                        <td>No Recods Found</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2" id="searchbtn">
+                        <div class="form-group">
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
                 </div>
-                <div class="row" id="SearchTable" style="display: none">
-                    <div class="mt-4 row justify-content-end">
-                        <div class="col-md-4 text-end">
-                            <div class="form-group">
-                                <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                <button class="btn btn-info btn-rounded w-55">PDF</button>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                            </div>
-                        </div>
-                    </div>
+                <div class="row">
                     <div class="col-md-12">
-
                         <div class="table-responsive">
                             <table class="table table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval" style="border-collapse: collapse; text-align: center;">
                                 <thead>
@@ -203,10 +230,8 @@
                                         <th scope="col">Financial Year
                                             <br />
                                             वित्तीय वर्ष</th>
-                                        <%--<th scope="col">Office Type<br />
-                                            कार्यालय का प्रकार</th>--%>
                                         <th scope="col">Vehicle Number<br />
-                                        गाड़ी का नंबर</th>
+                                            गाड़ी का नंबर</th>
                                         <th scope="col">Maintenance Type<br />
                                             रखरखाव का प्रकार</th>
                                         <th scope="col">Previous Reading Km
@@ -221,7 +246,7 @@
                                         <th scope="col">Vehicle Expenses Details<br />
                                             वाहन व्यय विवरण</th>
                                         <th scope="col">View Document<br />
-                                           दस्तावेज़ देखें</th>
+                                            दस्तावेज़ देखें</th>
                                     </tr>
                                 </thead>
                                 <tbody>

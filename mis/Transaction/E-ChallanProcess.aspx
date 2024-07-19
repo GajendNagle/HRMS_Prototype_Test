@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-12 text-end">
-                    <a role="button" href="E-ChallanDetails.aspx" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i class="bx bx-plus label-icon align-middle fs-16 me-2"></i>Back</a>
+                    <a role="button" href="E-ChallanDetails.aspx" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i>Back</a>
                 </div>
             </div>
         </div>

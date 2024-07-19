@@ -18,13 +18,13 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-    <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
-</li>
+                            <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
+                        </li>
 
-<li class="breadcrumb-item">
-    <a href="#TransportManagementReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
-        <span>Transport Management Report</span></a>
-</li>
+                        <li class="breadcrumb-item">
+                            <a href="#TransportManagementReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
+                                <span>Transport Management Report</span></a>
+                        </li>
                         <li class="breadcrumb-item"><span>Vehicle Insurance  Report </span></li>
                     </ol>
                 </div>
@@ -32,11 +32,18 @@
         </div>
     </div>
     <div class="card card-border-primary">
-        <div class="card-header">
+            <div class="card-header">
             <div class="row">
-                <div class="col-lg-6">
-                    <h4 class="card-title">Vehicle Insurance  Report / 
-वाहन बीमा विवरण</h4>
+                <div class="col-xxl-10 col-md-12">
+                    <div class="marqueecontainerinfo">
+                        <div class="headertext btn btn-primary rounded-pill">Vehicle Insurance Report</div>
+                        <div>
+                            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">Empty </marquee>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-md-12 text-end">
+                    <a role="button" href="VehicleInsurance.aspx" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i>Back</a>
                 </div>
             </div>
         </div>
@@ -241,16 +248,16 @@
                                                 सरल क्र.</th>
                                             <th scope="col">Financial Year<br />
                                                 वित्तीय वर्ष</th>
-                                           <%-- <th scope="col">Office Type<br />
+                                            <%-- <th scope="col">Office Type<br />
                                                 कार्यालय का प्रकार</th>--%>
                                             <th scope="col">Vehicle Number<br />
-                                               गाड़ी का नंबर</th>
+                                                गाड़ी का नंबर</th>
                                             <th scope="col">Insurance Type<br />
                                                 बीमा का प्रकार</th>
                                             <th scope="col">Insurance Company<br />
                                                 बीमा कंपनी</th>
-                                            <th scope="col"> Insurance Number<br />
-                                                 बीमा नंबर</th>
+                                            <th scope="col">Insurance Number<br />
+                                                बीमा नंबर</th>
                                             <th scope="col">Insurance Start Date<br />
                                                 बीमा प्रारंभ दिनांक</th>
                                             <th scope="col">Insurance End Date<br />

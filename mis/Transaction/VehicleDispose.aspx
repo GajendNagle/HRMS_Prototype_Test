@@ -33,10 +33,18 @@
         </div>
     </div>
     <div class="card card-border-primary">
-        <div class="card-header">
+               <div class="card-header">
             <div class="row">
-                <div class="col-lg-6">
-                    <h4 class="card-title">Vehicle Dispose / वाहन डिस्पोज़ </h4>
+                <div class="col-xxl-10 col-md-12">
+                    <div class="marqueecontainerinfo">
+                        <div class="headertext btn btn-primary rounded-pill">Vehicle Dispose</div>
+                        <div>
+                            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">Empty </marquee>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-md-12 text-end">
+                    <a role="button" href="VehicleDisposeReport.aspx" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i class="bx bx-plus label-icon align-middle fs-16 me-2"></i>View Details</a>
                 </div>
             </div>
         </div>

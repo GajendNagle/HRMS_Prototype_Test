@@ -18,13 +18,13 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-    <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
-</li>
+                            <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
+                        </li>
 
-<li class="breadcrumb-item">
-    <a href="#TransportManagementSystem" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
-        <span>Transport Management System</span></a>
-</li>
+                        <li class="breadcrumb-item">
+                            <a href="#TransportManagementSystem" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
+                                <span>Transport Management System</span></a>
+                        </li>
                         <li class="breadcrumb-item"><span>Vehicle Insurance</span></li>
                     </ol>
                 </div>
@@ -32,10 +32,18 @@
         </div>
     </div>
     <div class="card card-border-primary">
-        <div class="card-header">
+           <div class="card-header">
             <div class="row">
-                <div class="col-lg-6">
-                    <h4 class="card-title">Vehicle Insurance / वाहन बीमा</h4>
+                <div class="col-xxl-10 col-md-12">
+                    <div class="marqueecontainerinfo">
+                        <div class="headertext btn btn-primary rounded-pill">Vehicle Insurance</div>
+                        <div>
+                            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">Empty </marquee>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-md-12 text-end">
+                    <a role="button" href="VehicleInsuranceReport.aspx" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i class="bx bx-plus label-icon align-middle fs-16 me-2"></i>View Details</a>
                 </div>
             </div>
         </div>
@@ -47,7 +55,7 @@
                         <div class="form-group">
                             <span>Vehicle Number
                                 <br />
-                            गाड़ी का नंबर<span style="color: red">*</span></span>
+                                गाड़ी का नंबर<span style="color: red">*</span></span>
                             <select class="form-control select2 select2-hidden-accessible">
                                 <option>--Select--</option>
                                 <option>MP04HC4163</option>
@@ -70,7 +78,7 @@
                         <div class="form-group">
                             <span>Insurance Number
                                 <br />
-                               बीमा नंबर<span style="color: red">*</span></span>
+                                बीमा नंबर<span style="color: red">*</span></span>
                             <input name="ctl00$ContentBody$txtNewInsuranceNumber" type="text" maxlength="17" id="ctl00_ContentBody_txtNewInsuranceNumber" class="form-control" onpaste="return false;" placeholder="Enter Insurance Number" autocomplete="off">
                         </div>
                     </div>
@@ -176,7 +184,7 @@
                                             <th scope="col">Insurance Company<br />
                                                 बीमा कंपनी</th>
                                             <th scope="col">Insurance Number<br />
-                                                 बीमा नंबर</th>
+                                                बीमा नंबर</th>
                                             <th scope="col">Insurance Start Date<br />
                                                 बीमा प्रारंभ तिथि</th>
                                             <th scope="col">Insurance End Date<br />

@@ -19,7 +19,7 @@
                             <a href="#SchoolManagementSystem" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
                                 <span>School Management System</span></a>
                         </li>
-                        <li class="breadcrumb-item">Driver Registration </li>
+                        <li class="breadcrumb-item">Driver Registration</li>
                     </ol>
                 </div>
             </div>
@@ -45,7 +45,7 @@
         <div class="card-body">
             <asp:Label runat="server" ID="lblMsg"></asp:Label>
             <fieldset id="RegDetail">
-                <legend>Driver Registration / चालक पंजीकरण</legend>
+                <legend>Driver/Attender Registration / चालक/सहायक पंजीकरण</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -61,20 +61,30 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Enter Driver Name(In English)
+                            <span>Select Registration Type
                                 <br />
-                                चालक का नाम अंग्रेजी में दर्ज करें<span style="color: red">*</span></span>
-                            <input class="form-control" type="text" placeholder="Enter Driver Name(In English)" />
-
+                                पंजीकरण प्रकार का चयन करें<span style="color: red">*</span></span>
+                            <select class="form-control" id="Reg" onchange="textchange()">
+                                <option value="0">--Select--</option>
+                                <option value="1">Driver</option>
+                                <option value="2">Attender</option>
+                            </select>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Enter Driver Name(In Hindi)
+                            <span>Enter <span class="Driver">Driver</span> Name(In English)
                                 <br />
-                                चालक का नाम हिंदी में दर्ज करें<span style="color: red">*</span></span>
-                            <input class="form-control" type="text" placeholder="Enter Driver Name(In Hindi)" />
-
+                                <span class="Reg">चालक</span> का नाम अंग्रेजी में दर्ज करें<span style="color: red">*</span></span>
+                            <input class="form-control" type="text" placeholder="Enter Name(In English)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>Enter <span class="Driver">Driver</span>  Name(In Hindi)
+                                <br />
+                                <span class="Reg">चालक</span> का नाम हिंदी में दर्ज करें<span style="color: red">*</span></span>
+                            <input class="form-control" type="text" placeholder="Enter Name(In Hindi)" />
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -126,10 +136,10 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Enter Driver Contact Number
+                            <span>Enter <span class="Driver">Driver</span>  Contact Number
     <br />
-                                चालक का संपर्क नंबर दर्ज करें<span style="color: red">*</span></span>
-                            <input class="form-control" type="text" placeholder="Enter Driver Contact Number" />
+                                <span class="Reg">चालक</span> का संपर्क नंबर दर्ज करें<span style="color: red">*</span></span>
+                            <input class="form-control" type="text" placeholder="Enter Contact Number" />
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -171,8 +181,9 @@
                                         <th>Vehicle No.
                                              <br />
                                             वाहन क्रमांक</th>
+                                        <th>Registration Type<br />
+                                            पंजीकरण प्रकार</th>
                                         <th>Driver Name
-
                                          <br />
                                             चालक का नाम</th>
                                         <th>Contact Number<br />
@@ -191,6 +202,7 @@
                                     <td>1</td>
 
                                     <td>MP04AB1196</td>
+                                    <td>Attender</td>
                                     <td>Raj</td>
                                     <td>1234567890</td>
                                     <td>ABC123</td>
@@ -200,6 +212,7 @@
                                 <tr>
                                     <td>2</td>
                                     <td>MP04CD5154</td>
+                                    <td>Driver</td>
                                     <td>Rajendra</td>
                                     <td>1234567890</td>
                                     <td>ABC123</td>
@@ -212,17 +225,50 @@
                     </div>
                 </div>
             </fieldset>
+            <fieldset id="InfoRpt" class="d-none">
+                <legend>Driver/Attender Report / चालक/सहायक रिपोर्ट</legend>
+                <div class="row align-items-end">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>Select Registration Type
+                                <br />
+                                पंजीकरण प्रकार का चयन करें<span style="color: red">*</span></span>
+                            <select class="form-control" id="RegType" onchange="textchange()">
+                                <option value="0">--Select--</option>
+                                <option value="1">Driver</option>
+                                <option value="2">Attender</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>Select Vehicle No.
+                                <br />
+                                वाहन संख्या चुनें.<span style="color: red">*</span></span>
+                            <select class="form-control">
+                                <option value="0">--Select--</option>
+                                <option value="1">MP04AB1196</option>
+                                <option value="1">MP04CD5154</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <hr />
+                        <button type="button" class="btn btn-outline-success btn-border  w-lg">Search</button>
+                        <a href="RouteToVehicleMapping.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                    </div>
+                </div>
+            </fieldset>
             <fieldset id="FsDetails" class="d-none">
                 <legend>Details / विवरण</legend>
-
-                <div class="row justify-content-end ">
-                    <div class="col-md-4 text-end" id="tablefd" style="display: none">
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
                         <div class="form-group">
                             <button class="btn btn-info btn-rounded w-55">Excel</button>
                             <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
-                    <div class="col-md-2" id="searchbtn" >
+                    <div class="col-md-2" id="searchbtn">
                         <div class="form-group">
                             <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
@@ -241,6 +287,8 @@
                                         <th>Vehicle No.
                      <br />
                                             वाहन क्रमांक</th>
+                                        <th>Registration Type<br />
+                                            पंजीकरण प्रकार</th>
                                         <th>Driver Name
 
                      <br />
@@ -259,8 +307,8 @@
                                 </thead>
                                 <tr>
                                     <td>1</td>
-
                                     <td>MP04AB1196</td>
+                                    <td>Attender</td>
                                     <td>Raj</td>
                                     <td>1234567890</td>
                                     <td>ABC123</td>
@@ -270,6 +318,7 @@
                                 <tr>
                                     <td>2</td>
                                     <td>MP04CD5154</td>
+                                    <td>Driver</td>
                                     <td>Rajendra</td>
                                     <td>1234567890</td>
                                     <td>ABC123</td>
@@ -286,18 +335,31 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>
+        //document.getElementsByClassName("Driver").innerText = "block";
         function showTable() {
             document.getElementById("tableData").style.display = "block";
             document.getElementById("tablefd").style.display = "block";
             document.getElementById("searchbtn").style.display = "block";
         }
-    </script>
-    <script>
+
+        function textchange() {
+            if ($("#Reg").val() == "1") {
+                $(".Driver").each(function () { this.innerText = 'Driver ' });
+                $(".Reg").each(function () { this.innerText = 'चालक' });
+            }
+            else {
+                $(".Driver").each(function () { this.innerText = 'Attender' });
+                $(".Reg").each(function () { this.innerText = 'सहायक' });
+            }
+
+        }
+
         var a = 1
         function funBack() {
             document.querySelector('#FsDetails').classList.toggle('d-none');
             document.querySelector('#RegDetail').classList.toggle('d-none');
             document.querySelector('#dtls').classList.toggle('d-none');
+            document.querySelector('#InfoRpt').classList.toggle('d-none');
             if (a == 1) {
 
                 document.querySelector('#btnBack').innerHTML = '<i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i>Back';

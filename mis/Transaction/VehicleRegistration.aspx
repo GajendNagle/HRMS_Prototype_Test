@@ -32,10 +32,19 @@
         </div>
     </div>
     <div class="card card-border-primary">
+
         <div class="card-header">
             <div class="row">
-                <div class="col-lg-6">
-                    <h4 class="card-title">Vehicle Registration / वाहन पंजीकरण</h4>
+                <div class="col-xxl-10 col-md-12">
+                    <div class="marqueecontainerinfo">
+                        <div class="headertext btn btn-primary rounded-pill">Vehicle Registration</div>
+                        <div>
+                            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">Empty </marquee>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-md-12 text-end">
+                    <a role="button" href="VehicleRegistrationReport.aspx" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i class="bx bx-plus label-icon align-middle fs-16 me-2"></i>View Details</a>
                 </div>
             </div>
         </div>
@@ -385,13 +394,13 @@
                             </div>
                         </div>
                         <div class="col-md-3" id="section5" style="display: none;">
-    <div class="form-group">
-        <span>Contect Person Name
+                            <div class="form-group">
+                                <span>Contect Person Name
         <br />
-            संपर्क व्यक्ति का नाम<span style="color: red">*</span></span>
-        <input type="text" maxlength="50" class="form-control" placeholder="Enter Contect person Name">
-    </div>
-</div>
+                                    संपर्क व्यक्ति का नाम<span style="color: red">*</span></span>
+                                <input type="text" maxlength="50" class="form-control" placeholder="Enter Contect person Name">
+                            </div>
+                        </div>
                         <div class="col-md-9" id="section4" style="display: none;">
                             <div class="form-group">
                                 <span>Address
@@ -400,7 +409,7 @@
                                 <input name="ctl00$ContentBody$txtDealerAddress" type="text" maxlength="100" class="form-control" placeholder="Enter  Address" autocomplete="off">
                             </div>
                         </div>
-                        
+
                         <div class="col-md-3" id="section6" style="display: none;">
                             <div class="form-group">
                                 <span>Firm Ladline No.
