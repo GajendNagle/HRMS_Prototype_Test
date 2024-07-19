@@ -5,6 +5,13 @@
         .table th {
             background-color: white;
         }
+        .table td {
+     line-height: 36px !important;
+
+    text-align: center !important;
+    color: var(--vz-body-color);
+ 
+}
 
     </style>
 </asp:Content>
@@ -181,8 +188,7 @@
                                         गाँव का नाम</th>--%>
                                     <th>Work Category<br />
                                         कार्य की श्रेणी</th>
-                                    <th>Work Subcategory<br />
-                                        कार्य का नाम</th>
+                                    <th>Work Subcategory<br />कार्य उपश्रेणी</th>
                                     <th>OIS Code<br />OIS कोड</th>
                                     <th>Address<br />
 पता</th>
@@ -230,11 +236,13 @@
                 </div>
                          
                          <hr />
+                         <div id="btnHide">
                            <button type="button" value="Approved" class="Alert-Save btn btn-success btn-border" 
       >Approved</button>
                  <%--       <button type="button" value="Reject" class="btn btn-outline-danger  w-xl btn-border" 
 onclick="">Reject</button>--%>
                           <button type="button" class="btn btn-outline-danger  w-xl btn-border" data-toggle="modal" data-target="#myModal">Reject</button>
+                             </div>
 
             </fieldset>
           
@@ -285,16 +293,16 @@ onclick="">Reject</button>--%>
                         <div class="table-responsive-xl">
                         <table class="datatable table table-striped table-bordered table-hover" style="border-collapse: collapse;" id="Table1">
                             <tbody>
-                                <tr>
+                                <tr style="white-space:nowrap;" class="text-center">
                                     <th>Sr.No<br />सरल क्रमांक
                                     </th>
-                                    <th style="width:250px;">Milestone Type
+                                    <th>Milestone Type
                                         <br />
                                        माइल स्टोन का प्रकार</th>
-                                    <th style="width:250px;">Milestone
+                                    <th>Milestone
                                         <br />
                                        माइल स्टोन</th>
-                                    <th style="width:250px;">Installment<br />किस्त</th>
+                                    <th>Installment<br />किस्त</th>
                                     <th>Project Exp. Start Date
                                         <br />
                                         परियोजना एक्सपेक्टेड प्रारंभ दिनांक<span style="color: red">*</span></th>
@@ -312,26 +320,27 @@ onclick="">Reject</button>--%>
                                 <tr>
                                     <td>1</td>
                                     <td>  
-         
+   
              
-            <select id="Project" class="form-control select2" >
+            <select id="Project" class="form-control select2 text-center"  >
                 <option value="--Select--">--Select--</option>
                 <option value="Technical">Technical </option>
                 <option value="Financial">Financial</option>
             </select>
+
        </td>
-                                    <td align="center">
-                                        <select class="form-control select2" id="ddlInstallment" onchange="myaddbtn2()">
+                                    <td>
+                                        <select class="form-control select2 text-center" id="ddlInstallment" onchange="myaddbtn2()" >
                                             <option value="--select--">--Select--</option>
                                             <option value="Foundation">Foundation</option>
                                             <option value="Plinth">Plinth</option>
                                             <option value="Mid level completion">Mid level completion</option>
                                             <option value="Final level completion">Final level completion</option>
                                         </select></td>
-                                                                 <td>  
+                                                                 <td  >  
   
       
-     <select id="InstallmentNo" class="form-control select2" style="width:150px;">
+     <select id="InstallmentNo" class="form-control select2 text-center" >
          <option value="--Select--">--Select--</option>
          <option value="1st Installment">1st Installment</option>
          <option value="2nd Installment">2nd Installment</option>
@@ -368,6 +377,7 @@ onclick="">Reject</button>--%>
                             </tbody>
                         </table></div>
                     </div>
+                    <hr />
                     <div class="col-md-12">
                         <input type="button" name="ctl00$ContentBody$btnSave" value="Save" class="btn btn-success btn-border Alert-Confirmation" />
                         <a href="InstallmentCreation.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
@@ -1028,7 +1038,8 @@ onclick="">Reject</button>--%>
                                    
                                }
                                )
-                                 document.getElementById("hide").style.display = (document.getElementById("hide").style.display == 'block') ? 'none' : 'block';
+                               document.getElementById("hide").style.display = (document.getElementById("hide").style.display == 'block') ? 'none' : 'block';
+                               document.getElementById("btnHide").style.display = (document.getElementById("btnHide").style.display == 'none') ? 'block' : 'none';
                            }
                        })
                    });

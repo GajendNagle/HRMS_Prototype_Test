@@ -105,8 +105,7 @@
                                   गाँव का नाम</th>--%>
                                   <th>Work Category<br />
                                       कार्य की श्रेणी</th>
-                                  <th>Work Subcategory<br />
-                                      कार्य का नाम</th>
+                                 <th>Work Subcategory<br />कार्य उपश्रेणी</th>
                                   <th>OIS Code<br />
                                       OIS कोड</th>
                                   <th>Address<br />

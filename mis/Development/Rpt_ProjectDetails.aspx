@@ -141,8 +141,8 @@
                                     <td>Delhi Public School_44561</td>
                                     <td>Bhopal M.P</td>
                                     <td>Work For Bhopal Office</td>
-                                    <td>10000.00</td>
-                                    <td>50000.00</td>
+                                    <td>60000.00</td>
+                                    <td>60000.00</td>
                                     <td>2nd Installment</td>
                                     <td>Done</td>
                                     <td><a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-file"></i></a></td>
@@ -156,10 +156,10 @@
                                     <td>LCH Public School_75561</td>
                                     <td>Bhopal M.P</td>
                                     <td>Work For Bhopal Office</td>
-                                    <td>10000.00</td>
-                                    <td>50000.00</td>
+                                    <td>60000.00</td>
+                                    <td>60000.00</td>
                                     <td>1st Installment</td>
-                                    <td>Pending</td>
+                                    <td>Done</td>
                                     <td><a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-file"></i></a></td>
                                 </tr>
                                 <tr>
@@ -171,10 +171,10 @@
                                     <td>Delhi Public School_44561</td>
                                     <td>Bhopal M.P</td>
                                     <td>Work For Bhopal Office</td>
-                                    <td>10000.00</td>
-                                    <td>50000.00</td>
+                                    <td>60000.00</td>
+                                    <td>60000.00</td>
                                     <td>4th Installment</td>
-                                    <td>Under Progress</td>
+                                    <td>Done</td>
                                     <td><a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-file"></i></a></td>
                                 </tr>
                                 <tr>
@@ -186,10 +186,10 @@
                                     <td>SVM Public School_44165</td>
                                     <td>Betul M.P.</td>
                                     <td>Work For Bhopal Office</td>
-                                    <td>10000.00</td>
-                                    <td>50000.00</td>
+                                    <td>60000.00</td>
+                                    <td>60000.00</td>
                                     <td>2nd Installment</td>
-                                    <td>Pending</td>
+                                    <td>Done</td>
                                     <td><a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-file"></i></a></td>
                                 </tr>
                             </table>

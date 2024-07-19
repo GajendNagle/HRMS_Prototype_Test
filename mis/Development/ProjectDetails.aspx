@@ -187,8 +187,7 @@
                                         गाँव का नाम</th>--%>
                                         <th>Work Category<br />
                                             कार्य की श्रेणी</th>
-                                        <th>Work Subcategory<br />
-                                            कार्य का नाम</th>
+                                       <th>Work Subcategory<br />कार्य उपश्रेणी</th>
                                         <th>OIS Code<br />
                                             OIS कोड</th>
                                         <th>Address<br />
@@ -211,8 +210,8 @@
                                             अनुरोध करने के लिए भेजें</th>
                                         <th id="Status" class="text-center" style="display: none;">Status<br />
                                             स्थिति</th>
-                                        <th id="Remark" class="text-center" style="display: none;">Remark<br />
-                                            टिप्पणी</th>
+                                       <%-- <th id="Remark" class="text-center" style="display: none;">Remark<br />
+                                            टिप्पणी</th>--%>
                                     </tr>
                                 </thead>
                                 <tbody id="tbody">
@@ -245,8 +244,8 @@
     <button id="BtnBack" type="button" class="Alert-Save btn btn-outline-primary w-xl  fs-13 me-4 rounded-4 ">Send To Request HO</button></td>
                                         <td id="InputBox" style="display: none;">
                                             <%--<input type="text" class="form-control" style="width: 150px;" />--%> Panding For HO</td>
-                                        <td id="remark" style="display: none;">
-                                            <%--<textarea class="form-control" style="width: 150px;" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>--%> Work in Progress</td>
+                                     <%--   <td id="remark" style="display: none;">--%>
+                                            <%--<textarea class="form-control" style="width: 150px;" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>--%><%-- Work in Progress</td>--%>
 
                                     </tr>
                                 </tbody>
@@ -494,12 +493,12 @@
 
 
     <%--<script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var checkbox = document.getElementById('vehicle1');
-            var modalElement = document.getElementById('viewModel');
-            var modal = new bootstrap.Modal(modalElement, {});
+        document.addeventlistener('domcontentloaded', function () {
+            var checkbox = document.getelementbyid('vehicle1');
+            var modalelement = document.getelementbyid('viewmodel');
+            var modal = new bootstrap.modal(modalelement, {});
 
-            checkbox.addEventListener('change', function () {
+            checkbox.addeventlistener('change', function () {
                 if (this.checked) {
                     modal.show();
                 } else {
@@ -507,7 +506,7 @@
                 }
             });
 
-            modalElement.addEventListener('hidden.bs.modal', function () {
+            modalelement.addeventlistener('hidden.bs.modal', function () {
                 checkbox.checked = false;
             });
         });
@@ -551,8 +550,8 @@
                          showCancelButton: true,
                          showCloseButton: true,
                          preConfirm: (e) => {
-                             document.getElementById('Remark').style.display = "table-cell";
-                             document.getElementById('remark').style.display = "table-cell";
+                             //document.getElementById('Remark').style.display = "table-cell";
+                             //document.getElementById('remark').style.display = "table-cell";
 
                              document.getElementById('Status').style.display = "table-cell";
                              document.getElementById('InputBox').style.display = "table-cell";
@@ -570,7 +569,7 @@
                                  type: 'success',
                                  title: 'Success!',
                                  text: 'Record Send Successfully!',
-                                 timer: 2000
+                                 timer: 20000
                              });
                          }
                      });

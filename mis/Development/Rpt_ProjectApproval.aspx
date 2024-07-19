@@ -16,7 +16,7 @@
                             <a href="#Development" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Development</span></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#DevelopmentReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Development')"aria-expanded="false"><span>Development Report</span></a>
+                            <a href="#DevelopmentReport" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('Development')" aria-expanded="false"><span>Development Report</span></a>
                         </li>
                         <li class="breadcrumb-item">Project Approval Report</li>
                     </ol>
@@ -144,8 +144,8 @@
                                     <td>Delhi Public School_44561</td>
                                     <td>Bhopal M.P</td>
                                     <td>Work For Bhopal Office</td>
-                                    <td>10000.00</td>
-                                    <td>50000.00</td>
+                                    <td>60000.00</td>
+                                    <td>60000.00</td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -156,8 +156,8 @@
                                     <td>LCH Public School_75561</td>
                                     <td>Bhopal M.P</td>
                                     <td>Work For Bhopal Office</td>
-                                    <td>10000.00</td>
-                                    <td>50000.00</td>
+                                    <td>60000.00</td>
+                                    <td>60000.00</td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
@@ -168,8 +168,8 @@
                                     <td>Delhi Public School_44561</td>
                                     <td>Bhopal M.P</td>
                                     <td>Work For Bhopal Office</td>
-                                    <td>10000.00</td>
-                                    <td>50000.00</td>
+                                    <td>60000.00</td>
+                                    <td>60000.00</td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
@@ -180,8 +180,8 @@
                                     <td>SVM Public School_44165</td>
                                     <td>Betul M.P.</td>
                                     <td>Work For Bhopal Office</td>
-                                    <td>10000.00</td>
-                                    <td>50000.00</td>
+                                    <td>60000.00</td>
+                                    <td>60000.00</td>
                                 </tr>
                             </table>
                         </div>

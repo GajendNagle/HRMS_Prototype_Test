@@ -146,8 +146,8 @@
                                     <td>Delhi Public School_44561</td>
                                     <td>Bhopal M.P</td>
                                     <td>Work For Bhopal Office</td>
-                                    <td>10000.00</td>
-                                    <td>50000.00</td>
+                                    <td>60000.00</td>
+                                    <td>60000.00</td>
                                     <td>2nd Installment</td>
                                 </tr>
                                 <tr>
@@ -159,8 +159,8 @@
                                     <td>LCH Public School_75561</td>
                                     <td>Bhopal M.P</td>
                                     <td>Work For Bhopal Office</td>
-                                    <td>10000.00</td>
-                                    <td>50000.00</td>
+                                    <td>60000.00</td>
+                                    <td>60000.00</td>
                                     <td>1st Installment</td>
                                 </tr>
                                 <tr>
@@ -172,8 +172,8 @@
                                     <td>Delhi Public School_44561</td>
                                     <td>Bhopal M.P</td>
                                     <td>Work For Bhopal Office</td>
-                                    <td>10000.00</td>
-                                    <td>50000.00</td>
+                                    <td>60000.00</td>
+                                    <td>60000.00</td>
                                     <td>4th Installment</td>
                                 </tr>
                                 <tr>
@@ -185,8 +185,8 @@
                                     <td>SVM Public School_44165</td>
                                     <td>Betul M.P.</td>
                                     <td>Work For Bhopal Office</td>
-                                    <td>10000.00</td>
-                                    <td>50000.00</td>
+                                    <td>60000.00</td>
+                                    <td>60000.00</td>
                                     <td>2nd Installment</td>
                                 </tr>
                             </table>
