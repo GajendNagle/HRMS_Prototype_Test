@@ -1083,8 +1083,8 @@
 
             function hideShowCellsAndHeaders(columnIndex) {   // displaying required data only
                 var selector = "#hideshowTable tr td:nth-child(" + (columnIndex + 1) + "), #hideshowTable thead th:nth-child(" + (columnIndex + 1) + ")";
-                $(selector).each(function () {      
-                    $(this).style = "display:table-cell";
+                $(selector).each(function () {
+                    $(this).css("display", "table-cell");
                 });
             }
             for (var i = 0; i < selectedValues.length; i++) {
