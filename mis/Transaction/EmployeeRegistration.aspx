@@ -249,7 +249,7 @@
                                                                         Age
                                                                         <br />
                                                                         उम्र<span style="color: red">*</span></label>
-                                                                    <input readonly="readonly" name="ename" id="txtAge" type="text" class="form-control" autocomplete="off" placeholder="Employee Age" />
+                                                                    <input name="ename" id="txtAge" type="text" class="form-control" autocomplete="off" placeholder="Employee Age" />
                                                                 </div>
                                                             </div>
                                                         </div>

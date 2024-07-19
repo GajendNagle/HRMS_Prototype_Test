@@ -193,7 +193,7 @@
                             <div class="table-responsive">
                                 <table class="table table-bordered">
                                     <thead>
-                                        <tr>
+                                        <tr class="text-center nowrap">
                                             <th>Sr.No.
                                             <br />
                                                 सरल क्र.</th>
@@ -203,87 +203,136 @@
                                                     <label for="checkAll">All</label>
                                                 </div>
                                             </th>
-                                            <th>Employee's name with ID
+                                            <th>Employee Name 
                                             <br />
-                                                आई डी सहित कर्मचारी का नाम</th>
+                                                कर्मचारी का नाम</th>
+                                            <th>Employee ID<br />
+                                                कर्मचारी की आई डी</th>
 
                                             <th>Designation
                                             <br />
                                                 पद</th>
+                                            <th>Department<br />
+                                                विभाग</th>
 
-                                            <th>Sankul Name
+                                            <%--<th>Sankul Name
                                             <br />
                                                 संकुल का नाम
                                             </th>
                                             <th>School Name
                                             <br />
-                                                स्कूल का नाम</th>
-                                            <th>View More
+                                                स्कूल का नाम</th>--%>
+                                            <%--<th>View More
                                             <br />
                                                 अधिक विवरण देखे</th>
                                             <th>Edit
                                             <br />
                                                 संपादित करें
-                                            </th>
+                                            </th--%>
                                             <th>Status
                                             <br />
                                                 स्थिति</th>
+                                            <th>Action<br />
+                                                कार्रवाई</th>
                                         </tr>
                                     </thead>
                                     <tr>
-                                    <tr>
+                                    <tr class="text-center nowrap">
                                         <td>1</td>
                                         <td scope="col">
                                             <input type="checkbox" id="CheckBox1" />
                                         </td>
-                                        <td>Shri S.S. Soni-0059</td>
-                                        <td>UDC</td>
+                                        <td>Raghav Soni</td>
+                                        <td>DF7660</td>
+                                        <td>Teacher(UDE)</td>
+                                        <td>Department of Eduction</td>
+                                        <%-- <td>UDC</td>
                                         <td>23430601402 - Govt. PS Ambakhapa</td>
-                                        <td>23320200505 - NEW BEST CONVENT SCHOOL</td>
+                                        <td>23320200505 - NEW BEST CONVENT SCHOOL</td>--%>
 
-                                        <td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                        <td><a class="alert-edit"><i class="fa fa-pen" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"></i></a></td>
+                                        <%--                 <td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
+                                        <td><a class="alert-edit"><i class="fa fa-pen" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"></i></a></td>--%>
                                         <td>Pending</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td scope="col">
-                                            <input type="checkbox" id="CheckBox2" />
+                                        <td class="text-center" style="white-space: nowrap">
+                                            <button id="BtnBack1" class="Alert-Save1 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+                                                Edit Personal Info
+                                            </button>
+                                            <button id="BtnBack2" class="Alert-Save2 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+                                                Edit Official Info
+                                            </button>
+                                            <button id="BtnBack3" class="Alert-Save3 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+                                                Edit Bank Info
+                                            </button>
                                         </td>
-                                        <td>R.K. Dubey-0089</td>
-                                        <td>UDC</td>
-                                        <td>23430601401 - Govt. PS (Boys) Paradsinga</td>
-                                        <td>23320200601 - SRASHTI ENGLISH SCHOOL</td>
-                                        <td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                        <td><a class="alert-edit"><i class="fa fa-pen" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"></i></a></td>
-                                        <td>Pending</td>
                                     </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td scope="col">
-                                            <input type="checkbox" id="CheckBox3" />
-                                        </td>
-                                        <td>Pradeep Mishra-0065</td>
-                                        <td>UDC</td>
-                                        <td>23430601401 - Govt. PS Alesur</td>
-                                        <td>23350100107 - NATIONAL PUBLIC ENGLISH SCHOOL </td>
-                                        <td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                        <td><a class="alert-edit"><i class="fa fa-pen" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"></i></a></td>
-                                        <td>Pending</td>
-                                    </tr>
-                                    <tr>
+                                                                   <tr  class="text-center nowrap">
+                                     <td>2</td>
+                                     <td scope="col">
+                                         <input type="checkbox" id="CheckBox2" />
+                                     </td>
+                                     <td>ohini Gupta</td>
+                                     <td>DH5148</td>
+                                     <td>Commissioner</td>
+                                     <td>Department of Eduction</td>
+                                     <%-- <td>UDC</td>
+                                     <td>23430601402 - Govt. PS Ambakhapa</td>
+                                     <td>23320200505 - NEW BEST CONVENT SCHOOL</td>--%>
+
+                                     <%--                 <td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
+                                     <td><a class="alert-edit"><i class="fa fa-pen" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"></i></a></td>--%>
+                                     <td>Pending</td>
+                                     <td class="text-center" style="white-space:nowrap">
+                                         <button id="BtnBack4" class="Alert-Save1 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+                                             Edit Personal Info
+                                         </button>
+                                            <button id="BtnBack5" class="Alert-Save2 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+    Edit Official Info
+</button>
+                                            <button id="BtnBack6" class="Alert-Save3 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+    Edit Bank Info
+</button>
+                                     </td>
+                                 </tr>                                    <tr  class="text-center nowrap">
+                                     <td>3</td>
+                                     <td scope="col">
+                                         <input type="checkbox" id="CheckBox3" />
+                                     </td>
+                                     <td>Raghav Soni</td>
+                                     <td>MW 0580</td>
+                                     <td>Teacher(UDE)</td>
+                                     <td>Department of Eduction</td>
+                                     <%-- <td>UDC</td>
+                                     <td>23430601402 - Govt. PS Ambakhapa</td>
+                                     <td>23320200505 - NEW BEST CONVENT SCHOOL</td>--%>
+
+                                     <%--                 <td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
+                                     <td><a class="alert-edit"><i class="fa fa-pen" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"></i></a></td>--%>
+                                     <td>Pending</td>
+                                     <td class="text-center" style="white-space:nowrap">
+                                         <button id="BtnBack7" class="Alert-Save1 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+                                             Edit Personal Info
+                                         </button>
+                                            <button id="BtnBack8" class="Alert-Save2 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+    Edit Official Info
+</button>
+                                            <button id="BtnBack9" class="Alert-Save3 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+    Edit Bank Info
+</button>
+                                     </td>
+                                 </tr>
+                                    <%--    <tr>
                                         <td>4</td>
                                         <td scope="col">
                                             <input type="checkbox" id="CheckBox4" />
                                         </td>
                                         <td>Dhanraj Sharma-0060</td>
                                         <td>UDC</td>
-                                        <td>23430603004 - Govt. PS (Boys) Berdi</td>
-                                        <td>23320200504 - SRASHTI ENGLISH SCHOOL</td>
-                                        <td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
-                                        <td><a class="alert-edit"><i class="fa fa-pen" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"></i></a></td>
-                                        <td>Pending</td>
-                                    </tr>
+                                        <td>23430603004 - Govt. PS (Boys) Berdi</td>--%>
+                                    <%--  <td>23320200504 - SRASHTI ENGLISH SCHOOL</td>--%>
+                                    <%--<td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
+                                        <td><a class="alert-edit"><i class="fa fa-pen" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"></i></a></td>--%>
+                                    <%--<td>Pending</td>
+                                    </tr>--%>
                                 </table>
                             </div>
                         </div>
@@ -1201,7 +1250,7 @@
                                                         </select></td>
                                                     <th>Height :</th>
                                                     <td>
-                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Height IN (C.M.)" value="5'7"/></td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Height IN (C.M.)" value="5'7" /></td>
                                                     <th>Caste :</th>
                                                     <td>
                                                         <select class="form-control select2">
@@ -1217,7 +1266,7 @@
 
                                                     <th>Sub Caste :</th>
                                                     <td>
-                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Sub Caste" value="Purohit "/></td>
+                                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Sub Caste" value="Purohit " /></td>
                                                     <th>Religion :</th>
                                                     <td>
                                                         <select class="form-control select2">
@@ -2784,7 +2833,7 @@
                                                     <td>
                                                         <input type="file" class="form-control" onchange="displayImage(this)" /></td>
                                                     <td class="text-center">
-                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" ></i></button>
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
 
                                                     </td>
                                                 </tr>
@@ -2799,7 +2848,7 @@
                                                     <td>
                                                         <input type="file" class="form-control" onchange="displayImage(this)" /></td>
                                                     <td class="text-center">
-                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" ></i></button>
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
 
                                                     </td>
                                                 </tr>
@@ -2815,7 +2864,7 @@
                                                     <td>
                                                         <input type="file" class="form-control" onchange="displayImage(this)" /></td>
                                                     <td class="text-center">
-                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye" ></i></button>
+                                                        <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
 
                                                     </td>
                                                 </tr>
@@ -2898,8 +2947,9 @@
                                                         <label>
                                                             10th Marksheet<br />
                                                             10वीं की मार्कशीट  :</label></td>
-     
-                                                    <td><input type="file" class="form-control" onchange="displayImage(this)" /></td>
+
+                                                    <td>
+                                                        <input type="file" class="form-control" onchange="displayImage(this)" /></td>
                                                     <td class="text-center">
                                                         <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
                                                     </td>
@@ -2912,7 +2962,8 @@
                                                             12वीं की मार्कशीट  :
                                                         </label>
                                                     </td>
-                                                    <td><input type="file" class="form-control" onchange="displayImage(this)" /></td>
+                                                    <td>
+                                                        <input type="file" class="form-control" onchange="displayImage(this)" /></td>
                                                     <td class="text-center">
                                                         <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
 
@@ -2926,7 +2977,8 @@
                                                             यूजी सर्टिफिकेट  :
                                                         </label>
                                                     </td>
-                                                    <td><input type="file" class="form-control" onchange="displayImage(this)" /></td>
+                                                    <td>
+                                                        <input type="file" class="form-control" onchange="displayImage(this)" /></td>
                                                     <td class="text-center">
                                                         <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
 
@@ -2940,7 +2992,8 @@
                                                             पीजी प्रमाणपत्र अपलोड करें :
                                                         </label>
                                                     </td>
-                                                    <td><input type="file"  class="form-control" onchange="displayImage(this)" /></td>
+                                                    <td>
+                                                        <input type="file" class="form-control" onchange="displayImage(this)" /></td>
                                                     <td class="text-center">
                                                         <button type="button" class="btn view-btn btn-outline-info"><i class="fas fa-eye"></i></button>
 
@@ -2954,9 +3007,10 @@
                                                             डिप्लोमा प्रमाणपत्र  :
                                                         </label>
                                                     </td>
-                                                    <td><input type="file"  class="form-control" onchange="displayImage(this)" /></td>
+                                                    <td>
+                                                        <input type="file" class="form-control" onchange="displayImage(this)" /></td>
                                                     <td class="text-center">
-                                                        <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye" ></i></button>
+                                                        <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye"></i></button>
 
                                                     </td>
                                                 </tr>
@@ -2968,7 +3022,8 @@
                                                             अन्य प्रमाणपत्र :
                                                         </label>
                                                     </td>
-                                                    <td><input type="file"  class="form-control" onchange="displayImage(this)" /></td>
+                                                    <td>
+                                                        <input type="file" class="form-control" onchange="displayImage(this)" /></td>
                                                     <td class="text-center">
                                                         <button type="button" class="btn view-but btn-outline-info"><i class="fas fa-eye"></i></button>
                                                     </td>
@@ -3348,6 +3403,168 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+     <script>
+         debugger;
+         !function ($) {
+             "use strict";
+             var SweetAlert = function () { };
+             //examples
+             SweetAlert.prototype.init = function () {
+                 //Basic
+                 //Success Message
+                 $('.Alert-Save1').click(function () {
+                     Swal.fire({
+                         title: 'Are you sure?',
+                         text: "Do you want to Edit Personal Information ?",
+                         type: 'warning',
+                         showCancelButton: true,
+                         confirmButtonColor: '#3085D6',
+                         cancelButtonColor: '#d33',
+                         confirmButtonText: 'Yes'
+                         //animation: false,
+                         //customClass: {
+                         //    popup: 'animated tada'
+                         //}
+                     }).then((result) => {
+                         if (result.value) {
+                             Swal.fire({
+                                 type: 'success',
+                                 title: 'Success!',
+                                 text: 'Record proceed Successfully!',
+                                 timer: 2000,
+
+                                 // animation: false,<a href="">TeacherFillReport.aspx</a>
+                                 // customClass: {
+                                 //     popup: 'animated tada'
+                                 // }
+                             }
+                             ).then(() => {
+                                 // Redirect to another page after success message is closed
+                                 window.location.href = 'EmployeeRegistration.aspx';
+                             });
+                             var x = document.getElementById("#navpills-1");
+                             if (x.style.display === "none") {
+                                 x.style.display = "block";
+                             } else {
+                                 x.style.display = "block";
+                             }
+                         }
+                     })
+                 });
+             },
+
+
+                 $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
+         }(window.jQuery),
+             //initializing
+             function ($) {
+                 "use strict";
+                 $.SweetAlert.init()
+             }(window.jQuery);
+     </script>
+    <script>
+        debugger;
+        !function ($) {
+            "use strict";
+            var SweetAlert = function () { };
+            //examples
+            SweetAlert.prototype.init = function () {
+                //Basic
+                //Success Message
+                $('.Alert-Save2').click(function () {
+                    Swal.fire({
+                        title: 'Are you sure?',
+                        text: "Do you want to Edit Official Information ?",
+                        type: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#3085D6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'Yes'
+                        //animation: false,
+                        //customClass: {
+                        //    popup: 'animated tada'
+                        //}
+                    }).then((result) => {
+                        if (result.value) {
+                            Swal.fire({
+                                type: 'success',
+                                title: 'Success!',
+                                text: 'Record proceed Successfully!',
+                                timer: 2000,
+
+                                // animation: false,<a href="">TeacherFillReport.aspx</a>
+                                // customClass: {
+                                //     popup: 'animated tada'
+                                // }
+                            }
+                            ).then(() => {
+                                // Redirect to another page after success message is closed
+                                window.location.href = 'EmployeeRegistration.aspx';
+                            });
+                            var x = document.getElementById("#navpills-2");
+                            if (x.style.display === "none") {
+                                x.style.display = "block";
+                            } else {
+                                x.style.display = "block";
+                            }
+                        }
+                    })
+                });
+            },
+
+
+                $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
+        }(window.jQuery),
+            //initializing
+            function ($) {
+                "use strict";
+                $.SweetAlert.init()
+            }(window.jQuery);
+    </script>
+ <script>
+     (function ($) {
+         "use strict";
+         var SweetAlert = function () { };
+         SweetAlert.prototype.init = function () {
+             //Basic
+             //Success Message
+             $('.Alert-Save3').click(function () {
+                 Swal.fire({
+                     title: 'Are you sure?',
+                     text: "Do you want to Edit Bank Information ?",
+                     type: 'warning',
+                     showCancelButton: true,
+                     confirmButtonColor: '#3085D6',
+                     cancelButtonColor: '#d33',
+                     confirmButtonText: 'Yes'
+                 }).then((result) => {
+                     if (result.value) {
+                         Swal.fire({
+                             type: 'success',
+                             title: 'Success!',
+                             text: 'Record proceed Successfully!',
+                             timer: 2000,
+                         }).then(() => {
+                             // Redirect to another page after success message is closed
+                             window.location.href = 'EmployeeRegistration.aspx#navpills-3';
+                         });
+                         var navPills3 = document.getElementById("navpills-3");
+                         var tabMenu = $('a[href="#navpills-3"]');
+                         navPills3.style.display = 'block';
+                         tabMenu.closest('li').addClass('active');
+                     }
+                 })
+             });
+         };
+         $.SweetAlert = new SweetAlert();
+         $.SweetAlert.Constructor = SweetAlert;
+     }(window.jQuery));
+
+     $(document).ready(function () {
+         $.SweetAlert.init();
+     });
+ </script>
+
     <script>
         function toggleAll(source) {
             var checkboxes = document.querySelectorAll('table input[type="checkbox"]');
