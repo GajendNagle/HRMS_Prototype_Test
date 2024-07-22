@@ -1347,7 +1347,7 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="nav-item">
+                                        <%--<li class="nav-item">
                                             <a href="#TransportManagementReport" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="TransportManagementReport"><i class="ri-menu-line"></i>Transport Management Report</a>
                                             <div class="collapse menu-dropdown" id="TransportManagementReport">
@@ -1355,12 +1355,12 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleRegistrationReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Registration Report</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleAllotmentReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Allotment Report</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleMaintenanceReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Maintenance Report</a></li>
-                                                    <li class="nav-item"><%--<a class="nav-link" href="/mis/Transaction/MaintenanceStatusReport.aspx"><i class="ri-file-list-3-line"></i>Maintenance Status Report</a>--%></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/MaintenanceStatusReport.aspx"><i class="ri-file-list-3-line"></i>Maintenance Status Report</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleInsuranceReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Insurance Report </a></li>
-                                                    <li class="nav-item"><%--<a class="nav-link" href="/mis/Transaction/VehicleDisposeReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Dispose Report</a>--%></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleDisposeReport.aspx"><i class="ri-file-list-3-line"></i>Vehicle Dispose Report</a></li>
                                                 </ul>
                                             </div>
-                                        </li>
+                                        </li>--%>
                                         <li class="nav-item">
                                             <a href="#SchoolManagementSystem" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="SchoolManagementSystem"><i class="ri-menu-line"></i>School Management System</a>
