@@ -66,7 +66,8 @@
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Number of Decimal Places (0-4) <br />
+                                Enter Number of Decimal Places (0-4)
+                                <br />
                                 दशमलव संख्या दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter UQC Code" onkeypress="return hindiOnly();" />
                         </div>
@@ -109,32 +110,37 @@
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
-                                <tr>
-                                    <th>Sr.No. /<br />
-                                        क्रमांक</th>
-                                    <th>Unit Name / 
+                                <thead class="nowrap">
+                                    <tr>
+                                        <th>Sr.No.
                                         <br />
-                                        इकाई का नाम
-                                    </th>
-                                    <th>UQC Code / 
+                                            सरल क्र.</th>
+                                        <th>Unit Name  
+                                        <br />
+                                            इकाई का नाम
+                                        </th>
+                                        <th>UQC Code  
      <br />
-                                        UQC कोड
-                                    </th>
-                                    <th>Number of Decimal Places /
+                                            UQC कोड
+                                        </th>
+                                        <th>Number of Decimal Places 
                                         <br />
-                                        दशमलव संख्या 
-                                    </th>
-                                    <th>Status(Active - Yes /<br />
-                                        InActive - No)</th>
-                                    <th>Action</th>
-                                </tr>
+                                            दशमलव संख्या 
+                                        </th>
+                                        <th>Status(Active/InActive)<br />
+                                            स्थिति (सक्रिय/निष्क्रिय)</th>
+                                        <th>Action<br />
+                                            कार्यवाहीं</th>
+                                    </tr>
+                                </thead>
                                 <tr>
                                     <td>1</td>
                                     <td>kilometer</td>
                                     <td>KM</td>
                                     <td>3</td>
                                     <td>Active</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><a class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></a>
+                                        <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -142,7 +148,8 @@
                                     <td>NUM</td>
                                     <td>3</td>
                                     <td>InActive</td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>|<a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                    <td><a class="Alert-Edit btn btn-outline-primary "><i class="fa fa-pen"></i></a>
+                                        <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>
