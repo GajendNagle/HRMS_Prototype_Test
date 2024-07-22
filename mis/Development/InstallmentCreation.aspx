@@ -342,8 +342,8 @@ onclick="">Reject</button>--%>
       
      <select id="InstallmentNo" class="form-control select2 text-center" >
          <option value="--Select--">--Select--</option>
-         <option value="1st Installment">1st Installment</option>
-         <option value="2nd Installment">2nd Installment</option>
+          <option value="1st Installment">1st Installment</option>
+          <option value="2nd Installment">2nd Installment</option>
           <option value="3rd Installment">3rd Installment</option>
           <option value="4th Installment">4th Installment</option>
      </select>

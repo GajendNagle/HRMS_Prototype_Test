@@ -167,7 +167,7 @@
                             <tr style="white-space:nowrap;">
                                 <th>Sr.No.<br />
 सरल क्रमांक</th>
-                                <th>Milestone
+                                <th class="w-xl">Milestone
                                     <br />
 
 
@@ -176,6 +176,7 @@
                                 <th>Select Work Subcategory
                                     <br />
                                     कार्य के प्रकार का चयन करें</th>
+                                 <th>Installment<br />किस्त</th>
                                 <th>Totel  Project Amount(%)<br />
                                   कुल परियोजना राशि(%)<span style="color: red">*</span></th>
                                 <th style="width:fit-content;" class="text-center">Installment Amount<br />
@@ -187,73 +188,80 @@
                                     <br />
                                     टिप्पणी
                                 </th>
-                                   <th style="width:50px;">Send To Request<br />अनुरोध करने के लिए भेजें</th>
+                                <th>Utilization Certificate<br />उपयोगिता प्रमाण पत्र</th>
+                                   <th style="width:50px; display:none" id="Request">Send To Request<br />अनुरोध करने के लिए भेजें</th>
 </tr>
                            
-                            <tr id="TableRow">
-                                <td align="center">1</td>
-                               <%-- <td align="center">1</td>--%>
-                                     <td align="center"> <input type="Text"  name="birthday" class="form-control" value="Foundation" readonly  style="width:150px;"  autocomplete="off" />
+                            <tr id="TableRow" class="text-center nowrap">
+                                <td>1</td>
+                               <%-- <td >1</td>--%>
+                                     <td >Foundation <%--<input type="Text"  name="birthday" class="form-control" value="Foundation" readonly   autocomplete="off" />--%>
       </td>
                             
                                 <td>
-                                     <select  class="form-control " disabled >
+                                   <%--  <select  class="form-control " disabled >--%>
   
-      <option value="A">स्कूल नया निमार्ण</option>
- 
-  </select>
+    <%--  <option value="A">--%>स्कूल नया निमार्ण<%--</option>--%>
+<%-- 
+  </select>--%>
                                 </td>
-                                <td>
-                                    <input type="Text"  name="birthday" class="form-control text-center" value="25%" readonly  autocomplete="off" />
+                                <td>1st Installment</td>
+                                <td>25%
+                                    <%--<input type="Text"  name="birthday" class="form-control text-center" value="25%" readonly  autocomplete="off" />--%>
                                 </td>
-                                <td>
-                                    <input type="Text" value="15000" name="birthday" class="form-control text-center" disabled></td>
+                                <td>15000
+                                   <%-- <input type="Text" value="15000" name="birthday" class="form-control text-center" disabled>--%></td>
                               
                                  <td class="text-center"> <a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-file"></i></a></td>
  <td>
                            <textarea class="form-control" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="completed tasks" style="width:200px;"></textarea>
                                 </td>
-                                <td>    <button id="BtnBack1"  class="Alert-Save btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button"><%--<i class="ri-arrow-go-back-line label-icon align-middle fs-13 me-2"></i>--%> 
+                                <td> <button id="Btn1"  class="Alert-Save5 btn btn-outline-primary  fs-13 me-4 rounded-4 w-xl" type="button">Utilization Certificate</button></td>
+                                <td  style="display:none" id="RequestTd1">    <button id="BtnBack1"  class="Alert-Save btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button"><%--<i class="ri-arrow-go-back-line label-icon align-middle fs-13 me-2"></i>--%> 
    <%-- <i class="fa-regular fa-paper-plane-top  fs-13 me-2"></i>--%> Send Demand</button></td>
                             </tr>
-                            <tr>
-                               <td align="center">2</td>
-                            <%-- <td align="center">1</td>--%>
-                                  <td align="center"> <input type="Text"  name="birthday" class="form-control" value="Plinth" readonly  autocomplete="off" />
+                            <tr class="text-center nowrap">
+                               <td>2</td>
+                            <%-- <td >1</td>--%>
+                                  <td>  Plinth<%--<input type="Text"  name="birthday" class="form-control" value="Plinth" readonly  autocomplete="off" />--%>
   
-                               <td>
-                                    <select  class="form-control " disabled>
+                               <td>स्कूल नया निमार्ण
+                                  <%--  <select  class="form-control " disabled>
  
      <option value="A">स्कूल नया निमार्ण</option>
   
 
     
  </select>
+             --%>                  </td>
+                                <td>2nd Installment</td>
+                               <td>25%
+                                   <%--<input type="Text"  name="birthday" class="form-control text-center" value="25%" readonly  autocomplete="off" />--%>
                                </td>
-                               <td>
-                                   <input type="Text"  name="birthday" class="form-control text-center" value="25%" readonly  autocomplete="off" />
-                               </td>
-                               <td>
-                                   <input type="Text" value="15000" name="birthday" class="form-control text-center" disabled></td>
+                               <td>15000
+                                  <%-- <input type="Text" value="15000" name="birthday" class="form-control text-center" disabled>--%></td>
                             
                                 <td class="text-center"> <a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-file"></i></a></td>
 <td>
                           <textarea class="form-control" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="completed tasks"></textarea>
                                </td>
-                                                           <td><%--  id="TableRow1" style="display:none;"--%>    <button id="BtnBack2" disabled="disabled"  class="Alert-Save1 btn btn-outline-primary w-lg  fs-13 me-4 rounded-4 " type="button">Send Demand</button></td>
+
+                                <td> <button id="Btn2"  class="Alert-Save6 btn btn-outline-primary  fs-13 me-4 rounded-4 w-xl" type="button">Utilization Certificate</button></td>
+                                                           <td   style="display:none" id="RequestTd2"><%--  id="TableRow1" style="display:none;"--%>    <button id="BtnBack2" disabled="disabled"  class="Alert-Save1 btn btn-outline-primary w-lg  fs-13 me-4 rounded-4 " type="button">Send Demand</button></td>
                            </tr>
-                                                       <tr>
-                               <td align="center">3</td>
-                              <%-- <td align="center">1</td>--%>
-                                    <td align="center"> <input type="Text" name="birthday" class="form-control" value="Mid level completion" readonly  autocomplete="off" />
-</td>
+                                                       <tr class="text-center nowrap">
+                               <td>3</td>
+                                                           <td>Mid level completion</td>
+                              <%-- <td >1</td>--%>
+                                   <%-- <input type="Text" name="birthday" class="form-control" value="Mid level completion" readonly  autocomplete="off" />--%>
+
                              
-                               <td>
-                                    <select id="school-subcategory" class="form-control " disabled>
+                               <td>स्कूल नया निमार्ण
+                                    <%--<select id="school-subcategory" class="form-control " disabled>--%>
   <%--   <option value="--Select--">--Select--</option>--%>
     <%-- <option value="A">कक्षा निमार्ण</option>
      <option value="A">इमारत मरम्मत</option>--%>
-     <option value="A">स्कूल नया निमार्ण</option>
+    <%-- <option value="A">स्कूल नया निमार्ण</option>--%>
   <%--   <option value="B">हेंडपंप खनन</option>
      <option value="B">बोरबेल खनन</option>
      <option value="B">पानी की टंकी निर्माण</option>
@@ -267,39 +275,44 @@
      <option value="D">पेपर ब्लाक निर्माण</option>--%>
 
      <%--selection of this next textbox will visible--%>
- </select>
+<%-- </select>
+           --%>                    </td>
+                                                           <td>3rd Installment</td>
+                               <td>25%
+                                 <%--  <input type="Text" name="birthday" class="form-control text-center" value="25%" readonly  autocomplete="off" />--%>
                                </td>
-                               <td>
-                                   <input type="Text" name="birthday" class="form-control text-center" value="25%" readonly  autocomplete="off" />
-                               </td>
-                               <td>
-                                   <input type="Text"  value="15000" name="birthday" class="form-control text-center" disabled></td>
+                               <td>15000
+                                 <%--  <input type="Text"  value="15000" name="birthday" class="form-control text-center" disabled>--%></td>
                              
                                 <td class="text-center"> <a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-file"></i></a></td>
 <td>
                           <textarea class="form-control" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="completed tasks"></textarea>
                                </td>
-                                                           <td> <%--id="TableRow2" style="display:none;">--%>    <button id="BtnBack3" disabled="disabled"  class="Alert-Save2 btn btn-outline-primary w-lg fs-13 me-4 rounded-4 " type="button">Send Demand</button></td>
+
+                                                           <td> <button id="Btn3"  class="Alert-Save7 btn btn-outline-primary  fs-13 me-4 rounded-4 w-xl" type="button">Utilization Certificate</button></td>
+                                                           <td  style="display:none" id="RequestTd3"> <%--id="TableRow2" style="display:none;">--%>    <button id="BtnBack3" disabled="disabled"  class="Alert-Save2 btn btn-outline-primary w-lg fs-13 me-4 rounded-4 " type="button">Send Demand</button></td>
                            </tr>
-                                                       <tr >
-                               <td align="center">4</td>
-                              <%-- <td align="center">1</td>--%>
-                                    <td align="center"> <input type="Text" name="birthday" class="form-control " value="Final level completion" readonly  autocomplete="off" />
+                                                       <tr class="text-center nowrap">
+                               <td>4</td>
+                              <%-- <td >1</td>--%>
+                                    <td>Final level completion <%--<input type="Text" name="birthday" class="form-control " value="Final level completion" readonly  autocomplete="off" />--%>
     
-                               <td>
-                                    <select  class="form-control " disabled>
+                               <td>स्कूल नया निमार्ण
+                                 <%--   <select  class="form-control " disabled>
  
      <option value="A">स्कूल नया निमार्ण</option>
   
 
    
- </select>
+ </select>--%>
+
                                </td>
-                               <td>
-                                   <input type="Text" id="txtInstallmentPer1" name="birthday" class="form-control text-center" value="25%" readonly  autocomplete="off" />
+                                                           <td>4th Installment</td>
+                               <td>25%
+                                <%--   <input type="Text" id="txtInstallmentPer1" name="birthday" class="form-control text-center" value="25%" readonly  autocomplete="off" />--%>
                                </td>
-                               <td>
-                                   <input type="Text" id="txtInstallmentAmount1" value="15000" name="birthday" class="form-control text-center" disabled></td>
+                               <td>15000
+                                   <%--<input type="Text" id="txtInstallmentAmount1" value="15000" name="birthday" class="form-control text-center" disabled>--%></td>
                                <%--<td>
                                    <input type="file" id="docDeathCertificate" asp-for="docDeathCertificate" required pattern=".+\.pdf$" data-pattern-msg="Only Pdf Accept" class="form-control getfileinfo" data-msg="Field is required." onchange="ValidateUploadFile(this,'lnkDeathofCertificate')" />
                                    <span id="spndocDeathCertificateName" style="display: none"></span>
@@ -309,7 +322,9 @@
 <td>
                           <textarea class="form-control" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="completed tasks"></textarea>
                                </td>
-                                                           <td>  <%--id="TableRow3" style="display:none;"> --%>   <button id="BtnBack4"  disabled="disabled" class="Alert-Save4 btn btn-outline-primary w-lg  fs-13  rounded-4 " type="button"><%--<i class="ri-arrow-go-back-line label-icon align-middle fs-13 me-2"></i>--%> 
+
+                                                           <td> <button id="Btn4"  class="Alert-Save8 btn btn-outline-primary  fs-13 me-4 rounded-4 w-xl" type="button">Utilization Certificate</button></td>
+                                                           <td  style="display:none" id="RequestTd4">  <button id="BtnBack4"  disabled="disabled" class="Alert-Save4 btn btn-outline-primary w-lg  fs-13  rounded-4 " type="button"><%--<i class="ri-arrow-go-back-line label-icon align-middle fs-13 me-2"></i>--%> 
    <%-- <i class="fa-regular fa-paper-plane-top  fs-13 me-2"></i>--%> Send Demand</button></td>
                            </tr>
                          
@@ -677,7 +692,194 @@
                  $.SweetAlert.init()
              }(window.jQuery);
      </script>
-   
+
+  <script>
+      (function ($) {
+          "use strict";
+          var SweetAlert = function () {
+              this.init = function () {
+                  // Basic
+                  // Success Message
+                  $('.Alert-Save5').click(function () {
+                      Swal.fire({
+                          title: 'Are you sure?',
+                          text: 'Do you want to Generate Utilization Certificate ?',
+                          type: 'warning',
+                          showCancelButton: true,
+                          confirmButtonColor: '#3085D6',
+                          cancelButtonColor: '#d33',
+                          confirmButtonText: 'Yes'
+                      }).then((result) => {
+                          if (result.value) {
+                              Swal.fire({
+                                  type: 'success',
+                                  title: 'Success!',
+                                  text: 'Generate Utilization Certificate  Successfully! ',
+                                  timer: 2000000
+                              });
+                              document.getElementById("Btn1").innerText = 'View';
+
+                              document.getElementById("Request").style.display = 'table-cell';
+                              document.getElementById("RequestTd1").style.display = 'table-cell';
+                          }
+                      });
+                  });
+              };
+          };
+          $.SweetAlert = new SweetAlert();
+          $.SweetAlert.init();
+      })(window.jQuery);
+  </script>
+    <script>
+        debugger;
+        !function ($) {
+            "use strict";
+            var SweetAlert = function () { };
+            //examples
+            SweetAlert.prototype.init = function () {
+                //Basic
+                //Success Message
+                $('.Alert-Save6').click(function () {
+                    Swal.fire({
+                        title: 'Are you sure?',
+                        text: "Do you want to Generate Utilization Certificate ?",
+                        type: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#3085D6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'Yes'
+                        // animation: false,
+                        // customClass: {
+                        //     popup: 'animated tada'
+                        // }
+                    }).then((result) => {
+                        if (result.value) {
+                            Swal.fire({
+                                type: 'success',
+                                title: 'Success!',
+                                text: 'Generate Utilization Certificate  Successfully! ',
+                                timer: 2000000
+                                // animation: false,
+                                // customClass: {
+                                //     popup: 'animated tada'
+                                // }
+                            }
+                            )
+                            document.getElementById("Btn2").innerText = 'View';
+
+                        }
+                    })
+                });
+            },
+
+                $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
+        }(window.jQuery),
+            //initializing
+            function ($) {
+                "use strict";
+                $.SweetAlert.init()
+            }(window.jQuery);
+    </script>
+    <script>
+        debugger;
+        !function ($) {
+            "use strict";
+            var SweetAlert = function () { };
+            //examples
+            SweetAlert.prototype.init = function () {
+                //Basic
+                //Success Message
+                $('.Alert-Save7').click(function () {
+                    Swal.fire({
+                        title: 'Are you sure?',
+                        text: "Do you want to Generate Utilization Certificate ?",
+                        type: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#3085D6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'Yes'
+                        // animation: false,
+                        // customClass: {
+                        //     popup: 'animated tada'
+                        // }
+                    }).then((result) => {
+                        if (result.value) {
+                            Swal.fire({
+                                type: 'success',
+                                title: 'Success!',
+                                text: 'Generate Utilization Certificate  Successfully! ',
+                                timer: 2000000
+                                // animation: false,
+                                // customClass: {
+                                //     popup: 'animated tada'
+                                // }
+                            }
+                            )
+                            document.getElementById("Btn3").innerText = 'View';
+
+                        }
+                    })
+                });
+            },
+
+                $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
+        }(window.jQuery),
+            //initializing
+            function ($) {
+                "use strict";
+                $.SweetAlert.init()
+            }(window.jQuery);
+    </script>
+   <script>
+       debugger;
+       !function ($) {
+           "use strict";
+           var SweetAlert = function () { };
+           //examples
+           SweetAlert.prototype.init = function () {
+               //Basic
+               //Success Message
+               $('.Alert-Save8').click(function () {
+                   Swal.fire({
+                       title: 'Are you sure?',
+                       text: "Do you want to Generate Utilization Certificate ?",
+                       type: 'warning',
+                       showCancelButton: true,
+                       confirmButtonColor: '#3085D6',
+                       cancelButtonColor: '#d33',
+                       confirmButtonText: 'Yes'
+                       // animation: false,
+                       // customClass: {
+                       //     popup: 'animated tada'
+                       // }
+                   }).then((result) => {
+                       if (result.value) {
+                           Swal.fire({
+                               type: 'success',
+                               title: 'Success!',
+                               text: 'Generate Utilization Certificate  Successfully! ',
+                               timer: 2000000
+                               // animation: false,
+                               // customClass: {
+                               //     popup: 'animated tada'
+                               // }
+                           }
+                           )
+                           document.getElementById("Btn4").innerText = 'View';
+
+                       }
+                   })
+               });
+           },
+
+               $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
+       }(window.jQuery),
+           //initializing
+           function ($) {
+               "use strict";
+               $.SweetAlert.init()
+           }(window.jQuery);
+   </script>
      <%--<script>
          function InstallmentRequest() {
              if (BtnBack1) {
