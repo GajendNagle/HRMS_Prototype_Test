@@ -52,13 +52,15 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
-                <div class="col-lg-10">
-                    <h5 class="card-title">Student Registration /विद्यार्थी  पंजीकरण 
-                    </h5>
+                <div class="col-xl-10 col-md-12">
+                    <div class="marqueecontainerinfo">
+                        <div class="headertext btn btn-primary rounded-pill">छात्र  पंजीकरण विवरण</div>
+                        <div>
+                            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">Student Registration / छात्र पंजीकरण </marquee>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-2 text-end " id="BtnBack" style="display: none;">
-                    <button class="btn btn-primary btn-label waves-effect waves-light rounded-pill" type="button" onclick="Backclickfn()"><i class="ri-arrow-go-back-line label-icon align-middle fs-14 me-1"></i>BACK</button>
-                </div>
+                <div class="col-xl-2 col-md-12 text-end" id="BtnBack" style="display: none;"><a class="btn btn-primary btn-label waves-effect waves-light rounded-pill" onclick="Backclickfn()"><i class="ri-arrow-go-back-line label-icon align-middle fs-14 me-1"></i>BACK</a> </div>
 
             </div>
         </div>
@@ -70,61 +72,32 @@
                     <legend>Student Registration/विद्यार्थी  पंजीकरण</legend>
 
                     <div class="row align-items-end">
-                        <%--<div class="col-md-3">
-                            <div class="form-group">--%>
-                        <%--  <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio1" name="customRadio" class="form-check-input" onclick="myFunction1()">--%>
-                        <%-- <label class="form-check-label" for="customRadio1">
-                                        With Student Samagra ID<br />
-                                        विद्यार्थी समग्र आईडी के साथ<span style="color: red">*</span></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio2" name="customRadio" class="form-check-input" onclick="myFunction2()">
-                                    <label class="form-check-label" for="customRadio11">
-                                        With Family Samagra ID<br />
-                                        परिवार समग्र आईडी के साथ<span style="color: red">*</span></label>
-                                </div>
-                            </div>
-                        </div>--%>
                         <div class="col-md-3" id="StudentSamagraID">
                             <div class="form-group">
                                 <label>
                                     Enter Student  Samagra ID<br />
                                     विद्यार्थी समग्र आईडी
-        <span style="color: red">*</span>
+                                    <span style="color: red">*</span>
                                 </label>
                                 <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Student  Samagra ID" id="StudentSsm" required />
                             </div>
                         </div>
+                        <div class="col-md-3" id="FamilySamagraID">
+                            <div class="form-group">
+                                <label>
+                                    Enter Family  Samagra ID<br />
+                                    विद्यार्थी समग्र आईडी <span style="color: red">*</span>
+                                </label>
+                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Family  Samagra ID" id="FamilySsm" required />
+                            </div>
+                        </div>
                     </div>
                     <div class="row align-items-end">
-                        <div class="col-md-3" id="familySamagraID" style="display: none;">
-                            <div class="form-group">
-                                <label>
-                                    Enter Family Samagra ID<br />
-                                    परिवार समग्र आईडी<span style="color: red">*</span></label>
-                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Family Samagra ID" />
-                            </div>
-                        </div>
-                        <div class="col-md-3" id="StudentSamagraID1" style="display: none;">
-                            <div class="form-group">
-                                <label>
-                                    Enter Student  Samagra ID<br />
-                                    विद्यार्थी समग्र आईडी
-                               <span style="color: red">*</span></label>
-                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Student  Samagra ID" />
-                            </div>
-                        </div>
-
 
                         <div class="col-md-12">
                             <input id="checkbox2" onclick="showhidesavebtn3()" type="checkbox" />
-                            <span class="text-danger fw-bold fs-5">विधार्थी की जानकारी समग्र पोर्टल से  
-लाने के लिये चेक बॉक्स पर क्लिक करे ।</span>
+                            <label for="checkbox2" class="text-danger fw-bold fs-5">विधार्थी की जानकारी समग्र पोर्टल से  
+लाने के लिये चेक बॉक्स पर क्लिक करे ।</label>
                         </div>
 
                     </div>
@@ -134,8 +107,7 @@
                             <!-- Search button triggers search and toggles divs -->
                             <button type="button" class="btn btn-success w-lg btn-border" onclick="DivHide()" id="btn1">
                                 Search</button>
-                            <!-- Clear button (link) -->
-                            <a href="StudentReg.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
+
                         </div>
                     </div>
 
@@ -145,25 +117,7 @@
                     <fieldset>
                         <legend>General Information/सामान्य जानकारी</legend>
                         <div class="row align-items-end">
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>
-                                        Family Samagra ID<br />
-                                        परिवार समग्र आईडी<span style="color: red">*</span></label>
-                                    <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="4105209545" readonly />
-                                </div>
 
-                            </div>
-
-
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>
-                                        Student Samagra ID<br />
-                                        विद्यार्थी समग्र आईडी<span style="color: red">*</span></label>
-                                    <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="85469545" readonly />
-                                </div>
-                            </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
@@ -221,6 +175,18 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
+                                    <label>
+                                        Select Special Category 
+                                    <br />
+                                        विशेष श्रेणी का चयन करें<span style="color: red">*</span>
+                                    </label>
+                                    <select name="SpecialCasteId" id="SpecialCaste2" class="form-select" disabled data-val="true" data-val-required="The SpecialCasteId field is required.">
+                                        <option selected="selected" value="3">Nomadic</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
 
                                     <label>
                                         Religion<br />
@@ -264,7 +230,7 @@
                                     <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="8956231478" readonly />
                                 </div>
                             </div>
-                         
+
                             <div class="col-md-3">
 
                                 <div class="form-group">
@@ -285,7 +251,7 @@
                                 <br />
 
                                         विकलांगता का चयन करें<span style="color: red">*</span></label>
-                                    <select id="options" class="form-control select2" onchange="myFunction3()">
+                                    <select id="options" class="form-control select2" onchange="funDisability()">
                                         <option value="0">Select</option>
                                         <option value="1">Yes</option>
                                         <option value="2">No</option>
@@ -298,7 +264,7 @@
                                         Select   Disability type<br />
                                         विकलांगता का प्रकार
                                 <span style="color: red">*</span></label>
-                                    <select id="ddlHandicappedType" class="form-control select2">
+                                    <select class="form-control select2">
                                         <option>Select</option>
                                         <option value="Cancer/ कैंसर">Blindnes/अंधापन</option>
                                         <option value="Low Vision/कम दृष्टि">Low Vision/कम दृष्टि</option>
@@ -333,7 +299,7 @@
                                         Select  Handicapped Percentage 
      <br />
                                         विकलांगता का प्रतिशत<span style="color: red">*</span></label>
-                                    <select id="ddlHandicappedPercentage" class="form-control select2">
+                                    <select class="form-control select2">
                                         <option>Select</option>
                                         <option value="40 to 50">41 to 50</option>
                                         <option value="51 to 60">51 to 60</option>
@@ -344,7 +310,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <%--  <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
                                         Is there a Freed/Nomadic/Semi-Nomadic Caste
@@ -359,33 +325,13 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
-
-
+                        </div>--%>
                     </fieldset>
                 </div>
-                <fieldset>
+                <fieldset id="divGenralInfo">
                     <legend>General Information/सामान्य जानकारी</legend>
                     <div class="row align-items-end">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Enter Family Samagra ID<br />
-                                    परिवार समग्र आईडी दर्ज करें<span style="color: red">*</span></label>
-                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Family Samagra ID" />
-                            </div>
 
-                        </div>
-
-
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Enter Student Samagra ID<br />
-                                    विद्यार्थी समग्र आईडी दर्ज करें<span style="color: red">*</span></label>
-                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Student Samagra ID" />
-                            </div>
-                        </div>
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
@@ -438,6 +384,22 @@
                                     <option value="Bhopal">OBC</option>
                                     <option value="Bhopal">SC</option>
                                     <option value="Bhopal">ST</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Select Special Category 
+                                    <br />
+                                    विशेष श्रेणी का चयन करें<span style="color: red">*</span>
+                                </label>
+                                <select required name="SpecialCasteId" id="SpecialCasteId" class="form-select" data-val="true" data-val-required="The SpecialCasteId field is required.">
+                                    <option value="0" selected="selected">Select</option>
+                                    <option value="1">Freed</option>
+                                    <option value="3">Nomadic</option>
+                                    <option value="4">Semi-Nomadic Caste</option>
+                                    <option value="5">None Of These</option>
                                 </select>
                             </div>
                         </div>
@@ -504,9 +466,8 @@
                                 <label>
                                     Select  Disability
                            <br />
-
                                     विकलांगता का चयन करें<span style="color: red">*</span></label>
-                                <select id="options1" class="form-control select2" onchange="myFunction3()">
+                                <select id="options1" class="form-select" onchange="myFunction3()">
                                     <option value="0">Select</option>
                                     <option value="1">Yes</option>
                                     <option value="2">No</option>
@@ -565,7 +526,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <%--<div class="col-md-3">
                             <div class="form-group">
                                 <label>
                                     Is there a Freed/Nomadic/Semi-Nomadic Caste
@@ -579,7 +540,7 @@
                                     <option value="71 to 80">इनमें से कोई नहीं है</option>
                                 </select>
                             </div>
-                        </div>
+                        </div>--%>
                     </div>
 
 
@@ -880,7 +841,7 @@
                         <div id="guardianField" class="col-md-3" style="display: none;">
                             <div class="form-group">
                                 <label>
-                                  Enter Name of Guardian<br />
+                                    Enter Name of Guardian<br />
                                     पालक का नाम दर्ज करे   <span style="color: red">*</span>
                                 </label>
                                 <input type="text" class="form-control" placeholder="Enter Name of Guardian" />
@@ -891,7 +852,7 @@
                                 <label>
                                     Select Father  Disability<br />
                                     पिता की विकलांगता का चयन करें<span style="color: red">*</span></label>
-                                <select class="form-control select2" >
+                                <select class="form-control select2">
                                     <option value="0">Select</option>
                                     <option value="1">Yes</option>
                                     <option value="2">No</option>
@@ -918,7 +879,7 @@
                         <div id="FamilyddlDepartment" class="col-md-3" style="display: none;">
                             <div class="form-group">
                                 <label>
-                                 Select Family Occupation<br />
+                                    Select Family Occupation<br />
                                     परिवार का व्यवसाय चुनें
        
                                 </label>
@@ -939,14 +900,14 @@
                                     Enter Guardian Income(Yearly)<br />
                                     पालक की वार्षिक आय दर्ज करें<span style="color: red">*</span></label>
                                 <%--<select id="dates-field2" class="form-control select2">
-     <option>select</option>
-     <option value="0-50000">0-50000</option>
-     <option value="50001-100000">50001-100000</option>
-     <option value="100001-350000">100001-300000</option>
-     <option value="100001-350000">100001-300000</option>
-     <option value="300000-500000">300000-500000</option>
-     <option value="more than 500000">More Than 500000</option>
- </select>--%>
+                                <option>select</option>
+                                <option value="0-50000">0-50000</option>
+                                <option value="50001-100000">50001-100000</option>
+                                <option value="100001-350000">100001-300000</option>
+                                <option value="100001-350000">100001-300000</option>
+                                <option value="300000-500000">300000-500000</option>
+                                <option value="more than 500000">More Than 500000</option>
+                            </select>--%>
 
                                 <select name="ename" type="text" class="form-control select2" autocomplete="off" placeholder="Enter Guardian Income">
                                     <option>select</option>
@@ -963,7 +924,7 @@
                         <div class="col-md-3" id="GuardianddlDepartment" style="display: none;">
                             <div class="form-group">
                                 <label>
-                                   Select Guardian Occupation<br />
+                                    Select Guardian Occupation<br />
                                     पालक  का व्यवसाय चुनें</label>
                                 <select id="dropdown1" onchange="toggleSection1()" class="form-control select2">
                                     <option>Select</option>
@@ -977,7 +938,7 @@
                             </div>
                         </div>
 
-                        
+
                         <div class="col-md-3" id="DepartmentName" style="display: none;">
                             <div class="form-group">
                                 <label>
@@ -1057,9 +1018,6 @@
                                 </select>
                             </div>
                         </div>--%>
-
-                   
-
                     </div>
                 </fieldset>
                 <fieldset>
@@ -1216,7 +1174,7 @@
                                     छात्र निवास के लिए लागू का चयन करें</label>
                                 <select class="form-control select2" onchange="myFunction5()">
                                     <option value="0">Select</option>
-                                   <%-- <option value="1">Select</option>--%>
+                                    <%-- <option value="1">Select</option>--%>
                                     <option value="2">Day Scholar</option>
                                     <option value="3">Private Hostel</option>
                                     <option value="4">Govt. Hostel</option>
@@ -1352,7 +1310,7 @@
                                     छात्र निवास के लिए लागू का चयन करें</label>
                                 <select class="form-control select2" onchange="myFunction5()">
                                     <option value="0">Select</option>
-                                  <%--  <option value="1">Select</option>--%>
+                                    <%--  <option value="1">Select</option>--%>
                                     <option value="2">Day Scholar</option>
                                     <option value="3">Private Hostel</option>
                                     <option value="4">Govt. Hostel</option>
@@ -1649,7 +1607,7 @@
             //else if (checkbox2.checked === false && checkbox1.checked === false && checkbox3.checked === false && checkbox4.checked === false) {
             //    showsavebtn.style.display = "none"
             //}
-            else  {
+            else {
                 showsavebtn2.style.display = "none"
             }
         }
@@ -1657,16 +1615,22 @@
     <script>
         function showhidesavebtn3() {
             var checkbox1 = document.getElementById("checkbox2");
-           
+
             var search = document.getElementById("search");
             var StudentSsm = document.getElementById("StudentSsm")
             if (checkbox1.checked) {
-                search.style.display = "block"
+                search.style.display = "block";
+                checkbox1.nextElementSibling.classList.remove('text-danger');
+                checkbox1.nextElementSibling.classList.add('text-success');
+
+
             }
-            
+
             else if (checkbox1.checked == false) {
                 search.style.display = "none"
                 show.style.display = "none"
+                checkbox1.nextElementSibling.classList.remove('text-success');
+                checkbox1.nextElementSibling.classList.add('text-danger');
             }
             else {
                 search.style.display = "none"
@@ -1725,7 +1689,25 @@
                 document.getElementById('eye').style.display = "none";
                 document.getElementById('file').style.display = "none";
             }
-        }</script>
+        }
+        function funDisability() {
+            var ForwordTo = document.getElementById("options").value;
+            if (ForwordTo == "1") {
+                document.getElementById('hiddenElement').style.display = "block";
+                document.getElementById('HandicapePercentage').style.display = "block";
+                document.getElementById('DisCertificate').style.display = "block";
+                document.getElementById('eye').style.display = "block";
+                document.getElementById('file').style.display = "block";
+            } else {
+                document.getElementById('hiddenElement').style.display = "none";
+                document.getElementById('HandicapePercentage').style.display = "none";
+                document.getElementById('DisCertificate').style.display = "none";
+                document.getElementById('eye').style.display = "none";
+                document.getElementById('file').style.display = "none";
+            }
+        }
+
+    </script>
 
     <script>
         function myFunction5() {
@@ -1804,7 +1786,8 @@
     <script>
         function DivHide() {
             /*document.getElementById("hide").style.display = (document.getElementById("hide").style.display == 'block') ? 'none' : 'block';*/
-            document.getElementById("show").style.display = (document.getElementById("show").style.display == 'block') ? 'none' : 'block';
+            document.getElementById("show").style.display = 'block';
+            document.getElementById("divGenralInfo").style.display = 'none';
         }
 
     </script>
@@ -1971,57 +1954,57 @@
             }
         }
     </script>
-         <script>
-             function toggleGuardianField() {
-                 var orphanSelect = document.getElementById("orphanSelect");
-                 var guardianField = document.getElementById("guardianField");
-                 var GuardianddlDepartment = document.getElementById("GuardianddlDepartment");
-                 var FamilyddlDepartment = document.getElementById("FamilyddlDepartment");
-                 var FamilydianIncome = document.getElementById("FamilydianIncome");
-                 var GuardianIncome = document.getElementById("GuardianIncome");
+    <script>
+        function toggleGuardianField() {
+            var orphanSelect = document.getElementById("orphanSelect");
+            var guardianField = document.getElementById("guardianField");
+            var GuardianddlDepartment = document.getElementById("GuardianddlDepartment");
+            var FamilyddlDepartment = document.getElementById("FamilyddlDepartment");
+            var FamilydianIncome = document.getElementById("FamilydianIncome");
+            var GuardianIncome = document.getElementById("GuardianIncome");
 
-                 if (orphanSelect.value === "1") {
-                     guardianField.style.display = "block";
-                     GuardianddlDepartment.style.display = "block";
-                     GuardianIncome.style.display = "block";
-                     FamilyddlDepartment.style.display = "none";
-                     FamilydianIncome.style.display = "none";
-                 } else if (orphanSelect.value === "2") {
-                     guardianField.style.display = "none";
-                     GuardianddlDepartment.style.display = "none";
-                     GuardianIncome.style.display = "none";
-                     FamilyddlDepartment.style.display = "block";
-                     FamilydianIncome.style.display = "block";
-                 } else {
-                     guardianField.style.display = "none";
-                     GuardianddlDepartment.style.display = "none";
-                     GuardianIncome.style.display = "none";
-                     FamilyddlDepartment.style.display = "none";
-                     FamilydianIncome.style.display = "none";
-                 }
-             }
+            if (orphanSelect.value === "1") {
+                guardianField.style.display = "block";
+                GuardianddlDepartment.style.display = "block";
+                GuardianIncome.style.display = "block";
+                FamilyddlDepartment.style.display = "none";
+                FamilydianIncome.style.display = "none";
+            } else if (orphanSelect.value === "2") {
+                guardianField.style.display = "none";
+                GuardianddlDepartment.style.display = "none";
+                GuardianIncome.style.display = "none";
+                FamilyddlDepartment.style.display = "block";
+                FamilydianIncome.style.display = "block";
+            } else {
+                guardianField.style.display = "none";
+                GuardianddlDepartment.style.display = "none";
+                GuardianIncome.style.display = "none";
+                FamilyddlDepartment.style.display = "none";
+                FamilydianIncome.style.display = "none";
+            }
+        }
 
 
-         </script>
-     <script>
-    function Backclickfn() {
-//    var show1 = document.getElementById('show1');
-//    var BtnBack = document.getElementById('BtnBack');
+    </script>
+    <script>
+        function Backclickfn() {
+            //    var show1 = document.getElementById('show1');
+            //    var BtnBack = document.getElementById('BtnBack');
 
-//    if (show1.style.display === 'block') {
-//        show1.style.display = 'block';
-//        BtnBack.style.display = 'block';
-//    } else {
-//        show1.style.display = 'none';
-//        BtnBack.style.display = 'none';
-//    }
-        //}
-        document.getElementById("show2").style.display = (document.getElementById("show2").style.display == 'block') ? 'none' : 'block';
-        BtnBack.style.display = 'none';
-        show1.style.display = 'none';
-    }
-    
-     </script>
+            //    if (show1.style.display === 'block') {
+            //        show1.style.display = 'block';
+            //        BtnBack.style.display = 'block';
+            //    } else {
+            //        show1.style.display = 'none';
+            //        BtnBack.style.display = 'none';
+            //    }
+            //}
+            document.getElementById("show2").style.display = (document.getElementById("show2").style.display == 'block') ? 'none' : 'block';
+            BtnBack.style.display = 'none';
+            show1.style.display = 'none';
+        }
+
+    </script>
     <script>
         function myFunction4() {
             var selectedValue = document.getElementById("child").value;
