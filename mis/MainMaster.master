@@ -1,4 +1,4 @@
-﻿﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMaster.master.cs" Inherits="mis_MainMaster" %>
+﻿GA﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMaster.master.cs" Inherits="mis_MainMaster" %>
 
 <!DOCTYPE html>
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable" data-theme="classic" data-theme-colors="default" data-bs-theme="light" data-layout-width="fluid" data-layout-position="fixed" data-layout-style="default" data-body-image="none" data-sidebar-visibility="show">
@@ -1404,7 +1404,7 @@
                                                 aria-controls="ParentProcess"><i class="ri-menu-line"></i>Gatekeeper Transport System</a>
                                             <div class="collapse menu-dropdown" id="Gatekeeper">
                                                 <ul class="nav nav-sm flex-column">
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/E-ChallanDetails.aspx"><i class="ri-file-list-3-line"></i>E-Challan Details</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/E-ChallanProcess.aspx"><i class="ri-file-list-3-line"></i>E-Challan Process</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/Rpt_CheckVehicalDetails.aspx"><i class="ri-file-list-3-line"></i>Check Vehical Details</a></li>
                                                 </ul>
                                             </div>
