@@ -253,14 +253,14 @@
                                         <%--                 <td class="text-center"><a class="alert-eye"><i class="fas fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2"></i></a></td>
                                         <td><a class="alert-edit"><i class="fa fa-pen" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"></i></a></td>--%>
                                         <td>Pending</td>
-                                        <td class="text-center" style="white-space: nowrap">
-                                            <button id="BtnBack1" class="Alert-Save1 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+                                        <td style="white-space: nowrap">
+                                            <button id="BtnBack1" class="Alert-Save1 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
                                                 Edit Personal Info
                                             </button>
-                                            <button id="BtnBack2" class="Alert-Save2 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+                                            <button id="BtnBack2" class="Alert-Save2 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
                                                 Edit Official Info
                                             </button>
-                                            <button id="BtnBack3" class="Alert-Save3 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+                                            <button id="BtnBack3" class="Alert-Save3 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
                                                 Edit Bank Info
                                             </button>
                                         </td>
@@ -270,7 +270,7 @@
                                      <td scope="col">
                                          <input type="checkbox" id="CheckBox2" />
                                      </td>
-                                     <td>ohini Gupta</td>
+                                     <td>Rohini Gupta</td>
                                      <td>DH5148</td>
                                      <td>Commissioner</td>
                                      <td>Department of Eduction</td>
@@ -282,13 +282,13 @@
                                      <td><a class="alert-edit"><i class="fa fa-pen" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"></i></a></td>--%>
                                      <td>Pending</td>
                                      <td class="text-center" style="white-space:nowrap">
-                                         <button id="BtnBack4" class="Alert-Save1 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+                                         <button id="BtnBack4" class="Alert-Save1 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
                                              Edit Personal Info
                                          </button>
-                                            <button id="BtnBack5" class="Alert-Save2 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+                                            <button id="BtnBack5" class="Alert-Save2 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
     Edit Official Info
 </button>
-                                            <button id="BtnBack6" class="Alert-Save3 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+                                            <button id="BtnBack6" class="Alert-Save3 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
     Edit Bank Info
 </button>
                                      </td>
@@ -309,13 +309,14 @@
                                      <td><a class="alert-edit"><i class="fa fa-pen" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"></i></a></td>--%>
                                      <td>Pending</td>
                                      <td class="text-center" style="white-space:nowrap">
-                                         <button id="BtnBack7" class="Alert-Save1 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+                                         <button id="BtnBack7" class="Alert-Save1 btn btn-outline-primary  fs-13 me-4 rounded-4 
+                                             w-sm" type="button">
                                              Edit Personal Info
                                          </button>
-                                            <button id="BtnBack8" class="Alert-Save2 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+                                            <button id="BtnBack8" class="Alert-Save2 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
     Edit Official Info
 </button>
-                                            <button id="BtnBack9" class="Alert-Save3 btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
+                                            <button id="BtnBack9" class="Alert-Save3 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
     Edit Bank Info
 </button>
                                      </td>
@@ -337,6 +338,9 @@
                             </div>
                         </div>
                     </div>
+                    <p class="text-danger">प्रमाणित किया जाता है आज दिनांक 07/04/2024 को कर्मचारी द्वारा दी गई समस्त  जानकारी का मिलान कार्यालय अभिलेख से कर लिया गया है एवं जानकारी सही पायी गयी। 
+संबंधित कर्मचारी को जिला शिक्षा अधिकारी द्वारा Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने की अनुशंसा की जाती हैं। 
+</p>
                     <div class="row justify-content-center" id="divbtn">
                         <div class="col-md-12">
                             <div class="form-group text-center">
@@ -3546,12 +3550,14 @@
                              timer: 2000,
                          }).then(() => {
                              // Redirect to another page after success message is closed
-                             window.location.href = 'EmployeeRegistration.aspx#navpills-3';
+                             window.location.href = 'EmployeeRegistration.aspx';
                          });
-                         var navPills3 = document.getElementById("navpills-3");
-                         var tabMenu = $('a[href="#navpills-3"]');
-                         navPills3.style.display = 'block';
-                         tabMenu.closest('li').addClass('active');
+                         var x = document.getElementById("#navpills-3");
+                         if (x.style.display === "none") {
+                             x.style.display = "block";
+                         } else {
+                             x.style.display = "block";
+                         }
                      }
                  })
              });

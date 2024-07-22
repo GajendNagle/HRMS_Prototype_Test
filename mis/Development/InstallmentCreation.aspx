@@ -69,14 +69,14 @@
      <div class="card-header">
          <div class="row">
              <div class="col-lg-12">
-                 <h4 class="card-title">Installment Creation & Approval/किस्त निर्माण एवं अनुमोदन</h4>
+                 <h4 class="card-title">Project Approval & Installment Creation  /परियोजना अनुमोदन एवं किस्त निर्माण</h4>
              </div>
          </div>
      </div>
      <div class="card-body">
             <span id="ContentBody_lblMsg"></span>
             <fieldset>
-                <legend>Installment Creation & Approval/किस्त निर्माण एवं अनुमोदन </legend>
+                <legend>Project Approval & Installment Creation /परियोजना अनुमोदन एवं किस्त निर्माण </legend>
                 <div class="row align-items-end">
                            <div class="col-md-3">
     <div class="form-group">
@@ -154,6 +154,50 @@
                             </select>
                         </div>
                     </div>
+                                        <div class="col-md-3">
+    <div class="form-group">
+        <label>
+            Select Work Category
+        <br />
+            कार्य की श्रेणी का चयन करें<span style="color: red">*</span></label>
+        <select id="work-category" class="form-control select2">
+            <option value="--Select--">--Select--</option>
+            <option value="A">स्कूल मरम्मत/निर्माण</option>
+            <option value="B">पेयजल व्यवस्था</option>
+            <option value="C">स्कूल मार्ग निर्माण</option>
+            <option value="D">अन्य कार्य</option>
+        </select>
+    </div>
+</div>
+<div class="col-md-3" id="school-subcategory-container">
+
+    <div class="form-group">
+        <label>
+            Select Work Subcategory
+        <br />
+            कार्य के प्रकार का चयन करें<span style="color: red">*</span></label>
+        <select id="school-subcategory" class="form-control select2">
+            <option value="--Select--">--Select--</option>
+            <option value="A">कक्षा निमार्ण</option>
+            <option value="A">इमारत मरम्मत</option>
+            <option value="A">स्कूल नया निमार्ण</option>
+            <option value="B">हेंडपंप खनन</option>
+            <option value="B">बोरबेल खनन</option>
+            <option value="B">पानी की टंकी निर्माण</option>
+            <option value="B">पेयजल हेतु पाइपलाइन निर्माण</option>
+            <option value="C">WBM / कच्ची सड़क निमार्ण</option>
+            <option value="C">CC Road निर्माण</option>
+            <option value="C">मार्ग मरम्मत</option>
+            <option value="C">मुरम रोड निर्माण</option>
+            <option value="C">डामर रोड निर्माण</option>
+            <option value="D">नाली निर्माण</option>
+            <option value="D">पेपर ब्लाक निर्माण</option>
+
+            <%--selection of this next textbox will visible--%>
+        </select>
+    </div>
+</div>
+
                     
                 </div>
                 <div class="col-md-12">

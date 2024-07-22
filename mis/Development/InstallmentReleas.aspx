@@ -121,6 +121,49 @@
                             </select>
                         </div>
                     </div>
+                    <div class="col-md-3">
+    <div class="form-group">
+        <label>
+            Select Work Category
+        <br />
+            कार्य की श्रेणी का चयन करें<span style="color: red">*</span></label>
+        <select id="work-category" class="form-control select2">
+            <option value="--Select--">--Select--</option>
+            <option value="A">स्कूल मरम्मत/निर्माण</option>
+            <option value="B">पेयजल व्यवस्था</option>
+            <option value="C">स्कूल मार्ग निर्माण</option>
+            <option value="D">अन्य कार्य</option>
+        </select>
+    </div>
+</div>
+<div class="col-md-3" id="school-subcategory-container">
+
+    <div class="form-group">
+        <label>
+            Select Work Subcategory
+        <br />
+            कार्य के प्रकार का चयन करें<span style="color: red">*</span></label>
+        <select id="school-subcategory" class="form-control select2">
+            <option value="--Select--">--Select--</option>
+            <option value="A">कक्षा निमार्ण</option>
+            <option value="A">इमारत मरम्मत</option>
+            <option value="A">स्कूल नया निमार्ण</option>
+            <option value="B">हेंडपंप खनन</option>
+            <option value="B">बोरबेल खनन</option>
+            <option value="B">पानी की टंकी निर्माण</option>
+            <option value="B">पेयजल हेतु पाइपलाइन निर्माण</option>
+            <option value="C">WBM / कच्ची सड़क निमार्ण</option>
+            <option value="C">CC Road निर्माण</option>
+            <option value="C">मार्ग मरम्मत</option>
+            <option value="C">मुरम रोड निर्माण</option>
+            <option value="C">डामर रोड निर्माण</option>
+            <option value="D">नाली निर्माण</option>
+            <option value="D">पेपर ब्लाक निर्माण</option>
+
+            <%--selection of this next textbox will visible--%>
+        </select>
+    </div>
+</div>
 
                 </div>
                 <div class="col-md-12">
@@ -245,6 +288,9 @@
                                     <th>Select Work Subcategory
                                     <br />
                                         कार्य के प्रकार का चयन करें</th>
+                                          <th>Installment<br />
+किस्त</th>
+                     
                                     <th>Totel  Project Amount(%)<br />
                                         कुल परियोजना राशि(%)<span style="color: red">*</span></th>
                                     <th style="width: fit-content;" class="text-center">Installment Amount<br />
@@ -272,6 +318,7 @@
                                  <td>स्कूल नया निमार्ण
                                     
                                     </td>
+                                    <td>1st Installment</td>
                                     <td>60000
                                       <%--  <input type="Text" name="birthday" class="form-control text-center" value="60000" readonly autocomplete="off" />--%>
                                     </td>
@@ -305,6 +352,7 @@
 
                                          
                                     </td>
+                                    <td>2nd Installment</td>
                                     <td>60000
                                     
                                     </td>
@@ -339,6 +387,7 @@
                                             <%--selection of this next textbox will visible--%>
                                         <%--</select>--%>
                                     </td>
+                                    <td>3rd Installment</td>
                                     <td>60000
                                         <%--<input type="Text" name="birthday" class="form-control text-center" value="60000" readonly autocomplete="off" />--%>
                                     </td>
@@ -374,6 +423,7 @@
                                             <%--selection of this next textbox will visible--%>
                                         <%--</select>--%>
                                     </td>
+                                    <td>4th Installment</td>
                                     <td>60000
                                         <%--<input type="Text" id="txtInstallmentPer1" name="birthday" class="form-control text-center" value="60000" readonly autocomplete="off" />--%>
                                     </td>
@@ -386,7 +436,7 @@
                                                  
                                     <td class="text-center"><a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
                                     <td>
-                                        <button id="BtnBack3" class="Alert-Save btn btn-outline-primary w-lg  fs-13  rounded-4 " type="button">
+                                        <button id="BtnBack3" class="Alert-Save btn btn-outline-primary w-lg  fs-13  rounded-4 " type="button" style="display: block">
                                             Release
                                         </button>
                                     </td>

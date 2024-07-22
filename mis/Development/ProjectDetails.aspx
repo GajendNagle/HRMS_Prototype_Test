@@ -129,6 +129,49 @@
                             </select>
                         </div>
                     </div>
+                    <div class="col-md-3">
+    <div class="form-group">
+        <label>
+            Select Work Category
+        <br />
+            कार्य की श्रेणी का चयन करें<span style="color: red">*</span></label>
+        <select id="work-category" class="form-control select2">
+            <option value="--Select--">--Select--</option>
+            <option value="A">स्कूल मरम्मत/निर्माण</option>
+            <option value="B">पेयजल व्यवस्था</option>
+            <option value="C">स्कूल मार्ग निर्माण</option>
+            <option value="D">अन्य कार्य</option>
+        </select>
+    </div>
+</div>
+<div class="col-md-3" id="school-subcategory-container">
+
+    <div class="form-group">
+        <label>
+            Select Work Subcategory
+        <br />
+            कार्य के प्रकार का चयन करें<span style="color: red">*</span></label>
+        <select id="school-subcategory" class="form-control select2">
+            <option value="--Select--">--Select--</option>
+            <option value="A">कक्षा निमार्ण</option>
+            <option value="A">इमारत मरम्मत</option>
+            <option value="A">स्कूल नया निमार्ण</option>
+            <option value="B">हेंडपंप खनन</option>
+            <option value="B">बोरबेल खनन</option>
+            <option value="B">पानी की टंकी निर्माण</option>
+            <option value="B">पेयजल हेतु पाइपलाइन निर्माण</option>
+            <option value="C">WBM / कच्ची सड़क निमार्ण</option>
+            <option value="C">CC Road निर्माण</option>
+            <option value="C">मार्ग मरम्मत</option>
+            <option value="C">मुरम रोड निर्माण</option>
+            <option value="C">डामर रोड निर्माण</option>
+            <option value="D">नाली निर्माण</option>
+            <option value="D">पेपर ब्लाक निर्माण</option>
+
+            <%--selection of this next textbox will visible--%>
+        </select>
+    </div>
+</div>
                     <%--<div class="col-md-3">
                         <div class="form-group">
                             <label>
@@ -208,7 +251,7 @@
                                             एडिट करें</th>
                                         <th id="Send">Send To Request<br />
                                             अनुरोध करने के लिए भेजें</th>
-                                        <th id="Status" class="text-center" style="display: none;">Status<br />
+                                        <th id="Status" class="text-center" style="display:none;" colspan="2">Status<br />
                                             स्थिति</th>
                                        <%-- <th id="Remark" class="text-center" style="display: none;">Remark<br />
                                             टिप्पणी</th>--%>
@@ -242,8 +285,8 @@
      
 </td>--%><td id="Request">
     <button id="BtnBack" type="button" class="Alert-Save btn btn-outline-primary w-xl  fs-13 me-4 rounded-4 ">Send To Request HO</button></td>
-                                        <td id="InputBox" style="display: none;">
-                                            <%--<input type="text" class="form-control" style="width: 150px;" />--%> Panding For HO</td>
+                                        <td id="InputBox" style="display: none; white-space:nowrap" class="text-center" colspan="2">
+                                            Panding For HO</td>
                                      <%--   <td id="remark" style="display: none;">--%>
                                             <%--<textarea class="form-control" style="width: 150px;" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>--%><%-- Work in Progress</td>--%>
 
@@ -553,14 +596,14 @@
                              //document.getElementById('Remark').style.display = "table-cell";
                              //document.getElementById('remark').style.display = "table-cell";
 
-                             document.getElementById('Status').style.display = "table-cell";
-                             document.getElementById('InputBox').style.display = "table-cell";
+                             document.getElementById('Status').style.display = "contents";
+                             document.getElementById('InputBox').style.display = "";
                             
-                             document.getElementById('View').style.display = "none";
+                             //document.getElementById('View').style.display = "none";
                              document.getElementById('Send').style.display = "none";
                              document.getElementById('Edit').style.display = "none";
                              document.getElementById('edit').style.display = "none";
-                             document.getElementById('Document').style.display = "none";
+                             //document.getElementById('Document').style.display = "none";
                              document.getElementById('Request').style.display = "none";
                          }
                      }).then((result) => {
