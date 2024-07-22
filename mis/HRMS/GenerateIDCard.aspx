@@ -8,6 +8,9 @@
             font-style: normal;
         }
 
+        .btn-outline-success:focus, .btn-outline-success.focus {
+             box-shadow:none; 
+        }
 
         @media print {
             /* Show modal content in full page */
@@ -78,7 +81,6 @@
             height: -26px;
             margin: 2px;
         }
-       
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -128,7 +130,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                DDO/Shankul Name
+                                DDO/Sankul Name
                                 <br />
                                 डीडीओ/संकुल का नाम<span style="color: red">*</span></label>
                             <input name="txtUniqueID" type="text" class="form-control" autocomplete="off" placeholder="232589654521/ GOVT. HS AGURLI" />
@@ -155,9 +157,9 @@
                             <div class="row" id="idCard">
                                 <div class="col-lg-12">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered text-center">
-                                            <t
-                                                head style="font-family: 'Poppins', sans-serif; font-size: 14px;">
+                                        <table class="table table-bordered text-center" style="white-space: nowrap">
+                                            <thead style="font-family: 'Poppins', sans-serif; font-size: 14px;">
+
                                                 <tr role="row" id="details">
                                                     <th scope="col" id="photo" aria-label="जिला: activate to sort column ascending">Photo<br />
                                                         फ़ोटो</th>
@@ -191,7 +193,7 @@
                                                     <th>Employee Report<br />
                                                         कर्मचारी की रिपोर्ट</th>
                                                 </tr>
-                                            </t>
+                                            </thead>
                                             <tbody style="font-weight: 500;">
 
                                                 <tr id="row3">
@@ -229,16 +231,16 @@
                                                             Nagar Ujjain</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="validfrom">
-                                                        <input type="date" class="form-control" style="height: 9px;" value="2024-06-03">
+                                                        <span class="tabledata">2024-06-03</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="validupto">
-                                                        <input type="date" class="form-control" value="2028-06-03" />
+                                                        <span class="tabledata">2028-06-03</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="signature">
                                                         <img src="../../img/Signature2.png" alt="Image" style="width: 50px; height: 50px;">
                                                     </td>
                                                     <td align="center" valign="middle">
-                                                        <button type="button" class="btn btn-success w-lg btn-border" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">Print</button>
+                                                        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">Print</button>
                                                     </td>
                                                 </tr>
                                                 <tr id="row3 align-items-end">
@@ -275,16 +277,16 @@
                                                             Nagar Rajkot</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="validfrom3">
-                                                        <input type="date" class="form-control" value="2022-01-01" />
+                                                        <span class="tabledata">2022-01-01</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="validupto3">
-                                                        <input type="date" class="form-control" value="2028-06-03" />
+                                                        <span class="tabledata">2028-06-03</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="signature">
                                                         <img src="../../img/Signature3.jpg" alt="Image" style="width: 50px; height: 50px;">
                                                     </td>
                                                     <td align="center" valign="middle">
-                                                        <button type="button" class="btn btn-success w-lg btn-border" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">Print</button>
+                                                        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">Print</button>
 
                                                     </td>
                                                 </tr>
@@ -322,17 +324,17 @@
                                                             Devri, MP</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="validfrom2">
-                                                        <input type="date" class="form-control" value="2024-01-02" />
+                                                        <span class="tabledata">2024-01-02</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="validupto2">
-                                                        <input type="date" class="form-control" value="2028-06-03" />
+                                                        <span class="tabledata">2028-06-03</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="signature">
                                                         <img src="../../img/Signature4.jpg" alt="Image" style="width: 50px; height: 50px;">
                                                     </td>
                                                     <td align="center" valign="middle">
                                                         <br />
-                                                        <button type="button" class="btn btn-success w-lg btn-border" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Print</button>
+                                                        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Print</button>
 
                                                     </td>
                                                 </tr>
@@ -368,7 +370,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
 
-                                <button type="button" class="btn btn-outline-danger w-lg btn-border btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn btn btn-border btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <style>
@@ -621,7 +623,7 @@
                                     </div>
                                 </fieldset>
                                 <div class="modal-footer text-center">
-                                    <button type="button" class=" btn btn-success w-lg btn-border" onclick="window.print()">Print</button>
+                                    <button type="button" class=" btn btn-outline-success w-lg btn-border" onclick="window.print()">Print</button>
                                     <button type="button" class="btn btn-outline-danger w-lg btn-border btn-warning" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
@@ -632,7 +634,7 @@
                     <div class="modal-dialog ">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="btn btn-outline-danger w-lg btn-border btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <fieldset class="lh-1">
@@ -745,7 +747,7 @@
                                     </div>
                                 </fieldset>
                                 <div class="modal-footer text-center">
-                                    <button type="button" class=" btn btn-success w-lg btn-border" onclick="window.print()">Print</button>
+                                    <button type="button" class=" btn btn-outline-success w-lg btn-border" onclick="window.print()">Print</button>
                                     <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
@@ -757,7 +759,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
 
-                                <button type="button" class="btn btn-outline-danger w-lg btn-border btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn  btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
 
@@ -872,7 +874,7 @@ Devri, MP</span></td>
                                     </div>
                                 </fieldset>
                                 <div class="modal-footer text-center">
-                                    <button type="button" class=" btn btn-success w-lg btn-border" onclick="window.print()">Print</button>
+                                    <button type="button" class=" btn btn-outline-success w-lg btn-border" onclick="window.print()">Print</button>
                                     <button type="button" class="btn btn-outline-danger w-lg btn-border btn-warning" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>

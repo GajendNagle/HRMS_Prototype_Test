@@ -155,7 +155,7 @@
                             <div class="row" id="idCard">
                                 <div class="col-lg-12">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered text-center">
+                                        <table class="table table-bordered text-center" style="white-space:nowrap">
 
                                             <thead style="font-family: 'Poppins', sans-serif; font-size: 14px;">
                                                 <tr role="row" id="details">
@@ -239,10 +239,11 @@
                                                             Nagar Ujjain</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="validfrom">
-                                                        <input type="date" class="form-control" style="height: 9px;" value="2024-06-03">
+                                                        <span class="tabledata">2024-06-03</span>
+                                                        
                                                     </td>
                                                     <td align="center" valign="middle" id="validupto">
-                                                        <input type="date" class="form-control" value="2028-06-03" />
+                                                        <span class="tabledata">2028-06-03</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="signature">
                                                         <img src="../../img/Signature2.png" alt="Image" style="width: 50px; height: 50px;">
@@ -289,10 +290,10 @@
                                                             Nagar Rajkot</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="validfrom3">
-                                                        <input type="date" class="form-control" value="2022-01-01" />
+                                                        <span class="tabledata">2022-01-01</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="validupto3">
-                                                        <input type="date" class="form-control" value="2028-06-03" />
+                                                       <span class="tabledata">2028-06-03</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="signature">
                                                         <img src="../../img/Signature3.jpg" alt="Image" style="width: 50px; height: 50px;">
@@ -337,10 +338,10 @@
                                                             Devri, MP</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="validfrom2">
-                                                        <input type="date" class="form-control" value="2024-01-02" />
+                                                        <span class="tabledata">2024-01-02</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="validupto2">
-                                                        <input type="date" class="form-control" value="2028-06-03" />
+                                                        <span class="tabledata">2028-06-03</span>
                                                     </td>
                                                     <td align="center" valign="middle" id="signature">
                                                         <img src="../../img/Signature4.jpg" alt="Image" style="width: 50px; height: 50px;">
