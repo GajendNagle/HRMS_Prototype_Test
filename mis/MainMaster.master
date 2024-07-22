@@ -1344,6 +1344,7 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleMaintenance.aspx"><i class="ri-file-list-3-line"></i>Vehicle Maintenance</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleInsurance.aspx"><i class="ri-file-list-3-line"></i>Vehicle Insurance </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleDispose.aspx"><i class="ri-file-list-3-line"></i>Vehicle Dispose </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/VehicleMaintenanceTypeMaster.aspx"><i class="ri-file-list-3-line"></i>Vehicle Maintenance Type Master</a></li>
                                                 </ul>
                                             </div>
                                         </li>
