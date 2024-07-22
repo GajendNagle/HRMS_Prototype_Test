@@ -28,7 +28,7 @@
                     <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('StudentDirectory')">
                         <span>ACR</span></a>
                 </li>--%>
-                        <li class="breadcrumb-item"><span>Generate Transfer Certificate </span></li>
+                        <li class="breadcrumb-item"><span>Generate TC </span></li>
                     </ol>
                 </div>
             </div>
@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-xl-12 col-md-12">
                     <div class="marqueecontainerinfo">
-                        <div class="headertext btn btn-primary rounded-pill">Generate Transfer Certificate </div>
+                        <div class="headertext btn btn-primary rounded-pill">Generate TC </div>
                         <div>
                             <marquee style="width: 100%;"
                                 onmouseover="this.stop();"
@@ -48,7 +48,7 @@
                                 behavior="scroll"
                                 scrollamount="7"
                                 class="Marqueetext">
-                                Generate Transfer Certificate  /स्थानांतरण प्रमाणपत्र जनरेट
+                                Generate TC  /स्थानांतरण प्रमाणपत्र जनरेट
                             </marquee>
                         </div>
                     </div>

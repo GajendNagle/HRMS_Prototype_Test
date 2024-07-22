@@ -1432,8 +1432,8 @@
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item"><a class="nav-link" href="/mis/Student/StudentReg.aspx"><i class="ri-file-list-3-line"></i>Student Registration</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Student/StudentDetails.aspx"><i class="ri-file-list-3-line"></i>Student Detail</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Student/Trn_StudentTransfer.aspx"><i class="ri-file-list-3-line"></i>Student Promote Or Transfer</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Student/Rpt_StudentTransferCertificate.aspx"><i class="ri-file-list-3-line"></i>Generate Transfer Certificate</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Student/Trn_StudentTransfer.aspx"><i class="ri-file-list-3-line"></i>Student Promote Or TC</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Student/Rpt_StudentTransferCertificate.aspx"><i class="ri-file-list-3-line"></i>Generate TC</a></li>
 
                                         <li class="nav-item">
                                             <a href="#StudentReports" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
@@ -1441,7 +1441,6 @@
                                             <div class="collapse menu-dropdown" id="StudentReports">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Student/StudentReport.aspx"><i class="ri-file-list-3-line"></i>Student Summary Report</a></li>
-
                                                 </ul>
                                             </div>
                                         </li>

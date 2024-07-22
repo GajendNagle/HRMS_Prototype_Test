@@ -20,7 +20,7 @@
                     <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('StudentDirectory')">
                         <span>ACR</span></a>
                 </li>--%>
-                        <li class="breadcrumb-item"><span>Student Promote Or Transfer</span></li>
+                        <li class="breadcrumb-item"><span>Student Promote Or TC</span></li>
                     </ol>
                 </div>
             </div>
@@ -50,7 +50,7 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Student Promote Or Transfer /छात्र पदोन्नति या स्थानांतरण</legend>
+                <legend>Student Promote Or TC /छात्र पदोन्नति या स्थानांतरण</legend>
                 <div class="row align-items-end">
                     <div class="col-md-6 col-lg-4">
                         <div class="form-group">
