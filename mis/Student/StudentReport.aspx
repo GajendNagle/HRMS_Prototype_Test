@@ -347,11 +347,11 @@
                         <li class="breadcrumb-item">
                             <a href="#StudentDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Student Directory</span></a>
                         </li>
-                        <%--  <li class="breadcrumb-item">
-                        <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('StudentDirectory')">
-                            <span>ACR</span></a>
-                    </li>--%>
-                        <li class="breadcrumb-item"><span>Student Report</span></li>
+                          <li class="breadcrumb-item">
+                        <a href="#StudentReports" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('StudentDirectory')">
+                            <span>Reports</span></a>
+                    </li>
+                        <li class="breadcrumb-item"><span>Student Summary Report</span></li>
                     </ol>
                 </div>
             </div>
