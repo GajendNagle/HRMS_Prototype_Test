@@ -136,7 +136,7 @@
                     </div>
                 </div>
                 <fieldset>
-                    <legend>Employee Details / कर्मचारी विवरण</legend>
+                    <legend>Employee Details / कर्मचारी का विवरण</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
                             <div class="form-group">
