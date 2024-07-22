@@ -1203,6 +1203,7 @@
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/EmployeeIDcardmanagementNotes.aspx"><i class="ri-file-info-line"></i>About ID Card </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/EmployeeIDcardmanagementSystem.aspx"><i class="ri-file-list-3-line"></i>Employee ID Card Management System </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/ApproveEmpIDCard.aspx"><i class="ri-file-list-3-line"></i>Approve Employee ID Card </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/GenerateIDCard.aspx"><i class="ri-file-list-3-line"></i>Print Employee ID Card </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/EmployeeIDcardMissingDetails.aspx"><i class="ri-file-list-3-line"></i>Employee Missing Details </a></li>
                                                     <%--       <li class="nav-item"><a class="nav-link" href="/mis/HRMS/DistrictwiseIDCardProgress.aspx" ><i class="ri-file-list-3-line"></i>District Wise ID Card Progress Report </a></li>

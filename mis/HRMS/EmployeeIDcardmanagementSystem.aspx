@@ -332,13 +332,13 @@
 
                 <div class="row" id="generateorder">
                     <div class="col-md-12 text-center">
-                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Approve</button>
+                        <button type="button" class=" Alert-Confirmation btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Approve</button>
                     </div>
                 </div>
 
 
                 <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <%--<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog ">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -368,7 +368,7 @@
 
 
 
-                </div>
+                </div>--%>
             </div>
 
             <script type="text/javascript">
