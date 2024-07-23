@@ -20,7 +20,7 @@
                     <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('StudentDirectory')">
                         <span>ACR</span></a>
                 </li>--%>
-                        <li class="breadcrumb-item"><span>Student Promote Or TC</span></li>
+                        <li class="breadcrumb-item"><span></span></li>
                     </ol>
                 </div>
             </div>
@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-xl-12 col-md-12">
                     <div class="marqueecontainerinfo">
-                        <div class="headertext btn btn-primary rounded-pill">Student Promote Or Transfer</div>
+                        <div class="headertext btn btn-primary rounded-pill">छात्र पदोन्नति एवं स्थानांतरण</div>
                         <div>
                             <marquee style="width: 100%;"
                                 onmouseover="this.stop();"
@@ -40,7 +40,7 @@
                                 behavior="scroll"
                                 scrollamount="7"
                                 class="Marqueetext">
-                                Student Promote Or Transfer /छात्र पदोन्नति या स्थानांतरण
+                                Student Promotion & TC /छात्र पदोन्नति एवं स्थानांतरण
                             </marquee>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Student Promote Or TC /छात्र पदोन्नति या स्थानांतरण</legend>
+                <legend>Student Promotion & TC /छात्र पदोन्नति एवं स्थानांतरण</legend>
                 <div class="row align-items-end">
                     <div class="col-md-6 col-lg-4">
                         <div class="form-group">

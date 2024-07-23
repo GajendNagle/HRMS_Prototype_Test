@@ -1432,7 +1432,7 @@
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item"><a class="nav-link" href="/mis/Student/StudentReg.aspx"><i class="ri-file-list-3-line"></i>Student Registration</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Student/StudentDetails.aspx"><i class="ri-file-list-3-line"></i>Student Detail</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Student/Trn_StudentTransfer.aspx"><i class="ri-file-list-3-line"></i>Student Promote Or TC</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Student/Trn_StudentTransfer.aspx"><i class="ri-file-list-3-line"></i>Student Promotion & TC</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Student/Rpt_StudentTransferCertificate.aspx"><i class="ri-file-list-3-line"></i>Generate TC</a></li>
 
                                         <li class="nav-item">

@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-xl-12 col-md-12">
                     <div class="marqueecontainerinfo">
-                        <div class="headertext btn btn-primary rounded-pill">Generate TC </div>
+                        <div class="headertext btn btn-primary rounded-pill">स्थानांतरण प्रमाणपत्र जनरेट </div>
                         <div>
                             <marquee style="width: 100%;"
                                 onmouseover="this.stop();"
