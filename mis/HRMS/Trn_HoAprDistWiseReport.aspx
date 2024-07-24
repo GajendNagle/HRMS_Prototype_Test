@@ -6,10 +6,10 @@
         .a {
             color: #0000ff;
         }
-        th{
-            white-space:nowrap;
+
+        th {
+            white-space: nowrap;
         }
-       
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -98,7 +98,7 @@
     </div>
     <div class="row align-content-end">
         <div class="col-md-5 ">
-            <img src="https://dpihrms.tserver.co.in/img/PropertyReturnNew.png" style="height: 70px" >
+            <img src="https://dpihrms.tserver.co.in/img/PropertyReturnNew.png" style="height: 70px">
         </div>
     </div>
 
@@ -119,7 +119,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                District<br />ज़िला
+                                District<br />
+                                ज़िला
           
                                 <span class="fa-pull-right" style="color: red">*</span>
                             </label>
@@ -152,15 +153,13 @@
                                 <option value="8">MP Board of Secondary Education</option>
                                 <option value="10">SC Development </option>
                                 <option value="11">Education</option>
-
                             </select>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Annual Year 
-   <br />
+                                Annual Year<br />
                                 वित्तीय वर्ष
                             </label>
                             <input maxlength="4" autocomplete="off" class="form-control datepickerYear" placeholder="2024-25" type="text" data-val="true" value="2024-25" />
@@ -168,12 +167,10 @@
                         </div>
                     </div>
                     <div class="col-md-12 ">
-                    <hr />
+                        <hr />
                         <div class="form-group ">
-
                             <asp:Button runat="server" type="button" class="Alert-Save2 btn w-lg btn-success btn-border" Text="Search" OnClick="Unnamed_Click" />
-                             <a href="Trn_HoAprDistWiseReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-
+                            <a href="Trn_HoAprDistWiseReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
 
@@ -198,56 +195,46 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                        <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
-                            <thead>
-                                <tr valign="middle" class="text-white">
-                                    <th>Sr.No<br />
-                                        सरल क्र.</th>
-                                    <th>District Name<br />
-                                        जिले का नाम</th>
+                            <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
+                                <thead>
+                                    <tr valign="middle" class="text-white">
+                                        <th>Sr.No<br />
+                                            सरल क्र.</th>
+                                        <th>District Name<br />
+                                            जिले का नाम</th>
 
-                                    <th>Total Employees<br />
-                                        कुल कर्मचारी </th>
-
-
-                                   <%--<th>प्रिंट</th--%>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr valign="middle">
-                                    <td>1</td>
-                                    <td>Bhopal</td>
-                                    <td>
-                                        <asp:Button runat="server" Text="50" OnClick="btn1_Click" ID="btn1" BorderStyle="None" CssClass="bg-transparent  text-info" /></td>
-
-                                </tr>
-                                <tr valign="middle">
-                                    <td>2</td>
-                                    <td>Indore</td>
-                                    <td>
-                                        <asp:Button runat="server" Text="70" OnClick="Button1_Click" ID="Button1" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
-
-
-                                </tr>
-                                <tr valign="middle">
-                                    <td>3</td>
-                                    <td>Sagar</td>
-                                    <td>
-                                        <asp:Button runat="server" Text="78" OnClick="Button2_Click" ID="Button2" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
-
-                                </tr>
-                                <tr valign="middle">
-                                    <td>4</td>
-                                    <td>Sehore</td>
-                                    <td>
-                                        <asp:Button runat="server" Text="40" OnClick="Button3_Click" ID="Button3" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
-
-
-
-
-                                </tr>
-                            </tbody>
-                        </table></div>
+                                        <th>Total Employees<br />
+                                            कुल कर्मचारी </th>
+                                        <%--<th>प्रिंट</th--%>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr valign="middle">
+                                        <td>1</td>
+                                        <td>Bhopal</td>
+                                        <td> <asp:Button runat="server" Text="50" OnClick="btn1_Click" ID="btn1" BorderStyle="None" CssClass="bg-transparent  text-info" /></td>
+                                    </tr>
+                                    <tr valign="middle">
+                                        <td>2</td>
+                                        <td>Indore</td>
+                                        <td>
+                                            <asp:Button runat="server" Text="70" OnClick="Button1_Click" ID="Button1" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
+                                    </tr>
+                                    <tr valign="middle">
+                                        <td>3</td>
+                                        <td>Sagar</td>
+                                        <td>
+                                            <asp:Button runat="server" Text="78" OnClick="Button2_Click" ID="Button2" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
+                                    </tr>
+                                    <tr valign="middle">
+                                        <td>4</td>
+                                        <td>Sehore</td>
+                                        <td>
+                                            <asp:Button runat="server" Text="40" OnClick="Button3_Click" ID="Button3" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
 
@@ -269,41 +256,36 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                         <div class="table-responsive">
-                        
-                        <table id="Table2" class="table table-bordered table-responsive-lg text-center" runat="server">
-                            <thead>
-                                <tr valign="middle" class="text-white">
-                                    <th>Sr.No<br />
-                                        सरल क्र.</th>
-                                    <th>District Name<br />
-                                        जिले का नाम</th>
+                        <div class="table-responsive">
 
-                                    <th>Total Employees<br />
-                                        कुल कर्मचारी </th>
+                            <table id="Table2" class="table table-bordered table-responsive-lg text-center" runat="server">
+                                <thead>
+                                    <tr valign="middle" class="text-white">
+                                        <th>Sr.No<br />
+                                            सरल क्र.</th>
+                                        <th>District Name<br />
+                                            जिले का नाम</th>
 
-
-                                    <%--<th>प्रिंट</th--%>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr valign="middle">
-                                    <td>1</td>
-                                    <td>Bhopal</td>
-                                    <td>
-                                        <asp:Button runat="server" Text="50" OnClick="Button4_Click" ID="Button4" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
-
-                                </tr>
-
-                            </tbody>
-                        </table></div>
+                                        <th>Total Employees<br />
+                                            कुल कर्मचारी </th>
+                                        <%--<th>प्रिंट</th--%>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr valign="middle">
+                                        <td>1</td>
+                                        <td>Bhopal</td>
+                                        <td>
+                                            <asp:Button runat="server" Text="50" OnClick="Button4_Click" ID="Button4" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-
             </fieldset>
             <fieldset runat="server" visible="false" id="show2">
                 <legend>Details/विवरण</legend>
-
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -319,43 +301,35 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                         <div class="table-responsive">
-                        
-                        <table id="Table3" class="table table-bordered table-responsive-lg text-center" runat="server">
-                            <thead>
-                                <tr valign="middle" class="text-white">
-                                    <th>Sr.No<br />
-                                        सरल क्र.</th>
-                                    <th>District Name<br />
-                                        जिले का नाम</th>
+                        <div class="table-responsive">
+                            <table id="Table3" class="table table-bordered table-responsive-lg text-center" runat="server">
+                                <thead>
+                                    <tr valign="middle" class="text-white">
+                                        <th>Sr.No<br />
+                                            सरल क्र.</th>
+                                        <th>District Name<br />
+                                            जिले का नाम</th>
 
-                                    <th>Total Employees<br />
-                                        कुल कर्मचारी </th>
-
-
-                                    <%--<th>प्रिंट</th--%>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr valign="middle">
-                                    <td>1</td>
-
-                                    <td>Indore</td>
-                                    <td>
-                                        <asp:Button runat="server" Text="70" OnClick="Button5_Click" ID="Button5" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
-
-
-                                </tr>
-
-                            </tbody>
-                        </table></div>
+                                        <th>Total Employees<br />
+                                            कुल कर्मचारी </th>
+                                        <%--<th>प्रिंट</th--%>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr valign="middle">
+                                        <td>1</td>
+                                        <td>Indore</td>
+                                        <td>
+                                            <asp:Button runat="server" Text="70" OnClick="Button5_Click" ID="Button5" BorderStyle="None" CssClass="bg-transparent text-info" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-
             </fieldset>
             <fieldset runat="server" visible="false" id="show3">
                 <legend>Details/विवरण</legend>
-
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -371,42 +345,35 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                         <div class="table-responsive">
-                        
-                        <table id="Table4" class="table table-bordered table-responsive-lg text-center" runat="server">
-                            <thead>
-                                <tr valign="middle" class="text-white">
-                                    <th>Sr.No<br />
-                                        सरल क्र.</th>
-                                    <th>District Name<br />
-                                        जिले का नाम</th>
+                        <div class="table-responsive">
 
-                                    <th>Total Employees<br />
-                                        कुल कर्मचारी </th>
-
-
-                                    <%--<th>प्रिंट</th--%>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr valign="middle">
-                                    <td>1</td>
-
-                                    <td>Sagar</td>
-                                    <td>
-                                        <asp:Button runat="server" Text="78" OnClick="Button6_Click" ID="Button6" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
-
-                                </tr>
-
-                            </tbody>
-                        </table>
+                            <table id="Table4" class="table table-bordered table-responsive-lg text-center" runat="server">
+                                <thead>
+                                    <tr valign="middle" class="text-white">
+                                        <th>Sr.No<br />
+                                            सरल क्र.</th>
+                                        <th>District Name<br />
+                                            जिले का नाम</th>
+                                        <th>Total Employees<br />
+                                            कुल कर्मचारी </th>
+                                        <%--<th>प्रिंट</th--%>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr valign="middle">
+                                        <td>1</td>
+                                        <td>Sagar</td>
+                                        <td>
+                                            <asp:Button runat="server" Text="78" OnClick="Button6_Click" ID="Button6" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div></div>
-
+                </div>
             </fieldset>
             <fieldset runat="server" visible="false" id="show4">
                 <legend>Details/विवरण</legend>
-
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -422,8 +389,8 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                         <div class="table-responsive">
-                        <
+                        <div class="table-responsive">
+                            <
                         <table id="Table5" class="table table-bordered table-responsive-lg text-center" runat="server">
                             <thead>
                                 <tr valign="middle" class="text-white">
@@ -431,33 +398,25 @@
                                         सरल क्र.</th>
                                     <th>District Name<br />
                                         जिले का नाम</th>
-
                                     <th>Total Employees<br />
                                         कुल कर्मचारी </th>
-
-
                                     <%--<th>प्रिंट</th--%>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr valign="middle">
                                     <td>1</td>
-
                                     <td>Sehore</td>
-                                    <td> <asp:Button runat="server" Text="40" OnClick="Button7_Click" ID="Button7" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
-
-
-
-
+                                    <td>
+                                        <asp:Button runat="server" Text="40" OnClick="Button7_Click" ID="Button7" BorderStyle="None" CssClass="bg-transparent   text-info" /></td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
                         </div>
+                    </div>
                 </div>
-
             </fieldset>
-            <fieldset runat="server" id="Fieldset1" visible="false">
+            <fieldset runat="server" id="Fieldset2" visible="false">
                 <legend>Details/विवरण</legend>
 
                 <div class="row justify-content-end">
@@ -475,90 +434,41 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <table id="Table6" class="table table-bordered table-responsive-lg text-center" runat="server">
-                            <thead>
-                                <tr>
-                                    <th>Sr.No<br />
-                                        सरल.क्र</th>
-                                    <th>District Name<br />
-                                        जिले का नाम</th>
-                                    <th>Total Employees<br />
-                                        कुल कर्मचारी </th>
-                                    <th>Total Employees Whose APR Uploaded<br />
-                                        कुल कर्मचारी जिनका एपीआर अपलोड किया गया है</th>
-                                    <th>Total Employees Whose APR Not Uploaded<br />
-कुल कर्मचारी जिनका एपीआर अपलोड नहीं किया गया है</th>
-                                    <th>Performance %<br />
-                                        प्रदर्शन %</th>
+                        <div class="table-responsive">
 
-                                    <%--<th>प्रिंट</th--%>
-                                </tr>
-                                <tbody>
-                                    <tr valign="middle">
-                                        <td>1</td>
-
-                                        <td>Bhopal</td>
-                                        <td>50</td>
-
-                                        <td>25</td>
-                                        <td>25</td>
-                                        <td>50%</td>
-
-
-
-
+                            <table id="Table7" class="table table-bordered table-responsive-lg text-center" runat="server">
+                                <thead>
+                                    <tr>
+                                        <th>Sr.No<br />
+                                            सरल.क्र</th>
+                                        <th>District Name<br />
+                                            जिले का नाम</th>
+                                        <th>Total Employees<br />
+                                            कुल कर्मचारी </th>
+                                        <th>Total Employees Whose APR Uploaded<br />
+                                            कुल कर्मचारी जिनका एपीआर अपलोड किया गया है</th>
+                                        <th>Total Employees Whose APR Not Uploaded<br />
+                                            कुल कर्मचारी जिनका एपीआर अपलोड नहीं किया गया है</th>
+                                        <th>Performance %<br />
+                                            प्रदर्शन %</th>
+                                        <%--<th>प्रिंट</th--%>
                                     </tr>
-                                    <tr valign="middle">
-                                        <td>2</td>
-                                        <td>Indore</td>
-                                        <td>70</td>
-
-                                        <td>30</td>
-                                        <td>40</td>
-                                        <td>21%</td>
-
-
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>3</td>
-                                        <td>Sagar</td>
-                                        <td>50</td>
-
-                                        <td>78</td>
-                                        <td>50</td>
-                                        <td>39%</td>
-
-
-
-
-
-                                    </tr>
-                                    <tr valign="middle">
-                                        <td>4</td>
-
-                                        <td>Sehore</td>
-                                        <td>40</td>
-
-                                        <td>20</td>
-                                        <td>20</td>
-                                        <td>50%</td>
-
-
-
-
-
-
-                                    </tr>
-                                </tbody>
-
-                        </table>
+                                    <tbody>
+                                        <tr valign="middle">
+                                            <td>1</td>
+                                            <td>Bhopal</td>
+                                            <td>50</td>
+                                            <td><a role="button"  class="bg-transparent   text-info"  onclick="myEmpTable(25, 'Bhopal');">25</a></td>
+                                            <td><a   role="button"  class="bg-transparent   text-info" onclick="myEmpTable(25, 'Bhopal', 'Not');">25</a></td>
+                                            <td>50%</td>
+                                        </tr>
+                                    </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-
-
             </fieldset>
-                        <fieldset runat="server" id="Fieldset2" visible="false">
+            <fieldset runat="server" id="Fieldset3" visible="false">
                 <legend>Details/विवरण</legend>
 
                 <div class="row justify-content-end">
@@ -576,51 +486,45 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                         <div class="table-responsive">
-                        
-                        <table id="Table7" class="table table-bordered table-responsive-lg text-center" runat="server">
-                            <thead>
-                                <tr>
-                                    <th>Sr.No<br />
-                                        सरल.क्र</th>
-                                    <th>District Name<br />
-                                        जिले का नाम</th>
-                                    <th>Total Employees<br />
-                                        कुल कर्मचारी </th>
-                                    <th>Total Employees Whose APR Uploaded<br />
-                                        कुल कर्मचारी जिनका एपीआर अपलोड किया गया है</th>
-                                    <th>Total Employees Whose APR Not Uploaded<br />
-कुल कर्मचारी जिनका एपीआर अपलोड नहीं किया गया है</th>
-                                    <th>Performance %<br />
-                                        प्रदर्शन %</th>
+                        <div class="table-responsive">
 
-                                    <%--<th>प्रिंट</th--%>
-                                </tr>
-                                <tbody>
-                                    <tr valign="middle">
-                                        <td>1</td>
-
-                                        <td>Bhopal</td>
-                                        <td>50</td>
-
-                                        <td>25</td>
-                                        <td>25</td>
-                                        <td>50%</td>
-
-
-
-
+                            <table id="Table8" class="table table-bordered table-responsive-lg text-center" runat="server">
+                                <thead>
+                                    <tr>
+                                        <th>Sr.No<br />
+                                            सरल.क्र</th>
+                                        <th>District Name<br />
+                                            जिले का नाम</th>
+                                        <th>Total Employees<br />
+                                            कुल कर्मचारी </th>
+                                        <th>Total Employees Whose APR Uploaded<br />
+                                            कुल कर्मचारी जिनका एपीआर अपलोड किया गया है</th>
+                                        <th>Total Employees Whose APR Not Uploaded<br />
+                                            कुल कर्मचारी जिनका एपीआर अपलोड नहीं किया गया है</th>
+                                        <th>Performance %<br />
+                                            प्रदर्शन %</th>
+                                        <%--<th>प्रिंट</th--%>
                                     </tr>
-                                   
-                                </tbody>
+                                    <tbody>
+                                        <tr valign="middle">
+                                            <td>1</td>
 
-                        </table></div>
+
+                                            <td>Indore</td>
+                                            <td>70</td>
+                                            <td><a  role="button"  class="bg-transparent   text-info" onclick="myEmpTable(30, 'Indore');">30</a></td>
+                                            <td><a  role="button"  class="bg-transparent   text-info" onclick="myEmpTable(40, 'Indore', 'Not');">40</a></td>
+                                            <td>21%</td>
+                                        </tr>
+                                    </tbody>
+
+                            </table>
+                        </div>
                     </div>
                 </div>
 
-
             </fieldset>
-                        <fieldset runat="server" id="Fieldset3" visible="false">
+            <fieldset runat="server" id="Fieldset4" visible="false">
                 <legend>Details/विवरण</legend>
 
                 <div class="row justify-content-end">
@@ -638,51 +542,41 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                         <div class="table-responsive">
-                        
-                        <table id="Table8" class="table table-bordered table-responsive-lg text-center" runat="server">
-                            <thead>
-                                <tr>
-                                    <th>Sr.No<br />
-                                        सरल.क्र</th>
-                                    <th>District Name<br />
-                                        जिले का नाम</th>
-                                    <th>Total Employees<br />
-                                        कुल कर्मचारी </th>
-                                    <th>Total Employees Whose APR Uploaded<br />
-                                        कुल कर्मचारी जिनका एपीआर अपलोड किया गया है</th>
-                                    <th>Total Employees Whose APR Not Uploaded<br />
-कुल कर्मचारी जिनका एपीआर अपलोड नहीं किया गया है</th>
-                                    <th>Performance %<br />
-                                        प्रदर्शन %</th>
+                        <div class="table-responsive">
 
-                                    <%--<th>प्रिंट</th--%>
-                                </tr>
-                                <tbody>
-                                    <tr valign="middle">
-                                        <td>1</td>
-
-                                       
-                                        <td>Indore</td>
-                                        <td>70</td>
-
-                                        <td>30</td>
-                                        <td>40</td>
-                                        <td>21%</td>
-
-
-
+                            <table id="Table9" class="table table-bordered table-responsive-lg text-center" runat="server">
+                                <thead>
+                                    <tr>
+                                        <th>Sr.No<br />
+                                            सरल.क्र</th>
+                                        <th>District Name<br />
+                                            जिले का नाम</th>
+                                        <th>Total Employees<br />
+                                            कुल कर्मचारी </th>
+                                        <th>Total Employees Whose APR Uploaded<br />
+                                            कुल कर्मचारी जिनका एपीआर अपलोड किया गया है</th>
+                                        <th>Total Employees Whose APR Not Uploaded<br />
+                                            कुल कर्मचारी जिनका एपीआर अपलोड नहीं किया गया है</th>
+                                        <th>Performance %<br />
+                                            प्रदर्शन %</th>
+                                        <%--<th>प्रिंट</th--%>
                                     </tr>
-                                    
-                                </tbody>
-
-                        </table>
+                                    <tbody>
+                                        <tr valign="middle">
+                                            <td>1</td>
+                                            <td>Sagar</td>
+                                            <td>78</td>
+                                            <td><a  role="button"  class="bg-transparent   text-info" onclick="myEmpTable(30, 'Sagar');">30</a></td>
+                                            <td><a  role="button"  class="bg-transparent   text-info" onclick="myEmpTable(48, 'Sagar', 'Not');">48</a></td>
+                                            <td>38.46%</td>
+                                        </tr>
+                                    </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-</div>
-
             </fieldset>
-                        <fieldset runat="server" id="Fieldset4" visible="false">
+            <fieldset runat="server" id="Fieldset5" visible="false">
                 <legend>Details/विवरण</legend>
 
                 <div class="row justify-content-end">
@@ -700,53 +594,43 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                         <div class="table-responsive">
-                        
-                        <table id="Table9" class="table table-bordered table-responsive-lg text-center" runat="server">
-                            <thead>
-                                <tr>
-                                    <th>Sr.No<br />
-                                        सरल.क्र</th>
-                                    <th>District Name<br />
-                                        जिले का नाम</th>
-                                    <th>Total Employees<br />
-                                        कुल कर्मचारी </th>
-                                    <th>Total Employees Whose APR Uploaded<br />
-                                        कुल कर्मचारी जिनका एपीआर अपलोड किया गया है</th>
-                                    <th>Total Employees Whose APR Not Uploaded<br />
-कुल कर्मचारी जिनका एपीआर अपलोड नहीं किया गया है</th>
-                                    <th>Performance %<br />
-                                        प्रदर्शन %</th>
+                        <div class="table-responsive">
 
-                                    <%--<th>प्रिंट</th--%>
-                                </tr>
-                                <tbody>
-                                    <tr valign="middle">
-                                        <td>1</td>
+                            <table id="Table10" class="table table-bordered table-responsive-lg text-center" runat="server">
+                                <thead>
+                                    <tr>
+                                        <th>Sr.No<br />
+                                            सरल.क्र</th>
+                                        <th>District Name<br />
+                                            जिले का नाम</th>
+                                        <th>Total Employees<br />
+                                            कुल कर्मचारी </th>
+                                        <th>Total Employees Whose APR Uploaded<br />
+                                            कुल कर्मचारी जिनका एपीआर अपलोड किया गया है</th>
+                                        <th>Total Employees Whose APR Not Uploaded<br />
+                                            कुल कर्मचारी जिनका एपीआर अपलोड नहीं किया गया है</th>
+                                        <th>Performance %<br />
+                                            प्रदर्शन %</th>
 
-                                       
-                                        <td>Sagar</td>
-                                        <td>50</td>
-
-                                        <td>78</td>
-                                        <td>50</td>
-                                        <td>39%</td>
-
-
-
-
-
+                                        <%--<th>प्रिंट</th--%>
                                     </tr>
-                                </tbody>
-
-                        </table>
+                                    <tbody>
+                                        <tr valign="middle">
+                                            <td>1</td>
+                                            <td>Sehore</td>
+                                            <td>40</td>
+                                            <td><a  role="button"  class="bg-transparent   text-info" onclick="myEmpTable(20, 'Sehore');">20</a> </td>
+                                            <td><a  role="button"  class="bg-transparent   text-info" onclick="myEmpTable(20, 'Sehore','Not')">20</a> </td>
+                                            <td>50%</td>
+                                        </tr>
+                                    </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div></div>
-
-
+                </div>
             </fieldset>
-                        <fieldset runat="server" id="Fieldset5" visible="false">
-                <legend>Details/विवरण</legend>
+            <fieldset id="fsEmpInfo" style="display:none">
+                <legend>Employee Information /कर्मचारी की जानकारी</legend>
 
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -763,80 +647,103 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                         <div class="table-responsive">
-                        
-                        <table id="Table10" class="table table-bordered table-responsive-lg text-center" runat="server">
-                            <thead>
-                                <tr>
-                                    <th>Sr.No<br />
-                                        सरल.क्र</th>
-                                    <th>District Name<br />
-                                        जिले का नाम</th>
-                                    <th>Total Employees<br />
-                                        कुल कर्मचारी </th>
-                                    <th>Total Employees Whose APR Uploaded<br />
-                                        कुल कर्मचारी जिनका एपीआर अपलोड किया गया है</th>
-                                    <th>Total Employees Whose APR Not Uploaded<br />
-कुल कर्मचारी जिनका एपीआर अपलोड नहीं किया गया है</th>
-                                    <th>Performance %<br />
-                                        प्रदर्शन %</th>
+                        <div class="table-responsive">
 
-                                    <%--<th>प्रिंट</th--%>
-                                </tr>
-                                <tbody>
-                                    <tr valign="middle">
-                                        <td>1</td>
-
-                                      
-                                        <td>Sehore</td>
-                                        <td>40</td>
-
-                                        <td>20</td>
-                                        <td>20</td>
-                                        <td>50%</td>
+                            <table id="EmpInfo" class="table table-bordered table-responsive-lg text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Sr.No<br />
+                                            सरल.क्र</th>
+                                        <th>District Name<br />
+                                            जिले का नाम</th>
+                                        <th>Block Name<br />
+                                            ब्लॉक का नाम</th>
+                                        <th>Employee Name<br />
+                                            कर्मचारी नाम</th>
+                                        <th>OIS Code<br />
+                                            OIS कोड</th>
+                                        <th id="EmpInfoView">View</th>
 
 
-
-
-
-
+                                        <%--<th>प्रिंट</th--%>
                                     </tr>
-                                </tbody>
+                                    <tbody id="EmpInfoBody">
+                                    </tbody>
 
-                        </table>
+                            </table>
+                        </div>
                     </div>
                 </div>
-</div>
-
             </fieldset>
-
         </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-    <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-    <script>   
-        function ShowPdf() {
-            $('#districtModal').modal('hide');
-            document.getElementById('pdfViewer').src = '../Document/DPI-HRMS.pdf';
-            $('#pdfModal').modal('show');
-        };
-        function checkFileSize(inputId, maxSizeInKB, errorMessageId) {
-            const fileInput = document.getElementById(inputId);
-            const fileSizeMessage = document.getElementById(errorMessageId);
-            const maxSizeInBytes = maxSizeInKB * 1024;
+<script>
+    const Blocks = {
+        //"Raisen": ["Badi", "Begamganj", "Obedullaganj", "Sanchi", "Silwani", "Udaipura"],
+        //"Rajgarh": ["Biaora", "Jirapur", "Khilchipur", "Narsinghgarh"],
+        //"Vidisha": ["Basoda", "Kurwai", "Lateri", "Sironj", "Vidisha"],
+        "Sehore": ["Ashta", "Budhni", "Ichhawar", "Jawar", "Nasrullaganj", "Rehti", "Sehore"],
+        "Bhopal": ["Berasia", "Phanda"],
+        "Indore": ["Dr.Ambedkar Nagar(MHOW)", "Sanwer", "Depalpur", "Indore"],
+        "Sagar": ["Bina", "Deori", "Jaisinagar", "Kesli", "Khurai", "Malthone", "Rahatgarh", "Rehli", "Sagar", "Shahgarh"],
+    };
+    const FilePath = ["../Document/APRMS_APRReport.pdf", "../Document/APRMS_Not_Applicable.pdf"]
+    const OIS = ["23354912798 -Bal Bharti School", "34459823721 -New Horizon School", "45563178456 -Little Angels School", "56678931234 -Green Valley School", "67784251983 -Sunrise Public School	", "78897563214 -Bright Minds School", "89908674325 -Modern Public School"];
+    const names = ["UV3456-Vikram Singh", "WX7890-Anita Verma", "YZ1234-Amit Kumar", "AB5678-Priya Sharma", "CD9012-Rajesh Mehta", "EF2345-Suman Singh", "GH6789-Krishna Patel", "IJ0123-Sanjay Gupta", "KL4567-Pooja Sharma", "MN8901-Vinay Kumar", "OP2345-Maya Patel", "QR6789-Vivek Singh", "ST0123-Swati Gupta", "UV4567-Rakesh Sharma", "WX8901-Neha Patel", "YZ2345-Rahul Singh", "AB6789-Anjali Verma", "CD0123-Rajat Gupta", "EF4567-Kavita Sharma", "AB1234-Manish Meena", "CD5678-Ritu Sharma", "EF9012-Rahul Gupta", "GH3456-Sangeeta Patel", "IJ7890-Ravi Kumar", "VT3465-Khari Mohan", "VT3464-Naya Adwani", "VT3463-Ishaan Mallik", "VT3462-Atharv Shriwastav", "VT3461-Kanan Yadav", "VT3460-Jai Radhor", "VT3467-Amar Dewan", "VT3468-Dhruv Mathur", "VT3469-Aarna Sahu", "VT3470-Agastya Patel", "VT3471-Reyansh Shingh", "VT3472-Tenzin Ali", "VT3473-Jiya Gandhi", "VT3474-Nila Prajapati", "VT3475-Indu Mohan", "VT3476-Sahana Shah"];
 
-            const file = fileInput.files[0];
-            //if (file && file.size > maxSizeInBytes) {
-            //    fileSizeMessage.innerHTML = '<br>File size exceeds the maximum limit (' + maxSizeInKB + ' KB). Please select a smaller file.';
-            //    // Optionally, you could clear the file input here to prevent submitting the oversized file
-            //    fileInput.value = '';
-            //} else {
-            //    fileSizeMessage.textContent = '';
-            //}
+    function myEmpTable(rows, district, flag = 'Yes') {
+        document.getElementById('fsEmpInfo').style.display = 'block';
+        const tableBody = document.getElementById('EmpInfoBody');
+
+        tableBody.innerHTML = ''; 
+        const blockOptions = Blocks[district] || [district];
+        const OIScode = OIS;
+        if (flag == 'Yes') {
+            document.getElementById('EmpInfoView').style.display = 'table-cell'
+
+            for (var i = 1; i < rows + 1; i++) {
+                const tr = document.createElement('tr');
+                const randomBlock = blockOptions.length ? blockOptions[Math.floor(Math.random() * blockOptions.length)] : '';
+                const randomnames = names.length ? names[Math.floor(Math.random() * names.length)] : '';
+                const randomOIS = OIScode.length ? OIScode[Math.floor(Math.random() * OIScode.length)] : '';
+                const randomFile = FilePath.length ? FilePath[Math.floor(Math.random() * FilePath.length)] : '';
+                tr.innerHTML = `
+                    <td>${i}</td>
+                    <td>${district}</td>
+                    <td>${randomBlock}</td>
+                    <td>${randomnames}</td>
+                    <td>${randomOIS}</td>
+                    <td><a role="button"  class="btn btn-outline-info btn-border w-lg" href="${randomFile}" target="_blank">View</a></td>
+                   
+                `;
+                tableBody.appendChild(tr);
+            }
         }
-
+        else {
+            document.getElementById('EmpInfoView').style.display = 'none'
+            for (var i = 1; i < rows + 1; i++) {
+                const tr = document.createElement('tr');
+                const randomBlock = blockOptions.length ? blockOptions[Math.floor(Math.random() * blockOptions.length)] : '';
+                const randomOIS = OIScode.length ? OIScode[Math.floor(Math.random() * OIScode.length)] : '';
+                const randomnames = names.length ? names[Math.floor(Math.random() * names.length)] : '';
+                tr.innerHTML = `
+                  <td>${i}</td>
+                  <td>${district}</td>
+                  <td>${randomBlock}</td>
+                  <td>${randomnames}</td>
+                  <td>${randomOIS}</td>
+                  `;
+                tableBody.appendChild(tr);
+            }
+        }
+    }
+   
+</script>
+    <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
+    <script>        
         $('.datepickerYear').datepicker({
             format: "yyyy",
             minViewMode: 2,
@@ -869,334 +776,6 @@
             setDefaultFinancialYear();
         });
     </script>
-    <%--<script>
-        var employeeData = {
-            'Bhopal': [
-                {
-                    "employee": "AB1234-Manish Meena",
-                    "sankul": "23354912798 -Bal Bharti School",
-                    "office": "23354912798 -Bal Bharti School",
-                    "department": "Education",
-                    "designation": "Assistant Teacher",
-                    "year": "2023-24",
-
-
-                },
-                {
-                    "employee": "CD5678-Ritu Sharma",
-                    "sankul": "34459823721 -New Horizon School",
-                    "office": "34459823721 -New Horizon School",
-                    "department": "Education",
-                    "designation": "Teacher",
-                    "year": "2023-24"
-
-                },
-                {
-                    "employee": "EF9012-Rahul Gupta",
-                    "sankul": "45563178456 -Little Angels School",
-                    "office": "45563178456 -Little Angels School",
-                    "department": "Education",
-                    "designation": "Principal",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "GH3456-Sangeeta Patel",
-                    "sankul": "56678931234 -Green Valley School",
-                    "office": "56678931234 -Green Valley School",
-                    "department": "Education",
-                    "designation": "Assistant Teacher",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "IJ7890-Ravi Kumar",
-                    "sankul": "67784251983 -Sunrise Public School",
-                    "office": "67784251983 -Sunrise Public School",
-                    "department": "Education",
-                    "designation": "Teacher",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "KL2345-Swati Verma",
-                    "sankul": "78897563214 -Bright Minds School",
-                    "office": "78897563214 -Bright Minds School",
-                    "department": "Education",
-                    "designation": "Assistant Teacher",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "MN6789-Ajay Singh",
-                    "sankul": "89908674325 -Modern Public School",
-                    "office": "89908674325 -Modern Public School",
-                    "department": "Education",
-                    "designation": "Principal",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "OP1234-Sunita Sharma",
-                    "sankul": "90098765432 -Global Academy",
-                    "office": "90098765432 -Global Academy",
-                    "department": "Education",
-                    "designation": "Assistant Teacher",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "QR5678-Rajesh Tiwari",
-                    "sankul": "10011223344 -Vidya Niketan",
-                    "office": "10011223344 -Vidya Niketan",
-                    "department": "Education",
-                    "designation": "Teacher",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "ST9012-Neha Gupta",
-                    "sankul": "11122334455 -Divine Public School",
-                    "office": "11122334455 -Divine Public School",
-                    "department": "Education",
-                    "designation": "Assistant Teacher",
-                    "year": "2023-24"
-                }
-            ],
-            'Raisen': [
-                {
-                    "employee": "AB1234-Rakesh Kumar",
-                    "sankul": "23354912798 -Govt. Higher Secondary School",
-                    "office": "23354912798 -Govt. Higher Secondary School",
-                    "department": "Education",
-                    "designation": "Teacher",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "CD5678-Kavita Singh",
-                    "sankul": "34459823721 -Govt. Primary School",
-                    "office": "34459823721 -Govt. Primary School",
-                    "department": "Education",
-                    "designation": "Assistant Teacher",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "EF9012-Raj Kumar",
-                    "sankul": "45563178456 -Govt. Middle School",
-                    "office": "45563178456 -Govt. Middle School",
-                    "department": "Education",
-                    "designation": "Principal",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "GH3456-Sapna Patel",
-                    "sankul": "56678931234 -Govt. High School",
-                    "office": "56678931234 -Govt. High School",
-                    "department": "Education",
-                    "designation": "Teacher",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "IJ7890-Alok Singh",
-                    "sankul": "67784251983 -Govt. Primary School",
-                    "office": "67784251983 -Govt. Primary School",
-                    "department": "Education",
-                    "designation": "Assistant Teacher",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "KL2345-Meena Verma",
-                    "sankul": "78897563214 -Govt. Middle School",
-                    "office": "78897563214 -Govt. Middle School",
-                    "department": "Education",
-                    "designation": "Principal",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "MN6789-Suresh Kumar",
-                    "sankul": "89908674325 -Govt. Higher Secondary School",
-                    "office": "89908674325 -Govt. Higher Secondary School",
-                    "department": "Education",
-                    "designation": "Teacher",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "OP1234-Kiran Sharma",
-                    "sankul": "90098765432 -Govt. Primary School",
-                    "office": "90098765432 -Govt. Primary School",
-                    "department": "Education",
-                    "designation": "Assistant Teacher",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "QR5678-Sanjay Tiwari",
-                    "sankul": "10011223344 -Govt. Middle School",
-                    "office": "10011223344 -Govt. Middle School",
-                    "department": "Education",
-                    "designation": "Principal",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "ST9012-Aarti Gupta",
-                    "sankul": "11122334455 -Govt. Higher Secondary School",
-                    "office": "11122334455 -Govt. Higher Secondary School",
-                    "department": "Education",
-                    "designation": "Teacher",
-                    "year": "2023-24"
-                }
-            ],
-            'Rajgarh': [
-                {
-                    "employee": "AB1234-Rajesh Meena",
-                    "sankul": "23354912798 -Govt. Higher Secondary School",
-                    "office": "23354912798 -Govt. Higher Secondary School",
-                    "department": "Education",
-                    "designation": "Principal",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "CD5678-Asha Sharma",
-                    "sankul": "34459823721 -Govt. Middle School",
-                    "office": "34459823721 -Govt. Middle School",
-                    "department": "Education",
-                    "designation": "Teacher",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "EF9012-Suresh Gupta",
-                    "sankul": "45563178456 -Govt. Primary School",
-                    "office": "45563178456 -Govt. Primary School",
-                    "department": "Education",
-                    "designation": "Assistant Teacher",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "GH3456-Neeta Patel",
-                    "sankul": "56678931234 -Govt. Higher Secondary School",
-                    "office": "56678931234 -Govt. Higher Secondary School",
-                    "department": "Education",
-                    "designation": "Principal",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "IJ7890-Ram Kumar",
-                    "sankul": "67784251983 -Govt. Middle School",
-                    "office": "67784251983 -Govt. Middle School",
-                    "department": "Education",
-                    "designation": "Teacher",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "KL2345-Ritu Verma",
-                    "sankul": "78897563214 -Govt. Primary School",
-                    "office": "78897563214 -Govt. Primary School",
-                    "department": "Education",
-                    "designation": "Assistant Teacher",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "MN6789-Sanjay Kumar",
-                    "sankul": "89908674325 -Govt. Higher Secondary School",
-                    "office": "89908674325 -Govt. Higher Secondary School",
-                    "department": "Education",
-                    "designation": "Principal",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "OP1234-Aarti Sharma",
-                    "sankul": "90098765432 -Govt. Middle School",
-                    "office": "90098765432 -Govt. Middle School",
-                    "department": "Education",
-                    "designation": "Teacher",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "QR5678-Ajay Tiwari",
-                    "sankul": "10011223344 -Govt. Primary School",
-                    "office": "10011223344 -Govt. Primary School",
-                    "department": "Education",
-                    "designation": "Assistant Teacher",
-                    "year": "2023-24"
-                },
-                {
-                    "employee": "ST9012-Neetu Gupta",
-                    "sankul": "11122334455 -Govt. Higher Secondary School",
-                    "office": "11122334455 -Govt. Higher Secondary School",
-                    "department": "Education",
-                    "designation": "Principal",
-                    "year": "2023-24"
-                }
-            ]
-        }
-        function populateMainTable(data) {
-            const mainTableBody = document.querySelector('#mainTable tbody');
-            mainTableBody.innerHTML = ''; // Clear existing rows
-            if (document.querySelector('#ddlDistrict').value == "All") {
-                Object.entries(data).forEach(([district], index) => {
-                    const row = `
-            <tr ">
-                <td>${index + 1}</td>
-                <td>${district}</td>
-               
-                <td><a data-bs-toggle="modal" data-bs-target="#districtModal" onclick="populateModalTable('${district}') " href="#" style="color: blue; font-weight: bold;">${10}</a></td>
-                <td>${40}</td>
-                <td>${20}%</td>
-            </tr>
-        `;
-                    mainTableBody.innerHTML += row;
-                }
-                );
-            }
-            else if (document.querySelector('#ddlDistrict').value != "All") {
-
-
-                data = Object.keys(data).filter(key => document.querySelector('#ddlDistrict').value.includes(key))
-                    .reduce((obj, key) => {
-                        obj[key] = data[key];
-                        return obj;
-                    }, {});
-
-
-                Object.entries(data).forEach(([district], index) => {
-
-                    const row = `
-                        <tr ">
-                        <td>${index + 1}</td>
-                        <td>${district}</td>
-       
-                        <td><a data-bs-toggle="modal" data-bs-target="#districtModal" onclick="populateModalTable('${district}') " href="#" style="color: blue; font-weight: bold;">${10}</a></td>
-                        <td>${40}</td>
-                        <td>${20}%</td>
-                        </tr>
-                        `;
-                    mainTableBody.innerHTML += row;
-                }
-                );
-            }
-           
-
-        }
-        function checkdist(age) {
-            return age[document.querySelector('#ddlDistrict').value];
-        }
-        function populateModalTable(district) {
-            const modalTableBody = document.querySelector('#modalTable tbody');
-            modalTableBody.innerHTML = ''; // Clear existing rows
-
-            const districtData = employeeData[district];
-            districtData.forEach((item, index) => {
-                const row = `
-            <tr>
-                <td>${index + 1}</td>
-                <td>${item.employee}</td>
-                <td>${district}</td>
-                <td>${item.sankul}</td>
-                <td>${item.office}</td>
-                <td>${item.department}</td>
-                <td>${item.designation}</td>
-                <td>${item.year}</td>
-                <td><button type="button" class="btn btn-primary" onclick="ShowPdf()"><i class="fa fa-eye" aria-hidden="true"></i></button></td>
-            </tr>
-        `;
-                modalTableBody.innerHTML += row;
-            });
-            document.getElementById('modalDistrictName').innerText = district;
-        }
-         //Populate the main table initially
-        populateMainTable(employeeData);
-    </script>--%>
+    
 </asp:Content>
 

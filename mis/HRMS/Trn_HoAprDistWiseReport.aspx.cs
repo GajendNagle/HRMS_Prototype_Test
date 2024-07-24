@@ -24,7 +24,6 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             show2.Visible = false;
             show3.Visible = false;
             show4.Visible = false;
-            Fieldset1.Visible = false;
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
@@ -38,7 +37,6 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             show2.Visible = false;
             show3.Visible = false;
             show4.Visible = false;
-            Fieldset1.Visible = false;
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
@@ -52,7 +50,6 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             show2.Visible = true;
             show3.Visible = false;
             show4.Visible = false;
-            Fieldset1.Visible = false;
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
@@ -67,7 +64,6 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             show2.Visible = false;
             show3.Visible = true;
             show4.Visible = false;
-            Fieldset1.Visible = false;
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
@@ -82,7 +78,6 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             show2.Visible = false;
             show3.Visible = false;
             show4.Visible = true;
-            Fieldset1.Visible = false;
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
@@ -97,7 +92,6 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
         show2.Visible = false;
         show3.Visible = false;
         show4.Visible = false;
-        Fieldset1.Visible = false;
         Fieldset2.Visible = true;
         Fieldset3.Visible = false;
         Fieldset4.Visible = false;
@@ -113,7 +107,6 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
         show2.Visible = false;
         show3.Visible = false;
         show4.Visible = false;
-        Fieldset1.Visible = false;
         Fieldset2.Visible = false;
         Fieldset3.Visible = true;
         Fieldset4.Visible = false;
@@ -128,7 +121,6 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
         show2.Visible = false;
         show3.Visible = false;
         show4.Visible = false;
-        Fieldset1.Visible = false;
         Fieldset2.Visible = false;
         Fieldset3.Visible = false;
         Fieldset4.Visible = true;
@@ -144,7 +136,6 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
         show2.Visible = false;
         show3.Visible = false;
         show4.Visible = false;
-        Fieldset1.Visible = false;
         Fieldset2.Visible = false;
         Fieldset3.Visible = false;
         Fieldset4.Visible = false;
@@ -159,7 +150,6 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
         show2.Visible = false;
         show3.Visible = false;
         show4.Visible = false;
-        Fieldset1.Visible = false;
         Fieldset2.Visible = true;
         Fieldset3.Visible = false;
         Fieldset4.Visible = false;
@@ -173,7 +163,6 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
         show2.Visible = false;
         show3.Visible = false;
         show4.Visible = false;
-        Fieldset1.Visible = false;
         Fieldset2.Visible = false;
         Fieldset3.Visible = true;
         Fieldset4.Visible = false;
@@ -189,7 +178,6 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
         show2.Visible = false;
         show3.Visible = false;
         show4.Visible = false;
-        Fieldset1.Visible = false;
         Fieldset2.Visible = false;
         Fieldset3.Visible = false;
         Fieldset4.Visible = true;
@@ -204,8 +192,7 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
         show1.Visible = false;
         show2.Visible = false;
         show3.Visible = false;
-        show4.Visible = false;
-        Fieldset1.Visible = false;
+        show4.Visible = false;       
         Fieldset2.Visible = false;
         Fieldset3.Visible = false;
         Fieldset4.Visible = false;
@@ -222,8 +209,7 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             show1.Visible = false;
             show2.Visible = false;
             show3.Visible = false;
-            show4.Visible = false;
-            Fieldset1.Visible = false;
+            show4.Visible = false;            
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
@@ -236,7 +222,6 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             show2.Visible = false;
             show3.Visible = false;
             show4.Visible = false;
-            Fieldset1.Visible = false;
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
@@ -249,7 +234,6 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             show2.Visible = false;
             show3.Visible = false;
             show4.Visible = false;
-            Fieldset1.Visible = false;
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
@@ -262,7 +246,6 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             show2.Visible = false;
             show3.Visible = false;
             show4.Visible = false;
-            Fieldset1.Visible = false;
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
@@ -275,7 +258,6 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             show2.Visible = false;
             show3.Visible = false;
             show4.Visible = false;
-            Fieldset1.Visible = false;
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
@@ -288,7 +270,6 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             show2.Visible = false;
             show3.Visible = false;
             show4.Visible = false;
-            Fieldset1.Visible = false;
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
@@ -301,7 +282,6 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             show2.Visible = false;
             show3.Visible = false;
             show4.Visible = false;
-            Fieldset1.Visible = false;
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
