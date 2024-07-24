@@ -116,7 +116,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                   <%--  <h5 class="card-title">Employee APR Form/
+                    <%--  <h5 class="card-title">Employee APR Form/
 ' कर्मचारी एपीआर फॉर्म
                      </h5>--%>
                     <asp:RadioButtonList runat="server" ID="rdAprm" RepeatDirection="Horizontal" OnSelectedIndexChanged="rdAprm_SelectedIndexChanged" CssClass="font-bold" AutoPostBack="true">
@@ -466,58 +466,65 @@
                             <table id="Table1" class="table table-bordered text-center">
                                 <thead>
                                     <tr valign="middle" style="background-color: #1B5B5C; white-space: nowrap;" class="text-white">
-    <th>S.No.<br />
-        क्र.सं</th>
-    <th>Financial Year<br />
-        वित्तीय वर्ष</th>
-    <th class="d-none d-md-table-cell">Employee Name<br />
-        कर्मचारी का नाम</th>
-    <th class="d-none d-md-table-cell">Designation<br />
-        पद </th>
-    <th>Employee Code<br />
-        कर्मचारी कोड</th>
-    <th>Current Salary<br />
-        वर्तमान वेतन</th>
-    <th>Increment Date<br />
-        वेतन वृद्धि तिथि </th>
-    <th>Division<br />
-        संभाग </th>
-    <th>District<br />
-        जिला </th>
-    <th>Block<br />
-        ब्लॉक </th>
-    <th>Gram Panchaya<br />
-        /ग्राम पंचायत</th>
-    <th>Gram/Village<br />
-        ग्राम/गांव</th>
-    <th>Property Detail<br />
-        संपत्ति विवरण</th>
-    <th>Total Area<br />
-        कुल क्षेत्रफल</th>
-    <th>Current Value<br />
-        वर्तमान मूल्य</th>
-    <th>Property Owner<br />
-        संपत्ति का मालिक </th>
-    <th>Property Source<br />
-        संपत्ति का स्रोत</th>
-    <th>Purchase Date<br />
-        खरीद की तारीख</th>
-    <th>Seller Mobile No<br />
-        विक्रेता का मोबाइल नंबर</th>
-    <th>Seller Address<br />
-        विक्रेता का पता</th>
-    <th>Property Annual Income<br />
-        संपत्ति से वार्षिक आय</th>
-    <th>Accusation<br />
-        अभियुक्ति</th>
+                                        <th>S.No.<br />
+                                            क्र.सं</th>
+                                        <th>Financial Year<br />
+                                            वित्तीय वर्ष</th>
+                                        <th class="d-none d-md-table-cell">Employee Name<br />
+                                            कर्मचारी का नाम</th>
+                                        <th class="d-none d-md-table-cell">Designation<br />
+                                            पद </th>
+                                        <th>Employee Code<br />
+                                            कर्मचारी कोड</th>
+                                        <th>Current Salary<br />
+                                            वर्तमान वेतन</th>
+                                        <th>Increment Date<br />
+                                            वेतन वृद्धि तिथि </th>
+                                        <th>Division<br />
+                                            संभाग </th>
+                                        <th>District<br />
+                                            जिला </th>
+                                        <th>Block<br />
+                                            ब्लॉक </th>
+                                        <th>Gram Panchaya<br />
+                                            /ग्राम पंचायत</th>
+                                        <th>Gram/Village<br />
+                                            ग्राम/गांव</th>
+                                        <th>Property Detail<br />
+                                            संपत्ति विवरण</th>
+                                        <th>Total Area<br />
+                                            कुल क्षेत्रफल</th>
+                                        <th>Current Value<br />
+                                            वर्तमान मूल्य</th>
+                                        <th>Property Owner<br />
+                                            संपत्ति का मालिक </th>
+                                        <th>Property Source<br />
+                                            संपत्ति का स्रोत</th>
+                                        <th>Purchase Date<br />
+                                            खरीद की तारीख</th>
+                                        <th>Seller Mobile No<br />
+                                            विक्रेता का मोबाइल नंबर</th>
+                                        <th>Seller Address<br />
+                                            विक्रेता का पता</th>
+                                        <th>Property Annual Income<br />
+                                            संपत्ति से वार्षिक आय</th>
+                                        <th>Accusation<br />
+                                            अभियुक्ति</th>
+                                        <th>Action<br />
+                                            कार्रवाई</th>
 
-</tr>
+                                    </tr>
                                 </thead>
-                                <tbody></tbody>
+                                <tbody id="tbody"></tbody>
 
                             </table>
                         </div>
                     </div>
+                </div>
+                <hr />
+                <div class="col-md-12 form-group">
+                    <button id="searchButton" type="button" class="Alert-Save btn btn-outline-success w-lg btn-border">Save</button>
+                    <a href="AnnualPropertyDetailsForm.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                 </div>
             </fieldset>
 
@@ -527,6 +534,60 @@
 
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+  <script>
+      debugger;
+      !function ($) {
+          "use strict";
+          var SweetAlert = function () { };
+          //examples
+          SweetAlert.prototype.init = function () {
+              //Basic
+              //Success Message
+              $('.Alert-Save').click(function () {
+                  Swal.fire({
+                      title: 'Are you sure?',
+                      text: "Do you want to Send this record ?",
+                      type: 'warning',
+                      showCancelButton: true,
+                      confirmButtonColor: '#3085D6',
+                      cancelButtonColor: '#d33',
+                      confirmButtonText: 'Yes'
+                      // animation: false,
+                      // customClass: {
+                      //     popup: 'animated tada'
+                      // }
+                  }).then((result) => {
+                      if (result.value) {
+                          Swal.fire({
+                              type: 'success',
+                              title: 'Success!',
+                              text: 'Record Saved Successfully!',
+                              timer: 2000,
+
+                              // animation: false,<a href="">TeacherFillReport.aspx</a>
+                              // customClass: {
+                              //     popup: 'animated tada'<a href="ReportingOfficerFill.aspx">ReportingOfficerFill.aspx</a>
+                              // }
+                          }
+                          ).then(() => {
+                              // Redirect to another page after success message is closed
+                              var table = document.getElementById("Table1");
+                              document.getElementById('tbody').style.display = "none";
+                          });
+                         
+                      }
+                  })
+              });
+          },
+              //init
+              $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
+      }(window.jQuery),
+          //initializing
+          function ($) {
+              "use strict";
+              $.SweetAlert.init()
+          }(window.jQuery);
+  </script>
     <script>
 
         function HidedivOwner() {
@@ -615,96 +676,95 @@
 
 
     </script>
-       <script>
+    <script>
+        function addData2() {
+            debugger;
+            document.getElementById("Fieldset1").style.display = 'block';
+            let name = document.getElementById("Year").value;
+            let email = document.getElementById("txtemplname").value;
+            let mobile = document.getElementById("txtempldesigntn").value;
+            let PreviousGradea = document.getElementById("txtempluniquecode").value;
+            let PreviousGradeab = document.getElementById("txtcursalary").value;
+            let PreviousGradec = document.getElementById("dob").value;
+            let PreviousGraded = document.getElementById("ddlDivision").value;
+            let PreviousGradee = document.getElementById("ddlDistrict").value;
+            let Gradea = document.getElementById("ddlBlock").value;
+            let Gradeb = document.getElementById("ddlGramPanchayat").value;
+            let Gradec = document.getElementById("ddlGram").value;
+            let Graded = document.getElementById("ddlproprty").value;
+            let Gradee = document.getElementById("txtValue").value;
+            let Gradef = document.getElementById("ddlpropertyowner").value;
+            let Gradeg = document.getElementById("<%=ownername.ClientID%>").value;
+            let Gradeh = document.getElementById("ddlPropertySource").value;
+            let Gradei = document.getElementById("txtPurchase").value;
+            let Gradej = document.getElementById("monumber").value;
+            let Gradeklplp = document.getElementById("address").value;
+            let Gradeklplphvj = document.getElementById("Income").value;
+            let Gradeklplphvasdsj = document.getElementById("Accusation").value;
 
-           debugger
-           function addData2() {
-               document.getElementById("Fieldset1").style.display = 'block';
-               let name = document.getElementById("Year").value;
-               let email = document.getElementById("txtemplname").value;
-               let mobile = document.getElementById("txtempldesigntn").value;
-               let PreviousGradea = document.getElementById("txtempluniquecode").value;
-               let PreviousGradeab = document.getElementById("txtcursalary").value;
-               let PreviousGradec = document.getElementById("dob").value;
-               let PreviousGraded = document.getElementById("ddlDivision").value;
-               let PreviousGradee = document.getElementById("ddlDistrict").value;
-               let Gradea = document.getElementById("ddlBlock").value;
-               let Gradeb = document.getElementById("ddlGramPanchayat").value;
-               let Gradec = document.getElementById("ddlGram").value;
-               let Graded = document.getElementById("ddlproprty").value;
-               let Gradee = document.getElementById("txtValue").value;
-               let Gradef = document.getElementById("ddlpropertyowner").value;
-               let Gradeg = document.getElementById('<%=ownername.ClientID%>').value;
-           let Gradeh = document.getElementById("ddlPropertySource").value;
-           let Gradei = document.getElementById("txtPurchase").value;
-           let Gradej = document.getElementById("monumber").value;
-           let Gradek1 = document.getElementById("address").value; // Renamed Gradek
-           let Gradek2 = document.getElementById("Accusation").value; // Renamed Gradek
+            // Get the table and insert a new row at the end
+            let table = document.getElementById('Table1');
+            let newRow = table.getElementsByTagName('tbody')[0].insertRow();
+            // Insert data into cells of the new row
+            newRow.insertCell(0).innerHTML = table.rows.length - 1;
+            newRow.insertCell(1).innerHTML = name;
+            newRow.insertCell(2).innerHTML = email;
+            newRow.insertCell(3).innerHTML = mobile;
+            newRow.insertCell(4).innerHTML = PreviousGradea;
+            newRow.insertCell(5).innerHTML = PreviousGradeab;
+            newRow.insertCell(6).innerHTML = PreviousGradec;
+            newRow.insertCell(7).innerHTML = PreviousGraded;
+            newRow.insertCell(8).innerHTML = PreviousGradee;
+            newRow.insertCell(9).innerHTML = Gradea;
+            newRow.insertCell(10).innerHTML = Gradeb;
+            newRow.insertCell(11).innerHTML = Gradec;
+            newRow.insertCell(12).innerHTML = Graded;
+            newRow.insertCell(13).innerHTML = Gradee;
+            newRow.insertCell(14).innerHTML = Gradef;
+            newRow.insertCell(15).innerHTML = Gradeg;
+            newRow.insertCell(16).innerHTML = Gradeh;
+            newRow.insertCell(17).innerHTML = Gradei;
+            newRow.insertCell(18).innerHTML = Gradej;
+            newRow.insertCell(19).innerHTML = Gradeklplp;
+            newRow.insertCell(20).innerHTML = Gradeklplphvj;
+            newRow.insertCell(21).innerHTML = Gradeklplphvasdsj;
+            
+            //const actionButtonTd = newRow.cells[20];
+            //actionButtonTd.innerHTML += sghsgfhg;
+            //newRow.insertCell(21);
+            //const actionButtonTd = newRow.cells[21];
+            //actionButtonTd.innerHTML += aidfujfh;
+            // Add action field
+            newRow.insertCell(22);
+            const actionButtonTd = newRow.cells[22];
+            actionButtonTd.innerHTML += '<a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a>';
 
-           // Get the table and insert a new row at the end
-           let table = document.getElementById('Table1');
-           let newRow = table.getElementsByTagName('tbody')[0].insertRow();
-           // Insert data into cells of the new row
-           newRow.insertCell(0).innerHTML = table.rows.length - 1;
-           newRow.insertCell(1).innerHTML = name;
-           newRow.insertCell(2).innerHTML = email;
-           newRow.insertCell(3).innerHTML = mobile;
-           newRow.insertCell(4).innerHTML = PreviousGradea;
-           newRow.insertCell(5).innerHTML = PreviousGradeab;
-           newRow.insertCell(6).innerHTML = PreviousGradec;
-           newRow.insertCell(7).innerHTML = PreviousGraded;
-           newRow.insertCell(8).innerHTML = PreviousGradee;
-           newRow.insertCell(9).innerHTML = Gradea;
-           newRow.insertCell(10).innerHTML = Gradeb;
-           newRow.insertCell(11).innerHTML = Gradec;
-           newRow.insertCell(12).innerHTML = Graded;
-           newRow.insertCell(13).innerHTML = Gradee;
-           newRow.insertCell(14).innerHTML = Gradef;
-           newRow.insertCell(15).innerHTML = Gradeg;
-           newRow.insertCell(16).innerHTML = Gradeh;
-           newRow.insertCell(17).innerHTML = Gradei;
-           newRow.insertCell(18).innerHTML = Gradej;
-           newRow.insertCell(19).innerHTML = Gradek1;
-           newRow.insertCell(20).innerHTML = Gradek2;
+            // Clear input fields after adding the row
+            clearInputs2();
+        };
 
-           // Add action field
-           newRow.insertCell(21);
-
-           // Create buttons for action
-           const actionButtonTd = newRow.cells[21];
-           actionButtonTd.innerHTML += '<a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a>';
-
-           // Clear input fields after adding the row
-           clearInputs2();
-       };
-
-       // Function to clear input fields after adding a row
-       function clearInputs2() {
-           document.getElementById("Year").value = "";
-           document.getElementById("txtemplname").value = "";
-           document.getElementById("txtempldesigntn").value = "";
-           document.getElementById("txtempluniquecode").value = "";
-           document.getElementById("txtcursalary").value = "";
-           document.getElementById("dob").value = "";
-           document.getElementById("ddlDivision").value = "";
-           document.getElementById("ddlDistrict").value = "";
-           document.getElementById("ddlBlock").value = "";
-           document.getElementById("ddlGramPanchayat").value = "";
-           document.getElementById("ddlGram").value = "";
-           document.getElementById("ddlproprty").value = "";
-           document.getElementById("txtValue").value = "";
-           document.getElementById("ddlpropertyowner").value = "";
-           document.getElementById("<%=ownername.ClientID%>").value = "";
-               document.getElementById("ddlPropertySource").value = "";
-               document.getElementById("txtPurchase").value = "";
-               document.getElementById("monumber").value = "";
-               document.getElementById("address").value = "";
-               // Renamed variables
-               //document.getElementById("rowspan").value ="";
-               //document.getElementById("Action").value ="";
-           }
-
-       </script>
-
+        // Function to clear input fields after adding a row
+        function clearInputs2() {
+            document.getElementById("Year").value = "";
+            document.getElementById("txtemplname").value = "";
+            document.getElementById("txtempldesigntn").value = "";
+            document.getElementById("txtempluniquecode").value = "";
+            document.getElementById("txtcursalary").value = "";
+            document.getElementById("dob").value = "";
+            document.getElementById("ddlDivision").value = "";
+            document.getElementById("ddlDistrict").value = "";
+            document.getElementById("ddlBlock").value = "";
+            document.getElementById("ddlGramPanchayat").value = "";
+            document.getElementById("ddlGram").value = "";
+            document.getElementById("ddlproprty").value = "";
+            document.getElementById("txtValue").value = "";
+            document.getElementById("ddlpropertyowner").value = "";
+            document.getElementById("<%=ownername.ClientID%>").value = "";
+            document.getElementById("ddlPropertySource").value = "";
+            document.getElementById("txtPurchase").value = "";
+            document.getElementById("monumber").value = "";
+            document.getElementById("address").value = "";
+        }
+    </script>
 </asp:Content>
 

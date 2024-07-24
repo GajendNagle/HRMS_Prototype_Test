@@ -355,17 +355,14 @@ of annual examination result
                                         <td>
                                             <select class="form-control select2" style="width: 70px;" id="ddlClass3" onchange="myaddbtn2()">
                                                 <option value="0">--Select--</option>
-                                               <%-- <option>1st class/कक्षा पहली</option>
-                                                <option>2nd class/कक्षा दूसरी</option>
-                                                <option>3rd class/कक्षा तीसरी</option>
-                                                <option>4th class/कक्षा चौथी</option>--%>
+                                            
                                                 <option>5th class/कक्षा पाचंवी</option>
-                                               <%-- <option>6th class/कक्षा छटवी</option>
-                                                <option>7th class/कक्षा सातवी</option>--%>
-                                               <%-- <option>8th class/कक्षा आठवी</option>
-                                                <option>9th class/कक्षा नव्वी</option>--%>
+                                                <option>8th class/कक्षा आठवी</option>
+                                               
+                                               
+                                              
                                                 <option>10th class/कक्षा दसवी</option>
-                                               <%-- <option>11th class/कक्षा ग्यारवी</option>--%>
+                                              
                                                 <option>12th class/कक्षा बरवी</option>
                                             </select></td>
                                         <td>

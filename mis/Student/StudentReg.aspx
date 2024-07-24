@@ -310,6 +310,7 @@
                                     </select>
                                 </div>
                             </div>
+                            </div>
                             <%--  <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
@@ -1037,7 +1038,7 @@
                                 <label>
                                     Select School Name<br />
                                     स्कूल का नाम चुनें</label>
-                                <select class="form-control  ">
+                                <select class="form-control  select2">
 
                                     <option>GOVT HSS AHAMDABAD</option>
                                     <option>GOVT HSS KHAJURI KALAN</option>

@@ -16,10 +16,10 @@ public partial class mis_Transaction_Rpt_DistrictWiseAcr : System.Web.UI.Page
 
     protected void Unnamed_Click(object sender, EventArgs e)
     {
-       
-         if (txtUniqueID.SelectedItem.Text == "All")
+
+        if (txtUniqueID.SelectedItem.Text == "All")
         {
-          
+
             show.Visible = true;
             show1.Visible = false;
             show2.Visible = false;
@@ -30,9 +30,9 @@ public partial class mis_Transaction_Rpt_DistrictWiseAcr : System.Web.UI.Page
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;
         }
-      else  if (txtUniqueID.SelectedItem.Text == "Bhopal")
+        else if (txtUniqueID.SelectedItem.Text == "Bhopal")
         {
-         
+
             show.Visible = false;
             show1.Visible = true;
             show2.Visible = false;
@@ -45,7 +45,7 @@ public partial class mis_Transaction_Rpt_DistrictWiseAcr : System.Web.UI.Page
         }
         else if (txtUniqueID.SelectedItem.Text == "Indore")
         {
-           
+
             show.Visible = false;
             show1.Visible = false;
             show2.Visible = true;
@@ -59,7 +59,7 @@ public partial class mis_Transaction_Rpt_DistrictWiseAcr : System.Web.UI.Page
         }
         else if (txtUniqueID.SelectedItem.Text == "Sagar")
         {
-         
+
             show.Visible = false;
             show1.Visible = false;
             show2.Visible = false;
@@ -73,7 +73,7 @@ public partial class mis_Transaction_Rpt_DistrictWiseAcr : System.Web.UI.Page
         }
         else if (txtUniqueID.SelectedItem.Text == "Sehore")
         {
-           
+
             show.Visible = false;
             show1.Visible = false;
             show2.Visible = false;
@@ -90,7 +90,7 @@ public partial class mis_Transaction_Rpt_DistrictWiseAcr : System.Web.UI.Page
 
     protected void Unnamed_Click1(object sender, EventArgs e)
     {
-      
+
         show.Visible = false;
         show1.Visible = false;
         show2.Visible = false;
@@ -104,7 +104,7 @@ public partial class mis_Transaction_Rpt_DistrictWiseAcr : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-      
+
         show.Visible = false;
         show1.Visible = false;
         show2.Visible = false;
@@ -118,7 +118,7 @@ public partial class mis_Transaction_Rpt_DistrictWiseAcr : System.Web.UI.Page
 
     protected void Button2_Click(object sender, EventArgs e)
     {
-      
+
         show.Visible = false;
         show1.Visible = false;
         show2.Visible = false;
@@ -132,7 +132,7 @@ public partial class mis_Transaction_Rpt_DistrictWiseAcr : System.Web.UI.Page
 
     protected void Button3_Click(object sender, EventArgs e)
     {
-       
+
         show.Visible = false;
         show1.Visible = false;
         show2.Visible = false;
@@ -232,13 +232,13 @@ public partial class mis_Transaction_Rpt_DistrictWiseAcr : System.Web.UI.Page
         }
     }
 
-  
+
 
 
     protected void Button4_Click(object sender, EventArgs e)
     {
 
-       
+
         show.Visible = false;
         show1.Visible = false;
         show2.Visible = false;
@@ -251,7 +251,7 @@ public partial class mis_Transaction_Rpt_DistrictWiseAcr : System.Web.UI.Page
     }
     protected void Button5_Click(object sender, EventArgs e)
     {
-       
+
         show.Visible = false;
         show1.Visible = false;
         show2.Visible = false;
@@ -265,7 +265,7 @@ public partial class mis_Transaction_Rpt_DistrictWiseAcr : System.Web.UI.Page
 
     protected void Button6_Click(object sender, EventArgs e)
     {
-        
+
         show.Visible = false;
         show1.Visible = false;
         show2.Visible = false;
@@ -280,7 +280,7 @@ public partial class mis_Transaction_Rpt_DistrictWiseAcr : System.Web.UI.Page
 
     protected void Button7_Click(object sender, EventArgs e)
     {
-       
+
         show.Visible = false;
         show1.Visible = false;
         show2.Visible = false;

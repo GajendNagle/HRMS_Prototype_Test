@@ -1803,22 +1803,36 @@
                                     aria-expanded="false" aria-controls="HostelManagement">
                                     <i class="ri-stack-line"></i><span data-key="t-apps">Development</span>
                                 </a>
-                                <div class="collapse menu-dropdown dropdown-custom-left" id="Development">
+                               <div class="menu-dropdown dropdown-custom-left collapse show" id="Development" style="">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/CreateProject.aspx"><i class="ri-file-list-3-line"></i>Create Project</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectDetails.aspx"><i class="ri-file-list-3-line"></i>Project Details</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentUploadDocument.aspx"><i class="ri-file-list-3-line"></i>Generate Demand</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/JdProjectDetails.aspx"><i class="ri-file-list-3-line"></i>Jd View Project Details</a></li>
-                                        <%-- <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentDocUpload.aspx"><i class="ri-file-list-3-line"></i>Installment Upload Document</a>--%>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentCreation.aspx"><i class="ri-file-list-3-line"></i>Installment Creation & Approval</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentReleas.aspx"><i class="ri-file-list-3-line"></i>Installment Payment Release</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentDocUpload.aspx"><i class="ri-file-list-3-line"></i>Installment Release</a></li>
-                            <%--<li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentApproval.aspx"><i class="ri-file-list-3-line"></i>Installment Creation & Approval</a></li>
+                                      
+                                        
                             
-                            <li class="nav-item"><a class="nav-link" href="/mis/Development/School_Work_Expenditure.aspx"><i class="ri-file-list-3-line"></i>Work Expences Entry</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/mis/Development/GenerateSanctionLetter.aspx"><i class="ri-file-list-3-line"></i>Generate Sanction Letter</a></li>--%>
+                            <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentCreation.aspx"><i class="ri-file-list-3-line"></i>Payment Approval &amp; Installment Creation</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentReleas.aspx"><i class="ri-file-list-3-line"></i>Installment Payment Release</a></li>
+
+                            
                             <li class="nav-item"><a class="nav-link" href="/mis/Development/Rpt_UtilisationCertificate.aspx"><i class="ri-file-list-3-line"></i>Utilisation Certificate</a></li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link menu-link collapsed" href="#DevelopmentReport" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="DevelopmentReport">
+                                    <i class="ri-menu-line"></i>Development Report
+                                </a>
+                                <div class="collapse menu-dropdown dropdown-custom-left" id="DevelopmentReport">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/Rpt_ProjectApproval.aspx"><i class="ri-file-list-3-line"></i>Project Approval Report</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/Rpt_InstallmentApproval.aspx"><i class="ri-file-list-3-line"></i>Installment Release Report</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/Rpt_ProjectDetails.aspx"><i class="ri-file-list-3-line"></i>Project Status Report</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/WorkWiseExpenditure.aspx"><i class="ri-file-list-3-line"></i>Work Wise Expenditure</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                             <%--<li class="nav-item"><a class="nav-link" href="/mis/Development/BonusAmtInfo.aspx"><i class="ri-file-list-3-line"></i>Budget Receive Info</a></li>--%>
                             <li class="nav-item">
                                 <a class="nav-link menu-link" href="#DevelopmentReport" data-bs-toggle="collapse" role="button"

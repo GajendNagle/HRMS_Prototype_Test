@@ -172,8 +172,49 @@
                 </div>
             </div>
             <div class="card-body">
+                  <fieldset>
+      <legend>Verification Details / सत्यापन विवरण</legend>
+                      <div class="row align-items-end">
+                          <div class="col-md-3">
+    <div class="form-group">
+        <label>
+            Select Block Name
+            <br />
+            विकासखण्ड के नाम का चयन करें<span style="color: red">*</span></label>
+        <select name="ctl00$ContentBody$ctl03" class="form-select select2">
 
-                <fieldset>
+            <option value="Select">Select</option>
+            <option value="Agar">Agar</option>
+            <option value="Barod">Barod</option>
+            <option value="Nalkheda">Nalkheda</option>
+            <option value="Susner">Susner</option>
+            <option value="Alirajpur">Alirajpur</option>
+            <option value="Bhabra">Bhabra</option>
+            <option value="Katthiwara">Katthiwara</option>
+            <option value="Sondwa">Sondwa</option>
+            <option value="Udaygarh">Udaygarh</option>
+            <option value="Jobat">Jobat</option>
+            <option value="Anuppur">Anuppur</option>
+            <option value="Jaithari">Jaithari</option>
+            <option value="Kotma">Kotma</option>
+
+        </select>
+    </div>
+</div>
+                          
+                      </div>
+                      <hr />
+                       <div class="col-md-12 form-group">
+     <button onclick="myFunction()" id="searchButton" type="button" class="btn btn-outline-success w-lg btn-border">Search</button>
+     <a runat="server" id="A1" href="EmployeeVerification.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+ </div>
+
+
+
+
+                  </fieldset>
+
+                <fieldset id="Verification" style="display:none;">
                     <legend>Verification Details / सत्यापन विवरण</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-4 text-end">
@@ -199,8 +240,9 @@
                                                 सरल क्र.</th>
                                             <th>
                                                 <div>
+                                                     <label for="checkAll">Action<br />कार्रवाई</label><br />
                                                     <input type="checkbox" style="font-size: small;" id="checkAll" onclick="toggleAll(this)">
-                                                    <label for="checkAll">All</label>
+                                                   
                                                 </div>
                                             </th>
                                             <th>Employee Name 
@@ -263,6 +305,9 @@
                                             <button id="BtnBack3" class="Alert-Save3 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
                                                 Edit Bank Info
                                             </button>
+                                                                                                                                 <button id="BtnBack10" class="Alert-Save4 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
+    Edit Upload Certificate
+</button>
                                         </td>
                                     </tr>
                                                                    <tr  class="text-center nowrap">
@@ -282,14 +327,17 @@
                                      <td><a class="alert-edit"><i class="fa fa-pen" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"></i></a></td>--%>
                                      <td>Pending</td>
                                      <td class="text-center" style="white-space:nowrap">
-                                         <button id="BtnBack4" class="Alert-Save1 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
+                                         <button id="BtnBack1" class="Alert-Save1 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
                                              Edit Personal Info
                                          </button>
-                                            <button id="BtnBack5" class="Alert-Save2 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
+                                            <button id="BtnBack2" class="Alert-Save2 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
     Edit Official Info
 </button>
-                                            <button id="BtnBack6" class="Alert-Save3 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
+                                            <button id="BtnBack3" class="Alert-Save3 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
     Edit Bank Info
+</button>
+                                                                                                                              <button id="BtnBack11" class="Alert-Save4 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
+    Edit Upload Certificate
 </button>
                                      </td>
                                  </tr>                                    <tr  class="text-center nowrap">
@@ -309,15 +357,18 @@
                                      <td><a class="alert-edit"><i class="fa fa-pen" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"></i></a></td>--%>
                                      <td>Pending</td>
                                      <td class="text-center" style="white-space:nowrap">
-                                         <button id="BtnBack7" class="Alert-Save1 btn btn-outline-primary  fs-13 me-4 rounded-4 
+                                         <button id="BtnBack1" class="Alert-Save1 btn btn-outline-primary  fs-13 me-4 rounded-4 
                                              w-sm" type="button">
                                              Edit Personal Info
                                          </button>
-                                            <button id="BtnBack8" class="Alert-Save2 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
+                                            <button id="BtnBack2" class="Alert-Save2 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
     Edit Official Info
 </button>
-                                            <button id="BtnBack9" class="Alert-Save3 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
+                                            <button id="BtnBack3" class="Alert-Save3 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
     Edit Bank Info
+</button>
+                                                                                     <button id="BtnBack12" class="Alert-Save4 btn btn-outline-primary  fs-13 me-4 rounded-4 w-sm" type="button">
+    Edit Upload Certificate
 </button>
                                      </td>
                                  </tr>
@@ -338,9 +389,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-danger">प्रमाणित किया जाता है आज दिनांक 07/04/2024 को कर्मचारी द्वारा दी गई समस्त  जानकारी का मिलान कार्यालय अभिलेख से कर लिया गया है एवं जानकारी सही पायी गयी। 
-संबंधित कर्मचारी को जिला शिक्षा अधिकारी द्वारा Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने की अनुशंसा की जाती हैं। 
-</p>
+         
                     <div class="row justify-content-center" id="divbtn">
                         <div class="col-md-12">
                             <div class="form-group text-center">
@@ -3191,8 +3240,9 @@
             </div>
         </div>
     </div>
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="bootstrapModalreg1">
-        <div class="modal-dialog modal-xl">
+    
+    <div class="modal fade modal-lg ml-lg-5"    aria-hidden="true" id="bootstrapModalreg1">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h3 style="font: bold; margin-left: auto;"><u>आहरण संवितरण अधिकारी की अनुशंसा
@@ -3202,12 +3252,12 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="table-responsive table-scroll">
+                            <div class="table-responsive">
                                 <table class="table table-bordered" style="border: 1px solid">
                                     <tr>
-                                        <th><span style="font-size: large; font-weight: bold; white-space: nowrap;">सरल क्रमांक
+                                       <%-- <th><span style="font-size: large; font-weight: bold; white-space: nowrap;">सरल क्रमांक
                                         </span>
-                                        </th>
+                                        </th>--%>
                                         <th>
                                             <center style="font-size: large; font-weight: bold;">
                                                 <u>अधिकारी की अनुशंसा
@@ -3216,195 +3266,95 @@
                                         </th>
                                     </tr>
                                     <tr>
-                                        <td class="text-center">1.</td>
+                                      <%--  <td class="text-center">1.</td>--%>
                                         <td>
                                             <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>R.K. Dubey</strong> का कार्यालय अंतर्गत<strong> UDC </strong>पद पर पदस्थ किया गया हैं ।   आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी। संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं।
+                                              प्रमाणित किया जाता है आज दिनांक 07/04/2024 को कर्मचारी द्वारा दी गई समस्त जानकारी का मिलान कार्यालय अभिलेख से कर लिया गया है एवं जानकारी सही पायी गयी। संबंधित कर्मचारी को जिला शिक्षा अधिकारी द्वारा Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने की अनुशंसा की जाती हैं।
                                             </label>
-                                            <%-- <label>
-                                    प्रमाणित  किया जाता है की श्री/श्रीमती/कु. ....   आज दिनांक को संबंधित कर्मचारी द्वारा कार्यवर ग्रहण  किया जा रहा है । संबंधित द्वारा दी गयी  जानकारी  का मिलान कार्यालयीन अभिलेखन से कर  लिया गया है एवं जानकारी सही पायी गयी है। संबंधित  कर्मचारी का नाम Education portal 3.0 पर जोड़ने एवं Unique Id  प्रदान करने की अनुशंसा की जाती है  
-                                </label>--%>
+                                            
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td class="text-center">2.</td>
-                                        <td>
-                                            <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Pradeep Mishra</strong> का कार्यालय अंतर्गत<strong> LDC </strong>पद पर पदस्थ  किया गया हैं।  आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।   संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">3.</td>
-                                        <td>
-                                            <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Raj Mishra</strong> का कार्यालय अंतर्गत<strong> Assistant grade-II  </strong>पद पर पदस्थ  किया गया हैं।   आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।   संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">4.</td>
-                                        <td>
-                                            <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Naveen Mishra</strong> का कार्यालय अंतर्गत<strong> UDC </strong>पद पर पदस्थ  किया गया हैं।    आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।   संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">5.</td>
-                                        <td>
-                                            <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>abhishek</strong> का कार्यालय अंतर्गत<strong> सहायक शिक्षक  </strong>पद पर पदस्थ  किया गया हैं।   आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।   संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">6.</td>
-                                        <td>
-                                            <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>rohit Kumar</strong> का कार्यालय अंतर्गत<strong> संविदा शिक्षक  </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।   संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">7.</td>
-                                        <td>
-                                            <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>sagar </strong>का कार्यालय अंतर्गत<strong> LDC </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।   संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">8.</td>
-                                        <td>
-                                            <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Praveen Sharma</strong> का कार्यालय अंतर्गत<strong> UDC </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">9.</td>
-                                        <td>
-                                            <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Ritesh Pandey</strong> का कार्यालय अंतर्गत<strong> सहायक शिक्षक  </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">10.</td>
-                                        <td>
-                                            <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Kapil </strong>का कार्यालय अंतर्गत<strong> संविदा शिक्षक  </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">11.</td>
-                                        <td>
-                                            <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Hemant Malviya</strong> का कार्यालय अंतर्गत<strong> LDC </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">12.</td>
-                                        <td>
-                                            <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Hirendra Chouhan</strong> का कार्यालय अंतर्गत<strong> UDC </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">13.</td>
-                                        <td>
-                                            <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Vicky </strong>का कार्यालय अंतर्गत<strong> संविदा शिक्षक  </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">14.</td>
-                                        <td>
-                                            <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Arjun Kurmi</strong> का कार्यालय अंतर्गत<strong> सहायक शिक्षक   </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">15.</td>
-                                        <td>
-                                            <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Shiv Kumar </strong>का कार्यालय अंतर्गत<strong> Assistant grade-II </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">16.</td>
-                                        <td>
-                                            <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Vikram Kurmi</strong> का कार्यालय अंतर्गत<strong> Assistant grade-II </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">18.</td>
-                                        <td>
-                                            <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Ankita soni</strong> का कार्यालय अंतर्गत<strong> UDC </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">19.</td>
-                                        <td>
-                                            <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Pratik Pawar</strong> का कार्यालय अंतर्गत<strong> LDC </strong>पद पर पदस्थ  किया गया है ।  आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।  संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">20.</td>
-                                        <td>
-                                            <label style="padding: 10px; text-align: justify;">
-                                                प्रमाणित किया जाता है कि श्री/श्रीमती/कु. <strong>Hanshraj Patwari</strong> का कार्यालय अंतर्गत<strong> UDC </strong>पद पर पदस्थ  किया गया हैं।   आज दिनांक  <strong>07/04/2024</strong>
-                                                को कर्मचारी द्वारा दी गई  जानकारी का मिलान कार्यालय अभिलेख से कर  लिया  गया है एवं जानकारी सही  पायी गयी ।   संबंधित कर्मचारी को  जिला शिक्षा अधिकारी द्वारा  Education Portal 3.0 पर जोड़ने एवं Unique Id प्रदान करने  की  अनुशंसा की जाती हैं  ।    
-                                            </label>
-                                        </td>
-                                    </tr>
+                               
                                 </table>
                             </div>
-                            <div class="row justify-content-center mt-3" style="margin-bottom: 0.5rem; margin-top: 2rem !important;" id="divbtn1">
-                                <div class="col-md-12">
-                                    <div class="form-group text-center" style="margin-bottom: -10px;">
-                                        <button type="button" class="Alert-SaveOrder  btn btn-success btn-rounded">Approve</button>
-                                        <button type="button" class="btn btn-danger btn-rounded text-white" style="font-size: large;" data-bs-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                           <hr />
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <button type="button" class="btn btn-success btn-border" data-toggle="modal" data-target="#myModal" onclick="document.getElementById('bootstrapModalreg1').style.display='none'">Get DSC</button>
+        <a href="EmployeeVerification.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+    </div>
+</div>
+                            
+</div>
+                   </div>
                     </div>
+                
+</div>      
+            
+<%--<div class="modal fade" id="staticModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-modal="true" role="dialog">--%>
+ <%--   <div class="modal" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="staticBackdropLabel" class="modal-title"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <fieldset>
+                    <legend>Verification</legend>
+                    <div class="row">
+                        <label>OTP (one time Password)</label>
+                        <input class="form-control" placeholder="Enter Verification Code">
+                    </div>
+                </fieldset>
+                <div class="modal-footer text-center">
+                    <button type="button" class="Alert-Confirmation btn btn-success" data-bs-dismiss="modal" onclick="document.getElementById('tblFields').style.display='none'">Submit</button>
+                    <button type="button" id="ContentBody_clearfirst" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
+</div>--%>
+             </div>
+
+ </div>
+               
+<div class="modal" id="myModal" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header" style="background-color: var(--vz-primary); color: white">
+                  <h4 class="modal-title text-white">DSC Upload </h4>
+                  <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+              </div>
+              <!-- Modal Body -->
+                <div class="modal-body">
+       <fieldset>
+           <legend>Verification</legend>
+           <div class="row">
+               <label>OTP (one time Password)</label>
+               <input class="form-control" placeholder="Enter Verification Code">
+           </div>
+       </fieldset>
+       <div class="modal-footer justify-content-center">
+           <button type="button" class="Alert-Confirmation btn btn-success" data-bs-dismiss="modal" onclick="document.getElementById('tblFields').style.display='none'">Submit</button>
+           <%--<button type="button" id="ContentBody_clearfirst1" class="btn btn-warning" data-bs-dismiss="modal">Close</button>--%>
+            <a href="EmployeeVerification.aspx" class="btn btn-outline-danger btn-border w-lg">Close</a>
+       </div>
+   </div>
+              <!-- Modal Footer -->
+             
+          </div>
+      </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                       
+            
+     
+    
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
      <script>
@@ -3504,13 +3454,11 @@
                             ).then(() => {
                                 // Redirect to another page after success message is closed
                                 window.location.href = 'EmployeeRegistration.aspx';
+                                document.getElementById('BtnBack2').addEventListener('click', function () {
+                                    handleConfirmationAndActivate('navpills-2');
+                                })
+
                             });
-                            var x = document.getElementById("#navpills-2");
-                            if (x.style.display === "none") {
-                                x.style.display = "block";
-                            } else {
-                                x.style.display = "block";
-                            }
                         }
                     })
                 });
@@ -3526,9 +3474,11 @@
             }(window.jQuery);
     </script>
  <script>
-     (function ($) {
+     debugger;
+     !function ($) {
          "use strict";
          var SweetAlert = function () { };
+         //examples
          SweetAlert.prototype.init = function () {
              //Basic
              //Success Message
@@ -3541,6 +3491,10 @@
                      confirmButtonColor: '#3085D6',
                      cancelButtonColor: '#d33',
                      confirmButtonText: 'Yes'
+                     //animation: false,
+                     //customClass: {
+                     //    popup: 'animated tada'
+                     //}
                  }).then((result) => {
                      if (result.value) {
                          Swal.fire({
@@ -3548,28 +3502,89 @@
                              title: 'Success!',
                              text: 'Record proceed Successfully!',
                              timer: 2000,
-                         }).then(() => {
+
+                             // animation: false,<a href="">TeacherFillReport.aspx</a>
+                             // customClass: {
+                             //     popup: 'animated tada'
+                             // }
+                         }
+                         ).then(() => {
                              // Redirect to another page after success message is closed
                              window.location.href = 'EmployeeRegistration.aspx';
                          });
-                         var x = document.getElementById("#navpills-3");
-                         if (x.style.display === "none") {
-                             x.style.display = "block";
-                         } else {
-                             x.style.display = "block";
-                         }
+                         document.getElementById('BtnBack3').addEventListener('click', function () {
+                             handleConfirmationAndActivate('navpills-3');
+                         })
                      }
                  })
              });
-         };
-         $.SweetAlert = new SweetAlert();
-         $.SweetAlert.Constructor = SweetAlert;
-     }(window.jQuery));
+         },
 
-     $(document).ready(function () {
-         $.SweetAlert.init();
-     });
+
+             $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
+     }(window.jQuery),
+         //initializing
+         function ($) {
+             "use strict";
+             $.SweetAlert.init()
+         }(window.jQuery);
  </script>
+    <script>
+        debugger;
+        !function ($) {
+            "use strict";
+            var SweetAlert = function () { };
+            //examples
+            SweetAlert.prototype.init = function () {
+                //Basic
+                //Success Message
+                $('.Alert-Save4').click(function () {
+                    Swal.fire({
+                        title: 'Are you sure?',
+                        text: "Do you want to Edit Upload Ceritificate?",
+                        type: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#3085D6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'Yes'
+                        //animation: false,
+                        //customClass: {
+                        //    popup: 'animated tada'
+                        //}
+                    }).then((result) => {
+                        if (result.value) {
+                            Swal.fire({
+                                type: 'success',
+                                title: 'Success!',
+                                text: 'Record proceed Successfully!',
+                                timer: 2000,
+
+                                // animation: false,<a href="">TeacherFillReport.aspx</a>
+                                // customClass: {
+                                //     popup: 'animated tada'
+                                // }
+                            }
+                            ).then(() => {
+                                // Redirect to another page after success message is closed
+                                window.location.href = 'EmployeeRegistration.aspx';
+                            });
+                            document.getElementById('BtnBack4').addEventListener('click', function () {
+                                handleConfirmationAndActivate('navpills-4');
+                            })
+                        }
+                    })
+                });
+            },
+
+
+                $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
+        }(window.jQuery),
+            //initializing
+            function ($) {
+                "use strict";
+                $.SweetAlert.init()
+            }(window.jQuery);
+    </script>
 
     <script>
         function toggleAll(source) {
@@ -3808,6 +3823,14 @@
 
             }
         }
+    </script>
+    <script>
+        function myFunction() {
+         
+            Verification.style.display = "block";
+           
+        }
+       
     </script>
 </asp:Content>
 
