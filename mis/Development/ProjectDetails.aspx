@@ -46,8 +46,9 @@
         .table th {
             background-color: white;
         }
-        .form-control:read-only{
-             background-color: white;
+
+        .form-control:read-only {
+            background-color: white;
         }
     </style>
 </asp:Content>
@@ -114,11 +115,56 @@
                             <input type="date" id="Tdate" name="birthday" class="form-control">
                         </div>
                     </div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Select Work Category
+        <br />
+                                कार्य की श्रेणी का चयन करें<span style="color: red">*</span></label>
+                            <select id="work-category" class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="A">स्कूल मरम्मत/निर्माण</option>
+                                <option value="B">पेयजल व्यवस्था</option>
+                                <option value="C">स्कूल मार्ग निर्माण</option>
+                                <option value="D">अन्य कार्य</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3" id="school-subcategory-container">
+
+                        <div class="form-group">
+                            <label>
+                                Select Work Subcategory
+        <br />
+                                कार्य के प्रकार का चयन करें<span style="color: red">*</span></label>
+                            <select id="school-subcategory" class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="A">कक्षा निमार्ण</option>
+                                <option value="A">इमारत मरम्मत</option>
+                                <option value="A">स्कूल नया निमार्ण</option>
+                                <option value="B">हेंडपंप खनन</option>
+                                <option value="B">बोरबेल खनन</option>
+                                <option value="B">पानी की टंकी निर्माण</option>
+                                <option value="B">पेयजल हेतु पाइपलाइन निर्माण</option>
+                                <option value="C">WBM / कच्ची सड़क निमार्ण</option>
+                                <option value="C">CC Road निर्माण</option>
+                                <option value="C">मार्ग मरम्मत</option>
+                                <option value="C">मुरम रोड निर्माण</option>
+                                <option value="C">डामर रोड निर्माण</option>
+                                <option value="D">नाली निर्माण</option>
+                                <option value="D">पेपर ब्लाक निर्माण</option>
+
+                                <%--selection of this next textbox will visible--%>
+                            </select>
+                        </div>
+                    </div>
+
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 Project Code
-                                <br />
+            <br />
                                 परियोजना कोड<span style="color: red">*</span></label>
                             <select id="Project_Code" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -129,49 +175,6 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
-    <div class="form-group">
-        <label>
-            Select Work Category
-        <br />
-            कार्य की श्रेणी का चयन करें<span style="color: red">*</span></label>
-        <select id="work-category" class="form-control select2">
-            <option value="--Select--">--Select--</option>
-            <option value="A">स्कूल मरम्मत/निर्माण</option>
-            <option value="B">पेयजल व्यवस्था</option>
-            <option value="C">स्कूल मार्ग निर्माण</option>
-            <option value="D">अन्य कार्य</option>
-        </select>
-    </div>
-</div>
-<div class="col-md-3" id="school-subcategory-container">
-
-    <div class="form-group">
-        <label>
-            Select Work Subcategory
-        <br />
-            कार्य के प्रकार का चयन करें<span style="color: red">*</span></label>
-        <select id="school-subcategory" class="form-control select2">
-            <option value="--Select--">--Select--</option>
-            <option value="A">कक्षा निमार्ण</option>
-            <option value="A">इमारत मरम्मत</option>
-            <option value="A">स्कूल नया निमार्ण</option>
-            <option value="B">हेंडपंप खनन</option>
-            <option value="B">बोरबेल खनन</option>
-            <option value="B">पानी की टंकी निर्माण</option>
-            <option value="B">पेयजल हेतु पाइपलाइन निर्माण</option>
-            <option value="C">WBM / कच्ची सड़क निमार्ण</option>
-            <option value="C">CC Road निर्माण</option>
-            <option value="C">मार्ग मरम्मत</option>
-            <option value="C">मुरम रोड निर्माण</option>
-            <option value="C">डामर रोड निर्माण</option>
-            <option value="D">नाली निर्माण</option>
-            <option value="D">पेपर ब्लाक निर्माण</option>
-
-            <%--selection of this next textbox will visible--%>
-        </select>
-    </div>
-</div>
                     <%--<div class="col-md-3">
                         <div class="form-group">
                             <label>
@@ -230,7 +233,8 @@
                                         गाँव का नाम</th>--%>
                                         <th>Work Category<br />
                                             कार्य की श्रेणी</th>
-                                       <th>Work Subcategory<br />कार्य उपश्रेणी</th>
+                                        <th>Work Subcategory<br />
+                                            कार्य उपश्रेणी</th>
                                         <th>OIS Code<br />
                                             OIS कोड</th>
                                         <th>Address<br />
@@ -239,21 +243,21 @@
                                         गतिविधि स्थिति</th>--%>
                                         <%--  <th>Work Place  /<br />
                                         कार्य स्थल</th>--%>
-                                      
+
                                         <th>Estimated Budget Cost(In Rs) 
                                             <br />
                                             अनुमानित बजट</th>
-                                          <th>Work Description<br />
-      कार्य का विवरण</th>
+                                        <th>Work Description<br />
+                                            कार्य का विवरण</th>
                                         <th id="View">View Document<br>
                                             दस्तावेज़ देखें</th>
                                         <th id="edit">Edit<br>
                                             एडिट करें</th>
                                         <th id="Send">Send To Request<br />
                                             अनुरोध करने के लिए भेजें</th>
-                                        <th id="Status" class="text-center" style="display:none;" colspan="2">Status<br />
+                                        <th id="Status" class="text-center" style="display: none;" colspan="2">Status<br />
                                             स्थिति</th>
-                                       <%-- <th id="Remark" class="text-center" style="display: none;">Remark<br />
+                                        <%-- <th id="Remark" class="text-center" style="display: none;">Remark<br />
                                             टिप्पणी</th>--%>
                                     </tr>
                                 </thead>
@@ -271,10 +275,11 @@
                                         <td>Delhi Public School_44561</td>
                                         <td>Bhopal M.P</td>
                                         <%--<td>Working Mode</td>--%>
-                                      
+
                                         <td>10000.00</td>
-                                                                            <td>
-<button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#WorkDescription"><i class="	far fa-comment-alt"></i></button></td>
+                                        <td>
+                                            <button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#WorkDescription"><i class="	far fa-comment-alt"></i></button>
+                                        </td>
 
                                         <td id="Document"><%--<a class="btn btn-info btn-rounded" href="#">--%>  <a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-file"></i></a></td>
                                         <td id="Edit">
@@ -285,11 +290,9 @@
      
 </td>--%><td id="Request">
     <button id="BtnBack" type="button" class="Alert-Save btn btn-outline-primary w-xl  fs-13 me-4 rounded-4 ">Send To Request HO</button></td>
-                                        <td id="InputBox" style="display: none; white-space:nowrap" class="text-center" colspan="2">
-                                            Panding For HO</td>
-                                     <%--   <td id="remark" style="display: none;">--%>
-                                            <%--<textarea class="form-control" style="width: 150px;" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>--%><%-- Work in Progress</td>--%>
-
+                                        <td id="InputBox" style="display: none; white-space: nowrap" class="text-center" colspan="2">Panding For HO</td>
+                                        <%--   <td id="remark" style="display: none;">--%>
+                                        <%--<textarea class="form-control" style="width: 150px;" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>--%><%-- Work in Progress</td>--%>
                                     </tr>
                                 </tbody>
                             </table>
@@ -469,45 +472,46 @@
             </div>
 
             <%--Work Description--%>
-              <div class="modal" id="WorkDescription">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header" style="background-color: var(--vz-primary); color: white">
-                  <h4 class="modal-title text-white">Work Description</h4>
-                  <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
-              </div>
-              <!-- Modal Body -->
-              <div class="modal-body">
-                  <div class="row">
-                      <div class="col-md-12">
+            <div class="modal" id="WorkDescription">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header" style="background-color: var(--vz-primary); color: white">
+                            <h4 class="modal-title text-white">Work Description</h4>
+                            <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12">
 
-                      
-                  <div class="form-group">
-                    <%--  <h5>Work Description</h5>--%>
-                      <p class="border p-2 border-primary fs-5 rounded-4">Buildings serve several needs of society primarily as shelter from weather, security, living space, privacy, to store belongings, and to comfortably live and work. A building as a shelter represents a physical division of the human habitat (a place of comfort and safety) and the outside (a place that at times may be harsh and harmful),
 
-</p>
-                   <%--   <textarea class="form-control" rows="1" style="resize: vertical" placeholder="project approval & Installment Creation/ परियोजना अनुमोदन एवं किस्त निर्माण
+                                    <div class="form-group">
+                                        <%--  <h5>Work Description</h5>--%>
+                                        <p class="border p-2 border-primary fs-5 rounded-4">
+                                            Buildings serve several needs of society primarily as shelter from weather, security, living space, privacy, to store belongings, and to comfortably live and work. A building as a shelter represents a physical division of the human habitat (a place of comfort and safety) and the outside (a place that at times may be harsh and harmful),
+
+                                        </p>
+                                        <%--   <textarea class="form-control" rows="1" style="resize: vertical" placeholder="project approval & Installment Creation/ परियोजना अनुमोदन एवं किस्त निर्माण
 
 "></textarea>--%>
-                  </div>
-              </div>
-                          </div>
+                                    </div>
+                                </div>
+                            </div>
 
-              <!-- Modal Footer -->
-          <%--    <div class="modal-footer justify-content-center">
+                            <!-- Modal Footer -->
+                            <%--    <div class="modal-footer justify-content-center">
 
                   <button type="button" class="btn btn-success Alert-Reject btn-rounded" data-dismiss="modal" id="saveButton">Reject</button>
                   <button type="button" class="btn btn-danger btn-rounded" data-dismiss="modal">Close</button>
               </div>--%>
-          </div>
-              </div>
-      </div>
-  </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         </div>
     </div>
 </asp:Content>
@@ -555,73 +559,73 @@
         });
 </script>--%>
     <script>
-         function printModalContent(modalId) {
-             var modalContent = document.querySelector('#' + modalId + ' .modal-body').cloneNode(true);
-             document.body.innerHTML = modalContent.innerHTML
-             window.print();
-             window.location.href = "ProjectDetails.aspx";
-         }
-         document.addEventListener('keydown', function (event) {
-             if (event.ctrlKey && event.key === 'p') {
-                 // Prevent default behavior of Ctrl+P (opening print dialog)
-                 event.preventDefault();
-                 // Print the content of the active modal
-                 var activeModal = document.querySelector('.modal.show');
-                 if (activeModal) {
-                     var modalId = activeModal.getAttribute('id');
-                     printModalContent(modalId);
-                 }
-             }
-         });
+        function printModalContent(modalId) {
+            var modalContent = document.querySelector('#' + modalId + ' .modal-body').cloneNode(true);
+            document.body.innerHTML = modalContent.innerHTML
+            window.print();
+            window.location.href = "ProjectDetails.aspx";
+        }
+        document.addEventListener('keydown', function (event) {
+            if (event.ctrlKey && event.key === 'p') {
+                // Prevent default behavior of Ctrl+P (opening print dialog)
+                event.preventDefault();
+                // Print the content of the active modal
+                var activeModal = document.querySelector('.modal.show');
+                if (activeModal) {
+                    var modalId = activeModal.getAttribute('id');
+                    printModalContent(modalId);
+                }
+            }
+        });
 
     </script>
     <script>
-     $(document).ready(function () {
-         "use strict";
+        $(document).ready(function () {
+            "use strict";
 
-         var sweetAlert = new function () {
-             this.init = function () {
-                 $('.Alert-Save').click(function () {
-                     Swal.fire({
-                         title: 'Are you sure?',
-                         text: "Do you want to Send this record?",
-                         type: 'warning',
-                         showCancelButton: true,
-                         confirmButtonColor: '#3085D6',
-                         cancelButtonColor: '#d33',
-                         confirmButtonText: 'Yes',
-                         showCancelButton: true,
-                         showCloseButton: true,
-                         preConfirm: (e) => {
-                             //document.getElementById('Remark').style.display = "table-cell";
-                             //document.getElementById('remark').style.display = "table-cell";
+            var sweetAlert = new function () {
+                this.init = function () {
+                    $('.Alert-Save').click(function () {
+                        Swal.fire({
+                            title: 'Are you sure?',
+                            text: "Do you want to Send this record?",
+                            type: 'warning',
+                            showCancelButton: true,
+                            confirmButtonColor: '#3085D6',
+                            cancelButtonColor: '#d33',
+                            confirmButtonText: 'Yes',
+                            showCancelButton: true,
+                            showCloseButton: true,
+                            preConfirm: (e) => {
+                                //document.getElementById('Remark').style.display = "table-cell";
+                                //document.getElementById('remark').style.display = "table-cell";
 
-                             document.getElementById('Status').style.display = "contents";
-                             document.getElementById('InputBox').style.display = "";
-                            
-                             //document.getElementById('View').style.display = "none";
-                             document.getElementById('Send').style.display = "none";
-                             document.getElementById('Edit').style.display = "none";
-                             document.getElementById('edit').style.display = "none";
-                             //document.getElementById('Document').style.display = "none";
-                             document.getElementById('Request').style.display = "none";
-                         }
-                     }).then((result) => {
-                         if (result.isConfirmed) {
-                             Swal.fire({
-                                 type: 'success',
-                                 title: 'Success!',
-                                 text: 'Record Send Successfully!',
-                                 timer: 20000
-                             });
-                         }
-                     });
-                 });
-             };
-         };
+                                document.getElementById('Status').style.display = "contents";
+                                document.getElementById('InputBox').style.display = "";
 
-         sweetAlert.init();
-     });
+                                //document.getElementById('View').style.display = "none";
+                                document.getElementById('Send').style.display = "none";
+                                document.getElementById('Edit').style.display = "none";
+                                document.getElementById('edit').style.display = "none";
+                                //document.getElementById('Document').style.display = "none";
+                                document.getElementById('Request').style.display = "none";
+                            }
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                Swal.fire({
+                                    type: 'success',
+                                    title: 'Success!',
+                                    text: 'Record Send Successfully!',
+                                    timer: 20000
+                                });
+                            }
+                        });
+                    });
+                };
+            };
+
+            sweetAlert.init();
+        });
     </script>
     <%--<script>const canvas = document.getElementById('canvas');
         const ctx = canvas.getContext('2d');
@@ -631,8 +635,8 @@
             ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
         };</script>--%>
     <script>function autoResize(textarea) {
-                                              textarea.style.height = 'auto'; // Reset height to auto
-                                              textarea.style.height = (textarea.scrollHeight) + 'px'; // Set the height to the scroll height
-                                          }</script>
+            textarea.style.height = 'auto'; // Reset height to auto
+            textarea.style.height = (textarea.scrollHeight) + 'px'; // Set the height to the scroll height
+        }</script>
 </asp:Content>
 

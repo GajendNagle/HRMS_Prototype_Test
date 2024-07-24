@@ -103,11 +103,54 @@
                 <legend>Demand  Request/
 अनुरोध करना </legend>
                 <div class="row align-items-end">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>
+                                Select Work Category
+        <br />
+                                कार्य की श्रेणी का चयन करें<span style="color: red">*</span></label>
+                            <select id="work-category" class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="A">स्कूल मरम्मत/निर्माण</option>
+                                <option value="B">पेयजल व्यवस्था</option>
+                                <option value="C">स्कूल मार्ग निर्माण</option>
+                                <option value="D">अन्य कार्य</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4" id="school-subcategory-container">
+
+                        <div class="form-group">
+                            <label>
+                                Select Work Subcategory
+        <br />
+                                कार्य के प्रकार का चयन करें<span style="color: red">*</span></label>
+                            <select id="school-subcategory" class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="A">कक्षा निमार्ण</option>
+                                <option value="A">इमारत मरम्मत</option>
+                                <option value="A">स्कूल नया निमार्ण</option>
+                                <option value="B">हेंडपंप खनन</option>
+                                <option value="B">बोरबेल खनन</option>
+                                <option value="B">पानी की टंकी निर्माण</option>
+                                <option value="B">पेयजल हेतु पाइपलाइन निर्माण</option>
+                                <option value="C">WBM / कच्ची सड़क निमार्ण</option>
+                                <option value="C">CC Road निर्माण</option>
+                                <option value="C">मार्ग मरम्मत</option>
+                                <option value="C">मुरम रोड निर्माण</option>
+                                <option value="C">डामर रोड निर्माण</option>
+                                <option value="D">नाली निर्माण</option>
+                                <option value="D">पेपर ब्लाक निर्माण</option>
+
+                                <%--selection of this next textbox will visible--%>
+                            </select>
+                        </div>
+                    </div>
                     <div class="col-md-6  col-lg-4 col-xl-4">
                         <div class="form-group">
                             <label>
                                 Project Code
- <br />
+                                <br />
                                 परियोजना कोड<span style="color: red">*</span></label>
                             <select id="Project_Code" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -118,50 +161,6 @@
                             </select>
                         </div>
                     </div>
-
-                    <div class="col-md-4">
-    <div class="form-group">
-        <label>
-            Select Work Category
-        <br />
-            कार्य की श्रेणी का चयन करें<span style="color: red">*</span></label>
-        <select id="work-category" class="form-control select2">
-            <option value="--Select--">--Select--</option>
-            <option value="A">स्कूल मरम्मत/निर्माण</option>
-            <option value="B">पेयजल व्यवस्था</option>
-            <option value="C">स्कूल मार्ग निर्माण</option>
-            <option value="D">अन्य कार्य</option>
-        </select>
-    </div>
-</div>
-<div class="col-md-4" id="school-subcategory-container">
-
-    <div class="form-group">
-        <label>
-            Select Work Subcategory
-        <br />
-            कार्य के प्रकार का चयन करें<span style="color: red">*</span></label>
-        <select id="school-subcategory" class="form-control select2">
-            <option value="--Select--">--Select--</option>
-            <option value="A">कक्षा निमार्ण</option>
-            <option value="A">इमारत मरम्मत</option>
-            <option value="A">स्कूल नया निमार्ण</option>
-            <option value="B">हेंडपंप खनन</option>
-            <option value="B">बोरबेल खनन</option>
-            <option value="B">पानी की टंकी निर्माण</option>
-            <option value="B">पेयजल हेतु पाइपलाइन निर्माण</option>
-            <option value="C">WBM / कच्ची सड़क निमार्ण</option>
-            <option value="C">CC Road निर्माण</option>
-            <option value="C">मार्ग मरम्मत</option>
-            <option value="C">मुरम रोड निर्माण</option>
-            <option value="C">डामर रोड निर्माण</option>
-            <option value="D">नाली निर्माण</option>
-            <option value="D">पेपर ब्लाक निर्माण</option>
-
-            <%--selection of this next textbox will visible--%>
-        </select>
-    </div>
-</div>
                 </div>
                 <div class="col-md-12">
                     <hr />
@@ -322,7 +321,7 @@
                                     </td>
                                     <td>
                                         <button id="Btn1" class="Alert-Save5 btn btn-outline-primary  fs-13 me-4 rounded-4 w-xl" type="button">Utilization Certificate</button>
-                                         <button id="Btn5" onclick="#Btn5" class="btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button" style="display:none;">View</button>
+                                        <button id="Btn5" onclick="#Btn5" class="btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button" style="display: none;">View</button>
                                     </td>
                                     <td>
                                         <button id="BtnBack1" disabled="disabled" class="Alert-Save btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button">
@@ -356,7 +355,8 @@
                                     </td>
 
                                     <td>
-                                        <button id="Btn2" class="Alert-Save6 btn btn-outline-primary  fs-13 me-4 rounded-4 w-xl" type="button" disabled="disabled">Utilization Certificate</button>  <button id="Btn6" onclick="#Btn6" class="btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button" style="display:none;">View</button></td>
+                                        <button id="Btn2" class="Alert-Save6 btn btn-outline-primary  fs-13 me-4 rounded-4 w-xl" type="button" disabled="disabled">Utilization Certificate</button>
+                                        <button id="Btn6" onclick="#Btn6" class="btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button" style="display: none;">View</button></td>
                                     <td><%--  id="TableRow1" style="display:none;"--%>
                                         <button id="BtnBack2" disabled="disabled" class="Alert-Save1 btn btn-outline-primary w-lg  fs-13 me-4 rounded-4 " type="button">Send Demand</button></td>
                                 </tr>
@@ -402,7 +402,7 @@
 
                                     <td>
                                         <button id="Btn3" disabled="disabled" class="Alert-Save7 btn btn-outline-primary  fs-13 me-4 rounded-4 w-xl" type="button">Utilization Certificate</button>
-                                          <button id="Btn7" onclick="#Btn7" class="btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button" style="display:none;">View</button>
+                                        <button id="Btn7" onclick="#Btn7" class="btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button" style="display: none;">View</button>
                                     </td>
                                     <td><%--id="TableRow2" style="display:none;">--%>
                                         <button id="BtnBack3" disabled="disabled" class="Alert-Save2 btn btn-outline-primary w-lg fs-13 me-4 rounded-4 " type="button">Send Demand</button></td>
@@ -439,7 +439,8 @@
                                     </td>
 
                                     <td>
-                                        <button id="Btn4" disabled="disabled" class="Alert-Save8 btn btn-outline-primary  fs-13 me-4 rounded-4 w-xl" type="button">Utilization Certificate</button>  <button id="Btn8" onclick="#Btn8" class="btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button" style="display:none;">View</button></td>
+                                        <button id="Btn4" disabled="disabled" class="Alert-Save8 btn btn-outline-primary  fs-13 me-4 rounded-4 w-xl" type="button">Utilization Certificate</button>
+                                        <button id="Btn8" onclick="#Btn8" class="btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button" style="display: none;">View</button></td>
                                     <td>
                                         <button id="BtnBack4" disabled="disabled" class="Alert-Save4 btn btn-outline-primary w-lg  fs-13  rounded-4 " type="button" style="display: block">Send Demand</button></td>
                                 </tr>
@@ -672,7 +673,7 @@
                                                             </tr>
                                                             <tr class="text-center">
                                                                 <th>Project Date<br />
-परियोजना दिनांक</th>
+                                                                    परियोजना दिनांक</th>
                                                                 <td class="text-center ">22/05/2023</td>
 
                                                                 <th>Work Category<br />
@@ -684,20 +685,24 @@
                                                                     माइल स्टोन</th>
                                                                 <td>Foundation</td>
                                                                 <th>Installment<br />
-किस्त</th>
+                                                                    किस्त</th>
                                                                 <td>1st Installment</td>
                                                             </tr>
-                                                            <tr class="text-center">                               <th>Work Subcategory<br />
-कार्य उपश्रेणी</th>
-                               <td class="text-center ">इमारत मरम्मत</td>  
-                               <th>Estimated Budget Cost(In Rs)<br />
-अनुमानित बजट</th>
-                               <td class="text-center ">60000</td></tr>
                                                             <tr class="text-center">
-                                                                <th>1st Installment Utilization Amount<br />पहली किस्त उपयोग राशि</th>
+                                                                <th>Work Subcategory<br />
+                                                                    कार्य उपश्रेणी</th>
+                                                                <td class="text-center ">इमारत मरम्मत</td>
+                                                                <th>Estimated Budget Cost(In Rs)<br />
+                                                                    अनुमानित बजट</th>
+                                                                <td class="text-center ">60000</td>
+                                                            </tr>
+                                                            <tr class="text-center">
+                                                                <th>1st Installment Utilization Amount<br />
+                                                                    पहली किस्त उपयोग राशि</th>
                                                                 <td>5000</td>
-                                                                <th>
-Remaining Amount<br />बाकी अमाउंट</th><td>55000</td>
+                                                                <th>Remaining Amount<br />
+                                                                    बाकी अमाउंट</th>
+                                                                <td>55000</td>
 
                                                             </tr>
                                                             <%--   <tr>
@@ -712,7 +717,7 @@ Remaining Amount<br />बाकी अमाउंट</th><td>55000</td>
                            <tr ><th>Approved Cost(Approx. In Rs)<br />
 स्वीकृत राशि</th><td class="text-center ">60000</td><th>Total Expense Amount<br />
 कुल व्यय राशि</th><td class="text-center ">60000</td></tr>--%>
-                       </table>
+                                                        </table>
                                                     </div>
 
 
@@ -720,29 +725,30 @@ Remaining Amount<br />बाकी अमाउंट</th><td>55000</td>
                                                     <div class="row ms-0 me-0">
                                                         <div class="col-12">
 
-                                                            <h4 class="text-center font-bold">: : <u>
-Self Verified/
+                                                            <h4 class="text-center font-bold">: : <u>Self Verified/
 स्वयं सत्यापित</u> : :</h4>
                                                         </div>
 
                                                         <div class="col-12">
                                                             <p class="font-15 text-justify text-danger">
-                                                            Certified That I Have Personally Verified That The Work For Which The Grant-In-Aid Was Sanctioned Has Been Duly Completed And That I Have Made The Following Checks To See That The Money Is Actually Utilized For The Purpose For Which It Was Approved.<br />प्रमाणित किया जाता है कि मेरे द्वारा स्वयं सत्यापित किया गया हैं की  जिस कार्य के लिए अनुदान सहायता स्वीकृत की गई थी, उसे विधिवत पूरा किया गया है, और मैंने यह देखने के लिए निम्नलिखित जांच की है कि पैसा वास्तव में उसी उद्देश्य के लिए उपयोग किया गया था जिसके लिए इसे मंजूरी दी गई थी।
+                                                                Certified That I Have Personally Verified That The Work For Which The Grant-In-Aid Was Sanctioned Has Been Duly Completed And That I Have Made The Following Checks To See That The Money Is Actually Utilized For The Purpose For Which It Was Approved.<br />
+                                                                प्रमाणित किया जाता है कि मेरे द्वारा स्वयं सत्यापित किया गया हैं की  जिस कार्य के लिए अनुदान सहायता स्वीकृत की गई थी, उसे विधिवत पूरा किया गया है, और मैंने यह देखने के लिए निम्नलिखित जांच की है कि पैसा वास्तव में उसी उद्देश्य के लिए उपयोग किया गया था जिसके लिए इसे मंजूरी दी गई थी।
 
                                                             </p>
                                                         </div>
-                                                           <div class="col-md-7"></div>
+                                                        <div class="col-md-7"></div>
 
-                                                                                        <div class="col-md-5 justify-content-end">
-    <div class="text-end d-flex flex-column gap-3 justify-content-end">
-        <h6><b>अधिकारी एवं पदेन प्रबन्ध संचालक........................</b></h6>
-        <h6><b>स्कूल शिक्षा विभाग..........................................</b></h6>
-       <h6><b>Bhopal- ( BPL ) (म.प्र.)
+                                                        <div class="col-md-5 justify-content-end">
+                                                            <div class="text-end d-flex flex-column gap-3 justify-content-end">
+                                                                <h6><b>अधिकारी एवं पदेन प्रबन्ध संचालक........................</b></h6>
+                                                                <h6><b>स्कूल शिक्षा विभाग..........................................</b></h6>
+                                                                <h6><b>Bhopal- ( BPL ) (म.प्र.)
 ......................................</b></h6>
-       <%-- <h6><b>पद........................................................</b></h6>--%>
-    </div>
-</div>
-                                          </div></div>
+                                                                <%-- <h6><b>पद........................................................</b></h6>--%>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -774,15 +780,15 @@ Self Verified/
     <script>  $('#Btn5').on('click', function () {
             $('#staticBackdrop').modal('show');
         });</script>
-     <script>  $('#Btn6').on('click', function () {
-             $('#staticBackdrop').modal('show');
-         });</script>
-     <script>  $('#Btn7').on('click', function () {
-             $('#staticBackdrop').modal('show');
-         });</script>
-     <script>  $('#Btn8').on('click', function () {
-             $('#staticBackdrop').modal('show');
-         });</script>
+    <script>  $('#Btn6').on('click', function () {
+            $('#staticBackdrop').modal('show');
+        });</script>
+    <script>  $('#Btn7').on('click', function () {
+            $('#staticBackdrop').modal('show');
+        });</script>
+    <script>  $('#Btn8').on('click', function () {
+            $('#staticBackdrop').modal('show');
+        });</script>
     <script>function autoResize(textarea) {
             textarea.style.height = 'auto'; // Reset height to auto
             textarea.style.height = (textarea.scrollHeight) + 'px'; // Set the height to the scroll height
@@ -974,7 +980,7 @@ Self Verified/
                 $.SweetAlert.init()
             }(window.jQuery);
     </script>
-<%--<script>
+    <%--<script>
     (function ($) {
         "use strict";
         var SweetAlert = function () {
@@ -1039,14 +1045,14 @@ Self Verified/
                                 text: 'Generate Utilization Certificate  Successfully! ',
                                 timer: 2000
                             });
-                           // document.getElementById("Btn1").innerText = 'View';
+                            // document.getElementById("Btn1").innerText = 'View';
                             document.getElementById("BtnBack1").disabled = false;
                             document.getElementById("Btn2").disabled = false;
                             document.getElementById("Btn5").style.display = "block";
                             document.getElementById("Btn1").style.display = "none";
 
                             //document.getElementById("Btn1").classList.remove('Alert-Save5');
-                          
+
                         }
                     });
                 });
@@ -1146,7 +1152,7 @@ Self Verified/
                             document.getElementById("Btn7").style.display = "block";
                             document.getElementById("Btn4").disabled = false;
                             document.getElementById("Btn3").style.display = "none";
-                          /*  document.getElementById("RequestTd3").style.display = 'table-cell';*/
+                            /*  document.getElementById("RequestTd3").style.display = 'table-cell';*/
 
                         }
                     })
