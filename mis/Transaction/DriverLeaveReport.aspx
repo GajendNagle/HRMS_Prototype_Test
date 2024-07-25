@@ -37,15 +37,13 @@
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-12 text-end">
-                    <a role="button" class="btn btn-primary btn-label waves-effect waves-light rounded-pill" id="btnBack"
-                        onclick="funBack()"><i class="bx bx-plus label-icon align-middle  me-2"></i>View Details</a>
+                    <a role="button" href="DriverAttenderLeaveEntry.aspx" class="btn btn-primary btn-label waves-effect waves-light rounded-pill" id="btnBack"
+                        onclick="funBack()"><i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i>Back</a>
                 </div>
             </div>
         </div>
         <div class="card-body">
-
-
-            <fieldset id="FsDetails" class="d-none">
+            <fieldset id="FsDetails">
                 <legend>Report / विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -96,7 +94,7 @@
                                     <td>MP04AB1196</td>
                                     <td>25/07/2024</td>
                                     <td>28/07/2024</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-eye"></i></span>
+                                    <td><span class=" btn btn-outline-primary"><i class="fa fa-eye"></i></span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -105,7 +103,7 @@
                                     <td>MP04CD5154</td>
                                     <td>28/07/2024</td>
                                     <td>05/08/2024</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-eye"></i></span>
+                                    <td><span class=" btn btn-outline-primary"><i class="fa fa-eye"></i></span>
                                     </td>
                             </table>
                         </div>
