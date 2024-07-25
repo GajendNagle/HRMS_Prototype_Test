@@ -150,12 +150,36 @@
                             <input class="form-control" type="text" placeholder="Enter Alternate Contact Number" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="section1" style="display: none">
                         <div class="form-group">
                             <span>Enter Driving Licence No.
     <br />
                                 ड्राइविंग लाइसेंस नं. दर्ज करें<span style="color: red">*</span></span>
                             <input class="form-control" type="text" placeholder="Enter Licence Number" />
+                        </div>
+                    </div>
+                    <div class="col-md-3" id="section2" style="display: none">
+                        <div class="form-group">
+                            <span>Select Driving Licence Expirey Date
+                                <br />
+                               ड्राइविंग लाइसेंस की समाप्ति तिथि चुनें<span style="color: red">*</span></span>
+                            <input class="form-control" type="date" placeholder="Enter Licence Number" />
+                        </div>
+                    </div>
+                    <div class="col-md-3" id="section3" style="display: none">
+                        <div class="form-group">
+                            <span>Upload Driving Licence Image
+             <br />
+                              ड्राइविंग लाइसेंस की छवि अपलोड करें<span style="color: red">*</span></span>
+                            <input class="form-control" type="file" placeholder="Enter Licence Number" />
+                        </div>
+                    </div>
+                    <div class="col-md-3" id="section4" style="display: none">
+                        <div class="form-group">
+                            <span>Upload Driving Profile Image
+                                <br />
+                               ड्राइविंग प्रोफ़ाइल छवि अपलोड करें<span style="color: red">*</span></span>
+                            <input class="form-control" type="file" placeholder="Enter Licence Number" />
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -372,58 +396,33 @@
 
         }
     </script>
-     <script>
+    <script>
 
-         function toggleSection1() {
-             var dropdown1 = document.getElementById("dropdown1");
-             var section1 = document.getElementById("section1");
-             var section2 = document.getElementById("section2");
-             var section3 = document.getElementById("section3");
-             var section4 = document.getElementById("section4");
-             var section5 = document.getElementById("section5");
-             var section6 = document.getElementById("section6");
-             var section7 = document.getElementById("section7");
-             var section8 = document.getElementById("section8");
-             var section9 = document.getElementById("fieldset1");
-             var section10 = document.getElementById("fieldset2");
+        function toggleSection1() {
+            var dropdown1 = document.getElementById("dropdown1");
+            var section1 = document.getElementById("section1");
+            var section2 = document.getElementById("section2");
+            var section3 = document.getElementById("section3");
+            var section4 = document.getElementById("section4");
+            if (dropdown1.value === "1") {
+                section1.style.display = "block";
+                section2.style.display = "block";
+                section3.style.display = "block";
+                section4.style.display = "block";
+            } else if (dropdown1.value === "2") {
+                section1.style.display = "none";
+                section1.style.display = "none";
+                section2.style.display = "none";
+                section3.style.display = "none";
+                section4.style.display = "block";
 
-             if (dropdown1.value === "1") {
-                 section1.style.display = "block";
-                 section2.style.display = "block";
-                 section3.style.display = "block";
-                 section4.style.display = "block";
-                 section5.style.display = "block";
-                 section6.style.display = "block";
-                 section7.style.display = "none";
-                 section8.style.display = "none";
-                 section9.style.display = "block";
-                 section10.style.display = "none";
+            } else {
+                section1.style.display = "none";
+                section2.style.display = "none";
+                section3.style.display = "none";
+                section4.style.display = "none";
+            }
+        }
 
-             } else if (dropdown1.value === "2") {
-                 section7.style.display = "block";
-                 section8.style.display = "block";
-                 section1.style.display = "none";
-                 section2.style.display = "none";
-                 section3.style.display = "none";
-                 section4.style.display = "none";
-                 section5.style.display = "none";
-                 section6.style.display = "none";
-                 section9.style.display = "none";
-                 section10.style.display = "block";
-
-             } else {
-                 section1.style.display = "none";
-                 section2.style.display = "none";
-                 section3.style.display = "none";
-                 section4.style.display = "none";
-                 section5.style.display = "none";
-                 section6.style.display = "none";
-                 section7.style.display = "none";
-                 section8.style.display = "none";
-                 section9.style.display = "none";
-                 section10.style.display = "none";
-             }
-         }
-
-     </script>
+    </script>
 </asp:Content>
