@@ -103,8 +103,21 @@
                 <legend>Demand  Request/
 अनुरोध करना </legend>
                 <div class="row align-items-end">
-                    <div class="col-md-4">
-                        <div class="form-group">
+
+                    <div class="col-md-3">
+                            <label>
+                                From Date<br />
+                                प्रारंभिक दिनांक से<span style="color: red">*</span></label>
+                            <input type="date" id="Fdate" name="birthday" class="form-control">
+                        </div>
+                    <div class="col-md-3">
+                            <label>
+                                To Date
+             <br />
+                                अंतिम दिनांक तक<span style="color: red">*</span></label>
+                            <input type="date" id="Tdate" name="birthday" class="form-control">
+                        </div>
+                    <div class="col-md-3">
                             <label>
                                 Select Work Category
         <br />
@@ -117,10 +130,7 @@
                                 <option value="D">अन्य कार्य</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="col-md-4" id="school-subcategory-container">
-
-                        <div class="form-group">
+                    <div class="col-md-3" id="school-subcategory-container">
                             <label>
                                 Select Work Subcategory
         <br />
@@ -146,21 +156,21 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-6  col-lg-4 col-xl-4">
-                        <div class="form-group">
+                    <div class="row align-items-end">
+                    <div class="col-md-3  col-lg-3 col-xl-3">
                             <label>
                                 Project Code
                                 <br />
-                                परियोजना कोड<span style="color: red">*</span></label>
+                                परियोजना कोड</label>
                             <select id="Project_Code" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
+                                <option value="D" selected="selected">All</option>
                                 <option value="A">P00017</option>
                                 <option value="B">P00018</option>
                                 <option value="C">P00019</option>
-                                <option value="D">All</option>
+                                
                             </select>
                         </div>
-                    </div>
                 </div>
                 <div class="col-md-12">
                     <hr />

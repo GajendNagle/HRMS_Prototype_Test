@@ -118,13 +118,13 @@
                             <label>
                                 Project Code
                                 <br />
-                                परियोजना कोड<span style="color: red">*</span></label>
+                                परियोजना कोड</label>
                             <select id="Project_Code" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
+                                <option value="D" selected="selected">All</option>
                                 <option value="A">P00017</option>
                                 <option value="B">P00018</option>
                                 <option value="C">P00019</option>
-                                <option value="D">All</option>
                             </select>
                         </div>
                     </div>

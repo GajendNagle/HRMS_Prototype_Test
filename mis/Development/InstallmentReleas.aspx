@@ -46,7 +46,20 @@
                 <legend>Installment Payment Release/ किस्त भुगतान जारी </legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
-                        <div class="form-group">
+                            <label>
+                                From Date<br />
+                                प्रारंभिक दिनांक से<span style="color: red">*</span></label>
+                            <input type="date" id="Fdate" name="birthday" class="form-control">
+                        </div>
+                    <div class="col-md-3">
+                            <label>
+                                To Date
+             <br />
+                                अंतिम दिनांक तक<span style="color: red">*</span></label>
+                            <input type="date" id="Tdate" name="birthday" class="form-control">
+                        </div>
+
+                    <div class="col-md-3">
                             <label>
                                 Select District Name<br />
                                 ज़िला के नाम का चयन करें<span style="color: red">*</span></label>
@@ -105,10 +118,8 @@
                                 <option value="Ujjain">Ujjain</option>
                             </select>
                         </div>
-                    </div>
 
                     <div class="col-md-3">
-                        <div class="form-group">
                             <label>
                                 Select Work Category
         <br />
@@ -122,6 +133,7 @@
                             </select>
                         </div>
                     </div>
+                <div class="row align-items-end">
                     <div class="col-md-3" id="school-subcategory-container">
 
                         <div class="form-group">
@@ -155,13 +167,14 @@
                             <label>
                                 Project Code
             <br />
-                                परियोजना कोड<span style="color: red">*</span></label>
+                                परियोजना कोड</label>
                             <select id="Project_Code" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
+                                <option value="D" selected="selected">All</option>
                                 <option value="A">P00017</option>
                                 <option value="B">P00018</option>
                                 <option value="C">P00019</option>
-                                <option value="D">All</option>
+                                
                             </select>
                         </div>
                     </div>
