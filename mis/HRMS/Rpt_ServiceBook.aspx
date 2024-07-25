@@ -1187,11 +1187,11 @@
                                         <th>Month<br />
                                             महीना</th>
                                         <th>Earned Leave (in Day)<br />
-                                            अर्जित अवकाश (दिन में)
+                                            अर्जित अवकाश 
                                         </th>
                                         <th>Available Leave (in Day)
      <br />
-                                            उपलब्ध अवकाश (दिन में)</th>
+                                            उपलब्ध अवकाश </th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -1217,11 +1217,11 @@
                                         <th>Month<br />
                                             महीना</th>
                                         <th>Half Pay Leave (in Day)<br />
-                                            अर्जित अवकाश (दिन में)
+                                            अर्जित अवकाश 
                                         </th>
                                         <th>Available Leave (in Day)
                                             <br />
-                                            उपलब्ध अवकाश (दिन में)</th>
+                                            उपलब्ध अवकाश </th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -1271,7 +1271,7 @@
                                         <td>5</td>
                                         <td>01/08/2024</td>
                                         <td>05/08/2024</td>
-                                        <td>24//07/0224</td>
+                                        <td>24/07/0224</td>
                                         <td>AB1120-अशोक कुमार </td>
                                         <td>06/08/2024</td>
 
