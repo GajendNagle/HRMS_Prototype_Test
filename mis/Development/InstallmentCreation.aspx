@@ -1024,6 +1024,10 @@ onclick="">Reject</button>--%>
             newRow.insertCell(5).innerHTML = mobileNo1; // Column 2: Email
             newRow.insertCell(6).innerHTML = prevGradeA; // Column 3: Mobile
             newRow.insertCell(7).innerHTML = prevGradeB; // Column 4: Previous Grade A
+            newRow.insertCell(8);
+            const actionButtonTd = newRow.cells[8];
+            actionButtonTd.innerHTML += '<a class="Alert-Delete"><i class="fa fa-trash"></i></a>';
+
 
             // Update total values
             let InstallmentPer_Total = parseFloat($("#txtInstallmentPer_Total").val());
