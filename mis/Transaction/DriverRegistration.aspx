@@ -19,7 +19,7 @@
                             <a href="#SchoolManagementSystem" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
                                 <span>School Management System</span></a>
                         </li>
-                        <li class="breadcrumb-item">Driver Registration</li>
+                        <li class="breadcrumb-item">Driver / Attender Registration</li>
                     </ol>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                             <span>Select Registration Type
                                 <br />
                                 पंजीकरण प्रकार का चयन करें<span style="color: red">*</span></span>
-                            <select class="form-control" id="Reg" onchange="textchange()">
+                            <select class="form-control" id="dropdown1" onchange="toggleSection1()">
                                 <option value="0">--Select--</option>
                                 <option value="1">Driver</option>
                                 <option value="2">Attender</option>
@@ -372,4 +372,58 @@
 
         }
     </script>
+     <script>
+
+         function toggleSection1() {
+             var dropdown1 = document.getElementById("dropdown1");
+             var section1 = document.getElementById("section1");
+             var section2 = document.getElementById("section2");
+             var section3 = document.getElementById("section3");
+             var section4 = document.getElementById("section4");
+             var section5 = document.getElementById("section5");
+             var section6 = document.getElementById("section6");
+             var section7 = document.getElementById("section7");
+             var section8 = document.getElementById("section8");
+             var section9 = document.getElementById("fieldset1");
+             var section10 = document.getElementById("fieldset2");
+
+             if (dropdown1.value === "1") {
+                 section1.style.display = "block";
+                 section2.style.display = "block";
+                 section3.style.display = "block";
+                 section4.style.display = "block";
+                 section5.style.display = "block";
+                 section6.style.display = "block";
+                 section7.style.display = "none";
+                 section8.style.display = "none";
+                 section9.style.display = "block";
+                 section10.style.display = "none";
+
+             } else if (dropdown1.value === "2") {
+                 section7.style.display = "block";
+                 section8.style.display = "block";
+                 section1.style.display = "none";
+                 section2.style.display = "none";
+                 section3.style.display = "none";
+                 section4.style.display = "none";
+                 section5.style.display = "none";
+                 section6.style.display = "none";
+                 section9.style.display = "none";
+                 section10.style.display = "block";
+
+             } else {
+                 section1.style.display = "none";
+                 section2.style.display = "none";
+                 section3.style.display = "none";
+                 section4.style.display = "none";
+                 section5.style.display = "none";
+                 section6.style.display = "none";
+                 section7.style.display = "none";
+                 section8.style.display = "none";
+                 section9.style.display = "none";
+                 section10.style.display = "none";
+             }
+         }
+
+     </script>
 </asp:Content>
