@@ -677,9 +677,11 @@
                                     </th>
                                     <td>Reem Higher Secondary School</td>
                                     <th>Office/Institute/School 
-                                        <br />Address of first Posting
+                                        <br />
+                                        Address of first Posting
                                                    :</th>
-                                    <td>Robertson, 1234 NW Bobcat Lane,<br /> St. Robert</td>
+                                    <td>Robertson, 1234 NW Bobcat Lane,<br />
+                                        St. Robert</td>
                                 </tr>
                                 <tr>
 
@@ -723,7 +725,8 @@
                                 </tr>
                                 <tr>
 
-                                    <th>Working in other Department <br /> 
+                                    <th>Working in other Department
+                                        <br />
                                         Organization on Deputation Transfer :
                                     </th>
                                     <td>No</td>
@@ -814,9 +817,12 @@
                                     </th>
                                     <td>Reem Higher Secondary School</td>
                                     <th>Office/Institute/School 
-                                        <br />Address of first Posting
+                                        <br />
+                                        Address of first Posting
 :</th>
-                                    <td>Robertson, 1234 NW Bobcat Lane, <br />St. Robert</td>
+                                    <td>Robertson, 1234 NW Bobcat Lane,
+                                        <br />
+                                        St. Robert</td>
                                 </tr>
                                 <tr>
 
@@ -860,7 +866,9 @@
                                 </tr>
                                 <tr>
 
-                                    <th>Working in other Department <br /> Organization 
+                                    <th>Working in other Department
+                                        <br />
+                                        Organization 
                                         on Deputation Transfer :
                                     </th>
                                     <td>No</td>
@@ -919,18 +927,14 @@
                     </fieldset>
 
                     <fieldset>
-
                         <legend id="l9">Employee Account Info / कर्मचारी खाता जानकारी</legend>
                         <div class="table-responsive">
-
                             <table class="table table-bordered">
-
                                 <tr>
                                     <th>IFSC Code :</th>
                                     <td>SBIN0005943 </td>
                                     <th>Bank Name</th>
                                     <td>State Bank of India</td>
-
                                 </tr>
                                 <tr>
                                     <th>Branch Name</th>
@@ -963,6 +967,410 @@
                                     <th>ESIC No. :</th>
                                     <td>UYT567</td>
                                 </tr>
+                            </table>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend id="20">Promotion Details / प्रमोशन का विवरण </legend>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No.<br />
+                                            सरल क्र.</th>
+                                        <th>Order  Number<br />
+                                            आदेश  क्रमांक  </th>
+                                        <th>Order Date<br />
+                                            आदेश  दिनांक </th>
+                                        <th>Name of the issuing office<br />
+                                            जारीकर्ता  कार्यालय का नाम </th>
+                                        <th>District In Case of District/Division Level Authority<br />
+                                            जिला/मंडल स्तरीय प्राधिकरण के मामले में जिला</th>
+                                        <th>Designation<br />
+                                            पदनाम </th>
+                                        <th>Pay Scale of the Post<br />
+                                            पद का वेतनमान </th>
+                                        <th>Date of Taking over the Post<br />
+                                            पद का  कार्यभार दिनांक  </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <th>231/22</th>
+                                        <td>22/02/2022</td>
+                                        <td>DPI</td>
+                                        <td>Nil</td>
+                                        <td>Assistant Grate-I</td>
+                                        <td>50000</td>
+                                        <td>23/2/2022</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend id="21">PayScale Details / वेतनमान का विवरण </legend>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No.<br />
+                                            सरल क्र.</th>
+                                        <th>Order  Number<br />
+                                            आदेश  क्रमांक  </th>
+                                        <th>Order Date<br />
+                                            आदेश  दिनांक </th>
+                                        <th>Name of the issuing office<br />
+                                            जारीकर्ता  कार्यालय का नाम </th>
+                                        <th>District In Case of District/Division Level Authority<br />
+                                            जिला/मंडल स्तरीय प्राधिकरण के मामले में जिला</th>
+                                        <th>Pay Scale<br />
+                                            वेतनमान </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <th>231/22</th>
+                                        <td>22/02/2022</td>
+                                        <td>DPI</td>
+                                        <td>Nil</td>
+                                        <td>8000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend id="22">Annual Increment  Details / वार्षिक वेतन वृद्धि आदेश का विवरण </legend>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No.<br />
+                                            सरल क्र.</th>
+                                        <th>Year<br />
+                                            वर्ष</th>
+                                        <th>Month<br />
+                                            महीना </th>
+                                        <th>New Basic Pay<br />
+                                            नया मूल वेतन</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <th>2022</th>
+                                        <td>April</td>
+                                        <td>16000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend id="23">Special Increment Order Details / विशेष वेतन वृद्धि आदेश का विवरण </legend>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No.<br />
+                                            सरल क्र.</th>
+                                        <th>Order  Number<br />
+                                            आदेश  क्रमांक  </th>
+                                        <th>Order Date<br />
+                                            आदेश  दिनांक </th>
+                                        <th>Type of Increment
+                                            <br />
+                                            वेतन वृद्धि का प्रकार  
+                                        </th>
+                                        <th>Authorized Officer<br />
+                                            अधिकृत अधिकारी 
+                                        </th>
+                                        <th>Year<br />
+                                            वर्ष</th>
+                                        <th>Month<br />
+                                            महीना </th>
+                                        <th>New Basic Pay<br />
+                                            नया मूल वेतन</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="8">Special Increment Order Details Not Available</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend id="24">Transfer Details / विशेष वेतन वृद्धि आदेश का विवरण </legend>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No.<br />
+                                            सरल क्र.</th>
+                                        <th>Order  Number<br />
+                                            आदेश  क्रमांक  </th>
+                                        <th>Order Date<br />
+                                            आदेश  दिनांक </th>
+                                        <th>Designation(Type)
+                                            <br />
+                                            पदनाम(प्रकार)</th>
+                                        <th>Posted School/Institute/Office Name(DISE Code)
+                                            <br />
+                                            पदस्थापित विद्यालय/संस्थान/कार्यालय का नाम (DISE कोड)  
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>135924</td>
+                                        <td>09/08/2023</td>
+                                        <td>Prathmik Shikshak(teaching)</td>
+                                        <td>GMS Kudana 1 To 8 [23220403602]</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset>
+                    <%--<fieldset>
+                        <legend id="25">Nomination  Details / नामांकन का विवरण </legend>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No.<br />
+                                            सरल क्र.</th>
+                                        <th>Details
+                                            <br />
+                                            विवरण</th>
+                                        <th>Nominee name<br />
+                                            नामांकित व्यक्ति का नाम </th>
+                                        <th>Relationship with the employee
+                        <br />
+                                            कर्मचारी से संबंध 
+                                        </th>
+                                        <th>Percentage Fractions
+                        <br />
+                                            प्रतिशत अंश  
+                                        </th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Famioly Pension </td>
+                                        <td>SMT. SEEMA DEVI</td>
+                                        <td>Wife</td>
+                                        <td>100</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset>--%>
+                    <fieldset>
+                        <legend id="26">Earned  Leave Records / अर्जित अवकाश का विवरण </legend>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No.<br />
+                                            सरल क्र.</th>
+                                        <th>Year
+                         <br />
+                                            वर्ष</th>
+                                        <th>Month<br />
+                                            महीना</th>
+                                        <th>Earned Leave (in Day)<br />
+                                            अर्जित अवकाश (दिन में)
+                                        </th>
+                                        <th>Available Leave (in Day)
+     <br />
+                                            उपलब्ध अवकाश (दिन में)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="5">Earned Leave Details Not Available</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend id="27">Half Pay  Leave Records / अर्ध वेतन अवकाश का विवरण  </legend>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No.<br />
+                                            सरल क्र.</th>
+                                        <th>Year
+                    <br />
+                                            वर्ष</th>
+                                        <th>Month<br />
+                                            महीना</th>
+                                        <th>Half Pay Leave (in Day)<br />
+                                            अर्जित अवकाश (दिन में)
+                                        </th>
+                                        <th>Available Leave (in Day)
+                                            <br />
+                                            उपलब्ध अवकाश (दिन में)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="5">Earned Leave Details Not Available</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend id="28">Approved  Leave Details / स्वीकृत अवकाश का विवरण</legend>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No.<br />
+                                            सरल क्र.</th>
+                                        <th>Type of leave
+ <br />
+                                            अवकाश का प्रकार </th>
+                                        <th>Duration in days<br />
+                                            अवधि दिनों में </th>
+                                        <th>From  date
+                                            <br />
+                                            दिनांक से
+                                        </th>
+                                        <th>To Date
+                         <br />
+                                            दिनांक तक</th>
+                                        <th>Acceptance Date
+                                            <br />
+                                            स्वीकृति दिनांक
+                                        </th>
+                                        <th>approver
+                     <br />
+                                            स्वीकृतकर्ता</th>
+                                        <th>Date of return from leave<br />
+                                            अवकाश में वापसी की तिथि </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CL</td>
+                                        <td>5</td>
+                                        <td>01/08/2024</td>
+                                        <td>05/08/2024</td>
+                                        <td>24//07/0224</td>
+                                        <td>AB1120-अशोक कुमार </td>
+                                        <td>06/08/2024</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset>
+                                       <fieldset>
+                       <legend id="2">Unathorized   Absence Details / अनधिकृत अनुपस्थिति का विवरण</legend>
+                       <div class="table-responsive">
+                           <table class="table table-bordered">
+                               <thead>
+                                   <tr>
+                                       <th>Sr. No.<br />
+                                           सरल क्र.</th>
+                                       
+                                       <th>Duration in days<br />
+                                           अवधि दिनों में </th>
+                                       <th>From  date
+                                           <br />
+                                           दिनांक से
+                                       </th>
+                                       <th>To Date
+                        <br />
+                                           दिनांक तक</th>
+                                       <th>Return Date
+                                           <br />
+                                           वापसी की तिथि 
+                                       </th>
+                                       
+                                   </tr>
+                               </thead>
+                               <tbody>
+                                   <tr>
+                                       <td colspan="5">Unathorized   Absence Details Not Available</td>
+                                   </tr>
+                               </tbody>
+                           </table>
+                       </div>
+                   </fieldset>
+                    <fieldset>
+                        <legend id="31">Punishment  Details / दंड  का विवरण </legend>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No.<br />
+                                            सरल क्र.</th>
+                                        <th>Type of punishment
+                                            <br />
+                                            दंड  का प्रकार </th>
+                                        <th>
+                                            Name of the issuer<br />
+                                            जारीकर्ता का नाम
+                                        </th>
+                                        <th>Order Number<br />
+                                            आदेश क्रमांक
+                                        </th>
+                                        <th>Order Date
+                        <br />
+                                            आदेश दिनांक</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="5">Punishment  Details Not Available </td>
+                                       
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend id="30">Diciplinary Action Details / अनुशासनात्मक कार्रवाई का विवरण   </legend>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No.<br />
+                                            सरल क्र.</th>
+                                        <th>Type of Proceedings
+  <br />
+                                            कार्यवाही का प्रकार</th>
+                                        <th>Details of Proceedings<br />
+                                            कार्यवाही का विवरण </th>
+                                        <th>Before whom the Proceedings are Pending<br />
+                                            किसके समक्ष कार्यवाही लंबित है 
+                                        </th>
+                                        <th>From what date the Proceedings are Pending
+                          <br />
+                                            किस दिनांक से कार्यवाही लंबित है</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="5">Diciplinary Action Details Not Available </td>
+                                        
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                     </fieldset>
@@ -1041,9 +1449,7 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend>Details of National or State Level Awards And Honors
-     /
-        राष्ट्रीय या राज्य स्तर के पुरस्कार व सम्मान का विवरण </legend>
+                        <legend>Details of National or State Level Awards And Honors / राष्ट्रीय या राज्य स्तर के पुरस्कार व सम्मान का विवरण </legend>
                         <div class="row ">
                             <div class="col-md-12">
                                 <div class="table-responsive">
@@ -1054,6 +1460,9 @@
                                                     सरल क्र.</th>
                                                 <th>Name of Honor and Award<br />
                                                     सम्मान व पुरस्कार का नाम</th>
+                                                <th>Award Level(National/State Level)
+                                                    <br />
+                                                    पुरस्कार का स्तर(राष्ट्रीय एवं राज्य स्तर के पुरस्कार)</th>
                                                 <th>Year of Award<br />
                                                     पुरस्कार प्राप्ति का वर्ष</th>
                                                 <th>Order number if Any<br />
@@ -1063,6 +1472,8 @@
                                                 <td>1</td>
 
                                                 <td>Total Green School Awards
+                                                </td>
+                                                <td>National Level 
                                                 </td>
                                                 <td>2018
                                                 </td>
@@ -1075,13 +1486,13 @@
 
                                                 <td>Teaching Award
                                                 </td>
+                                                <td>State Level
+                                                </td>
                                                 <td>2021
                                                 </td>
                                                 <td>Nil
                                                 </td>
-
                                             </tr>
-
                                         </tbody>
                                     </table>
                                 </div>
@@ -1109,6 +1520,13 @@
                                                 <th>Duration of Training (in days)
                                 <br />
                                                     प्रशिक्षण की अवधि (दिनों में)</th>
+                                                <th>From Date<br />
+                                                    दिनांक से	
+                                                </th>
+                                                <th>To Date<br />
+
+                                                    दिनांक तक
+                                                </th>
                                             </tr>
                                             <tr>
                                                 <td>1</td>
@@ -1118,6 +1536,10 @@
                                                 <td>Raisen
                                                 </td>
                                                 <td>10 days
+                                                </td>
+                                                <td>11/06/2024
+                                                </td>
+                                                <td>21/06/2024
                                                 </td>
 
                                             </tr>
@@ -1130,6 +1552,10 @@
                                                 </td>
                                                 <td>8 days
                                                 </td>
+                                                <td>01/07/2024
+                                                </td>
+                                                <td>08/07/2024
+                                                </td>
 
                                             </tr>
 
@@ -1137,7 +1563,34 @@
                                     </table>
                                 </div>
                             </div>
-
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend id="29">Rersource   Group Details / स्वीकृत अवकाश का विवरण</legend>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No.<br />
+                                            सरल क्र.</th>
+                                        <th>Resource Group
+                                            <br />
+                                            संसाधन समूह </th>
+                                        <th>National Days<br />
+                                            राष्ट्रीय दिवस
+                                        </th>
+                                        <th>State Days
+                                           <br />
+                                            राज्य दिवस
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="6">Rersource  Group Details Not Available</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </fieldset>
                     <fieldset>
