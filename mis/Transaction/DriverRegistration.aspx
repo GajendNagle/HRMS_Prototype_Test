@@ -162,7 +162,7 @@
                         <div class="form-group">
                             <span>Select Driving Licence Expirey Date
                                 <br />
-                               ड्राइविंग लाइसेंस की समाप्ति तिथि चुनें<span style="color: red">*</span></span>
+                                ड्राइविंग लाइसेंस की समाप्ति तिथि चुनें<span style="color: red">*</span></span>
                             <input class="form-control" type="date" placeholder="Enter Licence Number" />
                         </div>
                     </div>
@@ -170,7 +170,7 @@
                         <div class="form-group">
                             <span>Upload Driving Licence Image
              <br />
-                              ड्राइविंग लाइसेंस की छवि अपलोड करें<span style="color: red">*</span></span>
+                                ड्राइविंग लाइसेंस की छवि अपलोड करें<span style="color: red">*</span></span>
                             <input class="form-control" type="file" placeholder="Enter Licence Number" />
                         </div>
                     </div>
@@ -178,7 +178,7 @@
                         <div class="form-group">
                             <span>Upload Driving Profile Image
                                 <br />
-                               ड्राइविंग प्रोफ़ाइल छवि अपलोड करें<span style="color: red">*</span></span>
+                                ड्राइविंग प्रोफ़ाइल छवि अपलोड करें<span style="color: red">*</span></span>
                             <input class="form-control" type="file" placeholder="Enter Licence Number" />
                         </div>
                     </div>
@@ -186,6 +186,79 @@
                         <hr />
                         <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Add</button>
                         <a href="RouteToVehicleMapping.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset id="AddressDetail">
+                <legend>Address Details / पते का विवरण</legend>
+                <div class="row align-items-end">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>Select State Name
+            <br />
+                                राज्य का नाम चुनें  <span style="color: red">*</span></span>
+                            <select class="form-control">
+                                <option value="--Select--" data-select2-id="3">--Select--</option>
+                                <option value="Rajasthan" data-select2-id="14">Rajasthan</option>
+                                <option value="Maharashtra" data-select2-id="15">Maharashtra</option>
+                                <option value="Nagaland" data-select2-id="16">Nagaland</option>
+                                <option value="Nashik" data-select2-id="17">Nashik</option>
+                                <option value="West" data-select2-id="18">West</option>
+                                <option value="Bengal" data-select2-id="19">Bengal</option>
+                                <option value="Telangana" data-select2-id="20">Telangana</option>
+                                <option value="Assam" data-select2-id="21">Assam</option>
+                                <option value="Tripura" data-select2-id="22">Tripura</option>
+                                <option value="Madhya" data-select2-id="23">Madhya Pradesh</option>
+                                <option value="Tamil" data-select2-id="24">Tamil</option>
+                                <option value="Nadu" data-select2-id="25">Nadu</option>
+                                <option value="Gujarat" data-select2-id="26">Gujarat</option>
+                                <option value="Sikkim" data-select2-id="27">Sikkim</option>
+                                <option value="Andhra" data-select2-id="28">Andhra Pradesh</option>
+                                <option value="Uttar" data-select2-id="29">Uttar Pradesh</option>
+                                <option value="Punjab" data-select2-id="30">Punjab</option>
+                                <option value="Karnataka" data-select2-id="31">Karnataka</option>
+                                <option value="Meghalaya" data-select2-id="32">Meghalaya</option>
+                                <option value="Uttarakhand" data-select2-id="33">Uttarakhand</option>
+                                <option value="Goa" data-select2-id="34">Goa</option>
+                                <option value="Haryana" data-select2-id="35">Haryana</option>
+                                <option value="Mizoram" data-select2-id="36">Mizoram</option>
+                                <option value="Arunachal" data-select2-id="37">Arunachal Pradesh</option>
+                                <option value="Bihar" data-select2-id="38">Bihar</option>
+                                <option value="Himachal" data-select2-id="39">Himachal </option>
+                                <option value="Kerala" data-select2-id="40">Kerala</option>
+                                <option value="Jharkhand" data-select2-id="41">Jharkhand</option>
+                                <option value="Orissa" data-select2-id="42">Orissa</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>Select Division Name
+                            <br />
+                                संभाग का नाम चुनें  <span style="color: red">*</span></span>
+                            <select class="form-control select2">
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>Select District Name
+                            <br />
+                                जिला का नाम चुनें  <span style="color: red">*</span></span>
+                            <select class="form-control select2">
+                                <option></option>
+                            </select>
+                        </div>
+                    </div><div class="col-md-3">
+                        <div class="form-group">
+                            <span>Select Block Name
+                            <br />
+                                जिला का नाम चुनें  <span style="color: red">*</span></span>
+                            <select class="form-control select2">
+                                <option></option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </fieldset>
