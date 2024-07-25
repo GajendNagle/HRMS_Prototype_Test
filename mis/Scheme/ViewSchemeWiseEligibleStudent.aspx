@@ -24,7 +24,7 @@
                         <li class="breadcrumb-item">
                             <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>View Scheme Wise Eligible Student</span></li>
+                        <li class="breadcrumb-item"><span>View Scheme Wise Generate List</span></li>
                     </ol>
                 </div>
             </div>
@@ -34,13 +34,13 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h5 class="card-title">View Scheme Wise Eligible Student / योजना अनुसार पात्र विद्यार्थी देखें</h5>
+                    <h5 class="card-title">View Scheme Wise Generate List /योजनावार जनरेट सूची देखें</h5>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>View Scheme Wise Eligible Student / योजना अनुसार पात्र विद्यार्थी देखें
+                <legend>View Scheme Wise Generate List/योजनावार जनरेट सूची देखें
                 </legend>
 
                 <div class="row">

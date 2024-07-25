@@ -24,7 +24,7 @@
                         <li class="breadcrumb-item">
                             <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme Management</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Generate Scheme List</span></li>
+                        <li class="breadcrumb-item"><span>Scheme Wise Generate Payment File</span></li>
                     </ol>
                 </div>
             </div>
@@ -34,13 +34,13 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Generate Scheme List / योजना सूची तैयार करें</h5>
+                    <h5 class="card-title">Scheme Wise Generate Payment File/योजना के अनुसार भुगतान फ़ाइल जनरेट करें</h5>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Generate Scheme List / योजना सूची तैयार करें
+                <legend>Scheme Wise Generate Payment File/योजना के अनुसार भुगतान फ़ाइल जनरेट करें
                 </legend>
                 <div class="row">
                     <div class="col-md-4">
@@ -87,7 +87,7 @@
 
                     <div class="col-md-3 ">
                         <div class="form-group">
-                            <button id="viewMoreBtn" class="btn btn-outline-info btn-border w-lg" type="button" onclick="btnsearch()">SEARCH</button>
+                            <button id="viewMoreBtn" class="btn btn-outline-info btn-border w-lg" type="button" onclick="btnsearch()">Search</button>
 
                         </div>
                     </div>

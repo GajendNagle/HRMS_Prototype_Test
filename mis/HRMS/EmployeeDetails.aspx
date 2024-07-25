@@ -654,7 +654,7 @@
                         <br />
 
                         <fieldset>
-                            <legend>Academic Performance and Syllabus Completion Status  / शैक्षणिक प्रदर्शन और पाठ्यक्रम समापन की स्थिति</legend>
+                            <legend>Performance / Learning of Student / प्रदर्शन/छात्रों का सीखना</legend>
 
                             <div class="row">
                                 <div class="col-md-12 table-responsive">

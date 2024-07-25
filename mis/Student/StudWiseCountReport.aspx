@@ -214,7 +214,7 @@
                 </div>
 
             </fieldset>
-            <fieldset id="show1" style="display: none;">
+            <fieldset id="fs_Details" style="display: none;">
                 <legend>Details/
 विवरण</legend>
                 <div class="row justify-content-end">
@@ -264,7 +264,8 @@
                                             स्थानांतरण प्रमाणपत्र जारी करने वाले छात्रों की कुल संख्या</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                            <%-- <tbody  id="tbody_districtTable"></tbody>
+                         --%>       <tbody>
                                     <tr class="text-center">
                                         <td>1</td>
                                         <td>2024-2025</td>
@@ -275,9 +276,9 @@
                                         <td>GOVT HSS Sironj/23340603802</td>
                                         <td>10th</td>
                                         <td>50</td>
-                                        <td class="text-info">20</td>
-                                        <td class="text-info">10</td>
-                                        <td class="text-info">10</td>
+                                        <td class="text-info">5</td>
+                                        <td class="text-info">3</td>
+                                        <td class="text-info">2</td>
 
                                     </tr>
                                     <tr class="text-center">
@@ -289,10 +290,10 @@
                                         <td>M.L.B. BHEL, BARKHEDA, BHOPAL, PRINCIPAL, GOVT. HSS/0512003007</td>
                                         <td>GOVT HSS KHAJURI KALAN/23320303134</td>
                                         <td>11th</td>
-                                        <td>45</td>
-                                        <td class="text-info">15</td>
-                                        <td class="text-info">10</td>
-                                        <td class="text-info">5</td>
+                                        <td>11</td>
+                                        <td class="text-info">7</td>
+                                        <td class="text-info">4</td>
+                                        <td class="text-info">3</td>
 
                                     </tr>
                                     <tr class="text-center">
@@ -304,10 +305,10 @@
                                         <td>PHANDA, PRINCIPAL, GOVT. HS/0502003027</td>
                                         <td>PHANDA, PRINCIPAL, GOVT. HS/0502003027 </td>
                                         <td>9th</td>
-                                        <td>70</td>
-                                        <td class="text-info">10</td>
-                                        <td class="text-info">5</td>
-                                        <td class="text-info">5</td>
+                                        <td>9</td>
+                                        <td class="text-info">6</td>
+                                        <td class="text-info">3</td>
+                                        <td class="text-info">3</td>
 
                                     </tr>
                                     <tr class="text-center">
@@ -332,11 +333,180 @@
                     </div>
                 </div>
             </fieldset>
+
+            <div class="modal fade" id="EmpModal" tabindex="-1" role="dialog" aria-labelledby="EmpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="EmpModalLabel">Handicapped Employees-<span id="ModaldistName"></span></h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <fieldset>
+                    <legend>Details / विवरण
+</legend>
+             
+                <div class="row justify-content-end">
+                    <div class="col-md-6 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No.<br />
+                                            सरल क्र.</th>
+                                        <th>Class<br />कक्षा</th>
+                                        <th>Student ID/Name<br />विद्यार्थी आईडी/नाम</th>
+                                       
+                                       
+                                        <th>School Name/Udise Code
+                                            <br />
+                                           स्कूल का नाम/यू डाइस कोड </th>
+                                        <th>Status<br />
+                                            स्थिति</th>
+                                       
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                       </fieldset>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
         </div>
     </div>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <%--<script>
+
+
+        const names = ["UV3456-Vikram Singh", "WX7890-Anita Verma", "YZ1234-Amit Kumar", "AB5678-Priya Sharma", "CD9012-Rajesh Mehta", "EF2345-Suman Singh", "GH6789-Krishna Patel", "IJ0123-Sanjay Gupta", "KL4567-Pooja Sharma", "MN8901-Vinay Kumar", "OP2345-Maya Patel", "QR6789-Vivek Singh", "ST0123-Swati Gupta", "UV4567-Rakesh Sharma", "WX8901-Neha Patel", "YZ2345-Rahul Singh", "AB6789-Anjali Verma", "CD0123-Rajat Gupta", "EF4567-Kavita Sharma", "AB1234-Manish Meena", "CD5678-Ritu Sharma", "EF9012-Rahul Gupta", "GH3456-Sangeeta Patel", "IJ7890-Ravi Kumar"];
+
+        const sankuls = ["23354912798 -Bal Bharti School", "34459823721 -New Horizon School", "45563178456 -Little Angels School", "56678931234 -Green Valley School", "67784251983 -Sunrise Public School	", "78897563214 -Bright Minds School", "89908674325 -Modern Public School"];
+        const HandicappedPercentage = ["40 to 50", "51 to 60", "61 to 70", "81 to 90", "91 to 100"];
+        const districts = ["Bhopal", "Raisen", "Rajgarh", "Sehore", "Vidisha", "Ashoknagar", "Shivpuri", "Datia", "Guna", "Gwalior", "Harda", "Hoshangabad", "Betul", "Morena", "Sheopur", "Bhind", "Barwani", "Burhanpur", "Dhar", "Indore", "Jhabua", "Khandwa", "Khargone", "Alirajpur", "Balaghat", "Chhindwara", "Jabalpur", "Katni", "Mandla", "Narsinghpur", "Seoni", "Rewa", "Satna", "Sidhi", "Singroli", "Chhatarpur", "Damoh", "Panna", "Sagar", "Tikamgarh", "Shahdol", "Umaria", "Dindori", "Anuppur", "Dewas", "Mandsaur", "Neemuch", "Ratlam", "Shajapur", "Ujjain"
+        ];
+        const handicappedTypes = ["Blindnes/अंधापन", "Low Vision/कम दृष्टि", "Hearing Impaiment/ श्रवण हानि",
+            "Speech and Language / वाणी और भाषा", "Loco Moto Disability / लोको मोटो विकलांगता",
+            "Mental Illness /मानसिक बिमारी", "Specipic Illness /विशिष्ट बीमारी",
+            "Intellectual Disability / बौद्धिक विकलांगता", "Leprosy Cured Person /कुष्ठ रोग से ठीक हुआ व्यक्ति",
+            "Autism Spectrum Disorder /ऑटिज्म स्पेक्ट्रम डिस्ऑर्डर", "Multiple Disability / एकाधिक विकलांगता",
+            "Cerebral Palsy / मस्तिष्क पक्षाघात", "Dwarfism / बौनापन", "Muscular Dystrophy",
+            "Chronic Disease / मांसपेशीय दुर्विकास", "Multiple Sclerosis / मल्टीपल स्क्लेरोसिस",
+            "Thalassemia / थैलेसीमिया", "Hemophilia / हीमोफीलिया", "Sickle Cell Disease / सिकल सेल रोग",
+            "Acid Attack Victim / एसिड अटैक पीड़िता", "Parkinson's Disease / पार्किंसंस रोग"
+        ];
+
+
+        function generateDummyData(selectedDistrict) {
+
+            const data = [];
+            let id = 1;
+
+            for (let district of districts) {
+                if (selectedDistrict === "All" || selectedDistrict === district) {
+                    for (let i = 0; i < 2; i++) {
+                        const totalEmployees = Math.floor(Math.random() * 5) + 1;
+                        const typeIndex = Math.floor(Math.random() * handicappedTypes.length);
+                        let type = handicappedTypes[typeIndex];
+                        type = type.replace("/", "<br/>")
+                        data.push({
+                            id: id++,
+                            district,
+                            totalEmployees,
+                            type
+                        });
+                        document.getElementById('fs_Details').style.display = 'block';
+                    }
+
+                }
+
+            }
+            return data;
+        }
+
+
+        // Function to fill the main table
+        function fillMainTable(data) {
+            const tableBody = document.getElementById('tbody_districtTable');
+            tableBody.innerHTML = '';
+            if (data != "") {
+
+                data.forEach((row) => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${row.id}</td>
+                        <td>${row.district}</td>
+                        <td><a role="button" data-bs-toggle="modal" data-bs-target="#EmpModal" onclick="populateModalTable('${row.district}',${row.totalEmployees}, '${row.type}')" href="#">${row.totalEmployees}</a></td>
+                        <td>${row.type}</td>
+    `;
+                    tableBody.appendChild(tr);
+                });
+            }
+        }
+
+        function populateModalTable(district, count, type) {
+            const modalTableBody = document.querySelector('#EmpModal tbody');
+            document.querySelector('#ModaldistName').innerText = district;
+            modalTableBody.innerHTML = ''; // Clear existing rows
+
+            // Copy the names array to avoid modification in the original array
+            let availableNames = [...names];
+
+            for (let i = 0; i < count; i++) {
+                var sankul = sankuls[Math.floor(Math.random() * sankuls.length)];
+
+                // Check if there are available names left
+                if (availableNames.length === 0) {
+                    console.log('No more available names.');
+                    break;
+                }
+
+                // Randomly select a name and remove it from the availableNames array
+                const randomIndex = Math.floor(Math.random() * availableNames.length);
+                const selectedName = availableNames.splice(randomIndex, 1)[0];
+
+                const row = `
+        <tr>
+            <td>${i + 1}</td>
+            <td>${selectedName}</td>
+            <td>${sankul}</td>
+            <td>${type}</td>
+            <td>${HandicappedPercentage[Math.floor(Math.random() * HandicappedPercentage.length)]}</td>
+        </tr>`;
+                modalTableBody.innerHTML += row;
+            }
+        }
+
+    </script>--%>
     <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script>
@@ -381,7 +551,7 @@
         function DivHide() {
 
 
-            show1.style.display = "block";
+            fs_Details.style.display = "block";
         }
     </script>
 

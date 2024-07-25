@@ -84,13 +84,12 @@
             <fieldset>
                 <legend>EMPLOYEE PERSONAL INFORMATION / कर्मचारी की व्यक्तिगत जानकारी</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
-                        <div class="form-group">
+                    <div class="col-md-3">                     
                             <label>
                                 Financial Year<br>
                                 वार्षिक प्रतिवेदन अवधि वर्ष <span style="color: red">*</span>
                             </label>
-                            <select class="form-control ">
+                            <select class="form-control">
                                 <option value="2020-2021">2020-2021</option>
                                 <option value="2021-2022">2021-2022</option>
                                 <option value="2022-2023">2022-2023</option>
@@ -99,42 +98,42 @@
 
                             </select>
                         </div>
-                    </div>
+                   
                     <div class="col-md-3">
-                        <div class="form-group">
+                      
                             <label>
-                                Name
+                             Employee Name
                                                         <br>
-                                नाम  <span style="color: red">*</span>
+                            कर्मचारी नाम  <span style="color: red">*</span>
                             </label>
                             <input name="ctl00$ContentBody$txtName" type="text" readonly="readonly" id="ContentBody_txtName" class="form-control" autocomplete="off" value="गोपाल वर्मा">
                         </div>
-                    </div>
+                  
                     <div class="col-md-3">
-                        <div class="form-group">
+                      
                             <label>
-                                Unique ID<br>
-                                कर्मचारी आई.डी
+                             Employee Unique ID<br>
+                               कर्मचारी की यूनिक आईडी
                                                         <span style="color: red">*</span>
                             </label>
                             <input name="ctl00$ContentBody$TextBox4" type="text" readonly="readonly" id="ContentBody_TextBox4" class="form-control" autocomplete="off" value="EDP4561231556">
                         </div>
-                    </div>
+                 
                     <div class="col-md-3">
-                        <div class="form-group">
+                      
                             <label>
-                                Designation
+                                Designation Name
                                                         <br>
-                                पद नाम <span style="color: red">*</span>
+                                पद का नाम <span style="color: red">*</span>
                             </label>
                             <input name="ctl00$ContentBody$DropDownList1" type="text" readonly="readonly" id="ContentBody_DropDownList1" class="form-control " autocomplete="off" value="सहायक शिक्षक">
                         </div>
-                    </div>
+                    
 
                 </div>
                 <div class="row align-items-end">
                     <div class="col-md-3">
-                        <div class="form-group">
+                      
                             <label>
                                 <br>
                                 Date Of Birth<br>
@@ -142,28 +141,28 @@
                             </label>
                             <input name="ctl00$ContentBody$TXTDOB" type="date" readonly="readonly" id="ContentBody_TXTDOB" class="form-control" autocomplete="off" value="1999-12-03">
                         </div>
-                    </div>
+                   
 
                     <div class="col-md-3">
-                        <div class="form-group">
+                      
                             <label>
                                 <br>
                                 Institution of Posting<br>
                                 पदस्थी शाला/स्थान<span style="color: red;">*</span></label>
                             <input name="ctl00$ContentBody$ddlPosting" type="text" readonly="readonly" id="ContentBody_ddlPosting" value="भोपाल" class="form-control" autocomplete="off">
                         </div>
-                    </div>
+                 
                     <div class="col-md-3">
-                        <div class="form-group">
+                      
                             <label class="fs-6">
                                 <br>
                                 Dise Code of Institution<br>
                                 पदस्थी शाला का डाइस कोड<span style="color: red;">*</span></label>
                             <input name="ctl00$ContentBody$txtpriviesdesinnetion" type="text" readonly="readonly" id="ContentBody_txtpriviesdesinnetion" class="form-control" autocomplete="off" value="St Theresa Girls School/489754554">
                         </div>
-                    </div>
+                   
                     <div class="col-md-3">
-                        <div class="form-group">
+                      
                             <label>
                                 <br>
                                 Date Of First Posting<br>
@@ -174,10 +173,10 @@
                     </div>
 
 
-                </div>
+               
                 <div class="row align-items-end">
                     <div class="col-md-3">
-                        <div class="form-group">
+                      
                             <label>
                                 <br>
                                 First Posting  Designation<br>
@@ -185,9 +184,9 @@
                             </label>
                             <input name="ctl00$ContentBody$TextBox1" type="text" readonly="readonly" id="ContentBody_TextBox1" class="form-control" autocomplete="off" value="प्राथमिक अध्यापक">
                         </div>
-                    </div>
+                   
                     <div class="col-md-3 ">
-                        <div class="form-group">
+                      
                             <label>
                                 Current Date Of Promotion
                                                         <br>
@@ -195,12 +194,12 @@
                             </label>
                             <input name="ctl00$ContentBody$TextBox2" type="date" readonly="readonly" id="ContentBody_TextBox2" class="form-control " autocomplete="off" value="2024-01-23">
                         </div>
-                    </div>
+                  
 
 
 
                     <div class="col-md-3 ">
-                        <div class="form-group">
+                      
                             <label>
                                 Date Of Promotion
                                                         <br>
@@ -208,9 +207,9 @@
                             </label>
                             <input name="ctl00$ContentBody$txtPrmaotion" type="date" id="ContentBody_txtPrmaotion" class="form-control " autocomplete="off" value="2024-01-23">
                         </div>
-                    </div>
+                   
                     <div class="col-md-3 ">
-                        <div class="form-group">
+                      
                             <label>
                                 Date OF Filiing Of Annual Immovabel Property Return<br>
                                 स्थाई संपत्ती विवरण दाखिल करने का दिनांक<span style="color: red;">*</span>
@@ -218,12 +217,12 @@
                             <input name="ctl00$ContentBody$TextBox5" type="date" id="ContentBody_TextBox5" class="form-control" autocomplete="off" value="1989-12-10">
                         </div>
                     </div>
-                </div>
+              
 
             </fieldset>
             <hr />
             <div class="col-md-12">
-                <div class="form-group">
+              
                     <button type="button" class="Alert-Save btn w-lg btn-success btn-border">
                         Save/Next
                     </button>

@@ -141,8 +141,8 @@
                                         <td>
                                             <input maxlength="4" autocomplete="off" placeholder="--Select Year--" id="a2" class="form-control datepickerYear2" type="text" data-val="true" required="required" />
                                         </td>
-                                        <td class="text-center">
-                                            <input type="email" id="a3" class="form-control" style="width: 160px;"></td>
+                                        <td class="text-center pl-5">
+                                            <input type="email" id="a3" class="form-control text-center" style="width: 160px;"></td>
                                         <td>
                                             <textarea class="form-control mt-1" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                                         <td style="display: none;" id="btnaction">
@@ -158,9 +158,9 @@
                     </div>
 
                 </fieldset>
-                <label>
-                    <span class="fa-pull-left" style="color: red; font-size: 15px; position: relative; bottom: 3px;">Note:-</span>The Column Menttioning last year average attendance Will Not Apply for class<br />
-                    कक्षा 1 के पिछले वर्ष की औसत उपिस्थिति लागू नहीं होगी|</label>
+                <p>
+                    <span style="color: red; font-size: 15px;">Note:-</span>The Column Menttioning last year average attendance Will Not Apply for class 1<br />
+                       कक्षा 1 के पिछले वर्ष की औसत उपिस्थिति लागू नहीं होगी|</p>
                                                   <hr />
 <div class="col-md-12">
     <div class="form-group">
@@ -239,7 +239,7 @@
 
                                             </select>
                                         </td>
-                                        <td>
+                                        <td class="text-center">
                                             <input type="email" id="b2" placeholder="100%" class="form-control text-center"></td>
                                         <td>
                                             <input type="email" id="b3" class="form-control"></td>
@@ -285,7 +285,7 @@
             </div>
             <div runat="server" id="fieldset3" style="display: none">
                 <fieldset>
-                    <legend>Academic Performance and Syllabus Completion Status  / शैक्षणिक प्रदर्शन और पाठ्यक्रम समापन की स्थिति</legend>
+                    <legend>Performance / Learning of Student / प्रदर्शन/छात्रों का सीखना</legend>
 
                     <div class="row">
                         <div class="col-md-12 table-responsive">
@@ -428,8 +428,10 @@ of annual examination result
                     <label>
                         <span style="color: red; font-size: 15px;">Note:-</span>
                         1. * A-80% or avove, B-60-79%, C-45-59%, D-33-45%,E< 33% (Rounding off Will be in  higher number)<br />
-                        &emsp; &emsp;&emsp; <span>अ-80 प्रतिशत या अधिक ,ब 60-79 प्रतिशत, स.45-59 प्रतिशत, द 33-45 प्रतिशत, ई 33 प्रतिशत से काम</span><br />
-                        &emsp; &emsp; &emsp;<span>2.कक्षा 5वी 8वी 10वी 12वी हेतु बोर्ड पैटर्न/बोर्ड परीक्षा  के परिणाम अंकित किये जाये </span>|</label>
+                   अ-80 प्रतिशत या अधिक ,ब 60-79 प्रतिशत, स.45-59 प्रतिशत, द 33-45 प्रतिशत, ई 33 प्रतिशत से काम<br />percentage will be as per direction of Rajya Shiksha Kendra. For class I target grade will be A.<br /> प्रतिशत का निर्धारण राज्य शिक्षा केन्द्र निर्देशानुसार, कक्षा के लिये लक्ष्य अ ग्रेड होगा।<br />
+
+
+                       2.कक्षा 5वी 8वी 10वी 12वी हेतु बोर्ड पैटर्न/बोर्ड परीक्षा  के परिणाम अंकित किये जाये ।</label>
 
                 </fieldset>
               <%--  <div class="row justify-content-center">
@@ -938,6 +940,9 @@ of annual examination result
             newRow.insertCell(3).innerHTML = mobile;
             newRow.insertCell(4).innerHTML = address;
             newRow.insertCell(5).innerHTML = Remark;
+            newRow.insertCell(6);
+            const actionButtonTd = newRow.cells[6];
+            actionButtonTd.innerHTML += '<a class="Alert-Delete"><i class="fa fa-trash"></i></a>';
 
             clearInputs();
         }
@@ -983,6 +988,9 @@ of annual examination result
             newRow.insertCell(1).innerHTML = email;
             newRow.insertCell(2).innerHTML = mobile;
             newRow.insertCell(3).innerHTML = PreviousGradea;
+            newRow.insertCell(4);
+            const actionButtonTd = newRow.cells[4];
+            actionButtonTd.innerHTML += '<a class="Alert-Delete"><i class="fa fa-trash"></i></a>';
             //newRow.insertCell(4).innerHTML = PreviousGradeab;
             //newRow.insertCell(5).innerHTML = PreviousGradec;
 
@@ -1027,6 +1035,9 @@ of annual examination result
             newRow.insertCell(2).innerHTML = subject;
             newRow.insertCell(3).innerHTML = '100%';
             newRow.insertCell(4).innerHTML = address;
+            newRow.insertCell(5);
+            const actionButtonTd = newRow.cells[5];
+            actionButtonTd.innerHTML += '<a class="Alert-Delete"><i class="fa fa-trash"></i></a>';
 
             clearInputs1();
         }
@@ -1094,6 +1105,9 @@ of annual examination result
             newRow.insertCell(11).innerHTML = Gradec;
             newRow.insertCell(12).innerHTML = Graded;
             newRow.insertCell(13).innerHTML = Gradee;
+            newRow.insertCell(14);
+            const actionButtonTd = newRow.cells[14];
+            actionButtonTd.innerHTML += '<a class="Alert-Delete"><i class="fa fa-trash"></i></a>';
 
 
             clearInputs3();
