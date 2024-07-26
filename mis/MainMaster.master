@@ -853,8 +853,8 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/EmployeeOtherCurriculumActivities.aspx"><i class="ri-file-list-3-line"></i>National Or State Level Training </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/EmployeeOtherCurriculumActivitiesTab2.aspx"><i class="ri-file-list-3-line"></i>National Or State Level Awards </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/EmployeeOtherCurriculumActivitiesTab3.aspx"><i class="ri-file-list-3-line"></i>Training Details </a></li>
-                                                    <%--<li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_EmployeeDetails.aspx"><i class="ri-file-list-3-line"></i>Employee Details Report </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_EmployeeHandicap.aspx"><i class="ri-file-list-3-line"></i>Employee Handicap Report </a></li>--%>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/trnPunishMent.aspx"><i class="ri-file-list-3-line"></i>Punishment  Report</a></li>
+                                                    <%--<li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_EmployeeHandicap.aspx"><i class="ri-file-list-3-line"></i>Employee Handicap Report </a></li>--%>
                                                 </ul>
                                             </div>
                                         </li>
