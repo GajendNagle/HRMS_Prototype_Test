@@ -45,7 +45,7 @@
         <div class="card-body">
             <asp:Label runat="server" ID="lblMsg"></asp:Label>
             <fieldset id="RegDetail">
-                <legend>Driver / Attender Leave Entry</legend>
+                <legend>Driver/Attender Leave Entry </legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -77,8 +77,8 @@
                         <div class="form-group">
                             <label>
                                 Vehicle Number<br />
-                                गाड़ी का नंबर<span style="color: red">*</span></label>
-                            <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="MP04AB1234" />
+                                गाड़ी क्र.<span style="color: red">*</span></label>
+                            <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" readonly placeholder="MP04AB1234" />
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3">
@@ -86,30 +86,30 @@
                             <label>
                                 Route No<br />
                                 मार्ग क्र.<span style="color: red">*</span></label>
-                            <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="RUT001" />
+                            <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" readonly placeholder="RUT001" />
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Select From Date<br />
-                                प्रारंभिक दिनांक का चयन करें<span style="color: red">*</span></label>
+                                Leave From Date<br />
+                               छुट्टी प्रारंभिक दिनांक<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="date" class="form-control" />
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Select To Date<br />
-                                अंतिम दिनांक का चयन करें<span style="color: red">*</span></label>
+                                Leave To Date<br />
+                                छुट्टी अंतिम दिनांक<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="date" class="form-control" />
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Reason<br />
-                                अंतिम दिनांक का चयन करें<span style="color: red">*</span></label>
+                                Leave Reason<br />
+                               छुट्टी का कारण दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="Text" class="form-control" placeholder="Enter Reason" />
                         </div>
                     </div>
@@ -117,19 +117,20 @@
                         <div class="form-group">
                             <label>
                                 Document Upload<br />
-                                अंतिम दिनांक का चयन करें<span style="color: red">*</span></label>
+                                दस्तावेज़ अपलोड करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="File" class="form-control" placeholder="Enter Reason" />
                         </div>
                     </div>
                     <div class="col-md-12">
                         <hr />
-                        <button type="button" class="btn btn-outline-success btn-border  w-lg">Search</button>
+                        <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Save</button>
                         <a href="RouteToVehicleMapping.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                 </div>
+                    <p style="font-size:19px; font-weight:700; color:RED"><span class="fs-bold text-danger">Note :-</span> Driver / Attender की जानकारी को 2 दिन के अंन्दर ही सुधार किया जा सकता हैं |</p>
             </fieldset>
             <fieldset id="FsDetails">
-                <legend>Report / विवरण</legend>
+                <legend>Details / विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -149,26 +150,18 @@
                             <table class="table table-bordered text-center">
                                 <thead class="nowrap">
                                     <tr>
-                                    <tr>
-                                        <th>Sr. No.
-                     <br />
+                                        <th>Sr. No.<br />
                                             क्रमांक</th>
-                                        <th>Driver Attender 
-                     <br />
-                                            ड्राइवर अटेंडर</th>
+                                        <th>Driver / Attender Name<br />
+                                            ड्राइवर / अटेंडर नाम</th>
                                         <th>Vehicle No.<br />
-                                            गाड़ी का नंबर</th>
-                                        <th>Leave From Date 
-
-                     <br />
-                                            छुट्टी तिथि  से       </th>
-                                        <th>Leave To Date
-                                            <br />
-                                            छुट्टी  तिथि तक</th>
-                                        <th>Document
-                     <br />
+                                            गाड़ी क्र.</th>
+                                        <th>Leave From Date<br />
+                                            छुट्टी प्रारंभिक दिनांक</th>
+                                        <th>Leave To Date<br />
+                                            छुट्टी अंतिम दिनांक</th>
+                                        <th>Document<br />
                                             दस्तावेज़</th>
-
                                     </tr>
                                 </thead>
                                 <tr>
@@ -188,6 +181,7 @@
                                     <td>05/08/2024</td>
                                     <td><span class="btn btn-outline-primary"><i class="fa fa-eye"></i></span>
                                     </td>
+                                </tr>
                             </table>
                         </div>
                     </div>

@@ -47,39 +47,39 @@
             <fieldset id="RegDetail">
                 <legend>Driver/Attender Registration / चालक/सहायक पंजीकरण</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <span>Select Vehicle No.
                                 <br />
                                 वाहन संख्या चुनें.<span style="color: red">*</span></span>
-                            <select class="form-control">
+                            <select class="form-select">
                                 <option value="0">--Select--</option>
                                 <option value="1">MP04AB1196</option>
                                 <option value="1">MP04CD5154</option>
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <span>Select Registration Type
                                 <br />
                                 पंजीकरण प्रकार का चयन करें<span style="color: red">*</span></span>
-                            <select class="form-control" id="dropdown1" onchange="toggleSection1()">
+                            <select class="form-select" id="dropdown1" onchange="toggleSection1()">
                                 <option value="0">--Select--</option>
                                 <option value="1">Driver</option>
                                 <option value="2">Attender</option>
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <span>Enter <span class="Driver">Driver</span> Name(In English)
                                 <br />
                                 <span class="Reg">चालक</span> का नाम अंग्रेजी में दर्ज करें<span style="color: red">*</span></span>
-                            <input class="form-control" type="text" placeholder="Enter Name(In English)" />
+                            <input class="form-select" type="text" placeholder="Enter Name(In English)" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <span>Enter <span class="Driver">Driver</span>  Name(In Hindi)
                                 <br />
@@ -87,12 +87,12 @@
                             <input class="form-control" type="text" placeholder="Enter Name(In Hindi)" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <span>Select State Name
                                 <br />
-                                राज्य का नाम चुनें  <span style="color: red">*</span></span>
-                            <select class="form-control">
+                                राज्य का नाम चुनें<span style="color: red">*</span></span>
+                            <select class="form-select">
                                 <option value="--Select--" data-select2-id="3">--Select--</option>
                                 <option value="Rajasthan" data-select2-id="14">Rajasthan</option>
                                 <option value="Maharashtra" data-select2-id="15">Maharashtra</option>
@@ -126,7 +126,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <span>Enter Full Address
     <br />
@@ -134,7 +134,7 @@
                             <input name="ctl00$ContentBody$txtDealerAddress" type="text" maxlength="100" class="form-control" placeholder="Enter Full Address" autocomplete="off">
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <span>Enter <span class="Driver">Driver</span>  Contact Number
     <br />
@@ -142,7 +142,7 @@
                             <input class="form-control" type="text" placeholder="Enter Contact Number" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <span>Enter Alternate Contact Number
     <br />
@@ -150,7 +150,7 @@
                             <input class="form-control" type="text" placeholder="Enter Alternate Contact Number" />
                         </div>
                     </div>
-                    <div class="col-md-3" id="section1" style="display: none">
+                    <div class="col-md-6 col-lg-4 col-xl-3" id="section1" style="display: none">
                         <div class="form-group">
                             <span>Enter Driving Licence No.
     <br />
@@ -158,7 +158,7 @@
                             <input class="form-control" type="text" placeholder="Enter Licence Number" />
                         </div>
                     </div>
-                    <div class="col-md-3" id="section2" style="display: none">
+                    <div class="col-md-6 col-lg-4 col-xl-3" id="section2" style="display: none">
                         <div class="form-group">
                             <span>Select Driving Licence Expirey Date
                                 <br />
@@ -166,7 +166,7 @@
                             <input class="form-control" type="date" placeholder="Enter Licence Number" />
                         </div>
                     </div>
-                    <div class="col-md-3" id="section3" style="display: none">
+                    <div class="col-md-6 col-lg-4 col-xl-3" id="section3" style="display: none">
                         <div class="form-group">
                             <span>Upload Driving Licence Image
              <br />
@@ -174,7 +174,7 @@
                             <input class="form-control" type="file" placeholder="Enter Licence Number" />
                         </div>
                     </div>
-                    <div class="col-md-3" id="section4" style="display: none">
+                    <div class="col-md-6 col-lg-4 col-xl-3" id="section4" style="display: none">
                         <div class="form-group">
                             <span>Upload Driving Profile Image
                                 <br />
@@ -192,12 +192,13 @@
             <fieldset id="AddressDetail">
                 <legend>Address Details / पते का विवरण</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <span>Select State Name
+                            <label>
+                                Select State Name
             <br />
-                                राज्य का नाम चुनें  <span style="color: red">*</span></span>
-                            <select class="form-control">
+                                राज्य का नाम चुनें  <span style="color: red">*</span></label>
+                            <select class="form-select">
                                 <option value="--Select--" data-select2-id="3">--Select--</option>
                                 <option value="Rajasthan" data-select2-id="14">Rajasthan</option>
                                 <option value="Maharashtra" data-select2-id="15">Maharashtra</option>
@@ -231,33 +232,124 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <span>Select Division Name
-                            <br />
-                                संभाग का नाम चुनें  <span style="color: red">*</span></span>
-                            <select class="form-control select2">
-                                <option></option>
+                            <label>
+                                Select Division Name<br />
+                                संभाग का चयन करे<span style="color: red">*</span></label>
+                            <select name="ctl00$ContentBody$ctl01" class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="Bhopal">Bhopal</option>
+                                <option value="Gwalior">Gwalior</option>
+                                <option value="Narmadapuram">Narmadapuram</option>
+                                <option value="Indore">Indore</option>
+                                <option value="Jabalpur">Jabalpur</option>
+                                <option value="Rewa">Rewa</option>
+                                <option value="Sagar">Sagar</option>
+                                <option value="Shahdol">Shahdol</option>
+                                <option value="Ujjain">Ujjain</option>
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <span>Select District Name
-                            <br />
-                                जिला का नाम चुनें  <span style="color: red">*</span></span>
-                            <select class="form-control select2">
-                                <option></option>
+                            <label>
+                                Select District Name<br />
+                                जिला का चयन करे<span style="color: red">*</span></label>
+                            <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="Bhopal">Bhopal</option>
+                                <option value="Raisen">Raisen</option>
+                                <option value="Rajgarh">Rajgarh</option>
+                                <option value="Sehore">Sehore</option>
+                                <option value="Vidisha">Vidisha</option>
+                                <option value="Ashoknagar">Ashoknagar</option>
+                                <option value="Shivpuri">Shivpuri</option>
+                                <option value="Datia">Datia</option>
+                                <option value="Guna">Guna</option>
+                                <option value="Gwalior">Gwalior</option>
+                                <option value="Harda">Harda</option>
+                                <option value="Hoshangabad">Hoshangabad</option>
+                                <option value="Betul">Betul</option>
+                                <option value="Morena">Morena</option>
+                                <option value="Sheopur">Sheopur</option>
+                                <option value="Bhind">Bhind</option>
+                                <option value="Barwani">Barwani</option>
+                                <option value="Burhanpur">Burhanpur</option>
+                                <option value="Dhar">Dhar</option>
+                                <option value="Indore">Indore</option>
+                                <option value="Jhabua">Jhabua</option>
+                                <option value="Khandwa">Khandwa</option>
+                                <option value="Khargone">Khargone</option>
+                                <option value="Alirajpur">Alirajpur</option>
+                                <option value="Balaghat">Balaghat</option>
+                                <option value="Chhindwara">Chhindwara</option>
+                                <option value="Jabalpur">Jabalpur</option>
+                                <option value="Katni">Katni</option>
+                                <option value="Mandla">Mandla</option>
+                                <option value="Narsinghpur">Narsinghpur</option>
+                                <option value="Seoni">Seoni</option>
+                                <option value="Rewa">Rewa</option>
+                                <option value="Satna">Satna</option>
+                                <option value="Sidhi">Sidhi</option>
+                                <option value="Singroli">Singroli</option>
+                                <option value="Chhatarpur">Chhatarpur</option>
+                                <option value="Damoh">Damoh</option>
+                                <option value="Panna">Panna</option>
+                                <option value="Sagar">Sagar</option>
+                                <option value="Tikamgarh">Tikamgarh</option>
+                                <option value="Shahdol">Shahdol</option>
+                                <option value="Umaria">Umaria</option>
+                                <option value="Dindori">Dindori</option>
+                                <option value="Anuppur">Anuppur</option>
+                                <option value="Dewas">Dewas</option>
+                                <option value="Mandsaur">Mandsaur</option>
+                                <option value="Neemuch">Neemuch</option>
+                                <option value="Ratlam">Ratlam</option>
+                                <option value="Shajapur">Shajapur</option>
+                                <option value="Ujjain">Ujjain</option>
+
                             </select>
                         </div>
-                    </div><div class="col-md-3">
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <span>Select Block Name
                             <br />
-                                जिला का नाम चुनें  <span style="color: red">*</span></span>
+                                विकासखंड का चयन करें<span style="color: red">*</span></span>
                             <select class="form-control select2">
-                                <option></option>
+                                <option>Bhopal</option>
+                                <option>Sehore</option>
+                                <option>Fanda</option>
+                                <option>Multai</option>
+                                <option>Amla</option>
                             </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="form-group">
+                            <label>
+                                Enter Pin Code<br />
+                                पिन कोड दर्ज करें<span style="color: red">*</span></label>
+                            <input name="ctl00$ContentBody$ctl03" type="text" class="form-control" autocomplete="off" placeholder="Enter Pin Code" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="form-group">
+                            <label>
+                                Enter Full Address<br />
+                                पूर्ण पता दर्ज करें<span style="color: red">*</span></label>
+                            <input name="ctl00$ContentBody$ctl03" type="text" class="form-control" autocomplete="off" placeholder="Enter Full Address" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="form-group">
+                            <input checked="checked" type="checkbox" class="form-check-input" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                            <label class="form-check-label">
+                                Status
+								<small>(Active/InActive)</small><br>
+                                स्थिति (सक्रिय/निष्क्रिय)
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -325,7 +417,7 @@
             <fieldset id="InfoRpt" class="d-none">
                 <legend>Driver/Attender Report / चालक/सहायक रिपोर्ट</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <span>Select Registration Type
                                 <br />
@@ -337,7 +429,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <span>Select Vehicle No.
                                 <br />
