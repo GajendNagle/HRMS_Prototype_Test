@@ -93,7 +93,7 @@
                         <div class="form-group">
                             <label>
                                 Leave From Date<br />
-                               छुट्टी प्रारंभिक दिनांक<span style="color: red">*</span></label>
+                                छुट्टी प्रारंभिक दिनांक<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="date" class="form-control" />
                         </div>
                     </div>
@@ -109,7 +109,7 @@
                         <div class="form-group">
                             <label>
                                 Leave Reason<br />
-                               छुट्टी का कारण दर्ज करें<span style="color: red">*</span></label>
+                                छुट्टी का कारण दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="Text" class="form-control" placeholder="Enter Reason" />
                         </div>
                     </div>
@@ -121,13 +121,42 @@
                             <input name="ctl00$ContentBody$ctl00" type="File" class="form-control" placeholder="Enter Reason" />
                         </div>
                     </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Vehicle Mapping For New Driver / Attender</legend>
+                <div class="row align-items-end">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="form-group">
+                            <label>Authorized Driver / Attender Name</label>
+                            <select class="form-select" id="Names" onchange="toggleSection1()">
+                                <option value="0">--Select--</option>
+                                <option value="1">Ram</option>
+                                <option value="2">Rakesh</option>
+                                <option value="3">Ramesh</option>
+                                <option value="4">Rajesh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xxl-3">
+                        <div class="form-group">
+                            <label>Applicable Form Date<span style="color: red">*</span></label>
+                            <input class="form-control" type="date" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xxl-3">
+                        <div class="form-group">
+                            <label>Applicable To Date<span style="color: red">*</span></label>
+                            <input class="form-control" type="date" />
+                        </div>
+                    </div>
                     <div class="col-md-12">
                         <hr />
                         <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Save</button>
                         <a href="RouteToVehicleMapping.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
+                    <p style="font-size: 19px; font-weight: 700; color: RED"><span class="fs-bold text-danger">Note :-</span> Driver / Attender की जानकारी को 2 दिन के अंन्दर ही सुधार किया जा सकता हैं |</p>
                 </div>
-                    <p style="font-size:19px; font-weight:700; color:RED"><span class="fs-bold text-danger">Note :-</span> Driver / Attender की जानकारी को 2 दिन के अंन्दर ही सुधार किया जा सकता हैं |</p>
             </fieldset>
             <fieldset id="FsDetails">
                 <legend>Details / विवरण</legend>
@@ -152,16 +181,19 @@
                                     <tr>
                                         <th>Sr. No.<br />
                                             क्रमांक</th>
-                                        <th>Driver / Attender Name<br />
-                                            ड्राइवर / अटेंडर नाम</th>
+                                        <th>Registration Name<br />
+                                            पंजीकरण  का प्रकार</th>
                                         <th>Vehicle No.<br />
                                             गाड़ी क्र.</th>
                                         <th>Leave From Date<br />
                                             छुट्टी प्रारंभिक दिनांक</th>
                                         <th>Leave To Date<br />
                                             छुट्टी अंतिम दिनांक</th>
-                                        <th>Document<br />
-                                            दस्तावेज़</th>
+                                        <th>Driver / Attender Name
+                                            <br />
+                                            ड्राइवर / अटेंडर नाम</th>
+                                        <th>Action<br />
+                                            कार्यवाहीं</th>
                                     </tr>
                                 </thead>
                                 <tr>
@@ -170,8 +202,9 @@
                                     <td>MP04AB1196</td>
                                     <td>25/07/2024</td>
                                     <td>28/07/2024</td>
-                                    <td><span class="btn btn-outline-primary"><i class="fa fa-eye"></i></span>
-                                    </td>
+                                    <td>Rakesh</td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
+                                        <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -179,8 +212,9 @@
                                     <td>MP04CD5154</td>
                                     <td>28/07/2024</td>
                                     <td>05/08/2024</td>
-                                    <td><span class="btn btn-outline-primary"><i class="fa fa-eye"></i></span>
-                                    </td>
+                                    <td>Rajesh</td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
+                                        <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>
