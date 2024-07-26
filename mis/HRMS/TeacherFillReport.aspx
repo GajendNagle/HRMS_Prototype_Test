@@ -100,7 +100,7 @@
                                         </th>
                                         <th colspan="2">Enrolment<br />
                                             नामांकन</th>
-                                        <th rowspan="2">Average Annual attendance in Percentege<br />
+                                        <th rowspan="2">Average Annual attendance in Percentage<br />
                                             वार्षिक औसत उपिस्थिति प्रतिशत में</th>
                                         <th rowspan="2">Remark
                                             <br />
@@ -142,9 +142,9 @@
                                             <input maxlength="4" autocomplete="off" placeholder="--Select Year--" id="a2" class="form-control datepickerYear2" type="text" data-val="true" required="required" />
                                         </td>
                                         <td class="text-center pl-5">
-                                            <input type="email" id="a3" class="form-control text-center" style="width: 160px;"></td>
+                                            <input type="email" id="a3" class="form-control text-center " style="width: 200px;"></td>
                                         <td>
-                                            <textarea class="form-control mt-1" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                            <textarea class="form-control mt-1" id="workdescription3" rows="1" placeholder="Enter Remark" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                                         <td style="display: none;" id="btnaction">
                                             <button type="button" onclick="addData()" class="btn btn-success">Add</button>
                                         </td>
@@ -198,9 +198,9 @@
                                             कक्षा</th>
                                         <th>Subject<br />
                                             विषय</th>
-                                        <th>Target (In % age)<br />
+                                        <th>Target (In % )<br />
                                             लक्ष्य (प्रतिशत में)</th>
-                                        <th>Achievement (In % age)<br />
+                                        <th>Achievement (In % )<br />
                                             उपलब्धि (प्रतिशत में)</th>
                                         <th style="display: none;" id="action2">Action</th>
                                     </tr>
@@ -256,9 +256,9 @@
                     <div class="row">
                         <div class="col-md-6">
                             <label>
-                                Reasons, if any, for not completing the target 
+                              Enter  Reasons, if any, for not completing the target 
                                 <br />
-                                लक्ष्य  प्राप्ति न होने के करण<span style="color: red">*</span></label>
+                            लक्ष्य पूरा न कर पाने कारण यदि कोई हो तो उसे दर्ज करें  <span style="color: red">*</span></label>
                             <textarea class="form-control" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reasons  Maxmum 100 words"></textarea>
                         </div>
                     </div>
@@ -416,9 +416,9 @@ of annual examination result
                     <div class="row">
                         <div class="col-md-6">
                             <label>
-                                Reasons Of Not achieving target
+                             Enter  Reasons Of Not achieving target
                                 <br />
-                                लक्ष्य  से कम उपलब्धि के करण<span style="color: red">*</span></label>
+                                लक्ष्य से कम उपलब्धि के कारण हो तो दर्ज करें<span style="color: red">*</span></label>
                             <textarea class="form-control mb-2" id="workdescription1" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reasons Maxmum 100 words"></textarea>
                         </div>
                     </div>

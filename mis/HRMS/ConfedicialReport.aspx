@@ -84,153 +84,154 @@
             <fieldset>
                 <legend>EMPLOYEE PERSONAL INFORMATION / कर्मचारी की व्यक्तिगत जानकारी</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">                     
-                            <label>
-                                Financial Year<br>
-                                वार्षिक प्रतिवेदन अवधि वर्ष <span style="color: red">*</span>
-                            </label>
-                            <select class="form-control">
-                                <option value="2020-2021">2020-2021</option>
-                                <option value="2021-2022">2021-2022</option>
-                                <option value="2022-2023">2022-2023</option>
-                                <option value="2023-2024">2023-2024</option>
-                                <option value="2024-2025">2024-2025</option>
+                    <div class="col-md-3">
+                        <label>
+                            Select Academic Year<br>
+                            शैक्षणिक वर्ष का चयन करें <span style="color: red">*</span>
+                        </label>
+                        <select class="form-control">
+                            <option value="2020-2021">2020-2021</option>
+                            <option value="2021-2022">2021-2022</option>
+                            <option value="2022-2023">2022-2023</option>
+                            <option value="2023-2024">2023-2024</option>
+                            <option value="2024-2025">2024-2025</option>
 
-                            </select>
-                        </div>
-                   
+                        </select>
+                    </div>
+
                     <div class="col-md-3">
-                      
-                            <label>
-                             Employee Name
+
+                        <label>
+                            Employee Name
                                                         <br>
-                            कर्मचारी नाम  <span style="color: red">*</span>
-                            </label>
-                            <input name="ctl00$ContentBody$txtName" type="text" readonly="readonly" id="ContentBody_txtName" class="form-control" autocomplete="off" value="गोपाल वर्मा">
-                        </div>
-                  
+                            कर्मचारी का नाम  <span style="color: red">*</span>
+                        </label>
+                        <input name="ctl00$ContentBody$txtName" type="text" readonly="readonly" id="ContentBody_txtName" class="form-control" autocomplete="off" value="गोपाल वर्मा">
+                    </div>
+
                     <div class="col-md-3">
-                      
-                            <label>
-                             Employee Unique ID<br>
-                               कर्मचारी की यूनिक आईडी
+
+                        <label>
+                            Employee Unique ID<br>
+                            कर्मचारी की यूनिक आईडी
                                                         <span style="color: red">*</span>
-                            </label>
-                            <input name="ctl00$ContentBody$TextBox4" type="text" readonly="readonly" id="ContentBody_TextBox4" class="form-control" autocomplete="off" value="EDP4561231556">
-                        </div>
-                 
+                        </label>
+                        <input name="ctl00$ContentBody$TextBox4" type="text" readonly="readonly" id="ContentBody_TextBox4" class="form-control" autocomplete="off" value="EDP4561231556">
+                    </div>
+
                     <div class="col-md-3">
-                      
-                            <label>
-                                Designation Name
+
+                        <label>
+                            Designation Name
                                                         <br>
-                                पद का नाम <span style="color: red">*</span>
-                            </label>
-                            <input name="ctl00$ContentBody$DropDownList1" type="text" readonly="readonly" id="ContentBody_DropDownList1" class="form-control " autocomplete="off" value="सहायक शिक्षक">
-                        </div>
-                    
+                            पद का नाम <span style="color: red">*</span>
+                        </label>
+                        <input name="ctl00$ContentBody$DropDownList1" type="text" readonly="readonly" id="ContentBody_DropDownList1" class="form-control " autocomplete="off" value="सहायक शिक्षक">
+                    </div>
+
 
                 </div>
                 <div class="row align-items-end">
                     <div class="col-md-3">
-                      
-                            <label>
-                                <br>
-                                Date Of Birth<br>
-                                जन्मतिथि<span style="color: red">*</span>
-                            </label>
-                            <input name="ctl00$ContentBody$TXTDOB" type="date" readonly="readonly" id="ContentBody_TXTDOB" class="form-control" autocomplete="off" value="1999-12-03">
-                        </div>
-                   
 
-                    <div class="col-md-3">
-                      
-                            <label>
-                                <br>
-                                Institution of Posting<br>
-                                पदस्थी शाला/स्थान<span style="color: red;">*</span></label>
-                            <input name="ctl00$ContentBody$ddlPosting" type="text" readonly="readonly" id="ContentBody_ddlPosting" value="भोपाल" class="form-control" autocomplete="off">
-                        </div>
-                 
-                    <div class="col-md-3">
-                      
-                            <label class="fs-6">
-                                <br>
-                                Dise Code of Institution<br>
-                                पदस्थी शाला का डाइस कोड<span style="color: red;">*</span></label>
-                            <input name="ctl00$ContentBody$txtpriviesdesinnetion" type="text" readonly="readonly" id="ContentBody_txtpriviesdesinnetion" class="form-control" autocomplete="off" value="St Theresa Girls School/489754554">
-                        </div>
-                   
-                    <div class="col-md-3">
-                      
-                            <label>
-                                <br>
-                                Date Of First Posting<br>
-                                प्रथम नियुक्ति का दिनांक<span style="color: red;">*</span>
-                            </label>
-                            <input name="ctl00$ContentBody$txtFirstPosting" type="date" readonly="readonly" id="ContentBody_txtFirstPosting" class="form-control" autocomplete="off" value="1992-09-17">
-                        </div>
+                        <label>
+                            <br>
+                            Date Of Birth<br>
+                            जन्मतिथि<span style="color: red">*</span>
+                        </label>
+                        <input name="ctl00$ContentBody$TXTDOB" type="date" readonly="readonly" id="ContentBody_TXTDOB" class="form-control" autocomplete="off" value="1999-12-03">
                     </div>
 
 
-               
+                    <div class="col-md-3">
+
+                        <label>
+                            <br>
+                            Institution of Posting<br>
+                            पदस्थी शाला/स्थान<span style="color: red;">*</span></label>
+                        <input name="ctl00$ContentBody$ddlPosting" type="text" readonly="readonly" id="ContentBody_ddlPosting" value="भोपाल" class="form-control" autocomplete="off">
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <label class="fs-6">
+                            <br>
+                            Dise Code of Institution<br>
+                            पदस्थी शाला का डाइस कोड<span style="color: red;">*</span></label>
+                        <input name="ctl00$ContentBody$txtpriviesdesinnetion" type="text" readonly="readonly" id="ContentBody_txtpriviesdesinnetion" class="form-control" autocomplete="off" value="St Theresa Girls School/489754554">
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <label>
+                            <br>
+                            Date Of First Posting<br>
+                            प्रथम नियुक्ति का दिनांक<span style="color: red;">*</span>
+                        </label>
+                        <input name="ctl00$ContentBody$txtFirstPosting" type="date" readonly="readonly" id="ContentBody_txtFirstPosting" class="form-control" autocomplete="off" value="1992-09-17">
+                    </div>
+                </div>
+
+
+
                 <div class="row align-items-end">
                     <div class="col-md-3">
-                      
-                            <label>
-                                <br>
-                                First Posting  Designation<br>
-                                प्रथम नियुक्ति का पद<span style="color: red;">*</span>
-                            </label>
-                            <input name="ctl00$ContentBody$TextBox1" type="text" readonly="readonly" id="ContentBody_TextBox1" class="form-control" autocomplete="off" value="प्राथमिक अध्यापक">
-                        </div>
-                   
-                    <div class="col-md-3 ">
-                      
-                            <label>
-                                Current Date Of Promotion
-                                                        <br>
-                                वर्तमान पद पर नियुक्ति का  दिनांक<span style="color: red;">*</span>
-                            </label>
-                            <input name="ctl00$ContentBody$TextBox2" type="date" readonly="readonly" id="ContentBody_TextBox2" class="form-control " autocomplete="off" value="2024-01-23">
-                        </div>
-                  
 
-
-
-                    <div class="col-md-3 ">
-                      
-                            <label>
-                                Date Of Promotion
-                                                        <br>
-                                पदोन्नति का दिनांक<span style="color: red;">*</span>
-                            </label>
-                            <input name="ctl00$ContentBody$txtPrmaotion" type="date" id="ContentBody_txtPrmaotion" class="form-control " autocomplete="off" value="2024-01-23">
-                        </div>
-                   
-                    <div class="col-md-3 ">
-                      
-                            <label>
-                                Date OF Filiing Of Annual Immovabel Property Return<br>
-                                स्थाई संपत्ती विवरण दाखिल करने का दिनांक<span style="color: red;">*</span>
-                            </label>
-                            <input name="ctl00$ContentBody$TextBox5" type="date" id="ContentBody_TextBox5" class="form-control" autocomplete="off" value="1989-12-10">
-                        </div>
+                        <label>
+                            <br>
+                            First Posting  Designation<br>
+                            प्रथम नियुक्ति का पद<span style="color: red;">*</span>
+                        </label>
+                        <input name="ctl00$ContentBody$TextBox1" type="text" readonly="readonly" id="ContentBody_TextBox1" class="form-control" autocomplete="off" value="प्राथमिक अध्यापक">
                     </div>
-              
+
+                    <div class="col-md-3 ">
+
+                        <label>
+                            Date of Appointment to Present Post
+                             
+                                                        <br>
+                            वर्तमान पद पर नियुक्ति की  दिनांक<span style="color: red;">*</span>
+                        </label>
+                        <input name="ctl00$ContentBody$TextBox2" type="date" readonly="readonly" id="ContentBody_TextBox2" class="form-control " autocomplete="off" value="2024-01-23">
+                    </div>
+
+
+
+
+                    <div class="col-md-3 ">
+
+                        <label>
+                            Select  Date Of Promotion
+                                                        <br>
+                            पदोन्नति की दिनांक का चयन करें <span style="color: red;">*</span>
+                        </label>
+                        <input name="ctl00$ContentBody$txtPrmaotion" type="date" id="ContentBody_txtPrmaotion" class="form-control " autocomplete="off" value="2024-01-23">
+                    </div>
+
+                    <div class="col-md-3 ">
+
+                        <label>
+                            Select Date OF Filiing Of Annual Immovabel Property Return<br>
+                            स्थाई संपत्ती विवरण दाखिल करने का दिनांक का चयन करें <span style="color: red;">*</span>
+                        </label>
+                        <input name="ctl00$ContentBody$TextBox5" type="date" id="ContentBody_TextBox5" class="form-control" autocomplete="off" value="1989-12-10">
+                    </div>
+                </div>
+
 
             </fieldset>
             <hr />
             <div class="col-md-12">
-              
-                    <button type="button" class="Alert-Save btn w-lg btn-success btn-border">
-                        Save/Next
-                    </button>
-                    <a href="ConfedicialReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-                </div>
+
+                <button type="button" class="Alert-Save btn w-lg btn-success btn-border">
+                    Save/Next
+                </button>
+                <a href="ConfedicialReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
             </div>
         </div>
     </div>
+
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
@@ -286,9 +287,9 @@
                     })
                 });
             },
- 
-           
-            $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
+
+
+                $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
         }(window.jQuery),
             //initializing
             function ($) {

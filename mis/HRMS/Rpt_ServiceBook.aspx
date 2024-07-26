@@ -4,6 +4,35 @@
 
 
     <style>
+        #myElement, #myElement1 {
+            display: block;
+        }
+
+        #logpImage2 {
+            display: none;
+        }
+
+        @media print {
+            #myElement, #myElement1 {
+                display: none;
+            }
+
+            #logpImage2 {
+                display: block;
+                margin-top: 2rem;
+            }
+
+            #fdInformation {
+                margin-top: 3rem;
+            }
+
+            #fdEmployeeAccountInfo, #fdHalfPayLeaveRecords, #fdEducationQualification, #fdDetailsofAwards, #fdEducationQualification {
+                page-break-before: always;
+                margin-top: 3rem;
+            }
+        }
+    </style>
+    <style>
         th {
             white-space: nowrap;
         }
@@ -190,6 +219,11 @@
         .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
             background-color: #16603ae3;
         }
+
+        #logpImage {
+            margin-bottom: 0.5rem;
+            margin-top: -2rem;
+        }
     </style>
 </asp:Content>
 
@@ -216,17 +250,14 @@
             </div>
         </div>
     </div>
+    <div class="row" id="logpImage">
+        <div class="col-lg-12">
+            <img src="../../img/emp_ser_book.png" width="35%" />
+        </div>
+    </div>
     <div class="content-wrapper">
         <div class="container-fluid">
             <div class="card card-border-primary">
-                <div class="card-header">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <h4 class="card-title">Employee E-ServiceBook / कर्मचारी ई-सेवा पुस्तिका</h4>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="modal" id="bs-example-modal-lg4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
@@ -345,30 +376,6 @@
                 </div>
 
 
-                <%--<div class="row page-titles mb-4 PrintNo">
-            <div class="col-md-4 align-self-center">
-                <h4 class="text-themecolor ">Employee E-Service Book</h4>
-            </div>
-            <div class="col-md-4 text-center">
-                <span class="text-themecolor ">DPI
-        <br />
-                    Gautam nagar near chetak bridge bhopal 
-        <br />
-                    E-Service Book</span>
-                <br />
-            </div>
-
-            <div class="col-md-4 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item"><a href="../Menu.aspx?ID=HRMS&SubID=EServiceBook" title="click to go on">e-Service Book</a></li>
-                        <li class="breadcrumb-item active">E-Service Book</li>
-                    </ol>
-                </div>
-            </div>
-        </div>--%>
 
                 <div class="row page-titles mb-4" id="PrintHeader">
                     <div class="col-md-12 text-center">
@@ -382,15 +389,14 @@
                     </div>
                 </div>
 
-                <%--<div class="card mt-3 shadow">
-            <div class="card-body">--%>
-
-                <div class="card-body">
-
-                    <fieldset>
-                        <legend id="l1">Personal Information / व्यक्तिगत जानकारी</legend>
-
-
+                <div class="card-body printable-border" id="printableArea">
+                    <div class="row text-center" id="logpImage2">
+                        <div class="col-lg-12">
+                            <img src="../../img/Service%20Book%20Logo.png" width="35%" />
+                        </div>
+                    </div>
+                    <fieldset id="fdInformation">
+                        <legend id="Li1">Personal Information / व्यक्तिगत जानकारी</legend>
                         <div class="row align-items-end mb-0">
                             <div class="col-md-9 col-sm-9">
 
@@ -399,28 +405,28 @@
                                         <td colspan="2" class="align-content-center">
 
                                             <label>
-                                                First Name
+                                                Unique Id
                        
                                             </label>
                                         </td>
-                                        <td colspan="2" class="align-content-center">Ajay
+                                        <td colspan="2" class="align-content-center">AU8336
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2" class="align-content-center">
                                             <label>
-                                                Last Name
+                                                Name
                       
                                             </label>
                                         </td>
-                                        <td colspan="2" class="align-content-center">Verma
+                                        <td colspan="2" class="align-content-center">Ashok Patidar
                                         </td>
                                     </tr>
                                 </table>
                             </div>
 
                             <div class="col-md-3 col-sm-3">
-                                <img class="profileimage" src="../dist/images/avatar-13.png" id="uploadedImage" alt="Image Not Available" />
+                                <img class="profileimage" src="../../img/Dheeraj.jpg" id="uploadedImage" alt="Image Not Available" />
                                 <br />
                             </div>
                         </div>
@@ -502,9 +508,8 @@
                             </table>
                         </div>
                     </fieldset>
-
                     <fieldset>
-                        <legend id="l2">Nominee Details / नामांकित व्यक्ति का विवरण</legend>
+                        <legend id="ll2">Nominee Details / नामांकित व्यक्ति का विवरण</legend>
                         <div class="table-responsive">
                             <table class="table table-bordered">
 
@@ -524,12 +529,11 @@
                             </table>
                         </div>
                     </fieldset>
-
                     <fieldset>
-                        <legend id="l11">Address / पता</legend>
+                        <legend id="ll11">Address / पता</legend>
                         <fieldset class="mt-5">
 
-                            <legend id="l3">Present Address / वर्तमान पता</legend>
+                            <legend id="kl3">Present Address / वर्तमान पता</legend>
 
                             <div class="table-responsive">
                                 <table class="table table-bordered">
@@ -593,7 +597,6 @@
                             </div>
                         </fieldset>
                     </fieldset>
-
                     <fieldset>
 
                         <legend id="l5">Marital Status and Spouse Details / वैवाहिक स्थिति और जीवनसाथी का विवरण</legend>
@@ -613,9 +616,8 @@
                             </table>
                         </div>
                     </fieldset>
-
+                    <div id="fdEducationQualification"></div>
                     <fieldset>
-
                         <legend id="l6">Education Qualification / शैक्षणिक योग्यता</legend>
                         <div class="table-responsive">
                             <table class="table table-bordered">
@@ -641,8 +643,7 @@
                             </table>
                         </div>
                     </fieldset>
-
-                    <fieldset>
+                    <fieldset id="FieldsetAppointment">
 
                         <legend id="l7">First Appointment Details / प्रथम नियुक्ति विवरण</legend>
 
@@ -782,9 +783,7 @@
                             </table>
                         </div>
                     </fieldset>
-
                     <fieldset>
-
                         <legend id="l8">Current Appointment Details / वर्तमान नियुक्ति विवरण</legend>
 
                         <div class="table-responsive">
@@ -925,7 +924,7 @@
                             </table>
                         </div>
                     </fieldset>
-
+                    <div id="fdEmployeeAccountInfo"></div>
                     <fieldset>
                         <legend id="l9">Employee Account Info / कर्मचारी खाता जानकारी</legend>
                         <div class="table-responsive">
@@ -1137,42 +1136,6 @@
                             </table>
                         </div>
                     </fieldset>
-                    <%--<fieldset>
-                        <legend id="25">Nomination  Details / नामांकन का विवरण </legend>
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>Sr. No.<br />
-                                            सरल क्र.</th>
-                                        <th>Details
-                                            <br />
-                                            विवरण</th>
-                                        <th>Nominee name<br />
-                                            नामांकित व्यक्ति का नाम </th>
-                                        <th>Relationship with the employee
-                        <br />
-                                            कर्मचारी से संबंध 
-                                        </th>
-                                        <th>Percentage Fractions
-                        <br />
-                                            प्रतिशत अंश  
-                                        </th>
-                                        
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Famioly Pension </td>
-                                        <td>SMT. SEEMA DEVI</td>
-                                        <td>Wife</td>
-                                        <td>100</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </fieldset>--%>
                     <fieldset>
                         <legend id="26">Earned  Leave Records / अर्जित अवकाश का विवरण </legend>
                         <div class="table-responsive">
@@ -1203,6 +1166,8 @@
                             </table>
                         </div>
                     </fieldset>
+                    <div id="fdHalfPayLeaveRecords">
+                    </div>
                     <fieldset>
                         <legend id="27">Half Pay  Leave Records / अर्ध वेतन अवकाश का विवरण  </legend>
                         <div class="table-responsive">
@@ -1233,6 +1198,7 @@
                             </table>
                         </div>
                     </fieldset>
+                    <div id="PageBreak4"></div>
                     <fieldset>
                         <legend id="28">Approved  Leave Details / स्वीकृत अवकाश का विवरण</legend>
                         <div class="table-responsive">
@@ -1280,39 +1246,39 @@
                             </table>
                         </div>
                     </fieldset>
-                                       <fieldset>
-                       <legend id="2">Unathorized   Absence Details / अनधिकृत अनुपस्थिति का विवरण</legend>
-                       <div class="table-responsive">
-                           <table class="table table-bordered">
-                               <thead>
-                                   <tr>
-                                       <th>Sr. No.<br />
-                                           सरल क्र.</th>
-                                       
-                                       <th>Duration in days<br />
-                                           अवधि दिनों में </th>
-                                       <th>From  date
+                    <fieldset>
+                        <legend id="2">Unathorized   Absence Details / अनधिकृत अनुपस्थिति का विवरण</legend>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No.<br />
+                                            सरल क्र.</th>
+
+                                        <th>Duration in days<br />
+                                            अवधि दिनों में </th>
+                                        <th>From  date
                                            <br />
-                                           दिनांक से
-                                       </th>
-                                       <th>To Date
+                                            दिनांक से
+                                        </th>
+                                        <th>To Date
                         <br />
-                                           दिनांक तक</th>
-                                       <th>Return Date
+                                            दिनांक तक</th>
+                                        <th>Return Date
                                            <br />
-                                           वापसी की तिथि 
-                                       </th>
-                                       
-                                   </tr>
-                               </thead>
-                               <tbody>
-                                   <tr>
-                                       <td colspan="5">Unathorized   Absence Details Not Available</td>
-                                   </tr>
-                               </tbody>
-                           </table>
-                       </div>
-                   </fieldset>
+                                            वापसी की तिथि 
+                                        </th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="5">Unathorized   Absence Details Not Available</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset>
                     <fieldset>
                         <legend id="31">Punishment  Details / दंड  का विवरण </legend>
                         <div class="table-responsive">
@@ -1321,11 +1287,10 @@
                                     <tr>
                                         <th>Sr. No.<br />
                                             सरल क्र.</th>
-                                        <th>Type of punishment
+                                        <th>Type of Punishment
                                             <br />
                                             दंड  का प्रकार </th>
-                                        <th>
-                                            Name of the issuer<br />
+                                        <th>Name of the Issuer<br />
                                             जारीकर्ता का नाम
                                         </th>
                                         <th>Order Number<br />
@@ -1339,7 +1304,7 @@
                                 <tbody>
                                     <tr>
                                         <td colspan="5">Punishment  Details Not Available </td>
-                                       
+
                                 </tbody>
                             </table>
                         </div>
@@ -1368,13 +1333,12 @@
                                 <tbody>
                                     <tr>
                                         <td colspan="5">Diciplinary Action Details Not Available </td>
-                                        
+
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </fieldset>
-
                     <fieldset>
                         <legend>क्या आप राष्ट्रीय या राज्य स्तरीय प्रशिक्षण या राज्य स्तरीय समूह में शामिल हैं 
 /
@@ -1428,17 +1392,17 @@
                                             <tr>
                                                 <td>4</td>
                                                 <td>आईईडी</td>
-                                                <td>RTE54546
+                                                <td>5 दिन
                                                 </td>
-                                                <td>QWR7897
+                                                <td>5 दिन
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>5</td>
                                                 <td>कंप्यूटर आधारित शिक्षण</td>
-                                                <td>eLearning
+                                                <td>5 दिन
                                                 </td>
-                                                <td>Interactive multimedia
+                                                <td>5 दिन
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -1447,7 +1411,7 @@
                             </div>
                         </div>
                     </fieldset>
-
+                    <div id="fdDetailsofAwards"></div>
                     <fieldset>
                         <legend>Details of National or State Level Awards And Honors / राष्ट्रीय या राज्य स्तर के पुरस्कार व सम्मान का विवरण </legend>
                         <div class="row ">
@@ -1499,7 +1463,6 @@
                             </div>
                         </div>
                     </fieldset>
-
                     <fieldset>
                         <legend>प्रशिक्षण का विवरण (In-service, induction, CWSN, Computer, Dakshata, ABL, 90 Days IED) :-</legend>
                         <div class="row form-group">
@@ -1566,7 +1529,7 @@
                         </div>
                     </fieldset>
                     <fieldset>
-                        <legend id="29">Rersource   Group Details / स्वीकृत अवकाश का विवरण</legend>
+                        <legend id="29">Rersource   Group Details / संसाधन समूह विवरण का विवरण</legend>
                         <div class="table-responsive">
                             <table class="table table-bordered">
                                 <thead>
@@ -1593,7 +1556,7 @@
                             </table>
                         </div>
                     </fieldset>
-                    <fieldset>
+                    <fieldset id="myElement">
                         <legend id="l13">Document / दस्तावेज़</legend>
                         <div class="table-responsive">
 
@@ -1711,8 +1674,7 @@
                             </table>
                         </div>
                     </fieldset>
-
-                    <fieldset>
+                    <fieldset id="myElement1">
                         <legend id="l12">Educational Document / शैक्षिक दस्तावेज़</legend>
                         <div class="table-responsive">
 
@@ -1810,115 +1772,27 @@
                         </div>
                     </fieldset>
                 </div>
-
-
-
-                <%--<fieldset>
-                                    <legend>Employee Account Info</legend>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <label>IFSC Code<span style="color: red">*</span></label>
-                                                <input onchange="ShowBankDetails()" placeholder="Enter IFSC Code" name="ename" value="" type="text" class="form-control" autocomplete="off" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="idBankDetailsBox">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label>Bank Name<span style="color: red">*</span></label>
-                                                    <input placeholder="Bank Name" disabled name="ename" type="text" class="form-control" autocomplete="off" />
-
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label>Branch Name<span style="color: red">*</span></label>
-                                                    <input placeholder="Branch Name" disabled name="ename" type="text" class="form-control" autocomplete="off" />
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label>Account Type<span style="color: red">*</span></label>
-                                                    <select class="form-control select2">
-                                                        <option value="----">--Select--</option>
-                                                        <option value="----">Salary</option>
-                                                        <option value="----">Other</option>
-                                                    </select>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label>Account No.<span style="color: red">*</span></label>
-                                                    <input placeholder="Enter Account No." name="ename" type="text" class="form-control" autocomplete="off" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <label>EPF No.</label>
-                                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter EPF No." />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <label>GPF No.</label>
-                                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter GPF No." />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <label>NPS No.</label>
-                                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter NPS No." />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <label>Group Insurance No.</label>
-                                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Group Insurance No." />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <label>Gratuity No.</label>
-                                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Gratuity No." />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <label>EGLS No.</label>
-                                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter EGLS No." />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <label>EDLI No.</label>
-                                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter EDLI No." />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <label>ESIC No.</label>
-                                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter ESIC No." />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row justify-content-center">
-                                        <div class="col-md-3 text-center">
-                                            <button type="button" class="Alert-Confirmation btn btn-success btn-rounded ">Save</button>
-                                            <a runat="server" id="A1" href="EmployeeRegistration.aspx" class="btn btn-danger btn-rounded">Clear</a>
-                                        </div>
-                                    </div>
-                                </fieldset>--%>
+                <div class="row">
+                    <div class="col-md-12  text-center">
+                        <hr />
+                        <button type="button" class="btn btn-primary fw-bold btn w-lg btn-outline-primary btn-border" onclick="printCardBody()">Print</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script>
+        function printCardBody() {
+            var printContents = document.getElementById("printableArea").innerHTML;
+            var originalContents = document.body.innerHTML;
+            document.body.innerHTML = printContents;
+            window.print();
+            document.body.innerHTML = originalContents;
+        }
+    </script>
+
     <script>
         function calculateRetirementDate() {
             var dobInput = document.getElementById('dob').value;
