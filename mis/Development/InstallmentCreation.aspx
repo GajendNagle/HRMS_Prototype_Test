@@ -524,6 +524,102 @@ onclick="">Reject</button>--%>
         </div>
     </div>
 
+            <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: var(--vz-primary);">
+                            <img id="imgLogoP2" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
+                            <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel1">Document / दस्तावेज</h3>
+                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <fieldset>
+                                <input type="hidden" asp-for="PrevEmpId" id="hdnPrevEmpId" />
+                                <input type="hidden" asp-for="CompassionId" id="hdnCompassionId" />
+                                <legend>Work Related Important Document / कार्य संबंधी आवश्यक दस्तावेज</legend>
+                                <div class="row">
+                                    <%--<div>
+            <h5 style="font-weight: 200;">Note :<span style="color: red;"> Please upload a PDF or JPG file that is less than 500 KB in size.</span></h5>
+        </div>--%>
+                                    <div class="col-md-12 mt-3">
+                                        <table class="table table-bordered table-responsive-lg">
+                                            <thead>
+                                                <th>Sr.No.<br />
+                                                    सरल क्रमांक</th>
+                                                <th>Document Name
+                    <br />
+                                                    दस्तावेज का नाम</th>
+
+                                                <th class="text-center">View Document
+                    <br />
+                                                    दस्तावेज देंखे</th>
+
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td><b>Techincal Document
+                        <br />
+                                                        तकनीकी दस्तावेज़  </b></td>
+
+
+                                                    <td class="text-center">
+                                                        <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td><b>Upload Civil Document
+                        <br />
+                                                        सिविल दस्तावेज अपलोड करें </b></td>
+
+
+                                                    <td class="text-center">
+                                                        <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td><b>Upload Elecrtrical Document
+                        <br />
+                                                        इलेक्ट्रिकल दस्तावेज अपलोड करें </b></td>
+
+
+                                                    <td class="text-center">
+                                                        <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td><b>Upload Project Document
+                        <br />
+                                                        परियोजना के दस्तावेज अपलोड करें </b></td>
+
+
+                                                    <td class="text-center">
+                                                        <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td><b>Upload Other Document
+                        <br />
+                                                        अन्य दस्तावेज अपलोड करें </b></td>
+
+                                                    <td class="text-center">
+                                                        <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
     <div class="modal" id="WorkDescription">
         <div class="modal-dialog">
