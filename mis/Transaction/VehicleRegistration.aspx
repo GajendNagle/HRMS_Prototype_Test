@@ -515,7 +515,6 @@
                     </div>
                 </div>
             </div>
-            <br />
             <div>
                 <fieldset>
                     <legend>Details / विवरण</legend>
