@@ -128,7 +128,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Authorized Driver / Attender Name</label>
+                            <label>Select Authorized Driver / Attender Name<br />अधिकृत ड्राइवर / अटेंडर के नाम का चयन करें</label>
                             <select class="form-select" id="Names" onchange="toggleSection1()">
                                 <option value="0">--Select--</option>
                                 <option value="1">Ram</option>
@@ -155,8 +155,8 @@
                         <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Save</button>
                         <a href="RouteToVehicleMapping.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
-                    <p style="font-size: 19px; font-weight: 700; color: RED"><span class="fs-bold text-danger">Note :-</span> Driver / Attender की जानकारी को 2 दिन के अंन्दर ही सुधार किया जा सकता हैं |</p>
-                </div>
+                    <p style="font-size: 19px; font-weight: 700; margin:10px 16px; color: RED"><span class="fs-bold text-danger">Note :-</span> Driver / Attender की जानकारी को 2 दिन के अंन्दर ही सुधार किया जा सकता हैं |</p>
+                    </div>
             </fieldset>
             <fieldset id="FsDetails">
                 <legend>Details / विवरण</legend>

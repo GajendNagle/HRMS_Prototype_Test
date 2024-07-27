@@ -63,17 +63,19 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <thead class="nowrap">
-                                  <tr>
+                                    <tr>
                                         <th>Sr. No.<br />
                                             क्रमांक</th>
-                                        <th>Driver / Attender Name<br />
-                                            ड्राइवर / अटेंडर नाम</th>
+                                        <th>Registration Type<br />
+                                            पंजीकरण प्रकार</th>
                                         <th>Vehicle No.<br />
                                             गाड़ी क्र.</th>
                                         <th>Leave From Date<br />
                                             छुट्टी प्रारंभिक दिनांक</th>
                                         <th>Leave To Date<br />
                                             छुट्टी अंतिम दिनांक</th>
+                                        <th>Driver / Attender Name<br />
+                                            ड्राइवर / अटेंडर नाम</th>
                                         <th>Document<br />
                                             दस्तावेज़</th>
                                     </tr>
@@ -84,6 +86,7 @@
                                     <td>MP04AB1196</td>
                                     <td>25/07/2024</td>
                                     <td>28/07/2024</td>
+                                    <td>Rakesh</td>
                                     <td><span class=" btn btn-outline-primary"><i class="fa fa-eye"></i></span>
                                     </td>
                                 </tr>
@@ -93,6 +96,7 @@
                                     <td>MP04CD5154</td>
                                     <td>28/07/2024</td>
                                     <td>05/08/2024</td>
+                                    <td>Rajesh</td>
                                     <td><span class=" btn btn-outline-primary"><i class="fa fa-eye"></i></span>
                                     </td>
                                 </tr>
