@@ -53,31 +53,19 @@
                             <span>Select Enroll Type
                                 <br />
                                 प्रकार चुने<span style="color: red">*</span></span>
-                            <select class="form-control">
+                            <select class="form-control" onchange="textchange(this.value)">
                                 <option value="0">--Select--</option>
                                 <option value="1">Student</option>
                                 <option value="2">Teacher</option>
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <span>Select Bus Stop Name Route No.
-            <br />
-                                बस स्टॉप का नाम एवं रूट क्रमांक चुनें<span style="color: red">*</span></span>
-                            <select class="form-control">
-                                <option value="0">--Select--</option>
-                                <option value="1">Gautam Nagar RUT001</option>
-                                <option value="1">rachna Nagar RUT002</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="Class">
                         <div class="form-group">
                             <span>Select Class
                                 <br />
                                 कक्षा का चयन करें<span style="color: red">*</span></span>
-                            <select class="form-control">
+                            <select class="form-control" id="class">
                                 <option value="0">--Select--</option>
                                 <option value="1">Class-1</option>
                                 <option value="2">Class-2</option>
@@ -96,17 +84,51 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Select Student Name
+                            <label>
+                                Select <span class="Student">Student</span> Name
             <br />
-                                विद्यार्थी का नाम चुनें <span style="color: red">*</span></span>
+                                <span class="Reg">विद्यार्थी</span> का नाम चुनें<span style="color: red">*</span></label>
+                            <select class="form-control" id="stdname">
+                                <option value="0">--Select--</option>
+                                <option value="1">Sagar-1554846</option>
+                                <option value="2">Aparna-1548787</option>
+                                <option value="3">Dheeraj-1548788</option>
+                                <option value="4">Akshita-1548789</option>
+                                <option value="5">Sita-1548790</option>
+                                <option value="6">Gajendra-1548791</option>
+                            </select>
+                            <select class="form-control" id="teachername" style="display:none">
+                                <option value="0">--Select--</option>
+                                <option value="1">Sagar Sarkar</option>
+                                <option value="2">Aparna Mokhede</option>
+                                <option value="3">Dheeraj Malviya</option>
+                                <option value="4">Akshita Pawar</option>
+                                <option value="5">Sita Thapa</option>
+                                <option value="6">Gajendra Nagle</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>Select Bus Stop Route No.
+            <br />
+                                बस स्टॉप का रूट क्रमांक चुनें<span style="color: red">*</span></span>
                             <select class="form-control">
                                 <option value="0">--Select--</option>
-                                <option value="1">Sagar</option>
-                                <option value="2">Aparna</option>
-                                <option value="3">Dheeraj </option>
-                                <option value="4">Akshita</option>
-                                <option value="5">Sita</option>
-                                <option value="6">Gajendra</option>
+                                <option value="1">RUT001</option>
+                                <option value="1">RUT002</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>Select Bus Stop Name
+            <br />
+                                बस स्टॉप का नाम चुनें<span style="color: red">*</span></span>
+                            <select class="form-control">
+                                <option value="0">--Select--</option>
+                                <option value="1">Gautam Nagar (09:45AM To 09:47AM)</option>
+                                <option value="1">Rachna Nagar (09:50AM To 09:53AM)</option>
                             </select>
                         </div>
                     </div>
@@ -128,61 +150,72 @@
                                         <th>Sr. No.
                      <br />
                                             क्रमांक </th>
-                                        <th>Bus Stop Name & Route No.
-            <br />
-                                            बस स्टॉप का नाम एवं रूट क्रमांक</th>
-                                        <th>Vehicle No.
-                     <br />
-                                            वाहन क्रमांक </th>
                                         <th>Class<br />
-
                                             कक्षा</th>
                                         <th>Student Name<br />
                                             विद्यार्थी का नाम</th>
-
+                                        <th>Bus Stop Name
+            <br />
+                                            बस स्टॉप का नाम </th>
+                                        <th>Bus Route No.
+                                            <br />
+                                            रूट क्रमांक
+                                        </th>
                                         <th>Action<br />
                                             कार्यवाहीं</th>
                                     </tr>
                                 </thead>
                                 <tr>
                                     <td>1</td>
-                                    <td>Gautam Nagar RUT001</td>
-                                    <td>MP04AB1196</td>
                                     <td>Class-5</td>
                                     <td>Pankaj Pandey</td>
+                                    <td>Gautam Nagar  (09:45AM To 09:47AM)</td>
+                                    <td>RUT001</td>
                                     <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
                                         <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>rachna Nagar RUT002</td>
-                                    <td>MP04CD5154</td>
                                     <td>Class-6</td>
                                     <td>Ravi Shukla</td>
+                                    <td>Rachna Nagar (09:50AM To 09:53AM)</td>
+                                    <td>RUT002</td>
                                     <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
                                         <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
 
                             </table>
                         </div>
-                    </div>
-                    <hr />
-                    <div class="row">
                         <div class="col-md-12">
-                            <button type="button" class="fw-bold Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
-                            <a href="BusStopToStudentEnrollment.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
+                            <hr />
+                            <div class="form-group">
+                                <button type="button" class="fw-bold Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
+                                <a href="BusStopToStudentEnrollment.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </fieldset>
             <fieldset id="FsDetails" class="d-none">
-                <legend>Details / विवरण</legend>
-                <div class="row">
+                <legend>Bus Stop To Student Enrollment Report</legend>
+                <div class="row align-items-endSearch">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>Select Enroll Type
+                                <br />
+                                प्रकार चुने<span style="color: red">*</span></span>
+                            <select class="form-control">
+                                <option value="0">--Select--</option>
+                                <option value="1">Student</option>
+                                <option value="2">Teacher</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Select Bus Route No.
                                 <br />
-                                बस रूट क्रमांक चुनें <span style="color: red">*</span></span>
+                                बस रूट क्रमांक चुनें<span style="color: red">*</span></span>
                             <select class="form-control" id="dropdown1">
                                 <option value="0">--Select--</option>
                                 <option value="1">All Route</option>
@@ -191,12 +224,12 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3"  id="Classddl">
                         <div class="form-group">
                             <span>Select Class
              <br />
                                 कक्षा का चयन करें<span style="color: red">*</span></span>
-                            <select class="form-control" id="dropdown2">
+                            <select class="form-control">
                                 <option value="0">--Select--</option>
                                 <option value="1">Class-1</option>
                                 <option value="2">Class-2</option>
@@ -213,13 +246,18 @@
                             </select>
                         </div>
                     </div>
-                    <hr />
-                    <div class="col-md-12 mt-3">
-                        <button type="button" id="search-btn" onclick="toggleElements()" class="btn btn-outline-success btn-border  w-lg">Search</button>
-                        <a href="BusStopToStudentEnrollment.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                    <div class="col-md-12">
+                        <hr />
+                        <div class="form-group">
+                            <button type="button" id="search-btn" onclick="toggleElements()" class="btn btn-outline-success btn-border  w-lg">Search</button>
+                            <a href="BusStopToStudentEnrollment.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                        </div>
                     </div>
                 </div>
-                <div class="row justify-content-end" id="element1" style="display: none;">
+            </fieldset>
+            <fieldset id="Details" class="d-none">
+                <legend>Details / विवरण</legend>
+                <div class="row justify-content-end" id="element1">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
                             <button class="btn btn-info btn-rounded w-55">Excel</button>
@@ -247,13 +285,10 @@
                                         <th>Bus Stop Name 
                                             <br />
                                             बस स्टॉप का नाम </th>
-
                                         <th>Class<br />
-
                                             कक्षा</th>
                                         <th>Student Name<br />
                                             विद्यार्थी का नाम</th>
-
                                         <th>Action<br />
                                             कार्यवाहीं</th>
                                     </tr>
@@ -261,23 +296,23 @@
                                 <tr>
                                     <td>1</td>
                                     <td>RUT001</td>
-                                    <td>Gautam Nagar</td>
+                                    <td>Gautam Nagar (09:45AM To 09:47AM)</td>
                                     <td>Class-5</td>
-                                    <td>Sagar</td>
+                                    <td>Sagar Sarkar</td>
                                     <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
                                     <td>RUT001</td>
-                                    <td>Gautam Nagar</td>
+                                    <td>Gautam Nagar (09:45AM To 09:47AM)</td>
                                     <td>Class-5</td>
-                                    <td>Aparna Mokhede</td>
+                                    <td>Arpana Mokhede</td>
                                     <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
                                     <td>RUT002</td>
-                                    <td>rachana Nagar</td>
+                                    <td>Rachana Nagar (09:50AM To 09:53AM)</td>
                                     <td>Class-4</td>
                                     <td>Rahul Bisen</td>
                                     <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span></td>
@@ -286,21 +321,18 @@
                         </div>
                     </div>
                 </div>
-
             </fieldset>
-
         </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>
-
-
         function toggleElements() {
             var dropdown1 = document.getElementById("dropdown1");
             var dropdown2 = document.getElementById("dropdown2");
             var element1 = document.getElementById("element1");
             var element2 = document.getElementById("element2");
+            document.getElementById("Details").classList.add('d-none');
 
             // Hide element2 initially
             element1.style.display = "none";
@@ -310,8 +342,8 @@
             if (dropdown1.value !== "0" && dropdown2.value !== "0") {
                 element1.style.display = "flex";
                 element2.style.display = "block";
+                document.getElementById("Details").classList.remove('d-none');
                 // Add your data to the element2 div here
-
             }
         }</script>
     <script>
@@ -320,17 +352,36 @@
             document.querySelector('#FsDetails').classList.toggle('d-none');
             document.querySelector('#RegDetail').classList.toggle('d-none');
             document.querySelector('#dtls').classList.toggle('d-none');
-            if (a == 1) {
 
+            if (a == 1) {
                 document.querySelector('#btnBack').innerHTML = '<i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i>Back';
                 a = 2;
             }
             else {
-                document.querySelector('#btnBack').innerHTML = "<i class='bx bx-plus label-icon align-middle  me-2'></i>View Details";
+                document.querySelector('#btnBack').innerHTML = "<i console.log();ass='bx bx-plus label-icon align-middle  me-2'></i>View Details";
                 a = 1;
+            }
+        }
+
+        function textchange(abc) {
+            if (abc == "1") {
+                $(".Student").each(function () { this.innerText = 'Student ' });
+                $(".Reg").each(function () { this.innerText = 'विद्यार्थी ' });
+                $("#Class").css("display", "inline-block")
+                $("#stdname").css("display", "block")
+                $("#teachername").css("display", "none")
+
+            }
+            else {
+                $(".Student").each(function () { this.innerText = 'Teacher' });
+                $(".Reg").each(function () { this.innerText = 'शिक्षक' });
+                $("#Class").css("display", "none")
+                $("#stdname").css("display", "none")
+                $("#teachername").css("display", "block")
             }
 
         }
+
     </script>
 </asp:Content>
 
