@@ -488,12 +488,7 @@ onclick="">Reject</button>--%>
         <a href="InstallmentCreation.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
     </div>
                 </div>
-
-
-                
-       
             </fieldset>
-
             <!--modal-->
             <div class="modal" id="myModal">
                 <div class="modal-dialog">
@@ -566,10 +561,8 @@ onclick="">Reject</button>--%>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
     <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
@@ -666,7 +659,6 @@ onclick="">Reject</button>--%>
             </div>
         </div>
     </div>
-
     <div class="modal" id="WorkDescription">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -707,8 +699,6 @@ onclick="">Reject</button>--%>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <%--<script>
