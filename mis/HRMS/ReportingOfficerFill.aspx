@@ -515,7 +515,7 @@
                     <fieldset>
 
                         <legend>Grade</legend>
-                        <div class="row">
+                        <div class="row justify-content-end">
                             <div class="col-md-4 mt-3">
                                 <label for="message">
                                 Enter Allegiance
@@ -523,7 +523,7 @@
                                     सन्निष्ठा  दर्ज करें<span style="color: red">*</span></label>
                                 <textarea placeholder="Enter Allegiance" class="form-control mt-1   fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 mt-3">
                                 <label>
                                  Enter Please comment on overall assessment of the Teacher<br />
                                     शिक्षक के समग्र मूल्यांकन पर टिप्पणी  दर्ज करें<span style="color: red">*</span></label>
@@ -683,9 +683,9 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Name
+                                          Employee  Name
                                      <br />
-                                            नाम  <span style="color: red">*</span>
+                                           कर्मचारी का नाम  <span style="color: red">*</span>
                                         </label>
                                         <asp:TextBox runat="server" ReadOnly="true" ID="txtName" class="form-control" autocomplete="off" value="गोपाल वर्मा"></asp:TextBox>
 
@@ -694,8 +694,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Unique ID<br />
-                                            कर्मचारी आई.डी
+                                          Employee  Unique ID<br />
+                                            कर्मचारी की आई.डी 
                                      <span style="color: red">*</span>
                                         </label>
                                         <asp:TextBox runat="server" ID="TextBox4" ReadOnly="true" class="form-control" autocomplete="off" value="EDP4561231556"></asp:TextBox>
@@ -811,7 +811,7 @@
                                      <br />
                                             पदोन्नति का दिनांक<span style="color: red;">*</span>
                                         </label>
-                                        <asp:TextBox runat="server" ID="txtPrmaotion" class="form-control " autocomplete="off" value="2024-01-23" TextMode="Date"></asp:TextBox>
+                                        <asp:TextBox runat="server" ID="txtPrmaotion" class="form-control "  autocomplete="off" value="2024-01-23" TextMode="Date"></asp:TextBox>
 
                                     </div>
                                 </div>
@@ -1104,7 +1104,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <label>
-                                        <span class="fa-pull-left">Reasons, if any, fro not completing the target
+                                        <span class="fa-pull-left">Reasons, if any, for not completing the target
                                  <br />
                                             लक्ष्य  प्राप्ति न होने के करण</span></label>
                                     <textarea class="form-control" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
