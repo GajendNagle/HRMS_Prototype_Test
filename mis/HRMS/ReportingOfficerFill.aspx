@@ -1743,6 +1743,7 @@
                     <div class="form-group">
                         <label>Enter Remark<br />टिप्पणी दर्ज करें<span style="color: red">*</span></label>
                         <textarea class="form-control" rows="3" style="resize: vertical" placeholder="Enter Remark For Reject ACR Report"></textarea>
+                         <label style="color: red">Note:Maximum length 0-100 characters</label>
                     </div>
                 </div>
                 <!-- Modal Footer -->

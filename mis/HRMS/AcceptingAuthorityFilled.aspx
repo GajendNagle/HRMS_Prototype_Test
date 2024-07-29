@@ -59,27 +59,6 @@
             <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
         </div>
     </div>
-
-    <%--<div id="dv_Masters_LocationMasters" runat="server">
-        <div class="row page-titles mb-4">
-            <div class="col-md-5 align-self-center">
-                <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif;">
-                    <img src="../../img/Confidential.png" style="height: 90px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-                    </u>
-                </p>
-               
-            </div>
-            <div class="col-md-7 align-self-center text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../Default.aspx" title="click to go on">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../Module.aspx?ID=HRMS" title="click to go on">HRMS</a></li>
-                        <li class="breadcrumb-item active">Annual Confidential Report (ACR)</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div>--%>
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
@@ -91,46 +70,7 @@
             </div>
         </div>
         <div class="card-body">
-
-            <%--<nav class="navbar navbar-expand-lg topbar ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-3mb-lg-0">
-                            <a class="nav-link  text-white " href="ConfedicialReportNotes.aspx" role="button"><b class="font-16 font-bold "><i class="fa fa-home "></i></b></a>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Employee ACR </b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="ConfedicialReport.aspx">Employee Apply ACR</a></li>
-                                    <li><a class="dropdown-item" href="EmployeeDetails.aspx">Resend/Print Application </a></li>
-                                </ul>
-                            </li>
-                            <a class="nav-link text-white" href="ReportingOfficerFill.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Fill By Reporting  Officer</b></a>
-                            <a class="nav-link text-white" href="AcceptingAuthorityFilled.aspx" role="button"><b class="font-14 font-bold"><i class="far fa-hand-point-right"></i>ACR Report Reviewing Fill Accepting Authority </b></a>
-
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <b class="font-16 font-bold"><i class="far fa-hand-point-right"></i>Report</b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Rpt_EmployeeACR.aspx">Employee ACR Report</a></li>
-                                    <li><a class="dropdown-item" href="Rpt_ReportingOfficer.aspx">Reporting Officer ACR Report</a></li>
-                                    <li><a class="dropdown-item" href="Rpt_AcceptingAuthority.aspx">Accepting Authority ACR Report</a></li>
-                                    <li><a class="dropdown-item" href="Rpt_DistrictWiseAcr.aspx">District Wise ACR Report</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>--%>
             <br />
-
             <fieldset id="show2" runat="server">
                 <legend>Filled By Review Accepting Authority Officer/ समीक्षा स्वीकार करने वाले प्राधिकारी अधिकारी द्वारा  भरना  जाए</legend>
                 <div class="row justify-content-end">
@@ -249,37 +189,31 @@
                 <legend>Part-3 Review To Be Filled By Reviewing Authorities/ भाग-3  समीक्षक अधिकारी द्वारा भरा जाये </legend>
 
 
-                <div class="row align-items-end">
+                <div class="row align-items-baseline">
                     <div class="col-md-4">
                         <label>
-                            Do you agree with the remarks of the reporting officer ?<br />
-                            क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|<span style="color: red">*</span></label>
+                            Select   Do you agree with the remarks of the reporting officer ?<br />
+                            चयन करें, क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|<span style="color: red">*</span></label>
                         <select class="form-control select2" id="ddlremark1" onchange="myFunctionRemark1()">
                             <option value="0">--Select--</option>
                             <option value="1">Yes/हाँ</option>
                             <option value="2">No/नही</option>
-                            <%--  <asp:ListItem>No/या</asp:ListItem>--%>
                             <option value="3">Partially/आंशिक</option>
                         </select>
                     </div>
                     <div class="col-md-4" id="remark" style="display: none;">
                         <label>
-                            If no or agree partially give reasons for disagreement<br />
-                            यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण<span style="color: red">*</span>
+                            Enter   If no or agree partially give reasons for disagreement<br />
+                            यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण दर्ज करें<span style="color: red">*</span>
                         </label>
 
                         <textarea class="form-control" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>
-                        <%-- <asp:ListItem>--Select--</asp:ListItem>
-     <asp:ListItem>Yes/हाँ</asp:ListItem>
-     <asp:ListItem>No/नही</asp:ListItem>
-     <%--  <asp:ListItem>No/या</asp:ListItem>
-     <asp:ListItem>Partially/आंशिक</asp:ListItem>--%>
                     </div>
 
                     <div class="col-md-4">
                         <label>
-                            Grading<br />
-                            ग्रेड<span style="color: red">*</span></label>
+                            Select  Grading<br />
+                            ग्रेड चयन करें<span style="color: red">*</span></label>
                         <select class="form-control select2" id="ddlfsgrade" onchange="myFunction1()">
                             <option value="0">--Select--</option>
                             <option value="1">Outstanding/उत्कृष्ट</option>
@@ -289,14 +223,20 @@
                             <option value="5">Below satisfaction/असंतोषप्रद</option>
                         </select>
                     </div>
-                    <div class="col-md-4" style="display: none;" id="OfficerName1">
+                    <br />
+                    <br />
+                    <br />
+                    <div class="col-md-4" style="display: none" id="OfficerName1">
                         <label>
                             Enter Remark For  Outstanding Grading
                             <br />
-                            उत्कृष्ट ग्रेडिंग के लिए टिप्पणी<span style="color: red">*</span></label>
+                            उत्कृष्ट ग्रेडिंग के लिए टिप्पणी दर्ज करें<span style="color: red">*</span></label>
+
                         <textarea class="form-control" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Remark For  Outstanding Grading"></textarea>
+                        <label style="color: red">Note: Maximum length o to 100 characters</label>
 
                     </div>
+
                 </div>
             </fieldset>
             <br />
@@ -311,57 +251,71 @@
                 <fieldset>
                     <legend>PART-4 Acceptance
                    To Be Filled By Accepting Authority /  भाग-4 स्वीकृत अधिकारी द्वारा भरा जाये</legend>
-                    <div class="row align-items-end">
-                        <div class="col-md-4">
-                            <label class="fw-bold">
-                                Employee Name/Unique ID<br />
-                                कर्मचारी का नाम/ यूनिक आई.डी<span style="color: red">*</span></label>
-                            <asp:TextBox runat="server" CssClass="form-control  fw-bold" ReadOnly="true" placeholder="गोपाल वर्मा/EDP4454445"></asp:TextBox>
+                    <div class="row align-items-baseline">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="fw-bold">
+                                    Employee Name/Unique ID<br />
+                                    कर्मचारी का नाम/ यूनिक आई.डी<span style="color: red">*</span></label>
+                                <asp:TextBox runat="server" CssClass="form-control  fw-bold" ReadOnly="true" placeholder="गोपाल वर्मा/EDP4454445"></asp:TextBox>
+                            </div>
                         </div>
                         <div class="col-md-4">
-                            <label>
-                                Do you agree with the remarks of the reporting officer ?<br />
-                                क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है?<span style="color: red">*</span></label>
-                            <select class="form-control select2" id="ddlremark2" onchange="myFunctionRemark2()">
-                                <option value="0">--Select--</option>
-                                <option value="1">Yes/हाँ</option>
-                                <option value="2">No/नही</option>
-                                <%--  <asp:ListItem>No/या</asp:ListItem>--%>
-                                <option value="3">Partially/आंशिक</option>
+                            <div class="form-group">
 
-                            </select>
+                                <label>
+                                    Select  Do you agree with the remarks of the reporting officer ?<br />
+                                    चयन करें,क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है?<span style="color: red">*</span></label>
+                                <select class="form-control select2" id="ddlremark2" onchange="myFunctionRemark2()">
+                                    <option value="0">--Select--</option>
+                                    <option value="1">Yes/हाँ</option>
+                                    <option value="2">No/नही</option>
+                                    <%--  <asp:ListItem>No/या</asp:ListItem>--%>
+                                    <option value="3">Partially/आंशिक</option>
+
+                                </select>
+                            </div>
                         </div>
                         <div class="col-md-4" id="remark2" style="display: none;">
-                            <label>
-                                If no or agree partially give reasons for disagreement<br />
-                                यदि नही या आंशिक रूप से सहमत होने पर बसहमति का कारण<span style="color: red">*</span>
-                            </label>
-                            <%-- <textarea class="form-control mb-2" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>--%>
-                            <textarea class="form-control" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>
+                            <div class="form-group">
+
+                                <label>
+                                    Enter   If no or agree partially give reasons for disagreement<br />
+                                    यदि नही या आंशिक रूप से सहमत होने पर बसहमति का कारण दर्ज करें<span style="color: red">*</span>
+                                </label>
+                                <%-- <textarea class="form-control mb-2" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>--%>
+                                <textarea class="form-control" id="workdescription2" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>
+                            </div>
                         </div>
 
 
 
                         <div class="col-md-4">
-                            <label>
-                                Grading<br />
-                                ग्रेड<span style="color: red">*</span></label>
-                            <select class="form-control select2" id="ddlGrading" onchange="myFunction()">
-                                <option value="0">--Select--</option>
-                                <option value="1">Outstanding/उत्कृष्ट</option>
-                                <option value="2">Very good/बहुत अच्छा</option>
-                                <option value="3">good/अच्छा</option>
-                                <option value="4">Satisfactory/संतोषप्रद</option>
-                                <option value="5">Below satisfaction/असंतोषप्रद</option>
-                            </select>
+                            <div class="form-group">
+
+                                <label>
+                                    Select   Grading<br />
+                                    ग्रेड चयन करें<span style="color: red">*</span></label>
+                                <select class="form-control select2" id="ddlGrading" onchange="myFunction()">
+                                    <option value="0">--Select--</option>
+                                    <option value="1">Outstanding/उत्कृष्ट</option>
+                                    <option value="2">Very good/बहुत अच्छा</option>
+                                    <option value="3">good/अच्छा</option>
+                                    <option value="4">Satisfactory/संतोषप्रद</option>
+                                    <option value="5">Below satisfaction/असंतोषप्रद</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="col-md-4" style="display: none;" id="OfficerName">
-                            <label>
-                                Enter Remark For  Outstanding Grading
-                                <br />
-                                उत्कृष्ट ग्रेडिंग के लिए टिप्पणी<span style="color: red">*</span></label>
-                            <textarea class="form-control" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Remark For  Outstanding Grading"></textarea>
+                            <div class="form-group">
 
+                                <label>
+                                    Enter Remark For  Outstanding Grading
+                                <br />
+                                    उत्कृष्ट ग्रेडिंग के लिए टिप्पणी दर्ज करें<span style="color: red">*</span></label>
+                                <textarea class="form-control" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Remark For  Outstanding Grading"></textarea>
+                                <label style="color: red">Note: Maximum length o to 100 characters</label>
+                            </div>
                         </div>
                     </div>
                 </fieldset>
@@ -411,9 +365,9 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Name
+                                            Employee  Name
                                      <br />
-                                            नाम  <span style="color: red">*</span>
+                                            कर्मचारी का    नाम  <span style="color: red">*</span>
                                         </label>
                                         <asp:TextBox runat="server" ReadOnly="true" ID="txtName" class="form-control" autocomplete="off" value="गोपाल वर्मा"></asp:TextBox>
 
@@ -422,8 +376,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Unique ID<br />
-                                            कर्मचारी आई.डी
+                                            Employee  Unique ID<br />
+                                            कर्मचारी की आई.डी
                                      <span style="color: red">*</span>
                                         </label>
                                         <asp:TextBox runat="server" ID="TextBox4" ReadOnly="true" class="form-control" autocomplete="off" value="EDP4561231556"></asp:TextBox>
@@ -832,9 +786,9 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <label>
-                                        <span class="fa-pull-left">Reasons, if any, fro not completing the target
+                                        <span class="fa-pull-left">Reasons, if any, for not completing the target
                                  <br />
-                                            लक्ष्य  प्राप्ति न होने के करण</span></label>
+                                            लक्ष्य  प्राप्ति न होने के कारण</span></label>
                                     <textarea class="form-control" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
                                 </div>
                             </div>
@@ -1158,9 +1112,9 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <label>
-                                        Reasons Of Not achieving target
+                                        Reasons of not achieving target
                                  <br />
-                                        लक्ष्य  से कम उपलब्धि के करण</label>
+                                        लक्ष्य  से कम उपलब्धि के कारण</label>
                                     <textarea class="form-control mb-3fw-bold" id="workdescription1" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
                                 </div>
                             </div>
@@ -1348,9 +1302,7 @@
                                         <th>Extraacurricular Activities
                                    <br />
                                             पाठ्येत्तर गतिविधियों मे भूमिका
-                                   <br />
-
-                                            अकादमिक कार्यो में भूमिका</th>
+                                        </th>
                                         <th>Please give details of the notable works done on the following points<br />
                                             कृपया निम्नानुसार बिन्दुओ पर किए गए उल्लखनीय कार्यो का विवरण दे</th>
 

@@ -60,26 +60,25 @@
         </div>
     </div>
     <%--  <div class="row page-titles mb-4">--%>
-  <%--  <div class="row page-titles mb-4">--%>
-  <div class="row align-content-end">
-      <div class="col-md-5 ">
-          <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
-      </div>
-          <%--   <a type="button" class="btn btn-primary btn-label waves-effect waves-light rounded-pill" href="/ApplyTour"><i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i> Back to List</a>--%>
-      </div>
+    <%--  <div class="row page-titles mb-4">--%>
+    <div class="row align-content-end">
+        <div class="col-md-5 ">
+            <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+        </div>
+        <%--   <a type="button" class="btn btn-primary btn-label waves-effect waves-light rounded-pill" href="/ApplyTour"><i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i> Back to List</a>--%>
+    </div>
 
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-9">
-                    <h4>
-                      PART-2 Self-Evaluation
-                      भाग दो-स्वमूल्यांकन </h4>  
-                  </div>
-                  <div class="col-lg-3 text-end ">
-         <button id="BtnBack"  class="btn btn-primary btn-label waves-effect waves-light rounded-pill " type="button" onclick="Backclickfn()"><i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i> BACK</button>
-  </div>
-          
+                    <h4>PART-2 Self-Evaluation
+                      भाग दो-स्वमूल्यांकन </h4>
+                </div>
+                <div class="col-lg-3 text-end ">
+                    <button id="BtnBack" class="btn btn-primary btn-label waves-effect waves-light rounded-pill " type="button" onclick="Backclickfn()"><i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i>BACK</button>
+                </div>
+
             </div>
         </div>
         <div class="card-body">
@@ -106,7 +105,8 @@
                                             <br />
                                             टिप्पणी</th>
                                         <th rowspan="2" style="display: none;" id="action">Action</th>
-                                    </tr>      <tr valign="middle"  class="text-white">
+                                    </tr>
+                                    <tr valign="middle" class="text-white">
                                         <td>Previous Session<br />
                                             विगत सत्र</td>
                                         <td>Present Session
@@ -115,7 +115,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                              
+
                                     <tr valign="middle">
                                         <td>1
                                         </td>
@@ -160,17 +160,18 @@
                 </fieldset>
                 <p>
                     <span style="color: red; font-size: 15px;">Note:-</span>The Column Menttioning last year average attendance Will Not Apply for class 1<br />
-                       कक्षा 1 के पिछले वर्ष की औसत उपिस्थिति लागू नहीं होगी|</p>
-                                                  <hr />
-<div class="col-md-12">
-    <div class="form-group">
-        <button type="button" class="Alert-Save1  btn w-lg btn-success btn-border">
-            Save/Next
-        </button>
-        <a href="TeacherFillReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-    </div>
-</div>
-               <%-- <div class="row justify-content-center">
+                    कक्षा 1 के पिछले वर्ष की औसत उपिस्थिति लागू नहीं होगी|
+                </p>
+                <hr />
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <button type="button" class="Alert-Save1  btn w-lg btn-success btn-border">
+                            Save/Next
+                        </button>
+                        <a href="TeacherFillReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                    </div>
+                </div>
+                <%-- <div class="row justify-content-center">
                     <div class="col-md-3 text-center mt-4">
                         <div class="form-group">
                             <button type="button" class="Alert-Save1 btn btn-success btn-rounded ">
@@ -242,7 +243,7 @@
                                         <td class="text-center">
                                             <input type="email" id="b2" placeholder="100%" class="form-control text-center"></td>
                                         <td>
-                                            <input type="email" id="b3" class="form-control"></td>
+                                            <input type="email" id="b3" placeholder="Enter Achievement (In % )" class="form-control"></td>
                                         <td style="display: none;" id="btnaction2">
 
                                             <button type="button" onclick="addData1()" class="btn btn-success">Add</button></td>
@@ -256,22 +257,23 @@
                     <div class="row">
                         <div class="col-md-6">
                             <label>
-                              Enter  Reasons, if any, for not completing the target 
+                                Enter  Reasons, if any, for not completing the target 
                                 <br />
-                            लक्ष्य पूरा न कर पाने के कारण, यदि कोई हो तो उसे दर्ज करें  <span style="color: red">*</span></label>
+                                लक्ष्य पूरा न कर पाने के कारण, यदि कोई हो तो उसे दर्ज करें  <span style="color: red">*</span></label>
                             <textarea class="form-control" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reasons  Maxmum 100 words"></textarea>
                         </div>
                     </div>
-                </fieldset><hr />
+                </fieldset>
+                <hr />
                 <div class="col-md-12">
-    <div class="form-group">
-        <button type="button" class="Alert-Save2  btn w-lg btn-success btn-border">
-            Save/Next
-        </button>
-        <a href="TeacherFillReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-    </div>
-</div>
-               <%-- <div class="row justify-content-center">
+                    <div class="form-group">
+                        <button type="button" class="Alert-Save2  btn w-lg btn-success btn-border">
+                            Save/Next
+                        </button>
+                        <a href="TeacherFillReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                    </div>
+                </div>
+                <%-- <div class="row justify-content-center">
                     <div class="col-md-3 text-center mt-4">
                         <div class="form-group">
                             <button type="button" class="Alert-Save2 btn btn-success btn-rounded ">
@@ -281,7 +283,6 @@
                         </div>
                     </div>
                 </div>--%>
-
             </div>
             <div runat="server" id="fieldset3" style="display: none">
                 <fieldset>
@@ -289,17 +290,16 @@
 
                     <div class="row">
                         <div class="col-md-12 table-responsive">
-                            <table id="Table3" class="table table-bordered  text-center  " runat="server" >
+                            <table id="Table3" class="table table-bordered  text-center " runat="server">
                                 <thead>
-                                    <tr valign="middle">
+                                    <tr valign="middle" style="width:100%">
                                         <th>S.No.<br />
                                             सरल.क्र</th>
                                         <th>Class<br />
                                             कक्षा</th>
                                         <th>Subject<br />
                                             विषय</th>
-                                        <th>No.of
-                     Student<br />
+                                        <th>No.of Student<br />
                                             छात्र संख्या
                                         </th>
                                         <th colspan="5">Previous class annual
@@ -319,7 +319,7 @@ of annual examination result
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr style="width:100%">
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -346,23 +346,23 @@ of annual examination result
                                             (द)</td>
                                         <td>E<br />
                                             (ई)</td>
-                                        <td></td>
+                                        <%--<td></td>--%>
                                     </tr>
 
-                                    <tr valign="middle">
+                                    <tr valign="middle" style="width:100%">
                                         <td>1
                                         </td>
                                         <td>
-                                            <select class="form-control select2" style="width: 70px;" id="ddlClass3" onchange="myaddbtn2()">
+                                            <select class="form-control select2" style="width: 100px;" id="ddlClass3" onchange="myaddbtn2()">
                                                 <option value="0">--Select--</option>
-                                            
+
                                                 <option>5th class/कक्षा पाचंवी</option>
                                                 <option>8th class/कक्षा आठवी</option>
-                                               
-                                               
-                                              
+
+
+
                                                 <option>10th class/कक्षा दसवी</option>
-                                              
+
                                                 <option>12th class/कक्षा बरवी</option>
                                             </select></td>
                                         <td>
@@ -379,27 +379,27 @@ of annual examination result
                                             </select>
                                         </td>
                                         <td>
-                                            <input type="email" id="c2" class="form-control" style="width: 70px;"></td>
+                                            <input type="email" id="c2" placeholder="0-1000" class="form-control" style="width: 100px;"></td>
                                         <td>
-                                            <input type="email" id="c3" class="form-control" style="width: 70px;"></td>
+                                            <input type="email" placeholder="80% or above" id="c3" class="form-control" style="width: 100px;"></td>
                                         <td>
-                                            <input type="email" id="c4" class="form-control" style="width: 70px;"></td>
+                                            <input type="email" placeholder="60-79%" id="c4" class="form-control" style="width: 100px;"></td>
                                         <td>
-                                            <input type="email" id="c5" class="form-control" style="width: 70px;"></td>
+                                            <input type="email" id="c5" placeholder="45-59%" class="form-control" style="width: 100px;"></td>
                                         <td>
-                                            <input type="email" id="c6" class="form-control" style="width: 70px;"></td>
+                                            <input type="email" id="c6" placeholder="33-45%" class="form-control" style="width: 100px;"></td>
                                         <td>
-                                            <input type="email" id="c7" class="form-control" style="width: 70px;"></td>
+                                            <input type="email" id="c7" placeholder="Below 33%" class="form-control" style="width: 100px;"></td>
                                         <td>
-                                            <input type="email" id="c8" class="form-control" style="width: 70px;"></td>
+                                            <input type="email" placeholder="80% or above" id="c8" class="form-control" style="width: 100px;"></td>
                                         <td>
-                                            <input type="email" id="c9" class="form-control" style="width: 70px;"></td>
+                                            <input type="email" placeholder="60-79%" id="c9" class="form-control" style="width: 100px;"></td>
                                         <td>
-                                            <input type="email" id="c10" class="form-control" style="width: 70px;"></td>
+                                            <input type="email" placeholder="45-59%" id="c10" class="form-control" style="width: 100px;"></td>
                                         <td>
-                                            <input type="email" id="c11" class="form-control" style="width: 70px;"></td>
+                                            <input type="email" placeholder="33-45%" id="c11" class="form-control" style="width: 100px;"></td>
                                         <td>
-                                            <input type="email" id="c12" class="form-control" style="width: 70px;"></td>
+                                            <input type="email" placeholder="Below 33%" id="c12" class="form-control" style="width: 100px;"></td>
                                         <td style="display: none;" id="btnaction3">
 
                                             <button type="button" onclick="addData2()" class="btn btn-success">Add</button></td>
@@ -416,7 +416,7 @@ of annual examination result
                     <div class="row">
                         <div class="col-md-6">
                             <label>
-                             Enter  Reasons of not achieving target
+                                Enter  Reasons of not achieving target
                                 <br />
                                 लक्ष्य से कम उपलब्धि के कारण हो तो दर्ज करें<span style="color: red">*</span></label>
                             <textarea class="form-control mb-2" id="workdescription1" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reasons Maxmum 100 words"></textarea>
@@ -428,13 +428,15 @@ of annual examination result
                     <label>
                         <span style="color: red; font-size: 15px;">Note:-</span>
                         1. * A-80% or avove, B-60-79%, C-45-59%, D-33-45%,E< 33% (Rounding off Will be in  higher number)<br />
-                   अ-80 प्रतिशत या अधिक ,ब 60-79 प्रतिशत, स.45-59 प्रतिशत, द 33-45 प्रतिशत, ई 33 प्रतिशत से काम<br />percentage will be as per direction of Rajya Shiksha Kendra. For class I target grade will be A.<br /> प्रतिशत का निर्धारण राज्य शिक्षा केन्द्र निर्देशानुसार, कक्षा के लिये लक्ष्य अ ग्रेड होगा।<br />
+                        अ-80 प्रतिशत या अधिक ,ब 60-79 प्रतिशत, स.45-59 प्रतिशत, द 33-45 प्रतिशत, ई 33 प्रतिशत से काम<br />
+                        percentage will be as per direction of Rajya Shiksha Kendra. For class I target grade will be A.<br />
+                        प्रतिशत का निर्धारण राज्य शिक्षा केन्द्र निर्देशानुसार, कक्षा के लिये लक्ष्य अ ग्रेड होगा।<br />
 
 
-                       2.कक्षा 5वी 8वी 10वी 12वी हेतु बोर्ड पैटर्न/बोर्ड परीक्षा  के परिणाम अंकित किये जाये ।</label>
+                        2.कक्षा 5वी 8वी 10वी 12वी हेतु बोर्ड पैटर्न/बोर्ड परीक्षा  के परिणाम अंकित किये जाये ।</label>
 
                 </fieldset>
-              <%--  <div class="row justify-content-center">
+                <%--  <div class="row justify-content-center">
                     <div class="col-md-12 text-center ">
                         <div class="form-group">
                             <button type="button" class="Alert-Save3 btn btn-success btn-rounded ">
@@ -444,14 +446,15 @@ of annual examination result
                         </div>
                     </div>
                 </div>--%>
-                <hr /><div class="col-md-12">
-    <div class="form-group">
-        <button type="button" class="Alert-Save3  btn w-lg btn-success btn-border">
-            Save/Next
-        </button>
-        <a href="TeacherFillReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-    </div>
-</div>
+                <hr />
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <button type="button" class="Alert-Save3  btn w-lg btn-success btn-border">
+                            Save/Next
+                        </button>
+                        <a href="TeacherFillReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                    </div>
+                </div>
             </div>
             <div runat="server" id="fieldset4" style="display: none">
 
@@ -460,7 +463,7 @@ of annual examination result
                     <br />
                     अकादमिक एवं पाठ्येत्तर गतिविधियों मे भूमिका<br />
                 </h4>
-           <%--     <span class="fw-bold">कृपया निम्नानुसार बिन्दुओ पर किए गए उल्लखनीय कार्य का विवरण दे:-</span>--%>
+                <%--     <span class="fw-bold">कृपया निम्नानुसार बिन्दुओ पर किए गए उल्लखनीय कार्य का विवरण दे:-</span>--%>
                 <fieldset>
                     <legend>Role in academic/ 
                       
@@ -639,9 +642,7 @@ of annual examination result
                                 <th>Extracurricular Activities
                                     <br />
                                     पाठ्येत्तर गतिविधियों मे भूमिका
-                                    <br />
-
-                                    अकादमिक कार्यो में भूमिका</th>
+                                   </th>
                                 <th>Please give details of the notable works done on the following points<br />
                                     कृपया निम्नानुसार बिन्दुओ पर किए गए उल्लखनीय कार्यो का विवरण दे</th>
 
@@ -744,7 +745,7 @@ of annual examination result
                     </div>
 
                 </fieldset>
-            <%--    <div class="row justify-content-center">
+                <%--    <div class="row justify-content-center">
                     <div class="col-md-3 text-center mt-3" style="position: relative; top: 20px;">
                         <div class="form-group">
                             <%-- <button type="button" class="btn btn-success btn-rounded " data-toggle="modal" data-target="#myModal">
@@ -757,14 +758,15 @@ of annual examination result
                         </div>
                     </div>
                 </div>--%>
-                <hr /><div class="col-md-12">
-    <div class="form-group">
-        <button type="button" class="  btn w-lg btn-success btn-border"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Save
-        </button>
-        <a href="TeacherFillReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-    </div>
-</div>
+                <hr />
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <button type="button" class="  btn w-lg btn-success btn-border" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Save
+                        </button>
+                        <a href="TeacherFillReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -772,7 +774,7 @@ of annual examination result
     <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header" >
+                <div class="modal-header">
 
                     <img src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
 
@@ -785,10 +787,10 @@ of annual examination result
                         <div class="row">
                             <div class="col-md-4">
                                 <label>
-                                 Enter Reporting Officer Unique ID 
+                                    Enter Reporting Officer Unique ID 
                                  <br />
                                     रिपोर्टिंग अधिकारी यूनिक आईडी दर्ज करें<span style="color: red">*</span></label>
-                                <asp:TextBox runat="server" AutoComplete="off" CssClass="form-control" onchange="myFunction()"></asp:TextBox>
+                                <asp:TextBox placeholder="Enter Reporting Officer Unique ID" runat="server" AutoComplete="off" CssClass="form-control" onchange="myFunction()"></asp:TextBox>
 
                             </div>
 
@@ -810,7 +812,7 @@ of annual examination result
                         </div>
                     </fieldset>
                     <hr />
-                   <%-- <div class="modal-footer justify-content-center">
+                    <%-- <div class="modal-footer justify-content-center">
                         <div style="display: none;" id="btn1">
                             <button type="button" class="btn btn-success Alert-Save btn-rounded">Send To Officer</button>
                             <a href="ReportingOfficerFill.aspx" class="btn btn-danger btn-rounded">Clear</a>
@@ -819,15 +821,17 @@ of annual examination result
                     <div class="modal-footer">
                         <div style="display: none;" id="btn1">
 
-                      
-                   <div class="col-md-12">
-    <div class="form-group">
-        <button type="button" class="Alert-Save btn w-lg btn-success btn-border">
-           Send To Officer
-        </button>
-        <a href="TeacherFillReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-    </div>
-</div></div></div>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button type="button" class="Alert-Save btn w-lg btn-success btn-border">
+                                        Send To Officer
+                                    </button>
+                                    <a href="TeacherFillReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -902,10 +906,10 @@ of annual examination result
                 document.getElementById('<%=btnaction3.ClientID%>').style = "display:table-cell";
     }
 }</script>
-   
-    
-    
-    
+
+
+
+
     <script>
         debugger
         function
@@ -1368,26 +1372,26 @@ of annual examination result
 
 
     <script>  function Backclickfn() {
-                var fieldset1 = document.getElementById('<%= Fieldset1.ClientID %>');
-                var fieldset2 = document.getElementById('<%= fieldset2.ClientID %>');
-                var fieldset3 = document.getElementById('<%= fieldset3.ClientID %>');
-                var fieldset4 = document.getElementById('<%= fieldset4.ClientID %>');
+            var fieldset1 = document.getElementById('<%= Fieldset1.ClientID %>');
+      var fieldset2 = document.getElementById('<%= fieldset2.ClientID %>');
+      var fieldset3 = document.getElementById('<%= fieldset3.ClientID %>');
+      var fieldset4 = document.getElementById('<%= fieldset4.ClientID %>');
 
-      if (fieldset4.style.display === 'block') {
-          fieldset4.style.display = 'none';
-          fieldset3.style.display = 'block';
-      } else if (fieldset3.style.display === 'block') {
-          fieldset3.style.display = 'none';
-          fieldset2.style.display = 'block';
-      } else if (fieldset2.style.display === 'block') {
-          fieldset2.style.display = 'none';
-          fieldset1.style.display = 'block';
-      } else {
+            if (fieldset4.style.display === 'block') {
+                fieldset4.style.display = 'none';
+                fieldset3.style.display = 'block';
+            } else if (fieldset3.style.display === 'block') {
+                fieldset3.style.display = 'none';
+                fieldset2.style.display = 'block';
+            } else if (fieldset2.style.display === 'block') {
+                fieldset2.style.display = 'none';
+                fieldset1.style.display = 'block';
+            } else {
 
-          window.location.href = 'ConfedicialReport.aspx';
-      }
+                window.location.href = 'ConfedicialReport.aspx';
+            }
 
-      }
+        }
 
     </script>
 </asp:Content>

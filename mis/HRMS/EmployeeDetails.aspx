@@ -94,8 +94,8 @@
                                             सरल क्र.</th>
                                         <th>Annual Year<br />
                                             वित्तीय वर्ष</th>
-                                        <th>Unique ID/Name<br />
-                                            कर्मचारी आईडी/नाम</th>
+                                        <th>Employee Unique ID/Name<br />
+                                            कर्मचारी की आईडी/नाम</th>
 
                                         <th>Date of Birth<br />
                                             जन्मतिथि</th>
@@ -186,9 +186,9 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Name
+                                          Employee  Name
                                      <br />
-                                            नाम  <span style="color: red">*</span>
+                                          कर्मचारी  का  नाम  <span style="color: red">*</span>
                                         </label>
                                         <asp:TextBox runat="server" ReadOnly="true" ID="TextBox1" class="form-control" autocomplete="off" value="गोपाल वर्मा"></asp:TextBox>
 
@@ -197,8 +197,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Unique ID<br />
-                                            कर्मचारी आई.डी
+                                           Employee Unique ID<br />
+                                            कर्मचारी की आई.डी
                                      <span style="color: red">*</span>
                                         </label>
                                         <asp:TextBox runat="server" ID="TextBox6" ReadOnly="true" class="form-control" autocomplete="off" value="EDP4561231556"></asp:TextBox>
@@ -1125,7 +1125,7 @@
 
 
                         <fieldset>
-                            <legend>Extraacurricular Activities / पाठ्येत्तर गतिविधियों मे भूमिका </legend>
+                            <legend>Extracurricular Activities / पाठ्येत्तर गतिविधियों मे भूमिका </legend>
 
                             <%-- <div class="row mt-3">
                        <div class="col-md-4">
@@ -1156,7 +1156,7 @@
 
                                         <th>S.No.<br />
                                             सरल क्र.</th>
-                                        <th>Extraacurricular Activities
+                                        <th>Extracurricular Activities
                                    <br />
                                             पाठ्येत्तर गतिविधियों मे भूमिका
                                 
@@ -1281,7 +1281,7 @@
     <div class="modal  fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header" style="background-color: var(--vz-primary);">
+                <div class="modal-header" >
 
                     <img src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
 
@@ -1294,10 +1294,10 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <label>
-                                    Reporting Officer Unique ID 
+                                   Enter Reporting Officer Unique ID 
                                  <br />
-                                    रिपोर्टिंग अधिकारी यूनिक आईडी<span style="color: red">*</span></label>
-                                <asp:TextBox runat="server" AutoComplete="off" CssClass="form-control" onchange="myFunction()"></asp:TextBox>
+                                    रिपोर्टिंग अधिकारी यूनिक आईडी दर्ज करें<span style="color: red">*</span></label>
+                                <asp:TextBox runat="server" placeholder="Enter Reporting Officer Unique ID" AutoComplete="off" CssClass="form-control" onchange="myFunction()"></asp:TextBox>
 
                             </div>
 
