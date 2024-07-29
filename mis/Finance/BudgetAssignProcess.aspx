@@ -54,11 +54,9 @@
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="ContentBody_TextBox5" class="form-control" autocomplete="off" value="2024-12-10" />
                                 </div>
                             </div>
-
-
+                            <div class="col-md-12">
                             <hr />
-                            <div class="col-md-12 justify-content-center">
-                                <div class="form-group text-center">
+                                <div class="form-group">
                                     <button type="button" class="btn btn-outline-success btn-border w-lg Alert-Save" onclick="document.getElementById('FS_Details').style.display = 'block';">Search</button>
                                     <a id="clearfirst" href="BudgetAssignProcess.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
                                 </div>
@@ -100,9 +98,9 @@
                                                 <th>Office Name 
                                             <br />
                                                     कार्यालय का नाम</th>
-                                                <th>Amount 
+                                                <th>Allocation Amount 
                                             <br />
-                                                    राशि 
+                                                   आवंटन राशि 
                                                 </th>
                                             </tr>
                                         </thead>
@@ -165,8 +163,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="form-group text-center">
-
+                                <div class="form-group">
                                     <a onclick="openPDF()" class="btn btn-outline-primary w-lg btn-border">Generated Letter</a>
                                     <a href="BudgetAssignProcess.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                                 </div>

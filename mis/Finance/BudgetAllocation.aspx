@@ -42,7 +42,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select  Date <br />
-                                         दिनांक का चयन करें<span style="color: red;"> *</span></label>
+                                         दिनांक का चयन करें<span style="color: red;">*</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="date" class="form-control" autocomplete="off" value="2024-12-10" />
                                 </div>
                             </div>
@@ -51,7 +51,7 @@
                                 <div class="form-group">
                                     <label>
                                         Select Head Type <br />
-                                        हेड प्रकार का चयन करें<span style="color: red;"> *</span></label>
+                                        हेड प्रकार का चयन करें<span style="color: red;">*</span></label>
                                     <select class="form-control select2">
                                         <option value="2">Expense</option>
                                     </select>
@@ -62,7 +62,7 @@
                                     <label>
                                         Select Office Type
    <br />
-                                        कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
+                                        कार्यालय प्रकार का चयन करें<span style="color: red;">*</span>
                                     </label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
@@ -92,8 +92,8 @@
                             </div>
                         </div>
                         <hr />
-                        <div class="col-md-12 justify-content-center">
-                            <div class="form-group text-center">
+                        <div class="col-md-12">
+                            <div class="form-group">
                                 <button type="button" class="btn btn-outline-success btn-border w-lg Alert-Save" onclick="document.getElementById('FS_Details').style.display = 'block';">Search</button>
                                 <a id="clearfirst" href="BudgetAllocation.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
                             </div>
@@ -246,8 +246,8 @@
                             </div>
                         </div>
 
-                        <div class="col-md-12 justify-content-center">
-                                    <div class="form-group text-center">
+                        <div class="col-md-12">
+                                    <div class="form-group">
                                         <button type="button" class="Alert-Confirmation btn btn-outline-success w-lg btn-border">Save</button>
                                         <a id="clearfirst" href="BudgetAllocation.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
                                     </div>

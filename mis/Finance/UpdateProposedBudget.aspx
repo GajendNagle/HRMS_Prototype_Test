@@ -42,39 +42,23 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Date
+                                        Proposed Date
                                         <br />
-                                        दिनांक का चयन करें<span style="color: red;"> *</span></label>
+                                        प्रस्तावित दिनांक<span style="color: red;">*</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="ContentBody_TextBox5" class="form-control" autocomplete="off" value="2024-04-01" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Head Type
+                                       Select Head Type
                                         <br />
-                                        हेड प्रकार का चयन करें<span style="color: red;"> *</span></label>
+                                        हेड प्रकार का चयन करें<span style="color: red;">*</span></label>
                                     <select class="form-control select2">
                                         <option value="2">Expense</option>
                                     </select>
                                 </div>
                             </div>
-                            <%--<div class="col-md-3">
-                                <div class="form-group">
-                                    <label>
-                                        Select Ledger(Head Code)
-                                                <br />
-                                        बहीखाता (हेड कोड) का चयन करें<span style="color: red;"> *</span></label>
-                                    <select class="form-control select2" id="selectLedger" onchange="blncamount()">
-                                        <option selected="selected" value="0">--Select --</option>
-                                        <option value="1">Basic Pay/Special Pay/Dearness Allowance (10.01.01)  </option>
-                                        <option value="2">Gratuity Premium Payment (10.01.02)</option>
-                                        <option value="3">Medical Expense Reimbursement (10.02.01)</option>
-                                        <option value="4">Travel Expenses (10.03.01)</option>
-                                        <option value="5">State Bank Of India   (15.01.01)</option>
-                                    </select>
-                                </div>
-                            </div>--%>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
@@ -82,46 +66,28 @@
                                         कार्यालय नाम का चयन करें<span style="color: red;"> *</span>
                                     </label>
                                     <select class="form-control select2">
-                                       <%-- <option selected="selected" value="0">--Select --</option>--%>
                                         <option value="1">Directorate of Public Instruction</option>
 
                                     </select>
                                 </div>
                             </div>
                         </div>
-
-                        <hr />
-                        <div class="col-md-12 justify-content-center">
-                            <div class="form-group text-center">
+                        <div class="col-md-12">
+                            <hr />
+                            <div class="form-group">
                                 <button type="button" class="btn btn-outline-success btn-border w-lg Alert-Save" onclick="document.getElementById('FS_Details').style.display = 'block';">Search</button>
                                 <a id="clearfirst" href="UpdateProposedBudget.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
                             </div>
-
-
                         </div>
                     </fieldset>
                     <fieldset id="FS_Details" style="display: none">
                         <legend>Update Proposed Budget Details /
                                 अद्यतन प्रस्तावित बजट विवरण </legend>
-                        <%-- <div class="row justify-content-end">
-                            <div class="col-md-4 text-end">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                    <button class="btn btn-info btn-rounded w-55">PDF</button>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="form-group">
-                                    <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                                </div>
-                            </div>
-                        </div>--%>
                         <div class="row align-items-end">
                             <div class="col-md-12">
                                 <div class="table-responsive">
-
                                     <table class="table table-bordered" id="mainTable">
-                                        <thead>
+                                        <thead class="nowrap">
                                             <tr align="center" valign="middle">
                                                 <th>क्रमांक
                                                 </th>
@@ -131,10 +97,8 @@
                                                 </th>
                                                 <th>उपलब्ध बजट
                                                 </th>
-                                                <th>बजट राशि में परिवर्तन
+                                                <th>बजट राशि में परिवर्तन राशि दर्ज करें
                                                 </th>
-                                                <%--<th>कार्यवाही
-                                                </th>--%>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -143,7 +107,6 @@
                                                 </td>
                                                 <td align="center" valign="middle">
                                                     <a>10.01.01</a>
-
                                                 </td>
                                                 <td>
                                                     <a>Basic Pay/Special Pay/Dearness Allowance</a>
@@ -154,7 +117,6 @@
                                                 </td>
                                                 <td>
                                                     <input type="email" class="form-control" style="width: 160px;" placeholder="0.00"></td>
-                                                <%--<td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>--%>
                                             </tr>
                                             <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>2</span>
@@ -172,7 +134,6 @@
                                                 </td>
                                                 <td>
                                                     <input type="email" class="form-control" style="width: 160px;" placeholder="0.00"></td>
-                                                <%--<td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>--%>
                                             </tr>
                                             <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>3</span>
@@ -190,7 +151,6 @@
                                                 </td>
                                                 <td>
                                                     <input type="email" class="form-control" style="width: 160px;" placeholder="0.00"></td>
-                                                <%--<td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>--%>
                                             </tr>
                                             <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>4</span>
@@ -208,7 +168,6 @@
                                                 </td>
                                                 <td>
                                                     <input type="email" class="form-control" style="width: 160px;" placeholder="0.00"></td>
-                                                <%--<td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>--%>
                                             </tr>
                                             <!-- Add more rows as needed -->
                                         </tbody>
@@ -219,8 +178,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="form-group text-center">
-
+                                <div class="form-group">
                                     <button type="button" class="Alert-Update btn btn-outline-success w-lg btn-border">Update</button>
                                     <a href="UpdateProposedBudget.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                                 </div>
@@ -229,7 +187,6 @@
 
                     </fieldset>
                 </div>
-
             </div>
         </div>
     </div>

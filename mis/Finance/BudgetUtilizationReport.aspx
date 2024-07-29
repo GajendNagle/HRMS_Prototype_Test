@@ -1,11 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="BudgetUtilizationReport.aspx.cs" Inherits="mis_Finance_BudgetUtilizationReport" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" Runat="Server">
-       <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
-  
-     <div class="row">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
+
+    <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
@@ -17,8 +17,8 @@
                         <li class="breadcrumb-item">
                             <a href="#Finance" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Finance</span></a>
                         </li>
-                        <li class="breadcrumb-item"> <a href="#BudgetProcess" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Budget Process</span></a></li>
-                    <li class="breadcrumb-item active"><a title="click to go on"> Budget Utilization Report</a></li>
+                        <li class="breadcrumb-item"><a href="#BudgetProcess" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Budget Process</span></a></li>
+                        <li class="breadcrumb-item active"><a title="click to go on">Budget Utilization Report</a></li>
                     </ol>
                 </div>
             </div>
@@ -38,25 +38,27 @@
                     </div>
                 </div>
                 <div class="card-body">
-     <fieldset>
+                    <fieldset>
                         <legend>Budget Utilization Report /
                                 बजट उपयोगिता रिपोर्ट</legend>
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                    Select Financial Year <br />
+                                        Select Financial Year
+                                        <br />
                                         वित्तीय वर्ष का चयन करें<span style="color: red;"> *</span></label>
                                     <input maxlength="4" autocomplete="off" class="form-control datepickerYear" placeholder="2024-25" type="text" data-val="true" value="2024-25" />
                                 </div>
                             </div>
-                             <div class="col-md-3">
+                            <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                    Select Month <br />
+                                        Select Month
+                                        <br />
                                         माह का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
-                                         <option value="6">June </option>
+                                        <option value="6">June </option>
                                         <option value="1">January </option>
                                         <option value="2">February</option>
                                         <option value="3">March </option>
@@ -75,7 +77,8 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Head Type <br />
+                                        Select Head Type
+                                        <br />
                                         हेड प्रकार का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                         <option value="2">Expense</option>
@@ -87,47 +90,47 @@
                                     <label>
                                         Select Office Type
    <br />
-                                         कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
+                                        कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
                                     </label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
                                         <option value="1">Head Office</option>
-                                        <option value="2"> JD Office</option>
+                                        <option value="2">JD Office</option>
                                         <option value="3">DEO Office</option>
                                         <option value="4">Block Office</option>
                                         <option value="5">Sankul</option>
                                         <option value="6">School</option>
                                     </select>
                                 </div>
-                            </div></div>
-                            <div class="row">
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Select Office Name<br />
-                                कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
-                            <select class="form-control select2">
+                                <div class="form-group">
+                                    <label>
+                                        Select Office Name<br />
+                                        कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
+                                    <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
                                         <option value="1">Jabalpur</option>
-                                        <option value="2"> Indore</option>
+                                        <option value="2">Indore</option>
                                         <option value="3">Bhopal</option>
                                         <option value="4">Gwalior</option>
                                         <option value="5">Hoshangabad</option>
                                     </select>
-                        </div>
-                    </div>
-
-                            <hr />
-                            <div class="col-md-12 justify-content-center">
-                            <div class="form-group text-center">
-                                <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="document.getElementById('FS_Details').style.display = 'block';">Search</button>
-                                <a id="clearfirst" href="BudgetUtilizationReport.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
+                                </div>
                             </div>
-                        </div>
+                            <div class="col-md-12">
+                                <hr />
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="document.getElementById('FS_Details').style.display = 'block';">Search</button>
+                                    <a id="clearfirst" href="BudgetUtilizationReport.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
+                                </div>
+                            </div>
 
                         </div>
                     </fieldset>
-                      <fieldset id="FS_Details" style="display: none">
+                    <fieldset id="FS_Details" style="display: none">
                         <legend>Budget Utilization Report /
                                 बजट उपयोगिता जानकारी</legend>
                         <div class="row">
@@ -138,7 +141,7 @@
                                 </div>
                             </div>
                         </div>
-                          <div class="row justify-content-center">
+                        <div class="row justify-content-center">
                             <h5>Budget Utilization Report(April -24-25)<br />
                                 [Head Office]
                             </h5>
@@ -150,19 +153,21 @@
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
                                             <tr align="center" valign="middle">
-                                                <th>Sr. No. <br />
+                                                <th>Sr. No.
+                                                    <br />
                                                     क्रमांक
                                                 </th>
-                                                <th>Ledger Code 
+                                                <th>Budget Ledger Code 
                                             <br />
-                                                    बहीखाता कोड
-                                                <th>Ledger Name <br />
-                                                    बहीखाता का नाम</th>
-                                                <th>Allocation 
+                                                  बजट बहीखाता कोड
+                                                <th>Budget Ledger Name
+                                                    <br />
+                                                   बजट बहीखाता का नाम</th>
+                                                <th>Budget Allocation Amount
                                             <br />
-                                                    आवंटन राशि 
+                                                   बजट आवंटन राशि 
                                                 </th>
-                                                <th>Utilization 
+                                                <th>Utilization Amount
                                             <br />
                                                     उपयोगी राशि
                                                 </th>
@@ -185,14 +190,14 @@
                                                 <td align="center" valign="middle">
                                                     <a>58745783.00</a>
                                                 </td>
-                                                 <td align="center" valign="middle">
+                                                <td align="center" valign="middle">
                                                     <a>9913187.50</a>
                                                 </td>
                                                 <td align="center" valign="middle">
                                                     <a>16.87%</a>
                                                 </td>
                                             </tr>
-                                          <tr role="row" class="odd">
+                                            <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>2</span>
                                                 </td>
                                                 <td align="center" valign="middle">
@@ -204,14 +209,14 @@
                                                 <td align="center" valign="middle">
                                                     <a>12985757.00</a>
                                                 </td>
-                                                 <td align="center" valign="middle">
+                                                <td align="center" valign="middle">
                                                     <a>0.00</a>
                                                 </td>
                                                 <td align="center" valign="middle">
                                                     <a>0.00%</a>
                                                 </td>
                                             </tr>
-                                             <tr role="row" class="odd">
+                                            <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>3</span>
                                                 </td>
                                                 <td align="center" valign="middle">
@@ -223,7 +228,7 @@
                                                 <td align="center" valign="middle">
                                                     <a>12985757.00</a>
                                                 </td>
-                                                 <td align="center" valign="middle">
+                                                <td align="center" valign="middle">
                                                     <a>0.00</a>
                                                 </td>
                                                 <td align="center" valign="middle">
@@ -241,13 +246,13 @@
 
 
                 </div>
-                 </div>
-             </div>
-         </div>
+            </div>
+        </div>
+    </div>
 
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" Runat="Server">
-       <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script>
         $('.datepickerYear').datepicker({

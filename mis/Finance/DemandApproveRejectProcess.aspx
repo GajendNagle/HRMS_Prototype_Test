@@ -29,8 +29,8 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h4 class="card-title">Demand Request Process /
-                                मांग अनुरोध प्रक्रिया</h4>
+                            <h4 class="card-title">Budget Demand Request Process /
+                               बजट  मांग अनुरोध प्रक्रिया</h4>
                         </div>
                     </div>
                 </div>
@@ -113,15 +113,13 @@
                                     </select>
                         </div>
                     </div>
-
+                            <div class="col-md-12">
                             <hr />
-                            <div class="col-md-12 justify-content-center">
-                            <div class="form-group text-center">
+                            <div class="form-group">
                                 <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="document.getElementById('FS_Details').style.display = 'block';">Search</button>
-                                <a id="clearfirst" href="DemandApproveRejectProcess.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
+                                <a id="clearfirstbtn" href="DemandApproveRejectProcess.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
                             </div>
                         </div>
-
                         </div>
                     </fieldset>
                         <fieldset id="FS_Details" style="display: none">
@@ -143,7 +141,6 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="table-responsive">
-
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
                                             <tr align="center" valign="middle">
@@ -153,22 +150,22 @@
                                                 <th>Check Box <br />
                                                     चेक बॉक्स
                                                 </th>
-                                                <th>Ledger Code 
+                                                <th>Budget Ledger Code 
                                             <br />
-                                                    बहीखाता कोड
-                                                <th>Ledger Name<br />
-                                                    बहीखाता का नाम</th>
-                                                <th>Date 
+                                                   बजट बहीखाता कोड
+                                                <th>Budget Ledger Name<br />
+                                                   बजट बहीखाता का नाम</th>
+                                                <th>Budget Request Date 
                                             <br />
-                                                    दिनांक 
+                                                   बजट मांग दिनांक 
                                                 </th>
-                                                <th>Date Wise Total Amount 
+                                                <th>Budget Request Amount 
                                             <br />
-                                                    दिनांकवार कुल राशि
+                                                    बजट मांग राशि
                                                 </th>
                                                 <th>Status 
                                             <br />
-                                                    कार्यवाही
+                                                    स्तिथि
                                                 </th>
                                             </tr>
                                         </thead>

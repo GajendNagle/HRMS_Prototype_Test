@@ -103,9 +103,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-12">
                         <hr />
-                        <div class="col-md-12 justify-content-center">
-                            <div class="form-group text-center">
+                            <div class="form-group">
                                 <button type="button" class="btn btn-outline-success btn-border w-lg Alert-Save" onclick="document.getElementById('FS_Details').style.display = 'block';">Submit</button>
                                 <a id="clearfirst" href="BudgetAllocationReport.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
                             </div>
@@ -140,16 +140,16 @@
                                                 <th>Sr. No. <br />
                                                     क्रमांक	
                                                 </th>
-                                                <th>Ledger Code 
+                                                <th>Budget Ledger Code 
                                             <br />
-                                                    बहीखाता कोड</th>
-                                                <th>Ledger Name 
+                                                   बजट बहीखाता कोड</th>
+                                                <th>Budget Ledger Name 
                                             <br />
-                                                    बहीखाता का नाम
+                                                   बजट बहीखाता का नाम
                                                 </th>
-                                                <th> Allocation Amount
+                                                <th>Budget Allocation Amount
                                             <br />
-                                                    आवंटन राशि
+                                                   बजट आवंटन राशि
                                                 </th>
                                             </tr>
                                         </thead>

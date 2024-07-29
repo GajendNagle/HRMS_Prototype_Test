@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="DemandDetails.aspx.cs" Inherits="mis_Finance_DemandDetails" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" Runat="Server">
-     <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -16,15 +16,15 @@
                         <li class="breadcrumb-item">
                             <a href="#Finance" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Finance</span></a>
                         </li>
-                        <li class="breadcrumb-item"> <a href="#DemandProcess" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Demand Process</span></a></li>
-                    <li class="breadcrumb-item active"><a title="click to go on"> Demand Details </a></li>
+                        <li class="breadcrumb-item"><a href="#DemandProcess" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Demand Process</span></a></li>
+                        <li class="breadcrumb-item active"><a title="click to go on">Demand Details </a></li>
                     </ol>
 
                 </div>
             </div>
         </div>
     </div>
-     <div class="content-wrapper">
+    <div class="content-wrapper">
         <div class="container-fluid">
             <div class="card card-border-primary">
                 <div class="card-header">
@@ -36,25 +36,27 @@
                     </div>
                 </div>
                 <div class="card-body">
-                     <fieldset>
+                    <fieldset>
                         <legend>Demand Details /
                                 मांग राशि विवरण</legend>
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                    Select Financial Year <br />
-                                        वित्तीय वर्ष का चयन करें<span style="color: red;"> *</span></label>
+                                        Select Financial Year
+                                        <br />
+                                        वित्तीय वर्ष का चयन करें<span style="color: red;">*</span></label>
                                     <input maxlength="4" autocomplete="off" class="form-control datepickerYear" placeholder="2024-25" type="text" data-val="true" value="2024-25" />
                                 </div>
                             </div>
-                             <div class="col-md-3">
+                            <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                    Select Month <br />
-                                        माह का चयन करें<span style="color: red;"> *</span></label>
+                                        Select Month
+                                        <br />
+                                        माह का चयन करें<span style="color: red;">*</span></label>
                                     <select class="form-control select2">
-                                         <option value="6">June </option>
+                                        <option value="6">June </option>
                                         <option value="1">January </option>
                                         <option value="2">February</option>
                                         <option value="3">March </option>
@@ -73,8 +75,9 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Head Type <br />
-                                        हेड प्रकार का चयन करें<span style="color: red;"> *</span></label>
+                                        Select Head Type
+                                        <br />
+                                        हेड प्रकार का चयन करें<span style="color: red;">*</span></label>
                                     <select class="form-control select2">
                                         <option value="2">Expense</option>
                                     </select>
@@ -85,47 +88,47 @@
                                     <label>
                                         Select Office Type
    <br />
-                                         कार्यालय प्रकार का चयन करें<span style="color: red;"> *</span>
+                                        कार्यालय प्रकार का चयन करें<span style="color: red;">*</span>
                                     </label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
                                         <option value="1">Head Office</option>
-                                        <option value="2"> JD Office</option>
+                                        <option value="2">JD Office</option>
                                         <option value="3">DEO Office</option>
                                         <option value="4">Block Office</option>
                                         <option value="5">Sankul</option>
                                         <option value="6">School</option>
                                     </select>
                                 </div>
-                            </div></div>
-                            <div class="row">
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Select Office Name<br />
-                                कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
-                            <select class="form-control select2">
+                                <div class="form-group">
+                                    <label>
+                                        Select Office Name<br />
+                                        कार्यालय नाम का चयन करें<span style="color: red;">*</span></label>
+                                    <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
                                         <option value="1">Jabalpur</option>
-                                        <option value="2"> Indore</option>
+                                        <option value="2">Indore</option>
                                         <option value="3">Bhopal</option>
                                         <option value="4">Gwalior</option>
                                         <option value="5">Hoshangabad</option>
                                     </select>
-                        </div>
-                    </div>
-
-                            <hr />
-                            <div class="col-md-12 justify-content-center">
-                            <div class="form-group text-center">
-                                <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="document.getElementById('FS_Details').style.display = 'block';">Search</button>
-                                <a id="clearfirst" href="DemandDetails.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
+                                </div>
                             </div>
-                        </div>
+                            <div class="col-md-12">
+                                <hr />
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="document.getElementById('FS_Details').style.display = 'block';">Search</button>
+                                    <a id="clearfirst" href="DemandDetails.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
+                                </div>
+                            </div>
 
                         </div>
                     </fieldset>
-                        <fieldset id="FS_Details" style="display: none">
+                    <fieldset id="FS_Details" style="display: none">
                         <legend>Demand Details /
                                 मांग राशि विवरण </legend>
                         <div class="row justify-content-end">
@@ -148,26 +151,27 @@
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
                                             <tr align="center" valign="middle">
-                                                <th>Sr. No. <br />
+                                                <th>Sr. No.
+                                                    <br />
                                                     क्रमांक
                                                 </th>
                                                 <th>Ledger Code 
                                             <br />
                                                     बहीखाता कोड
-                                                <th>Ledger Name <br />
-                                                    बहीखाता नाम</th>
-                                                <th>Date 
+                                                <th>Budget Ledger Name
+                                                    <br />
+                                                    बजट बहीखाता नाम</th>
+                                                <th>Budget Request Date 
                                             <br />
-                                                    दिनांक 
+                                                    बजट अनुरोध दिनांक
                                                 </th>
-                                                <th>Date Wise Total 
+                                                <th>Budget Amount
                                             <br />
-                                                    दिनांकवार राशि
+                                                    बजट राशि
                                                 </th>
-                                                <th>Status
+                                                <th>Status 
                                             <br />
-                                                    कार्यवाही
-                                                </th>
+                                                    स्तिथि
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -183,14 +187,14 @@
                                                 <td align="center" valign="middle">
                                                     <a>05-01-2023</a>
                                                 </td>
-                                                 <td align="center" valign="middle">
+                                                <td align="center" valign="middle">
                                                     <a>543000.00</a>
                                                 </td>
                                                 <td align="center" valign="middle">
                                                     <a>Pending</a>
                                                 </td>
                                             </tr>
-                                          <tr role="row" class="odd">
+                                            <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>2</span>
                                                 </td>
                                                 <td align="center" valign="middle">
@@ -202,14 +206,14 @@
                                                 <td align="center" valign="middle">
                                                     <a>04-04-2023</a>
                                                 </td>
-                                                 <td align="center" valign="middle">
+                                                <td align="center" valign="middle">
                                                     <a>100054.00</a>
                                                 </td>
                                                 <td align="center" valign="middle">
                                                     <a>Approve</a>
                                                 </td>
                                             </tr>
-                                        <tr role="row" class="odd">
+                                            <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>3</span>
                                                 </td>
                                                 <td align="center" valign="middle">
@@ -221,14 +225,14 @@
                                                 <td align="center" valign="middle">
                                                     <a>01-05-2023</a>
                                                 </td>
-                                                 <td align="center" valign="middle">
+                                                <td align="center" valign="middle">
                                                     <a>1000.00</a>
                                                 </td>
                                                 <td align="center" valign="middle">
                                                     <a>Approve</a>
                                                 </td>
                                             </tr>
-                                             <tr role="row" class="odd">
+                                            <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span></span>
                                                 </td>
                                                 <td align="center" valign="middle">
@@ -240,7 +244,7 @@
                                                 <td align="center" valign="middle">
                                                     <a><b>Total</b></a>
                                                 </td>
-                                                 <td align="center" valign="middle">
+                                                <td align="center" valign="middle">
                                                     <a>653054.00</a>
                                                 </td>
                                                 <td align="center" valign="middle">
@@ -261,8 +265,8 @@
     </div>
 
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" Runat="Server">
-     <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script>
         $('.datepickerYear').datepicker({
