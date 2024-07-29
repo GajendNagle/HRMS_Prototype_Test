@@ -8,9 +8,11 @@
             min-height: 40px; /* Set a minimum height */
         }
 
-        #tblReview3 th,#tblReview3 td {
+        #tblReview3 th, #tblReview3 td {
             font-size: medium;
-        }#tblAcceptingAuthority th,#tblAcceptingAuthority td {
+        }
+
+        #tblAcceptingAuthority th, #tblAcceptingAuthority td {
             font-size: medium;
         }
 
@@ -283,31 +285,31 @@
                                                             <span class="fw-bold">09-03-2024</span>
                                                         </div>
                                                         <div class="col-md-12 mb-5">
-                                                            <h4 class="text-center mt-3 font-bold"><u>: : Part-3 Review (To Be Filled By Reviewing Authorities) : :</u></h4>
+                                                            <h5 class="text-center mt-3 font-bold"><u>: : Part-3 Review (To Be Filled By Reviewing Authorities) : :</u></h5>
                                                             <h6 class="text-center mt-2 font-bold"><u>: : भाग-3 समीक्षक अधिकारी द्वारा भरा जाये : :</u></h6>
                                                         </div>
                                                     </div>
-                                                        <table id="tblReview3" class="table table-bordered modal-table table-st fs-5">
-                                                            <tr class="mt-3">
+                                                    <table id="tblReview3" class="table table-bordered modal-table table-st fs-5">
+                                                        <tr class="mt-3">
 
-                                                                <th>Do you agree with the remarks of the reporting officer ?<br />
-                                                                    क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|</th>
-                                                                <td class="text-center ">Yes/हाँ</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th>If no or agree partially give reasons for disagreement<br />
-                                                                    यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण</th>
-                                                                <td class="text-center ">Nil</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th>Grading<br />
-                                                                    ग्रेड</th>
-                                                                <td class="text-center ">Outstanding/उत्कृष्ट</td>
-                                                            </tr>
-                                                        </table>
+                                                            <th>Do you agree with the remarks of the reporting officer ?<br />
+                                                                क्या आप प्रतिवेदक अधिकारी के रिमार्क से सहमत है|</th>
+                                                            <td class="text-center ">Yes/हाँ</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>If no or agree partially give reasons for disagreement<br />
+                                                                यदि नही या आंशिक रूप से सहमत होने पर सहमति का कारण</th>
+                                                            <td class="text-center ">Nil</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Grading<br />
+                                                                ग्रेड</th>
+                                                            <td class="text-center ">Outstanding/उत्कृष्ट</td>
+                                                        </tr>
+                                                    </table>
 
-                                                    <h3 class="text-center mt-4 mb-4 font-bold"><u>:: Information filled by the Accepting Authority::<br />
-                                                        <span class="fs-5">:: भाग-4 स्वीकृत अधिकारी द्वारा भरी गई जानकारी ::</span></u></h3>
+                                                    <h5 class="text-center mt-4 mb-4 font-bold"><u>:: Information filled by the Accepting Authority::<br /></h5>
+                                                        <h6 class="text-center mt-2 font-bold"><u>:: भाग-4 स्वीकृत अधिकारी द्वारा भरी गई जानकारी ::</u></h6>
                                                 </div>
                                                 <table id="tblAcceptingAuthority" class="table table-bordered table-st fs-5">
                                                     <tr class="mt-3">
@@ -407,7 +409,7 @@
                                 <div class="row">
 
                                     <div class="col-md-12">
-                                        <h3 class="text-center mt-3 font-bold"><u>:: Information filled by reporting officer ::</u></h3>
+                                        <h3 class="text-center mt-3 fw-500"><u>:: Information filled by reporting officer ::</u></h3>
                                         <h5 class="text-center  mb-3 font-medium"><u>:: प्रतिवेदक अधिकारी/रिपोर्टिंग अधिकारी द्वारा भरी गई जानकारी ::</u></h5>
                                     </div>
 
@@ -449,8 +451,8 @@
                                                 <tr>
                                                     <td class="text-center fw-medium">1</td>
                                                     <td>
-                                                        <h4 class="fw-medium">Completion of curriculum<br />
-                                                            पाठ्यक्रम को पूरा करना</h4>
+                                                        <h6 class="fw-400">Completion of curriculum<br />
+                                                            पाठ्यक्रम को पूरा करना</h6>
                                                     </td>
                                                     <td class="text-center fw-medium">15</td>
                                                     <td class="text-center fw-medium">10</td>
@@ -460,20 +462,20 @@
                                                 <tr>
                                                     <td class="text-center fw-medium">2</td>
                                                     <td>
-                                                        <h4 class="fw-medium">Improving attendance of children<br />
-                                                            छात्र उपस्थिति में वृध्दि</h4>
+                                                        <h6 class="font-bold">Improving attendance of children<br />
+                                                            छात्र उपस्थिति में वृध्दि</h6>
                                                     </td>
                                                     <td class="text-center fw-medium">05</td>
                                                     <td class="text-center fw-medium">3</td>
-                                                    <td class="fw-medium">hardworking student </td>
+                                                    <td class="fw-400">hardworking student </td>
                                                 </tr>
                                                 <tr>
 
                                                     <td class="text-center fw-medium" rowspan="7">3</td>
                                                     <td>
-                                                        <h4 class="fw-medium">Role in academic<br />
+                                                        <h6 class="fw-400">Role in academic<br />
                                                             अकादमिक कार्यो में भूमिका:-<br />
-                                                        </h4>
+                                                        </h6>
 
                                                     </td>
                                                     <td class="text-center fw-medium" rowspan="7" style="vertical-align: middle;">30</td>
@@ -486,7 +488,7 @@
                                                         शिक्षण सहायक सामग्री का उपयोग</td>
                                                     <td class="text-center fw-medium">5
                                                     </td>
-                                                    <td class="fw-medium">hardworking student</td>
+                                                    <td class="fw-400">hardworking student</td>
 
 
 
@@ -546,8 +548,8 @@
                                                 <tr>
                                                     <td class="text-center fw-medium" rowspan="4">4</td>
                                                     <td>
-                                                        <h4 class="fw-medium">Extracurricular activities<br />
-                                                            पाठयेत्तर गतिविधियो में भूमिका:-</h4>
+                                                        <h6 class="fw-medium">Extracurricular activities<br />
+                                                            पाठयेत्तर गतिविधियो में भूमिका:-</h6>
 
 
                                                     </td>
@@ -582,8 +584,8 @@
 
                                                     <td class="text-center fw-medium" rowspan="5">5</td>
                                                     <td>
-                                                        <h4 class="fw-medium">Individual Qualities<br />
-                                                            व्यक्तिगत विशिष्टताये:-</h4>
+                                                        <h6 class="fw-medium">Individual Qualities<br />
+                                                            व्यक्तिगत विशिष्टताये:-</h6>
                                                     </td>
                                                     <td class="text-center fw-medium" rowspan="5" style="vertical-align: middle;">30</td>
                                                     <td colspan="2"></td>
@@ -621,8 +623,8 @@ relations<br />
 
                                                     <td class="text-center">6</td>
                                                     <td>
-                                                        <h4 class="fw-medium">Participation in academic tranning<br />
-                                                            अवधि में प्रशिक्षण में सहभागिता </h4>
+                                                        <h6 class="fw-medium">Participation in academic tranning<br />
+                                                            अवधि में प्रशिक्षण में सहभागिता </h6>
                                                     </td>
                                                     <td class="text-center fw-medium">05</td>
                                                     <td class="text-center fw-medium">3</td>
@@ -631,11 +633,12 @@ relations<br />
                                                 <tr>
                                                     <td class="text-center fw-medium">7</td>
                                                     <td>
-                                                        <h5 class="fw-medium">Total<br />
-                                                        योग</td>
-                                                    </h5>
+                                                        <h6 class="fw-medium">Total<br />
+                                                            योग
+                                                        </h6>
+                                                    </td>
 
-                                            <td class="text-center">100</td>
+                                                    <td class="text-center">100</td>
                                                     <td class="text-center">81</td>
                                                     <td>hardworking student</td>
                                                 </tr>
@@ -655,10 +658,10 @@ relations<br />
                                     </div>
 
                                     <div class="col-12">
-                                        <table class="table table-bordered table-st fs-5 modal-table">
+                                        <table class="table table-bordered table-st modal-table">
                                             <tr class="mt-3">
 
-                                                <th>Allegiance 
+                                                <th class="font-bold">Allegiance 
                                                     <br />
                                                     सन्निष्ठा</th>
                                                 <td class="text-center ">Nil</td>
@@ -743,8 +746,8 @@ relations<br />
                                     </div>
 
                                     <div class="col-md-12">
-                                        <h4 class="text-center mt-2 mb-2 font-bold"><u>:: For Teacher's Cadre (Class 1st to 12th)::<br />
-                                            <span class="fs-5">:: शिक्षक संवर्ग के लिए कक्षा 1 से 12 ::</span></u></h4>
+                                        <h5 class="text-center mt-2 mb-2 font-bold"><u>:: For Teacher's Cadre (Class 1st to 12th)::<br />
+                                            <span class="fs-5">:: शिक्षक संवर्ग के लिए कक्षा 1 से 12 ::</span></u></h5>
                                     </div>
                                     <div class="col-12">
 
@@ -829,8 +832,8 @@ relations<br />
                                 <div class="row">
                                     <div class="col-12">
 
-                                        <h4 class="text-center mt-2 mb-2 font-bold">:: <u>Self-Evaluation ::<br />
-                                            <span class="fs-5">:: स्वमूल्यांकन ::</span></u></h4>
+                                        <h5 class="text-center mt-2 mb-2 font-bold">:: <u>Self-Evaluation ::<br />
+                                            <span class="fs-5">:: स्वमूल्यांकन ::</span></u></h5>
                                     </div>
                                     <div class="col-12">
 
