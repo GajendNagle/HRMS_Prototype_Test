@@ -3,8 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-  
-     <div class="row">
+
+    <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
@@ -16,8 +16,8 @@
                         <li class="breadcrumb-item">
                             <a href="#Finance" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Finance</span></a>
                         </li>
-                       <li class="breadcrumb-item"> <a href="#BudgetProcess" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Budget Process</span></a></li>
-                    <li class="breadcrumb-item active"><a title="click to go on"> Budget Allocation Report </a></li>
+                        <li class="breadcrumb-item"><a href="#BudgetProcess" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Budget Process</span></a></li>
+                        <li class="breadcrumb-item active"><a title="click to go on">Budget Allocation Report </a></li>
                     </ol>
                 </div>
             </div>
@@ -44,7 +44,8 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select From Date <br />
+                                        Select From Date
+                                        <br />
                                         प्रारंभिक दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="date" class="form-control" autocomplete="off" value="2024-12-10" />
                                 </div>
@@ -52,7 +53,8 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select To Date <br />
+                                        Select To Date
+                                        <br />
                                         अंतिम दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="date1" class="form-control" autocomplete="off" value="2024-12-10" />
                                 </div>
@@ -60,7 +62,8 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Head Type <br />
+                                        Select Head Type
+                                        <br />
                                         हेड प्रकार का चयन करें<span style="color: red;"> *</span></label>
                                     <select class="form-control select2">
                                         <option value="2">Expense</option>
@@ -102,12 +105,12 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                        <hr />
-                            <div class="form-group">
-                                <button type="button" class="btn btn-outline-success btn-border w-lg Alert-Save" onclick="document.getElementById('FS_Details').style.display = 'block';">Submit</button>
-                                <a id="clearfirst" href="BudgetAllocationReport.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
+                            <div class="col-md-12">
+                                <hr />
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-outline-success btn-border w-lg Alert-Save" onclick="document.getElementById('FS_Details').style.display = 'block';">Submit</button>
+                                    <a id="clearfirst" href="BudgetAllocationReport.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
+                                </div>
                             </div>
                         </div>
                     </fieldset>
@@ -137,19 +140,20 @@
                                     <table class="table table-bordered" id="mainTable">
                                         <thead>
                                             <tr align="center" valign="middle">
-                                                <th>Sr. No. <br />
+                                                <th>Sr. No.
+                                                    <br />
                                                     क्रमांक	
                                                 </th>
                                                 <th>Budget Ledger Code 
                                             <br />
-                                                   बजट बहीखाता कोड</th>
+                                                    बजट बहीखाता कोड</th>
                                                 <th>Budget Ledger Name 
                                             <br />
-                                                   बजट बहीखाता का नाम
+                                                    बजट बहीखाता का नाम
                                                 </th>
                                                 <th>Budget Allocation Amount
                                             <br />
-                                                   बजट आवंटन राशि
+                                                    बजट आवंटन राशि
                                                 </th>
                                             </tr>
                                         </thead>

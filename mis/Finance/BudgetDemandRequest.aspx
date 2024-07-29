@@ -38,7 +38,7 @@
                         <legend>Budget Demand Request /
                                 बजट मांग राशि अनुरोध</legend>
                         <div class="row align-items-end">
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
                                         Select Demand Date
@@ -47,7 +47,7 @@
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="ContentBody_TextBox5" class="form-control" autocomplete="off" value="2024-10-12" />
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
                                         Select Head Type
@@ -58,7 +58,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
                                        Select Budget Ledger Name<br />
@@ -88,8 +88,8 @@
                                     <input type="text" id="wordOutput" class="form-control" placeholder="Amount in Words" readonly />
                                 </div>
                             </div>
-                            <hr />
                             <div class="col-md-12">
+                            <hr />
                                 <div class="form-group">
                                     <button type="button" class="btn btn-outline-success btn-border w-lg Alert-Save" onclick="document.getElementById('FS_Details').style.display = 'block';">Add</button>
                                     <a id="clearfirst" href="BudgetDemandRequest.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
@@ -129,9 +129,9 @@
                                                 <th>Head Code 
                                             <br />
                                                     हेड कोड</th>
-                                                <th>Ledger Name 
+                                                <th>Budget Ledger Name 
                                             <br />
-                                                    बहीखाता नाम
+                                                   बजट बहीखाता नाम
                                                 </th>
                                                 <th>Amount Request 
                                             <br />
