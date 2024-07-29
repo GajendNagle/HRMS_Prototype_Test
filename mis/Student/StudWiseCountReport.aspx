@@ -2,6 +2,11 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <style>
+        tbody{
+            text-align:center;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
@@ -264,8 +269,9 @@
                                             स्थानांतरण प्रमाणपत्र जारी करने वाले छात्रों की कुल संख्या</th>
                                     </tr>
                                 </thead>
-                            <%-- <tbody  id="tbody_districtTable"></tbody>
-                         --%>       <tbody>
+                                <%-- <tbody  id="tbody_districtTable"></tbody>
+                                --%>
+                                <tbody>
                                     <tr class="text-center">
                                         <td>1</td>
                                         <td>2024-2025</td>
@@ -275,10 +281,17 @@
                                         <td>MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS/23320400117</td>
                                         <td>GOVT HSS Sironj/23340603802</td>
                                         <td>10th</td>
-                                        <td>50</td>
-                                        <td class="text-info">5</td>
-                                        <td class="text-info">3</td>
-                                        <td class="text-info">2</td>
+                                        <td>8</td>
+                                        <td>
+                                            <button id="tdbtn1" class="bg-transparent  text-info" style="border: none !important;" type="button" onclick="forwardTo = 'tdbtn1'; DivHide2()" data-bs-toggle="modal" data-bs-target="#EmpModal">5</button>
+                                        </td>
+                                        <td class="text-info">
+                                            <button id="tdbtn2" class="bg-transparent  text-info" style="border: none !important;" type="button" onclick="forwardTo = 'tdbtn2'; DivHide2()" data-bs-toggle="modal" data-bs-target="#EmpModal">3</button>
+                                        </td>
+                                        <td class="text-info">
+                                            <button id="tdbtn3" class="bg-transparent  text-info" style="border: none !important;" type="button" onclick="forwardTo = 'tdbtn3'; DivHide2()" data-bs-toggle="modal" data-bs-target="#EmpModal">2</button>
+                                        </td>
+
 
                                     </tr>
                                     <tr class="text-center">
@@ -291,9 +304,15 @@
                                         <td>GOVT HSS KHAJURI KALAN/23320303134</td>
                                         <td>11th</td>
                                         <td>11</td>
-                                        <td class="text-info">7</td>
-                                        <td class="text-info">4</td>
-                                        <td class="text-info">3</td>
+                                        <td>
+                                            <button id="tdbtn4" class="bg-transparent  text-info" style="border: none !important;" type="button" onclick="forwardTo = 'tdbtn4'; DivHide2()" data-bs-toggle="modal" data-bs-target="#EmpModal">7</button>
+                                        </td>
+                                        <td class="text-info">
+                                            <button id="tdbtn5" class="bg-transparent  text-info" style="border: none !important;" type="button" onclick="forwardTo = 'tdbtn5'; DivHide2()" data-bs-toggle="modal" data-bs-target="#EmpModal">4</button>
+                                        </td>
+                                        <td class="text-info">
+                                            <button id="tdbtn6" class="bg-transparent  text-info" style="border: none !important;" type="button" onclick="forwardTo = 'tdbtn6'; DivHide2()" data-bs-toggle="modal" data-bs-target="#EmpModal">3</button>
+                                        </td>
 
                                     </tr>
                                     <tr class="text-center">
@@ -306,9 +325,15 @@
                                         <td>PHANDA, PRINCIPAL, GOVT. HS/0502003027 </td>
                                         <td>9th</td>
                                         <td>9</td>
-                                        <td class="text-info">6</td>
-                                        <td class="text-info">3</td>
-                                        <td class="text-info">3</td>
+                                        <td>
+                                            <button id="tdbtn7" class="bg-transparent  text-info" style="border: none !important;" type="button" onclick="forwardTo = 'tdbtn7'; DivHide2()" data-bs-toggle="modal" data-bs-target="#EmpModal">6</button>
+                                        </td>
+                                        <td class="text-info">
+                                            <button id="tdbtn8" class="bg-transparent  text-info" style="border: none !important;" type="button" onclick="forwardTo = 'tdbtn8'; DivHide2()" data-bs-toggle="modal" data-bs-target="#EmpModal">3</button>
+                                        </td>
+                                        <td class="text-info">
+                                            <button id="tdbtn9" class="bg-transparent  text-info" style="border: none !important;" type="button" onclick="forwardTo = 'tdbtn9'; DivHide2()" data-bs-toggle="modal" data-bs-target="#EmpModal">3</button>
+                                        </td>
 
                                     </tr>
                                     <tr class="text-center">
@@ -319,11 +344,17 @@
                                         <td>Sironj</td>
                                         <td>Geetanjali Public School/23320400117</td>
                                         <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
-                                        <td>9th</td>
+                                        <td>12th</td>
                                         <td>20</td>
-                                        <td class="text-info">10</td>
-                                        <td class="text-info">10</td>
-                                        <td class="text-info">5</td>
+                                        <td>
+                                            <button id="tdbtn10" class="bg-transparent  text-info" style="border: none !important;" type="button" onclick="forwardTo = 'tdbtn10'; DivHide2()" data-bs-toggle="modal" data-bs-target="#EmpModal">10</button>
+                                        </td>
+                                        <td class="text-info">
+                                            <button id="tdbtn11" class="bg-transparent  text-info" style="border: none !important;" type="button" onclick="forwardTo = 'tdbtn11'; DivHide2()" data-bs-toggle="modal" data-bs-target="#EmpModal">10</button>
+                                        </td>
+                                        <td class="text-info">
+                                            <button id="tdbtn12" class="bg-transparent  text-info" style="border: none !important;" type="button" onclick="forwardTo = 'tdbtn12'; DivHide2()" data-bs-toggle="modal" data-bs-target="#EmpModal">5</button>
+                                        </td>
 
                                     </tr>
                                 </tbody>
@@ -335,70 +366,520 @@
             </fieldset>
 
             <div class="modal fade" id="EmpModal" tabindex="-1" role="dialog" aria-labelledby="EmpModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title" id="EmpModalLabel">Handicapped Employees-<span id="ModaldistName"></span></h3>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                </button>
-            </div>
-            <div class="modal-body">
-                <fieldset>
-                    <legend>Details / विवरण
-</legend>
-             
-                <div class="row justify-content-end">
-                    <div class="col-md-6 text-end">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-55">Excel</button>
-                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="EmpModalLabel">Student Wise Counting Report / छात्रवार गणना रिपोर्ट<span id="ModaldistName"></span></h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>Sr. No.<br />
-                                            सरल क्र.</th>
-                                        <th>Class<br />कक्षा</th>
-                                        <th>Student ID/Name<br />विद्यार्थी आईडी/नाम</th>
-                                       
-                                       
-                                        <th>School Name/Udise Code
+                        <div class="modal-body">
+                            <fieldset>
+                                <legend>Details / विवरण
+                                </legend>
+
+                                <div class="row justify-content-end">
+                                    <div class="col-md-6 text-end">
+                                        <div class="form-group">
+                                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered" id="Table2">
+                                                <thead>
+                                                    <tr class="text-center">
+                                                        <th>Sr. No.<br />
+                                                            सरल क्र.</th>
+                                                        <th>Class<br />
+                                                            कक्षा</th>
+                                                        <th>Student ID/Name<br />
+                                                            विद्यार्थी आईडी/नाम</th>
+
+
+                                                        <th>School Name/Udise Code
                                             <br />
-                                           स्कूल का नाम/यू डाइस कोड </th>
-                                        <th>Status<br />
-                                            स्थिति</th>
-                                       
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
+                                                            स्कूल का नाम/यू डाइस कोड </th>
+                                                        <th>Status<br />
+                                                            स्थिति</th>
 
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="tbody1" style="display: none;">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>10th</td>
+                                                        <td>Neha Mishra/UID1123852 </td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>10th</td>
+                                                        <td>Shikha Shrivastav/UID1485252 </td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>10th</td>
+                                                        <td>Shivani Roy/UID1455852 </td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>10th</td>
+                                                        <td>Shalvi Shingh/UID147852 </td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>10th</td>
+                                                        <td>Shivansh Roy/UID14562552 </td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody id="tbody2" style="display: none;">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>10th</td>
+                                                        <td>Shital Roy/UID147852 </td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>10th</td>
+                                                        <td>Ram Shrivastv/UID147852 </td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Fail</td>
 
-                            </table>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>10th</td>
+                                                        <td>Riya Gupts/UID147852 </td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody id="tbody3" style="display: none;">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>10th</td>
+                                                        <td>Shivani Roy/UID147852 </td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>10th</td>
+                                                        <td>Ram Shrivastv/UID147852 </td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody id="tbody4" style="display: none;">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>11th</td>
+                                                        <td>Indu Dubey/BID1123852 </td>
+                                                        <td>GOVT HSS KHAJURI KALAN/23320303134</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>11th</td>
+                                                        <td>Dilip Raghuwanshi/BID1123852 </td>
+                                                        <td>GOVT HSS KHAJURI KALAN/23320303134</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>11th</td>
+                                                        <td>Surya Bhushan Mishra/BID1123852 </td>
+                                                        <td>GOVT HSS KHAJURI KALAN/23320303134</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>11th</td>
+                                                        <td>Vishwa Nath Prasad Shukla/BID1123852 </td>
+                                                        <td>GOVT HSS KHAJURI KALAN/23320303134</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>11th</td>
+                                                        <td>Neha Mishra/BID1123852 </td>
+                                                        <td>GOVT HSS KHAJURI KALAN/23320303134</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>11th</td>
+                                                        <td>Neha Mishra/BID1123852 </td>
+                                                        <td>GOVT HSS KHAJURI KALAN/23320303134</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>11th</td>
+                                                        <td>Girija Shankar/BID1123852 </td>
+                                                        <td>GOVT HSS KHAJURI KALAN/23320303134</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody id="tbody5" style="display: none;">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>11th</td>
+                                                        <td>Shail Gupta/RIT789346</td>
+                                                        <td>GOVT HSS KHAJURI KALAN/23320303134</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>11th</td>
+                                                        <td>Sukhendra Prasad Kurmi/RIT789346</td>
+                                                        <td>GOVT HSS KHAJURI KALAN/23320303134</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>11th</td>
+                                                        <td>PRIYANKA MEHRA /RIT789346</td>
+                                                        <td>GOVT HSS KHAJURI KALAN/23320303134</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>11th</td>
+                                                        <td>Binay Kumar Jayswal/RIT789346</td>
+                                                        <td>GOVT HSS KHAJURI KALAN/23320303134</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody id="tbody6" style="display: none;">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>11th</td>
+                                                        <td>Shivani Roy/UID147852 </td>
+                                                        <td>GOVT HSS KHAJURI KALAN/23320303134</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>11th</td>
+                                                        <td>Ram Shrivastv/UID147852 </td>
+                                                        <td>GOVT HSS KHAJURI KALAN/23320303134</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>11th</td>
+                                                        <td>Ram Shrivastv/UID147852 </td>
+                                                        <td>GOVT HSS KHAJURI KALAN/23320303134</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody id="tbody7" style="display: none;">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>9th</td>
+                                                        <td>Indu Dubey/BID1123852 </td>
+                                                        <td>PHANDA, PRINCIPAL, GOVT. HS/0502003027</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>9th</td>
+                                                        <td>Dilip Raghuwanshi/BID1123852 </td>
+                                                        <td>PHANDA, PRINCIPAL, GOVT. HS/0502003027</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>9th</td>
+                                                        <td>Surya Bhushan Mishra/BID1123852 </td>
+                                                        <td>PHANDA, PRINCIPAL, GOVT. HS/0502003027</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>9th</td>
+                                                        <td>Vishwa Nath Prasad Shukla/BID1123852 </td>
+                                                        <td>PHANDA, PRINCIPAL, GOVT. HS/0502003027</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>9th</td>
+                                                        <td>Neha Mishra/BID1123852 </td>
+                                                        <td>PHANDA, PRINCIPAL, GOVT. HS/0502003027</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>9th</td>
+                                                        <td>Neha Mishra/BID1123852 </td>
+                                                        <td>PHANDA, PRINCIPAL, GOVT. HS/0502003027</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody id="tbody8" style="display: none;">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>9th</td>
+                                                        <td>Shital Roy/UID147852 </td>
+                                                        <td>PHANDA, PRINCIPAL, GOVT. HS/0502003027</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>9th</td>
+                                                        <td>Ram Shrivastv/UID147852 </td>
+                                                        <td>PHANDA, PRINCIPAL, GOVT. HS/0502003027</td>
+                                                        <td>Fail</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>9th</td>
+                                                        <td>Riya Gupts/UID147852 </td>
+                                                        <td>PHANDA, PRINCIPAL, GOVT. HS/0502003027</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody id="tbody9" style="display: none;">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>9th</td>
+                                                        <td>Shivani Roy/UID147852 </td>
+                                                        <td>PHANDA, PRINCIPAL, GOVT. HS/0502003027</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>9th</td>
+                                                        <td>Ram Shrivastv/UID147852 </td>
+                                                        <td>PHANDA, PRINCIPAL, GOVT. HS/0502003027</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>9th</td>
+                                                        <td>Ram Shrivastv/UID147852 </td>
+                                                        <td>PHANDA, PRINCIPAL, GOVT. HS/0502003027</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody id="tbody10" style="display: none;">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>12th</td>
+                                                        <td>Indu Dubey/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>12th</td>
+                                                        <td>Dilip Raghuwanshi/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>12th</td>
+                                                        <td>Surya Bhushan Mishra/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>12th</td>
+                                                        <td>Vishwa Nath Prasad Shukla/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>12th</td>
+                                                        <td>Neha Mishra/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>12th</td>
+                                                        <td>Neha Mishra/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>12th</td>
+                                                        <td>Girija Shankar/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8</td>
+                                                        <td>12th</td>
+                                                        <td>Shail Gupta/RIT789346</td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>9</td>
+                                                        <td>12th</td>
+                                                        <td>Sukhendra Prasad Kurmi/RIT789346</td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10</td>
+                                                        <td>12th</td>
+                                                        <td>PRIYANKA MEHRA /RIT789346</td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody id="tbody11" style="display: none;">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>12th</td>
+                                                        <td>Indu Dubey/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>12th</td>
+                                                        <td>Dilip Raghuwanshi/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>12th</td>
+                                                        <td>Surya Bhushan Mishra/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>12th</td>
+                                                        <td>Vishwa Nath Prasad Shukla/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>12th</td>
+                                                        <td>Neha Mishra/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>12th</td>
+                                                        <td>Neha Mishra/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>12th</td>
+                                                        <td>Girija Shankar/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8</td>
+                                                        <td>12th</td>
+                                                        <td>Shail Gupta/RIT789346</td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>9</td>
+                                                        <td>12th</td>
+                                                        <td>Sukhendra Prasad Kurmi/RIT789346</td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10</td>
+                                                        <td>12th</td>
+                                                        <td>PRIYANKA MEHRA /RIT789346</td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody id="tbody12" style="display: none;">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>12th</td>
+                                                        <td>Indu Dubey/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>12th</td>
+                                                        <td>Dilip Raghuwanshi/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>12th</td>
+                                                        <td>Surya Bhushan Mishra/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>12th</td>
+                                                        <td>Vishwa Nath Prasad Shukla/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Fail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>12th</td>
+                                                        <td>Neha Mishra/BID1123852 </td>
+                                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                                        <td>Pass</td>
+                                                    </tr>
+
+                                                </tbody>
+
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
-                       </fieldset>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
 
         </div>
     </div>
@@ -554,7 +1035,34 @@
             fs_Details.style.display = "block";
         }
     </script>
+    <script>
+        var forwardToBodyMap = {
+            'tdbtn1': 'tbody1',
+            'tdbtn2': 'tbody2',
+            'tdbtn3': 'tbody3',
+            'tdbtn4': 'tbody4',
+            'tdbtn5': 'tbody5',
+            'tdbtn6': 'tbody6',
+            'tdbtn7': 'tbody7',
+            'tdbtn8': 'tbody8',
+            'tdbtn9': 'tbody9',
+            'tdbtn10': 'tbody10',
+            'tdbtn11': 'tbody11',
+            'tdbtn12': 'tbody12'
+        };
 
-    
+        function DivHide2() {
+            var bodyId = forwardToBodyMap[forwardTo];
+            if (bodyId) {
+                for (var i = 1; i <= 12; i++) {
+                    document.getElementById('tbody' + i).style.display = (bodyId === 'tbody' + i) ? '' : 'none';
+                }
+            } else {
+                console.log("Invalid value for forwardTo: " + forwardTo);
+            }
+        }
+    </script>
+
+
 </asp:Content>
 

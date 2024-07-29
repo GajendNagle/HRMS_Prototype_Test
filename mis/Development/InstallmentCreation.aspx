@@ -77,92 +77,92 @@
                 <legend>Project Approval & Installment Creation /परियोजना अनुमोदन एवं किस्त निर्माण </legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
-                            <label>
-                                From Date<br />
-                                प्रारंभिक दिनांक से<span style="color: red">*</span></label>
-                            <input type="date" id="Fdate" name="birthday" class="form-control">
-                        </div>
-                    <div class="col-md-3">
-                            <label>
-                                To Date
-             <br />
-                                अंतिम दिनांक तक<span style="color: red">*</span></label>
-                            <input type="date" id="Tdate" name="birthday" class="form-control">
-                        </div>
-                    <div class="col-md-3">
-                            <label>
-                                Select District Name<br />
-                                ज़िला के नाम का चयन करें<span style="color: red">*</span></label>
-                            <select name="ctl00$ContentBody$ctl02" class="form-control select2">
-
-                                <option value="Select">Select</option>
-                                <option value="Bhopal">Bhopal</option>
-                                <option value="Raisen">Raisen</option>
-                                <option value="Rajgarh">Rajgarh</option>
-                                <option value="Sehore">Sehore</option>
-                                <option value="Vidisha">Vidisha</option>
-                                <option value="Ashoknagar">Ashoknagar</option>
-                                <option value="Shivpuri">Shivpuri</option>
-                                <option value="Datia">Datia</option>
-                                <option value="Guna">Guna</option>
-                                <option value="Gwalior">Gwalior</option>
-                                <option value="Harda">Harda</option>
-                                <option value="Hoshangabad">Hoshangabad</option>
-                                <option value="Betul">Betul</option>
-                                <option value="Morena">Morena</option>
-                                <option value="Sheopur">Sheopur</option>
-                                <option value="Bhind">Bhind</option>
-                                <option value="Barwani">Barwani</option>
-                                <option value="Burhanpur">Burhanpur</option>
-                                <option value="Dhar">Dhar</option>
-                                <option value="Indore">Indore</option>
-                                <option value="Jhabua">Jhabua</option>
-                                <option value="Khandwa">Khandwa</option>
-                                <option value="Khargone">Khargone</option>
-                                <option value="Alirajpur">Alirajpur</option>
-                                <option value="Balaghat">Balaghat</option>
-                                <option value="Chhindwara">Chhindwara</option>
-                                <option value="Jabalpur">Jabalpur</option>
-                                <option value="Katni">Katni</option>
-                                <option value="Mandla">Mandla</option>
-                                <option value="Narsinghpur">Narsinghpur</option>
-                                <option value="Seoni">Seoni</option>
-                                <option value="Rewa">Rewa</option>
-                                <option value="Satna">Satna</option>
-                                <option value="Sidhi">Sidhi</option>
-                                <option value="Singroli">Singroli</option>
-                                <option value="Chhatarpur">Chhatarpur</option>
-                                <option value="Damoh">Damoh</option>
-                                <option value="Panna">Panna</option>
-                                <option value="Sagar">Sagar</option>
-                                <option value="Tikamgarh">Tikamgarh</option>
-                                <option value="Shahdol">Shahdol</option>
-                                <option value="Umaria">Umaria</option>
-                                <option value="Dindori">Dindori</option>
-                                <option value="Anuppur">Anuppur</option>
-                                <option value="Dewas">Dewas</option>
-                                <option value="Mandsaur">Mandsaur</option>
-                                <option value="Neemuch">Neemuch</option>
-                                <option value="Ratlam">Ratlam</option>
-                                <option value="Shajapur">Shajapur</option>
-                                <option value="Ujjain">Ujjain</option>
-                            </select>
-                        </div>
-
-                    <div class="col-md-3">
-                            <label>
-                                Select Work Category
-        <br />
-                                कार्य की श्रेणी का चयन करें<span style="color: red">*</span></label>
-                            <select id="work-category" class="form-control select2">
-                                <option value="--Select--">--Select--</option>
-                                <option value="A">स्कूल मरम्मत/निर्माण</option>
-                                <option value="B">पेयजल व्यवस्था</option>
-                                <option value="C">स्कूल मार्ग निर्माण</option>
-                                <option value="D">अन्य कार्य</option>
-                            </select>
-                        </div>
+                        <label>
+                            From Date<br />
+                            प्रारंभिक दिनांक से<span style="color: red">*</span></label>
+                        <input type="date" id="Fdate" name="birthday" class="form-control">
                     </div>
+                    <div class="col-md-3">
+                        <label>
+                            To Date
+             <br />
+                            अंतिम दिनांक तक<span style="color: red">*</span></label>
+                        <input type="date" id="Tdate" name="birthday" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            Select District Name<br />
+                            ज़िला के नाम का चयन करें<span style="color: red">*</span></label>
+                        <select name="ctl00$ContentBody$ctl02" class="form-control select2">
+
+                            <option value="Select">Select</option>
+                            <option value="Bhopal">Bhopal</option>
+                            <option value="Raisen">Raisen</option>
+                            <option value="Rajgarh">Rajgarh</option>
+                            <option value="Sehore">Sehore</option>
+                            <option value="Vidisha">Vidisha</option>
+                            <option value="Ashoknagar">Ashoknagar</option>
+                            <option value="Shivpuri">Shivpuri</option>
+                            <option value="Datia">Datia</option>
+                            <option value="Guna">Guna</option>
+                            <option value="Gwalior">Gwalior</option>
+                            <option value="Harda">Harda</option>
+                            <option value="Hoshangabad">Hoshangabad</option>
+                            <option value="Betul">Betul</option>
+                            <option value="Morena">Morena</option>
+                            <option value="Sheopur">Sheopur</option>
+                            <option value="Bhind">Bhind</option>
+                            <option value="Barwani">Barwani</option>
+                            <option value="Burhanpur">Burhanpur</option>
+                            <option value="Dhar">Dhar</option>
+                            <option value="Indore">Indore</option>
+                            <option value="Jhabua">Jhabua</option>
+                            <option value="Khandwa">Khandwa</option>
+                            <option value="Khargone">Khargone</option>
+                            <option value="Alirajpur">Alirajpur</option>
+                            <option value="Balaghat">Balaghat</option>
+                            <option value="Chhindwara">Chhindwara</option>
+                            <option value="Jabalpur">Jabalpur</option>
+                            <option value="Katni">Katni</option>
+                            <option value="Mandla">Mandla</option>
+                            <option value="Narsinghpur">Narsinghpur</option>
+                            <option value="Seoni">Seoni</option>
+                            <option value="Rewa">Rewa</option>
+                            <option value="Satna">Satna</option>
+                            <option value="Sidhi">Sidhi</option>
+                            <option value="Singroli">Singroli</option>
+                            <option value="Chhatarpur">Chhatarpur</option>
+                            <option value="Damoh">Damoh</option>
+                            <option value="Panna">Panna</option>
+                            <option value="Sagar">Sagar</option>
+                            <option value="Tikamgarh">Tikamgarh</option>
+                            <option value="Shahdol">Shahdol</option>
+                            <option value="Umaria">Umaria</option>
+                            <option value="Dindori">Dindori</option>
+                            <option value="Anuppur">Anuppur</option>
+                            <option value="Dewas">Dewas</option>
+                            <option value="Mandsaur">Mandsaur</option>
+                            <option value="Neemuch">Neemuch</option>
+                            <option value="Ratlam">Ratlam</option>
+                            <option value="Shajapur">Shajapur</option>
+                            <option value="Ujjain">Ujjain</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label>
+                            Select Work Category
+        <br />
+                            कार्य की श्रेणी का चयन करें<span style="color: red">*</span></label>
+                        <select id="work-category" class="form-control select2">
+                            <option value="--Select--">--Select--</option>
+                            <option value="A">स्कूल मरम्मत/निर्माण</option>
+                            <option value="B">पेयजल व्यवस्था</option>
+                            <option value="C">स्कूल मार्ग निर्माण</option>
+                            <option value="D">अन्य कार्य</option>
+                        </select>
+                    </div>
+                </div>
                 <div class="row align-items-end">
                     <div class="col-md-3" id="school-subcategory-container">
 
@@ -201,7 +201,7 @@
                                 परियोजना कोड</label>
                             <select id="Project_Code" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
-                                 <option value="D" selected="selected">All</option>
+                                <option value="D" selected="selected">All</option>
                                 <option value="A">P00017</option>
                                 <option value="B">P00018</option>
                                 <option value="C">P00019</option>
@@ -524,102 +524,102 @@ onclick="">Reject</button>--%>
         </div>
     </div>
 
-            <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header" style="background-color: var(--vz-primary);">
-                            <img id="imgLogoP2" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
-                            <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel1">Document / दस्तावेज</h3>
-                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <fieldset>
-                                <input type="hidden" asp-for="PrevEmpId" id="hdnPrevEmpId" />
-                                <input type="hidden" asp-for="CompassionId" id="hdnCompassionId" />
-                                <legend>Work Related Important Document / कार्य संबंधी आवश्यक दस्तावेज</legend>
-                                <div class="row">
-                                    <%--<div>
+    <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: var(--vz-primary);">
+                    <img id="imgLogoP2" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
+                    <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel1">Document / दस्तावेज</h3>
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <input type="hidden" asp-for="PrevEmpId" id="hdnPrevEmpId" />
+                        <input type="hidden" asp-for="CompassionId" id="hdnCompassionId" />
+                        <legend>Work Related Important Document / कार्य संबंधी आवश्यक दस्तावेज</legend>
+                        <div class="row">
+                            <%--<div>
             <h5 style="font-weight: 200;">Note :<span style="color: red;"> Please upload a PDF or JPG file that is less than 500 KB in size.</span></h5>
         </div>--%>
-                                    <div class="col-md-12 mt-3">
-                                        <table class="table table-bordered table-responsive-lg">
-                                            <thead>
-                                                <th>Sr.No.<br />
-                                                    सरल क्रमांक</th>
-                                                <th>Document Name
+                            <div class="col-md-12 mt-3">
+                                <table class="table table-bordered table-responsive-lg">
+                                    <thead>
+                                        <th>Sr.No.<br />
+                                            सरल क्रमांक</th>
+                                        <th>Document Name
                     <br />
-                                                    दस्तावेज का नाम</th>
+                                            दस्तावेज का नाम</th>
 
-                                                <th class="text-center">View Document
+                                        <th class="text-center">View Document
                     <br />
-                                                    दस्तावेज देंखे</th>
+                                            दस्तावेज देंखे</th>
 
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td><b>Techincal Document
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><b>Techincal Document
                         <br />
-                                                        तकनीकी दस्तावेज़  </b></td>
+                                                तकनीकी दस्तावेज़  </b></td>
 
 
-                                                    <td class="text-center">
-                                                        <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+                                            <td class="text-center">
+                                                <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
 
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td><b>Upload Civil Document
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><b>Upload Civil Document
                         <br />
-                                                        सिविल दस्तावेज अपलोड करें </b></td>
+                                                सिविल दस्तावेज अपलोड करें </b></td>
 
 
-                                                    <td class="text-center">
-                                                        <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+                                            <td class="text-center">
+                                                <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
 
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td><b>Upload Elecrtrical Document
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td><b>Upload Elecrtrical Document
                         <br />
-                                                        इलेक्ट्रिकल दस्तावेज अपलोड करें </b></td>
+                                                इलेक्ट्रिकल दस्तावेज अपलोड करें </b></td>
 
 
-                                                    <td class="text-center">
-                                                        <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+                                            <td class="text-center">
+                                                <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
 
-                                                </tr>
-                                                <tr>
-                                                    <td>4</td>
-                                                    <td><b>Upload Project Document
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td><b>Upload Project Document
                         <br />
-                                                        परियोजना के दस्तावेज अपलोड करें </b></td>
+                                                परियोजना के दस्तावेज अपलोड करें </b></td>
 
 
-                                                    <td class="text-center">
-                                                        <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+                                            <td class="text-center">
+                                                <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
 
-                                                </tr>
-                                                <tr>
-                                                    <td>5</td>
-                                                    <td><b>Upload Other Document
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td><b>Upload Other Document
                         <br />
-                                                        अन्य दस्तावेज अपलोड करें </b></td>
+                                                अन्य दस्तावेज अपलोड करें </b></td>
 
-                                                    <td class="text-center">
-                                                        <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+                                            <td class="text-center">
+                                                <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
 
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </fieldset>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-
-                    </div>
+                    </fieldset>
                 </div>
+
             </div>
+        </div>
+    </div>
 
     <div class="modal" id="WorkDescription">
         <div class="modal-dialog">

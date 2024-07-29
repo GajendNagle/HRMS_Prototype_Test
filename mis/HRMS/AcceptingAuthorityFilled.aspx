@@ -5,7 +5,7 @@
         #workdescription2::-webkit-scrollbar {
             display: none;
         }
-       
+
 
         /*textarea {
             resize: vertical;
@@ -54,9 +54,11 @@
         </div>
     </div>
     <%--  <div class="row page-titles mb-4">--%>
-   <div class="row"><div class="col-md-5 ">
-          <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
-      </div></div>
+    <div class="row">
+        <div class="col-md-5 ">
+            <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
+        </div>
+    </div>
 
     <%--<div id="dv_Masters_LocationMasters" runat="server">
         <div class="row page-titles mb-4">
@@ -147,97 +149,98 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                        <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
-                            <thead>
-                                <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                    <th>S.No
+                            <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
+                                <thead>
+                                    <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
+                                        <th>S.No
                                             <br />
-                                        सरल क्र.</th>
-                                                                    <th>Financial Year<br />
-वित्तीय वर्ष</th>
-                                    <th>Unique ID/Name
+                                            सरल क्र.</th>
+                                        <th>Financial Year<br />
+                                            वित्तीय वर्ष</th>
+                                        <th>Unique ID/Name
                                             <br />
-                                        कर्मचारी आईडी/नाम </th>
-                                    <th>Date of Birth
+                                            कर्मचारी आईडी/नाम </th>
+                                        <th>Date of Birth
                                             <br />
-                                        जन्मतिथि</th>
-                                    <th>Designation 
+                                            जन्मतिथि</th>
+                                        <th>Designation 
                                             <br />
-                                        पदनाम</th>
-                                    <th>Dise Code of Institution
+                                            पदनाम</th>
+                                        <th>Dise Code of Institution
                                             <br />
-                                        संस्थान का डाइस कोड</th>
-                                    <th>View Employee Application
+                                            संस्थान का डाइस कोड</th>
+                                        <th>View Employee Application
                                             <br />
-                                        कर्मचारी का आवेदन देखें</th>
-                                    <th>View Reporting Officer Application
+                                            कर्मचारी का आवेदन देखें</th>
+                                        <th>View Reporting Officer Application
                                             <br />
-                                        रिपोर्टिंग अधिकारी का आवेदन देखें</th>
-                                    <th>ACR Form
+                                            रिपोर्टिंग अधिकारी का आवेदन देखें</th>
+                                        <th>ACR Form
                                             <br />
-                                        एसीआर फॉर्म</th>
-                                    <%--<th>Action
+                                            एसीआर फॉर्म</th>
+                                        <%--<th>Action
                                             <br />
                                             कार्रवाई</th>--%>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr valign="middle">
-                                    <td>1</td>
-                                      <td>2023-2024</td>
-                                    <td>गोपाल वर्मा/<br />
-                                        EDP4454445</td>
-                                    <td>22/07/1989</td>
-                                    <td>सहायक शिक्षक</td>
-                                    <td>DPI/456656356</td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                            <i class="fa fa-eye" aria-hidden="true"></i>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                                            <i class="fa fa-eye" aria-hidden="true"></i>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <asp:Button runat="server" type="button" class=" btn btn-success btn-rounded" Text="Fill ACR Report" OnClick="Unnamed_Click" />
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr valign="middle">
+                                        <td>1</td>
+                                        <td>2023-2024</td>
+                                        <td>गोपाल वर्मा/<br />
+                                            EDP4454445</td>
+                                        <td>22/07/1989</td>
+                                        <td>सहायक शिक्षक</td>
+                                        <td>DPI/456656356</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <asp:Button runat="server" type="button" class=" btn btn-success btn-rounded" Text="Fill ACR Report" OnClick="Unnamed_Click" />
 
-                                    </td>
-                                    <%-- <td>
+                                        </td>
+                                        <%-- <td>
                                             <button type="button" class="btn btn-danger btn-rounded" data-toggle="modal" data-target="#myModal">Reject</button></td>--%>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr valign="middle">
-                                    <td>2</td>
-                                    <td>2023-2024</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr valign="middle">
+                                        <td>2</td>
+                                        <td>2023-2024</td>
 
-                                    <td>सागर गुप्ता/<br />
-                                        EDP78974445</td>
-                                    <td>28/09/1989</td>
-                                    <td>सहायक शिक्षक</td>
-                                    <td>DPI/456656356</td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                            <i class="fa fa-eye" aria-hidden="true"></i>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                                            <i class="fa fa-eye" aria-hidden="true"></i>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <asp:Button runat="server" type="button" class=" btn btn-success btn-rounded" Text="Fill ACR Report" OnClick="Unnamed_Click1" />
-                                    </td>
-                                    <%--  <td>
+                                        <td>सागर गुप्ता/<br />
+                                            EDP78974445</td>
+                                        <td>28/09/1989</td>
+                                        <td>सहायक शिक्षक</td>
+                                        <td>DPI/456656356</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <asp:Button runat="server" type="button" class=" btn btn-success btn-rounded" Text="Fill ACR Report" OnClick="Unnamed_Click1" />
+                                        </td>
+                                        <%--  <td>
                                             <button type="button" class="btn btn-danger btn-rounded" data-toggle="modal" data-target="#myModal">Reject</button></td>--%>
-                                </tr>
-                            </tbody>
-                        </table>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div></div>
+                </div>
 
 
             </fieldset>
@@ -898,7 +901,7 @@
                                             </tr>
 
 
-                                           <%-- <tr valign="middle">
+                                            <%-- <tr valign="middle">
                                                 <td>1</td>
                                                 <td>पहली कक्षा</td>
                                                 <td>हिंदी</td>
@@ -1001,7 +1004,7 @@
                                                 <td>12</td>
 
                                             </tr>
-                                           <%-- <tr valign="middle">
+                                            <%-- <tr valign="middle">
                                                 <td>6
                                                 </td>
                                                 <td>छटवी कक्षा
@@ -1061,7 +1064,7 @@
                                                 <td>8</td>
 
                                             </tr>
-                                       <%--     <tr valign="middle">
+                                            <%--     <tr valign="middle">
                                                 <td>9
                                                 </td>
                                                 <td>नव्वी कक्षा
@@ -1104,7 +1107,7 @@
                                                 <td>12</td>
 
                                             </tr>
-                                       <%--     <tr valign="middle">
+                                            <%--     <tr valign="middle">
                                                 <td>11
                                                 </td>
                                                 <td>ग्यारवी कक्षा
@@ -1469,7 +1472,7 @@
                 <div class="modal-body">
                     <div runat="server" id="Div1">
                         <fieldset>
-                               <legend>To be filled by reporting officer / प्रतिवेदक अधिकारी/रिपोर्टिंग अधिकारी द्वारा भरा जाये </legend>
+                            <legend>To be filled by reporting officer / प्रतिवेदक अधिकारी/रिपोर्टिंग अधिकारी द्वारा भरा जाये </legend>
                             <div class="fw-bold">Please give comment of agreement or disagreement on the achievement mentioned by the officer reported upon in self assessment.Please give reasons in case of disagreement and refer to communication made to the officer reported upon in this regard</div>
                             <div class="fw-bold">आवेदक अधिकारी/शिक्षक द्वारा स्वमूल्यांकन में उल्लेखित उपलब्धि के संबंध में सहमति/असहमति की टिप्पणी | असहमति की स्थिति में कारण एवं इस संबंध में किये गये पत्राचार का विवरण एवं स्केल पॉइंट में प्रदर्शन </div>
                             <br />
@@ -1479,66 +1482,65 @@
                                     <asp:TextBox runat="server" CssClass="form-control fw-bold" placeholder="गोपाल वर्मा/EDP4454445"></asp:TextBox>
                                 </div>
                             </div>
-                          
-                         
-                                                                <table class="table table-bordered mt-3">
-                        <thead>
-                            <tr>
 
-                                <th>S.No.<br />
-                                    सरल क्र.</th>
-                                <th>Achievement shown in self assessment<br />
-                                    स्वमूल्यांकन में दर्शित उपलब्धि</th>
-                                <th>Scale Point<br />
-                                    स्केल बिन्दु</th>
-                                <th>Assessment<br />
-                                    मूल्यांकन</th>
-                                <th style="width:400px;">Remark<br />
-                                    अभियुक्ति</th>
-                            </tr>
-                        </thead>
-                        <tr>
-                            <td class="text-center" style="position: relative; top: 10px">1</td>
-                            <td class="fw-bold">
-                                Completion of curriculum<br />
-                                    पाठ्यक्रम को पूरा करना
-                            </td>
-                            <td class="text-center">15</td>
-                            <td class="text-center">
-                                <asp:TextBox runat="server" placeholder="10" CssClass="form-control w-100 text-center"></asp:TextBox>
 
-                            </td>
-                            <td>
-                                <textarea
-                                    class="form-control  w-100" placeholder="Hardworking Student" id="workdescription9" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
+                            <table class="table table-bordered mt-3">
+                                <thead>
+                                    <tr>
 
-                            </td>
+                                        <th>S.No.<br />
+                                            सरल क्र.</th>
+                                        <th>Achievement shown in self assessment<br />
+                                            स्वमूल्यांकन में दर्शित उपलब्धि</th>
+                                        <th>Scale Point<br />
+                                            स्केल बिन्दु</th>
+                                        <th>Assessment<br />
+                                            मूल्यांकन</th>
+                                        <th style="width: 400px;">Remark<br />
+                                            अभियुक्ति</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td class="text-center" style="position: relative; top: 10px">1</td>
+                                    <td class="fw-bold">Completion of curriculum<br />
+                                        पाठ्यक्रम को पूरा करना
+                                    </td>
+                                    <td class="text-center">15</td>
+                                    <td class="text-center">
+                                        <asp:TextBox runat="server" placeholder="10" CssClass="form-control w-100 text-center"></asp:TextBox>
 
-                        </tr>
-                        <tr>
-                            <td class="text-center" style="position: relative; top: 10px">2</td>
-                            <td class="fw-bold">
-                               Improving attendance <br />of children<br />
-                                    छात्र उपस्थिति में वृध्दि
-                            </td>
-                            <td class="text-center">05</td>
-                             <td class="text-center">
-                                <asp:TextBox runat="server" placeholder="3" CssClass="form-control text-center w-100"></asp:TextBox></td>
-                            <td>
-                              <textarea
-     class="form-control  w-100" placeholder="Hardworking Student" id="workdescription9" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
-                                </td>
+                                    </td>
+                                    <td>
+                                        <textarea
+                                            class="form-control  w-100" placeholder="Hardworking Student" id="workdescription9" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
 
-                        </tr>
+                                    </td>
 
-                        <tr>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" style="position: relative; top: 10px">2</td>
+                                    <td class="fw-bold">Improving attendance
+                                        <br />
+                                        of children<br />
+                                        छात्र उपस्थिति में वृध्दि
+                                    </td>
+                                    <td class="text-center">05</td>
+                                    <td class="text-center">
+                                        <asp:TextBox runat="server" placeholder="3" CssClass="form-control text-center w-100"></asp:TextBox></td>
+                                    <td>
+                                        <textarea
+                                            class="form-control  w-100" placeholder="Hardworking Student" id="workdescription9" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
+                                    </td>
 
-                            <td class="text-center" style="position: relative; top: 130px" rowspan="6">3</td>
-                            <td class="fw-bold">
-                               Role in academic<br />
-                                    अकादमिक कार्यो में भूमिका:-<br />
-                              
-                               <%-- (a) Use of teaching learning aid<br />
+                                </tr>
+
+                                <tr>
+
+                                    <td class="text-center" style="position: relative; top: 130px" rowspan="6">3</td>
+                                    <td class="fw-bold">Role in academic<br />
+                                        अकादमिक कार्यो में भूमिका:-<br />
+
+                                        <%-- (a) Use of teaching learning aid<br />
                                 शिक्षण सहायक सामग्री का उपयोग<br />
                                 (b)Use of lesson plan<br />
                                 पाठय योजना का उपयोग<br />
@@ -1550,9 +1552,9 @@
                                 निदानात्मक शिक्षण<br />
                                 (f)Extra classes<br />
                                 अतिरिक्त कक्षा संचालन<br />--%>
-                            </td>
-                            <td class="text-center" style="position: relative; top: 130px;" rowspan="6">30</td>
-                         <%--   <td style="position: relative; top: 40px;" class="text-center">
+                                    </td>
+                                    <td class="text-center" style="position: relative; top: 130px;" rowspan="6">30</td>
+                                    <%--   <td style="position: relative; top: 40px;" class="text-center">
                                 <asp:TextBox runat="server" placeholder="0" CssClass="form-control w-100 text-center"></asp:TextBox>
                                 <br />                     
                                 <asp:TextBox runat="server" placeholder="0" CssClass="form-control text-center mt-2 w-100"></asp:TextBox>
@@ -1562,45 +1564,61 @@
                                 <asp:TextBox runat="server" placeholder="0" CssClass="form-control text-center mt-2 w-100"></asp:TextBox><br />         
                                 <asp:TextBox runat="server" placeholder="0" CssClass="form-control text-center mt-2 w-100"></asp:TextBox><br />
                             </td>--%>
-                           
 
-                          <%--  <td style="position: relative; top: 40px;">
+
+                                    <%--  <td style="position: relative; top: 40px;">
                                 <textarea class="form-control  w-100" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
                                 <textarea class="form-control  mt-1 w-100" id="workdescription4" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
                                 <textarea class="form-control  mt-1 w-100" id="workdescription5" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
                                 <textarea class="form-control  mt-1 w-100" id="workdescription6" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
                                 <textarea class="form-control  mt-1 w-100" id="workdescription7" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
                                 <textarea class="form-control  mt-1 w-100" id="workdescription8" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>--%>
-                             <tr>
-                                 <td> (a) Use of teaching learning aid<br />
-                                शिक्षण सहायक सामग्री का उपयोग</td><td>  <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
-     <td> <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
- </tr>                            <tr>
-                                <td>  (b)Use of lesson plan<br />
- पाठय योजना का उपयोग</td><td>  <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
-    <td> <textarea class="form-control  w-100"  placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-</tr>                      
-                            <tr>
-                                <td>  (c)Innovation and Impact<br />
- नवाचार तथा उसका प्रभाव</td><td>  <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
-    <td> <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-</tr>                         
-                            <tr>
-                                <td>   (d)checking  of notebook of student<br />
-  छात्रो की अभ्यास पुस्तिका की जाँच</td><td>  <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
-    <td> <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-</tr>                            <tr>
-                                <td> (f)Extra classes<br />
-अतिरिक्त कक्षा संचालन</td><td>  <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
-    <td> <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-</tr>
-                        </tr>
-                       
-                        <tr>
-                            <td class="text-center" style="position: relative; top: 100px" rowspan="4">4</td>
-                            <td class="fw-bold">
-                               Extracurricular activities<br />
-                                    पाठयेत्तर गतिविधियो में भूमिका:-
+                                    <tr>
+                                        <td>(a) Use of teaching learning aid<br />
+                                            शिक्षण सहायक सामग्री का उपयोग</td>
+                                        <td>
+                                            <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
+                                        <td>
+                                            <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(b)Use of lesson plan<br />
+                                            पाठय योजना का उपयोग</td>
+                                        <td>
+                                            <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
+                                        <td>
+                                            <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(c)Innovation and Impact<br />
+                                            नवाचार तथा उसका प्रभाव</td>
+                                        <td>
+                                            <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
+                                        <td>
+                                            <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(d)checking  of notebook of student<br />
+                                            छात्रो की अभ्यास पुस्तिका की जाँच</td>
+                                        <td>
+                                            <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
+                                        <td>
+                                            <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(f)Extra classes<br />
+                                            अतिरिक्त कक्षा संचालन</td>
+                                        <td>
+                                            <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
+                                        <td>
+                                            <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    </tr>
+                                </tr>
+
+                                <tr>
+                                    <td class="text-center" style="position: relative; top: 100px" rowspan="4">4</td>
+                                    <td class="fw-bold">Extracurricular activities<br />
+                                        पाठयेत्तर गतिविधियो में भूमिका:-
 
                              <%--   (a)Sports/Literacy/Cultural Activities<br />
                                 खेल/साहित्यिक/सास्कृतिक गतिविधियाँ<br />
@@ -1608,9 +1626,9 @@
                                 स्वच्छता/पर्यावरण के क्षेत्र में किया गया कार्य<br />
                                 (c)Use of ICT in teaching and learning<br />
                                 शिक्षण एवं सिखाने में आई सी टी उपयोग--%>
-                            </td>
-                            <td class="text-center" style="position: relative; top: 100px;" rowspan="4">15</td>
-                          <%--  <td style="position: relative; top: 50px" class="text-center">
+                                    </td>
+                                    <td class="text-center" style="position: relative; top: 100px;" rowspan="4">15</td>
+                                    <%--  <td style="position: relative; top: 50px" class="text-center">
                                 <asp:TextBox runat="server" placeholder="0"  CssClass="form-control  text-center w-100"></asp:TextBox><br />
                                 <asp:TextBox runat="server" placeholder="0" CssClass="form-control  text-center mt-2 w-100"></asp:TextBox><br />
                                 <asp:TextBox runat="server" placeholder="0" CssClass="form-control  text-center mt-2 w-100"></asp:TextBox></td>
@@ -1618,30 +1636,39 @@
                                 <textarea class="form-control  w-100" id="workdescription17" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
                                 <textarea class="form-control  w-100  mt-1" id="workdescription18" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
                                 <textarea class="form-control  w-100  mt-1" id="workdescription19" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>--%>
-                                                      <tr>
-                                <td> (a)Sports/Literacy/Cultural Activities<br />
-                                खेल/साहित्यिक/सास्कृतिक गतिविधियाँ</td><td>  <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
-    <td> <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-</tr>
-                                                        <tr>
-                                <td> (b)Extra ordinary workin<br /> Hygiene/Environment<br />
-स्वच्छता/पर्यावरण के क्षेत्र में किया गया कार्य</td><td>  <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
-    <td> <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-</tr>
-                                                        <tr>
-                                <td>   (c)Use of ICT in teaching and learning<br />
-  शिक्षण एवं सिखाने में आई सी टी उपयोग</td><td>  <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
-    <td> <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-</tr>
+                                    <tr>
+                                        <td>(a)Sports/Literacy/Cultural Activities<br />
+                                            खेल/साहित्यिक/सास्कृतिक गतिविधियाँ</td>
+                                        <td>
+                                            <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
+                                        <td>
+                                            <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(b)Extra ordinary workin<br />
+                                            Hygiene/Environment<br />
+                                            स्वच्छता/पर्यावरण के क्षेत्र में किया गया कार्य</td>
+                                        <td>
+                                            <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
+                                        <td>
+                                            <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(c)Use of ICT in teaching and learning<br />
+                                            शिक्षण एवं सिखाने में आई सी टी उपयोग</td>
+                                        <td>
+                                            <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
+                                        <td>
+                                            <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    </tr>
 
-                        </tr>
+                                </tr>
 
-                        <tr>
+                                <tr>
 
-                            <td class="text-center" style="position: relative; top: 100px" rowspan="5">5</td>
-                            <td class="fw-bold">
-                                Individual Qualities<br />
-                                    व्यक्तिगत विशिष्टताये:-
+                                    <td class="text-center" style="position: relative; top: 100px" rowspan="5">5</td>
+                                    <td class="fw-bold">Individual Qualities<br />
+                                        व्यक्तिगत विशिष्टताये:-
 
 
                                <%-- (a)Attitude of work and <br />sense of responsibility<br />
@@ -1654,9 +1681,9 @@
                                     relations<br />
                                 टीम में टीम भावना में काम <br />करने की क्षमता एवं परस्परसंबंध--%>
 
-                            </td>
-                            <td class="text-center" style="position: relative; top: 100px;" rowspan="5">30</td>
-                         <%--   <td style="position: relative; top: 60px;" class="text-center">
+                                    </td>
+                                    <td class="text-center" style="position: relative; top: 100px;" rowspan="5">30</td>
+                                    <%--   <td style="position: relative; top: 60px;" class="text-center">
                                 <asp:TextBox runat="server" placeholder="0" CssClass="form-control  text-center   w-100"></asp:TextBox><br />
                                 <asp:TextBox runat="server" placeholder="0" CssClass="form-control  text-center mt-2 w-100"></asp:TextBox><br />
                                 <asp:TextBox runat="server" placeholder="0" CssClass="form-control  text-center  mt-2 w-100"></asp:TextBox><br />
@@ -1668,58 +1695,79 @@
                                 <textarea class="form-control  mt-1 " id="workdescription16" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
 
                             </td>--%>
-                                                        <tr>
-                                <td>(a)Attitude of work and <br />sense of responsibility<br />
-                                कार्य के प्रति अभिव्यक्ति एवं जिम्मेदारी का बोध</td><td>  <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
-    <td> <textarea class="form-control  w-100" placeholder="Hardworking Student"  id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-</tr>
-                                                        <tr>
-                                <td>    (d)Capacity to work in a team with<br /> team spirit and inter Personal
+                                    <tr>
+                                        <td>(a)Attitude of work and
+                                            <br />
+                                            sense of responsibility<br />
+                                            कार्य के प्रति अभिव्यक्ति एवं जिम्मेदारी का बोध</td>
+                                        <td>
+                                            <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
+                                        <td>
+                                            <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(d)Capacity to work in a team with<br />
+                                            team spirit and inter Personal
        relations<br />
-   टीम में टीम भावना में काम <br />करने की क्षमता एवं परस्परसंबंध</td><td>  <asp:TextBox runat="server" placeholder="3" CssClass="form-control w-100 text-center"></asp:TextBox></td>
-    <td> <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-</tr>
-                                                        <tr>
-                                <td>    (c)Communication skill<br />
-   संप्रेषण कौशल</td><td>  <asp:TextBox runat="server" placeholder="7" CssClass="form-control w-100 text-center"></asp:TextBox></td>
-    <td> <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-</tr>
-                                                        <tr>
-                                <td>   (d)Capacity to work in a team with<br /> team spirit and inter Personal
+                                            टीम में टीम भावना में काम
+                                            <br />
+                                            करने की क्षमता एवं परस्परसंबंध</td>
+                                        <td>
+                                            <asp:TextBox runat="server" placeholder="3" CssClass="form-control w-100 text-center"></asp:TextBox></td>
+                                        <td>
+                                            <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(c)Communication skill<br />
+                                            संप्रेषण कौशल</td>
+                                        <td>
+                                            <asp:TextBox runat="server" placeholder="7" CssClass="form-control w-100 text-center"></asp:TextBox></td>
+                                        <td>
+                                            <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(d)Capacity to work in a team with<br />
+                                            team spirit and inter Personal
        relations<br />
-   टीम में टीम भावना में काम <br />करने की क्षमता एवं परस्परसंबंध</td><td>  <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
-    <td> <textarea class="form-control  w-100" id="workdescription3" placeholder="Hardworking Student" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
-</tr>
-                        </tr>
-                        <tr>
+                                            टीम में टीम भावना में काम
+                                            <br />
+                                            करने की क्षमता एवं परस्परसंबंध</td>
+                                        <td>
+                                            <asp:TextBox runat="server" placeholder="5" CssClass="form-control w-100 text-center"></asp:TextBox></td>
+                                        <td>
+                                            <textarea class="form-control  w-100" id="workdescription3" placeholder="Hardworking Student" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    </tr>
+                                </tr>
+                                <tr>
 
-                            <td class="text-center mt-2">6</td>
-                            <td class="fw-bold">
-                                Participation in <br />academic tranning<br />
-                                    अवधि में प्रशिक्षण में सहभागिता 
-                            </td>
-                            <td class="text-center mt-2">05</td>
-                             <td class="text-center">
-                                <asp:TextBox runat="server" placeholder="3" CssClass="form-control text-center w-100"></asp:TextBox></td>
-                            <td>
-                                <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription12" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="text-center">7</td>
-                            <td class="text-center fw-bold">Total
+                                    <td class="text-center mt-2">6</td>
+                                    <td class="fw-bold">Participation in
+                                        <br />
+                                        academic tranning<br />
+                                        अवधि में प्रशिक्षण में सहभागिता 
+                                    </td>
+                                    <td class="text-center mt-2">05</td>
+                                    <td class="text-center">
+                                        <asp:TextBox runat="server" placeholder="3" CssClass="form-control text-center w-100"></asp:TextBox></td>
+                                    <td>
+                                        <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription12" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">7</td>
+                                    <td class="text-center fw-bold">Total
                                 <br />
-                                योग</td>
-                            <td class="text-center">
-                            100
+                                        योग</td>
+                                    <td class="text-center">
+                                    100
                              <td class="text-center">
-                                <asp:TextBox runat="server" placeholder="81" CssClass="form-control text-center w-100"></asp:TextBox></td>
-                            <td>
-                                <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription11" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
-                            </td>
-                        </tr>
+                                 <asp:TextBox runat="server" placeholder="81" CssClass="form-control text-center w-100"></asp:TextBox></td>
+                                    <td>
+                                        <textarea class="form-control  w-100" placeholder="Hardworking Student" id="workdescription11" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
+                                    </td>
+                                </tr>
 
-                    </table>
+                            </table>
 
 
                             <fieldset style="position: relative; right: 10px;">
@@ -1862,7 +1910,7 @@
                     })
                 });
             },
-                
+
                 $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
         }(window.jQuery),
             //initializing
