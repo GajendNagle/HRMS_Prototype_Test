@@ -165,7 +165,7 @@
 
                         <label>
                             <br>
-                            Date Of First Posting<br>
+                            Date of First Posting<br>
                             प्रथम नियुक्ति का दिनांक<span style="color: red;">*</span>
                         </label>
                         <input name="ctl00$ContentBody$txtFirstPosting" type="date" readonly="readonly" id="ContentBody_txtFirstPosting" class="form-control" autocomplete="off" value="1992-09-17">
@@ -202,9 +202,9 @@
                     <div class="col-md-3 ">
 
                         <label>
-                            Select  Date Of Promotion
+                            Select  Date of Promotion
                                                         <br>
-                            पदोन्नति की दिनांक का चयन करें <span style="color: red;">*</span>
+                            पदोन्नति की दिनांक का चयन करें<span style="color: red;">*</span>
                         </label>
                         <input name="ctl00$ContentBody$txtPrmaotion" type="date" id="ContentBody_txtPrmaotion" class="form-control " autocomplete="off" value="2024-01-23">
                     </div>
@@ -212,7 +212,7 @@
                     <div class="col-md-3 ">
 
                         <label>
-                            Select Date OF Filiing Of Annual Immovabel Property Return<br>
+                           Select Date of Filing of Annual Immovable Property Return<br>
                             स्थाई संपत्ती विवरण दाखिल करने का दिनांक का चयन करें <span style="color: red;">*</span>
                         </label>
                         <input name="ctl00$ContentBody$TextBox5" type="date" id="ContentBody_TextBox5" class="form-control" autocomplete="off" value="1989-12-10">

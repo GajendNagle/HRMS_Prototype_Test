@@ -644,9 +644,9 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <label>
-                                        <span class="fa-pull-left">Reasons, if any, fro not completing the target
+                                        <span class="fa-pull-left">Reasons, if any, for not completing the target
                                  <br />
-                                            लक्ष्य  प्राप्ति न होने के करण</span></label>
+                                            लक्ष्य  प्राप्ति न होने के कारण</span></label>
                                     <textarea class="form-control" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
                                 </div>
                             </div>
@@ -969,9 +969,9 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <label>
-                                        Reasons Of Not achieving target
+                                        Reasons of not achieving target
                                  <br />
-                                        लक्ष्य  से कम उपलब्धि के करण</label>
+                                        लक्ष्य  से कम उपलब्धि के कारण</label>
                                     <textarea class="form-control mb-2 fw-bold" id="workdescription1" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
                                 </div>
                             </div>
@@ -1159,9 +1159,9 @@
                                         <th>Extraacurricular Activities
                                    <br />
                                             पाठ्येत्तर गतिविधियों मे भूमिका
-                                   <br />
+                                
 
-                                            अकादमिक कार्यो में भूमिका</th>
+                                           </th>
                                         <th>Please give details of the notable works done on the following points<br />
                                             कृपया निम्नानुसार बिन्दुओ पर किए गए उल्लखनीय कार्यो का विवरण दे</th>
 

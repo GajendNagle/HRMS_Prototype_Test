@@ -258,7 +258,7 @@
                             <label>
                               Enter  Reasons, if any, for not completing the target 
                                 <br />
-                            लक्ष्य पूरा न कर पाने कारण यदि कोई हो तो उसे दर्ज करें  <span style="color: red">*</span></label>
+                            लक्ष्य पूरा न कर पाने के कारण, यदि कोई हो तो उसे दर्ज करें  <span style="color: red">*</span></label>
                             <textarea class="form-control" id="workdescription" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reasons  Maxmum 100 words"></textarea>
                         </div>
                     </div>
@@ -416,7 +416,7 @@ of annual examination result
                     <div class="row">
                         <div class="col-md-6">
                             <label>
-                             Enter  Reasons Of Not achieving target
+                             Enter  Reasons of not achieving target
                                 <br />
                                 लक्ष्य से कम उपलब्धि के कारण हो तो दर्ज करें<span style="color: red">*</span></label>
                             <textarea class="form-control mb-2" id="workdescription1" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reasons Maxmum 100 words"></textarea>
@@ -605,7 +605,7 @@ of annual examination result
 
 
                 <fieldset>
-                    <legend>Extraacurricular Activities / पाठ्येत्तर गतिविधियों मे भूमिका </legend>
+                    <legend>Extracurricular Activities / पाठ्येत्तर गतिविधियों मे भूमिका </legend>
 
                     <%-- <div class="row mt-3">
                         <div class="col-md-4">
@@ -636,7 +636,7 @@ of annual examination result
 
                                 <th>S.No.<br />
                                     सरल क्र.</th>
-                                <th>Extraacurricular Activities
+                                <th>Extracurricular Activities
                                     <br />
                                     पाठ्येत्तर गतिविधियों मे भूमिका
                                     <br />
@@ -686,7 +686,7 @@ of annual examination result
                 <br />
                 <div>
                     <fieldset>
-                        <legend>Academic trsining attended during  Appraisal period / प्रतिवेदित अवधि मे प्रशिक्षण मे  सहभागिता</legend>
+                        <legend>Academic training attended during  Appraisal period / प्रतिवेदित अवधि मे प्रशिक्षण मे  सहभागिता</legend>
 
                         <div class="row">
                             <div class="col-md-12">
@@ -710,13 +710,13 @@ of annual examination result
                                         <tr valign="middle">
                                             <td>1</td>
                                             <td>
-                                                <asp:TextBox runat="server" ID="D1" CssClass="form-control"></asp:TextBox></td>
+                                                <asp:TextBox runat="server" ID="D1" placeholder="Enter Name of Training" CssClass="form-control"></asp:TextBox></td>
                                             <td>
-                                                <asp:TextBox runat="server" ID="D2" CssClass="form-control"></asp:TextBox></td>
+                                                <asp:TextBox runat="server" ID="D2" placeholder="Enter Period of Training (Days)" CssClass="form-control"></asp:TextBox></td>
                                             <%-- <td>
                                                 <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox></td>--%>
                                             <td>
-                                                <asp:TextBox runat="server" ID="D3" CssClass="form-control"></asp:TextBox></td>
+                                                <asp:TextBox runat="server" ID="D3" placeholder="Enter Result/Grade" CssClass="form-control"></asp:TextBox></td>
                                             <td id="btnaction5">
 
                                                 <button type="button" onclick="addData5()" class="btn btn-success">Add</button></td>
@@ -772,11 +772,11 @@ of annual examination result
     <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header" style="background-color: var(--vz-primary);">
+                <div class="modal-header" >
 
                     <img src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
 
-                    <h3 class="modal-title  fw-bold  text-white ms-3">Send To Reporting Officer</h3>
+                    <h3 class="modal-title  fw-bold  ms-3">Send To Reporting Officer</h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -785,9 +785,9 @@ of annual examination result
                         <div class="row">
                             <div class="col-md-4">
                                 <label>
-                                    Reporting Officer Unique ID 
+                                 Enter Reporting Officer Unique ID 
                                  <br />
-                                    रिपोर्टिंग अधिकारी यूनिक आईडी<span style="color: red">*</span></label>
+                                    रिपोर्टिंग अधिकारी यूनिक आईडी दर्ज करें<span style="color: red">*</span></label>
                                 <asp:TextBox runat="server" AutoComplete="off" CssClass="form-control" onchange="myFunction()"></asp:TextBox>
 
                             </div>

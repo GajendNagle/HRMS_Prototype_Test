@@ -242,8 +242,8 @@
                                     स्केल बिन्दु</th>
                                 <th>Assessment<br />
                                     मूल्यांकन</th>
-                                <th style="width: 400px;">Remark<br />
-                                    अभियुक्ति</th>
+                                <th style="width: 400px;"> Remark (Note:-  Max length is between 0-100)<br />
+                                    टिप्पणी</th>
                             </tr>
                         </thead>
                         <tr>
@@ -258,7 +258,7 @@
                             </td>
                             <td>
                                 <textarea
-                                    class="form-control  w-100" id="workdescription9" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
+                                    class="form-control  w-100" id="workdescription9" rows="1" oninput="autoResize(this)"placeholder="Enter Remark " autocomplete="off"></textarea>
 
                             </td>
 
@@ -274,7 +274,7 @@
                             <td class="text-center">
                                 <asp:TextBox runat="server" placeholder="0" CssClass="form-control text-center w-100"></asp:TextBox></td>
                             <td>
-                                <textarea class="form-control  w-100" id="workdescription10" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                <textarea class="form-control  w-100" id="workdescription10" rows="1"placeholder="Enter Remark " oninput="autoResize(this)" autocomplete="off"></textarea></td>
 
                         </tr>
 
@@ -323,7 +323,7 @@
                                 <td>
                                     <asp:TextBox runat="server" placeholder="0" CssClass="form-control w-100 text-center"></asp:TextBox></td>
                                 <td>
-                                    <textarea class="form-control  w-100" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    <textarea class="form-control  w-100"placeholder="Enter Remark " id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                             </tr>
                             <tr>
                                 <td>(b)Use of lesson plan<br />
@@ -331,7 +331,7 @@
                                 <td>
                                     <asp:TextBox runat="server" placeholder="0" CssClass="form-control w-100 text-center"></asp:TextBox></td>
                                 <td>
-                                    <textarea class="form-control  w-100" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    <textarea class="form-control  w-100"placeholder="Enter Remark " id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                             </tr>
                             <tr>
                                 <td>(c)Innovation and Impact<br />
@@ -339,7 +339,7 @@
                                 <td>
                                     <asp:TextBox runat="server" placeholder="0" CssClass="form-control w-100 text-center"></asp:TextBox></td>
                                 <td>
-                                    <textarea class="form-control  w-100" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    <textarea class="form-control  w-100"placeholder="Enter Remark " id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                             </tr>
                             <tr>
                                 <td>(d)checking  of notebook of student<br />
@@ -347,7 +347,7 @@
                                 <td>
                                     <asp:TextBox runat="server" placeholder="0" CssClass="form-control w-100 text-center"></asp:TextBox></td>
                                 <td>
-                                    <textarea class="form-control  w-100" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    <textarea class="form-control  w-100"placeholder="Enter Remark " id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                             </tr>
                             <tr>
                                 <td>(f)Extra classes<br />
@@ -355,7 +355,7 @@
                                 <td>
                                     <asp:TextBox runat="server" placeholder="0" CssClass="form-control w-100 text-center"></asp:TextBox></td>
                                 <td>
-                                    <textarea class="form-control  w-100" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    <textarea class="form-control  w-100"placeholder="Enter Remark " id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                             </tr>
                         </tr>
 
@@ -386,7 +386,7 @@
                                 <td>
                                     <asp:TextBox runat="server" placeholder="0" CssClass="form-control w-100 text-center"></asp:TextBox></td>
                                 <td>
-                                    <textarea class="form-control  w-100" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    <textarea class="form-control  w-100"placeholder="Enter Remark " id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                             </tr>
                             <tr>
                                 <td>(b)Extra ordinary workin<br />
@@ -395,7 +395,7 @@
                                 <td>
                                     <asp:TextBox runat="server" placeholder="0" CssClass="form-control w-100 text-center"></asp:TextBox></td>
                                 <td>
-                                    <textarea class="form-control  w-100" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    <textarea class="form-control  w-100"placeholder="Enter Remark " id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                             </tr>
                             <tr>
                                 <td>(c)Use of ICT in teaching and learning<br />
@@ -403,7 +403,7 @@
                                 <td>
                                     <asp:TextBox runat="server" placeholder="0" CssClass="form-control w-100 text-center"></asp:TextBox></td>
                                 <td>
-                                    <textarea class="form-control  w-100" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    <textarea class="form-control  w-100"placeholder="Enter Remark " id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                             </tr>
 
                         </tr>
@@ -447,7 +447,7 @@
                                 <td>
                                     <asp:TextBox runat="server" placeholder="0" CssClass="form-control w-100 text-center"></asp:TextBox></td>
                                 <td>
-                                    <textarea class="form-control  w-100" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    <textarea class="form-control  w-100"placeholder="Enter Remark " id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                             </tr>
                             <tr>
                                 <td>(d)Capacity to work in a team with<br />
@@ -459,7 +459,7 @@
                                 <td>
                                     <asp:TextBox runat="server" placeholder="0" CssClass="form-control w-100 text-center"></asp:TextBox></td>
                                 <td>
-                                    <textarea class="form-control  w-100" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    <textarea class="form-control  w-100"placeholder="Enter Remark " id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                             </tr>
                             <tr>
                                 <td>(c)Communication skill<br />
@@ -467,7 +467,7 @@
                                 <td>
                                     <asp:TextBox runat="server" placeholder="0" CssClass="form-control w-100 text-center"></asp:TextBox></td>
                                 <td>
-                                    <textarea class="form-control  w-100" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    <textarea class="form-control  w-100"placeholder="Enter Remark " id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                             </tr>
                             <tr>
                                 <td>(d)Capacity to work in a team with<br />
@@ -479,7 +479,7 @@
                                 <td>
                                     <asp:TextBox runat="server" placeholder="0" CssClass="form-control w-100 text-center"></asp:TextBox></td>
                                 <td>
-                                    <textarea class="form-control  w-100" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
+                                    <textareaplaceholder="Enter Remark " class="form-control   w-100" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea></td>
                             </tr>
                         </tr>
                         <tr>
@@ -487,14 +487,14 @@
                             <td class="text-center mt-2">6</td>
                             <td class="fw-bold">Participation in
                                 <br />
-                                academic tranning<br />
+                                academic training<br />
                                 अवधि में प्रशिक्षण में सहभागिता 
                             </td>
                             <td class="text-center mt-2">05</td>
                             <td class="text-center">
                                 <asp:TextBox runat="server" placeholder="0" CssClass="form-control text-center w-100"></asp:TextBox></td>
                             <td>
-                                <textarea class="form-control  w-100" id="workdescription12" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
+                                <textareaplaceholder="Enter Remark " class="form-control  w-100" id="workdescription12" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
                             </td>
                         </tr>
                         <tr>
@@ -507,7 +507,7 @@
                              <td class="text-center">
                                  <asp:TextBox runat="server" placeholder="0" CssClass="form-control text-center w-100"></asp:TextBox></td>
                             <td>
-                                <textarea class="form-control  w-100" id="workdescription11" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
+                                <textarea placeholder="Enter Remark " class="form-control w-100" id="workdescription11" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea><br />
                             </td>
                         </tr>
 
@@ -518,22 +518,22 @@
                         <div class="row">
                             <div class="col-md-4 mt-3">
                                 <label for="message">
-                                    Allegiance
+                                Enter Allegiance
                                     <br />
-                                    सन्निष्ठा<span style="color: red">*</span></label>
-                                <textarea class="form-control mt-1   fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
+                                    सन्निष्ठा  दर्ज करें<span style="color: red">*</span></label>
+                                <textarea placeholder="Enter Allegiance" class="form-control mt-1   fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
                             </div>
                             <div class="col-md-4">
                                 <label>
-                                    Please comment on overall assessment of the Teacher<br />
-                                    शिक्षक के समग्र मूल्यांकन पर टिप्पणी<span style="color: red">*</span></label>
-                                <textarea class="form-control mb-5  fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
+                                 Enter Please comment on overall assessment of the Teacher<br />
+                                    शिक्षक के समग्र मूल्यांकन पर टिप्पणी  दर्ज करें<span style="color: red">*</span></label>
+                                <textarea placeholder=" Enter Please comment on overall assessment of the Teacher" class="form-control mb-5  fw-bold" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
                             </div>
                             <div class="col-md-4 mt-3">
                                 <label>
-                                    Grading
+                                  Select  Grading
                                     <br />
-                                    शिक्षक के समग्र मूल्यांकन श्रेणी<span style="color: red">*</span></label>
+                                    शिक्षक के समग्र मूल्यांकन श्रेणी  चुनें<span style="color: red">*</span></label>
                                 <select class="form-control select2" id="ddlGrading" onchange="myFunction()">
                                     <option value="0">--Select--</option>
                                     <option value="1">A+/उत्कृष्ट</option>
@@ -547,7 +547,7 @@
                                 <label>
                                     Enter Remark For  Outstanding Grading
            <br />
-                                    उत्कृष्ट ग्रेडिंग के लिए टिप्पणी<span style="color: red">*</span></label>
+                                    उत्कृष्ट ग्रेडिंग के लिए टिप्पणी  दर्ज करें<span style="color: red">*</span></label>
                                 <textarea class="form-control" id="workdescription3" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Remark For  Outstanding Grading"></textarea>
 
                             </div>
@@ -585,11 +585,11 @@
     <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header" style="background-color: var(--vz-primary);">
+                <div class="modal-header">
 
                     <img id="imgLogoP1" src="../dist/images/Emblem_of_Madhya_Pradesh.svg.png" style="width: 90px; height: auto; background: none" class="responsive" />
 
-                    <h3 class="modal-title  fw-bold  text-white ms-3" id="exampleModalLabel">Send To Accepting Authority Officer</h3>
+                    <h3 class="modal-title  fw-bold   ms-3" id="exampleModalLabel">Send To Accepting Authority Officer</h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -598,9 +598,9 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <label>
-                                    Accepting Authority Officer Unique ID
+                                   Enter Accepting Authority Officer Unique ID
                                     <br />
-                                    स्वीकारकर्ता प्राधिकारी की यूनिक आईडी <span style="color: red">*</span></label>
+                                    स्वीकारकर्ता प्राधिकारी की यूनिक आईडी दर्ज करें<span style="color: red">*</span></label>
                                 <asp:TextBox runat="server" CssClass="form-control" onchange="myFunction1()" AutoComplete="off"></asp:TextBox>
 
                             </div>
@@ -1430,7 +1430,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <label>
-                                        Reasons Of Not achieving target
+                                        Reasons of not achieving target
                                  <br />
                                         लक्ष्य  से कम उपलब्धि के करण</label>
                                     <textarea class="form-control mb-2 fw-bold" id="workdescription1" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Nil"></textarea>
@@ -1586,7 +1586,7 @@
 
 
                         <fieldset>
-                            <legend>Extraacurricular Activities / पाठ्येत्तर गतिविधियों मे भूमिका </legend>
+                            <legend>Extracurricular Activities / पाठ्येत्तर गतिविधियों मे भूमिका </legend>
 
                             <%-- <div class="row mt-3">
                        <div class="col-md-4">
@@ -1617,12 +1617,10 @@
 
                                         <th>S.No.<br />
                                             सरल क्र.</th>
-                                        <th>Extraacurricular Activities
+                                        <th>Extracurricular Activities 
                                    <br />
                                             पाठ्येत्तर गतिविधियों मे भूमिका
-                                   <br />
-
-                                            अकादमिक कार्यो में भूमिका</th>
+                                </th>
                                         <th>Please give details of the notable works done on the following points<br />
                                             कृपया निम्नानुसार बिन्दुओ पर किए गए उल्लखनीय कार्यो का विवरण दे</th>
 
@@ -1666,7 +1664,7 @@
                         </fieldset>
                         <br />
                         <fieldset>
-                            <legend>Academic trsining attended during  Appraisal period / प्रतिवेदित अवधि मे प्रशिक्षण मे सहभागिता</legend>
+                            <legend>Academic training attended during  Appraisal period / प्रतिवेदित अवधि मे प्रशिक्षण मे सहभागिता</legend>
 
                             <div class="row">
                                 <div class="col-md-12">
@@ -1736,14 +1734,14 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <!-- Modal Header -->
-                <div class="modal-header" style="background-color: var(--vz-primary); color: white">
-                    <h4 class="modal-title text-white">Add Remark For Reject ACR Report </h4>
-                    <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                <div class="modal-header"  >
+                    <h4 class="modal-title ">Add Remark For Reject ACR Report </h4>
+                    <button type="button" class="close " data-dismiss="modal">&times;</button>
                 </div>
                 <!-- Modal Body -->
                 <div class="modal-body">
                     <div class="form-group">
-                        <label>Remark<span style="color: red">*</span></label>
+                        <label>Enter Remark<br />टिप्पणी दर्ज करें<span style="color: red">*</span></label>
                         <textarea class="form-control" rows="3" style="resize: vertical" placeholder="Enter Remark For Reject ACR Report"></textarea>
                     </div>
                 </div>
