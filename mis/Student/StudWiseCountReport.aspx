@@ -31,15 +31,12 @@
             </div>
         </div>
     </div>
-
-
     <%--  <div class="col-md text-end">
               <div class="form-group">
 
     <button id="BtnBack" class="btn-info rounded-2" type="button" onclick="Backclickfn()" style=" display:none;">BACK</button>
 </div>
         </div>--%>
-
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
@@ -55,11 +52,9 @@
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-12 text-end" id="BtnBack" style="display: none;"><a class="btn btn-primary btn-label waves-effect waves-light rounded-pill" onclick="Backclickfn()"><i class="ri-arrow-go-back-line label-icon align-middle fs-14 me-1"></i>BACK</a> </div>
-
             </div>
         </div>
         <div class="card-body">
-
             <fieldset>
                 <legend>Student Wise Counting Report /
 छात्रवार गणना रिपोर्ट</legend>
