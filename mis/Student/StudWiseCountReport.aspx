@@ -273,7 +273,7 @@
                                         <td>Bhopal</td>
                                         <td>Vidisha</td>
                                         <td>Sironj</td>
-                                        <td>MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS/23320400117</td>
+                                        <td class="nowrap">MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, <br /> PRINCIPAL, GOVT. HSS/23320400117</td>
                                         <td>GOVT HSS Sironj/23340603802</td>
                                         <td>10th</td>
                                         <td>8</td>
@@ -295,7 +295,7 @@
                                         <td>Bhopal</td>
                                         <td>Sehore</td>
                                         <td>Ashta</td>
-                                        <td>M.L.B. BHEL, BARKHEDA, BHOPAL, PRINCIPAL, GOVT. HSS/0512003007</td>
+                                        <td class="nowrap">M.L.B. BHEL, BARKHEDA, BHOPAL,<br />  PRINCIPAL, GOVT. HSS/0512003007</td>
                                         <td>GOVT HSS KHAJURI KALAN/23320303134</td>
                                         <td>11th</td>
                                         <td>11</td>
@@ -316,7 +316,7 @@
                                         <td>Bhopal</td>
                                         <td>Raisen</td>
                                         <td>Bareilly</td>
-                                        <td>PHANDA, PRINCIPAL, GOVT. HS/0502003027</td>
+                                        <td class="nowrap">PHANDA, PRINCIPAL, GOVT. HS/0502003027</td>
                                         <td>PHANDA, PRINCIPAL, GOVT. HS/0502003027 </td>
                                         <td>9th</td>
                                         <td>9</td>
@@ -338,7 +338,7 @@
                                         <td>Vidisha</td>
                                         <td>Sironj</td>
                                         <td>Geetanjali Public School/23320400117</td>
-                                        <td>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)/23320212709</td>
+                                        <td class="nowrap">GOVT HSS MAHARANA PRATAP PHANDA KALAN<br /> (HARIHAR NAGAR)/23320212709</td>
                                         <td>12th</td>
                                         <td>20</td>
                                         <td>

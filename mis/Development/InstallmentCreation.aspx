@@ -89,7 +89,7 @@
                             अंतिम दिनांक तक<span style="color: red">*</span></label>
                         <input type="date" id="Tdate" name="birthday" class="form-control">
                     </div>
-                    <div class="col-md-3">
+                    <%--<div class="col-md-3">
                         <label>
                             Select District Name<br />
                             ज़िला के नाम का चयन करें<span style="color: red">*</span></label>
@@ -147,7 +147,7 @@
                             <option value="Shajapur">Shajapur</option>
                             <option value="Ujjain">Ujjain</option>
                         </select>
-                    </div>
+                    </div>--%>
 
                     <div class="col-md-3">
                         <label>
@@ -162,55 +162,54 @@
                             <option value="D">अन्य कार्य</option>
                         </select>
                     </div>
+
+                    <div class="col-md-3">
+
+
+                        <label>
+                            Select Work Subcategory
+        <br />
+                            कार्य के प्रकार का चयन करें<span style="color: red">*</span></label>
+                        <select id="school-subcategory" class="form-control select2">
+                            <option value="--Select--">--Select--</option>
+                            <option value="A">कक्षा निमार्ण</option>
+                            <option value="A">इमारत मरम्मत</option>
+                            <option value="A">स्कूल नया निमार्ण</option>
+                            <option value="B">हेंडपंप खनन</option>
+                            <option value="B">बोरबेल खनन</option>
+                            <option value="B">पानी की टंकी निर्माण</option>
+                            <option value="B">पेयजल हेतु पाइपलाइन निर्माण</option>
+                            <option value="C">WBM / कच्ची सड़क निमार्ण</option>
+                            <option value="C">CC Road निर्माण</option>
+                            <option value="C">मार्ग मरम्मत</option>
+                            <option value="C">मुरम रोड निर्माण</option>
+                            <option value="C">डामर रोड निर्माण</option>
+                            <option value="D">नाली निर्माण</option>
+                            <option value="D">पेपर ब्लाक निर्माण</option>
+
+                            <%--selection of this next textbox will visible--%>
+                        </select>
+                    </div>
                 </div>
                 <div class="row align-items-end">
-                    <div class="col-md-3" id="school-subcategory-container">
+                    <div class="col-md-3">
 
-                        <div class="form-group">
-                            <label>
-                                Select Work Subcategory
-        <br />
-                                कार्य के प्रकार का चयन करें<span style="color: red">*</span></label>
-                            <select id="school-subcategory" class="form-control select2">
-                                <option value="--Select--">--Select--</option>
-                                <option value="A">कक्षा निमार्ण</option>
-                                <option value="A">इमारत मरम्मत</option>
-                                <option value="A">स्कूल नया निमार्ण</option>
-                                <option value="B">हेंडपंप खनन</option>
-                                <option value="B">बोरबेल खनन</option>
-                                <option value="B">पानी की टंकी निर्माण</option>
-                                <option value="B">पेयजल हेतु पाइपलाइन निर्माण</option>
-                                <option value="C">WBM / कच्ची सड़क निमार्ण</option>
-                                <option value="C">CC Road निर्माण</option>
-                                <option value="C">मार्ग मरम्मत</option>
-                                <option value="C">मुरम रोड निर्माण</option>
-                                <option value="C">डामर रोड निर्माण</option>
-                                <option value="D">नाली निर्माण</option>
-                                <option value="D">पेपर ब्लाक निर्माण</option>
-
-                                <%--selection of this next textbox will visible--%>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6  col-lg-4 col-xl-3">
-                        <div class="form-group">
-                            <label>
-                                Project Code
+                        <label>
+                            Project Code
                                 <br />
-                                परियोजना कोड</label>
-                            <select id="Project_Code" class="form-control select2">
-                                <option value="--Select--">--Select--</option>
-                                <option value="D" selected="selected">All</option>
-                                <option value="A">P00017</option>
-                                <option value="B">P00018</option>
-                                <option value="C">P00019</option>
-                            </select>
-                        </div>
+                            परियोजना कोड</label>
+                        <select id="Project_Code" class="form-control select2">
+                            <option value="--Select--">--Select--</option>
+
+                            <option value="A">P00017</option>
+                            <option value="B">P00018</option>
+                            <option value="C">P00019</option>
+                        </select>
                     </div>
-
-
                 </div>
+
+
+
                 <div class="col-md-12">
                     <hr />
                     <input type="button" value="Search" class="btn btn-success btn-border"
@@ -239,6 +238,8 @@
                                             परियोजना क्रमांक</th>
                                         <th>Project Date<br>
                                             परियोजना दिनांक</th>
+                                        <th>Office Name<br />
+                                            कार्यालय का नाम</th>
                                         <%--<th>Village /<br />
                                         गाँव का नाम</th>--%>
                                         <th>Work Category<br />
@@ -257,10 +258,12 @@
                                         <th>Estimated Budget Cost(In Rs) 
                                             <br />
                                             अनुमानित बजट
-                                                                           
+                                        </th>
+                                        <th>Approved Cost(Approx. In Rs)<br />
+                                            स्वीकृत राशि</th>
                                         <th>Work Description<br />
                                             कार्य का विवरण</th>
-                                        </th>
+
                                         <th>View Document<br>
                                             दस्तावेज़ देखें</th>
                                         <%--  <th>Edit<br>
@@ -277,13 +280,16 @@
                                     </td>--%>
                                         <td>P00019</td>
                                         <th>22/05/2023</th>
+                                        <td>DPI Bhopal M.P</td>
                                         <td>स्कूल मरम्मत/निर्माण</td>
                                         <td>इमारत मरम्मत</td>
                                         <td>Delhi Public School_44561</td>
                                         <td>Bhopal M.P</td>
                                         <%--<td>Working Mode</td>--%>
                                         <%--  <td>Work For Bhopal Office</td>--%>
-                                        <td>10000.00</td>
+                                        <td>60000.00</td>
+                                        <th>
+                                            <input type="number" id="txtApprovedCost" placeholder="60000.00" onkeypress="return validateNum(event);" maxlength="10" autocomplete="off" class="form-control"></th>
                                         <td>
                                             <button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#WorkDescription"><i class="	far fa-comment-alt"></i></button>
                                         </td>
@@ -309,8 +315,8 @@ onclick="">Reject</button>--%>
 
             <fieldset id="hide" style="display: none;">
                 <legend>Installment Creation / किस्त निर्माण</legend>
-                <div class="row align-items-end">
-                    <div class="col-md-3">
+                <%--<div class="row align-items-end">--%>
+                <%--  <div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 Project Code
@@ -348,81 +354,114 @@ onclick="">Reject</button>--%>
 
                             <input type="number" id="txtApprovedCost" placeholder="60000.00" onkeypress="return validateNum(event);" maxlength="10" autocomplete="off" class="form-control">
                         </div>
+                    </div>--%>
+
+                <div class="row align-items-end">
+                    <div class="col-md-3">
+                        <label>
+                            Milestone Type<br />
+                            माइल स्टोन का प्रकार</label>
+                        <select id="Project" class="form-control select2 text-center">
+                            <option value="--Select--">--Select--</option>
+                            <option value="Technical">Technical </option>
+                            <option value="Financial">Financial</option>
+                        </select>
                     </div>
 
-                    <div class="col-sm-12">
-                        <div class="table-responsive-xl">
-                            <table class="datatable table table-striped table-bordered table-hover" style="border-collapse: collapse;" id="Table1">
+                    <div class="col-md-3">
+                        <label>
+                            Milestone<br />
+                            माइल स्टोन</label>
+                        <select class="form-control select2 text-center" id="ddlInstallment" onchange="myaddbtn2()">
+                            <option value="--select--">--Select--</option>
+                            <option value="Foundation">Foundation</option>
+                            <option value="Plinth">Plinth</option>
+                            <option value="Mid level completion">Mid level completion</option>
+                            <option value="Final level completion">Final level completion</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3" style="display:none;">
+                        <label>
+                            Installment<br />
+                            किस्त</label>
+
+                        <select id="InstallmentNo" class="form-control select2 text-center">
+                            <option value="--Select--">--Select--</option>
+                            <option value="1st Installment">1st Installment</option>
+                            <option value="2nd Installment">2nd Installment</option>
+                            <option value="3rd Installment">3rd Installment</option>
+                            <option value="4th Installment">4th Installment</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            Project Exp.Start Date<br />
+                            परियोजना एक्सपेक्टेड प्रारंभ दिनांक</label>
+                        <input type="date" id="c1" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            Project Exp. End Date<br />
+                            परियोजना एक्सपेक्टेड अंतिम दिनांक</label>
+                        <input type="date" id="c2" class="form-control">
+                    </div> </div> <div class="row align-items-end">
+                    <div>
+                        <label>
+                            Installment (%)<br />
+                            इन्सटॉलमेंट (%)</label>
+                        <input type="text" id="c3" placeholder="Enter Installment (%)" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            Installment Amount<br />
+इन्सटॉलमेंट अमाउंट</label>
+                        <input type="email" id="c4" placeholder="Enter Installment Amount" class="form-control">
+                    </div>
+                        <button type="button" onclick="addData2()" class="btn btn-success">Add</button>
+                </div>
+                <%-- style="display: none;" id="btnaction3"--%>
+               
+                
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group" style="display:none;" id="Tbl1">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center" id="Table1" >
+                                <thead>
+                                    <tr class="nowrap">
+                                    <th>Sr.No<br />
+                                        सरल क्रमांक
+                                    </th>
+                                    <th>Milestone Type
+                                        <br />
+                                        माइल स्टोन का प्रकार</th>
+                                    <th>Milestone
+                                        <br />
+                                        माइल स्टोन</th>
+                                    <th>Installment<br />
+                                        किस्त</th>
+                                    <th>Project Exp. Start Date
+                                        <br />
+                                        परियोजना एक्सपेक्टेड प्रारंभ दिनांक<span style="color: red">*</span></th>
+                                    <th>Project Exp. End Date
+                                        <br />
+                                        परियोजना एक्सपेक्टेड अंतिम दिनांक<span style="color: red">*</span></th>
+                                    <th>Installment (%)<br />
+                                        इन्सटॉलमेंट  (%)<span style="color: red">*</span></th>
+                                    <th>Installment Amount
+                                        <br />
+                                        इन्सटॉलमेंट  अमाउंट</th>
+                                    <th><%--style="display: none;" id="btnaction1"--%>Action<br />
+                                        कार्रवाई</th>
+                                    </tr>
+                                </thead>
                                 <tbody>
-                                    <tr style="white-space: nowrap;" class="text-center">
-                                        <th>Sr.No<br />
-                                            सरल क्रमांक
-                                        </th>
-                                        <th>Milestone Type
-                                        <br />
-                                            माइल स्टोन का प्रकार</th>
-                                        <th>Milestone
-                                        <br />
-                                            माइल स्टोन</th>
-                                        <th>Installment<br />
-                                            किस्त</th>
-                                        <th>Project Exp. Start Date
-                                        <br />
-                                            परियोजना एक्सपेक्टेड प्रारंभ दिनांक<span style="color: red">*</span></th>
-                                        <th>Project Exp. End Date
-                                        <br />
-                                            परियोजना एक्सपेक्टेड अंतिम दिनांक<span style="color: red">*</span></th>
-                                        <th>Installment (%)<br />
-                                            इन्सटॉलमेंट  (%)<span style="color: red">*</span></th>
-                                        <th>Installment Amount
-                                        <br />
-                                            इन्सटॉलमेंट  अमाउंट</th>
-                                        <th <%--style="display: none;" id="btnaction1"--%>>Action<br />
-                                            कार्रवाई</th>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>
-
-
-                                            <select id="Project" class="form-control select2 text-center">
-                                                <option value="--Select--">--Select--</option>
-                                                <option value="Technical">Technical </option>
-                                                <option value="Financial">Financial</option>
-                                            </select>
-
-                                        </td>
-                                        <td>
-                                            <select class="form-control select2 text-center" id="ddlInstallment" onchange="myaddbtn2()">
-                                                <option value="--select--">--Select--</option>
-                                                <option value="Foundation">Foundation</option>
-                                                <option value="Plinth">Plinth</option>
-                                                <option value="Mid level completion">Mid level completion</option>
-                                                <option value="Final level completion">Final level completion</option>
-                                            </select></td>
-                                        <td>
-
-
-                                            <select id="InstallmentNo" class="form-control select2 text-center">
-                                                <option value="--Select--">--Select--</option>
-                                                <option value="1st Installment">1st Installment</option>
-                                                <option value="2nd Installment">2nd Installment</option>
-                                                <option value="3rd Installment">3rd Installment</option>
-                                                <option value="4th Installment">4th Installment</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <input type="date" id="c1" class="form-control"></td>
-                                        <td>
-                                            <input type="date" id="c2" class="form-control"></td>
-                                        <td>
-                                            <input type="text" id="c3" class="form-control"></td>
-                                        <td>
-                                            <input type="email" id="c4" class="form-control"></td>
-                                        <td><%-- style="display: none;" id="btnaction3"--%>
-
-                                            <button type="button" onclick="addData2()" class="btn btn-success">Add</button></td>
-                                    </tr>
 
                                     <tr>
                                         <td></td>
@@ -436,18 +475,25 @@ onclick="">Reject</button>--%>
 
                                         <td>
                                             <asp:TextBox ID="txtInstallmentAmount_Total" ClientIDMode="Static" runat="server" CssClass="form-control" MaxLength="15">0</asp:TextBox></td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
+
                     </div>
                     <hr />
-                    <div class="col-md-12">
-                        <input type="button" name="ctl00$ContentBody$btnSave" value="Save" class="btn btn-success btn-border Alert-Confirmation" />
-                        <a href="InstallmentCreation.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
-                    </div>
+    <div class="col-md-12">
+        <input type="button" name="ctl00$ContentBody$btnSave" value="Save" class="btn btn-success btn-border Alert-Confirmation" />
+        <a href="InstallmentCreation.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+    </div>
                 </div>
+
+
+                
+       
             </fieldset>
+
             <!--modal-->
             <div class="modal" id="myModal">
                 <div class="modal-dialog">
@@ -1091,6 +1137,7 @@ onclick="">Reject</button>--%>
     <script>
         function addData2() {
             // Get input values
+            document.getElementById("Tbl1").style.display = (document.getElementById("Tbl1").style.display == 'block') ? 'none' : 'block';
             let project = document.getElementById("Project").value;
             let installment = document.getElementById("ddlInstallment").value;
             let installmentNo = document.getElementById("InstallmentNo").value;
@@ -1111,7 +1158,7 @@ onclick="">Reject</button>--%>
 
             // Insert data into cells of the new row
             let newRow = table.insertRow(table.rows.length - 1);
-            newRow.insertCell(0).innerHTML = table.rows.length - 3;
+            newRow.insertCell(0).innerHTML = table.rows.length - 2;
             newRow.insertCell(1).innerHTML = project;
 
             newRow.insertCell(2).innerHTML = installment;
