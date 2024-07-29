@@ -417,7 +417,7 @@ onclick="">Reject</button>--%>
 इन्सटॉलमेंट अमाउंट</label>
                         <input type="email" id="c4" placeholder="Enter Installment Amount" class="form-control">
                     </div>
-                        <button type="button" onclick="addData2()" class="btn btn-success">Add</button>
+                       <button type="button" onclick="addNewInstallment()" class="btn btn-success">Add</button>
                 </div>
                 <%-- style="display: none;" id="btnaction3"--%>
                
@@ -1125,9 +1125,9 @@ onclick="">Reject</button>--%>
         }
     </script>--%>
     <script>
-        function addData2() {
+        function addNewInstallment() {
             // Get input values
-            document.getElementById("Tbl1").style.display = (document.getElementById("Tbl1").style.display == 'block') ? 'none' : 'block';
+            document.getElementById("Tbl1").style.display = "";
             let project = document.getElementById("Project").value;
             let installment = document.getElementById("ddlInstallment").value;
             let installmentNo = document.getElementById("InstallmentNo").value;
@@ -1141,26 +1141,31 @@ onclick="">Reject</button>--%>
             let table = document.getElementById('Table1');
 
             // Check if the maximum limit is reached
-            if (table.rows.length >= 7) {
-                alert("Maximum 4 rows allowed.");
+            if (Table1.rows.length >= 6) {
+                document.getElementById("Tbl1").style.display = (document.getElementById("Tbl1").style.display == 'block') ? 'none' : 'block';
+                alert("Maximum 4 Installment allowed.");
                 return; // Exit the function if the maximum limit is reached
             }
 
             // Insert data into cells of the new row
             let newRow = table.insertRow(table.rows.length - 1);
-            newRow.insertCell(0).innerHTML = table.rows.length - 2;
-            newRow.insertCell(1).innerHTML = project;
+            let cells = [];
+            cells.push({ text: table.rows.length - 2 });
+            cells.push({ text: project });
+            cells.push({ text: installment });
+            cells.push({ text: installmentNo });
+            cells.push({ text: email });
+            cells.push({ text: mobileNo1 });
+            cells.push({ text: prevGradeA });
+            cells.push({ text: prevGradeB });
 
-            newRow.insertCell(2).innerHTML = installment;
-            newRow.insertCell(3).innerHTML = installmentNo;
-            newRow.insertCell(4).innerHTML = email; // Column 1: Name
-            newRow.insertCell(5).innerHTML = mobileNo1; // Column 2: Email
-            newRow.insertCell(6).innerHTML = prevGradeA; // Column 3: Mobile
-            newRow.insertCell(7).innerHTML = prevGradeB; // Column 4: Previous Grade A
-            newRow.insertCell(8);
-            const actionButtonTd = newRow.cells[8];
-            actionButtonTd.innerHTML += '<a class="Alert-Delete"><i class="fa fa-trash"></i></a>';
-
+            for (let i = 0; i < cells.length; i++) {
+                newRow.insertCell(i).innerHTML = cells[i].text;
+                if (i === cells.length - 1) {
+                    const actionButtonTd = newRow.cells[i];
+                    actionButtonTd.innerHTML += '<a class="Alert-Delete"><i class="fa fa-trash"></i></a>';
+                }
+            }
 
             // Update total values
             let InstallmentPer_Total = parseFloat($("#txtInstallmentPer_Total").val());
@@ -1175,6 +1180,7 @@ onclick="">Reject</button>--%>
             // Clear input fields
             document.getElementById("Project").selectedIndex = 0;
             $('#Project').trigger('change');
+
             document.getElementById("ddlInstallment").selectedIndex = 0;
             $('#ddlInstallment').trigger('change');
 
