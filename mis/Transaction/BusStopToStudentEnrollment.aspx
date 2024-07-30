@@ -60,7 +60,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3" id="Class">
+                    <div class="col-md-3 Class">
                         <div class="form-group">
                             <span>Select Class
                                 <br />
@@ -198,13 +198,13 @@
             </fieldset>
             <fieldset id="FsDetails" class="d-none">
                 <legend>Bus Stop To Student Enrollment Report</legend>
-                <div class="row align-items-endSearch">
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Select Enroll Type
                                 <br />
                                 प्रकार चुने<span style="color: red">*</span></span>
-                            <select class="form-control">
+                            <select class="form-control" onchange="textchange(this.value)">
                                 <option value="0">--Select--</option>
                                 <option value="1">Student</option>
                                 <option value="2">Teacher</option>
@@ -224,7 +224,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3"  id="Classddl">
+                    <div class="col-md-3 Class">
                         <div class="form-group">
                             <span>Select Class
              <br />
@@ -367,7 +367,7 @@
             if (abc == "1") {
                 $(".Student").each(function () { this.innerText = 'Student ' });
                 $(".Reg").each(function () { this.innerText = 'विद्यार्थी ' });
-                $("#Class").css("display", "inline-block")
+                $(".Class").css("display", "inline-block")
                 $("#stdname").css("display", "block")
                 $("#teachername").css("display", "none")
 
@@ -375,7 +375,7 @@
             else {
                 $(".Student").each(function () { this.innerText = 'Teacher' });
                 $(".Reg").each(function () { this.innerText = 'शिक्षक' });
-                $("#Class").css("display", "none")
+                $(".Class").css("display", "none")
                 $("#stdname").css("display", "none")
                 $("#teachername").css("display", "block")
             }
