@@ -417,8 +417,10 @@ onclick="">Reject</button>--%>
 इन्सटॉलमेंट अमाउंट</label>
                         <input type="email" id="c4" placeholder="Enter Installment Amount" class="form-control">
                     </div>
+                       
                        <button type="button" onclick="addNewInstallment()" class="btn btn-success">Add</button>
                 </div>
+                 <HiddenField  ID="HIDD" />
                 <%-- style="display: none;" id="btnaction3"--%>
                
                 
@@ -476,6 +478,7 @@ onclick="">Reject</button>--%>
                                         <td>
                                             <asp:TextBox ID="txtInstallmentAmount_Total" ClientIDMode="Static" runat="server" CssClass="form-control" MaxLength="15">0</asp:TextBox></td>
                                         <td></td>
+                                       
                                     </tr>
                                 </tbody>
                             </table>
@@ -1124,75 +1127,76 @@ onclick="">Reject</button>--%>
 
         }
     </script>--%>
-    <script>
-        function addNewInstallment() {
-            // Get input values
-            document.getElementById("Tbl1").style.display = "";
-            let project = document.getElementById("Project").value;
-            let installment = document.getElementById("ddlInstallment").value;
-            let installmentNo = document.getElementById("InstallmentNo").value;
+  
 
-            let email = document.getElementById("c1").value;
-            let mobileNo1 = document.getElementById("c2").value;
-            let prevGradeA = document.getElementById("c3").value;
-            let prevGradeB = document.getElementById("c4").value;
+<script>function addNewInstallment() {
+        // Get input values
+        document.getElementById("Tbl1").style.display = "";
+        let project = document.getElementById("Project").value;
+        let installment = document.getElementById("ddlInstallment").value;
+        let installmentNo = document.getElementById("InstallmentNo").value;
 
-            // Get the table and insert a new row at the end
-            let table = document.getElementById('Table1');
+        let email = document.getElementById("c1").value;
+        let mobileNo1 = document.getElementById("c2").value;
+        let prevGradeA = parseFloat(document.getElementById("c3").value);
+        let prevGradeB = parseFloat(document.getElementById("c4").value); // Change this line to use c4 instead of c3
 
-            // Check if the maximum limit is reached
-            if (Table1.rows.length >= 6) {
-                document.getElementById("Tbl1").style.display = (document.getElementById("Tbl1").style.display == 'block') ? 'none' : 'block';
-                alert("Maximum 4 Installment allowed.");
-                return; // Exit the function if the maximum limit is reached
-            }
+        // Get the table and insert a new row at the end
+        let table = document.getElementById('Table1');
 
-            // Insert data into cells of the new row
-            let newRow = table.insertRow(table.rows.length - 1);
-            let cells = [];
-            cells.push({ text: table.rows.length - 2 });
-            cells.push({ text: project });
-            cells.push({ text: installment });
-            cells.push({ text: installmentNo });
-            cells.push({ text: email });
-            cells.push({ text: mobileNo1 });
-            cells.push({ text: prevGradeA });
-            cells.push({ text: prevGradeB });
-
-            for (let i = 0; i < cells.length; i++) {
-                newRow.insertCell(i).innerHTML = cells[i].text;
-                if (i === cells.length - 1) {
-                    const actionButtonTd = newRow.cells[i];
-                    actionButtonTd.innerHTML += '<a class="Alert-Delete"><i class="fa fa-trash"></i></a>';
-                }
-            }
-
-            // Update total values
-            let InstallmentPer_Total = parseFloat($("#txtInstallmentPer_Total").val());
-            let InstallmentAmount_Total = parseFloat($("#txtInstallmentAmount_Total").val());
-            $("#txtInstallmentPer_Total").val(InstallmentPer_Total + parseFloat(prevGradeA));
-            $("#txtInstallmentAmount_Total").val(InstallmentAmount_Total + parseFloat(prevGradeB));
-
-            clearInputs3();
+        // Check if the maximum limit is reached
+        if (table.rows.length >= 6) {
+            document.getElementById("Tbl1").style.display = (document.getElementById("Tbl1").style.display == 'block') ? 'none' : 'block';
+            alert("Maximum 4 Installment allowed.");
+            return; // Exit the function if the maximum limit is reached
         }
 
-        function clearInputs3() {
-            // Clear input fields
-            document.getElementById("Project").selectedIndex = 0;
-            $('#Project').trigger('change');
+        // Insert data into cells of the new row
+        let newRow = table.insertRow(table.rows.length - 1);
+        let cells = [];
+        cells.push({ text: table.rows.length - 2 });
+        cells.push({ text: project });
+        cells.push({ text: installment });
+        cells.push({ text: installmentNo });
+        cells.push({ text: email });
+        cells.push({ text: mobileNo1 });
+    cells.push({ text: prevGradeA });
+    cells.push({ text: prevGradeB });
 
-            document.getElementById("ddlInstallment").selectedIndex = 0;
-            $('#ddlInstallment').trigger('change');
-
-            document.getElementById("InstallmentNo").selectedIndex = 0;
-            $('#InstallmentNo').trigger('change');
-
-            document.getElementById("c1").value = "";
-            document.getElementById("c2").value = "";
-            document.getElementById("c3").value = "";
-            /*   document.getElementById("c4").value = "";*/
+        for (let i = 0; i < cells.length; i++) {
+            newRow.insertCell(i).innerHTML = cells[i].text;
         }
-    </script>
+
+        // Add action buttons in the last cell of the new row
+        const actionButtonTd = newRow.insertCell(cells.length);
+        actionButtonTd.innerHTML += '<a class="Alert-Delete"><i class="fa fa-trash"></i></a>';
+
+        // Update total values
+        let InstallmentPer_Total = parseFloat($("#txtInstallmentPer_Total").val());
+        let InstallmentAmount_Total = parseFloat($("#txtInstallmentAmount_Total").val());
+        $("#txtInstallmentPer_Total").val(InstallmentPer_Total + prevGradeA);
+        $("#txtInstallmentAmount_Total").val(InstallmentAmount_Total + prevGradeB);
+
+        clearInputs3();
+    }
+
+    function clearInputs3() {
+        // Clear input fields
+        document.getElementById("Project").selectedIndex = 0;
+        $('#Project').trigger('change');
+
+        document.getElementById("ddlInstallment").selectedIndex = 0;
+        $('#ddlInstallment').trigger('change');
+
+        document.getElementById("InstallmentNo").selectedIndex = 0;
+        $('#InstallmentNo').trigger('change');
+
+        document.getElementById("c1").value = "";
+        document.getElementById("c2").value = "";
+        document.getElementById("c3").value = "";
+    }</script>
+
+
     <%-- function clearInputs3() {
           // Clear input fields
           document.getElementById("Project").selectedIndex = 0;
