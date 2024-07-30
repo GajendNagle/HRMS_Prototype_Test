@@ -32,7 +32,7 @@
         </div>
     </div>
     <div class="card card-border-primary">
-           <div class="card-header">
+        <div class="card-header">
             <div class="row">
                 <div class="col-xxl-10 col-md-12">
                     <div class="marqueecontainerinfo">
@@ -53,9 +53,9 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Vehicle Number
+                            <span>Select Vehicle Number
                                 <br />
-                                गाड़ी का नंबर<span style="color: red">*</span></span>
+                                गाड़ी नंबर का चयन करें<span style="color: red">*</span></span>
                             <select class="form-control select2 select2-hidden-accessible">
                                 <option>--Select--</option>
                                 <option>MP04HC4163</option>
@@ -64,6 +64,14 @@
                                 <option>MP12CA3652</option>
                                 <option>MP04ZB8269</option>
                             </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>Insurance Previous Date
+                                <br />
+                                बीमा पूर्व दिनांक<span style="color: red">*</span></span>
+                            <input name="ctl00$ContentBody$txtInsuranceCompany" type="date" id="ctl00_ContentBody_txtInsurancelastdate" value="2024-12-10" readonly class="form-control" onpaste="return false;" onkeypress="return lettersOnly()">
                         </div>
                     </div>
                     <div class="col-md-3">

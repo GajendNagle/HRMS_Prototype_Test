@@ -57,9 +57,17 @@
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Date<br />
-                                दिनांक<span style="color: red">*</span></label>
+                                Select From Date<br />
+                                प्रारंभिक दिनांक का चयन करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="date" value="2024-07-18" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="form-group">
+                            <label>
+                                Select To Date<br />
+                                अंतिम दिनांक का चयन करें<span style="color: red">*</span></label>
+                            <input name="ctl00$ContentBody$ctl00" type="date" value="2024-07-22" class="form-control" />
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3">

@@ -32,7 +32,7 @@
         </div>
     </div>
     <div class="card card-border-primary">
-            <div class="card-header">
+        <div class="card-header">
             <div class="row">
                 <div class="col-xxl-10 col-md-12">
                     <div class="marqueecontainerinfo">
@@ -86,10 +86,10 @@
                             </select>
                         </div>
                     </div>
-                    <%--<div class="col-md-3">
+                    <div class="col-md-3">
                         <div class="form-group">
-                            <span>Office Type /<br />
-                                कार्यालय का प्रकार<span style="color: red">*</span></span>
+                            <span>Select Office Type<br />
+                                कार्यालय प्रकार का चयन करें<span style="color: red">*</span></span>
                             <select name="ctl00$ContentBody$ddlOfficeType" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentBody$ddlOfficeType\',\'\')', 0)" id="ctl00_ContentBody_ddlOfficeType" class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
                                 <option value=" -Select-">--Select--</option>
                                 <option value="Bhopal">Head Office</option>
@@ -98,7 +98,7 @@
                                 <option value="Bhopal">BLOCK EDUCATION OFFICERS</option>
                             </select>
                         </div>
-                    </div>--%>
+                    </div>
                     <%--  <div class="col-md-3">
                         <div class="form-group">
                             <span>Office Name /<br />

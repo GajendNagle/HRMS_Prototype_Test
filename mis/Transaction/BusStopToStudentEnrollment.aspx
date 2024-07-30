@@ -50,9 +50,9 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Select Enroll Type
+                            <span>Select Enrollment Type
                                 <br />
-                                प्रकार चुने<span style="color: red">*</span></span>
+                                पंजीकरण प्रकार चुने<span style="color: red">*</span></span>
                             <select class="form-control" onchange="textchange(this.value)">
                                 <option value="0">--Select--</option>
                                 <option value="1">Student</option>
@@ -97,7 +97,7 @@
                                 <option value="5">Sita-1548790</option>
                                 <option value="6">Gajendra-1548791</option>
                             </select>
-                            <select class="form-control" id="teachername" style="display:none">
+                            <select class="form-control" id="teachername" style="display: none">
                                 <option value="0">--Select--</option>
                                 <option value="1">Sagar Sarkar</option>
                                 <option value="2">Aparna Mokhede</option>
@@ -201,9 +201,9 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Select Enroll Type
-                                <br />
-                                प्रकार चुने<span style="color: red">*</span></span>
+                            <span>Select Enrollment Type<br />
+                                पंजीकरण प्रकार चुने
+                                <span style="color: red">*</span></span>
                             <select class="form-control" onchange="textchange(this.value)">
                                 <option value="0">--Select--</option>
                                 <option value="1">Student</option>
@@ -255,7 +255,7 @@
                     </div>
                 </div>
             </fieldset>
-            <fieldset id="Details" class="d-none">
+            <fieldset id="Details">
                 <legend>Details / विवरण</legend>
                 <div class="row justify-content-end" id="element1">
                     <div class="col-md-4 text-end">
@@ -270,7 +270,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" id="element2" style="display: none;">
+                <div class="row" id="element2">
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
@@ -326,7 +326,7 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-    <script>
+    <%--    <script>
         function toggleElements() {
             var dropdown1 = document.getElementById("dropdown1");
             var dropdown2 = document.getElementById("dropdown2");
@@ -345,7 +345,7 @@
                 document.getElementById("Details").classList.remove('d-none');
                 // Add your data to the element2 div here
             }
-        }</script>
+        }</script>--%>
     <script>
         var a = 1
         function funBack() {
