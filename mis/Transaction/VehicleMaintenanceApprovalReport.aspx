@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="VehicleMaintenanceApprovalReport.aspx.cs" Inherits="mis_Transaction_VehicleMaintenanceApprovalReport" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" Runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -43,6 +43,63 @@
             <div>
                 <fieldset>
                     <legend>Vehicle Maintenance Request Report/ वाहन रखरखाव अनुरोध रिपोर्ट</legend>
+                    <div class="row align-items-end">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <span>Select Year
+                                <br />
+                                    वर्ष का चयन करें<span style="color: red">*</span></span>
+                                <select class="form-control select2">
+                                    <option value="0">--Select--</option>
+                                    <option value="1">2000</option>
+                                    <option value="2">2001</option>
+                                    <option value="3">2002</option>
+                                    <option value="4">2003</option>
+                                    <option value="5">2004</option>
+                                    <option value="6">2005</option>
+                                    <option value="7">2006</option>
+                                    <option value="8">2007</option>
+                                    <option value="9">2008</option>
+                                    <option value="10">2009</option>
+                                    <option value="11">2010</option>
+                                    <option value="12">2011</option>
+                                    <option value="13">2012</option>
+                                    <option value="14">2013</option>
+                                    <option value="15">2014</option>
+                                    <option value="16">2015</option>
+                                    <option value="17">2016</option>
+                                    <option value="18">2017</option>
+                                    <option value="19">2018</option>
+                                    <option value="20">2019</option>
+                                    <option value="21">2020</option>
+                                    <option value="22">2021</option>
+                                    <option value="23">2022</option>
+                                    <option value="24">2023</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="form-group">
+                                <span>Select Maintenance Type
+                                <br />
+                                    रखरखाव प्रकार का चयन करें<span style="color: red">*</span></span>
+                                <select id="ddlMaintenanceType" class="form-control select2">
+                                    <option value="0">Select</option>
+                                    <option value="1">Servicing</option>
+                                    <option value="2">Tyre & Tube</option>
+                                    <option value="3">Battery Replacement</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <hr />
+                            <button id="toggleButton" type="button" class="fw-bold btn w-lg btn-outline-success btn-border">Search</button>
+                            <a href=" " class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Report / रिपोर्ट</legend>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive">
@@ -111,8 +168,8 @@
         </div>
     </div>
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" Runat="Server">
-     <script>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script>
         function openPDF() {
             // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
             var pdfUrl = '../Document/HRMS_Document%20(1).pdf';
@@ -130,6 +187,6 @@
             a.click();
             document.body.removeChild(a);
         }
-     </script>
+    </script>
 </asp:Content>
 
