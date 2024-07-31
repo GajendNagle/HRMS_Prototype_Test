@@ -123,11 +123,11 @@
                                                     <br />
                                                     रखरखाव का कारण
                                                 </th>
-                                                <th scope="col">Document View
-                                                    <br />
+                                                <th scope="col">Document
+                                                    <br />दस्तावेज़
                                                 </th>
                                                 <th scope="col">Status
-                                                    <br />
+                                                    <br />स्तिथि
                                                 </th>
                                             </tr>
                                             <tr>
