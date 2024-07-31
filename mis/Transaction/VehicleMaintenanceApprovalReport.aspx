@@ -35,14 +35,14 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">Vehicle Maintenance Request Report/ वाहन रखरखाव अनुरोध रिपोर्ट</h4>
+                    <h4 class="card-title">Vehicle Maintenance Request Report / वाहन रखरखाव अनुरोध रिपोर्ट</h4>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <div>
                 <fieldset>
-                    <legend>Vehicle Maintenance Request Report/ वाहन रखरखाव अनुरोध रिपोर्ट</legend>
+                    <legend>Vehicle Maintenance Request Report / वाहन रखरखाव अनुरोध रिपोर्ट</legend>
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
@@ -98,72 +98,72 @@
                         </div>
                     </div>
                 </fieldset>
-                <fieldset>
-                    <legend>Report / रिपोर्ट</legend>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="table-responsive">
-                                <div>
-                                    <table class="table table-bordered" id="tblVehicle" style="border-collapse: collapse; text-align: center;">
-                                        <tbody class="text-center">
-                                            <tr>
-                                                <th scope="col">Sr.No.<br />
-                                                    सरल क्र. </th>
-                                                <th scope="col">Maintenance Type
+                    <fieldset>
+                        <legend>Report / रिपोर्ट</legend>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <div>
+                                        <table class="table table-bordered" id="tblVehicle" style="border-collapse: collapse; text-align: center;">
+                                            <tbody class="text-center">
+                                                <tr>
+                                                    <th scope="col">Sr.No.<br />
+                                                        सरल क्र. </th>
+                                                    <th scope="col">Maintenance Type
                                                     <br />
-                                                    रखरखाव प्रकार</th>
-                                                <th scope="col">Vehicle Number
+                                                        रखरखाव प्रकार</th>
+                                                    <th scope="col">Vehicle Number
                                                     <br />
-                                                    गाड़ी नंबर</th>
-                                                <th scope="col">Allotment Date
+                                                        गाड़ी नंबर</th>
+                                                    <th scope="col">Allotment Date
                                                     <br />
-                                                    आवंटन की तारीख
-                                                </th>
-                                                <th scope="col">Reason for Maintenance
+                                                        आवंटन की तारीख
+                                                    </th>
+                                                    <th scope="col">Reason for Maintenance
                                                     <br />
-                                                    रखरखाव का कारण
-                                                </th>
-                                                <th scope="col">Document
+                                                        रखरखाव का कारण
+                                                    </th>
+                                                    <th scope="col">Document 
                                                     <br />दस्तावेज़
-                                                </th>
-                                                <th scope="col">Status
+                                                    </th>
+                                                    <th scope="col">Status
                                                     <br />स्तिथि
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <td><span>1</span>
-                                                </td>
-                                                <td>Tyre Tube
-                                                </td>
-                                                <td>MP04AP1123
-                                                </td>
-                                                <td>12/04/24
-                                                </td>
-                                                <td>Tyre Tube Replacement </td>
-                                                <td><a class="Alert-View"><i class="fa fa-eye" onclick="openPDF()" aria-hidden="true"></i></a></td>
-                                                <td>Pending</td>
-                                            </tr>
-                                            <tr>
-                                                <td><span>2</span>
-                                                </td>
-                                                <td>Servicing
-                                                </td>
-                                                <td>MP04CX2255
-                                                </td>
-                                                <td>10/03/24
-                                                </td>
-                                                <td>Head Block Work </td>
-                                                <td><a class="Alert-View"><i class="fa fa-eye" onclick="openPDF()" aria-hidden="true"></i></a></td>
-                                                <td>Approve</td>
-                                            </tr>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>1</span>
+                                                    </td>
+                                                    <td>Tyre Tube
+                                                    </td>
+                                                    <td>MP04AP1123
+                                                    </td>
+                                                    <td>12/04/24
+                                                    </td>
+                                                    <td>Tyre Tube Replacement </td>
+                                                    <td><a class="Alert-View"><i class="fa fa-eye" onclick="openPDF()" aria-hidden="true"></i></a></td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>2</span>
+                                                    </td>
+                                                    <td>Servicing
+                                                    </td>
+                                                    <td>MP04CX2255
+                                                    </td>
+                                                    <td>10/03/24
+                                                    </td>
+                                                    <td>Head Block Work </td>
+                                                    <td><a class="Alert-View"><i class="fa fa-eye" onclick="openPDF()" aria-hidden="true"></i></a></td>
+                                                    <td>Approve</td>
+                                                </tr>
 
-                                        </tbody>
-                                    </table>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </fieldset>
+                    </fieldset>
             </div>
         </div>
     </div>
