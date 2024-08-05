@@ -26,13 +26,15 @@
             </div>
         </div>
     </div>
+    
 
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
                 <div class="col-xl-10 col-md-12">
                     <div class="marqueecontainerinfo">
-                        <div class="headertext btn btn-primary rounded-pill">छात्रवार गणना रिपोर्ट</div>
+                        <div class="headertext btn btn-primary rounded-pill">जिलेवार लागू योजना रिपोर्ट
+                        </div>
                         <div>
                             <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
                                 District Wise Apply Scheme Report /

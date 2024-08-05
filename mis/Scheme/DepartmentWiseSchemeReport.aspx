@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="DepartmentWiseSchemeReport.aspx.cs" Inherits="mis_Scheme_DepartmentWise_Scheme_Report" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="DepartmentWiseSchemeReport.aspx.cs" Inherits="mis_Scheme_DepartmentWise_Scheme_Report"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" Runat="Server">
      <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="col-xl-10 col-md-12">
                     <div class="marqueecontainerinfo">
-                        <div class="headertext btn btn-primary rounded-pill">छात्रवार गणना रिपोर्ट</div>
+                        <div class="headertext btn btn-primary rounded-pill">विभागवार योजना रिपोर्ट</div>
                         <div>
                             <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
                                Department Wise Scheme Report /
