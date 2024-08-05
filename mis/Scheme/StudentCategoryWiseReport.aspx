@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="DistricWiseApplySchemReport.aspx.cs" Inherits="mis_Scheme_DistricWiseApplySchemReport" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="StudentCategoryWiseReport.aspx.cs" Inherits="mis_Scheme_StudentCategoryWiseReport" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
@@ -16,30 +16,24 @@
                         <li class="breadcrumb-item">
                             <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme</span></a>
                         </li>
-                        <%--  <li class="breadcrumb-item">
-                        <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('StudentDirectory')">
-                            <span>ACR</span></a>
-                    </li>--%>
-                        <li class="breadcrumb-item"><span>District Wise Apply Scheme Report</span></li>
+
+                        <li class="breadcrumb-item"><span>Student Category Wise Report</span></li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
 
-
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
                 <div class="col-xl-10 col-md-12">
                     <div class="marqueecontainerinfo">
-                        <div class="headertext btn btn-primary rounded-pill">
-                            जिलेवार लागू योजना रिपोर्ट
-                        </div>
+                        <div class="headertext btn btn-primary rounded-pill">छात्र श्रेणी वार रिपोर्ट</div>
                         <div>
                             <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
-                                District Wise Apply Scheme Report /
-जिलेवार लागू योजना रिपोर्ट
+                                Student Category Wise Report/
+छात्र श्रेणी वार रिपोर्ट
                             </marquee>
                         </div>
                     </div>
@@ -48,8 +42,12 @@
             </div>
         </div>
         <div class="card-body">
+
+
+
             <fieldset>
-                <legend>District Wise Apply Scheme Report /जिलेवार लागू योजना रिपोर्ट</legend>
+                <legend>Student Category Wise Report/
+छात्र श्रेणी वार रिपोर्ट</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -62,33 +60,16 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                District<br />
-                                जिले का नाम <span style="color: red">*</span></label>
-                            <select class="form-control select2" id="ddlDistrict">
-                                <option value="--Select--">--Select--</option>
-                                <option value="Bhopal">Bhopal(भोपाल)</option>
-                                <option value="Raisen">Raisen(रायसेन)</option>
-                                <option value="Rajgarh">Rajgarh(राजगढ़)</option>
-                                <option value="Sehore">Sehore(सीहोर)</option>
-                                <option value="Vidisha">Vidisha(विदिशा)</option>
-                                <option value="Ashoknagar">Ashoknagar(अशोकनगर)</option>
-                                <option value="Shivpuri">Shivpuri(शिवपुरी)</option>
-                                <option value="Datia">Datia(दतिया)</option>
-                                <option value="Guna">Guna(गुना)</option>
-                                <option value="Gwalior">Gwalior(ग्वालियर)</option>
-                                <option value="Harda">Harda(हरदा)</option>
-                                <option value="Hoshangabad">Hoshangabad(होशंगाबाद)</option>
-                                <option value="Betul">Betul(बेतुल)</option>
+                                Select Category
+                                <br />
+                                श्रेणी चुनें <span style="color: red">*</span></label>
+                            <select class="form-control select2">
+                                <option>Select</option>
+                                <option>ST</option>
+                                <option>SC</option>
+                                <option>OBC</option>
+                                <option>General</option>
                             </select>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Scheme Name<br />
-                                योजना  का नाम <span style="color: red">*</span></label>
-                            <input class="form-control" placeholder="Enter Scheme Name" />
-
                         </div>
                     </div>
                 </div>
@@ -97,7 +78,7 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <button type="button" class="Alert-Save btn w-lg btn-success btn-border">Search</button>
-                            <a href="DistricWiseApplySchemReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                            <a href="DepartmentWiseSchemeReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
                 </div>
@@ -128,55 +109,65 @@
                                         <th>Financial Year<br />
                                             वित्तीय वर्ष</th>
                                         <th>District<br />
-                                            जिला</th>
+                                            जिले का नाम</th>
+                                        <th>Category Name<br />
+                                            श्रेणी का नाम </th>
+                                        <th>Scheme Name<br />
+                                            योजना का नाम</th>
                                         <th>Sankul<br />
                                             संकुल</th>
                                         <th>School Name<br />
                                             स्कूल का नाम</th>
-                                        <th>Student ID/Name<br />
-                                            विद्यार्थी आईडी/नाम</th>
-                                        <th>Gender<br />
-                                            लिंग</th>
-                                        <th>Scheme Name<br />
-                                            योजना का नाम </th>
-                                        <th>Scheme Benefit<br />
-                                            योजना के लाभ</th>
-                                        <th>Scheme Department<br />
-                                            योजना विभाग</th>
-
                                     </tr>
+                                </thead>
+                                <tbody>
                                     <tr>
                                         <td>1</td>
                                         <td>2024</td>
                                         <td>Bhopal</td>
+                                        <td>ST</td>
+                                        <td>Post Matric Scholarship Scheme</td>
                                         <td>MAHARANA PRATAP, JAHANGIRABAD, BHOPAL,
 PRINCIPAL, GOVT. HSS/23320400117</td>
                                         <td>GOVT HSS Sironj/23340603802</td>
-                                        <td>Neha Mishra/UID1123852</td>
-                                        <td>Female</td>
-                                        <td>Scholarship Schemes</td>
-                                        <td>Apply Scholarship Benefit</td>
-                                        <td>School Education Department</td>
                                     </tr>
-
-                                    <tr>
+                                                                        <tr>
                                         <td>2</td>
                                         <td>2024</td>
                                         <td>Bhopal</td>
+                                        <td>SC</td>
+                                        <td>Post Matric Scholarship Scheme</td>
                                         <td>MAHARANA PRATAP, JAHANGIRABAD, BHOPAL,
 PRINCIPAL, GOVT. HSS/23320400117</td>
                                         <td>GOVT HSS Sironj/23340603802</td>
-                                        <td>Dilip Raghuwanshi/BID1123852</td>
-                                        <td>Male</td>
-                                        <td>Scholarship Schemes</td>
-                                        <td>Apply Scholarship Benefit</td>
-                                        <td>School Education Department</td>
                                     </tr>
-                                </thead>
+                                                                        <tr>
+                                        <td>3</td>
+                                        <td>2024</td>
+                                        <td>Bhopal</td>
+                                        <td>OBC</td>
+                                        <td> Vidyasiri Scheme</td>
+                                        <td>MAHARANA PRATAP, JAHANGIRABAD, BHOPAL,
+PRINCIPAL, GOVT. HSS/23320400117</td>
+                                        <td>GOVT HSS Sironj/23340603802</td>
+                                    </tr>
+                                                                        <tr>
+                                        <td>4</td>
+                                        <td>2024</td>
+                                        <td>Bhopal</td>
+                                        <td>General</td>
+                                        <td>Vikramaditya Yojna</td>
+                                        <td>MAHARANA PRATAP, JAHANGIRABAD, BHOPAL,
+PRINCIPAL, GOVT. HSS/23320400117</td>
+                                        <td>GOVT HSS Sironj/23340603802</td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
+
+
 
             </fieldset>
         </div>
@@ -233,7 +224,6 @@ PRINCIPAL, GOVT. HSS/23320400117</td>
                 $.SweetAlert.init()
             }(window.jQuery);
     </script>
-
     <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script>
@@ -275,4 +265,3 @@ PRINCIPAL, GOVT. HSS/23320400117</td>
 
     </script>
 </asp:Content>
-

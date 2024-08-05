@@ -105,30 +105,33 @@
                             <table id="Table1" class="table table-bordered text-center">
                                 <thead>
                                     <tr class="nowrap">
-                                        <td>Sr.No<br />
-                                            सं.क्र.</td>
-                                        <td>Financial Year<br />
-                                            वित्तीय वर्ष</td>
-                                         <td>Scheme Department<br />
-     योजना विभाग</td>
-                                        <td>Sankul<br />
-                                            संकुल</td>
-                                        <td>School Name<br />
-                                            स्कूल का नाम</td>
-                                        <td>Student ID/Name<br />
-                                            विद्यार्थी आईडी/नाम</td>
-                                        <td>Gender<br />
-                                            लिंग</td>
-                                        <td>Scheme Name<br />
-                                            योजना का नाम </td>
-                                        <td>Scheme Benefit<br />
-                                            योजना के लाभ</td>
+                                        <th>Sr.No<br />
+                                            सं.क्र.</th>
+                                        <th>Financial Year<br />
+                                            वित्तीय वर्ष</th>
+                                        <th> District<br />
+ जिले का नाम </th>
+                                         <th>Scheme Department<br />
+     योजना विभाग</th>
+                                        <th>Sankul<br />
+                                            संकुल</th>
+                                        <th>School Name<br />
+                                            स्कूल का नाम</th>
+                                        <th>Student ID/Name<br />
+                                            विद्यार्थी आईडी/नाम</th>
+                                        <th>Gender<br />
+                                            लिंग</th>
+                                        <th>Scheme Name<br />
+                                            योजना का नाम </th>
+                                        <th>Scheme Benefit<br />
+                                            योजना के लाभ</th>
                                        
 
                                     </tr>
                                     <tr>
                                         <td>1</td>
                                         <td>2024</td>
+                                        <td>BHOPAL</td>
                                          <td>School Education Department</td>
                                         <td>MAHARANA PRATAP, JAHANGIRABAD, BHOPAL,
 PRINCIPAL, GOVT. HSS/23320400117</td>
@@ -136,7 +139,7 @@ PRINCIPAL, GOVT. HSS/23320400117</td>
                                         <td>Neha Mishra/UID1123852</td>
                                         <td>Female</td>
                                         <td>Scholarship Schemes</td>
-                                        <td>Apply Scholarship Benefit</td>
+                                        <td>Apply Scheme Benefit</td>
                                        
                                     </tr>
 
@@ -149,8 +152,8 @@ PRINCIPAL, GOVT. HSS/23320400117</td>
                                         <td>GOVT HSS Sironj/23340603802</td>
                                         <td>Dilip Raghuwanshi/BID1123852</td>
                                         <td>Male</td>
-                                        <td>Scholarship Schemes</td>
-                                        <td>Apply Scholarship Benefit</td>
+                                        <td>Disabled Welfare Schemes</td>
+                                        <td>Apply Scheme Benefit</td>
                                        
                                     </tr>
                                 </thead>

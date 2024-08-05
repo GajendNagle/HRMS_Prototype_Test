@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="DistricWiseApplySchemReport.aspx.cs" Inherits="mis_Scheme_DistricWiseApplySchemReport" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="SchemPaymentReport.aspx.cs" Inherits="mis_Scheme_SchemPaymentReport" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
@@ -34,12 +34,11 @@
                 <div class="col-xl-10 col-md-12">
                     <div class="marqueecontainerinfo">
                         <div class="headertext btn btn-primary rounded-pill">
-                            जिलेवार लागू योजना रिपोर्ट
+                            योजना भुगतान रिपोर्ट
                         </div>
                         <div>
                             <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
-                                District Wise Apply Scheme Report /
-जिलेवार लागू योजना रिपोर्ट
+                                Scheme Payment Report/योजना भुगतान रिपोर्ट
                             </marquee>
                         </div>
                     </div>
@@ -49,7 +48,7 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>District Wise Apply Scheme Report /जिलेवार लागू योजना रिपोर्ट</legend>
+                <legend>Scheme Payment Report/योजना भुगतान रिपोर्ट</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -101,6 +100,7 @@
                         </div>
                     </div>
                 </div>
+
             </fieldset>
             <fieldset id="Show" style="display: none;">
                 <legend>Scheme Details / योजना विवरण</legend>
@@ -123,64 +123,67 @@
                             <table id="Table1" class="table table-bordered text-center">
                                 <thead>
                                     <tr class="nowrap">
-                                        <th>Sr.No<br />
-                                            सं.क्र.</th>
+                                        <th>Sr.No.<br />
+                                            सरल क्र.</th>
                                         <th>Financial Year<br />
                                             वित्तीय वर्ष</th>
                                         <th>District<br />
                                             जिला</th>
-                                        <th>Sankul<br />
-                                            संकुल</th>
-                                        <th>School Name<br />
-                                            स्कूल का नाम</th>
-                                        <th>Student ID/Name<br />
-                                            विद्यार्थी आईडी/नाम</th>
-                                        <th>Gender<br />
-                                            लिंग</th>
                                         <th>Scheme Name<br />
-                                            योजना का नाम </th>
-                                        <th>Scheme Benefit<br />
-                                            योजना के लाभ</th>
-                                        <th>Scheme Department<br />
-                                            योजना विभाग</th>
-
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>2024</td>
-                                        <td>Bhopal</td>
-                                        <td>MAHARANA PRATAP, JAHANGIRABAD, BHOPAL,
-PRINCIPAL, GOVT. HSS/23320400117</td>
-                                        <td>GOVT HSS Sironj/23340603802</td>
-                                        <td>Neha Mishra/UID1123852</td>
-                                        <td>Female</td>
-                                        <td>Scholarship Schemes</td>
-                                        <td>Apply Scholarship Benefit</td>
-                                        <td>School Education Department</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>2</td>
-                                        <td>2024</td>
-                                        <td>Bhopal</td>
-                                        <td>MAHARANA PRATAP, JAHANGIRABAD, BHOPAL,
-PRINCIPAL, GOVT. HSS/23320400117</td>
-                                        <td>GOVT HSS Sironj/23340603802</td>
-                                        <td>Dilip Raghuwanshi/BID1123852</td>
-                                        <td>Male</td>
-                                        <td>Scholarship Schemes</td>
-                                        <td>Apply Scholarship Benefit</td>
-                                        <td>School Education Department</td>
+                                            योजना का नाम</th>
+                                        <th>Category Name<br />
+                                            श्रेणी का नाम</th>
+                                        <th>Payment Amount<br />
+                                            भुगतान राशि</th>
                                     </tr>
                                 </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>20204</td>
+                                        <td>Bhopal</td>
+                                        <td>Post Matric Scholarship Scheme</td>
+                                        <td>ST</td>
+                                        <td>3500</td>
+
+                                    </tr>
+                                    <tr>
+                                    <td>2</td>
+                                    <td>20204</td>
+                                    <td>Bhopal</td>
+                                    <td>Post Matric Scholarship Scheme</td>
+                                    <td>SC</td>
+                                    <td>3500</td>
+
+                                       </tr>
+                                    <tr>
+                                    <td>3</td>
+                                    <td>20204</td>
+                                    <td>Bhopal</td>
+                                    <td>Post Matric Scholarship Scheme</td>
+                                    <td>OBC</td>
+                                    <td>2100</td>
+
+                                       </tr>
+                                    <tr>
+                                    <td>4</td>
+                                    <td>20204</td>
+                                    <td>Bhopal</td>
+                                    <td>Post Matric Scholarship Scheme</td>
+                                    <td>General</td>
+                                    <td>1500</td>
+
+                                       </tr>
+                                </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
-
             </fieldset>
+
         </div>
     </div>
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>
@@ -275,4 +278,3 @@ PRINCIPAL, GOVT. HSS/23320400117</td>
 
     </script>
 </asp:Content>
-
