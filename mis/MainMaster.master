@@ -233,8 +233,8 @@
                 -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
                 width: 31%;
-                margin-left:21px;
-                margin-right:10px;
+                margin-left: 21px;
+                margin-right: 10px;
             }
         }
         /*Css End By Arpana*/
@@ -1716,6 +1716,19 @@
                                                 </ul>
                                             </div>
                                         </li>
+                                        <li class="nav-item">
+                                            <a href="#SchemeReports" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="StudentReports"><i class="ri-menu-line"></i>Reports</a>
+                                            <div class="collapse menu-dropdown" id="SchemeReports">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Scheme/DepartmentWiseSchemeReport.aspx"><i class="ri-file-list-3-line"></i>Department Wise Scheme Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Scheme/DistricWiseApplySchemReport.aspx"><i class="ri-file-list-3-line"></i>Distric Wise Apply Scheme Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Scheme/StudentCategoryWiseReport.aspx"><i class="ri-file-list-3-line"></i>Student Category Wise Scheme Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Scheme/SchemPaymentReport.aspx"><i class="ri-file-list-3-line"></i>Scheme PaymentReport</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
                                         <%--Reports--%>
                                     </ul>
                                 </div>
@@ -1838,6 +1851,7 @@
                                                 </ul>
                                             </div>
                                         </li>
+
                                     </ul>
                                 </div>
                             </li>
