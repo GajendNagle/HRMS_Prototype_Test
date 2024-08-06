@@ -44,7 +44,7 @@
         <div class="card-body">
             <asp:Label runat="server" ID="lblMsg"></asp:Label>
             <fieldset>
-                <legend>View Inform Details / सूचना विवरण देखें</legend>
+                <legend>Student Absence Details / छात्र अनुपस्थिति जानकारी विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -70,9 +70,11 @@
                                         <th>Student Name
                                      <br />
                                             छात्र का नाम</th>
-                                        <th>Date
+                                        <th>From Date
                                      <br />
-                                            दिनांक</th>
+                                            प्रारंभिक दिनांक</th>
+                                        <th>To Date<br />
+                                            अंतिम दिनांक</th>
                                         <th>Absence Reason<br />
                                             अनुपस्थिति का कारण</th>
                                         <th>Action
@@ -84,6 +86,7 @@
                                     <td>1</td>
                                     <td>Rohan Pandey</td>
                                     <td>17/07/2024</td>
+                                    <td>20/07/2024</td>
                                     <td>Health Issue</td>
                                     <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
                                         <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
@@ -92,6 +95,7 @@
                                     <td>2</td>
                                     <td>Rohan Pandey</td>
                                     <td>18/07/2024</td>
+                                    <td>21/07/2024</td>
                                     <td>---</td>
                                     <td>---</td>
                                 </tr>

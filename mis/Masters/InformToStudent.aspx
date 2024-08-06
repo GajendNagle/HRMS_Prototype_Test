@@ -44,7 +44,7 @@
         <div class="card-body">
             <asp:Label runat="server" ID="lblMsg"></asp:Label>
             <fieldset>
-                <legend>Inform To Student / छात्र को सूचित करें</legend>
+                <legend>Inform To Student Absence Entry  / छात्र अनुपस्थिति जानकारी दर्ज करें</legend>
                 <div class="row align-items-end">
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">

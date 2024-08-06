@@ -88,19 +88,19 @@
                     <%--model End--%>
                     <fieldset id="fs_PersonalInfo" style="display: none">
                         <legend>Personal Information / व्यक्तिगत जानकारी</legend>
-                        <div class="row">
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <label>
-                                    Name (English)
+                                   Enter Name (English)
                                     <br />
-                                    नाम (इंग्लिश)</label>
+                                    नाम (इंग्लिश) दर्ज करें</label>
                                 <input type="text" class="form-control" readonly value="Raman Varma" />
                             </div>
                             <div class="col-md-3">
                                 <label>
-                                    Name (Hindi)
+                                   Enter Name (Hindi)
                                     <br />
-                                    नाम (हिंदी)</label>
+                                    नाम (हिंदी) दर्ज करें</label>
                                 <input type="text" class="form-control" readonly value="रमण वर्मा" />
                             </div>
                             <div class="col-md-3">
@@ -113,16 +113,16 @@
 
                             <div class="col-md-3">
                                 <label>
-                                    Mobile
+                                   Enter Mobile
                                     <br />
-                                    मोबाइल</label>
+                                    मोबाइल दर्ज करें</label>
                                 <input type="text" class="form-control" readonly value="9876543210" />
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-3">
                                 <label>
-                                    Date of Birth
+                                   Select Date of Birth
                                     <br />
                                     जन्म तारीख</label>
                                 <input type="date" class="form-control" readonly value="1990-01-01" />
@@ -137,33 +137,33 @@
 
                             <div class="col-md-3">
                                 <label>
-                                    Father's Name
+                                   Enter Father's Name
                                     <br />
-                                    पिता का नाम</label>
+                                    पिता का नाम दर्ज करें</label>
                                 <input type="text" class="form-control" readonly value="Mr. Satish Varma" />
                             </div>
                             <div class="col-md-3">
                                 <label>
-                                    Mother's Name
+                                   Enter Mother's Name
                                     <br />
-                                    मां का नाम</label>
+                                    मां का नाम दर्ज करें</label>
                                 <input type="text" class="form-control" readonly value="Mrs. Shobha Varma" />
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-3">
                                 <label>
-                                    Family Samagra ID
+                                   Enter Family Samagra ID
                                     <br />
-                                    परिवार समग्र आईडी</label>
+                                    परिवार समग्र आईडी दर्ज करें</label>
                                 <input type="text" class="form-control" readonly value="1234567890" />
                             </div>
 
                             <div class="col-md-3">
                                 <label>
-                                    Marital Status
+                                   Select Marital Status
                                     <br />
-                                    वैवाहिक स्थिति</label>
+                                    वैवाहिक स्थिति चयन करें</label>
                                 <select class="form-select select2">
                                     <option value="--Select--">--Select--</option>
                                     <option value="Single">Single</option>
@@ -174,9 +174,9 @@
                             </div>
                             <div class="col-md-3">
                                 <label>
-                                    Email ID
+                                   Enter Email ID
                                     <br />
-                                    ईमेल आईडी</label>
+                                    ईमेल आईडी दर्ज करें</label>
                                 <input type="text" class="form-control" value="raman.varma@example.com" />
                             </div>
                         </div>
@@ -186,9 +186,9 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <label>
-                                    State
+                                   Select State
                                     <br />
-                                    राज्य</label>
+                                    राज्य चयन करें</label>
 
                                 <select class="form-select select2" disabled >
                                     <option value="--Select--">--Select--</option>
@@ -199,9 +199,9 @@
                             </div>
                             <div class="col-md-3">
                                 <label>
-                                    Division
+                                   Select Division
                                     <br />
-                                    संभाग</label>
+                                    संभाग चयन करें</label>
                                 <select class="form-select select2" disabled>
                                     <option value="--Select--">--Select--</option>
 
@@ -212,9 +212,9 @@
                             </div>
                             <div class="col-md-3">
                                 <label>
-                                    District
+                                   Select District
                                     <br />
-                                    जिला</label>
+                                    जिला चयन करें</label>
                                 <select class="form-select select2" disabled>
                                     <option value="--Select--">--Select--</option>
                                     <option value="Bhopal" selected>Bhopal</option>
@@ -224,9 +224,9 @@
                             </div>
                             <div class="col-md-3">
                                 <label>
-                                    Block
+                                   Select Block
                                     <br />
-                                    ब्लॉक</label>
+                                    ब्लॉक चयन करें</label>
                                 <select class="form-select select2" disabled>
                                     <option value="--Select--">--Select--</option>
 

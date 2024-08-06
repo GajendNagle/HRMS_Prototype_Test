@@ -1932,6 +1932,7 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/Trn_GFMSApplyForVacancy.aspx"><i class="ri-file-list-3-line"></i>Apply For Vacancy</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/Trn_ClaimExperienceCertificate.aspx"><i class="ri-file-list-3-line"></i>Claim Experience Certificate</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/Rpt_ExpClaimPrint.aspx"><i class="ri-file-list-3-line"></i>Print Experience Claim</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/GuestFacultyManagement/GenerateScoreCard.aspx"><i class="ri-file-list-3-line"></i>Generate Score Card</a></li>
                                                 </ul>
                                             </div>
                                         </li>
