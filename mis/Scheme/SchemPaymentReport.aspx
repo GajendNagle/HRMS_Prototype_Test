@@ -14,20 +14,14 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#SchemeReports" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme</span></a>
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme</span></a>
                         </li>
-                        <%--  <li class="breadcrumb-item">
-                        <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('StudentDirectory')">
-                            <span>ACR</span></a>
-                    </li>--%>
                         <li class="breadcrumb-item"><span>District Wise Apply Scheme Report</span></li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
-
-
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
@@ -422,7 +416,7 @@
             else {
                 alert("Please enter a valid year.");
             }
-        });
+        });      
 
         // Function to set default value to current financial year
         function setDefaultFinancialYear() {
@@ -432,7 +426,6 @@
             var financialYear = currentYear + '-' + (nextYear % 100);
             $(".datepickerYear").val(financialYear);
         }
-
         // Set default value to current financial year on page load
         $(document).ready(function () {
             setDefaultFinancialYear();

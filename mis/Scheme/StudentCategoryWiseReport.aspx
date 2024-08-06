@@ -357,7 +357,7 @@ PRINCIPAL, GOVT. HSS/23320400117</td>
                                                         <td>567894123147</td>
                                                         <td>Arjun Mishra/UID1123852</td>
                                                         <td>GOVT HSS Sironj/23340603802</td>
-                                                        <td>Female</td>
+                                                        <td>Male</td>
                                                         <td>20000</td>
                                                     </tr>
                                                     <tr>
@@ -365,7 +365,7 @@ PRINCIPAL, GOVT. HSS/23320400117</td>
                                                         <td>567894123147</td>
                                                         <td>Harsit Shrivastav/UID1123852</td>
                                                         <td>GOVT HSS Sironj/23340603802</td>
-                                                        <td>Female</td>
+                                                        <td>Male</td>
                                                         <td>25000</td>
                                                     </tr>
                                                 </tbody>
@@ -498,7 +498,7 @@ PRINCIPAL, GOVT. HSS/23320400117</td>
                                                         <td>567894123147</td>
                                                         <td>Arjun Mishra/UID1123852</td>
                                                         <td>GOVT HSS Sironj/23340603802</td>
-                                                        <td>Female</td>
+                                                        <td>Male</td>
                                                         <td>20000</td>
                                                     </tr>
                                                     <tr>
@@ -506,7 +506,7 @@ PRINCIPAL, GOVT. HSS/23320400117</td>
                                                         <td>567894123147</td>
                                                         <td>Harsit Shrivastav/UID1123852</td>
                                                         <td>GOVT HSS Sironj/23340603802</td>
-                                                        <td>Female</td>
+                                                        <td>Male</td>
                                                         <td>25000</td>
                                                     </tr>
                                                     <tr>

@@ -3,6 +3,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
+               .form-control:read-only {
+    background-color: var(--white);
+}
         .multiselect.dropdown-toggle.btn-block {
             border: 1px solid #7c4baf;
         }
@@ -325,9 +328,6 @@
             display: none;
         }
     </style>
-
-
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
@@ -571,7 +571,7 @@
                                     Scheme Applicable From(Financial Year)
                                         <br />
                                     योजना लागू<span style="color: red">*</span></label>
-                                <select class="form-control select2">
+                                <select class="form-control form-select">
                                     <option value="--Select--">--Select--</option>
                                     <option value="General">2023-2024</option>
                                     <option value="General">2024-2025</option>
