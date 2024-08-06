@@ -14,7 +14,7 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme</span></a>
+                            <a href="#SchemeReports " data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme</span></a>
                         </li>
                         <%--  <li class="breadcrumb-item">
                         <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('StudentDirectory')">
@@ -26,8 +26,6 @@
             </div>
         </div>
     </div>
-
-
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
@@ -96,7 +94,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <button type="button" class="Alert-Save btn w-lg btn-success btn-border">Search</button>
+                            <button type="button" onclick="div()" class="btn w-lg btn-success btn-border">Search</button>
                             <a href="DistricWiseApplySchemReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
@@ -183,7 +181,7 @@ PRINCIPAL, GOVT. HSS/23320400117</td>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-    <script>
+    <%--<script>
         debugger;
         !function ($) {
             "use strict";
@@ -232,8 +230,14 @@ PRINCIPAL, GOVT. HSS/23320400117</td>
                 "use strict";
                 $.SweetAlert.init()
             }(window.jQuery);
-    </script>
+    </script>--%>
+     <script>
+         function div() {
+            
+             document.getElementById("Show").style.display = "";
 
+         }
+     </script>
     <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script>

@@ -14,7 +14,7 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme</span></a>
+                            <a href="#SchemeReports" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme</span></a>
                         </li>
                         <%--  <li class="breadcrumb-item">
                         <a href="#ACR" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('StudentDirectory')">
@@ -78,7 +78,7 @@
  <div class="row">
      <div class="col-md-12">
          <div class="form-group">
-             <button type="button" class="Alert-Save btn w-lg btn-success btn-border">Search</button>
+             <button type="button" onclick="div()" class="btn w-lg btn-success btn-border">Search</button>
              <a href="DepartmentWiseSchemeReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
          </div>
      </div>
@@ -146,6 +146,7 @@ PRINCIPAL, GOVT. HSS/23320400117</td>
                                                                         <tr>
                                         <td>2</td>
                                         <td>2024</td>
+                                                                            <td>Bhopal</td>
 <td>Social Justice Department Madhya Pradesh</td>
                                         <td>MAHARANA PRATAP, JAHANGIRABAD, BHOPAL,
 PRINCIPAL, GOVT. HSS/23320400117</td>
@@ -169,54 +170,11 @@ PRINCIPAL, GOVT. HSS/23320400117</td>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" Runat="Server">
     <script>
-        debugger;
-        !function ($) {
-            "use strict";
-            var SweetAlert = function () { };
-            //examples
-            SweetAlert.prototype.init = function () {
-                //Basic
-                //Success Message
-                $('.Alert-Save').click(function () {
-                    Swal.fire({
-                        title: 'Are you sure?',
-                        text: "Do you want to Search this record ?",
-                        type: 'warning',
-                        showCancelButton: true,
-                        confirmButtonColor: '#3085D6',
-                        cancelButtonColor: '#d33',
-                        confirmButtonText: 'Yes'
-                        // animation: false,
-                        // customClass: {
-                        //     popup: 'animated tada'
-                        // }
-                    }).then((result) => {
-                        if (result.value) {
-                            Swal.fire({
-                                type: 'success',
-                                title: 'Success!',
-                                text: 'Record Search Successfully!',
-                                timer: 2000
-                                // animation: false,
-                                // customClass: {
-                                //     popup: 'animated tada'
-                                // }
-                            }
-                            )
-                            document.getElementById("Show").style.display = "";
+        function div() {
 
-                        }
-                    })
-                });
-            },
+            document.getElementById("Show").style.display = "";
 
-                $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
-        }(window.jQuery),
-            //initializing
-            function ($) {
-                "use strict";
-                $.SweetAlert.init()
-            }(window.jQuery);
+        }
     </script>
        <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>

@@ -536,15 +536,8 @@
                         </div>
                     </div>
                 </div>
-                <hr />
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>
-                            <a href="SchemeApplication.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-                        </div>
-                    </div>
-                </div>
+              
+                
             </fieldset>
 
             <%--                                                    <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-eye " src="../../img/extra/DPI_Payroll1.png"></i></button>
