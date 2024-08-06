@@ -2,6 +2,11 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <style>
+        tbody{
+            text-align:center;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
@@ -14,7 +19,7 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#SchemeReports" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme</span></a>
+                            <a href="#SchemeManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Scheme</span></a>
                         </li>
 
                         <li class="breadcrumb-item"><span>Student Category Wise Report</span></li>
@@ -51,10 +56,26 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>
+                            <%--  <label>
                                 Select Financial Year<br />
                                 वित्तीय वर्ष चुनें<span style="color: red">*</span></label>
-                            <input maxlength="4" id="Year" autocomplete="off" class="form-control datepickerYear" placeholder="2024-2025" type="text" data-val="true" value="2024-2025" />
+                            <input maxlength="4" id="Year" autocomplete="off" class="form-control datepickerYear" placeholder="2024-2025" type="text" data-val="true" value="2024-2025" />--%>
+                            <label>
+                                From Date<br />
+                                तिथि से<span style="color: red">*</span></label>
+                            <input class="form-control" type="date" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <%--  <label>
+              Select Financial Year<br />
+              वित्तीय वर्ष चुनें<span style="color: red">*</span></label>
+          <input maxlength="4" id="Year" autocomplete="off" class="form-control datepickerYear" placeholder="2024-2025" type="text" data-val="true" value="2024-2025" />--%>
+                            <label>
+                                To Date<br />
+                                तिथि तक<span style="color: red">*</span></label>
+                            <input class="form-control" type="date" />
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -72,6 +93,39 @@
                             </select>
                         </div>
                     </div>
+                    <div class="col-md-3">
+    <div class="form-group">
+        <label>
+            Department
+            <br />
+            विभाग  का नाम <span style="color: red">*</span></label>
+        <select class="form-control select2" id="ddlDistrict">
+            <option value="--Select--">--Select--</option>
+            <option value="Bhopal">School Education Department</option>
+            <option value="Raisen">Scheduled Caste Welfare Department</option>
+            <option value="Rajgarh">Tribal Affairs Department</option>
+            <option value="Sehore">Denotified, Nomadic and Semi Nomadic Tribes Welfare Department</option>
+            <option value="Vidisha">M.P. Backward Class Minority Department</option>
+            <option value="Ashoknagar">Social Justice Department Madhya Pradesh</option>
+
+        </select>
+    </div>
+</div>
+                    <div class="col-md-3">
+    <div class="form-group">
+        <label>
+            Scheme Name<br />
+            योजना  का नाम <span style="color: red">*</span></label>
+        <select class="form-control select2">
+            <option>Select</option>
+            <option>सामान्य निर्धन वर्ग छात्रवृति </option>
+            <option>सुदामा प्री-मैट्रिक छात्रवृत्ति योजना</option>
+            <option>स्वामी विवेकानंद पोस्ट मेट्रिक प्रावीण्य छात्रवृत्ति योजना</option>
+            <option>सुदाना शिष्यवृत्ति योजना</option>
+        </select>
+
+    </div>
+</div>
                 </div>
                 <hr />
                 <div class="row">
@@ -106,8 +160,8 @@
                                     <tr class="nowrap">
                                         <th>Sr.No<br />
                                             सं.क्र.</th>
-                                        <th>Financial Year<br />
-                                            वित्तीय वर्ष</th>
+                                        <%-- <th>Financial Year<br />
+                                            वित्तीय वर्ष</th>--%>
                                         <th>District<br />
                                             जिले का नाम</th>
                                         <th>Category Name<br />
@@ -118,48 +172,60 @@
                                             संकुल</th>
                                         <th>School Name<br />
                                             स्कूल का नाम</th>
+                                        <th>Total Students<br />
+                                            कुल विद्यार्थी </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>2024</td>
+                                        <%-- <td>2024</td>--%>
                                         <td>Bhopal</td>
                                         <td>ST</td>
-                                        <td>Post Matric Scholarship Scheme</td>
+                                        <td>सामान्य निर्धन वर्ग छात्रवृति</td>
                                         <td>MAHARANA PRATAP, JAHANGIRABAD, BHOPAL,
 PRINCIPAL, GOVT. HSS/23320400117</td>
                                         <td>GOVT HSS Sironj/23340603802</td>
+                                        <td class="text-info">
+                                            <button id="tdbtn1" class="bg-transparent  text-info" style="border: none !important;" type="button" onclick="forwardTo = 'tdbtn1'; DivHide2()" data-bs-toggle="modal" data-bs-target="#EmpModal">10</button></td>
                                     </tr>
-                                                                        <tr>
+                                    <tr>
                                         <td>2</td>
-                                        <td>2024</td>
+                                        <%--<td>2024</td>--%>
                                         <td>Bhopal</td>
                                         <td>SC</td>
-                                        <td>Post Matric Scholarship Scheme</td>
+                                        <td>सामान्य निर्धन वर्ग छात्रवृति</td>
                                         <td>MAHARANA PRATAP, JAHANGIRABAD, BHOPAL,
 PRINCIPAL, GOVT. HSS/23320400117</td>
                                         <td>GOVT HSS Sironj/23340603802</td>
+                                        <td class="text-info">
+                                            <button id="tdbtn2" class="bg-transparent  text-info" style="border: none !important;" type="button" onclick="forwardTo = 'tdbtn2'; DivHide2()" data-bs-toggle="modal" data-bs-target="#EmpModal">7</button></td>
                                     </tr>
-                                                                        <tr>
+                                    <tr>
                                         <td>3</td>
-                                        <td>2024</td>
+                                        <%--<td>2024</td>--%>
                                         <td>Bhopal</td>
                                         <td>OBC</td>
-                                        <td> Vidyasiri Scheme</td>
+                                        <td>सामान्य निर्धन वर्ग छात्रवृति</td>
                                         <td>MAHARANA PRATAP, JAHANGIRABAD, BHOPAL,
 PRINCIPAL, GOVT. HSS/23320400117</td>
                                         <td>GOVT HSS Sironj/23340603802</td>
+                                        <td class="text-info">
+                                            <button id="tdbtn3" class="bg-transparent  text-info" style="border: none !important;" type="button" onclick="forwardTo = 'tdbtn3'; DivHide2()" data-bs-toggle="modal" data-bs-target="#EmpModal">15</button>
+                                        </td>
                                     </tr>
-                                                                        <tr>
+                                    <tr>
                                         <td>4</td>
-                                        <td>2024</td>
+                                        <%--<td>2024</td>--%>
                                         <td>Bhopal</td>
                                         <td>General</td>
-                                        <td>Vikramaditya Yojna</td>
+                                        <td>सामान्य निर्धन वर्ग छात्रवृति</td>
                                         <td>MAHARANA PRATAP, JAHANGIRABAD, BHOPAL,
 PRINCIPAL, GOVT. HSS/23320400117</td>
                                         <td>GOVT HSS Sironj/23340603802</td>
+                                        <td>
+                                            <button id="tdbtn4" class="bg-transparent  text-info" style="border: none !important;" type="button" onclick="forwardTo = 'tdbtn4'; DivHide2()" data-bs-toggle="modal" data-bs-target="#EmpModal">5</button>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -170,10 +236,397 @@ PRINCIPAL, GOVT. HSS/23320400117</td>
 
 
             </fieldset>
+            <div class="modal fade" id="EmpModal" tabindex="-1" role="dialog" aria-labelledby="EmpModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <%--  <h3 class="modal-title" id="EmpModalLabel">Student Wise Counting Report / छात्रवार गणना रिपोर्ट<span id="ModaldistName"></span></h3>--%>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <fieldset>
+                                <legend>Details / विवरण
+                                </legend>
+
+                                <div class="row justify-content-end">
+                                    <div class="col-md-6 text-end">
+                                        <div class="form-group">
+                                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered" id="Table2">
+                                                <thead>
+                                                    <tr class="text-center">
+                                                        <th>Sr. No.<br />
+                                                            सरल क्र.</th>
+                                                        <th>Student Samagra ID<br />
+                                                            विद्यार्थी समग्र आईडी</th>
+                                                        <th>Student ID/Name<br />
+                                                            विद्यार्थी आईडी/नाम</th>
+
+
+                                                        <th>School Name/Udise Code
+                                <br />
+                                                            स्कूल का नाम/यू डाइस कोड </th>
+                                                        <th>Gender<br />
+                                                            लिंग</th>
+                                                        <th>Amount<br />
+
+                                                            राशि</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="tbody1" style="display: none">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>567894123147</td>
+                                                        <td>Neha Mishra/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>567894123147</td>
+                                                        <td>Ram Mishra/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Male</td>
+                                                        <td>20000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>567894123147</td>
+                                                        <td>Nidhi Gupta/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>567894123147</td>
+                                                        <td>Shikha Rajput/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>567894123147</td>
+                                                        <td>Visha Varma/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Male</td>
+                                                        <td>20000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>567894123147</td>
+                                                        <td>Sager Mishra/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Male</td>
+                                                        <td>20000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>567894123147</td>
+                                                        <td>Neha Mishra/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8</td>
+                                                        <td>567894123147</td>
+                                                        <td>Amisha Gupta/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>9</td>
+                                                        <td>567894123147</td>
+                                                        <td>Arjun Mishra/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>20000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10</td>
+                                                        <td>567894123147</td>
+                                                        <td>Harsit Shrivastav/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody id="tbody2" style="display: none">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>567894123147</td>
+                                                        <td>Neha Mishra/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>567894123147</td>
+                                                        <td>Ram Mishra/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Male</td>
+                                                        <td>20000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>567894123147</td>
+                                                        <td>Nidhi Gupta/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>567894123147</td>
+                                                        <td>Shikha Rajput/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>567894123147</td>
+                                                        <td>Visha Varma/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Male</td>
+                                                        <td>20000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>567894123147</td>
+                                                        <td>Sager Mishra/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Male</td>
+                                                        <td>20000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>567894123147</td>
+                                                        <td>Neha Mishra/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+
+                                                </tbody>
+                                                <tbody id="tbody3" style="display: none">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>567894123147</td>
+                                                        <td>Neha Mishra/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>567894123147</td>
+                                                        <td>Ram Mishra/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Male</td>
+                                                        <td>20000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>567894123147</td>
+                                                        <td>Nidhi Gupta/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>567894123147</td>
+                                                        <td>Shikha Rajput/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>567894123147</td>
+                                                        <td>Visha Varma/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Male</td>
+                                                        <td>20000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>567894123147</td>
+                                                        <td>Sager Mishra/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Male</td>
+                                                        <td>20000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>567894123147</td>
+                                                        <td>Neha Mishra/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8</td>
+                                                        <td>567894123147</td>
+                                                        <td>Amisha Gupta/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>9</td>
+                                                        <td>567894123147</td>
+                                                        <td>Arjun Mishra/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>20000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10</td>
+                                                        <td>567894123147</td>
+                                                        <td>Harsit Shrivastav/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>11</td>
+                                                        <td>567894123147</td>
+                                                        <td>Neha Mishra/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>12</td>
+                                                        <td>567894123147</td>
+                                                        <td>Ram Mishra/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Male</td>
+                                                        <td>20000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>13</td>
+                                                        <td>567894123147</td>
+                                                        <td>Nidhi Gupta/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>14</td>
+                                                        <td>567894123147</td>
+                                                        <td>Shikha Rajput/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>15</td>
+                                                        <td>567894123147</td>
+                                                        <td>Visha Varma/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Male</td>
+                                                        <td>20000</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody id="tbody4" style="display: none">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>567894123147</td>
+                                                        <td>Neha Mishra/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>567894123147</td>
+                                                        <td>Ram Mishra/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Male</td>
+                                                        <td>20000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>567894123147</td>
+                                                        <td>Nidhi Gupta/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>567894123147</td>
+                                                        <td>Shikha Rajput/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Female</td>
+                                                        <td>25000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>567894123147</td>
+                                                        <td>Visha Varma/UID1123852</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                        <td>Male</td>
+                                                        <td>20000</td>
+                                                    </tr>
+
+                                                </tbody>
+
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script>
+        var forwardToBodyMap = {
+            'tdbtn1': 'tbody1',
+            'tdbtn2': 'tbody2',
+            'tdbtn3': 'tbody3',
+            'tdbtn4': 'tbody4'
+
+        };
+
+        function DivHide2() {
+            var bodyId = forwardToBodyMap[forwardTo];
+            if (bodyId) {
+                for (var i = 1; i <= 4; i++) {
+                    document.getElementById('tbody' + i).style.display = (bodyId === 'tbody' + i) ? '' : 'none';
+                }
+            } else {
+                console.log("Invalid value for forwardTo: " + forwardTo);
+            }
+        }
+    </script>
     <script>
         function div() {
 

@@ -60,7 +60,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                District<br />
+                                District  Name<br />
                                 जिले का नाम <span style="color: red">*</span></label>
                             <select class="form-control select2" id="ddlDistrict">
                                 <option value="--Select--">--Select--</option>
@@ -85,7 +85,13 @@
                             <label>
                                 Scheme Name<br />
                                 योजना  का नाम <span style="color: red">*</span></label>
-                            <input class="form-control" placeholder="Enter Scheme Name" />
+                            <select class="form-control select2">
+                                <option>Select</option>
+                                <option>सामान्य निर्धन वर्ग छात्रवृति </option>
+                                <option>सुदामा प्री-मैट्रिक छात्रवृत्ति योजना</option>
+                                <option>स्वामी विवेकानंद पोस्ट मेट्रिक प्रावीण्य छात्रवृत्ति योजना</option>
+                                <option>सुदाना शिष्यवृत्ति योजना</option>
+                            </select>
 
                         </div>
                     </div>
@@ -121,66 +127,92 @@
                             <table id="Table1" class="table table-bordered text-center">
                                 <thead>
                                     <tr class="nowrap">
-                                        <th>Sr.No<br />
+                                        <th rowspan="2">Sr.No<br />
                                             सं.क्र.</th>
-                                        <th>Financial Year<br />
+                                        <th rowspan="2">Financial Year<br />
                                             वित्तीय वर्ष</th>
-                                        <th>District<br />
+                                        <th rowspan="2">District<br />
                                             जिला</th>
-                                        <th>Sankul<br />
+                                          <th rowspan="2">Department<br />
+      विभाग का नाम</th>
+                                           <th rowspan="2">Type of Scholarship<br />
+       छात्रवृत्ति का प्रकार</th>
+                                   <%--     <th rowspan="2">Sankul<br />
                                             संकुल</th>
-                                        <th>School Name<br />
-                                            स्कूल का नाम</th>
-                                        <th>Student ID/Name<br />
-                                            विद्यार्थी आईडी/नाम</th>
-                                        <th>Gender<br />
-                                            लिंग</th>
-                                        <th>Scheme Name<br />
+                                        <th rowspan="2">School Name<br />
+                                            स्कूल का नाम</th>--%>
+                                        <%--    <th>Student ID/Name<br />
+                                            विद्यार्थी आईडी/नाम</th>--%>
+                                        <th colspan="2">Rate Annual (10 months)<br />
+                                            वार्षिक दर (10 माह)</th>
+                                        <th rowspan="2">Total Paid Amount<br />
+                                            कुल भुगतान की गई राशि</th>
+                                      <%--  <th rowspan="2">Scheme Name<br />
                                             योजना का नाम </th>
-                                        <th>Scheme Benefit<br />
+                                        <th rowspan="2">Scheme Benefit<br />
                                             योजना के लाभ</th>
-                                        <th>Scheme Department<br />
-                                            योजना विभाग</th>
+                                        <th rowspan="2">Scheme Department<br />
+                                            योजना विभाग</th>--%>
 
                                     </tr>
+                                    <tr valign="middle" class="text-white">
+                                        <th>Boy
+         <br />
+
+                                            बालक</th>
+                                        <th>Girl<br />
+                                            बालिका</th>
+                                       
+
+                                    </tr>
+                                </thead>
+                                <tbody>
                                     <tr>
                                         <td>1</td>
                                         <td>2024</td>
                                         <td>Bhopal</td>
-                                        <td>MAHARANA PRATAP, JAHANGIRABAD, BHOPAL,
-PRINCIPAL, GOVT. HSS/23320400117</td>
-                                        <td>GOVT HSS Sironj/23340603802</td>
-                                        <td>Neha Mishra/UID1123852</td>
-                                        <td>Female</td>
-                                        <td>Scholarship Schemes</td>
-                                        <td>Apply Scholarship Benefit</td>
-                                        <td>School Education Department</td>
+                                         <td>School Education Department</td>
+                                    <td class="text-center">सामान्य निर्धन वर्ग छात्रवृति</td>
+                                         
+                                       <%-- <td>MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS/23320400117</td>
+                                        <td>GOVT HSS Sironj/23340603802</td>--%>
+                                        <td>200</td>
+                                        <td>300</td>
+                                        <td>1.00लाख</td>
+
+                                      <%--  <td>Scholarship Schemes</td>
+                                        <td>Apply Scholarship Benefit</td>--%>
+                                      
                                     </tr>
 
                                     <tr>
                                         <td>2</td>
                                         <td>2024</td>
-                                        <td>Bhopal</td>
-                                        <td>MAHARANA PRATAP, JAHANGIRABAD, BHOPAL,
-PRINCIPAL, GOVT. HSS/23320400117</td>
-                                        <td>GOVT HSS Sironj/23340603802</td>
-                                        <td>Dilip Raghuwanshi/BID1123852</td>
-                                        <td>Male</td>
-                                        <td>Scholarship Schemes</td>
+                                        <td>Betul</td>
+                                       
+
+                                          <td>School Education Department</td>
+                                         <td>सुदामा प्री-मैट्रिक छात्रवृत्ति योजना</td>
+                                   <%--     <td>MAHARANA PRATAP, JAHANGIRABAD, Betul, PRINCIPAL, GOVT. HSS/23320400117</td>
+                                        <td>GOVT HSS Betul/23340603802</td>--%>
+                                        <td>300</td>
+                                        <td>400</td>
+                                        <td>1.00लाख</td>
+                                       <%-- <td>Scholarship Schemes</td>
                                         <td>Apply Scholarship Benefit</td>
-                                        <td>School Education Department</td>
+                                        <td>School Education Department</td>--%>
                                     </tr>
-                                </thead>
+                                </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
 
             </fieldset>
-        </div>
-    </div>
+            </div></div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+   
     <%--<script>
         debugger;
         !function ($) {
@@ -231,13 +263,13 @@ PRINCIPAL, GOVT. HSS/23320400117</td>
                 $.SweetAlert.init()
             }(window.jQuery);
     </script>--%>
-     <script>
-         function div() {
-            
-             document.getElementById("Show").style.display = "";
+    <script>
+        function div() {
 
-         }
-     </script>
+            document.getElementById("Show").style.display = "";
+
+        }
+    </script>
     <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script>
