@@ -105,10 +105,13 @@
                             </div>
                             <div class="col-md-3">
                                 <label>
-                                    Gender
+                                   Select Gender
                                     <br />
-                                    लिंग</label>
-                                <input type="text" class="form-control" readonly value="Male" />
+                                    लिंग चयन करें</label>
+                                <select class="form-select select2" disabled>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
                             </div>
 
                             <div class="col-md-3">
@@ -124,15 +127,20 @@
                                 <label>
                                    Select Date of Birth
                                     <br />
-                                    जन्म तारीख</label>
-                                <input type="date" class="form-control" readonly value="1990-01-01" />
+                                    जन्म तारीख का चयन करें</label>
+                                <input type="date" class="form-control" value="1990-01-01" />
                             </div>
                             <div class="col-md-3">
                                 <label>
-                                    Category
+                                   Select Category
                                     <br />
-                                    श्रेणी</label>
-                                <input type="text" class="form-control" readonly value="General" />
+                                    श्रेणी का चयन करें</label>
+                                <select class="form-select select2" disabled>
+                                    <option>General</option>
+                                    <option>OBC</option>
+                                    <option>ST</option>
+                                    <option>SC</option>
+                                </select>
                             </div>
 
                             <div class="col-md-3">
@@ -150,7 +158,7 @@
                                 <input type="text" class="form-control" readonly value="Mrs. Shobha Varma" />
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row align-items-end">
                             <div class="col-md-3">
                                 <label>
                                    Enter Family Samagra ID
@@ -183,8 +191,8 @@
                     </fieldset>
                     <fieldset id="fs_AddressInfo" style="display: none">
                         <legend>Address Information / पता जानकारी</legend>
-                        <div class="row">
-                            <div class="col-md-3">
+                        <div class="row align-items-end">
+                     <%--       <div class="col-md-3">
                                 <label>
                                    Select State
                                     <br />
@@ -196,8 +204,8 @@
                                     <option value="Maharashtra">Maharashtra</option>
                                     <!-- Add other states as needed -->
                                 </select>
-                            </div>
-                            <div class="col-md-3">
+                            </div>--%>
+                         <%--   <div class="col-md-3">
                                 <label>
                                    Select Division
                                     <br />
@@ -209,7 +217,7 @@
                                     <option value="Indore">Indore</option>
                                     <!-- Add other divisions as needed -->
                                 </select>
-                            </div>
+                            </div>--%>
                             <div class="col-md-3">
                                 <label>
                                    Select District
@@ -235,13 +243,11 @@
                                     <!-- Add other blocks as needed -->
                                 </select>
                             </div>
-                        </div>
-                        <div class="row mt-3">
                             <div class="col-md-3">
                                 <label>
-                                    Village
+                                   Select Village
                                     <br />
-                                    गांव</label>
+                                    गांव चयन करें</label>
                                 <select class="form-select select2" disabled>
                                     <option value="--Select--">--Select--</option>
 
@@ -252,17 +258,17 @@
                             </div>
                             <div class="col-md-3">
                                 <label>
-                                    Pincode
+                                   Enter Pincode
                                     <br />
-                                    पिनकोड</label>
-                                <input type="text" class="form-control" disabled value="462023" />
+                                    पिनकोड दर्ज करें</label>
+                                <input type="text" class="form-control" readonly value="462023" />
                             </div>
                             <div class="col-md-6">
                                 <label>
-                                    Address
+                                   Enter Address
                                     <br />
-                                    पता</label>
-                                <textarea class="form-control" disabled rows="1">123, Main Street, Kalapipal, Bhopal</textarea>
+                                    पता दर्ज करें</label>
+                                <textarea class="form-control" rows="1">123, Main Street, Kalapipal, Bhopal</textarea>
                             </div>
                             <hr />
                             <div class="col-md-12 ">
