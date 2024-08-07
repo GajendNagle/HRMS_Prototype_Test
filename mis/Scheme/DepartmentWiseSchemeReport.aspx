@@ -335,7 +335,7 @@
                                             <label>
                                                 Scheme Name (In English)<br />
                                                 योजना का नाम (अंग्रेजी में)<span style="color: red">*</span></label>
-                                            <input name="ename" id="DOB" type="text" class="form-control" autocomplete="off" placeholder="Bhopal Girls School." readonly />
+                                            <input name="ename"  type="text" class="form-control" autocomplete="off" placeholder="Bhopal Girls School." readonly />
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -343,7 +343,7 @@
                                             <label>
                                                 Scheme Name (In Hindi)<br />
                                                 योजना का नाम (हिंदी में)<span style="color: red">*</span></label>
-                                            <input name="ename" id="DOB" type="text" class="form-control" autocomplete="off" placeholder="भोपाल गर्ल्स स्कूल." readonly />
+                                            <input name="ename"  type="text" class="form-control  fw-bold" autocomplete="off" placeholder="भोपाल गर्ल्स स्कूल." readonly />
 
                                         </div>
                                     </div>
@@ -353,7 +353,7 @@
                                                 Eligible for Category
                     <br />
                                                 पात्र श्रेणी <span style="color: red">*</span></label>
-                                            <select id="dates-field2" class="form-control" disabled>
+                                            <select  class="form-control" disabled>
                                                 <%-- <option value="General">General</option>
                 <option value="OBC">OBC</option>--%>
                                                 <option value="SC">SC</option>
@@ -367,7 +367,7 @@
                                             <label>
                                                 Eligible for Minority Community<br />
                                                 अल्पसंख्यक समुदाय के लिए पात्र<span style="color: red">*</span></label>
-                                            <select id="dates-field2" class=" form-control" disabled>
+                                            <select  class=" form-control" disabled>
                                                 <%--     <option value="Jain">Jain</option>
                 <option value="Muslim">Muslim</option>
                 <option value="Sikh">Sikh</option>--%>
@@ -663,7 +663,7 @@
                                             <label>
                                                 Maximum Education Gap of<br />
                                                 अधिकतम शिक्षा अंतर<span style="color: red">*</span></label>
-                                            <select class="form-control select2" disabled>
+                                            <select class="form-control" disabled>
                                                 <%--   <option value="--Select--">--Select--</option>
                  <option value="1 Years">1 Years</option>--%>
                                                 <option value="2 Years">2 Years</option>
@@ -676,7 +676,7 @@
                                             <label>
                                                 Select Applicable for Student Residence<br />
                                                 छात्र निवास के लिए लागू का चयन करें<span style="color: red">*</span></label>
-                                            <select class="form-control select2" id="StudentResidence" disabled>
+                                            <select class="form-control" id="StudentResidence" disabled>
                                                 <%--<option value="--Select--">--Select--</option>
                  <option value="Day Scholar">Day Scholar</option>--%>
                                                 <option value="Hosteller">Hosteller</option>
@@ -691,7 +691,7 @@
                                                 Select Applicable Gender
                                                 <br />
                                                 लागू लिंग चुनें<span style="color: red">*</span></label>
-                                            <select class="form-control select2" id="GenderChooser" disabled>
+                                            <select class="form-control" id="GenderChooser" disabled>
                                                 <%-- <option value="Select">Select</option>--%>
                                                 <option value="Boys">Boys</option>
                                                 <%--  <option value="Girls">Girls</option>

@@ -80,7 +80,13 @@
                             <label>
                                 Scheme Name<br />
                                 योजना  का नाम <span style="color: red">*</span></label>
-                            <input class="form-control" placeholder="Enter Scheme Name" />
+                            <select class="form-control select2">
+                                <option>Select</option>
+                                <option>सामान्य निर्धन वर्ग छात्रवृति </option>
+                                <option>सुदामा प्री-मैट्रिक छात्रवृत्ति योजना</option>
+                                <option>स्वामी विवेकानंद पोस्ट मेट्रिक प्रावीण्य छात्रवृत्ति योजना</option>
+                                <option>सुदाना शिष्यवृत्ति योजना</option>
+                            </select>
 
                         </div>
                     </div>
@@ -386,7 +392,7 @@
             }
         }
     </script>
-   
+
     <script>
         function div() {
 
@@ -416,7 +422,7 @@
             else {
                 alert("Please enter a valid year.");
             }
-        });      
+        });
 
         // Function to set default value to current financial year
         function setDefaultFinancialYear() {
