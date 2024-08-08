@@ -1276,7 +1276,7 @@
                                                     <%--<li class="nav-item"><a class="nav-link" href="/mis/Transaction/Rpt_EmployeeIncrement.aspx" ><i class="ri-file-list-3-line"></i>Employee Increment Report </a></li>--%>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_EServiceBookReport.aspx"><i class="ri-file-list-3-line"></i>E-Service Book Report </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_HREmpRetirementList.aspx"><i class="ri-file-list-3-line"></i>Employee Retirement Report </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/PunishmentReport.aspx"><i class="ri-file-list-3-line"></i>Punishment Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Report/PunishmentReport.aspx"><i class="ri-file-list-3-line"></i>Punishment Report</a></li>
                                                 </ul>
                                             </div>
                                         </li>
@@ -1488,7 +1488,7 @@
                                             <div class="collapse menu-dropdown" id="StudentReports">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Student/StudentReport.aspx"><i class="ri-file-list-3-line"></i>Student Summary Report</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Finance/Report/DistrictWiseStudentInfoReport.aspx"><i class="ri-file-list-3-line"></i>District Wise Student Information Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Report/DistrictWiseStudentInfoReport.aspx"><i class="ri-file-list-3-line"></i>District Wise Student Information Report</a></li>
                                                 </ul>
                                             </div>
                                         </li>

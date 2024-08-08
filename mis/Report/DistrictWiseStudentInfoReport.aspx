@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="DistrictWiseStudentInfoReport.aspx.cs" Inherits="mis_Finance_Report_DistrictWiseStudentInfoReport" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="DistrictWiseStudentInfoReport.aspx.cs" Inherits="mis_Report_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
@@ -868,3 +867,5 @@ PRINCIPAL, GOVT. HSS/0512003007</td>
         }
     </script>
 </asp:Content>
+
+

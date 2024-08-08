@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="PunishmentReport.aspx.cs" Inherits="mis_HRMS_PunishmentReport" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="PunishmentReport.aspx.cs" Inherits="mis_Report_Default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
         .mfont, .Fhead {
