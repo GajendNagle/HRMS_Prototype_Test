@@ -2,50 +2,12 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
-        .profileimage {
-            display: block;
-            height: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .mfont,.Fhead{
+        .mfont, .Fhead {
             font-size: 125%;
         }
+
         #show {
             display: none;
-        }
-
-        fieldset {
-            border: 0.8px solid #021d3a8c /*#ffa500*/;
-        }
-
-        legend {
-            border-radius: 7px;
-            border: 1.5px solid #021d3a78 /*#ffa500*/;
-        }
-
-        .select2-container .select2-selection--single, .form-control {
-            border-radius: 0.2rem !important;
-        }
-
-        .select2-container .select2-selection--single, .form-control {
-            border: 1px solid #1b5b5c47;
-        }
-
-            .form-control:disabled, .form-control[readonly] {
-                background-color: #f5f5f538 !important;
-            }
-
-        .table-bordered > :not(caption) > * > * {
-            border-width: 1px !important;
-        }
-
-        .table > :not(caption) > * > * {
-            padding: 0.3rem 0.5rem !important;
-        }
-
-        th {
-            white-space: nowrap;
         }
     </style>
 </asp:Content>
@@ -209,11 +171,9 @@
                     </div>
                 </div>
             </fieldset>
-
             <%-- pop Model --%>
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
-
                     <div class="modal-content">
                         <div class="modal-header">
                             <h3 class="modal-title w-100 text-center"></h3>
@@ -246,7 +206,7 @@
                                                 <span class="fw-bold">09-03-2024</span>
                                             </div>
                                         </div>
-                                        <div class="row" style="margin-top: 4rem ">
+                                        <div class="row" style="margin-top: 4rem">
                                             <div class="table-responsive">
                                                 <table class="table table-bordered ">
                                                     <tbody>
@@ -311,157 +271,10 @@
 
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </div>
-
-    <%--qijwfefk--%>
-    <%--<div class="modal fade show" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-modal="true" role="dialog" style="display: block; padding-left: 0px;">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title w-100 text-center"></h3>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <fieldset>
-
-                                <div class="row text-center">
-                                    
-
-
-                                    <div class="col-sm-12 text-center">
-                                        <br>
-                                        <h3><strong><b>Directorate of Public Instructions</b></strong></h3>
-                                        <h4><strong><b>मध्य प्रदेश शासन</b></strong></h4>
-                                        <h4><strong><b>जिला:- भोपल</b></strong></h4>
-                                    </div>
-                                    
-                                </div>
-                                <hr style="height: 3px; border-width: 10px; color: black; background-color: black">
-                                <div class="row">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="">
-                                                <div class="">
-                                                    <div class="row">
-                                                        <div class="col text-start">
-                                                            <span class="fw-bold">वार्षिक प्रतिवेदन अवधि वर्ष :-</span>
-
-                                                            <span class="fw-bold">2023-2024</span>
-                                                        </div>
-
-                                                        <div class="col text-end">
-                                                            <span class="fw-bold">आवेदन दिनाँक:-</span>
-                                                            <span class="fw-bold">09-03-2024</span>
-                                                        </div>
-                                                        <div class="col-md-12 mb-5">
-                                                            <h4 class="text-center mt-3 font-bold"><u>: :Utilization Certificate  : :</u></h4>
-                                                            <h6 class="text-center mt-2 font-bold"><u>: : उपयोगिता प्रमाणपत्र : :</u></h6>
-                                                        </div>
-                                                        <table class="table table-bordered modal-table table-st fs-5">
-                                                            <tbody><tr class="text-center">
-
-                                                                <th>OIS Code<br>
-                                                                    OIS कोड</th>
-                                                                <td class="text-center ">Delhi Public School_44561</td>
-                                                                <th>Project Code<br>
-                                                                    परियोजना क्रमांक</th>
-                                                                <td class="text-center ">P00019</td>
-                                                            </tr>
-                                                            <tr class="text-center">
-                                                                <th>Project Date<br>
-                                                                    परियोजना दिनांक</th>
-                                                                <td class="text-center ">22/05/2023</td>
-
-                                                                <th>Work Category<br>
-                                                                    कार्य की श्रेणी</th>
-                                                                <td class="text-center ">स्कूल मरम्मत/निर्माण</td>
-                                                            </tr>
-                                                            <tr class="text-center">
-                                                                <th>Milestone<br>
-                                                                    माइल स्टोन</th>
-                                                                <td>Foundation</td>
-                                                                <th>Installment<br>
-                                                                    किस्त</th>
-                                                                <td>1st Installment</td>
-                                                            </tr>
-                                                            <tr class="text-center">
-                                                                <th>Work Subcategory<br>
-                                                                    कार्य उपश्रेणी</th>
-                                                                <td class="text-center ">इमारत मरम्मत</td>
-                                                                <th>Approved Amount(In Rs)<br>
-                                                                    स्वीकृत राशि</th>
-                                                                <td class="text-center ">60000</td>
-                                                            </tr>
-                                                            <tr class="text-center">
-                                                                <th>1st Installment Utilization Amount<br>
-                                                                    पहली किस्त उपयोग राशि</th>
-                                                                <td>5000</td>
-                                                                <th>Remaining Amount<br>
-                                                                    बाकी अमाउंट</th>
-                                                                <td>55000</td>
-
-                                                            </tr>
-                                                            
-                                                        </tbody></table>
-                                                    </div>
-
-
-
-                                                    <div class="row ms-0 me-0">
-                                                        <div class="col-12">
-
-                                                            <h4 class="text-center font-bold">: : <u>Self Verified/
-स्वयं सत्यापित</u> : :</h4>
-                                                        </div>
-
-                                                        <div class="col-12">
-                                                            <p class="font-15 text-justify text-danger">
-                                                                Certified That I Have Personally Verified That The Work For Which The Grant-In-Aid Was Sanctioned Has Been Duly Completed And That I Have Made The Following Checks To See That The Money Is Actually Utilized For The Purpose For Which It Was Approved.<br>
-                                                                प्रमाणित किया जाता है कि मेरे द्वारा स्वयं सत्यापित किया गया हैं की  जिस कार्य के लिए अनुदान सहायता स्वीकृत की गई थी, उसे विधिवत पूरा किया गया है, और मैंने यह देखने के लिए निम्नलिखित जांच की है कि पैसा वास्तव में उसी उद्देश्य के लिए उपयोग किया गया था जिसके लिए इसे मंजूरी दी गई थी।
-
-                                                            </p>
-                                                        </div>
-                                                        <div class="col-md-7"></div>
-
-                                                        <div class="col-md-5 justify-content-end">
-                                                            <div class="text-end d-flex flex-column gap-3 justify-content-end">
-                                                                <h6><b>अधिकारी एवं पदेन प्रबन्ध संचालक........................</b></h6>
-                                                                <h6><b>स्कूल शिक्षा विभाग..........................................</b></h6>
-                                                                <h6><b>Bhopal- ( BPL ) (म.प्र.)
-......................................</b></h6>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-
-                                <br>
-                                <br>
-                                <br>
-
-
-                            </fieldset>
-                        </div>
-                        <div class="modal-footer justify-content-center">
-                            <button type="button" class="btn btn-primary" onclick="printModalContent('staticBackdrop')">Print</button>
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>--%>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>
