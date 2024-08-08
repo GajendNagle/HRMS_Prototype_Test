@@ -119,11 +119,11 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <!-- Search button triggers search and toggles divs -->
-                       <%-- <button type="button" class="btn btn-success w-lg btn-border" id="btn1">
+                        <%-- <button type="button" class="btn btn-success w-lg btn-border" id="btn1">
                             Search</button>--%>
                         <button type="button" class="btn btn-success w-lg btn-border" id="btn1" onclick="HideShow()">
-  Search
-</button>
+                            Search
+                        </button>
                         <a href="DistrictWiseStudentInfoReport.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                     </div>
                 </div>
@@ -355,34 +355,6 @@ PRINCIPAL, GOVT. HSS/0512003007</td>
                                                         <td>989305529512</td>
                                                         <td>10th</td>
                                                         <td>Riya /UID147858</td>
-                                                        <td>Rajesh Gupta</td>
-                                                        <td>GOVT HSS Sironj/23340603802</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>989305529513</td>
-                                                        <td>10th</td>
-                                                        <td>Sheetal Roy/UID147855</td>
-                                                        <td>Brajesh Gupta</td>
-                                                        <td>GOVT HSS Sironj/23340603802</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>989305529514</td>
-                                                        <td>10th</td>
-                                                        <td>Shivani Roy/UID147854</td>
-                                                        <td>Ritesh Gupta</td>
-                                                        <td>GOVT HSS Sironj/23340603802</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>989305529515</td>
-                                                        <td>10th</td>
-                                                        <td>Reshma Roy/UID147853</td>
-                                                        <td>Rajesh Gupta</td>
-                                                        <td>GOVT HSS Sironj/23340603802</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>989305529510</td>
-                                                        <td>12th</td>
-                                                        <td>Rahul/UID147853</td>
                                                         <td>Rajesh Gupta</td>
                                                         <td>GOVT HSS Sironj/23340603802</td>
                                                     </tr>
@@ -714,6 +686,20 @@ PRINCIPAL, GOVT. HSS/0512003007</td>
                                                         <td>Ritesh Gupta</td>
                                                         <td>GOVT HSS Sironj/23340603802</td>
                                                     </tr>
+                                                    <tr>
+                                                        <td>989305529513</td>
+                                                        <td>10th</td>
+                                                        <td>Sheetal Roy/UID147855</td>
+                                                        <td>Brajesh Gupta</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>989305529510</td>
+                                                        <td>12th</td>
+                                                        <td>Rahul/UID147853</td>
+                                                        <td>Rajesh Gupta</td>
+                                                        <td>GOVT HSS Sironj/23340603802</td>
+                                                    </tr>
 
                                                 </tbody>
                                             </table>
@@ -730,17 +716,17 @@ PRINCIPAL, GOVT. HSS/0512003007</td>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-   <script>
-       function HideShow() {
-           var txtAcademicYear = document.getElementById('txtAcademicYear');
-           var ddlDistrict = document.getElementById('ddlDistrict');
-           if (txtAcademicYear.value === "" || ddlDistrict.value === "Select") {
-               document.getElementById('showAllDetails').style.display = 'none';
-           } else {
-               document.getElementById('showAllDetails').style.display = 'block';
-           }
-       }
-   </script>
+    <script>
+        function HideShow() {
+            var txtAcademicYear = document.getElementById('txtAcademicYear');
+            var ddlDistrict = document.getElementById('ddlDistrict');
+            if (txtAcademicYear.value === "" || ddlDistrict.value === "Select") {
+                document.getElementById('showAllDetails').style.display = 'none';
+            } else {
+                document.getElementById('showAllDetails').style.display = 'block';
+            }
+        }
+    </script>
     <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
     </script>
