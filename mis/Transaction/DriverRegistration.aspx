@@ -349,7 +349,7 @@
                     </div>
                     <div class="col-md-12">
                         <hr />
-                        <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Add</button>
+                        <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Save</button>
                         <a href="RouteToVehicleMapping.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                 </div>
