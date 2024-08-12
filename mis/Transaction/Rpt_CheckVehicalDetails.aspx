@@ -70,7 +70,8 @@
                     <div class="col-md-3">
                         <label>
                             Select Type
-                            <br />प्रकार का चयन करें<span style="color: red">*</span>
+                            <br />
+                            प्रकार का चयन करें<span style="color: red">*</span>
                         </label>
                         <select class="form-control select2">
                             <option>Select</option>
@@ -93,13 +94,17 @@
                     </div>
                 </div>
                 <hr />
-                <d iv class="row align-items-end">
+                <div class="row align-items-end">
                     <div class="col-md-12">
                         <button id="searchButton" type="button" class="btn btn-outline-success w-lg btn-border" onclick="document.getElementById('tbldetail').style.display='block'">Search</button>
 
                         <a href="Rpt_CheckVehicalDetails.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
-                </d>
+                    
+<%--                    <div>
+                        <p style="font-size: 15px; color: red;margin-left: 15px;"><span style="font-weight: 700;">Note:-</span>Only Vehicle No. Show In School Transport</p>
+                    </div>--%>
+                </div>
             </fieldset>
 
             <fieldset id="tbldetail" style="display: none">
@@ -131,11 +136,11 @@
                                         <th>Mobile No.<br />
                                             मोबाइल नंबर</th>
                                         <th>Challan Number In<br />
-                                      आगमन चालान नंबर </th>
+                                            आगमन चालान नंबर </th>
                                         <th>In Time<br />
                                             आगमन का समय</th>
                                         <th>Challan Number Out<br />
-                                       प्रस्थान  चालान नंबर</th>
+                                            प्रस्थान  चालान नंबर</th>
                                         <th>Out Time<br />
                                             प्रस्थान का समय</th>
                                     </tr>
