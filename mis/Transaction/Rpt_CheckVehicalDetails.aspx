@@ -69,6 +69,18 @@
                     </div>
                     <div class="col-md-3">
                         <label>
+                            Select Type
+                            <br />प्रकार का चयन करें<span style="color: red">*</span>
+                        </label>
+                        <select class="form-control select2">
+                            <option>Select</option>
+                            <option>All</option>
+                            <option>In Vehicle</option>
+                            <option>Out Vehicle</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label>
                             Select Vehicle No<span style="color: red">*</span>
                             <br />
                             वाहन नंबर का चयन करें
@@ -118,8 +130,12 @@
                                             चालक का नाम</th>
                                         <th>Mobile No.<br />
                                             मोबाइल नंबर</th>
+                                        <th>Challan Number In<br />
+                                      आगमन चालान नंबर </th>
                                         <th>In Time<br />
                                             आगमन का समय</th>
+                                        <th>Challan Number Out<br />
+                                       प्रस्थान  चालान नंबर</th>
                                         <th>Out Time<br />
                                             प्रस्थान का समय</th>
                                     </tr>
@@ -130,7 +146,9 @@
                                         <td>MP04AB1123</td>
                                         <td>Rohan Saksena</td>
                                         <td>6567234567</td>
+                                        <td>CH71240002</td>
                                         <td>9:00 AM</td>
+                                        <td>CH71240002</td>
                                         <td>6:06 PM</td>
                                     </tr>
                                     <tr>
@@ -138,7 +156,9 @@
                                         <td>MP04AB7723</td>
                                         <td>Shyam Arora</td>
                                         <td>7876546798</td>
+                                        <td>CH71240010</td>
                                         <td>9:15 AM</td>
+                                        <td>CH71240010</td>
                                         <td>6:17 PM</td>
                                     </tr>
                                 </tbody>
