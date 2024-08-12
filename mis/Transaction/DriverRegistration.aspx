@@ -182,11 +182,6 @@
                             <input class="form-control" type="file" placeholder="Enter Licence Number" />
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <hr />
-                        <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Add</button>
-                        <a href="RouteToVehicleMapping.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
-                    </div>
                 </div>
             </fieldset>
             <fieldset id="AddressDetail">
@@ -352,6 +347,11 @@
                             </label>
                         </div>
                     </div>
+                    <div class="col-md-12">
+                        <hr />
+                        <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Add</button>
+                        <a href="RouteToVehicleMapping.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                    </div>
                 </div>
             </fieldset>
             <fieldset id="dtls">
@@ -362,7 +362,6 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <thead class="nowrap">
-                                    <tr>
                                     <tr>
                                         <th>Sr. No.
                                          <br />
@@ -408,7 +407,6 @@
                                     <td><a class=" btn btn-outline-primary"><i class="fa fa-pen"></i></a>
                                         <a class="Alert-Edit btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
-
                             </table>
                         </div>
                     </div>

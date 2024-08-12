@@ -1426,6 +1426,7 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DriverAttenderLeaveEntry.aspx"><i class="ri-file-list-3-line"></i>Driver / Attender Leave Entry </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/RouteToVehicleMapping.aspx"><i class="ri-file-list-3-line"></i>Route To Vehicle Mapping   </a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Transaction/BusStopToStudentEnrollment.aspx"><i class="ri-file-list-3-line"></i>Bus Stop Enrollnent</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Transaction/DriverAttenderRouteDetails.aspx"><i class="ri-file-list-3-line"></i>Driver / Attender Route Details</a></li>
 
                                                 </ul>
                                             </div>

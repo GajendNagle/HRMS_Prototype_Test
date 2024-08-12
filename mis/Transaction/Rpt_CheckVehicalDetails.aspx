@@ -93,13 +93,13 @@
                     </div>
                 </div>
                 <hr />
-                <div class="row align-items-end">
+                <d iv class="row align-items-end">
                     <div class="col-md-12">
                         <button id="searchButton" type="button" class="btn btn-outline-success w-lg btn-border" onclick="document.getElementById('tbldetail').style.display='block'">Search</button>
 
                         <a href="Rpt_CheckVehicalDetails.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
-                </div>
+                </d>
             </fieldset>
 
             <fieldset id="tbldetail" style="display: none">
