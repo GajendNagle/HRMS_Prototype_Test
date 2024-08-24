@@ -55,21 +55,31 @@
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Transport Use
+                                <label>
+                                    Transport Use
             <br />
-                                    परिवहन का उपयोग<span style="color: red">*</span></span>
-                                <select class="form-control">
+                                    परिवहन का उपयोग<span style="color: red">*</span></label>
+                                <select class="form-control" id="Transport" onchange="transport()">
                                     <option value="0">--Select--</option>
                                     <option value="1">School Transport Use</option>
                                     <option value="2">Department Transport use</option>
                                 </select>
                             </div>
                         </div>
+                        <div class="col-md-3" id="divUdise" style="display:none">
+                            <div class="form-group">
+                                <label>
+                                    Enter School Udise Code<br />
+                                    स्कूल यूडाइस कोड दर्ज करें<span style="color: red">*</span></label>
+                                <input  class="form-control" placeholder="Enter School Udise Code" type="text" />
+                            </div>
+                        </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Transport Ownership
+                                <label>
+                                    Transport Ownership
                                     <br />
-                                    परिवहन स्वामित्व<span style="color: red">*</span></span>
+                                    परिवहन स्वामित्व<span style="color: red">*</span></label>
                                 <select class="form-control" id="dropdown1" onchange="toggleSection1()">
                                     <option value="0">--Select--</option>
                                     <option value="1">Rented</option>
@@ -81,82 +91,31 @@
 
 
                         <%--hidshow--%>
-                        <script>
-
-                            function toggleSection1() {
-                                var dropdown1 = document.getElementById("dropdown1");
-                                var section1 = document.getElementById("section1");
-                                var section2 = document.getElementById("section2");
-                                var section3 = document.getElementById("section3");
-                                var section4 = document.getElementById("section4");
-                                var section5 = document.getElementById("section5");
-                                var section6 = document.getElementById("section6");
-                                var section7 = document.getElementById("section7");
-                                var section8 = document.getElementById("section8");
-                                var section9 = document.getElementById("fieldset1");
-                                var section10 = document.getElementById("fieldset2");
-
-                                if (dropdown1.value === "1") {
-                                    section1.style.display = "block";
-                                    section2.style.display = "block";
-                                    section3.style.display = "block";
-                                    section4.style.display = "block";
-                                    section5.style.display = "block";
-                                    section6.style.display = "block";
-                                    section7.style.display = "none";
-                                    section8.style.display = "none";
-                                    section9.style.display = "block";
-                                    section10.style.display = "none";
-
-                                } else if (dropdown1.value === "2") {
-                                    section7.style.display = "block";
-                                    section8.style.display = "block";
-                                    section1.style.display = "none";
-                                    section2.style.display = "none";
-                                    section3.style.display = "none";
-                                    section4.style.display = "none";
-                                    section5.style.display = "none";
-                                    section6.style.display = "none";
-                                    section9.style.display = "none";
-                                    section10.style.display = "block";
-
-                                } else {
-                                    section1.style.display = "none";
-                                    section2.style.display = "none";
-                                    section3.style.display = "none";
-                                    section4.style.display = "none";
-                                    section5.style.display = "none";
-                                    section6.style.display = "none";
-                                    section7.style.display = "none";
-                                    section8.style.display = "none";
-                                    section9.style.display = "none";
-                                    section10.style.display = "none";
-                                }
-                            }
-
-                        </script>
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Vehicle Number
+                                <label>
+                                    Vehicle Number
                                     <br />
-                                    गाड़ी का नंबर<span style="color: red">*</span></span>
+                                    गाड़ी का नंबर<span style="color: red">*</span></label>
                                 <input type="text" maxlength="10" class="form-control " placeholder="Enter Vehicle Number" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Vehicle Company Name
+                                <label>
+                                    Vehicle Company Name
                                     <br />
-                                    वाहन कंपनी का नाम<span style="color: red">*</span></span>
+                                    वाहन कंपनी का नाम<span style="color: red">*</span></label>
                                 <input type="text" maxlength="50" class="form-control" placeholder="Enter Vehicle Company" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Vehicle Model Name
+                                <label>
+                                    Vehicle Model Name
                                     <br />
-                                    वाहन मॉडल का नाम<span style="color: red">*</span></span>
+                                    वाहन मॉडल का नाम<span style="color: red">*</span></label>
                                 <input type="text" maxlength="20" class="form-control" placeholder="Enter Vehicle Model" autocomplete="off">
                             </div>
                         </div>
@@ -170,9 +129,10 @@
                         </div>--%>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Fuel Type
+                                <label>
+                                    Fuel Type
                                     <br />
-                                    ईंधन का प्रकार<span style="color: red">*</span></span>
+                                    ईंधन का प्रकार<span style="color: red">*</span></label>
                                 <%--<div class="form-control">
                                     <input type="radio" id="one">
                                     <label for="one">Diesel</label>
@@ -194,9 +154,10 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Year Of Manufacture
+                                <label>
+                                    Year Of Manufacture
                                     <br />
-                                    निर्माण वर्ष<span style="color: red">*</span></span>
+                                    निर्माण वर्ष<span style="color: red">*</span></label>
                                 <select class="form-control">
                                     <option value="0">--Select--</option>
                                     <option value="1">2000</option>
@@ -228,9 +189,10 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Motor Vehicle
+                                <label>
+                                    Motor Vehicle
                                     <br />
-                                    मोटर गाड़ी<span style="color: red">*</span></span>
+                                    मोटर गाड़ी<span style="color: red">*</span></label>
                                 <select class="form-control">
                                     <option value="0">Select</option>
                                     <option value="1">New Vehicle</option>
@@ -242,9 +204,10 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Type Of Body
+                                <label>
+                                    Type Of Body
                                     <br />
-                                    बॉडी का प्रकार<span style="color: red">*</span></span>
+                                    बॉडी का प्रकार<span style="color: red">*</span></label>
                                 <select class="form-control">
                                     <option value="0">--Select--</option>
                                     <option value="1">Hatchback</option>
@@ -257,9 +220,10 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Vehicle Color
+                                <label>
+                                    Vehicle Color
                                     <br />
-                                    वाहन का रंग<span style="color: red">*</span></span>
+                                    वाहन का रंग<span style="color: red">*</span></label>
                                 <input type="text" maxlength="30" class="form-control" placeholder="Enter Vehicle Color" autocomplete="off">
                             </div>
                         </div>
@@ -272,9 +236,10 @@
                         </div>--%>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Vehicle Chassis Number
+                                <label>
+                                    Vehicle Chassis Number
                                     <br />
-                                    वाहन चेसिस नंबर<span style="color: red">*</span></span>
+                                    वाहन चेसिस नंबर<span style="color: red">*</span></label>
                                 <input type="text" maxlength="17" class="form-control " placeholder="Enter Vehicle Chassis Number" autocomplete="off">
                                 <span style="color: Red; display: none;">Invalid Chassis Number.</span>
                             </div>
@@ -290,65 +255,73 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Vehicle Engine Number
+                                <label>
+                                    Vehicle Engine Number
                                     <br />
-                                    वाहन का इंजन नंबर<span style="color: red">*</span></span>
+                                    वाहन का इंजन नंबर<span style="color: red">*</span></label>
                                 <input type="text" maxlength="20" class="form-control " placeholder="Enter Vehicle Engine Number" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Vehicle Weight(Unladen weight) KG
+                                <label>
+                                    Vehicle Weight(Unladen weight) KG
                                     <br />
-                                    वाहन का वजन कि.ग्रा. में <span style="color: red">*</span></span>
+                                    वाहन का वजन कि.ग्रा. में <span style="color: red">*</span></label>
                                 <input type="text" maxlength="7" class="form-control " placeholder="Enter Vehicle Weight" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Cubic Capacity
+                                <label>
+                                    Cubic Capacity
                                     <br />
-                                    घन क्षमता<span style="color: red">*</span></span>
+                                    घन क्षमता<span style="color: red">*</span></label>
                                 <input type="text" maxlength="7" class="form-control " placeholder="Enter Cubic Capacity" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Horse power (BHP/KW)
+                                <label>
+                                    Horse power (BHP/KW)
                                     <br />
-                                    अश्वशक्ति (बीएचपी/किलोवॉट)<span style="color: red">*</span></span>
+                                    अश्वशक्ति (बीएचपी/किलोवॉट)<span style="color: red">*</span></label>
                                 <input type="text" maxlength="7" class="form-control " placeholder="Enter Horse power" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Wheel Base (mm)
+                                <label>
+                                    Wheel Base (mm)
                                     <br />
-                                    व्हील बेस (मि.मी. में)<span style="color: red">*</span></span>
+                                    व्हील बेस (मि.मी. में)<span style="color: red">*</span></label>
                                 <input type="text" maxlength="7" class="form-control " placeholder="Enter Wheel Base" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Registration No.
+                                <label>
+                                    Registration No.
                                     <br />
-                                    पंजीकरण संख्या<span style="color: red">*</span></span>
+                                    पंजीकरण संख्या<span style="color: red">*</span></label>
                                 <input type="text" maxlength="15" class="form-control" placeholder="Enter Registration No." autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Registration Date
+                                <label>
+                                    Registration Date
                                     <br />
-                                    पंजीकरण की तारीख<span style="color: red">*</span></span>
+                                    पंजीकरण की तारीख<span style="color: red">*</span></label>
                                 <input type="Date" class="form-control disableFuturedate" data-provide="datepicker" placeholder="dd/mm/yyyy" autocomplete="off" data-date-end-date="0d" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Registration Validity
+                                <label>
+                                    Registration Validity
                                     <br />
-                                    पंजीकरण की वैधता<span style="color: red">*</span></span>
+                                    पंजीकरण की वैधता<span style="color: red">*</span></label>
                                 <input type="Date" class="form-control disableFuturedate" data-provide="datepicker" placeholder="dd/mm/yyyy" autocomplete="off" data-date-end-date="0d" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
                             </div>
                         </div>
@@ -371,50 +344,56 @@
                     <div class="row">
                         <div class="col-md-3" id="section1" style="display: none;">
                             <div class="form-group">
-                                <span>Firm Name
+                                <label>
+                                    Firm Name
                                 <br />
-                                    फर्म का नाम<span style="color: red">*</span></span>
+                                    फर्म का नाम<span style="color: red">*</span></label>
                                 <input type="text" maxlength="10" class="form-control " placeholder="Enter Ferm Name" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3" id="section2" style="display: none;">
                             <div class="form-group">
-                                <span>State Name
+                                <label>
+                                    State Name
                                 <br />
-                                    राज्य   नाम<span style="color: red">*</span></span>
+                                    राज्य   नाम<span style="color: red">*</span></label>
                                 <input type="text" maxlength="50" class="form-control" placeholder="Enter State Name" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3" id="section3" style="display: none;">
                             <div class="form-group">
-                                <span>GSTIN No.
+                                <label>
+                                    GSTIN No.
                                 <br />
-                                    जी.एस.टी.आई.एन नंबर<span style="color: red"></span></span>
+                                    जी.एस.टी.आई.एन नंबर<span style="color: red"></span></label>
                                 <input type="text" maxlength="20" class="form-control" placeholder="Enter GSTIN No." autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3" id="section5" style="display: none;">
                             <div class="form-group">
-                                <span>Contect Person Name
+                                <label>
+                                    Contect Person Name
         <br />
-                                    संपर्क व्यक्ति का नाम<span style="color: red">*</span></span>
+                                    संपर्क व्यक्ति का नाम<span style="color: red">*</span></label>
                                 <input type="text" maxlength="50" class="form-control" placeholder="Enter Contect person Name">
                             </div>
                         </div>
                         <div class="col-md-9" id="section4" style="display: none;">
                             <div class="form-group">
-                                <span>Address
+                                <label>
+                                    Address
                                 <br />
-                                    पता<span style="color: red">*</span></span>
+                                    पता<span style="color: red">*</span></label>
                                 <input name="ctl00$ContentBody$txtDealerAddress" type="text" maxlength="100" class="form-control" placeholder="Enter  Address" autocomplete="off">
                             </div>
                         </div>
 
                         <div class="col-md-3" id="section6" style="display: none;">
                             <div class="form-group">
-                                <span>Firm Ladline No.
+                                <label>
+                                    Firm Ladline No.
                        <br />
-                                    फर्म लैडलाइन नं.<span style="color: red">*</span></span>
+                                    फर्म लैडलाइन नं.<span style="color: red">*</span></label>
                                 <input type="text" maxlength="50" class="form-control" placeholder="Firm Ladline No.">
                             </div>
                         </div>
@@ -425,17 +404,19 @@
                     <div class="row justify-content-end">
                         <div class="col-md-3" id="section7" style="display: none;">
                             <div class="form-group">
-                                <span>Dealer Name
+                                <label>
+                                    Dealer Name
                                 <br />
-                                    विक्रेता का नाम<span style="color: red">*</span></span>
+                                    विक्रेता का नाम<span style="color: red">*</span></label>
                                 <input type="text" maxlength="45" class="form-control" placeholder="Enter Dealer Name" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-9" id="section8" style="display: none;">
                             <div class="form-group">
-                                <span>Dealer Address
+                                <label>
+                                    Dealer Address
                                 <br />
-                                    विक्रेता का पता<span style="color: red">*</span></span>
+                                    विक्रेता का पता<span style="color: red">*</span></label>
                                 <input name="ctl00$ContentBody$txtDealerAddress" type="text" maxlength="100" class="form-control" placeholder="Enter Dealer Address" autocomplete="off">
                             </div>
                         </div>
@@ -446,40 +427,45 @@
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Insurance Company Name
+                                <label>
+                                    Insurance Company Name
                                     <br />
-                                    बीमा कंपनी का नाम<span style="color: red">*</span></span>
+                                    बीमा कंपनी का नाम<span style="color: red">*</span></label>
                                 <input type="text" maxlength="50" class="form-control" placeholder="Enter Insurance Company Name" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Insurance Number<br />
-                                    बीमा नंबर<span style="color: red">*</span></span>
+                                <label>
+                                    Insurance Number<br />
+                                    बीमा नंबर<span style="color: red">*</span></label>
                                 <input type="text" maxlength="17" class="form-control" placeholder="Enter Insurance Number" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Insurance Start Date
+                                <label>
+                                    Insurance Start Date
                                     <br />
-                                    बीमा प्रारंभ तिथि<span style="color: red">*</span></span>
+                                    बीमा प्रारंभ तिथि<span style="color: red">*</span></label>
                                 <input type="date" class="form-control disableFuturedate" data-provide="datepicker" data-date-end-date="0d" placeholder="dd/mm/yyyy" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Insurance End Date
+                                <label>
+                                    Insurance End Date
                                     <br />
-                                    बीमा समाप्ति तिथि<span style="color: red">*</span></span>
+                                    बीमा समाप्ति तिथि<span style="color: red">*</span></label>
                                 <input type="date" class="form-control disableFuturedate" placeholder="dd/mm/yyyy" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <span>Insurance Amount(Rs)
+                                <label>
+                                    Insurance Amount(Rs)
                                     <br />
-                                    बीमा की राशि(रु.)<span style="color: red">*</span></span>
+                                    बीमा की राशि(रु.)<span style="color: red">*</span></label>
                                 <input type="text" maxlength="9" class="form-control" placeholder="Enter Insurance Amount" autocomplete="off">
                             </div>
                         </div>
@@ -739,4 +725,70 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script>
+
+        function toggleSection1() {
+            var dropdown1 = document.getElementById("dropdown1");
+            var section1 = document.getElementById("section1");
+            var section2 = document.getElementById("section2");
+            var section3 = document.getElementById("section3");
+            var section4 = document.getElementById("section4");
+            var section5 = document.getElementById("section5");
+            var section6 = document.getElementById("section6");
+            var section7 = document.getElementById("section7");
+            var section8 = document.getElementById("section8");
+            var section9 = document.getElementById("fieldset1");
+            var section10 = document.getElementById("fieldset2");
+
+            if (dropdown1.value === "1") {
+                section1.style.display = "block";
+                section2.style.display = "block";
+                section3.style.display = "block";
+                section4.style.display = "block";
+                section5.style.display = "block";
+                section6.style.display = "block";
+                section7.style.display = "none";
+                section8.style.display = "none";
+                section9.style.display = "block";
+                section10.style.display = "none";
+
+            } else if (dropdown1.value === "2") {
+                section7.style.display = "block";
+                section8.style.display = "block";
+                section1.style.display = "none";
+                section2.style.display = "none";
+                section3.style.display = "none";
+                section4.style.display = "none";
+                section5.style.display = "none";
+                section6.style.display = "none";
+                section9.style.display = "none";
+                section10.style.display = "block";
+
+            } else {
+                section1.style.display = "none";
+                section2.style.display = "none";
+                section3.style.display = "none";
+                section4.style.display = "none";
+                section5.style.display = "none";
+                section6.style.display = "none";
+                section7.style.display = "none";
+                section8.style.display = "none";
+                section9.style.display = "none";
+                section10.style.display = "none";
+            }
+        }
+
+        function transport() {
+            var Transport = document.getElementById("Transport");
+            if (Transport.value === "1") {
+                divUdise.style.display = "block";
+
+            }
+            else {
+                divUdise.style.display = "none";
+            }
+        }
+        
+    </script>
+
 </asp:Content>

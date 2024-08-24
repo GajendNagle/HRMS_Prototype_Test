@@ -32,7 +32,7 @@
         </div>
     </div>
     <div class="card card-border-primary">
-       
+
         <div class="card-header">
             <div class="row">
                 <div class="col-xxl-10 col-md-12">
@@ -53,18 +53,18 @@
                 <legend>Vehicle Registration Report / 
 वाहन पंजीकरण विवरण</legend>
                 <div class="row">
-                                <div class="col-md-3">
-                <div class="form-group">
-                    <span>Transport Use
-<br />
-                        परिवहन का उपयोग<span style="color: red">*</span></span>
-                    <select class="form-control">
-                        <option value="0">--Select--</option>
-                        <option value="1">School Transport Use</option>
-                        <option value="2">Department Transport use</option>
-                    </select>
-                </div>
-            </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <span>Transport Use
+                                <br />
+                                परिवहन का उपयोग<span style="color: red">*</span></span>
+                            <select class="form-control">
+                                <option value="0">--Select--</option>
+                                <option value="1">School Transport Use</option>
+                                <option value="2">Department Transport use</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>From Date
@@ -88,29 +88,28 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-    <div class="form-group">
-        <span>Select Office Type
+                        <div class="form-group">
+                            <span>Select Office Type
             <br />
-             कार्यालय प्रकार का चयन करें
-            <span style="color: red">*</span></span>
-        <select class="select2 form-control">
-            <option value="0">All</option>
-            <option value="51">Head Office</option>
-            <option value="49">JD Office </option>
-            <option value="47">DEO Office</option>
-            <option value="46">Block Office</option>
-            <option value="45">Sankul Office</option>       
-        </select>
-    </div>
-</div>
+                                कार्यालय प्रकार का चयन करें<span style="color: red">*</span></span>
+                            <select class="select2 form-control">
+                                <option value="0">All</option>
+                                <option value="51">Head Office</option>
+                                <option value="49">JD Office </option>
+                                <option value="47">DEO Office</option>
+                                <option value="46">Block Office</option>
+                                <option value="45">Sankul Office</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <span>Select Office Name
                                 <br />
-                               कार्यालय नाम का चयन करें <span style="color: red">*</span></span>
+                                कार्यालय नाम का चयन करें<span style="color: red">*</span></span>
                             <select class="select2 form-control">
                                 <option value="0">All</option>
-                                 <option value="51">Head Office</option>
+                                <option value="51">Head Office</option>
                                 <option value="51">Agar Malwa</option>
                                 <option value="49">Alirajpur</option>
                                 <option value="47">Anuppur</option>
@@ -170,7 +169,7 @@
                         <div class="form-group">
                             <span>Vehicle Number
                                 <br />
-                           गाड़ी का नंबर<span style="color: red">*</span></span>
+                                गाड़ी का नंबर<span style="color: red">*</span></span>
                             <span class="left">
                                 <span id="ctl00_ContentBody_RequiredFieldValidator2" style="color: Red; display: none;"><i class="fa fa-exclamation-circle" title="Select Vehicle Number !"></i></span>
                             </span>
@@ -252,7 +251,9 @@
                                     <th scope="col">Sr.No.<br />
                                         सरल क्र. </th>
                                     <th scope="col">Vehicle Number<br />
-                                       गाड़ी का नंबर</th>
+                                        गाड़ी का नंबर</th>
+                                    <th scope="col">UDise Code<br />
+                                        यूडाइस कोड</th>
                                     <th scope="col">Chassis Number
          <br />
                                         चेसिस नंबर</th>
@@ -276,6 +277,7 @@
                                     <td>
                                         <span>MP04ZB8290</span>
                                     </td>
+                                    <td>23145484551</td>
                                     <td>
                                         <span id="ctl00_ContentBody_grvVehiclRegistration_ctl02_lblVehicle_Chassis_Number">MAT631139NWH69961</span>
 
@@ -294,6 +296,33 @@
                                         <a class="btn btn-primary" href="javascript:__doPostBack('ctl00$ContentBody$grvVehiclRegistration$ctl02$ctl02','')"><i class="fa fa-eye"></i></a>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>
+                                        <span>2</span>
+                                    </td>
+                                    <td>
+                                        <span>MP04ZB8299</span>
+                                    </td>
+                                    <td>23145484559</td>
+                                    <td>
+                                        <span>MAT631139NWH69969</span>
+
+                                    </td>
+                                    <td>
+                                        <span >1901003122P105139</span>
+                                    </td>
+                                    <td>
+                                        <span >Varenyam motor car</span>
+                                    </td>
+                                    <td>
+                                        <span>DAY GREY</span>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-primary" href="javascript:__doPostBack('ctl00$ContentBody$grvVehiclRegistration$ctl02$ctl01','')"><i class="fa fa-edit"></i></a>
+                                        <a class="btn btn-primary" href="javascript:__doPostBack('ctl00$ContentBody$grvVehiclRegistration$ctl02$ctl02','')"><i class="fa fa-eye"></i></a>
+                                    </td>
+                                </tr>
+
                             </tbody>
                         </table>
                     </div>

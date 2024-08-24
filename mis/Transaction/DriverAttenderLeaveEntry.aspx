@@ -128,14 +128,42 @@
                 <div class="row align-items-end">
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Select Authorized Driver / Attender Name<br />
-                                अधिकृत ड्राइवर / अटेंडर के नाम का चयन करें<span style="color:red">*</span></label>
-                            <select class="form-select" id="Names" onchange="toggleSection1()">
+                            <label>
+                                Select Authorized Driver / Attender
+                                <br />
+                                अधिकृत ड्राइवर / अटेंडर का चयन करें<span style="color: red">*</span></label>
+                            <select class="form-select" id="type" onchange="DriverAttenderType()">
+                                <option value="0">--Select--</option>
+                                <option value="1">Driver</option>
+                                <option value="2">Attender</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3" style="display:none" id="DriverNames">
+                        <div class="form-group">
+                            <label>
+                                Select Driver Name<br />
+                               ड्राइवर नाम का चयन करें<span style="color: red">*</span></label>
+                            <select class="form-select" >
                                 <option value="0">--Select--</option>
                                 <option value="1">Ram</option>
                                 <option value="2">Rakesh</option>
                                 <option value="3">Ramesh</option>
                                 <option value="4">Rajesh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3" style="display:none" id="AttenderName">
+                        <div class="form-group">
+                            <label>
+                                Select  Attender Name<br />
+                                अटेंडर के नाम का चयन करें<span style="color: red">*</span></label>
+                            <select class="form-select">
+                                <option value="0">--Select--</option>
+                                <option value="1">Gajendra</option>
+                                <option value="2">Sagar</option>
+                                <option value="3">Dheeraj</option>
+                                <option value="4">Arjun</option>
                             </select>
                         </div>
                     </div>
@@ -156,7 +184,10 @@
                         <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Save</button>
                         <a href="RouteToVehicleMapping.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
-                    <p style="font-size: 19px; font-weight: 700; margin: 10px 16px; color: RED"><span class="fs-bold text-danger">Note :-</span> Driver / Attender की जानकारी को 2 दिन के अंन्दर ही सुधार किया जा सकता हैं |</p>
+                    <p style="font-size: 19px; font-weight: 700; margin: 10px 16px; color: RED">
+                        <span class="fs-bold text-danger">Note :-</span> Driver / Attender की जानकारी को 2 दिन के अंन्दर ही सुधार किया जा सकता हैं |<br />
+                        <span style="margin: 10px 68px;">यहा वह चालक के नाम आयेंगे जिसे वाहन के साथ नहीं जोड़ा गया हैं |</span>
+                    </p>
                 </div>
             </fieldset>
             <fieldset id="FsDetails">
@@ -226,5 +257,21 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+    <script>
+
+        function DriverAttenderType() {
+            var type = document.getElementById("type");
+            if (type.value === "1") {
+                DriverNames.style.display = "block";
+                AttenderName.style.display = "none";
+
+
+            }
+            else{
+                AttenderName.style.display = "Block";
+                DriverNames.style.display = "none";
+            }
+        }
+    </script>
 </asp:Content>
 
