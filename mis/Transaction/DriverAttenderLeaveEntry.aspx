@@ -197,7 +197,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 col-xxl-3" id="filePhoto" style="display: none">
                         <div class="form-group">
-                            <label>Upload Photo<span style="color: red">*</span></label>
+                            <label>Upload Photo<br />फोटो अपलोड करें<span style="color: red">*</span></label>
                             <input class="form-control" type="file" />
                         </div>
                     </div>
