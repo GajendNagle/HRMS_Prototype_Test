@@ -132,19 +132,32 @@
                                 Select Authorized Driver / Attender
                                 <br />
                                 अधिकृत ड्राइवर / अटेंडर का चयन करें<span style="color: red">*</span></label>
-                            <select class="form-select" id="type" onchange="DriverAttenderType()">
+                            <select class="form-select" id="Authorizedtype" onchange=" DriverAttender() ">
+                                <option value="0">--Select--</option>
+                                <option value="1">Registered Driver / Attender</option>
+                                <option value="2">UnRegistered Driver / Attender</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3" style="display: none" id="type">
+                        <div class="form-group">
+                            <label>
+                                Select Driver / Attender
+                                <br />
+                                ड्राइवर / अटेंडर का चयन करें<span style="color: red">*</span></label>
+                            <select class="form-select" onchange="DriverAttenderType(this.value)">
                                 <option value="0">--Select--</option>
                                 <option value="1">Driver</option>
                                 <option value="2">Attender</option>
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3" style="display:none" id="DriverNames">
+                    <div class="col-md-6 col-lg-4 col-xl-3" id="DriverNames" style="display: none">
                         <div class="form-group">
                             <label>
                                 Select Driver Name<br />
-                               ड्राइवर नाम का चयन करें<span style="color: red">*</span></label>
-                            <select class="form-select" >
+                                ड्राइवर नाम का चयन करें<span style="color: red">*</span></label>
+                            <select class="form-select">
                                 <option value="0">--Select--</option>
                                 <option value="1">Ram</option>
                                 <option value="2">Rakesh</option>
@@ -153,7 +166,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3" style="display:none" id="AttenderName">
+                    <div class="col-md-6 col-lg-4 col-xl-3" style="display: none" id="AttenderName">
                         <div class="form-group">
                             <label>
                                 Select  Attender Name<br />
@@ -166,6 +179,27 @@
                                 <option value="4">Arjun</option>
                             </select>
                         </div>
+
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xxl-3" style="display: none" id="txtDriverAttender">
+                        <div class="form-group">
+                            <label>Enter Driver / Attender Name<br />
+                                ड्राइवर / अटेंडर का नाम दर्ज करें<span style="color: red">*</span></label>
+                            <input class="form-control" type="text" placeholder="Enter Driver / Attender Name" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xxl-3" style="display: none" id="txtLicence">
+                        <div class="form-group">
+                            <label>Enter Licence Number<br />
+                                लाइसेंस नंबर दर्ज करें<span style="color: red">*</span></label>
+                            <input class="form-control" type="text" placeholder="Enter Licence Number" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xxl-3" id="filePhoto" style="display: none">
+                        <div class="form-group">
+                            <label>Upload Photo<span style="color: red">*</span></label>
+                            <input class="form-control" type="file" />
+                        </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xxl-3">
                         <div class="form-group">
@@ -173,6 +207,7 @@
                             <input class="form-control" type="date" />
                         </div>
                     </div>
+
                     <div class="col-md-6 col-lg-4 col-xxl-3">
                         <div class="form-group">
                             <label>Applicable To Date<span style="color: red">*</span></label>
@@ -213,7 +248,10 @@
                                     <tr>
                                         <th>Sr. No.<br />
                                             क्रमांक</th>
-                                        <th>Registration Name<br />
+                                        <th>Authorized Driver / Attender<br />
+                                            अधिकृत ड्राइवर / अटेंडर
+                                        </th>
+                                        <th>Registration Type<br />
                                             पंजीकरण  का प्रकार</th>
                                         <th>Vehicle No.<br />
                                             गाड़ी क्र.</th>
@@ -230,6 +268,7 @@
                                 </thead>
                                 <tr>
                                     <td>1</td>
+                                    <td>Registered</td>
                                     <td>Attender</td>
                                     <td>MP04AB1196</td>
                                     <td>25/07/2024</td>
@@ -240,6 +279,7 @@
                                 </tr>
                                 <tr>
                                     <td>2</td>
+                                    <td>Registered</td>
                                     <td>Driver</td>
                                     <td>MP04CD5154</td>
                                     <td>28/07/2024</td>
@@ -258,17 +298,35 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>
+        function DriverAttender() {
+            var Authorizedtype = document.getElementById("Authorizedtype");
+            if (Authorizedtype.value === "1") {
+                type.style.display = "block";
+                txtDriverAttender.style.display = "none";
+                txtLicence.style.display = "none";
+                filePhoto.style.display = "none";
+            }
+            else {
+                txtDriverAttender.style.display = "Block";
+                type.style.display = "none";
+                txtLicence.style.display = "block";
+                filePhoto.style.display = "block";
 
-        function DriverAttenderType() {
-            var type = document.getElementById("type");
-            if (type.value === "1") {
+            }
+        }
+
+        function DriverAttenderType(val) {
+            var AttenderName = document.getElementById("AttenderName");
+            var DriverNames = document.getElementById("DriverNames");
+
+            if (val == "1") {
                 DriverNames.style.display = "block";
                 AttenderName.style.display = "none";
 
 
             }
-            else{
-                AttenderName.style.display = "Block";
+            else {
+                AttenderName.style.display = "block";
                 DriverNames.style.display = "none";
             }
         }
