@@ -35,7 +35,7 @@
                         </div>
                         <div>
                             <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
-                                Student Wise IN/Out Entry Report/छात्रवार इन/आउट प्रवेश रिपोर्ट
+                                Student Wise IN/Out Enter Report/छात्रवार इन/आउट प्रवेश रिपोर्ट
                             </marquee>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Student Wise IN/Out Entry Report /छात्रवार इन/आउट प्रवेश</legend>
+                <legend>Student Wise IN/Out Enter Report /छात्रवार इन/आउट प्रवेश</legend>
 
                 <div class="row align-items-end">
                     <div class="col-md-3">
@@ -108,7 +108,7 @@
                 </div>
             </fieldset>
             <fieldset id="show"  style="display: none;">
-                <legend>Filled By Review Accepting Authority Officer/ समीक्षा स्वीकार करने वाले प्राधिकारी अधिकारी द्वारा  भरना  जाए</legend>
+                <legend>Details / विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">

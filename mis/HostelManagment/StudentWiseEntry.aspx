@@ -35,7 +35,7 @@
                         </div>
                         <div>
                             <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
-                                Student Wise IN/Out Entry /छात्रवार इन/आउट प्रवेश
+                                Student Wise IN/Out Enter /छात्रवार इन/आउट प्रवेश
                             </marquee>
                         </div>
                     </div>
@@ -45,7 +45,7 @@
         <div class="card-body">
 
             <fieldset>
-                <legend>Student Wise IN/Out Entry /छात्रवार इन/आउट प्रवेश</legend>
+                <legend>Student Wise IN/Out Enter /छात्रवार इन/आउट प्रवेश</legend>
            
             <div class="row align-items-end">
                 <div class="col-md-3">
