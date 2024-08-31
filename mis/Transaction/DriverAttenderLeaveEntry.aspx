@@ -49,9 +49,9 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Select Registration Type
+                            <label>Select Registration Type
                                 <br />
-                                पंजीकरण प्रकार का चयन करें<span style="color: red">*</span></span>
+                                पंजीकरण प्रकार का चयन करें<span style="color: red">*</span></label>
                             <select class="form-select" id="dropdown1" onchange="toggleSection1()">
                                 <option value="0">--Select--</option>
                                 <option value="1">Driver</option>
@@ -61,9 +61,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Select Name
+                            <label>Select Name
                                 <br />
-                                नाम चयन करें<span style="color: red">*</span></span>
+                                नाम चयन करें<span style="color: red">*</span></label>
                             <select class="form-select" id="Name" onchange="toggleSection1()">
                                 <option value="0">--Select--</option>
                                 <option value="1">Ram</option>
@@ -169,7 +169,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3" style="display: none" id="AttenderName">
                         <div class="form-group">
                             <label>
-                                Select  Attender Name<br />
+                                Select Attender Name<br />
                                 अटेंडर के नाम का चयन करें<span style="color: red">*</span></label>
                             <select class="form-select">
                                 <option value="0">--Select--</option>
@@ -179,7 +179,6 @@
                                 <option value="4">Arjun</option>
                             </select>
                         </div>
-
                     </div>
                     <div class="col-md-6 col-lg-4 col-xxl-3" style="display: none" id="txtDriverAttender">
                         <div class="form-group">
@@ -217,7 +216,7 @@
                     <div class="col-md-12">
                         <hr />
                         <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Save</button>
-                        <a href="RouteToVehicleMapping.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                        <a href="DriverAttenderLeaveEntry.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                     <p style="font-size: 19px; font-weight: 700; margin: 10px 16px; color: RED">
                         <span class="fs-bold text-danger">Note :-</span> Driver / Attender की जानकारी को 2 दिन के अंन्दर ही सुधार किया जा सकता हैं |<br />
@@ -300,7 +299,7 @@
     <script>
         function DriverAttender() {
             var Authorizedtype = document.getElementById("Authorizedtype");
-            if (Authorizedtype.value === "1") {
+            if (Authorizedtype.value == "1") {
                 type.style.display = "block";
                 txtDriverAttender.style.display = "none";
                 txtLicence.style.display = "none";
@@ -328,6 +327,8 @@
             else {
                 AttenderName.style.display = "block";
                 DriverNames.style.display = "none";
+                AttenderName.style.display = "block";
+
             }
         }
     </script>

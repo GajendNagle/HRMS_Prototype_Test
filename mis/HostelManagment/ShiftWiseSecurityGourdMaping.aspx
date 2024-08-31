@@ -19,7 +19,7 @@
                             <a href="#HostelManagement" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HostelManagement')">
                                 <span>Hostel Management</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Shift Wise Security Gourd Maping </span></li>
+                        <li class="breadcrumb-item"><span>Shift Wise Security Guard Mapping </span></li>
                     </ol>
                 </div>
             </div>
@@ -31,7 +31,7 @@
                 <div class="col-xl-10 col-md-12">
                     <div class="marqueecontainerinfo">
                         <div class="headertext btn btn-primary rounded-pill">
-                            शिफ्ट वाइज सिक्योरिटी गार्ड मैपिंग का विवरण
+                            Shift Wise Security Guard Mapping
                         </div>
                         <div>
                             <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
@@ -44,23 +44,22 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Shift Wise Security Gourd Maping /शिफ्ट वाइज सिक्योरिटी गार्ड मैपिंग</legend>
+                <legend>Add Shift Wise Security Guard Mapping / शिफ्ट वाइज सिक्योरिटी गार्ड मैपिंग जोड़े</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Date/<br />
-                                दिनांक
-               <span style="color: red">*</span></label>
+                               Select Date<br />
+                                दिनांक का चयन करें<span style="color: red">*</span></label>
                             <input name="ename" id="DOB" type="date" class="form-control" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Shift/
+                                Select Shift
              <br />
-                                शिफ्ट चुनें<span style="color: red;">*</span></label>
+                                शिफ्ट का चयन करें<span style="color: red;">*</span></label>
                             <select class="form-control select2">
                                 <option selected="selected" value="0">--Select --</option>
                                 <option value="1">Morning Shift</option>
@@ -72,14 +71,14 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Gourd Name/
+                                Select Guard Name
              <br />
-                                गार्ड नाम चुनें<span style="color: red;">*</span></label>
+                                गार्ड नाम चयन करें<span style="color: red;">*</span></label>
                             <select class="form-control select2">
                                 <option selected="selected" value="0">--Select --</option>
                                 <option value="1">Vikas Namdev</option>
                                 <option value="2">Shivraj Goutam</option>
-                                <option value="3">Ashish Gupta</option>
+                                <option value="3">Rahul Gupta</option>
                             </select>
                         </div>
                     </div>
@@ -87,16 +86,15 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Time/<br />
-                                समय
-                                    <span style="color: red">*</span></label>
+                                Time<br />
+                                समय<span style="color: red">*</span></label>
                             <input name="ename" id="TIME" type="time" class="form-control" />
                         </div>
                     </div>
 
                 </div>
                 <hr />
-                <div class="row text-center">
+                <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
                             <button type="button" class="Alert-Confirmation btn w-lg btn-success btn-border">Save</button>

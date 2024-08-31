@@ -54,98 +54,134 @@
                     <legend>Hostel Registration / छात्रावास पंजीकरण</legend>
                     <div class="row align-items-end">
                         <div class="col-md-3">
-                            <label>
-                                Select Hostel Type<br />
-                                छात्रावास प्रकार का चयन करें<span style="color: red;">*</span></label>
-                            <select class="form-control select2">
-                                <option selected="selected" value="0">--Select --</option>
-                                <option value="1">Girls </option>
-                                <option value="2">Boys </option>
-                                <option value="3">Combine </option>
-                            </select>
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label>
+                                        Select Hostel Type<br />
+                                        छात्रावास प्रकार का चयन करें<span style="color: red;">*</span></label>
+                                    <select class="form-control select2">
+                                        <option selected="selected" value="0">--Select --</option>
+                                        <option value="1">Girls </option>
+                                        <option value="2">Boys </option>
+                                        <option value="3">Combine </option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-3">
-                            <label>
-                                Enter Hostel Name<br />
-                                छात्रावास का नाम दर्ज करें<span style="color: red;">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter Hostel Name" />
+                            <div class="form-group">
+                                <label>
+                                    Enter Hostel Name<br />
+                                    छात्रावास का नाम दर्ज करें<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter Hostel Name" />
+                            </div>
                         </div>
                         <div class="col-md-3">
-                            <label>
-                                Select Category<br />
-                                वर्ग का चयन करें<span style="color: red;">*</span></label>
-                            <select class="form-control select2">
-                                <option selected="selected" value="0">--All --</option>
-                                <option value="1">General </option>
-                                <option value="2">OBC </option>
-                                <option value="3">SC </option>
-                                <option value="4">ST </option>
-                            </select>
+                            <div class="form-group">
+                                <label>
+                                    Select Category<br />
+                                    वर्ग का चयन करें<span style="color: red;">*</span></label>
+                                <select class="form-control select2">
+                                    <option selected="selected" value="0">-Select-</option>
+                                    <option value="1">General </option>
+                                    <option value="2">OBC </option>
+                                    <option value="3">SC </option>
+                                    <option value="4">ST </option>
+                                </select>
+                            </div>
                         </div>
                         <div class="col-md-3">
-                            <label>
-                                Enter Total Number of Rooms<br />
-                                कक्ष की कुल संख्या दर्ज करें<span style="color: red;">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter Total Number of Rooms" />
-                        </div>
-                    </div>
-                    <div class="row align-items-end">
-                        <div class="col-md-3">
-                            <label>
-                                Enter Intake Capacity of Students<br />
-                                छात्रों की प्रवेश क्षमता दर्ज करें<span style="color: red;">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter Intake Capacity of Students" />
+                            <div class="form-group">
+                                <label>
+                                    Enter Total Number of Rooms<br />
+                                    कक्ष की कुल संख्या दर्ज करें<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter Total Number of Rooms" />
+                            </div>
                         </div>
                         <div class="col-md-3">
-                            <label>
-                                Enter Hostel Address<br />
-                                छात्रावास पता दर्ज करें<span style="color: red;">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter Address" />
+                            <div class="form-group">
+                                <label>
+                                    Enter Intake Capacity of Students<br />
+                                    छात्रों की प्रवेश क्षमता दर्ज करें<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter Intake Capacity of Students" />
+                            </div>
                         </div>
                         <div class="col-md-3">
-                            <label>
-                                Enter Hostel Incharge Name<br />
-                                छात्रावास प्रभारी का नाम दर्ज करें<span style="color: red;">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter Hostel Incharge Name" />
+                            <div class="form-group">
+                                <label>
+                                    Enter Hostel Address<br />
+                                    छात्रावास पता दर्ज करें<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter Address" />
+                            </div>
                         </div>
                         <div class="col-md-3">
-                            <label>
-                                Enter Mobile Number<br />
-                                मोबाइल नंबर दर्ज करें<span style="color: red;">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter Mobile Number" />
-                        </div>
-                    </div>
-                    <div class="row align-items-end">
-                        <div class="col-md-3">
-                            <label>
-                                Select Mess Facility Availability
+                            <div class="form-group">
+                                <label>
+                                    Select Mess Facility Availability
                                     <br />
-                                मेस सुविधा उपलब्धता का चयन करें<span style="color: red;">*</span></label>
-                            <select class="form-control select2">
-                                <option value="1">Yes</option>
-                                <option value="2">No</option>
-                            </select>
+                                    मेस सुविधा उपलब्धता का चयन करें<span style="color: red;">*</span></label>
+                                <select class="form-control select2">
+                                    <option value="1">Yes</option>
+                                    <option value="2">No</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="col-md-3">
-                            <label>
-                                Enter Mess Fees<br />
-                                मेस शुल्क दर्ज करें
-                            </label>
-                            <input type="text" class="form-control" placeholder="Enter Mess Fees" />
+                            <div class="form-group">
+                                <label>
+                                    Enter Mess Fees<br />
+                                    मेस शुल्क दर्ज करें
+                                </label>
+                                <input type="text" class="form-control" placeholder="Enter Mess Fees" />
+                            </div>
                         </div>
                         <div class="col-md-3">
-                            <label>
-                                Applicable From<br />
-                                दिनांक से लागू
-                            </label>
-                            <input name="ename" id="DOB" type="date" class="form-control" autocomplete="off" />
+                            <div class="form-group">
+                                <label>
+                                    Applicable From<br />
+                                    दिनांक से लागू
+                                </label>
+                                <input name="ename" id="DOB" type="date" class="form-control" autocomplete="off" />
+                            </div>
                         </div>
-                    </div>
-                    <hr />
-                    <div class="col-md-12">
-                        <div class="form-group text-center">
-                            <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border" onclick="document.getElementById('HostlInfo').style.display = 'block'">Save</button>
-                            <a href="Mst_HostelRegistration.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Enter Police Station Name<br />
+                                    पुलिस स्टेशन का नाम दर्ज करें<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter Police Station Name" />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Enter Incharge Name<br />
+                                    प्रभारी का नाम दर्ज करें<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter Incharge Name" />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Enter Incharge Contact No.<br />
+                                    प्रभारी संपर्क नंबर दर्ज करें<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter Incharge Contact No." />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Enter Police station Full Address<br />
+                                    पुलिस स्टेशन पता दर्ज करें दर्ज करें<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter Full Address" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <hr />
+                            <div class="form-group">
+                                <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border" onclick="document.getElementById('HostlInfo').style.display = 'block'">Save</button>
+                                <a href="Mst_HostelRegistration.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                            </div>
                         </div>
                     </div>
                 </fieldset>
@@ -169,84 +205,70 @@
             </div>
         </div>
         <div class="row align-items-end">
-
             <div class="col-lg-12" runat="server" id="dvStudentDetails">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
-                                <thead>
-                                    <tr role="row">
-                                        <th scope="col">Sr.No.<br />
+                                <thead class="nowrap">
+                                    <tr>
+                                        <th>Sr.No.<br />
                                             क्र.सं.</th>
-                                        <th scope="col">Hostel Type<br />
+                                        <th>Hostel Type<br />
                                             छात्रावास प्रकार   </th>
-                                        <th scope="col">Hostel Name<br />
+                                        <th>Hostel Name<br />
                                             छात्रावास का नाम </th>
-                                        <th scope="col">Category<br />
+                                        <th>Category<br />
                                             वर्ग</th>
-                                        <th scope="col">Hostel Address<br />
+                                        <th>Hostel Address<br />
                                             छात्रावास पता </th>
-                                        <th scope="col">Hostel Incharge Name<br />
+                                        <th>Hostel Incharge Name<br />
                                             छात्रावास प्रभारी का नाम </th>
-                                        <th scope="col">Mobile Number<br />
+                                        <th>Mobile Number<br />
                                             मोबाइल नंबर </th>
-                                        <th scope="col">Total No. of Rooms<br />
+                                        <th>Total No. of Rooms<br />
                                             कक्ष की कुल संख्या </th>
-                                        <th scope="col">Intake Capacity of Students<br />
+                                        <th>Intake Capacity of Students<br />
                                             छात्रों की प्रवेश क्षमता</th>
-                                        <th scope="col">Mess Facility Availability<br />
+                                        <th>Mess Facility Availability<br />
                                             मेस सुविधा उपलब्धता</th>
-                                        <th scope="col">Mess Fees(Applicable From)<br />
+                                        <th>Mess Fees(Applicable From)<br />
                                             मेस शुल्क(दिनांक)</th>
-                                        <th scope="col">Action
+                                        <th>Action<br />
+                                            कार्रवाई
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr role="row" class="odd">
-                                        <td align="center" valign="middle"><span>1</span>
+                                    <tr>
+                                        <td>1
                                         </td>
-                                        <td align="center" valign="middle">
-                                            <span>Girls</span>
+                                        <td>Girls
                                         </td>
-                                        <td align="center" valign="middle">
-                                            <span>Girls Hostel Phutera</span>
+                                        <td>Girls Hostel Phutera
                                         </td>
-                                        <td align="center" valign="middle">
-                                            <a>General</a>
-
+                                        <td>General
                                         </td>
-                                        <td align="center" valign="middle">
-                                            <a>Phutera</a>
-
+                                        <td>Phutera
                                         </td>
-                                        <td align="center" valign="middle">
-                                            <a>Sita Kumari </a>
-
+                                        <td>Sita Kumari
                                         </td>
-                                        <td align="center" valign="middle">
-                                            <span>7898789878</span>
+                                        <td>7898789878</td>
+                                        <td>150
                                         </td>
-                                        <td align="center" valign="middle">
-                                            <span>150</span>
+                                        <td>500
                                         </td>
-                                        <td align="center" valign="middle">
-                                            <span>500</span>
+                                        <td>Yes
                                         </td>
-                                        <td align="center" valign="middle">
-                                            <span>Yes</span>
+                                        <td>1000(from - 01/01/2024)
                                         </td>
-                                        <td align="center" valign="middle">
-                                            <span>1000(from - 01/01/2024)</span>
-                                        </td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
+                                        <td class="nowrap"><a class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></a>
+                                            <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
