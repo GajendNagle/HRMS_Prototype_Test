@@ -43,7 +43,7 @@
         </div>
 
         <div class="card-body">
-           
+
             <fieldset>
                 <legend>Add MileStone Type / माइल स्टोन टाइप जोड़े</legend>
                 <div class="row align-items-end">
@@ -97,6 +97,15 @@
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Miled Stone Name " onkeypress="return hindiOnly();" />
                         </div>
                     </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="form-group">
+                            <label>
+                                Enter MileStone Category<br />
+                                माइल स्टोन श्रेणी दर्ज करे<span style="color: red">*</span></label>
+                            <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Miled Stone Category " onkeypress="return hindiOnly();" />
+                        </div>
+                    </div>
+
                     <div class="col-md-3">
                         <div class="form-group">
                             <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
@@ -149,6 +158,9 @@
                                         <th>MileStone Name
                                             <br />
                                             माइल स्टोन नाम</th>
+                                       <%-- <th>MileStone Category
+                                            <br />माइल स्टोन श्रेणी
+                                        </th>--%>
                                         <th>Status(Active/InActive)
        <br />
                                             स्थिति (सक्रिय/निष्क्रिय)</th>
@@ -163,7 +175,7 @@
                                     <td>Technical</td>
                                     <td>Final level completion</td>
                                     <td>Active</td>
-                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -172,7 +184,7 @@
                                     <td>Technical</td>
                                     <td>Mid level completion</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
@@ -181,7 +193,7 @@
                                     <td>Technical</td>
                                     <td>Mid level completion</td>
                                     <td>InActive</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
@@ -190,7 +202,7 @@
                                     <td>Technical</td>
                                     <td>Foundation</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
@@ -199,7 +211,7 @@
                                     <td>Technical</td>
                                     <td>Plinth	</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

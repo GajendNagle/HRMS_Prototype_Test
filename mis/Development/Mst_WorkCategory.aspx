@@ -46,21 +46,21 @@
             <fieldset>
                 <legend>Add Work Category / कार्य श्रेणी जोड़े</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="form-group">
                             <label>
-                                Enter Work Category(in English)
+                                Enter Work Category Name(in English)
                                 <br />
-                                कार्य की श्रेणी दर्ज करें(अंग्रेजी में)<span style="color: red">*</span></label>
+                                कार्य की श्रेणी का नाम दर्ज अंग्रेजी में करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Work Category" onkeypress="return hindiOnly();" />
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="form-group">
                             <label>
-                                Enter Work Category(in Hindi)
+                                Enter Work Category Name(in Hindi)
                                 <br />
-                                कार्य की श्रेणी दर्ज करें(हिंदी में)<span style="color: red">*</span></label>
+                                कार्य की श्रेणी का नाम हिंदी में दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" placeholder="कार्य की श्रेणी दर्ज करे" onkeypress="return lettersOnly();" />
                         </div>
                     </div>
@@ -106,11 +106,11 @@
                                     <tr>
                                         <th>Sr.No.
                                         <br />
-                                            सरल क्र.</th>
+                                            क्रमांक</th>
                                         <th>Work Category (In English)<br />
-                                            कार्य की श्रेणी का नाम(अंग्रेजी में)</th>
+                                            कार्य की श्रेणी का नाम अंग्रेजी में</th>
                                         <th>Work Category (In Hindi)<br />
-                                            कार्य की श्रेणी का नाम(हिंदी में)</th>
+                                            कार्य की श्रेणी का नाम हिंदी में</th>
                                         <th>Status(Active/InActive)
                                         <br />
                                             स्थिति (सक्रिय/निष्क्रिय)</th>

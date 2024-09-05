@@ -50,7 +50,7 @@
             <fieldset>
                 <legend>Add Work Subcategory / कार्य उपश्रेणी जोड़े</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="form-group">
                             <label>
                                 Select Work Category 
@@ -65,21 +65,21 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="form-group">
                             <label>
                                 Enter Work Subcategory(In English)
                                 <br />
-                                कार्य की उपश्रेणी दर्ज करें(अंग्रेजी में)<span style="color: red">*</span></label>
+                                कार्य की उपश्रेणी का नाम दर्ज करें(अंग्रेजी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Work Subcategory" onkeypress="return hindiOnly();" />
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="form-group">
                             <label>
                                 Enter Work Subcategory(In Hindi)
                                 <br />
-                                कार्य की उपश्रेणी दर्ज करें(हिंदी में)<span style="color: red">*</span></label>
+                                कार्य की उपश्रेणी का नाम दर्ज करें(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="कार्य की उपश्रेणी दर्ज करें" onkeypress="return hindiOnly();" />
                         </div>
                     </div>

@@ -229,7 +229,7 @@
             <hr />
             <div class="row">
                 <div class="col-md-12">
-                    <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg" onclick="document.getElementById('table1').style.display='table'">Save</button>
+                    <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Save</button>
                     <a href="Mst_VenderRegistration.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                 </div>
             </div>

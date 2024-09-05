@@ -61,27 +61,13 @@
                 <legend>Add Work Type To Work Category Mapping / कार्य प्रकार से कार्य श्रेणी मैपिंग जोड़े</legend>
 
                 <div class="row align-items-end">
+                   
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Select Work Type(in English)
-         <br />
-                                कार्य प्रकार का चयन करें(अंग्रेजी में)<span style="color: red">*</span></label>
-                            <select class="select2">
-                                <option>Select</option>
-                                <option>School construction</option>
-                                <option>C.C road work</option>
-                                <option>Hand pump work</option>
-
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                        <div class="form-group">
-                            <label>
-                                Select Work Type(in Hindi)
+                                Select Work Type
     <br />
-                                कार्य प्रकार का चयन करें(हिंदी में)<span style="color: red">*</span></label>
+                                कार्य प्रकार का चयन करें<span style="color: red">*</span></label>
                             <select class="select2">
                                 <option>Select</option>
                                 <option>स्कूल निर्माण</option>

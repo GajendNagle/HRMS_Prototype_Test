@@ -58,22 +58,22 @@
                 <legend>Add Work Type / कार्य प्रकार जोड़े</legend>
 
                 <div class="row align-items-end">
-                    <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="form-group">
                             <label>
-                                Enter Work Type(in English)
+                                Enter Work Type Name(in English)
                  <br />
-                                कार्य का प्रकार दर्ज करें(अंग्रेजी में)<span style="color: red">*</span></label>
-                            <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Work Type" onkeypress="return hindiOnly();" />
+                                कार्य प्रकार का नाम अंग्रेजी में दर्ज करें<span style="color: red">*</span></label>
+                            <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Work Type Name" />
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="form-group">
                             <label>
-                                Enter Work Type(in Hindi)
+                                Enter Work Type Name(in Hindi)
             <br />
-                                कार्य का प्रकार दर्ज करें(हिंदी में)<span style="color: red">*</span></label>
-                            <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" placeholder="कार्य का प्रकार दर्ज करे" onkeypress="return lettersOnly();" />
+                                कार्य प्रकार का नाम हिंदी में दर्ज करें<span style="color: red">*</span></label>
+                            <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" placeholder="कार्य प्रकार का नाम दर्ज करे" />
                         </div>
                     </div>
 
@@ -91,14 +91,14 @@
                 <hr />
                 <div class="row">
                     <div class="col-md-12">
-                        <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg" onclick="document.getElementById('table1').style.display='table'">Save</button>
+                        <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg" >Save</button>
                         <a href="Mst_WorkType.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                 </div>
 
             </fieldset>
 
-            <fieldset id="table1" style="display: none;">
+            <fieldset>
                 <legend>Work Type Details / कार्य प्रकार का विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -123,10 +123,10 @@
                                         <th>Sr.No.
                          <br />
                                             क्रमांक</th>
-                                        <th>Work Type (In English)<br />
-                                            कार्य का प्रकार(अंग्रेजी में)</th>
-                                        <th>Work Type (In Hindi)<br />
-                                            कार्य का प्रकार(हिंदी में)</th>
+                                        <th>Work Type Name(In English)<br />
+                                            कार्य प्रकार का नाम अंग्रेजी में</th>
+                                        <th>Work Type Name(In Hindi)<br />
+                                             कार्य प्रकार का नाम हिंदी में</th>
                                         <th>Status(Active/InActive)
                          <br />
                                             स्थिति (सक्रिय/निष्क्रिय)</th>
@@ -148,7 +148,7 @@
                                     <td>C.C road work</td>
                                     <td>सी.सी रोड कार्य</td>
                                     <td>Active</td>
-                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i>&nbsp</span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
 
                             </table>
