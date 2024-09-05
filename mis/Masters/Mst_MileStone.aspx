@@ -37,15 +37,15 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-6">
-                    <h4 class="card-title">MileStone Master / माइल स्टोन मास्टर</h4>
+                    <h4 class="card-title">MileStone Type Master / माइल स्टोन टाइप मास्टर</h4>
                 </div>
             </div>
         </div>
 
         <div class="card-body">
-            <asp:Label runat="server" ID="lblMsg"></asp:Label>
+           
             <fieldset>
-                <legend>Add MileStone / माइल स्टोन जोड़े</legend>
+                <legend>Add MileStone Type / माइल स्टोन टाइप जोड़े</legend>
                 <div class="row align-items-end">
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">

@@ -657,6 +657,10 @@
                                             <a href="#developmentMaster" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="PayrollMaster" data-key="t-PayrollMaster"><i class="ri-menu-line"></i>Development Master Data</a>
                                             <div class="collapse menu-dropdown" id="developmentMaster">
                                                 <ul class="nav nav-sm flex-column">
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis/Masters/Mst_WorkType.aspx"><i class="ri-file-list-3-line"></i>Work Type Master</a>
+                                                    </li>
                                                     <li class="nav-item">
                                                         <a class="nav-link" href="/mis/Development/Mst_WorkCategory.aspx"><i class="ri-file-list-3-line"></i>Work Category Master</a>
                                                     </li>
@@ -664,10 +668,24 @@
                                                         <a class="nav-link" href="/mis/Development/Mst_WorkSubcategory.aspx"><i class="ri-file-list-3-line"></i>Work Subcategory Master</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="/mis/Masters/Mst_MileStone.aspx"><i class="ri-file-list-3-line"></i>MileStone Master</a>
+                                                        <a class="nav-link" href="/mis/Masters/Mst_WorkTypeToWorkCategory.aspx"><i class="ri-file-list-3-line"></i>Work Type To Work Category Mapping</a>
+                                                    </li>
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis/Masters/Mst_MileStone.aspx"><i class="ri-file-list-3-line"></i>MileStone Type Master</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis/Masters/Mst_MilestoneCategory.aspx"><i class="ri-file-list-3-line"></i>MileStone Category Master</a>
                                                     </li>
                                                     <li class="nav-item">
                                                         <a class="nav-link" href="/mis/Development/Mst_Unit.aspx"><i class="ri-file-list-3-line"></i>Unit Master</a>
+                                                    </li>
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis/Masters/Mst_VenderRegistration.aspx"><i class="ri-file-list-3-line"></i>Vender Registration</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/mis/Masters/Mst_VenderToProjectMapping.aspx"><i class="ri-file-list-3-line"></i>Vender To Project Mapping </a>
                                                     </li>
                                                     <%-- <li class="nav-item">
                                                         <a class="nav-link" href="/mis/Development/Mst_Resource.aspx"><i class="ri-file-list-3-line"></i>Resource Master</a>
