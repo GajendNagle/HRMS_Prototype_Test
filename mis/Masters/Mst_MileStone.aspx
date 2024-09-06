@@ -36,47 +36,47 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
-                <div class="col-lg-6">
-                    <h4 class="card-title">MileStone Type Master / माइल स्टोन टाइप मास्टर</h4>
+                <div class="col-xxl-12 col-md-12">
+                    <div class="marqueecontainerinfo">
+                        <div class="headertext btn btn-primary rounded-pill">
+                            MileStone Type Master / माइल स्टोन टाइप मास्टर
+                        </div>
+                        <div>
+                            <marquee style="width: 100%;"
+                                onmouseover="this.stop();" onmouseout="this.start();"
+                                direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+                                .
+                            </marquee>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-
         <div class="card-body">
 
             <fieldset>
                 <legend>Add MileStone Type / माइल स्टोन टाइप जोड़े</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="form-group">
                             <label>
-                                Select Work Category 
+                                Enter Milestone Name (in English)
              <br />
-                                कार्य की श्रेणी का चयन करे<span style="color: red">*</span></label>
-                            <select id="work-category" class="form-control select2">
-                                <option value="--Select--">--Select--</option>
-                                <option value="A">School Repair/Construction</option>
-                                <option value="B">Drinking Water System</option>
-                                <option value="c">School Road Construction</option>
-                            </select>
+                                माइलस्टोन का नाम अंग्रेजी में दर्ज करें<span style="color: red">*</span></label>
+                            <input type="text" class="form-control" placeholder="Enter Milestone Name" />
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="form-group">
                             <label>
-                                Select Work Subcategory
+                                Enter Milestone Name (in Hindi)
                                 <br />
-                                कार्य की उपश्रेणी का चयन करे<span style="color: red">*</span></label>
-                            <select id="Subwork-category" class="form-control select2">
-                                <option value="--Select--">--Select--</option>
-                                <option value="A">Building Repair</option>
-                                <option value="B">Hand Pump Mining</option>
-                                <option value="C">Water Tank construction</option>
-                                <option value="D">CC Road Construction</option>
-                            </select>
+                                माइलस्टोन का नाम हिंदी में दर्ज करें<span style="color: red">*</span></label>
+                            <input type="text" class="form-control" placeholder="माइलस्टोन का नाम हिंदी में दर्ज करें" />
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="form-group">
                             <label>
                                 Select MileStone Type
@@ -89,23 +89,6 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                        <div class="form-group">
-                            <label>
-                                Enter MileStone Name<br />
-                                माइल स्टोन नाम दर्ज करे<span style="color: red">*</span></label>
-                            <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Miled Stone Name " onkeypress="return hindiOnly();" />
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                        <div class="form-group">
-                            <label>
-                                Enter MileStone Category<br />
-                                माइल स्टोन श्रेणी दर्ज करे<span style="color: red">*</span></label>
-                            <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Miled Stone Category " onkeypress="return hindiOnly();" />
-                        </div>
-                    </div>
-
                     <div class="col-md-3">
                         <div class="form-group">
                             <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
@@ -119,7 +102,7 @@
                     <div class="col-md-12">
                         <hr />
                         <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Save</button>
-                        <a href="Mst_WorkSubcategory.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                        <a href="Mst_MileStone.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                 </div>
             </fieldset>
@@ -147,18 +130,13 @@
                                         <th>Sr. No.
                                             <br />
                                             सरल क्र.</th>
-                                        <th>Work Category
-                                            <br />
-                                            कार्य की श्रेणी</th>
-                                        <th>Work Subcategory
-                                            <br />
-                                            कार्य की उपश्रेणी</th>
+                                        <th>MileStone Name
+                                      <br /> 
+                                            माइल स्टोन नाम</th>
                                         <th>MileStone Type<br />
                                             माइल स्टोन प्रकार</th>
-                                        <th>MileStone Name
-                                            <br />
-                                            माइल स्टोन नाम</th>
-                                       <%-- <th>MileStone Category
+
+                                        <%-- <th>MileStone Category
                                             <br />माइल स्टोन श्रेणी
                                         </th>--%>
                                         <th>Status(Active/InActive)
@@ -170,49 +148,33 @@
                                 </thead>
                                 <tr>
                                     <td>1</td>
-                                    <td>School Repair/Construction</td>
-                                    <td>Building Repair</td>
-                                    <td>Technical</td>
                                     <td>Final level completion</td>
+                                    <td>Technical</td>
                                     <td>Active</td>
                                     <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Drinking Water System</td>
-                                    <td>Hand Pump Mining</td>
-                                    <td>Technical</td>
                                     <td>Mid level completion</td>
+                                    <td>Technical</td>
                                     <td>Active</td>
                                     <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>School Repair/Construction</td>
-                                    <td>Building Repair</td>
+                                    <td>Foundation</td>
                                     <td>Technical</td>
-                                    <td>Mid level completion</td>
                                     <td>InActive</td>
                                     <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>Drinking Water System</td>
-                                    <td>Water Tank construction</td>
-                                    <td>Technical</td>
                                     <td>Foundation</td>
-                                    <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>School Road Construction</td>
-                                    <td>CC Road Construction</td>
                                     <td>Technical</td>
-                                    <td>Plinth	</td>
                                     <td>Active</td>
                                     <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
+                               
                             </table>
                         </div>
                     </div>

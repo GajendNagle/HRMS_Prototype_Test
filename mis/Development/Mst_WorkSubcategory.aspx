@@ -53,7 +53,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="form-group">
                             <label>
-                                Select Work Category 
+                                Select Work Category Name
              <br />
                                 कार्य की श्रेणी का चयन करें<span style="color: red">*</span></label>
                             <select id="work-category" class="form-control select2">
@@ -68,18 +68,18 @@
                     <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="form-group">
                             <label>
-                                Enter Work Subcategory(In English)
+                                Enter Work Subcategory Name(In English)
                                 <br />
-                                कार्य की उपश्रेणी का नाम दर्ज करें(अंग्रेजी में)<span style="color: red">*</span></label>
+                                कार्य की उपश्रेणी का नाम अंग्रेजी में दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Work Subcategory" onkeypress="return hindiOnly();" />
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="form-group">
                             <label>
-                                Enter Work Subcategory(In Hindi)
+                                Enter Work Subcategory Name(In Hindi)
                                 <br />
-                                कार्य की उपश्रेणी का नाम दर्ज करें(हिंदी में)<span style="color: red">*</span></label>
+                                कार्य की उपश्रेणी का नाम हिंदी में दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="कार्य की उपश्रेणी दर्ज करें" onkeypress="return hindiOnly();" />
                         </div>
                     </div>

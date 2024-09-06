@@ -64,10 +64,14 @@
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Milestone Type 
-                                <br />
-                                माइलस्टोन का प्रकार दर्ज करें<span style="color: red">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter Milestone Type" />
+                                Select MileStone Type
+     <br />
+                                माइल स्टोन प्रकार का चयन करे<span style="color: red">*</span></label>
+                            <select id="Project" class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="A">Technical </option>
+                                <option value="B">Financial</option>
+                            </select>
                         </div>
                     </div>
 
@@ -76,7 +80,7 @@
                             <label>
                                 Enter Milestone Category
                                 <br />
-                                माइलस्टोन की श्रेणी दर्ज करें<span style="color: red">*</span></label>
+                            माइलस्टोन की श्रेणी दर्ज करें<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Milestone Category" />
                         </div>
                     </div>
@@ -87,7 +91,7 @@
                                 Enter Milestone Subcategory
                                 <br />
                                 माइलस्टोन की उपश्रेणी दर्ज करें<span style="color: red">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter Milestone Subcategory" />
+                            <input type="text" class="form-control" placeholder="Enter Milestone Category" />
                         </div>
                     </div>
 
@@ -105,14 +109,14 @@
                 <hr />
                 <div class="row">
                     <div class="col-md-12">
-                        <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg" onclick="document.getElementById('table1').style.display='table'">Save</button>
+                        <button type="button" class=" btn btn-outline-success btn-border  w-lg">Save</button>
                         <a href="Mst_MilestoneCategory.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                 </div>
 
             </fieldset>
 
-            <fieldset id="table1" style="display: none;">
+            <fieldset>
                 <legend>Milestone Category Details / माइलस्टोन श्रेणी विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -149,6 +153,7 @@
                                         <th>Action
                  <br />
                                             कार्यवाहीं</th>
+                                        <th>View Report</th>
                                     </tr>
 
                                     <tr>
@@ -157,7 +162,8 @@
                                         <td>School Repair/Construction</td>
                                         <td>Building Repair</td>
                                         <td>Active</td>
-                                        <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                        <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                        <td><a href="MileStoneReport.aspx"><span class="btn btn-outline-primary"><i class="fa fa-eye"></i></span></a></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
@@ -165,7 +171,8 @@
                                         <td>Drinking Water System</td>
                                         <td>Hand Pump Mining</td>
                                         <td>Active</td>
-                                        <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                        <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                        <td><span class="btn btn-outline-primary"><i class="fa fa-eye"></i></span></td>
                                     </tr>
                                 </thead>
                             </table>
