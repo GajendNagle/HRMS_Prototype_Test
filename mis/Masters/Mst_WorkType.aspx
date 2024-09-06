@@ -64,7 +64,7 @@
                                 Enter Work Type Name(in English)
                  <br />
                                 कार्य प्रकार का नाम अंग्रेजी में दर्ज करें<span style="color: red">*</span></label>
-                            <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Work Type Name" />
+                            <input type="text" class="form-control" placeholder="Enter Work Type Name" />
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-4">
@@ -91,7 +91,7 @@
                 <hr />
                 <div class="row">
                     <div class="col-md-12">
-                        <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg" >Save</button>
+                        <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Save</button>
                         <a href="Mst_WorkType.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                 </div>
@@ -126,7 +126,7 @@
                                         <th>Work Type Name(In English)<br />
                                             कार्य प्रकार का नाम अंग्रेजी में</th>
                                         <th>Work Type Name(In Hindi)<br />
-                                             कार्य प्रकार का नाम हिंदी में</th>
+                                            कार्य प्रकार का नाम हिंदी में</th>
                                         <th>Status(Active/InActive)
                          <br />
                                             स्थिति (सक्रिय/निष्क्रिय)</th>
