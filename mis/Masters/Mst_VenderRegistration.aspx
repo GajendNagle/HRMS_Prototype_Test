@@ -233,9 +233,90 @@
                     <a href="Mst_VenderRegistration.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                 </div>
             </div>
+
+            <fieldset>
+                <legend>Details / विवरण</legend>
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center">
+                                <thead class="nowrap">
+                                    <tr>
+                                        <th>Sr.No.
+                            <br />
+                                            क्रमांक</th>
+                                        <th>State Name<br />
+                                            राज्य का नाम</th>
+                                        <th>GSTIN No.<br />
+                                            जीएसटीआईएन नं.</th>
+                                        <th>PAN No.
+                            <br />
+                                            पैन नंबर</th>
+                                        <th>Firm Name
+                                            <br />
+                                            फर्म का नाम</th>
+                                        <th>Firm Address
+                                            <br />
+                                            फर्म का पता</th>
+                                        <th>Pin Code No.
+                                            <br />
+                                            फर्म का पता</th>
+                                        <th>Contact Person Name
+                                            <br />
+                                            फर्म का पता</th>
+                                        <th>Firm Registration Copy
+                                            <br />
+                                            फर्म पंजीकरण प्रतिलिपि</th>
+                                        <th>Firm GSTIN Registration Copy
+                                            <br />
+                                            फर्म जीएसटीआईएन पंजीकरण प्रति</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Madhaya Pradesh</td>
+                                    <td> 22AAAAA0000A1Z5</td>
+                                    <td>ABCTY1234D</td>
+                                    <td>SFA Technology</td>
+                                    <td>Kasturba Nagar near Chetak Bridge</td>
+                                    <td>462021</td>
+                                    <td>Rajendra Sharma</td>
+                                    <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye" aria-hidden="true" onclick="openimg()"></i></span></td>
+                                    <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye" onclick="openimg()"></i></span></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                </tr>
+                               
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
         </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+
+    <script>
+    function openimg() {
+        // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
+        var pdfUrl = '../../img/Regis.Copy.jpeg';
+        // Open the PDF in a new window or tab
+        window.open(pdfUrl, '_blank');
+        }
+    </script>
 </asp:Content>
 

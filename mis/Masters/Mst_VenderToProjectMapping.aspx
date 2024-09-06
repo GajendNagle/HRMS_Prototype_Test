@@ -104,10 +104,8 @@
                             </label>
                             <select class="select2">
                                 <option>Select</option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
+                                <option> 22AAAAA0000A1Z5</option>
+                                <option>22AAAAA0000A5Z9</option>
                             </select>
                         </div>
                     </div>
@@ -185,7 +183,7 @@
                                         <th>Project No.<br />
                                             परियोजना नंबर</th>
                                         <th>Vender Name
-                                            विक्रेता का नाम<br />
+                                           <br /> विक्रेता का नाम
                                         </th>
                                         <th>Status(Active/InActive)
              <br />
