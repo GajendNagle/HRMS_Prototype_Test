@@ -51,7 +51,6 @@
                 <legend>Project Details / परियोजना विवरण</legend>
 
                 <div class="row align-items-end">
-
                     <div class="col-md-4">
                         <div class="form-group">
                             <label>
@@ -100,7 +99,6 @@
                         </div>
                     </div>
                 </div>
-
                 <hr />
                 <div class="row">
                     <div class="col-md-12">
@@ -109,8 +107,6 @@
                     </div>
                 </div>
             </fieldset>
-
-            
         </div>
     </div>
 </asp:Content>
