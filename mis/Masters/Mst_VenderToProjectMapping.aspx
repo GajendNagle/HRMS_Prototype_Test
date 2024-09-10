@@ -56,16 +56,6 @@
                                 Select Project Year<br />
                                 प्रोजेक्ट वर्ष का चयन करें
                             </label>
-
-                            <%-- <asp:DropDownList runat="server" ID="ddlProjectYear" CssClass="form-control select2">
-
-                                <asp:ListItem>Select</asp:ListItem>
-                                <asp:ListItem Value="1">2024</asp:ListItem>
-                                <asp:ListItem Value="2">2023</asp:ListItem>
-                                <asp:ListItem Value="3">2022</asp:ListItem>
-                                <asp:ListItem Value="4">2021</asp:ListItem>
-                            </asp:DropDownList>--%>
-
                             <select class="form-control select2" id="ddlProjectYear">
 
                                 <option>Select</option>
@@ -84,15 +74,6 @@
                                 Select Project No.<br />
                                 प्रोजेक्ट नंबर का चयन करें
                             </label>
-                            <%--<asp:DropDownList runat="server" ID="ddlProjectNo" CssClass="form-control select2">
-
-                                <asp:ListItem>Select</asp:ListItem>
-                                <asp:ListItem Value="1">PWDMP001</asp:ListItem>
-                                <asp:ListItem Value="2">PWDMP002</asp:ListItem>
-                                <asp:ListItem Value="3">PWDMP003</asp:ListItem>
-                                <asp:ListItem Value="4">PWDMP004</asp:ListItem>
-                            </asp:DropDownList>--%>
-
                             <select class="form-control select2" id="ddlProjectNo">
 
                                 <option>Select</option>
