@@ -47,7 +47,7 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Add Vender To Project Mapping / प्रोजेक्ट मैपिंग में विक्रेता जोड़ें</legend>
+                <legend>Vender To Project Mapping / प्रोजेक्ट मैपिंग में विक्रेता</legend>
 
                 <div class="row align-items-end">
                     <div class="col-md-3">

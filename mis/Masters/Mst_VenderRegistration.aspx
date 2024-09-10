@@ -47,7 +47,7 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Add Vender Registration / विक्रेता पंजीकरण जोड़े</legend>
+                <legend>Vender Registration / विक्रेता पंजीकरण</legend>
 
                 <div class="row align-items-end">
                     <div class="col-md-3">
