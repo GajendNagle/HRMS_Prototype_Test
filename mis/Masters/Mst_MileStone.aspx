@@ -17,7 +17,7 @@
                         </li>
                         <li class="breadcrumb-item">
                             <a href="#developmentMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">
-                                <span>Development Master Data</span></a>
+                                <span>Civil Construction Master Data</span></a>
                         </li>
                         <li class="breadcrumb-item">MileStone Master Data</li>
                     </ol>

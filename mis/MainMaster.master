@@ -654,7 +654,7 @@
                                             </div>
                                         </li>--%>
                                         <li class="nav-item">
-                                            <a href="#developmentMaster" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="PayrollMaster" data-key="t-PayrollMaster"><i class="ri-menu-line"></i>Development Master Data</a>
+                                            <a href="#developmentMaster" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="PayrollMaster" data-key="t-PayrollMaster"><i class="ri-menu-line"></i>Civil Construction Master Data</a>
                                             <div class="collapse menu-dropdown" id="developmentMaster">
                                                 <ul class="nav nav-sm flex-column">
 
@@ -681,12 +681,6 @@
                                                         <a class="nav-link" href="/mis/Development/Mst_Unit.aspx"><i class="ri-file-list-3-line"></i>Unit Master</a>
                                                     </li>
 
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="/mis/Masters/Mst_VenderRegistration.aspx"><i class="ri-file-list-3-line"></i>Vender Registration</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="/mis/Masters/Mst_VenderToProjectMapping.aspx"><i class="ri-file-list-3-line"></i>Vender To Project Mapping </a>
-                                                    </li>
                                                     <%-- <li class="nav-item">
                                                         <a class="nav-link" href="/mis/Development/Mst_Resource.aspx"><i class="ri-file-list-3-line"></i>Resource Master</a>
                                                     </li>
@@ -1882,12 +1876,16 @@
                             <li class="nav-item">
                                 <a class="nav-link menu-link" href="#Development" data-bs-toggle="collapse" role="button"
                                     aria-expanded="false" aria-controls="HostelManagement">
-                                    <i class="ri-stack-line"></i><span data-key="t-apps">Development</span>
+                                    <i class="ri-stack-line"></i><span data-key="t-apps">Civil Construction</span>
                                 </a>
                                 <div class="menu-dropdown dropdown-custom-left collapse show" id="Development" style="">
                                     <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_VenderRegistration.aspx"><i class="ri-file-list-3-line"></i>Vender Registration</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_VenderToProjectMapping.aspx"><i class="ri-file-list-3-line"></i>Vender To Project Mapping Process</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectRequestProcess.aspx"><i class="ri-file-list-3-line"></i>Project Request Process</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectRequestApproval.aspx"><i class="ri-file-list-3-line"></i>Project Request Approval</a></li>
+
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectDetailsN.aspx"><i class="ri-file-list-3-line"></i>Project Details</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/CreateProject.aspx"><i class="ri-file-list-3-line"></i>Create Project</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectDetails.aspx"><i class="ri-file-list-3-line"></i>Project Details</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentUploadDocument.aspx"><i class="ri-file-list-3-line"></i>Generate Demand</a></li>

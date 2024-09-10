@@ -5,35 +5,26 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
     <div class="row">
-        <div class="col-12">
-            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-                <h4 class="mb-sm-0"></h4>
-                <div class="=page-title-right">
-                    <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item">
-                            <span>Home</span>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
-                        </li>
-                        <li class="breadcrumb-item"><a href="#developmentMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">Development Master Data
-                        </a></li>
-                        <li class="breadcrumb-item">Vender Registration Master</li>
-                    </ol>
-                </div>
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <%--   <li class="breadcrumb-item">
+                    <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
+                </li>--%>
+                    <li class="breadcrumb-item">
+                        <a href="#Development" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Civil Construction</span></a>
+                    </li>
+                    <li class="breadcrumb-item">Vender Registration</li>
+                </ol>
             </div>
         </div>
     </div>
-
-    <div class="marqueecontainer">
-        <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
-        <div>
-            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
-                इस पेज के माध्यम से नए कार्य श्रेणी को  Registered किया जाता है, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |
-            </marquee>
-        </div>
-    </div>
-
+</div>
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
@@ -100,7 +91,7 @@
                         <div class="form-group">
                             <label>
                                 Enter Firm Name<br />
-                                फर्म का नाम दर्ज करें
+                                संस्था का नाम दर्ज करें
                             </label>
                             <input type="text" class="form-control" placeholder="Enter Firm Name" />
                         </div>
@@ -112,7 +103,7 @@
                         <div class="form-group">
                             <label>
                                 Enter Firm Mail Id<br />
-                                फर्म मेल आईडी दर्ज करें
+                                संस्था का मेल आईडी दर्ज करें
                             </label>
                             <input type="text" class="form-control" placeholder="Enter  Firm Mail Id" />
                         </div>
@@ -122,7 +113,7 @@
                         <div class="form-group">
                             <label>
                                 Enter Firm Address<br />
-                                फर्म का पता दर्ज करें
+                                संस्था का पता दर्ज करें
                             </label>
                             <input type="text" class="form-control" placeholder="Enter Firm Address" />
                         </div>
@@ -163,8 +154,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Firm Registration Copy(Doc-Uploaded)<br />
-                                फर्म पंजीकरण प्रतिलिपि
+                               Upload Firm Registration<br />
+                                संस्था का पंजीकरण अपलोड करें
                             </label>
                             <input type="file" class="form-control" placeholder="Enter Contact Person No." />
                         </div>
@@ -173,8 +164,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Firm GSTIN Registration Copy(Doc-Uploaded)<br />
-                                फर्म जीएसटीआईएन पंजीकरण प्रतिलिपि
+                                Upload Firm GSTIN Registration<br />
+                                संस्था का जीएसटीआईएन पंजीकरण अपलोड करें
                             </label>
                             <input type="file" class="form-control" placeholder="Enter Contact Person No." />
                         </div>
@@ -184,7 +175,7 @@
             </fieldset>
 
             <fieldset>
-                <legend>Firm Bank Account Details / फर्म बैंक खाता विवरण</legend>
+                <legend>Firm Bank Account Details / संस्था बैंक खाता विवरण</legend>
 
                 <div class="row align-items-end">
                     <div class="col-md-3">
@@ -267,22 +258,22 @@
                                             पैन नंबर</th>
                                         <th>Firm Name
                                             <br />
-                                            फर्म का नाम</th>
+                                            संस्था का नाम</th>
                                         <th>Firm Address
                                             <br />
-                                            फर्म का पता</th>
+                                            संस्था का पता</th>
                                         <th>Pin Code No.
                                             <br />
-                                            फर्म का पता</th>
+                                            पिन कोड नं.</th>
                                         <th>Contact Person Name
                                             <br />
-                                            फर्म का पता</th>
+                                            संपर्क व्यक्ति का नाम</th>
                                         <th>Firm Registration Copy
                                             <br />
-                                            फर्म पंजीकरण प्रतिलिपि</th>
+                                            संस्था का पंजीकरण प्रतिलिपि</th>
                                         <th>Firm GSTIN Registration Copy
                                             <br />
-                                            फर्म जीएसटीआईएन पंजीकरण प्रति</th>
+                                            संस्था का जीएसटीआईएन पंजीकरण प्रतिलिपि</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>

@@ -23,7 +23,7 @@
                      <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
                  </li>--%>
                         <li class="breadcrumb-item">
-                            <a href="#Development" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Development</span></a>
+                            <a href="#Development" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Civil Construction</span></a>
                         </li>
                         <li class="breadcrumb-item">Project Request Approval</li>
                     </ol>
@@ -188,8 +188,8 @@
                                     <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye"></i></span></td>
                                     <td class="nowrap"><a class="btn btn-outline-info"><i class="fa fa-eye" data-bs-toggle="modal" data-bs-target="#firsttimeModel"></i></a></td>
 
-                                    <td class="nowrap"><span class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg">Forward</span>
-                                        <span class="btn btn-success" id="Approval" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2">Approval</span>
+                                    <td class="nowrap"><span class="btn btn-success" id="Approval" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2">Approval</span>
+                                        <span class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg">Forward</span>
                                         <span class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg3">Reject</span>
                                     </td>
                                 </tr>
@@ -338,7 +338,7 @@
                                     <label>
                                         Order No.<br />
                                         आदेश संख्या</label>
-                                    <input type="date" value="2022-04-02" class="form-control" placeholder="Enter Remark" />
+                                    <input type="text" value="2022-04-02" class="form-control" placeholder="Enter Remark" />
                                 </div>
 
                                 <div class="col-md-4">

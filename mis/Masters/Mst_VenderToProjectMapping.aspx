@@ -13,26 +13,18 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
+                        <%--   <li class="breadcrumb-item">
+                    <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
+                </li>--%>
                         <li class="breadcrumb-item">
-                            <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
+                            <a href="#Development" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Civil Construction</span></a>
                         </li>
-                        <li class="breadcrumb-item"><a href="#developmentMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">Development Master Data
-                        </a></li>
                         <li class="breadcrumb-item">Vender To Project No. Mapping Process</li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
-    <div class="marqueecontainer">
-        <div class="headertext">Details About Page / पेज के बारे में विवरण</div>
-        <div>
-            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
-                इस पेज के माध्यम से नए कार्य श्रेणी को  Registered किया जाता है, यदि किसी कारणवश त्रुटी हो जाती हैं तो Registration Edit or Isactive भी किया जा सकता हैं |
-            </marquee>
-        </div>
-    </div>
-
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
@@ -65,14 +57,23 @@
                                 प्रोजेक्ट वर्ष का चयन करें
                             </label>
 
-                            <asp:DropDownList runat="server" ID="ddlProjectYear" CssClass="form-control select2">
+                            <%-- <asp:DropDownList runat="server" ID="ddlProjectYear" CssClass="form-control select2">
 
                                 <asp:ListItem>Select</asp:ListItem>
                                 <asp:ListItem Value="1">2024</asp:ListItem>
                                 <asp:ListItem Value="2">2023</asp:ListItem>
                                 <asp:ListItem Value="3">2022</asp:ListItem>
                                 <asp:ListItem Value="4">2021</asp:ListItem>
-                            </asp:DropDownList>
+                            </asp:DropDownList>--%>
+
+                            <select class="form-control select2" id="ddlProjectYear">
+
+                                <option>Select</option>
+                                <option value="1">2024</option>
+                                <option value="2">2023</option>
+                                <option value="3">2022</option>
+                                <option value="4">2021</option>
+                            </select>
                         </div>
                     </div>
 
@@ -83,14 +84,23 @@
                                 Select Project No.<br />
                                 प्रोजेक्ट नंबर का चयन करें
                             </label>
-                            <asp:DropDownList runat="server" ID="ddlProjectNo" CssClass="form-control select2">
+                            <%--<asp:DropDownList runat="server" ID="ddlProjectNo" CssClass="form-control select2">
 
                                 <asp:ListItem>Select</asp:ListItem>
                                 <asp:ListItem Value="1">PWDMP001</asp:ListItem>
                                 <asp:ListItem Value="2">PWDMP002</asp:ListItem>
                                 <asp:ListItem Value="3">PWDMP003</asp:ListItem>
                                 <asp:ListItem Value="4">PWDMP004</asp:ListItem>
-                            </asp:DropDownList>
+                            </asp:DropDownList>--%>
+
+                            <select class="form-control select2" id="ddlProjectNo">
+
+                                <option>Select</option>
+                                <option value="1">PWDMP001</option>
+                                <option value="2">PWDMP002</option>
+                                <option value="3">PWDMP003</option>
+                                <option value="4">PWDMP004</option>
+                            </select>
 
                         </div>
                     </div>
@@ -104,7 +114,7 @@
                             </label>
                             <select class="select2">
                                 <option>Select</option>
-                                <option> 22AAAAA0000A1Z5</option>
+                                <option>22AAAAA0000A1Z5</option>
                                 <option>22AAAAA0000A5Z9</option>
                             </select>
                         </div>
@@ -147,14 +157,14 @@
                 <hr />
                 <div class="row">
                     <div class="col-md-12">
-                        <asp:Button runat="server" Text="Save" class="btn btn-outline-success btn-border  w-lg" OnClick="Unnamed_Click" />
+                        <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg" onclick=" showHideRemarkView()">Save</button>
                         <a href="Mst_VenderToProjectMapping.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                 </div>
             </fieldset>
 
-            <fieldset id="table1" visible="false" runat="server">
-                <legend>Work Type Details / कार्य प्रकार का विवरण</legend>
+            <fieldset id="table1" style="display: none;">
+                <legend>Details / विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -183,7 +193,8 @@
                                         <th>Project No.<br />
                                             परियोजना नंबर</th>
                                         <th>Vender Name
-                                           <br /> विक्रेता का नाम
+                                           <br />
+                                            विक्रेता का नाम
                                         </th>
                                         <th>Status(Active/InActive)
              <br />
@@ -209,8 +220,8 @@
                 </div>
             </fieldset>
 
-            <fieldset id="table2" visible="false" runat="server">
-                <legend>Work Type Details / कार्य प्रकार का विवरण</legend>
+            <fieldset id="table2" style="display: none">
+                <legend>Details / विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -239,7 +250,8 @@
                                         <th>Project No.<br />
                                             परियोजना नंबर</th>
                                         <th>Vender Name
-                                विक्रेता का नाम<br />
+                                      <br />
+                                            विक्रेता का नाम
                                         </th>
                                         <th>Status(Active/InActive)
  <br />
@@ -269,5 +281,25 @@
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+
+    <script type="text/javascript">
+        function showHideRemarkView() {
+            var ddlProjectNo = document.getElementById('ddlProjectNo');
+            var ddlProjectYear = document.getElementById('ddlProjectYear')
+
+            if (ddlProjectNo.value == "1" & ddlProjectYear.value == "1") {
+                table1.style.display = "block";
+                table2.style.display = "none";
+            }
+            else if (ddlProjectNo.value == "2" & ddlProjectYear.value == "2") {
+                table2.style.display = "block";
+                table1.style.display = "none";
+            }
+            else {
+                table1.style.display = "none";
+                table2.style.display = "none";
+            }
+        }
+    </script>
 </asp:Content>
 
