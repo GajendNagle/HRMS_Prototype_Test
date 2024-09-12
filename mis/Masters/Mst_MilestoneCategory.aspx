@@ -37,12 +37,12 @@
     </div>
 
     <div class="card card-border-primary">
-        <%--        <div class="card-header">
+        <div class="card-header">
             <div class="row">
-                <div class="col-xxl-12 col-md-12">
+                <div class="col-xl-9 col-md-12">
                     <div class="marqueecontainerinfo">
                         <div class="headertext btn btn-primary rounded-pill">
-                            Milestone Category Master / माइल स्टोन श्रेणी मास्टर
+                            MileStone Category / माइल स्टोन श्रेणी
                         </div>
                         <div>
                             <marquee style="width: 100%;"
@@ -54,8 +54,11 @@
 
                     </div>
                 </div>
+                <div class="col-xl-3 col-md-12 text-end">
+                    <a role="button" href="MileStoneReport.aspx" class="btn btn-primary rounded-pill">View Report</a>
+                </div>
             </div>
-        </div>--%>
+        </div>
         <div class="card-body">
 
             <fieldset>
@@ -145,31 +148,26 @@
                                             माइलस्टोन का प्रकार</th>
                                         <th>Milestone Category<br />
                                             माइलस्टोन की श्रेणी</th>
-                                        <%-- <th>Milestone Subcategory<br />
-                                            माइलस्टोन की उपश्रेणी</th>--%>
                                         <th>Status(Active/InActive)
              <br />
                                             स्थिति (सक्रिय/निष्क्रिय)</th>
                                         <th>Action
                  <br />
                                             कार्यवाहीं</th>
-                                        <%--<th>View Report</th>--%>
                                     </tr>
 
                                     <tr>
                                         <td>1</td>
                                         <td>Technical</td>
                                         <td>Planning</td>
-                                        <%--<td>Building Repair</td>--%>
                                         <td>Active</td>
                                         <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-                                        <%--<td><a href="MileStoneReport.aspx"><span class="btn btn-outline-primary"><i class="fa fa-eye"></i></span></a></td>--%>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>Technical</td>
                                         <td>Structural Framing</td>
-                                        <%--<td>Hand Pump Mining</td>--%>
+                                       
                                         <td>Active</td>
                                         <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
 
@@ -178,7 +176,6 @@
                                         <td>3</td>
                                         <td>Financial</td>
                                         <td>Establishing Fund</td>
-                                        <%--<td>Hand Pump Mining</td>--%>
                                         <td>Active</td>
                                         <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
 

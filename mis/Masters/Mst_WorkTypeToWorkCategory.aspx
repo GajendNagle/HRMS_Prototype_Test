@@ -35,9 +35,9 @@
     </div>
 
     <div class="card card-border-primary">
-        <%-- <div class="card-header">
+        <div class="card-header">
             <div class="row">
-                <div class="col-xxl-9 col-md-12">
+                <div class="col-xl-9 col-md-12">
                     <div class="marqueecontainerinfo">
                         <div class="headertext btn btn-primary rounded-pill">
                             Work Type To Work SubCategory Mapping
@@ -52,30 +52,8 @@
 
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-12 text-end">
-                    <a role="button" href="E-ChallanDetails.aspx" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i>Back</a>
-                </div>
-            </div>
-        </div>--%>
-        <div class="card-header">
-            <div class="row">
-                <div class="col-xl-9 col-md-12">
-                    <div class="marqueecontainerinfo">
-                        <div class="headertext btn btn-primary rounded-pill">
-                            Work Type To Work SubCategory Mapping
-                        </div>
-                        <div>
-                            <marquee style="width: 100%;"
-                                onmouseover="this.stop();" onmouseout="this.start();"
-                                direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
-                                Empty
-                            </marquee>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-12 text-end">
-                    <a role="button" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#firsttimeModel"></i>View Report</a>
+                <div class="col-xl-3 col-md-10 text-end">
+                    <a role="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#firsttimeModel">View Report</a>
                 </div>
             </div>
         </div>
@@ -146,10 +124,6 @@
                                         </th>
                                         <th>Work Subcategory Name<br />
                                             कार्य उपश्रेणी का नाम</th>
-
-                                        <th>View Report
-                 <br />
-                                        </th>
                                     </tr>
                                 </thead>
 
@@ -159,7 +133,6 @@
                                         <input type="checkbox" id="CheckBox1" />
                                     </td>
                                     <td>भवन सुधार कार्य</td>
-                                    <td class="nowrap"><span class="Alert-View btn btn-outline-primary"><i class="fa fa-eye" data-bs-toggle="modal" data-bs-target="#firsttimeModel"></i></span></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -167,7 +140,6 @@
                                         <input type="checkbox" id="CheckBox2" />
                                     </td>
                                     <td>नया भवन निर्माण कार्य</td>
-                                    <td class="nowrap"><span class="Alert-View btn btn-outline-primary"><i class="fa fa-eye" data-bs-toggle="modal" data-bs-target="#firsttimeModel"></i></span></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
@@ -175,7 +147,6 @@
                                         <input type="checkbox" id="CheckBox3" />
                                     </td>
                                     <td>भवन मरम्मत कार्य</td>
-                                    <td class="nowrap"><span class="Alert-View btn btn-outline-primary"><i class="fa fa-eye" data-bs-toggle="modal" data-bs-target="#firsttimeModel"></i></span></td>
                                 </tr>
 
                             </table>

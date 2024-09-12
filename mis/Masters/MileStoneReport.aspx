@@ -17,7 +17,7 @@
                         </li>
                         <li class="breadcrumb-item">
                             <a href="#developmentMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">
-                                <span>Development Master Data</span></a>
+                                <span>Civil Construction Master Data</span></a>
                         </li>
                         <li class="breadcrumb-item">MileStone Report</li>
                     </ol>
@@ -29,7 +29,7 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
-                <div class="col-xxl-12 col-md-12">
+                <div class="col-xl-9 col-md-12">
                     <div class="marqueecontainerinfo">
                         <div class="headertext btn btn-primary rounded-pill">
                             Milestone Report / माइल स्टोन रिपोर्ट
@@ -43,6 +43,9 @@
                         </div>
 
                     </div>
+                </div>
+                <div class="col-xl-3 col-md-12 text-end">
+                    <a role="button" href="Mst_MilestoneCategory.aspx" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i>Back</a>
                 </div>
             </div>
         </div>
@@ -116,33 +119,46 @@
                                 <thead class="nowrap">
                                     <tr>
                                         <th>Sr.No.
- <br />
+                                            <br />
                                             क्रमांक</th>
                                         <th>Milestone Type<br />
                                             माइलस्टोन का प्रकार</th>
                                         <th>Milestone Category<br />
                                             माइलस्टोन की श्रेणी</th>
-                                        <th>Milestone Subcategory<br />
-                                            माइलस्टोन की उपश्रेणी</th>
-
+                                        <%-- <th>Milestone Subcategory<br />
+                               माइलस्टोन की उपश्रेणी</th>--%>
+                                        <th>Status(Active/InActive)
+                                            <br />
+                                            स्थिति (सक्रिय/निष्क्रिय)</th>
                                         <th>Action
-     <br />
+    <br />
                                             कार्यवाहीं</th>
+                                        <%--<th>View Report</th>--%>
                                     </tr>
 
                                     <tr>
                                         <td>1</td>
                                         <td>Technical</td>
-                                        <td>School Repair/Construction</td>
-                                        <td>Building Repair</td>
+                                        <td>Planning</td>
+                                        <td>Active</td>
                                         <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>Technical</td>
-                                        <td>Drinking Water System</td>
-                                        <td>Hand Pump Mining</td>
+                                        <td>Structural Framing</td>
+                                        <td>Active</td>
                                         <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Financial</td>
+                                        <td>Establishing Fund</td>
+                                        <td>Active</td>
+                                        <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+
                                     </tr>
                                 </thead>
                             </table>
@@ -180,27 +196,43 @@
                                             माइलस्टोन का प्रकार</th>
                                         <th>Milestone Category<br />
                                             माइलस्टोन की श्रेणी</th>
-                                        <th>Milestone Subcategory<br />
-                                            माइलस्टोन की उपश्रेणी</th>
-
+                                        <%-- <th>Milestone Subcategory<br />
+                               माइलस्टोन की उपश्रेणी</th>--%>
+                                        <th>Status(Active/InActive)
+                                            <br />
+                                            स्थिति (सक्रिय/निष्क्रिय)</th>
                                         <th>Action
     <br />
                                             कार्यवाहीं</th>
+                                        <%--<th>View Report</th>--%>
                                     </tr>
 
                                     <tr>
                                         <td>1</td>
-                                        <td>Financial</td>
-                                        <td>School Repair/Construction</td>
-                                        <td>Building Repair</td>
+                                        <td>Technical</td>
+                                        <td>Planning</td>
+                                        <%--<td>Building Repair</td>--%>
+                                        <td>Active</td>
                                         <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                        <%--<td><a href="MileStoneReport.aspx"><span class="btn btn-outline-primary"><i class="fa fa-eye"></i></span></a></td>--%>
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>Financial</td>
-                                        <td>Drinking Water System</td>
-                                        <td>Hand Pump Mining</td>
+                                        <td>Technical</td>
+                                        <td>Structural Framing</td>
+                                        <%--<td>Hand Pump Mining</td>--%>
+                                        <td>Active</td>
                                         <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Financial</td>
+                                        <td>Establishing Fund</td>
+                                        <%--<td>Hand Pump Mining</td>--%>
+                                        <td>Active</td>
+                                        <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+
                                     </tr>
                                 </thead>
                             </table>
