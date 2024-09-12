@@ -153,8 +153,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Save</button>
+                        <a href="Mst_WorkTypeToWorkCategory.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                    </div>
+                </div>
             </fieldset>
-
 
             <div class="modal bs-example-modal-lg2" tabindex="-1" role="dialog" id="firsttimeModel" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
