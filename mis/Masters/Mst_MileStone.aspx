@@ -76,7 +76,7 @@
                             <input type="text" class="form-control" placeholder="माइलस्टोन का नाम हिंदी में दर्ज करें" />
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-4">
+                   <%-- <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="form-group">
                             <label>
                                 Select MileStone Type
@@ -88,7 +88,7 @@
                                 <option value="B">Financial</option>
                             </select>
                         </div>
-                    </div>
+                    </div>--%>
                     <div class="col-md-3">
                         <div class="form-group">
                             <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
@@ -133,9 +133,7 @@
                                         <th>MileStone Name
                                       <br /> 
                                             माइल स्टोन नाम</th>
-                                        <th>MileStone Type<br />
-                                            माइल स्टोन प्रकार</th>
-
+                                        
                                         <%-- <th>MileStone Category
                                             <br />माइल स्टोन श्रेणी
                                         </th>--%>
@@ -148,32 +146,24 @@
                                 </thead>
                                 <tr>
                                     <td>1</td>
-                                    <td>Final level completion</td>
                                     <td>Technical</td>
                                     <td>Active</td>
                                     <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Mid level completion</td>
-                                    <td>Technical</td>
+                                    <td>Financial</td>
                                     <td>Active</td>
                                     <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
-                                <tr>
+                               
+                                <%--<tr>
                                     <td>3</td>
                                     <td>Foundation</td>
                                     <td>Technical</td>
-                                    <td>InActive</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Foundation</td>
-                                    <td>Technical</td>
                                     <td>Active</td>
                                     <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-                                </tr>
+                                </tr>--%>
                                
                             </table>
                         </div>

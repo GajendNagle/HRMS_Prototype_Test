@@ -1874,11 +1874,10 @@
 
                             <%--Development module--%>
                             <li class="nav-item">
-                                <a class="nav-link menu-link" href="#Development" data-bs-toggle="collapse" role="button"
-                                    aria-expanded="false" aria-controls="HostelManagement">
-                                    <i class="ri-stack-line"></i><span data-key="t-apps">Civil Construction</span>
+                                <a href="#Development" class="nav-link menu-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Development">
+                                    <i class="ri-stack-line"></i><span data-key="t-Development">Civil Construction</span>
                                 </a>
-                                <div class="menu-dropdown dropdown-custom-left collapse show" id="Development" style="">
+                                <div class="menu-dropdown dropdown-custom-left collapse" id="Development" style="">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_VenderRegistration.aspx"><i class="ri-file-list-3-line"></i>Vender Registration</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_VenderToProjectMapping.aspx"><i class="ri-file-list-3-line"></i>Vender To Project Mapping Process</a></li>
@@ -1890,6 +1889,12 @@
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectApprovalLetter.aspx"><i class="ri-file-list-3-line"></i>Project Approval Letter Generated</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/ApprovalLetterDetails.aspx"><i class="ri-file-list-3-line"></i>Approval Letter Details</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentGenerate.aspx"><i class="ri-file-list-3-line"></i>Installment Generate</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/WorkExpenditureProcess.aspx"><i class="ri-file-list-3-line"></i>Work Expenditure Process</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/UtilizationCertificateGenerate.aspx"><i class="ri-file-list-3-line"></i>Utilization Certificate Generate Process</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/VenderPaymentProcess.aspx"><i class="ri-file-list-3-line"></i>Vender Payment Process</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/FinalCompletionProcess.aspx"><i class="ri-file-list-3-line"></i>Final Completion Process</a></li>
+
+
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/CreateProject.aspx"><i class="ri-file-list-3-line"></i>Create Project</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectDetails.aspx"><i class="ri-file-list-3-line"></i>Project Details</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentUploadDocument.aspx"><i class="ri-file-list-3-line"></i>Generate Demand</a></li>

@@ -138,15 +138,22 @@
 
                                 <tr>
                                     <td>1</td>
-                                    <td>School/Construction</td>
-                                    <td>स्कूल मरम्मत/निर्माण</td>
+                                    <td>School Construction</td>
+                                    <td>स्कूल निर्माण</td>
                                     <td>Active</td>
                                     <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>C.C road work</td>
+                                    <td>C.C Road Work</td>
                                     <td>सी.सी रोड कार्य</td>
+                                    <td>Active</td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Drinking Water System</td>
+                                    <td>पेयजल व्यवस्था</td>
                                     <td>Active</td>
                                     <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>

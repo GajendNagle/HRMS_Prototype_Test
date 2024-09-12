@@ -35,12 +35,12 @@
     </div>
 
     <div class="card card-border-primary">
-        <div class="card-header">
+        <%-- <div class="card-header">
             <div class="row">
-                <div class="col-xxl-12 col-md-12">
+                <div class="col-xxl-9 col-md-12">
                     <div class="marqueecontainerinfo">
                         <div class="headertext btn btn-primary rounded-pill">
-                            Work Type To Work Category Mapping / कार्य प्रकार से कार्य श्रेणी मैपिंग
+                            Work Type To Work SubCategory Mapping
                         </div>
                         <div>
                             <marquee style="width: 100%;"
@@ -52,13 +52,38 @@
 
                     </div>
                 </div>
+                <div class="col-xl-3 col-md-12 text-end">
+                    <a role="button" href="E-ChallanDetails.aspx" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i>Back</a>
+                </div>
+            </div>
+        </div>--%>
+        <div class="card-header">
+            <div class="row">
+                <div class="col-xl-9 col-md-12">
+                    <div class="marqueecontainerinfo">
+                        <div class="headertext btn btn-primary rounded-pill">
+                            Work Type To Work SubCategory Mapping
+                        </div>
+                        <div>
+                            <marquee style="width: 100%;"
+                                onmouseover="this.stop();" onmouseout="this.start();"
+                                direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+                                Empty
+                            </marquee>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-12 text-end">
+                    <a role="button" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#firsttimeModel"></i>View Report</a>
+                </div>
             </div>
         </div>
 
         <div class="card-body">
 
             <fieldset>
-                <legend>Add Work Type To Work Category Mapping / कार्य प्रकार से कार्य श्रेणी मैपिंग जोड़े</legend>
+                <legend>Work Type To Work SubCategory Mapping / कार्य प्रकार से कार्य उपश्रेणी जोड़े</legend>
 
                 <div class="row align-items-end">
 
@@ -72,7 +97,7 @@
                                 <option>Select</option>
                                 <option>स्कूल निर्माण</option>
                                 <option>सी.सी रोड कार्य</option>
-                                <option>हैंडपंप कार्य</option>
+                                <option>पेयजल व्यवस्था</option>
 
                             </select>
                         </div>
@@ -90,7 +115,7 @@
             </fieldset>
 
             <fieldset id="table1" style="display: none;">
-                <legend>Work Type Details / कार्य प्रकार का विवरण</legend>
+                <legend>Work Subcategory Details / कार्य उपश्रेणी विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">

@@ -142,7 +142,7 @@
                                     <td>स्कूल मरम्मत/निर्माण</td>
                                     <td>इमारत मरम्मत</td>
                                     <td>30000</td>
-                                    <td>Govindpura</td>
+                                    <td>600 square cm.</td>
                                     <td>Rajiv Mishra</td>
                                     <td>22AAAAA0000A1Z5</td>
                                     <td>AFZPK7190K</td>

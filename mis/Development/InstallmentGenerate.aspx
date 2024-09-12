@@ -155,6 +155,9 @@
                                         <th>Sr.No.
                                 <br />
                                             क्रमांक</th>
+                                        <th>Add Work Details<br />
+                                            कार्य विवरण जोड़ें
+                                        </th>
                                         <th>Project Year<br />
                                             परियोजना वर्ष</th>
                                         <th>Project<br />
@@ -173,12 +176,13 @@
 
                                 <tr>
                                     <td>1</td>
+                                    <td><a role="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2">Add</a></td>
                                     <td>2022</td>
                                     <td>Dpi</td>
                                     <td>स्कूल निर्माण</td>
                                     <td>OR456</td>
                                     <td>10/03/2021</td>
-                                    <td><a role="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2">Add</a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

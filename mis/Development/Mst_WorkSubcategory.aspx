@@ -58,10 +58,11 @@
                                 कार्य की श्रेणी का चयन करें<span style="color: red">*</span></label>
                             <select id="work-category" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
-                                <option value="A">स्कूल मरम्मत/निर्माण</option>
+                                <option value="A">विद्यालय का रख-रखाव कार्य	</option>
                                 <option value="B">पेयजल व्यवस्था</option>
                                 <option value="C">स्कूल मार्ग निर्माण</option>
-                                <option value="D">अन्य कार्य</option>
+                                <option value="D">सी.सी.रोड निर्माण</option>
+
                             </select>
                         </div>
                     </div>
@@ -140,7 +141,7 @@
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td>School Repair/Construction</td>
+                                    <td>विद्यालय का रख-रखाव कार्य</td>
                                     <td>Building Repair</td>
                                     <td>इमारत मरम्मत</td>
                                     <td>Active</td>
@@ -148,7 +149,7 @@
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Drinking Water System</td>
+                                    <td>पेयजल व्यवस्था</td>
                                     <td>Hand Pump Mining</td>
                                     <td>हेंडपंप खनन</td>
                                     <td>InActive</td>
@@ -156,17 +157,17 @@
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Drinking Water System</td>
-                                    <td>Water Tank construction</td>
+                                    <td>पेयजल व्यवस्था</td>
+                                    <td>Water Tank Construction</td>
                                     <td>पानी की टंकी निर्माण</td>
                                     <td>InActive</td>
                                     <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>School Road Construction</td>
+                                    <td>स्कूल मार्ग निर्माण</td>
                                     <td>CC Road Construction</td>
-                                    <td>CC Road निर्माण</td>
+                                    <td>सी.सी.रोड निर्माण</td>
                                     <td>InActive</td>
                                     <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>

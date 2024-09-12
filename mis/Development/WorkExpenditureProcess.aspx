@@ -79,7 +79,7 @@
                 <hr />
                 <div class="row">
                     <div class="col-md-12">
-                        <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border w-lg" onclick="document.getElementById('table1').style.display = 'block'">Search</button>
+                        <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="document.getElementById('table1').style.display = 'block'">Search</button>
                         <a href="WorkExpenditureProcess.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                 </div>
@@ -131,10 +131,10 @@
 
                                 <tr>
                                     <td>1</td>
-                                    <td>10000</td>
+                                    <td><a role="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2">Add</a></td>
                                     <td>RYU54645</td>
                                     <td>01/05/2021</td>
-                                    <td>Rachna Nagar</td>
+                                    <td>500 square cm.</td>
                                     <td>सी.सी रोड कार्य</td>
                                     <td>स्कूल मरम्मत/निर्माण</td>
                                     <td>इमारत मरम्मत</td>
@@ -146,7 +146,104 @@
             </fieldset>
         </div>
     </div>
+
+    <div class="modal bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header" id="myDIV2">
+                    <h4 class="modal-title" id="myLargeModalLabel2"></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <legend>Details / विवरण</legend>
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered text-center">
+                                        <thead class="nowrap">
+                                            <tr>
+                                                <th>Sr.No.
+    <br />
+                                                    क्रमांक</th>
+                                                <th>Installment No.<br />
+                                                    इन्सटॉलमेंट नंबर</th>
+                                                <th colspan="2">Sanctioned<br />
+                                                    स्वीकृत</th>
+                                                <th colspan="2">Completed<br />
+                                                    कम्पलीट
+                                                </th>
+                                                <th>Remark<br />
+                                                    टिप्पणी</th>
+                                                <th>Image 1</th>
+                                                <th>Image 2</th>
+                                                <th>Action</th>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+                                                <th>Work Area</th>
+                                                <th>Amount</th>
+                                                <th>Work Area</th>
+                                                <th>Amount</th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Installment 1</td>
+                                            <td>500 square cm</td>
+                                            <td>50000</td>
+                                            <td>400 square cm</td>
+                                            <td>
+                                                <input type="text" class="form-control" /></td>
+                                            <td>
+                                                <textarea class="form-control" rows="1" cols="3"></textarea></td>
+                                            <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye" onclick="openPDF()"></i></span></td>
+                                            <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye" onclick="openPDF()"></i></span></td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Installment 2</td>
+                                            <td>500 square cm</td>
+                                            <td>50000</td>
+                                            <td>400 square cm</td>
+                                            <td>
+                                                <input type="text" class="form-control" /></td>
+                                            <td>
+                                                <textarea class="form-control" rows="1" cols="3"></textarea></td>
+                                            <td>
+                                                <input type="file" class="form-control" /></td>
+                                            <td>
+                                                <input type="file" class="form-control" /></td>
+                                            <td><a class="Alert-Confirmation btn btn-success">Save</a></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+
+    <script>
+        function openPDF() {
+            // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
+            var pdfUrl = '../../img/CasteCertificate1.jpg';
+            // Open the PDF in a new window or tab
+            window.open(pdfUrl, '_blank');
+        }
+    </script>
 </asp:Content>
 

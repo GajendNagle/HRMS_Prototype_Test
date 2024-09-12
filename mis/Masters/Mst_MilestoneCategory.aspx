@@ -37,7 +37,7 @@
     </div>
 
     <div class="card card-border-primary">
-        <div class="card-header">
+        <%--        <div class="card-header">
             <div class="row">
                 <div class="col-xxl-12 col-md-12">
                     <div class="marqueecontainerinfo">
@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>--%>
         <div class="card-body">
 
             <fieldset>
@@ -80,12 +80,12 @@
                             <label>
                                 Enter Milestone Category
                                 <br />
-                            माइलस्टोन की श्रेणी दर्ज करें<span style="color: red">*</span></label>
+                                माइलस्टोन की श्रेणी दर्ज करें<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Milestone Category" />
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4 col-xl-3">
+                    <%-- <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
                                 Enter Milestone Subcategory
@@ -93,7 +93,7 @@
                                 माइलस्टोन की उपश्रेणी दर्ज करें<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Milestone Category" />
                         </div>
-                    </div>
+                    </div>--%>
 
                     <div class="col-md-3">
                         <div class="form-group">
@@ -145,34 +145,43 @@
                                             माइलस्टोन का प्रकार</th>
                                         <th>Milestone Category<br />
                                             माइलस्टोन की श्रेणी</th>
-                                        <th>Milestone Subcategory<br />
-                                            माइलस्टोन की उपश्रेणी</th>
+                                        <%-- <th>Milestone Subcategory<br />
+                                            माइलस्टोन की उपश्रेणी</th>--%>
                                         <th>Status(Active/InActive)
              <br />
                                             स्थिति (सक्रिय/निष्क्रिय)</th>
                                         <th>Action
                  <br />
                                             कार्यवाहीं</th>
-                                        <th>View Report</th>
+                                        <%--<th>View Report</th>--%>
                                     </tr>
 
                                     <tr>
                                         <td>1</td>
                                         <td>Technical</td>
-                                        <td>School Repair/Construction</td>
-                                        <td>Building Repair</td>
+                                        <td>Planning</td>
+                                        <%--<td>Building Repair</td>--%>
                                         <td>Active</td>
                                         <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-                                        <td><a href="MileStoneReport.aspx"><span class="btn btn-outline-primary"><i class="fa fa-eye"></i></span></a></td>
+                                        <%--<td><a href="MileStoneReport.aspx"><span class="btn btn-outline-primary"><i class="fa fa-eye"></i></span></a></td>--%>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>Technical</td>
-                                        <td>Drinking Water System</td>
-                                        <td>Hand Pump Mining</td>
+                                        <td>Structural Framing</td>
+                                        <%--<td>Hand Pump Mining</td>--%>
                                         <td>Active</td>
                                         <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-                                        <td><span class="btn btn-outline-primary"><i class="fa fa-eye"></i></span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Financial</td>
+                                        <td>Establishing Fund</td>
+                                        <%--<td>Hand Pump Mining</td>--%>
+                                        <td>Active</td>
+                                        <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+
                                     </tr>
                                 </thead>
                             </table>
