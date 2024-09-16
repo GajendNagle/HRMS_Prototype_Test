@@ -147,10 +147,10 @@
                                         <th>Sr.No.
                                             <br />
                                             क्रमांक</th>
-                                        <th>Order No.<br />
-                                            आदेश संख्या</th>
-                                        <th>Order Date<br />
-                                            आर्डर की तारीख</th>
+                                        <th>Approval  Order No.<br />
+                                            अनुमोदन  आदेश संख्या</th>
+                                        <th>Approval Order Date<br />
+                                            अनुमोदन  आर्डर की तारीख</th>
                                         <th>Work Category<br />
                                             कार्य श्रेणी
                                         </th>

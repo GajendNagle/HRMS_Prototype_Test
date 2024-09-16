@@ -95,8 +95,8 @@
                             </label>
                             <select class="select2">
                                 <option>Select</option>
-                                <option>22AAAAA0000A1Z5</option>
-                                <option>22AAAAA0000A5Z9</option>
+                                <option>BANSAL Construction (24AAABB0000A1W6)</option>
+                                <option>R.K Construction (23AAAAA0000A1Z5)</option>
                             </select>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Project(Upload Document)<br />
+                                Upload Document<br />
                                 प्रोजेक्ट(दस्तावेज़ अपलोड करें)
                             </label>
                             <input type="file" class="form-control" />
@@ -144,7 +144,7 @@
                 </div>
             </fieldset>
 
-            <fieldset id="table1" style="display: none;">
+            <fieldset id="table1">
                 <legend>Details / विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -177,6 +177,15 @@
                                            <br />
                                             विक्रेता का नाम
                                         </th>
+                                       
+                                          <th>EMD Amount
+                                           <br />
+                                            EMD राशि
+                                        </th>
+                                           <th> Security Deposit Amount
+                                           <br />
+                                            सुरक्षा जमा राशि
+                                        </th>
                                         <th>Status(Active/InActive)
              <br />
                                             स्थिति (सक्रिय/निष्क्रिय)</th>
@@ -190,7 +199,10 @@
                                     <td>1</td>
                                     <td>2024</td>
                                     <td>PWDMP001</td>
-                                    <td>Ashok Verma</td>
+                      
+                                    <td>R.K Construction (23AAAAA0000A1Z5)</td>
+                                      <td>100000</td>
+                                    <td>20000</td>
                                     <td>Active</td>
                                     <td class="nowrap"><a class="Alert-View btn btn-outline-info"><i class="fa fa-eye"></i></a>&nbsp<a class="Alert-Edit btn btn-outline-danger"><i class="fa fa-edit"></i></a></td>
                                 </tr>
@@ -268,17 +280,12 @@
             var ddlProjectNo = document.getElementById('ddlProjectNo');
             var ddlProjectYear = document.getElementById('ddlProjectYear')
 
-            if (ddlProjectNo.value == "1" & ddlProjectYear.value == "1") {
+           
                 table1.style.display = "block";
-                table2.style.display = "none";
-            }
-            else if (ddlProjectNo.value == "2" & ddlProjectYear.value == "2") {
+    
+           
                 table2.style.display = "block";
-                table1.style.display = "none";
-            }
-            else {
-                table1.style.display = "none";
-                table2.style.display = "none";
+        
             }
         }
     </script>

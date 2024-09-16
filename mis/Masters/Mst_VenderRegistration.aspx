@@ -287,7 +287,7 @@
                                     <td>Plot No 889 Shyamla Hills Main Road Bhopal</td>
                                     <td>462021</td>
                                     <td>Rajendra Sharma</td>
-                                    <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye" onclick="openimg()"></i></span></td>
+                                    <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye" ></i></span></td>
                                     <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
 

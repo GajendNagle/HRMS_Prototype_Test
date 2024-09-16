@@ -73,12 +73,20 @@
                             <option value="4">PWDMP004</option>
                         </select>
                     </div>
+              
                     <div class="col-md-3">
                         <label>
-                            Enter Installment No<br />
-                            किस्त संख्या दर्ज करें<span style="color: red;">*</span>
+                            Select Installment No. <br />
+                            किस्त संख्या का चयन करें<span style="color: red;">*</span>
                         </label>
-                        <input type="text" class="form-control" placeholder="Enter Installment No" />
+                      <select class="form-control select2" id="ddlProjectNo1" >
+                            <option>Select</option>
+                            <option value="1">First Installment </option>
+                            <option value="1">Second Installment </option>
+                            <option value="1">Third Installment </option>
+                            <option value="1">Fourth Installment </option>
+                           
+                        </select>
                     </div>
                 </div>
                 <hr />
@@ -92,19 +100,7 @@
 
             <fieldset id="table1" style="display: none;">
                 <legend>Details / विवरण</legend>
-                <div class="row justify-content-end">
-                    <div class="col-md-4 text-end">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-55">Excel</button>
-                            <button class="btn btn-info btn-rounded w-55">PDF</button>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                        </div>
-                    </div>
-                </div>
+ 
                 <div class="row form-group">
                     <div class="col-md-12">
                         <div class="table-responsive">

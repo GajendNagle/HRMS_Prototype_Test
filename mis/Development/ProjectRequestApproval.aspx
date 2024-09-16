@@ -86,7 +86,7 @@
 
                             <select class="form-control select2">
                                 <option>Select</option>
-                                <option>स्कूल मरम्मत/निर्माण</option>
+                                <option>विद्यालय का रख-रखाव कार्य	</option>
                                 <option>पेयजल व्यवस्था</option>
                                 <option>स्कूल मार्ग निर्माण</option>
                             </select>
@@ -104,7 +104,7 @@
                                 <option>Select</option>
                                 <option>इमारत मरम्मत</option>
                                 <option>हेंडपंप खनन</option>
-                                <option>CC सड़क निर्माण</option>
+                                <option>सी.सी. सड़क निर्माण</option>
                             </select>
                         </div>
                     </div>
@@ -165,15 +165,15 @@
                                             <br />
                                             लागत राशि
                                         </th>
-                                        <th>Technical Document
+                                        <th>MileStone Document
                                             <br />
-                                            तकनीकी दस्तावेज़
+                                            माइलस्टोन  दस्तावेज़
                                         </th>
                                         <th>Action
                  <br />
                                             कार्यवाहीं</th>
-                                        <th>Status<br />
-                                            स्थिति</th>
+                                        <%--th>Status<br />
+                                            स्थिति</th>--%>
                                     </tr>
                                 </thead>
 
@@ -181,11 +181,11 @@
                                     <td>1</td>
                                     <td>POR2024CV001</td>
                                     <td>02/05/2023</td>
-                                    <td>स्कूल मरम्मत/निर्माण</td>
+                                    <td>विद्यालय का रख-रखाव कार्य</td>
                                     <td>इमारत मरम्मत</td>
                                     <td>Bhopal M.p.</td>
                                     <td>60000.00</td>
-                                    <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye"></i></span></td>
+                                  <%--  <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye"></i></span></td>--%>
                                     <td class="nowrap"><a class="btn btn-outline-info"><i class="fa fa-eye" data-bs-toggle="modal" data-bs-target="#firsttimeModel"></i></a></td>
 
                                     <td class="nowrap"><span class="btn btn-success" id="Approval" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2">Approval</span>
@@ -289,6 +289,22 @@
                                             <option value="3">DEO</option>
                                             <option value="3">JD</option>
                                             <option value="3">HO</option>
+
+                                        </select>
+                                    </div>
+                                     <div class="col-md-3">
+
+                                        <label>
+                                            Select Office Name <br />
+                                            कार्यालय के नाम का चयन करें</label>
+                                        <select class="form-control select2">
+                                            <option value="0">Select</option>
+                                            <option value="3">RKMP School Bhopal</option>
+                                            <option value="3">Nalanda School Bhopal </option>
+                                            <option value="3">BEO , BHOPAL</option>
+                                            <option value="3">DEO , BHOPAL</option>
+                                            <option value="3">JD , BHOPAL</option>
+                                            <option value="3">HO , BHOPAL</option>
 
                                         </select>
                                     </div>

@@ -116,7 +116,7 @@
 
                             <select class="form-control select2">
                                 <option>Select</option>
-                                <option>स्कूल मरम्मत/निर्माण</option>
+                                <option>विद्यालय का रख-रखाव कार्य	</option>
                                 <option>पेयजल व्यवस्था</option>
                                 <option>स्कूल मार्ग निर्माण</option>
                             </select>
@@ -134,7 +134,7 @@
                                 <option>Select</option>
                                 <option>इमारत मरम्मत</option>
                                 <option>हेंडपंप खनन</option>
-                                <option>CC सड़क निर्माण</option>
+                                <option>सी.सी. सड़क निर्माण</option>
                             </select>
                         </div>
                     </div>
@@ -215,15 +215,15 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Work Subcategory
+                                Select MileStone Category
                                 <br />
-                                कार्य उपश्रेणी का चयन करें<span style="color: red">*</span></label>
+                                माइलस्टोन श्रेणी का चयन करें<span style="color: red">*</span></label>
 
                             <select class="form-control select2">
                                 <option>Select</option>
-                                <option>इमारत मरम्मत</option>
-                                <option>हेंडपंप खनन</option>
-                                <option>CC सड़क निर्माण</option>
+                                <option>Planning</option>
+                                <option>Structural Framing	</option>
+                                <option>Establishing Fund	</option>
                             </select>
                         </div>
                     </div>
@@ -237,29 +237,38 @@
                                         <th>Sr.No.
           <br />
                                             क्रमांक</th>
-                                        <th>Document Name<br />
+                                        <th>MileStone Category<br />
+                                            माइलस्टोन श्रेणी</th>
+                                        
+                         
+                                         <th>Document Name<br />
                                             दस्तावेज का नाम</th>
                                         <th>Document Upload<br />
                                             दस्तावेज अपलोड</th>
+                                                                
                                     </tr>
                                 </thead>
 
                                 <tbody>
                                     <tr>
                                         <td>1</td>
+                                        <td>Establishing Fund</td>
                                         <td>Upload Techincal Document
                                            <br />
                                             तकनीकी दस्तावेज़ अपलोड करें</td>
                                         <td>
                                             <input type="file" class="form-control" /></td>
+                                          <%-- --%>
                                     </tr>
                                     <tr>
                                         <td>2</td>
+                                        <td>Planning</td>
                                         <td>Upload Civil Document
                                            <br />
                                             सिविल दस्तावेज अपलोड करें</td>
                                         <td>
                                             <input type="file" class="form-control" /></td>
+                                        <%----%>
                                     </tr>
                                 </tbody>
                             </table>

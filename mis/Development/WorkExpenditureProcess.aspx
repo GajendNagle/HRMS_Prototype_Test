@@ -135,8 +135,8 @@
                                     <td>RYU54645</td>
                                     <td>01/05/2021</td>
                                     <td>500 square cm.</td>
-                                    <td>सी.सी रोड कार्य</td>
-                                    <td>स्कूल मरम्मत/निर्माण</td>
+                                    <td>विद्यालय का रख-रखाव कार्य	</td>
+                                    <td>स्कूल मरम्मत निर्माण</td>
                                     <td>इमारत मरम्मत</td>
                                 </tr>
                             </table>
@@ -199,9 +199,9 @@
                                             <td>50000</td>
                                             <td>400 square cm</td>
                                             <td>
-                                                <input type="text" class="form-control" /></td>
+                                                <input type="text" class="form-control" value="5000" readonly/></td>
                                             <td>
-                                                <textarea class="form-control" rows="1" cols="3"></textarea></td>
+                                                <input type="text" class="form-control" rows="1" cols="3" value="DONE" readonly /></td>
                                             <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye" onclick="openPDF()"></i></span></td>
                                             <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye" onclick="openPDF()"></i></span></td>
                                             <td></td>
@@ -212,7 +212,7 @@
                                             <td>Installment 2</td>
                                             <td>500 square cm</td>
                                             <td>50000</td>
-                                            <td>400 square cm</td>
+                                            <td><input type="text" class="form-control" /></td>
                                             <td>
                                                 <input type="text" class="form-control" /></td>
                                             <td>

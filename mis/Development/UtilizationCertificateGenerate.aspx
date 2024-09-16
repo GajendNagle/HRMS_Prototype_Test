@@ -77,10 +77,17 @@
 
                     <div class="col-md-3">
                         <label>
-                            Enter Installment No<br />
-                            किस्त संख्या दर्ज करें<span style="color: red;">*</span>
+                            Select Installment No. <br />
+                            किस्त संख्या का चयन करें<span style="color: red;">*</span>
                         </label>
-                        <input type="text" class="form-control" placeholder="Enter Installment No" />
+                      <select class="form-control select2" id="ddlProjectNo1" >
+                            <option>Select</option>
+                            <option value="1">First Installment </option>
+                            <option value="1">Second Installment </option>
+                            <option value="1">Third Installment </option>
+                            <option value="1">Fourth Installment </option>
+                           
+                        </select>
                     </div>
                 </div>
 
@@ -157,8 +164,8 @@
                                     <td>04/02/2022</td>
                                     <td>550 square cm.</td>
                                     <td>स्कूल निर्माण</td>
-                                    <td>स्कूल मरम्मत/निर्माण</td>
-                                    <td>इमारत मरम्मत</td>
+                                    <td>स्कूल निर्माण</td>
+                                    <td>स्कूल मार्ग निर्माण</td>
                                     <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye" onclick="openPDF()"></i></span></td>
                                     <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye" onclick="openPDF()"></i></span></td>
                                 </tr>
@@ -217,8 +224,8 @@
                                                     <span class="fw-bold">09-03-2024</span>
                                                 </div>
                                                 <div class="col-md-12 mb-5">
-                                                    <h4 class="text-center mt-3 font-bold"><u>: :Utilization Certificate  : :</u></h4>
-                                                    <h6 class="text-center mt-2 font-bold"><u>: : उपयोगिता प्रमाणपत्र : :</u></h6>
+                                                    <h4 class="text-center mt-3 font-bold"><u>: : Work Expenditure  : :</u></h4>
+                                                    <h6 class="text-center mt-2 font-bold"><u>: : कार्य व्यय की जानकारी : :</u></h6>
                                                 </div>
                                                 <table class="table table-bordered modal-table table-st fs-5">
                                                     <tr class="text-center">
@@ -237,7 +244,7 @@
 
                                                         <th>Work Category<br />
                                                             कार्य की श्रेणी</th>
-                                                        <td class="text-center ">स्कूल मरम्मत/निर्माण</td>
+                                                        <td class="text-center ">स्कूल निर्माण</td>
                                                     </tr>
                                                     <tr class="text-center">
                                                         <th>Milestone<br />
@@ -250,7 +257,7 @@
                                                     <tr class="text-center">
                                                         <th>Work Subcategory<br />
                                                             कार्य उपश्रेणी</th>
-                                                        <td class="text-center ">इमारत मरम्मत</td>
+                                                        <td class="text-center ">स्कूल मार्ग निर्माण	</td>
                                                         <th>Estimated Budget Cost(In Rs)<br />
                                                             अनुमानित बजट</th>
                                                         <td class="text-center ">60000</td>

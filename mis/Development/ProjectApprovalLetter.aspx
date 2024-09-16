@@ -77,7 +77,7 @@
 
             <fieldset id="table1" style="display: none">
                 <legend>Details / विवरण</legend>
-                <div class="row justify-content-end">
+<%--                <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
                             <button class="btn btn-info btn-rounded w-55">Excel</button>
@@ -89,7 +89,7 @@
                             <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
-                </div>
+                </div>--%>
 
                 <div class="row form-group">
                     <div class="col-md-12">
@@ -157,12 +157,12 @@
             </fieldset>
 
             <fieldset>
-                <legend>Final Order</legend>
+                <legend>Approval Order Details</legend>
 
                 <div class="row align-items-end">
                     <div class="col-md-4">
                         <label>
-                            Enter Final Order No.<br />
+                            Enter Approval Order No.<br />
                             अंतिम आदेश संख्या दर्ज करें
                         </label>
                         <input type="text" class="form-control" placeholder="Enter Final Order No." />
@@ -170,7 +170,7 @@
 
                     <div class="col-md-4">
                         <label>
-                            Order Date<br />
+                            Approval Order Date<br />
                             आर्डर की तारीख
                         </label>
                         <input type="date" class="form-control" />
@@ -187,7 +187,7 @@
                 <hr />
                 <div class="row">
                     <div class="col-md-12">
-                        <button type="button" class="btn btn-outline-success btn-border  w-lg" onclick="openPDF()">Generated Letter</button>
+                        <button type="button" class="Alert-Save btn btn-outline-success btn-border  w-lg">Generated Letter</button>
                         <a href="ProjectApprovalLetter.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                 </div>
@@ -222,14 +222,54 @@
             }
         }
     </script>
-
     <script>
-        function openPDF() {
-            // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
-            var pdfUrl = '../../img/blankpdf.pdf';
-            // Open the PDF in a new window or tab
-            window.open(pdfUrl, '_blank');
-        }
+        debugger;
+        !function ($) {
+            "use strict";
+            var SweetAlert = function () { };
+            //examples
+            SweetAlert.prototype.init = function () {
+                //Basic
+                //Success Message
+                $('.Alert-Save').click(function () {
+                    Swal.fire({
+                        title: 'Are you sure?',
+                        text: "Do you want to Generate this Letter ?",
+                        type: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#3085D6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'Yes'
+                        // animation: false,
+                        // customClass: {
+                        //     popup: 'animated tada'
+                        // }
+                    }).then((result) => {
+                        if (result.value) {
+                            Swal.fire({
+                                type: 'success',
+                                title: 'Success!',
+                                text: 'Generate Letter Successfully!',
+                                timer: 2020,
+                            }     
+                            ).then(() => {
+                                var pdfUrl = '../../img/blankpdf.pdf';
+                                window.open(pdfUrl, '_blank');
+                                
+                            });
+
+                        }
+                    })
+                });
+            },
+                //init
+                $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
+        }(window.jQuery),
+            //initializing
+            function ($) {
+                "use strict";
+                $.SweetAlert.init()
+            }(window.jQuery);
     </script>
     
 </asp:Content>
