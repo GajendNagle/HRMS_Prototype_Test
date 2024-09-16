@@ -154,7 +154,7 @@
                     </div>
                 </div>
             </fieldset>
-           
+
 
             <div class="modal bs-example-modal-lg2" tabindex="-1" role="dialog" id="firsttimeModel" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
@@ -179,7 +179,7 @@
                                             <option>Select</option>
                                             <option value="1">इमारत मरम्मत</option>
                                             <option value="2">हेंडपंप खनन</option>
-                                            <option value="3">CC सड़क निर्माण</option>
+                                            <option value="3">सी.सी सड़क निर्माण</option>
                                         </select>
 
                                     </div>

@@ -122,6 +122,9 @@
                                             व्यय राशि</th>
                                         <th>Available Amount<br />
                                             उपलब्ध राशि</th>
+                                        <th>Action<br />
+                                            कार्यवाही
+                                        </th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -133,7 +136,7 @@
                                         <td>40000</td>
                                         <td>20000</td>
                                         <td>20000</td>
-                                        
+                                        <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                 </tbody>
                             </table>
