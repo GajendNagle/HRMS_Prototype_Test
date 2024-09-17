@@ -4,26 +4,26 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
-        <div class="col-12">
-            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-                <h4 class="mb-sm-0"></h4>
-                <div class="=page-title-right">
-                    <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item">
-                            <span>Home</span>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
-                        </li>
-                        <li class="breadcrumb-item"><a href="#developmentMaster" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('MasterPages')">Civil Construction Master Data
-                        </a></li>
-                        <li class="breadcrumb-item">Project Creation</li>
-                    </ol>
-                </div>
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+            <h4 class="mb-sm-0"></h4>
+            <div class="=page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <%--   <li class="breadcrumb-item">
+                <a href="#MasterPages" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Master Data</span></a>
+            </li>--%>
+                    <li class="breadcrumb-item">
+                        <a href="#Development" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Civil Construction</span></a>
+                    </li>
+                    <li class="breadcrumb-item">Project Creation</li>
+                </ol>
             </div>
         </div>
     </div>
-
+</div>
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
@@ -170,8 +170,8 @@
                                             <select class="form-control select2">
                                                 <option value="0">Select</option>
                                                 <option value="3">स्कूल निर्माण	</option>
-                                                <option value="3">सी.सी रोड कार्य	</option>
-                                                <option value="3">पेयजल व्यवस्था	</option>
+                                                <option value="3">सी.सी रोड कार्य</option>
+                                                <option value="3">पेयजल व्यवस्था</option>
 
                                             </select></td>
                                         <td>
@@ -210,9 +210,7 @@
                         </div>
                     </div>
                 </div>
-
                 <fieldset>
-
                     <legend>Vender Details / विक्रेता विवरण</legend>
 
                     <div class="row form-group">

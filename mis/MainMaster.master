@@ -1893,14 +1893,14 @@
                                 </a>
                                 <div class="collapse menu-dropdown dropdown-custom-left" id="Development">
                                     <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/Mst_WorkType.aspx"><i class="ri-file-list-3-line"></i>Work Group Master </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_WorkType.aspx"><i class="ri-file-list-3-line"></i>Work Group Master </a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/Mst_WorkCategory.aspx"><i class="ri-file-list-3-line"></i>Work Category Master</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/Mst_WorkSubcategory.aspx"><i class="ri-file-list-3-line"></i>Work SubCategory Master</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/Mst_WorkTypeToWorkCategory.aspx"><i class="ri-file-list-3-line"></i>Work Type To WorkCategory Mapping</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_WorkTypeToWorkCategory.aspx"><i class="ri-file-list-3-line"></i>Work Type To WorkCategory Mapping</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/Mst_Unit.aspx"><i class="ri-file-list-3-line"></i>Unit Master </a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/Mst_MileStone.aspx"><i class="ri-file-list-3-line"></i>MileStone Type Master</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/Mst_MilestoneCategory.aspx"><i class="ri-file-list-3-line"></i>Milestone Category Master</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/Mst_VenderRegistration.aspx"><i class="ri-file-list-3-line"></i>Vender Registration</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_MileStone.aspx"><i class="ri-file-list-3-line"></i>MileStone Type Master</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_MilestoneCategory.aspx"><i class="ri-file-list-3-line"></i>Milestone Category Master</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_VenderRegistration.aspx"><i class="ri-file-list-3-line"></i>Vender Registration</a></li>
                                         <%--                <li class="nav-item"><a class="nav-link" href="/mis/Development/Mst_VenderToProjectMapping.aspx"><i class="ri-file-list-3-line"></i>Vender To Project Mapping</a></li>--%>
                                         <%--      <li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectRequestProcess.aspx"><i class="ri-file-list-3-line"></i>Project Request Process</a></li>
                                             <li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectRequestApproval.aspx"><i class="ri-file-list-3-line"></i>Project Request Approval</a></li>--%>
@@ -1935,16 +1935,21 @@
                                         <li class="nav-item">
                                             <a class="nav-link menu-link" href="#DevelopmentReport" data-bs-toggle="collapse" role="button"
                                                 aria-expanded="false" aria-controls="DevelopmentReport">
-                                                <i class="ri-menu-line"></i>Development Report
+                                                <i class="ri-menu-line"></i>Civil Construction Report
                                             </a>
                                             <div class="collapse menu-dropdown dropdown-custom-left" id="DevelopmentReport">
                                                 <ul class="nav nav-sm flex-column">
 
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Development/Rpt_Installment.aspx"><i class="ri-file-list-3-line"></i>Installment Report</a></li>
 
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Development/MileStoneReport.aspx"><i class="ri-file-list-3-line"></i>MileStone Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Development/Rpt_Project.aspx"><i class="ri-file-list-3-line"></i>Project Report</a></li>
+
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Development/Rpt_WorkExpenditure.aspx"><i class="ri-file-list-3-line"></i>Work Expenditure Report</a></li>
+
+                                                    <%--<li class="nav-item"><a class="nav-link" href="/mis/Development/MileStoneReport.aspx"><i class="ri-file-list-3-line"></i>MileStone Report</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Development/Rpt_ProjectDetails.aspx"><i class="ri-file-list-3-line"></i>Project Status Report</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Development/Rpt_ProjectApproval.aspx"><i class="ri-file-list-3-line"></i>Project Approval Report</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Development/Rpt_InstallmentApproval.aspx"><i class="ri-file-list-3-line"></i>Installment Release Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Development/Rpt_InstallmentApproval.aspx"><i class="ri-file-list-3-line"></i>Installment Release Report</a></li>--%>
                                                 </ul>
                                             </div>
                                         </li>
