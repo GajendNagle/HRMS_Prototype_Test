@@ -109,7 +109,7 @@
                                 Address<br />
                                 पता<span style="color: red">*</span>
                             </label>
-                            <input type="text" class="form-control" placeholder="Bhopal" />
+                            <input type="text" class="form-control" placeholder="New Market , Roshanpura Bhopal" readonly />
                         </div>
                     </div>
                 </div>
@@ -120,12 +120,12 @@
                 <div class="row form-group">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <table class="table table-bordered text-center">
+                            <table class="table table-bordered text-center ">
                                 <thead class="nowrap">
                                     <tr>
-                                        <th>Sr.No.
+                                       <%-- <th>Sr.No.
                                 <br />
-                                            क्रमांक</th>
+                                            क्रमांक</th>--%>
                                         <th>Project Name<br />
                                             परियोजना का नाम</th>
                                         <th>Project Group<br />
@@ -149,36 +149,37 @@
                                                 <br />
                                             परियोजना अवधि
                                         </th>
+                                         <th>Project Cost<br />
+                                            परियोजना लागत
+                                        </th>
                                         <th>Penalty %
                                                 <br />
                                             दंड प्रतिशत
                                         </th>
-                                        <th>Project Cost<br />
-                                            परियोजना लागत
-                                        </th>
+                                       
 
 
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>1</td>
+                                       <%-- <td>1</td>--%>
                                         <td>
                                             <input type="text" class="form-control" placeholder="Enter Project Name" /></td>
                                         <td>
                                             <select class="form-control select2">
                                                 <option value="0">Select</option>
-                                                <option value="3"></option>
-                                                <option value="3"></option>
-                                                <option value="3"></option>
+                                               <option value="3">स्कूल निर्माण	</option>
+                                                <option value="3">सी.सी रोड कार्य	</option>
+                                                <option value="3">पेयजल व्यवस्था	</option>
 
                                             </select></td>
                                         <td>
                                             <select class="form-control select2" onchange="OnChange()">
                                                 <option value="0">Select</option>
-                                                <option value="3"></option>
-                                                <option value="3"></option>
-                                                <option value="3"></option>
+                                                <option value="3">विद्यालय का रख-रखाव कार्य	</option>
+                                                <option value="3">पेयजल व्यवस्था		</option>
+                                                <option value="3">स्कूल मार्ग निर्माण	</option>
 
                                             </select></td>
                                         <td>
@@ -188,31 +189,28 @@
                                         <td>
                                             <input type="date" class="form-control" placeholder="Enter  Project End Date" /></td>
                                         <td>
-                                            <input type="text" class="form-control" /></td>
+                                            <input type="text" class="form-control" value="15 Days" readonly /></td>
+                            
                                         <td>
+                                            <input type="text" class="form-control" /></td>
+                                                    <td>
                                             <select class="form-control select2" onchange="OnChange()">
                                                 <option value="0">Select</option>
-                                                <option value="3">0%</option>
-                                                <option value="3">1%</option>
-                                                <option value="3">2%</option>
-                                                <option value="3">3%</option>
-                                                <option value="3">4%</option>
                                                 <option value="3">5%</option>
-                                                <option value="3">6%</option>
-                                                <option value="3">7%</option>
-                                                <option value="3">8%</option>
-                                                <option value="3">9%</option>
                                                 <option value="3">10%</option>
+                                                <option value="3">15%</option>
+                                                <option value="3">20%</option>
+                                                <option value="3">25%</option>
+                                                <option value="3">30%</option>
+                                               
                                             </select></td>
-                                        <td>
-                                            <input type="text" class="form-control" /></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
-            </fieldset>
+     
             <fieldset>
 
                 <legend>Vender Details / विक्रेता विवरण</legend>
@@ -274,149 +272,7 @@
                 </div>
 
             </fieldset>
-            <fieldset>
-                <legend>Project Documents / परियोजना दस्तावेज़</legend>
-
-                <div class="row form-group">
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <table class="table table-bordered text-center" id="Table1">
-                                <thead class="nowrap">
-                                    <tr>
-                                        <th>Sr.No.
-                                            <br />
-                                            क्रमांक</th>
-                                        <th>Document Type<br />
-                                            दस्तावेज़ प्रकार</th>
-                                        <th>Document Type Details<br />
-                                            दस्तावेज़ प्रकार विवरण</th>
-                                        <th>Upload Document
-                                            <br />
-                                            दस्तावेज़ अपलोड करें</th>
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Technical</td>
-                                        <td>Map</td>
-                                        <td>
-                                            <input type="file" class="form-control" /></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Technical</td>
-                                        <td>Tender</td>
-                                        <td>
-                                            <input type="file" class="form-control" /></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Financial</td>
-                                        <td>Cost Sheet</td>
-                                        <td>
-                                            <input type="file" class="form-control" /></td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Financial</td>
-                                        <td>Budget Approval</td>
-                                        <td>
-                                            <input type="file" class="form-control" /></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Milestones / माइलस्टोन</legend>
-
-                <div class="row form-group">
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <table class="table table-bordered text-center">
-                                <thead class="nowrap">
-                                    <tr>
-                                        <th>Sr.No.
-                            <br />
-                                            क्रमांक</th>
-                                        <th>Work Subcategory Name<br />
-                                            कार्य उपश्रेणी का नाम</th>
-                                        <th>Work Completion Date<br />
-                                            कार्य पूरा करने की दिनांक</th>
-                                        <th>Work Completion %
-                            <br />
-                                            प्रतिशत
-                                        </th>
-                                        <th>Payment %<br />
-                                            भुगतान प्रतिशत
-                                        </th>
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>
-                                            <select class="form-control select2">
-                                                <option>Select</option>
-                                                <option>इमारत मरम्मत</option>
-                                                <option>हेंडपंप खनन</option>
-                                                <option>सी.सी. सड़क निर्माण</option>
-                                            </select></td>
-                                        <td>
-                                            <input type="date" class="form-control" /></td>
-                                        <td>
-                                            <input type="text" class="form-control" /></td>
-                                        <td>
-                                            <input type="text" class="form-control" /></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>2</td>
-                                        <td>
-                                            <select class="form-control select2">
-                                                <option>Select</option>
-                                                <option>इमारत मरम्मत</option>
-                                                <option>हेंडपंप खनन</option>
-                                                <option>सी.सी. सड़क निर्माण</option>
-                                            </select></td>
-                                        <td>
-                                            <input type="date" class="form-control" /></td>
-                                        <td>
-                                            <input type="text" class="form-control" /></td>
-                                        <td>
-                                            <input type="text" class="form-control" /></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>
-                                            <select class="form-control select2">
-                                                <option>Select</option>
-                                                <option>इमारत मरम्मत</option>
-                                                <option>हेंडपंप खनन</option>
-                                                <option>सी.सी. सड़क निर्माण</option>
-                                            </select></td>
-                                        <td>
-                                            <input type="date" class="form-control" /></td>
-                                        <td>
-                                            <input type="text" class="form-control" /></td>
-                                        <td>
-                                            <input type="text" class="form-control" /></td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-
-            <fieldset>
+                     <fieldset>
 
                 <legend>Project Order Details / परियोजना आदेश विवरण</legend>
                 <div class="row form-group">
@@ -449,7 +305,7 @@
                                         <td>
                                             <input type="file" class="form-control" /></td>
                                     </tr>
-                                    <tr>
+                                   <%-- <tr>
                                         <td>2</td>
                                         <td>
                                             <input type="date" class="form-control" /></td>
@@ -457,13 +313,187 @@
                                             <input type="text" class="form-control" /></td>
                                         <td>
                                             <input type="file" class="form-control" /></td>
-                                    </tr>
+                                    </tr>--%>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
             </fieldset>
+                       </fieldset>
+            <fieldset>
+                <legend>Project Documents / परियोजना दस्तावेज़</legend>
+
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center" id="Table1">
+                                <thead class="nowrap">
+                                    <tr>
+                                        <th>Sr.No.
+                                            <br />
+                                            क्रमांक</th>
+                                        <th>Document Type<br />
+                                            दस्तावेज़ प्रकार</th>
+                                        <th>Document Type Details<br />
+                                            दस्तावेज़ प्रकार विवरण</th>
+                                        <th>Upload Document
+                                            <br />
+                                            दस्तावेज़ अपलोड करें</th>
+                                                 <th>Action
+                                           
+                                            </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                         <td>
+                                            <select class="form-control select2">
+                                                <option value="0">Select</option>
+                                               <option value="3">Technical	</option>
+                                                <option value="3">Financial	</option>
+                                              
+
+                                            </select></td>
+
+                                         <td>
+                                            <select class="form-control select2">
+                                                <option value="0">Select</option>
+                                               <option value="3">Map</option>
+                                                <option value="3">	Tender Copy</option>
+                                                <option value="3">Cost Sheet	</option>
+                                                <option value="3">Budget Approval	</option>
+
+                                            </select></td>
+                                       
+                                        <td>
+                                            <input type="file" class="form-control" /></td>
+                                        <td>
+                                            <input type="button" class="btn-sm btn-success text-white" value="Add More"  /></td>
+                                    </tr>
+
+                                    <%--<tr>
+                                        <td>2</td>
+                                        <td>Technical</td>
+                                        <td>Tender</td>
+                                        <td>
+                                            <input type="file" class="form-control" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Financial</td>
+                                        <td>Cost Sheet</td>
+                                        <td>
+                                            <input type="file" class="form-control" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Financial</td>
+                                        <td>Budget Approval</td>
+                                        <td>
+                                            <input type="file" class="form-control" /></td>
+                                    </tr>--%>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Milestones / माइलस्टोन</legend>
+
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center">
+                                <thead class="nowrap">
+                                    <tr>
+                                        <th>Sr.No.
+                            <br />
+                                            क्रमांक</th>
+                                        <th>Work  Name<br />
+                                            कार्य  का नाम</th>
+                                        <th>Work Completion Date<br />
+                                            कार्य पूरा करने की दिनांक</th>
+                                        <th>Work Completion %
+                            <br />
+                                            प्रतिशत
+                                        </th>
+                                        <th>Payment %<br />
+                                            भुगतान प्रतिशत
+                                        </th>
+                                              <th>Action
+                                           
+                                        </th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <select class="form-control select2">
+                                                <option>Select</option>
+                                                <option>इमारत मरम्मत</option>
+                                                <option>हेंडपंप खनन</option>
+                                                <option>सी.सी. सड़क निर्माण</option>
+                                            </select></td>
+                                        <td>
+                                            <input type="date" class="form-control" /></td>
+                                        <td>
+                                            <input type="text" class="form-control" /></td>
+                                        <td>
+                                            <input type="text" class="form-control" /></td>
+                                       <td>
+                                            <input type="button" class="btn-sm btn-success text-white" value="Add More"  onclick="funtShow()"/></td>
+                                    </tr>
+
+                                    <tr id="grid1" style="display:none">
+                                        <td>2</td>
+                                        <td>
+                                            <select class="form-control select2">
+                                                <option>Select</option>
+                                                <option>इमारत मरम्मत</option>
+                                                <option>हेंडपंप खनन</option>
+                                                <option>सी.सी. सड़क निर्माण</option>
+                                            </select></td>
+                                        <td>
+                                            <input type="date" class="form-control" /></td>
+                                        <td>
+                                            <input type="text" class="form-control" /></td>
+                                        <td>
+                                            <input type="text" class="form-control" /></td>
+                                        <td>
+                                            <input type="button" class="btn-sm btn-success text-white " value="ADD" /></td>
+                                    </tr>
+                                    <tr id="grid2" style="display:none">
+                                        <td>3</td>
+                                        <td>
+                                            <select class="form-control select2">
+                                                <option>Select</option>
+                                                <option>इमारत मरम्मत</option>
+                                                <option>हेंडपंप खनन</option>
+                                                <option>सी.सी. सड़क निर्माण</option>
+                                            </select></td>
+                                        <td>
+                                            <input type="date" class="form-control" /></td>
+                                        <td>
+                                            <input type="text" class="form-control" /></td>
+                                        <td>
+                                            <input type="text" class="form-control" /></td>
+                                        <td>
+                                            <input type="button" class="btn-sm btn-success text-white" value="ADD" /></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+       
 
             <fieldset>
                 <legend>Project Monitoring Authority / परियोजना निगरानी प्राधिकरण</legend>
@@ -476,18 +506,18 @@
                                 Enter Employee Id<br />
                                 कर्मचारी आईडी दर्ज करें<span style="color: red">*</span>
                             </label>
-                            <input type="text" class="form-control" id="txtempid" placeholder="Enter OIS Code" onchange="DIVShow()" />
+                            <input type="text" class="form-control" id="txtempid" placeholder="Enter OIS Code"  onchange="DIVShow()" />
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-end" id="NewField" style="display: none">
+                <div class="row align-items-end" id="NewField" >
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 Name<br />
                                 नाम
                             </label>
-                            <input type="text" class="form-control" id="txtname" value="Niraj Verma" />
+                            <input type="text" class="form-control" id="txtname" value="Niraj Verma"  readonly/>
                         </div>
                     </div>
 
@@ -497,7 +527,7 @@
                                 Designation<br />
                                 पद का नाम
                             </label>
-                            <input type="text" class="form-control" id="txtDesignation" value="executive director" />
+                            <input type="text" class="form-control" id="txtDesignation" value="executive director"  readonly/>
                         </div>
                     </div>
 
@@ -507,7 +537,7 @@
                                 Office Location<br />
                                 कार्यालय स्थान
                             </label>
-                            <input type="text" class="form-control" id="txtOffice" value="Bhopal" />
+                            <input type="text" class="form-control" id="txtOffice" value="Bhopal" readonly />
                         </div>
                     </div>
 
@@ -584,6 +614,15 @@
             var Address = document.getElementById('txtAddress'); // Make sure this element exists
 
             txtAddress.style.display = 'block';
+
+        }
+
+
+        function  funtShow(){
+            var grid1 = document.getElementById('grid1');
+            var grid2 = document.getElementById('grid2');
+            //grid1.style.display = "block";
+            //grid2.style.display = "block";
 
         }
     </script>
