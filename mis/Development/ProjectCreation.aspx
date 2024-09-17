@@ -123,7 +123,7 @@
                             <table class="table table-bordered text-center ">
                                 <thead class="nowrap">
                                     <tr>
-                                       <%-- <th>Sr.No.
+                                        <%-- <th>Sr.No.
                                 <br />
                                             क्रमांक</th>--%>
                                         <th>Project Name<br />
@@ -149,27 +149,27 @@
                                                 <br />
                                             परियोजना अवधि
                                         </th>
-                                         <th>Project Cost<br />
+                                        <th>Project Cost<br />
                                             परियोजना लागत
                                         </th>
                                         <th>Penalty %
                                                 <br />
                                             दंड प्रतिशत
                                         </th>
-                                       
+
 
 
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                       <%-- <td>1</td>--%>
+                                        <%-- <td>1</td>--%>
                                         <td>
                                             <input type="text" class="form-control" placeholder="Enter Project Name" /></td>
                                         <td>
                                             <select class="form-control select2">
                                                 <option value="0">Select</option>
-                                               <option value="3">स्कूल निर्माण	</option>
+                                                <option value="3">स्कूल निर्माण	</option>
                                                 <option value="3">सी.सी रोड कार्य	</option>
                                                 <option value="3">पेयजल व्यवस्था	</option>
 
@@ -190,10 +190,10 @@
                                             <input type="date" class="form-control" placeholder="Enter  Project End Date" /></td>
                                         <td>
                                             <input type="text" class="form-control" value="15 Days" readonly /></td>
-                            
+
                                         <td>
                                             <input type="text" class="form-control" /></td>
-                                                    <td>
+                                        <td>
                                             <select class="form-control select2" onchange="OnChange()">
                                                 <option value="0">Select</option>
                                                 <option value="3">5%</option>
@@ -202,7 +202,7 @@
                                                 <option value="3">20%</option>
                                                 <option value="3">25%</option>
                                                 <option value="3">30%</option>
-                                               
+
                                             </select></td>
                                     </tr>
                                 </tbody>
@@ -210,102 +210,108 @@
                         </div>
                     </div>
                 </div>
-     
-            <fieldset>
 
-                <legend>Vender Details / विक्रेता विवरण</legend>
+                <fieldset>
 
-                <div class="row form-group">
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <table class="table table-bordered text-center">
-                                <thead class="nowrap">
-                                    <tr>
-                                        <th>Sr.No.
+                    <legend>Vender Details / विक्रेता विवरण</legend>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table table-bordered text-center">
+                                    <thead class="nowrap">
+                                        <tr>
+                                            <th>Sr.No.
              <br />
-                                            क्रमांक</th>
-                                        <th>Vender Name<br />
-                                            विक्रेता का नाम</th>
-                                        <th>Address<br />
-                                            पता</th>
-                                        <th>GSTIN No
+                                                क्रमांक</th>
+                                            <th>Vender Name<br />
+                                                विक्रेता का नाम</th>
+                                            <th>Address<br />
+                                                पता</th>
+                                            <th>GSTIN No
              <br />
-                                            जीएसटीआईएन नंबर</th>
-                                        <th>Tender No
+                                                जीएसटीआईएन नंबर</th>
+                                            <th>Tender No
                              <br />
-                                            निविदा संख्या
-                                        </th>
-                                        <th>Security/EMD Amount
+                                                निविदा संख्या
+                                            </th>
+                                            <th>Security/EMD Amount
                              <br />
-                                            सुरक्षा/ईएमडी राशि
-                                        </th>
-                                        <th>Security/EMD Certificate Issue Date
+                                                सुरक्षा/ईएमडी राशि
+                                            </th>
+                                            <th>Security/EMD Certificate Issue Date
                              <br />
-                                            सुरक्षा/ईएमडी प्रमाणपत्र जारी करने की तिथि
-                                        </th>
-                                        <th>Security/EMD Certificate Exp. Date
+                                                सुरक्षा/ईएमडी प्रमाणपत्र जारी करने की तिथि
+                                            </th>
+                                            <th>Security/EMD Certificate Exp. Date
                              <br />
-                                            सुरक्षा/ईएमडी प्रमाणपत्र समाप्ति तिथि
-                                        </th>
+                                                सुरक्षा/ईएमडी प्रमाणपत्र समाप्ति तिथि
+                                            </th>
 
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>
-                                            <select class="form-control select2">
-                                                <option value="0">Select</option>
-                                                <option selected="selected">R.K Construction (23AAAAA0000A1Z5)</option>
-                                            </select></td>
-                                        <td><textarea class="form-control" rows="1" cols="2"></textarea></td>
-                                        <td><input type="text" class="form-control" value="22AAAAA0000A1Z"/></td>
-                                        <td><input type="text" class="form-control" value="TENDER245"/></td>
-                                        <td><input type="text" class="form-control" value="20000"/></td>
-                                        <td><input type="date" class="form-control" value="2021-02-05"/></td>
-                                        <td><input type="date" class="form-control" value="2024-05-05"/></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <select class="form-control select2">
+                                                    <option value="0">Select</option>
+                                                    <option selected="selected">R.K Construction (23AAAAA0000A1Z5)</option>
+                                                </select></td>
+                                            <td>
+                                                <textarea class="form-control" rows="1" cols="2"></textarea></td>
+                                            <td>
+                                                <input type="text" class="form-control" value="22AAAAA0000A1Z" /></td>
+                                            <td>
+                                                <input type="text" class="form-control" value="TENDER245" /></td>
+                                            <td>
+                                                <input type="text" class="form-control" value="20000" /></td>
+                                            <td>
+                                                <input type="date" class="form-control" value="2021-02-05" /></td>
+                                            <td>
+                                                <input type="date" class="form-control" value="2024-05-05" /></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-            </fieldset>
-                     <fieldset>
+                </fieldset>
+                <fieldset>
 
-                <legend>Project Order Details / परियोजना आदेश विवरण</legend>
-                <div class="row form-group">
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <table class="table table-bordered text-center">
-                                <thead class="nowrap">
-                                    <tr>
-                                        <th>Sr.No.
+                    <legend>Project Order Details / परियोजना आदेश विवरण</legend>
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table table-bordered text-center">
+                                    <thead class="nowrap">
+                                        <tr>
+                                            <th>Sr.No.
              <br />
-                                            क्रमांक</th>
-                                        <th>Project Order Date<br />
-                                            परियोजना ऑर्डर दिनांक</th>
-                                        <th>Project Order No.<br />
-                                            परियोजना आदेश संख्या </th>
-                                        <th>Upload Order Copy
+                                                क्रमांक</th>
+                                            <th>Project Order Date<br />
+                                                परियोजना ऑर्डर दिनांक</th>
+                                            <th>Project Order No.<br />
+                                                परियोजना आदेश संख्या </th>
+                                            <th>Upload Order Copy
                                         <br />
-                                            ऑर्डर कॉपी अपलोड करें</th>
+                                                ऑर्डर कॉपी अपलोड करें</th>
 
-                                    </tr>
-                                </thead>
-                                <tbody>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
 
-                                    <tr>
-                                        <td>1</td>
-                                        <td>
-                                            <input type="date" class="form-control" /></td>
-                                        <td>
-                                            <input type="text" class="form-control" /></td>
-                                        <td>
-                                            <input type="file" class="form-control" /></td>
-                                    </tr>
-                                   <%-- <tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <input type="date" class="form-control" /></td>
+                                            <td>
+                                                <input type="text" class="form-control" /></td>
+                                            <td>
+                                                <input type="file" class="form-control" /></td>
+                                        </tr>
+                                        <%-- <tr>
                                         <td>2</td>
                                         <td>
                                             <input type="date" class="form-control" /></td>
@@ -314,20 +320,20 @@
                                         <td>
                                             <input type="file" class="form-control" /></td>
                                     </tr>--%>
-                                </tbody>
-                            </table>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </fieldset>
             </fieldset>
-                       </fieldset>
-            <fieldset>
+            <fieldset id="ProjectDoc">
                 <legend>Project Documents / परियोजना दस्तावेज़</legend>
 
                 <div class="row form-group">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <table class="table table-bordered text-center" id="Table1">
+                            <table class="table table-bordered text-center" id="table">
                                 <thead class="nowrap">
                                     <tr>
                                         <th>Sr.No.
@@ -340,73 +346,51 @@
                                         <th>Upload Document
                                             <br />
                                             दस्तावेज़ अपलोड करें</th>
-                                                 <th>Action
+                                        <th>Action
                                            
-                                            </th>
+                                        </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                         <td>
-                                            <select class="form-control select2">
-                                                <option value="0">Select</option>
-                                               <option value="3">Technical	</option>
-                                                <option value="3">Financial	</option>
-                                              
+                                        <td>
+                                            <select class="form-control select2" id="ddlType">
+                                                <option>Select</option>
+                                                <option>Technical</option>
+                                                <option>Financial</option>
+
 
                                             </select></td>
 
-                                         <td>
-                                            <select class="form-control select2">
-                                                <option value="0">Select</option>
-                                               <option value="3">Map</option>
-                                                <option value="3">	Tender Copy</option>
-                                                <option value="3">Cost Sheet	</option>
-                                                <option value="3">Budget Approval	</option>
+                                        <td>
+                                            <select class="form-control select2" id="typedetail">
+                                                <option>Select</option>
+                                                <option>Map</option>
+                                                <option>Tender Copy</option>
+                                                <option>Cost Sheet	</option>
+                                                <option>Budget Approval	</option>
 
                                             </select></td>
-                                       
+
                                         <td>
-                                            <input type="file" class="form-control" /></td>
+                                            <input type="file" class="form-control" id="txtfile" /></td>
                                         <td>
-                                            <input type="button" class="btn-sm btn-success text-white" value="Add More"  /></td>
+                                            <input type="button" class="btn-sm btn-success text-white" value="Add More" onclick="addData1()" /></td>
                                     </tr>
 
-                                    <%--<tr>
-                                        <td>2</td>
-                                        <td>Technical</td>
-                                        <td>Tender</td>
-                                        <td>
-                                            <input type="file" class="form-control" /></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Financial</td>
-                                        <td>Cost Sheet</td>
-                                        <td>
-                                            <input type="file" class="form-control" /></td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Financial</td>
-                                        <td>Budget Approval</td>
-                                        <td>
-                                            <input type="file" class="form-control" /></td>
-                                    </tr>--%>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset id="MilestoneField">
                 <legend>Milestones / माइलस्टोन</legend>
-
                 <div class="row form-group">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <table class="table table-bordered text-center">
+                            <table class="table table-bordered text-center" id="table2">
                                 <thead class="nowrap">
                                     <tr>
                                         <th>Sr.No.
@@ -423,7 +407,7 @@
                                         <th>Payment %<br />
                                             भुगतान प्रतिशत
                                         </th>
-                                              <th>Action
+                                        <th>Action
                                            
                                         </th>
 
@@ -433,57 +417,20 @@
                                     <tr>
                                         <td>1</td>
                                         <td>
-                                            <select class="form-control select2">
+                                            <select class="form-control select2" id="ddlWName">
                                                 <option>Select</option>
                                                 <option>इमारत मरम्मत</option>
                                                 <option>हेंडपंप खनन</option>
                                                 <option>सी.सी. सड़क निर्माण</option>
                                             </select></td>
                                         <td>
-                                            <input type="date" class="form-control" /></td>
+                                            <input type="date" class="form-control" id="txtDate" /></td>
                                         <td>
-                                            <input type="text" class="form-control" /></td>
+                                            <input type="text" class="form-control" id="txtpercent" /></td>
                                         <td>
-                                            <input type="text" class="form-control" /></td>
-                                       <td>
-                                            <input type="button" class="btn-sm btn-success text-white" value="Add More"  onclick="funtShow()"/></td>
-                                    </tr>
-
-                                    <tr id="grid1" style="display:none">
-                                        <td>2</td>
+                                            <input type="text" class="form-control" id="txtpayment" /></td>
                                         <td>
-                                            <select class="form-control select2">
-                                                <option>Select</option>
-                                                <option>इमारत मरम्मत</option>
-                                                <option>हेंडपंप खनन</option>
-                                                <option>सी.सी. सड़क निर्माण</option>
-                                            </select></td>
-                                        <td>
-                                            <input type="date" class="form-control" /></td>
-                                        <td>
-                                            <input type="text" class="form-control" /></td>
-                                        <td>
-                                            <input type="text" class="form-control" /></td>
-                                        <td>
-                                            <input type="button" class="btn-sm btn-success text-white " value="ADD" /></td>
-                                    </tr>
-                                    <tr id="grid2" style="display:none">
-                                        <td>3</td>
-                                        <td>
-                                            <select class="form-control select2">
-                                                <option>Select</option>
-                                                <option>इमारत मरम्मत</option>
-                                                <option>हेंडपंप खनन</option>
-                                                <option>सी.सी. सड़क निर्माण</option>
-                                            </select></td>
-                                        <td>
-                                            <input type="date" class="form-control" /></td>
-                                        <td>
-                                            <input type="text" class="form-control" /></td>
-                                        <td>
-                                            <input type="text" class="form-control" /></td>
-                                        <td>
-                                            <input type="button" class="btn-sm btn-success text-white" value="ADD" /></td>
+                                            <input type="button" class="btn-sm btn-success text-white" value="Add More" onclick="AddRow()" /></td>
                                     </tr>
 
                                 </tbody>
@@ -492,9 +439,6 @@
                     </div>
                 </div>
             </fieldset>
-
-       
-
             <fieldset>
                 <legend>Project Monitoring Authority / परियोजना निगरानी प्राधिकरण</legend>
 
@@ -506,18 +450,18 @@
                                 Enter Employee Id<br />
                                 कर्मचारी आईडी दर्ज करें<span style="color: red">*</span>
                             </label>
-                            <input type="text" class="form-control" id="txtempid" placeholder="Enter OIS Code"  onchange="DIVShow()" />
+                            <input type="text" class="form-control" id="txtempid" placeholder="Enter OIS Code" onchange="DIVShow()" />
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-end" id="NewField" >
+                <div class="row align-items-end" id="NewField">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 Name<br />
                                 नाम
                             </label>
-                            <input type="text" class="form-control" id="txtname" value="Niraj Verma"  readonly/>
+                            <input type="text" class="form-control" id="txtname" value="Niraj Verma" readonly />
                         </div>
                     </div>
 
@@ -527,7 +471,7 @@
                                 Designation<br />
                                 पद का नाम
                             </label>
-                            <input type="text" class="form-control" id="txtDesignation" value="executive director"  readonly/>
+                            <input type="text" class="form-control" id="txtDesignation" value="executive director" readonly />
                         </div>
                     </div>
 
@@ -616,15 +560,6 @@
             txtAddress.style.display = 'block';
 
         }
-
-
-        function  funtShow(){
-            var grid1 = document.getElementById('grid1');
-            var grid2 = document.getElementById('grid2');
-            //grid1.style.display = "block";
-            //grid2.style.display = "block";
-
-        }
     </script>
 
     <script>
@@ -663,29 +598,7 @@
             newRow.insertCell(2).innerHTML = email;
             newRow.insertCell(3).innerHTML = mobile;
             newRow.insertCell(4).innerHTML = PreviousGradea;
-            //newRow.insertCell(5).innerHTML = PreviousGradeab;
-            //newRow.insertCell(6).innerHTML = PreviousGradec;
-            //newRow.insertCell(7).innerHTML = PreviousGraded;
-            //newRow.insertCell(8).innerHTML = PreviousGradee;
-            //newRow.insertCell(9).innerHTML = Gradea;
-            //newRow.insertCell(10).innerHTML = Gradeb;
-            //newRow.insertCell(11).innerHTML = Gradec;
-            //newRow.insertCell(12).innerHTML = Graded;
-            //newRow.insertCell(13).innerHTML = Gradee;
-            //newRow.insertCell(14).innerHTML = Gradef;
-            //newRow.insertCell(15).innerHTML = Gradeg;
-            //newRow.insertCell(16).innerHTML = Gradeh;
-            //newRow.insertCell(17).innerHTML = Gradei;
-            //newRow.insertCell(18).innerHTML = Gradej;
-            //newRow.insertCell(19).innerHTML = Gradeklplp;
-            //newRow.insertCell(20).innerHTML = Gradeklplphvj;
-            //newRow.insertCell(21).innerHTML = Gradeklplphvasdsj;
 
-            //const actionButtonTd = newRow.cells[20];
-            //actionButtonTd.innerHTML += sghsgfhg;
-            //newRow.insertCell(21);
-            //const actionButtonTd = newRow.cells[21];
-            //actionButtonTd.innerHTML += aidfujfh;
             //Add action field
             newRow.insertCell(5);
             const actionButtonTd = newRow.cells[5];
@@ -708,11 +621,91 @@
             let Gradea = document.getElementById("txtRelease").value;
             let Gradeb = document.getElementById("txtRemark").value;
 
-            //document.getElementById("ddlPropertySource").value = "";
-            //document.getElementById("txtPurchase").value = "";
-            //document.getElementById("monumber").value = "";
-            //document.getElementById("address").value = "";
         }
     </script>
+
+    <script>
+        // Function to add multiple rows to the table
+        function addData1() {
+            debugger;
+            document.getElementById("ProjectDoc").style.display = 'block';
+
+            // Get the table body
+            let tableBody = document.getElementById('table').getElementsByTagName('tbody')[0];
+
+            // Loop through a certain number of times to add multiple rows
+            for (let i = 0; i < 1; i++) { // For example, adding 3 rows
+                let name = document.getElementById("ddlType").value;
+                let email = document.getElementById("typedetail").value;
+                let mobile = document.getElementById("txtfile").value;
+
+                // Insert a new row at the end
+                let newRow = tableBody.insertRow();
+
+                // Insert data into cells of the new row
+                newRow.insertCell(0).innerHTML = tableBody.rows.length;
+                newRow.insertCell(1).innerHTML = name;
+                newRow.insertCell(2).innerHTML = email;
+                newRow.insertCell(3).innerHTML = mobile;
+                newRow.insertCell(4);
+                const actionButtonTd = newRow.cells[4];
+                actionButtonTd.innerHTML += '<a class="Alert-Delete"><i class="fa fa-trash"></i></a>';
+            }
+
+            // Clear input fields after adding the rows
+            clearInputs2();
+        }
+
+        // Function to clear input fields after adding rows
+        function clearInputs2() {
+            document.getElementById("ddlType").value = '';
+            document.getElementById("typedetail").value = '';
+            document.getElementById("txtfile").value = '';
+        }
+    </script>
+
+    <script>
+        // Function to add multiple rows to the table
+        function AddRow() {
+            debugger;
+            document.getElementById("MilestoneField").style.display = 'block';
+
+            // Get the table body
+            let tableBody = document.getElementById('table2').getElementsByTagName('tbody')[0];
+
+            // Loop through a certain number of times to add multiple rows
+            for (let i = 0; i < 1; i++) { // For example, adding 1 row
+                let name = document.getElementById("ddlWName").value;
+                let date = document.getElementById("txtDate").value; // Changed variable name to 'date'
+                let percent = document.getElementById("txtpercent").value; // Changed variable name to 'percent'
+                let payment = document.getElementById("txtpayment").value; // Changed variable name to 'payment'
+
+                // Insert a new row at the end
+                let newRow = tableBody.insertRow();
+
+                // Insert data into cells of the new row
+                newRow.insertCell(0).innerHTML = tableBody.rows.length;
+                newRow.insertCell(1).innerHTML = name;
+                newRow.insertCell(2).innerHTML = date; // Changed to use 'date'
+                newRow.insertCell(3).innerHTML = percent; // Changed to use 'percent'
+                newRow.insertCell(4).innerHTML = payment; // Changed to use 'payment'
+                newRow.insertCell(5);
+                const actionButtonTd = newRow.cells[5];
+                actionButtonTd.innerHTML = '<a class="Alert-Delete"><i class="fa fa-trash"></i></a>';
+            }
+
+            // Clear input fields after adding the rows
+            clearInputs3();
+        }
+        // Function to clear input fields after adding rows
+        function clearInputs3() {
+            document.getElementById("ddlWName").value = '';
+            document.getElementById("txtDate").value = '';
+            document.getElementById("txtpercent").value = '';
+            document.getElementById("txtpayment").value = '';
+        }
+    </script>
+
+
 </asp:Content>
 
