@@ -160,17 +160,15 @@
                                         </th>
                                         <th>Office Name<br />
                                             कार्यालय का नाम </th>
-                                        <th>Approval number<br />
+                                        <th>Sanction Number<br />
                                             स्वीकृति क्रमांक</th>
-                                        <th>Acceptance Date<br />
+                                        <th>Sanction Date<br />
                                             स्वीकृति दिनांक
                                         </th>
-                                        <th>Project group<br />
+                                        <th>Project Group<br />
                                             परियोजना समूह</th>
                                         <th>Project Category<br />
                                             परियोजना श्रेणी </th>
-                                        <th>Work<br />
-                                            कार्य</th>
                                         <th>Subwork<br />
                                             उपकार्य</th>
                                         <th>Project Location<br />
@@ -179,9 +177,9 @@
                                             मात्रा</th>
                                         <th>Unit<br />
                                             इकाई</th>
-                                        <th>Sanction amount<br />
+                                        <th>Sanction Amount<br />
                                             स्वीकृति राशि</th>
-                                        <th>deposit on completion of work
+                                        <th>Deposit On Completion Of Work
                                 <br />
                                             कार्य पूर्णता पर जमा राशि
                                         </th>
@@ -200,15 +198,14 @@
                                         <td>1111</td>
                                         <td>30/11/2023</td>
                                         <td>स्कूल निर्माण</td>
-                                        <td>विद्यालय का रख-रखाव कार्य</td>
-                                        <td>वन कर्मचारी आवास/कार्यालय</td>
-                                        <td>समिति कार्यालय भवन</td>
+                                        <td>इमारत मरम्मत</td>
+                                        <td>सी.सी.रोड निर्माण</td>
                                         <td>JK-474</td>
                                         <td>100.00</td>
                                         <td>वर्गमीटर</td>
                                         <td>500000.00</td>
-                                        <td>300000.00</td>
-                                        <td>200000.00</td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
 
                                 </tbody>
@@ -217,7 +214,7 @@
                     </div>
                 </div>
 
-                <div class="row form-group" id="NewGrid" style="display:none">
+                <div class="row form-group" id="NewGrid" style="display: none">
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
@@ -225,25 +222,24 @@
                                     <tr>
                                         <th>Installment Number
                                             <br />
-                                           किस्त क्रमांक</th>
-                                        <th>Installment amount
-                                            <br />किस्त राशि</th>
-                                        <th>installment release date
-                                            <br />किस्त विमुक्त दिनाँक
+                                            किस्त क्रमांक</th>
+                                        <th>Installment Amount
+                                            <br />
+                                            किस्त राशि</th>
+                                        <th>Installment Release Date
+                                            <br />
+                                            किस्त विमुक्त दिनांक
                                         </th>
-                                        <th>Amount utilized from installment<br />
+                                        <th>Amount Utilized From Installment<br />
                                             किस्त में से उपयोग की गई राशि</th>
-                                        <th>Amount after use<br />
+                                        <th>Amount After Use<br />
                                             उपयोग के बाद शेष राशि</th>
                                         <th>Installment Utilization Certificate Date
-                                            <br />किस्त उपयोगिता प्रमाण पत्र दिनांक
+                                            <br />
+                                            किस्त उपयोगिता प्रमाण पत्र दिनांक
                                         </th>
-                                        <th>Foundation<br />
-                                            नींव</th>
-                                        <th>Mid Level Completion<br />
-                                           मध्य स्तर पूर्णता</th>
-                                        <th>Final Level Completion<br />
-                                            अंतिम स्तर का समापन</th>
+                                        <th>Image 1</th>
+                                        <th>Image 2</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -254,10 +250,8 @@
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        
+                                        <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye" onclick="openPDF()"></i></span></td>
+                                        <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye" onclick="openPDF()"></i></span></td>
                                     </tr>
 
                                 </tbody>
@@ -273,20 +267,12 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 
     <script>
-        document.getElementById('toggle-icon').addEventListener('click', function () {
-            const additionalGrid = document.getElementById('additional-grid');
-            const icon = document.getElementById('toggle-icon');
-
-            if (additionalGrid.classList.contains('hidden')) {
-                additionalGrid.classList.remove('hidden');
-                icon.classList.remove('fa-plus');
-                icon.classList.add('fa-minus');
-            } else {
-                additionalGrid.classList.add('hidden');
-                icon.classList.remove('fa-minus');
-                icon.classList.add('fa-plus');
-            }
-        });
-</script>
+        function openPDF() {
+            // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
+            var pdfUrl = '../../img/CasteCertificate1.jpg';
+            // Open the PDF in a new window or tab
+            window.open(pdfUrl, '_blank');
+        }
+    </script>
 </asp:Content>
 

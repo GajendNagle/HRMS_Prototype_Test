@@ -177,7 +177,7 @@
                                         <td>
                                             <select class="form-control select2" onchange="OnChange()">
                                                 <option value="0">Select</option>
-                                                <option value="3">विद्यालय का रख-रखाव कार्य	</option>
+                                                <option value="3">विद्यालय का रख-रखाव कार्य</option>
                                                 <option value="3">पेयजल व्यवस्था		</option>
                                                 <option value="3">स्कूल मार्ग निर्माण	</option>
 

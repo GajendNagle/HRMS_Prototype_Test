@@ -169,17 +169,17 @@
                                         <th>Sr.No.
                     <br />
                                             क्रमांक</th>
-                                        <th>Year<br />
-                                            वर्ष
+                                        <th>Project Year<br />
+                                            परियोजना वर्ष
                                         </th>
                                         <th>Office Name<br />
                                             कार्यालय का नाम </th>
-                                        <th>Approval number<br />
+                                        <th>Sanction Number<br />
                                             स्वीकृति क्रमांक</th>
-                                        <th>Acceptance Date<br />
+                                        <th>Sanction Date<br />
                                             स्वीकृति दिनांक
                                         </th>
-                                        <th>Project group<br />
+                                        <th>Project Group<br />
                                             परियोजना समूह</th>
                                         <th>Project Category<br />
                                             परियोजना श्रेणी </th>
@@ -191,9 +191,9 @@
                                             मात्रा</th>
                                         <th>Unit<br />
                                             इकाई</th>
-                                        <th>Sanction amount<br />
+                                        <th>Sanction Amount<br />
                                             स्वीकृति राशि</th>
-                                        <th>first installment amount
+                                        <th>First Installment Amount
                                             <br />
                                             प्रथम किस्त राशि
                                         </th>
@@ -219,8 +219,8 @@
                                         <td>1111</td>
                                         <td>30/11/2023</td>
                                         <td>स्कूल निर्माण</td>
-                                        <td>विद्यालय का रख-रखाव कार्य</td>
-                                        <td>समिति कार्यालय भवन</td>
+                                        <td>इमारत मरम्मत</td>
+                                        <td>इमारत मरम्मत</td>
                                         <td>JK-474</td>
                                         <td>100.00</td>
                                         <td>वर्गमीटर</td>
@@ -236,12 +236,12 @@
                                         <td>GOVT HSS BOYS, KOTRA SULTANABAD</td>
                                         <td>9186</td>
                                         <td>10/09/2023</td>
-                                        <td>सी.सी रोड कार्य</td>
-                                        <td>विद्यालय का रख-रखाव कार्य</td>
-                                        <td>समिति कार्यालय भवन</td>
+                                        <td>स्कूल मार्ग निर्माण</td>
+                                        <td>सी.सी.रोड निर्माण</td>
+                                        <td>सी.सी.रोड निर्माण</td>
                                         <td>JK-474</td>
                                         <td>1.00</td>
-                                        <td>संख्या</td>
+                                        <td>मीटर</td>
                                         <td>500000.00</td>
                                         <td>250000.00</td>
                                         <td></td>
