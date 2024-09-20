@@ -53,7 +53,7 @@
                     <div class="col-md-3">
                         <label>
                             Select Office Type<br />
-                            कार्यालय के प्रकार का चयन करें<span style="color: red">*</span>
+                            कार्यालय प्रकार का चयन करें<span style="color: red">*</span>
                         </label>
                         <select class="form-control select2">
                             <option>Select</option>
@@ -66,7 +66,7 @@
                     <div class="col-md-3">
                         <label>
                             Select Office Name<br />
-                            कार्यालय के नाम का चयन करें<span style="color: red">*</span></label>
+                            कार्यालय नाम का चयन करें<span style="color: red">*</span></label>
                         <select class="form-control select2">
                             <option>Select</option>
                             <option value="3">GOVT HSS MAHARANA PRATAP</option>
@@ -79,13 +79,12 @@
                     <div class="col-md-3">
                         <label>
                             Select Hostel Name<br />
-                            छात्रावास के नाम का चयन करें<span style="color: red">*</span></label>
+                            छात्रावास नाम का चयन करें<span style="color: red">*</span></label>
                         <select class="form-control select2">
-                            <option>Select</option>
-                            <option value="3">All</option>
-                            <option value="3">Bright Star Hostel</option>
-                            <option value="3">Academic Boys Hostel</option>
-                            <option value="3">Balaji Girls Hostel</option>
+                            <option>All</option>
+                            <option>Bright Star Hostel</option>
+                            <option>Academic Boys Hostel</option>
+                            <option>Balaji Girls Hostel</option>
                         </select>
                     </div>
                 </div>

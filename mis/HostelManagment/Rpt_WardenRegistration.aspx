@@ -52,7 +52,7 @@
                     <div class="col-md-3">
                         <label>
                             Select Office Type<br />
-                            कार्यालय के प्रकार का चयन करें<span style="color: red">*</span>
+                            कार्यालय प्रकार का चयन करें<span style="color: red">*</span>
                         </label>
                         <select class="form-control select2">
                             <option>Select</option>
@@ -65,7 +65,7 @@
                     <div class="col-md-3">
                         <label>
                             Select Office Name<br />
-                            कार्यालय के नाम का चयन करें<span style="color: red">*</span></label>
+                            कार्यालय नाम का चयन करें<span style="color: red">*</span></label>
                         <select class="form-control select2">
                             <option>Select</option>
                             <option value="3">GOVT HSS MAHARANA PRATAP</option>
@@ -80,7 +80,6 @@
                             <br />क्या वार्डन शिक्षक है?<span style="color: red">*</span>
                         </label>
                         <select class="form-control select2" id="ddlSelect">
-                            <option>Select</option>
                             <option value="1">All</option>
                             <option value="2">Yes</option>
                             <option value="3">No</option>
@@ -125,6 +124,9 @@
                                 <br />
                                             कार्यालय का नाम
                                         </th>
+                                        <th>Hostel Name
+                                            <br />छात्रावास का नाम
+                                        </th>
                                         <th>Is Warden Teacher<br />
                                             क्या वार्डन शिक्षक है?
                                         </th>
@@ -141,6 +143,7 @@
                                     <tr>
                                         <td>1</td>
                                         <td>GOVT HSS MAHARANA PRATAP</td>
+                                        <td>Kanha Shri Boys and Girls Hostel</td>
                                         <td>Yes</td>
                                         <td>Sneha Thakur</td>
                                         <td>7823456790</td>
@@ -150,6 +153,7 @@
                                     <tr>
                                         <td>2</td>
                                         <td>GOVT HSS BOYS, KOTRA SULTANABAD</td>
+                                        <td>Bright Star Hostel</td>
                                         <td>Yes</td>
                                         <td>Simran Yadav</td>
                                         <td>6564896734</td>
@@ -159,6 +163,7 @@
                                     <tr>
                                         <td>3</td>
                                         <td>GOVT HSS EX, SUBHASH,SHIVAJI</td>
+                                        <td>Ma Narmada Girls Hostel</td>
                                         <td>No</td>
                                         <td>Tanuja Sharma</td>
                                         <td>9089234567</td>
@@ -217,6 +222,7 @@
                                     <tr>
                                         <td>1</td>
                                         <td>GOVT HSS MAHARANA PRATAP</td>
+                                        <td>Kanha Shri Boys and Girls Hostel</td>
                                         <td>Yes</td>
                                         <td>Sneha Thakur</td>
                                         <td>7823456790</td>
@@ -249,7 +255,7 @@
                                                     <label>
                                                         Enter Warden Name<br />
                                                         वार्डन का नाम दर्ज करें<span style="color: red;">*</span></label>
-                                                    <input type="text" class="form-control" placeholder="Enter Warden Name" />
+                                                    <input type="text" class="form-control" value="Radhika Arora" readonly="readonly" />
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
@@ -258,7 +264,7 @@
                                                         Select Date of Birth
                                     <br />
                                                         जन्म तिथि का चयन करें<span style="color: red">*</span></label>
-                                                    <input name="ename" id="dob" type="date" class="form-control" autocomplete="off" onchange="calculateAge()" />
+                                                    <input name="ename" id="dob" type="date" class="form-control" autocomplete="off" value="1990-01-10" readonly="readonly" />
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
@@ -267,7 +273,7 @@
                                                         Enter Age
                                     <br />
                                                         उम्र<span style="color: red">*</span></label>
-                                                    <input readonly="readonly" name="ename" id="txtAge" type="text" class="form-control" autocomplete="off" placeholder="Age" />
+                                                    <input readonly="readonly" name="ename" id="txtAge" type="text" class="form-control" autocomplete="off" placeholder="34" />
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
@@ -276,10 +282,10 @@
                                                         Select Gender
                  <br />
                                                         लिंग का चयन करें<span style="color: red">*</span></label>
-                                                    <select class="form-control select2">
+                                                    <select class="form-control select2" disabled="disabled">
                                                         <option value="--Select--">--Select--</option>
                                                         <option value="--Select--">Male</option>
-                                                        <option value="--Select--">Female</option>
+                                                        <option selected="selected">Female</option>
                                                         <option value="--Select--">Other</option>
                                                     </select>
                                                 </div>
@@ -290,7 +296,7 @@
                                                         Enter Mobile Number/<br />
                                                         मोबाइल नंबर दर्ज करें<span style="color: red"> *</span>
                                                     </label>
-                                                    <input asp-for="MobileNo" id="MobileNo" placeholder="Enter Mobile Number" maxlength="10" class="form-control" onkeypress="return NumberOnly();" required data-msg="Field is requied" pattern="^([6-9][0-9]{9,11})$" />
+                                                    <input asp-for="MobileNo" id="MobileNo" placeholder="Enter Mobile Number" maxlength="10" class="form-control" onkeypress="return NumberOnly();" required data-msg="Field is requied" pattern="^([6-9][0-9]{9,11})$" value="8945678901" readonly="readonly"/>
                                                     <span asp-validation-for="MobileNo" class="text-danger"></span>
                                                 </div>
                                             </div>
@@ -301,7 +307,7 @@
               <br />
                                                         ईमेल आई.डी.<span style="color: red">*</span>
                                                     </label>
-                                                    <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Email Id" />
+                                                    <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Email Id" value="radhika@gmail.com" readonly="readonly"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -312,9 +318,9 @@
                                         <div class="row align-items-end">
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <img class="profileimage" src="../dist/images/avatar-13.png" id="uploadedImage" alt="Image Not Available" />
+                                                    <img class="profileimage" src="../dist/images/avatar-13.png" id="uploadedImage" alt="Image Not Available"/>
                                                     <br />
-                                                    <input type="file" id="fileInpaut" class="form-control" onchange="displayImage(this)" />
+                                                    <input type="file" id="fileInpaut" class="form-control" onchange="displayImage(this)"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -328,7 +334,7 @@
                                                 Enter PAN No. 
       <br />
                                                 पैन न. दर्ज करें<span style="color: red">*</span></label>
-                                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter PAN No." />
+                                            <input name="ename" type="text" class="form-control" autocomplete="off" value="AFZPK7190K" readonly="readonly"/>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -337,7 +343,7 @@
                                                 Enter Aadhaar No.
                                                 <br />
                                                 आधार न. दर्ज करें<span style="color: red">*</span></label>
-                                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Aadhaar No." />
+                                            <input name="ename" type="text" class="form-control" autocomplete="off" value="623187093465" readonly="readonly"/>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -347,9 +353,9 @@
                                                 आईडी प्रूफ प्रकार का चयन करें<span style="color: red"> *</span>
                                             </label>
                                             <select asp-for="IdProofId" id="IdProofId"
-                                                class="form-select">
+                                                class="form-select" disabled="disabled">
                                                 <option value="">-- Select --</option>
-                                                <option value="">Adhaar Card</option>
+                                                <option value="" selected="selected">Adhaar Card</option>
                                                 <option value="">Voter ID</option>
                                                 <option value="">Pan Card</option>
                                                 <option value="">Driving Licence</option>
@@ -364,7 +370,7 @@
                                                 Upload Document/<br />
                                                 दस्तावेज़ अपलोड करें<span style="color: red"> *</span>
                                             </label>
-                                            <input type="file" asp-for="IdProofDoc" id="IdProofDoc" class="form-control" required data-msg="Field is requied" accept="image/*" />
+                                            <input type="text" asp-for="IdProofDoc" id="IdProofDoc" class="form-control" required data-msg="Field is requied" value="Adhar.jpg" readonly="readonly" />
                                             <span asp-validation-for="MobileNo" class="text-danger"></span>
                                         </div>
                                     </div>
@@ -376,9 +382,9 @@
                                                 क्या यह शिक्षक हे?<span style="color: red"> *</span>
                                             </label>
                                             <select asp-for="IdProofId"
-                                                class="form-select">
+                                                class="form-select" disabled="disabled">
                                                 <option value="">-- Select --</option>
-                                                <option value="">Yes </option>
+                                                <option value="" selected="selected">Yes </option>
                                                 <option value="">No </option>
                                             </select>
                                             <span asp-validation-for="IdProofId" class="text-danger"></span>
@@ -391,7 +397,7 @@
                                                 Enter Work Exeperience/<br />
                                                 कार्य अनुभव दर्ज करें  <span style="color: red">*</span>
                                             </label>
-                                            <input placeholder="Enter Work Exeperience" class="form-control" required data-msg="Field is requied" />
+                                            <input placeholder="Enter Work Exeperience" class="form-control" value="5 Years" readonly="readonly" />
                                             <span asp-validation-for="IdProofId" class="text-danger"></span>
                                         </div>
                                     </div>
@@ -402,11 +408,11 @@
                                                 Highest Qualification
             <br />
                                                 उच्चतम योग्यता<span style="color: red">*</span></label>
-                                            <select id="Education" class="form-control select2">
+                                            <select id="Education" class="form-control select2" disabled="disabled">
                                                 <option value="----">--Select--</option>
                                                 <option value="BALLB">BALLB</option>
                                                 <option value="BachelorOfArts">Bachelor of Arts</option>
-                                                <option value="BachelorOfCommerce">Bachelor of Commerce</option>
+                                                <option value="BachelorOfCommerce" selected="selected">Bachelor of Commerce</option>
                                                 <option value="Architecture">Architecture</option>
                                                 <option value="BCA">BCA</option>
                                                 <option value="ComputerScience">Computer Science</option>
@@ -453,7 +459,7 @@
                                             <label asp-for="Address" class="control-label">
                                                 Enter Address/<br />
                                                 पता दर्ज करें<span style="color: red"> *</span></label>
-                                            <input asp-for="Address" id="HostelAddress" placeholder="Enter Address" maxlength="150" multiple="true" class="form-control" required data-msg="Field is requied" />
+                                            <input asp-for="Address" id="HostelAddress" value="Mr John Smith. 132, My Street, Kingston, Bhopal" maxlength="150" multiple="true" class="form-control" required data-msg="Field is requied" readonly="readonly"/>
                                             <span asp-validation-for="Address" class="text-danger"></span>
                                         </div>
                                     </div>
@@ -464,6 +470,7 @@
                                     <div class="form-group">
                                         <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border" data-bs-dismiss="modal">Save</button>
                                         <a href="Rpt_WardenRegistration.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                                        <button type="button" class="btn btn-outline-info w-lg btn-border">Print Card</button>
                                     </div>
                                 </div>
                             </fieldset>

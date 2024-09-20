@@ -47,7 +47,6 @@
             </div>
         </div>
     </div>
-
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
@@ -75,7 +74,7 @@
                     <div class="col-md-3">
                         <label>
                             Select Office Type<br />
-                            कार्यालय के प्रकार का चयन करें<span style="color: red">*</span>
+                            कार्यालय प्रकार का चयन करें<span style="color: red">*</span>
                         </label>
                         <select class="form-control select2">
                             <option>Select</option>
@@ -88,7 +87,7 @@
                     <div class="col-md-3">
                         <label>
                             Select Office Name<br />
-                            कार्यालय के नाम का चयन करें<span style="color: red">*</span></label>
+                            कार्यालय नाम का चयन करें<span style="color: red">*</span></label>
                         <select class="form-control select2">
                             <option>Select</option>
                             <option value="3">GOVT HSS MAHARANA PRATAP</option>
@@ -101,7 +100,7 @@
                     <div class="col-md-3">
                         <label>
                             Select Hostel Type<br />
-                            छात्रावास के प्रकार का चयन करें<span style="color: red">*</span>
+                            छात्रावास प्रकार का चयन करें<span style="color: red">*</span>
                         </label>
                         <select multiple="" multiselect-search="true" multiselect-select-all="true" multiselect-max-items="0" class="form-select" id="DestinationDistrictId" name="DestinationDistrictId">
                             <option>Boys School(01)</option>
@@ -113,9 +112,8 @@
                     <div class="col-md-3">
                         <label>
                             Select Hostel Name<br />
-                            छात्रावास के नाम का चयन करें<span style="color: red">*</span></label>
+                            छात्रावास नाम का चयन करें<span style="color: red">*</span></label>
                         <select class="form-control select2">
-                            <option>Select</option>
                             <option value="3">All</option>
                             <option value="3">Bright Star Hostel</option>
                             <option value="3">Academic Boys Hostel</option>
@@ -164,6 +162,7 @@
                                         <th>Hostel Name<br />
                                             छात्रावास का नाम
                                         </th>
+                                        <th>Mess Fees<br />मेस शुल्क</th>
                                         <th>Student Name<br />
                                             विद्यार्थी का नाम</th>
                                         <th>Contact No.<br />
@@ -176,8 +175,9 @@
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>Girls Hostel</td>
+                                        <td>Girls School</td>
                                         <td>Balaji Girls Hostel</td>
+                                        <td>5000</td>
                                         <td>Rekha Yadav</td>
                                         <td>7823456790</td>
                                         <td>12th</td>

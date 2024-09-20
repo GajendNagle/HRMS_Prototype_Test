@@ -74,7 +74,7 @@
                     <div class="col-md-3">
                         <label>
                             Select Office Type<br />
-                            कार्यालय के प्रकार का चयन करें<span style="color: red">*</span>
+                            कार्यालय प्रकार का चयन करें<span style="color: red">*</span>
                         </label>
                         <select class="form-control select2">
                             <option>Select</option>
@@ -87,7 +87,7 @@
                     <div class="col-md-3">
                         <label>
                             Select Hostel Type<br />
-                            हॉस्टल के प्रकार का चयन करें<span style="color: red">*</span>
+                            छात्रावास प्रकार का चयन करें<span style="color: red">*</span>
                         </label>
                         <select multiple="" multiselect-search="true" multiselect-select-all="true" multiselect-max-items="0" class="form-select" id="DestinationDistrictId" name="DestinationDistrictId">
                             <option>Boys School(01)</option>
@@ -99,7 +99,7 @@
                     <div class="col-md-3">
                         <label>
                             Select Office Name<br />
-                            कार्यालय के नाम का चयन करें<span style="color: red">*</span></label>
+                            कार्यालय नाम का चयन करें<span style="color: red">*</span></label>
                         <select class="form-control select2">
                             <option>Select</option>
                             <option value="3">GOVT HSS MAHARANA PRATAP</option>
@@ -113,7 +113,7 @@
                         <label>
                             Select Category<br />
                             श्रेणी का चयन करें<span style="color: red">*</span></label>
-                        <select class="form-control select2">
+                        <select multiple="" multiselect-search="true" multiselect-select-all="true" multiselect-max-items="0" class="form-select" id="DestinationDistrictId1" name="DestinationDistrictId">
                             <option>Select</option>
                             <option>St</option>
                             <option>Sc</option>
@@ -126,24 +126,102 @@
                     <div class="col-md-3">
                         <label>
                             Select Mess Facility<br />
-                            श्रेणी का चयन करें<span style="color: red">*</span></label>
-                        <select class="form-control select2">
-                            <option>All</option>
-                            <option>Available</option>
-                            <option>Not Available</option>
+                            मेस सुविधा का चयन करें<span style="color: red">*</span></label>
+                        <select class="form-control select2" id="ddlMess">
+                            <option value="1">Both</option>
+                            <option value="2">Available</option>
+                            <option value="3">Not Available</option>
                         </select>
                     </div>
                 </div>
                 <hr />
                 <div class="row">
                     <div class="col-md-12">
-                        <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="document.getElementById('table1').style.display = 'block'">Search</button>
+                        <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="showHideRemarkView()">Search</button>
                         <a href="Rpt_HostelRegistration.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                 </div>
             </fieldset>
 
             <fieldset id="table1" style="display: none;">
+                <legend>Details / विवरण</legend>
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center">
+                                <thead class="nowrap">
+                                    <tr>
+                                        <th>Sr.No.
+                                <br />
+                                            क्रमांक</th>
+                                        <th>Hostel Type
+                                <br />
+                                            छात्रावास का प्रकार
+                                        </th>
+                                        <th>Category<br />
+                                            श्रेणी
+                                        </th>
+                                        <th>Hostel Name<br />
+                                            छात्रावास का नाम </th>
+                                        <th>Contact No.<br />
+                                            संपर्क नंबर</th>
+                                        <th>Mess Facility
+                                <br />
+                                            मेस सुविधा
+                                        </th>
+                                        <th>No. Of Rooms<br />
+                                            कमरों की संख्या
+                                        </th>
+                                        <th>Action<br />
+                                            कार्यवाही</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Girls School</td>
+                                        <td>Obc</td>
+                                        <td>Jagrti Hostel</td>
+                                        <td>7823456790</td>
+                                        <td>Available</td>
+                                        <td>150</td>
+                                        <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg3"></i></span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Co-Education</td>
+                                        <td>Obc</td>
+                                        <td>Kanha Shri Boys and Girls Hostel</td>
+                                        <td>7823456790</td>
+                                        <td>Not Available</td>
+                                        <td>150</td>
+                                        <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg3"></i></span></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset id="table2" style="display: none;">
                 <legend>Details / विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -179,6 +257,10 @@
                                             छात्रावास का नाम </th>
                                         <th>Contact No.<br />
                                             संपर्क नंबर</th>
+                                        <th>Mess Facility
+                                            <br />
+                                            मेस सुविधा
+                                        </th>
                                         <th>No. Of Room<br />
                                             कमरों की संख्या
                                         </th>
@@ -190,10 +272,11 @@
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>School</td>
+                                        <td>Boys School</td>
                                         <td>Obc</td>
-                                        <td>Bliss hostel</td>
+                                        <td>Blis Hostel</td>
                                         <td>7823456790</td>
+                                        <td>Available</td>
                                         <td>150</td>
                                         <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg3"></i></span></td>
                                     </tr>
@@ -204,6 +287,74 @@
                     </div>
                 </div>
             </fieldset>
+
+            <fieldset id="table3" style="display: none;">
+                <legend>Details / विवरण</legend>
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center">
+                                <thead class="nowrap">
+                                    <tr>
+                                        <th>Sr.No.
+                                <br />
+                                            क्रमांक</th>
+                                        <th>Hostel Type
+                                <br />
+                                            छात्रावास का प्रकार
+                                        </th>
+                                        <th>Category<br />
+                                            श्रेणी
+                                        </th>
+                                        <th>Hostel Name<br />
+                                            छात्रावास का नाम </th>
+                                        <th>Contact No.<br />
+                                            संपर्क नंबर</th>
+                                        <th>Mess Facility
+                                <br />
+                                            मेस सुविधा
+                                        </th>
+                                        <th>No. Of Room<br />
+                                            कमरों की संख्या
+                                        </th>
+                                        <th>Action<br />
+                                            कार्यवाही</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Boys School</td>
+                                        <td>Obc</td>
+                                        <td>Bliss hostel</td>
+                                        <td>7823456790</td>
+                                        <td>Not Available</td>
+                                        <td>150</td>
+                                        <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg3"></i></span></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
             <div class="modal bs-example-modal-lg3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
@@ -221,9 +372,9 @@
                                                 <label>
                                                     Select Hostel Type<br />
                                                     छात्रावास प्रकार का चयन करें<span style="color: red;">*</span></label>
-                                                <select class="form-control select2">
+                                                <select class="form-control select2" disabled="disabled">
                                                     <option selected="selected" value="0">--Select --</option>
-                                                    <option value="1">Girls </option>
+                                                    <option value="1" selected="selected">Girls </option>
                                                     <option value="2">Boys </option>
                                                     <option value="3">Combine </option>
                                                 </select>
@@ -235,7 +386,7 @@
                                             <label>
                                                 Enter Hostel Name<br />
                                                 छात्रावास का नाम दर्ज करें<span style="color: red;">*</span></label>
-                                            <input type="text" class="form-control" placeholder="Enter Hostel Name" />
+                                            <input type="text" class="form-control" value="Kanha Shri Boys and Girls Hostel" readonly="readonly" />
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -243,11 +394,11 @@
                                             <label>
                                                 Select Category<br />
                                                 वर्ग का चयन करें<span style="color: red;">*</span></label>
-                                            <select class="form-control select2">
+                                            <select class="form-control select2" disabled="disabled">
                                                 <option selected="selected" value="0">-Select-</option>
                                                 <option value="1">General </option>
                                                 <option value="2">OBC </option>
-                                                <option value="3">SC </option>
+                                                <option value="3" selected="selected">SC </option>
                                                 <option value="4">ST </option>
                                             </select>
                                         </div>
@@ -257,7 +408,7 @@
                                             <label>
                                                 Enter Total Number of Rooms<br />
                                                 कक्ष की कुल संख्या दर्ज करें<span style="color: red;">*</span></label>
-                                            <input type="text" class="form-control" placeholder="Enter Total Number of Rooms" />
+                                            <input type="text" class="form-control" value="200" readonly="readonly" />
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -265,7 +416,7 @@
                                             <label>
                                                 Enter Intake Capacity of Students<br />
                                                 छात्रों की प्रवेश क्षमता दर्ज करें<span style="color: red;">*</span></label>
-                                            <input type="text" class="form-control" placeholder="Enter Intake Capacity of Students" />
+                                            <input type="text" class="form-control" value="100" readonly="readonly"/>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -273,7 +424,7 @@
                                             <label>
                                                 Enter Hostel Address<br />
                                                 छात्रावास पता दर्ज करें<span style="color: red;">*</span></label>
-                                            <input type="text" class="form-control" placeholder="Enter Address" />
+                                            <input type="text" class="form-control" value="Kanha Shri Boys and Girls Hostel near by Shivaji Nagar" readonly="readonly" />
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -282,8 +433,8 @@
                                                 Select Mess Facility Availability
                     <br />
                                                 मेस सुविधा उपलब्धता का चयन करें<span style="color: red;">*</span></label>
-                                            <select class="form-control select2">
-                                                <option value="1">Yes</option>
+                                            <select class="form-control select2" disabled="disabled">
+                                                <option value="1" selected="selected">Yes</option>
                                                 <option value="2">No</option>
                                             </select>
                                         </div>
@@ -294,7 +445,7 @@
                                                 Enter Mess Fees<br />
                                                 मेस शुल्क दर्ज करें
                                             </label>
-                                            <input type="text" class="form-control" placeholder="Enter Mess Fees" />
+                                            <input type="text" class="form-control" value="3000" readonly="readonly" />
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -303,7 +454,7 @@
                                                 Applicable From<br />
                                                 दिनांक से लागू
                                             </label>
-                                            <input name="ename" id="DOB" type="date" class="form-control" autocomplete="off" />
+                                            <input name="ename" id="DOB" type="date" class="form-control" autocomplete="off" value="2021-01-05" readonly="readonly" />
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -311,7 +462,7 @@
                                             <label>
                                                 Enter Police Station Name<br />
                                                 पुलिस स्टेशन का नाम दर्ज करें<span style="color: red;">*</span></label>
-                                            <input type="text" class="form-control" placeholder="Enter Police Station Name" />
+                                            <input type="text" class="form-control" value="ASHOKA GARDEN Police Station" readonly="readonly" />
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -319,7 +470,7 @@
                                             <label>
                                                 Enter Incharge Name<br />
                                                 प्रभारी का नाम दर्ज करें<span style="color: red;">*</span></label>
-                                            <input type="text" class="form-control" placeholder="Enter Incharge Name" />
+                                            <input type="text" class="form-control" value="Devendra Thakur" readonly="readonly" />
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -327,7 +478,7 @@
                                             <label>
                                                 Enter Incharge Contact No.<br />
                                                 प्रभारी संपर्क नंबर दर्ज करें<span style="color: red;">*</span></label>
-                                            <input type="text" class="form-control" placeholder="Enter Incharge Contact No." />
+                                            <input type="text" class="form-control" value="9176874356" readonly="readonly" />
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -335,7 +486,7 @@
                                             <label>
                                                 Enter Police station Full Address<br />
                                                 पुलिस स्टेशन पता दर्ज करें दर्ज करें<span style="color: red;">*</span></label>
-                                            <input type="text" class="form-control" placeholder="Enter Full Address" />
+                                            <input type="text" class="form-control" value="ASHOKA GARDEN Police Station near by Arera Colony" readonly="readonly" />
                                         </div>
                                     </div>
                                     <div class="col-md-12">
@@ -343,6 +494,7 @@
                                         <div class="form-group">
                                             <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border" data-bs-dismiss="modal">Save</button>
                                             <a href="Rpt_HostelRegistration.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                                            <button type="button" class="btn btn-outline-info w-lg btn-border">Print Card</button>
                                         </div>
                                     </div>
                                 </div>
@@ -357,5 +509,33 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+
+    <script type="text/javascript">
+        function showHideRemarkView() {
+            var ddlMess = document.getElementById('ddlMess');
+            //var remarkView = document.getElementById("RemarkView");
+
+            if (ddlMess.value == "1") {
+                //remarkView.style.display = "initial";
+                table1.style.display = "block";
+                table2.style.display = "none";
+                table3.style.display = "none";
+            }
+            else if (ddlMess.value == "2") {
+                table2.style.display = "block";
+                table1.style.display = "none";
+                table3.style.display = "none";
+            }
+            else if (ddlMess.value == "3") {
+                table3.style.display = "block";
+                table1.style.display = "none";
+                table2.style.display = "none";
+            }
+            else {
+                table1.style.display = "none";
+                table2.style.display = "none";
+            }
+        }
+    </script>
 </asp:Content>
 
