@@ -200,7 +200,6 @@
                     </div>
                 </div>
             </fieldset>
-
             <fieldset id="table2" style="display: none;">
                 <legend>Details / विवरण</legend>
                 <div class="row justify-content-end">

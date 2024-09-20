@@ -1787,6 +1787,8 @@
 
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/Rpt_ShiftMaster.aspx"><i class="ri-file-list-3-line"></i>Shift Master Report</a></li>
 
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/Rpt_RoomHostelChange.aspx"><i class="ri-file-list-3-line"></i>Room/Hostel Change Report</a></li>
+
                                                 </ul>
                                             </div>
                                         </li>
