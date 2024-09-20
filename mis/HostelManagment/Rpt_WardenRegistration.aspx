@@ -1,6 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_WardenRegistration.aspx.cs" Inherits="mis_HostelManagment_Rpt_WardenRegistration" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+
+    <style>
+        .profileimage {
+            display: block;
+            height: 8.5rem;
+            margin-left: 2rem;
+        }
+
+        
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
@@ -49,7 +59,7 @@
                 <legend>Warden Registration Report / वार्डन पंजीकरण रिपोर्ट</legend>
 
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <label>
                             Select Office Type<br />
                             कार्यालय प्रकार का चयन करें<span style="color: red">*</span>
@@ -57,27 +67,28 @@
                         <select class="form-control select2">
                             <option>Select</option>
                             <option>School</option>
-                            <option>Office</option>
                             <option>Institude</option>
                         </select>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <label>
-                            Select Office Name<br />
-                            कार्यालय नाम का चयन करें<span style="color: red">*</span></label>
+                            Select School Name<br />
+                            स्कूल नाम का चयन करें<span style="color: red">*</span></label>
                         <select class="form-control select2">
                             <option>Select</option>
-                            <option value="3">GOVT HSS MAHARANA PRATAP</option>
-                            <option value="3">GOVT HSS BOYS, KOTRA SULTANABAD</option>
-                            <option value="3">GOVT HSS EX, SUBHASH,SHIVAJI</option>
-                            <option value="3">GOVT HSS KHAJURI KALAN</option>
+                            <option value="3">GOVT HSS MAHARANA PRATAP(23320400117)</option>
+                            <option value="3">GOVT HSS BOYS, KOTRA SULTANABAD(23320303134)</option>
+                            <option value="3">GOVT HSS EX, SUBHASH,SHIVAJI(23320212709)</option>
+                            <option value="3">GOVT HSS KHAJURI KALAN(23320110008)</option>
                         </select>
                     </div>
 
-                    <div class="col-md-3">
-                        <label>Is Warden Teacher ?
-                            <br />क्या वार्डन शिक्षक है?<span style="color: red">*</span>
+                    <div class="col-md-4">
+                        <label>
+                            Is Warden Teacher ?
+                            <br />
+                            क्या वार्डन शिक्षक है?<span style="color: red">*</span>
                         </label>
                         <select class="form-control select2" id="ddlSelect">
                             <option value="1">All</option>
@@ -120,12 +131,13 @@
                                         <th>Sr.No.
                                 <br />
                                             क्रमांक</th>
-                                        <th>Office Name
+                                        <th>School Name
                                 <br />
-                                            कार्यालय का नाम
+                                            स्कूल का नाम
                                         </th>
                                         <th>Hostel Name
-                                            <br />छात्रावास का नाम
+                                            <br />
+                                            छात्रावास का नाम
                                         </th>
                                         <th>Is Warden Teacher<br />
                                             क्या वार्डन शिक्षक है?
@@ -142,7 +154,7 @@
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>GOVT HSS MAHARANA PRATAP</td>
+                                        <td>GOVT HSS MAHARANA PRATAP(23320400117)</td>
                                         <td>Kanha Shri Boys and Girls Hostel</td>
                                         <td>Yes</td>
                                         <td>Sneha Thakur</td>
@@ -152,7 +164,7 @@
 
                                     <tr>
                                         <td>2</td>
-                                        <td>GOVT HSS BOYS, KOTRA SULTANABAD</td>
+                                        <td>GOVT HSS BOYS, KOTRA SULTANABAD(23320303134)</td>
                                         <td>Bright Star Hostel</td>
                                         <td>Yes</td>
                                         <td>Simran Yadav</td>
@@ -162,7 +174,7 @@
 
                                     <tr>
                                         <td>3</td>
-                                        <td>GOVT HSS EX, SUBHASH,SHIVAJI</td>
+                                        <td>GOVT HSS EX, SUBHASH,SHIVAJI(23320212709)</td>
                                         <td>Ma Narmada Girls Hostel</td>
                                         <td>No</td>
                                         <td>Tanuja Sharma</td>
@@ -202,9 +214,9 @@
                                         <th>Sr.No.
                     <br />
                                             क्रमांक</th>
-                                        <th>Office Name
+                                        <th>School Name
                     <br />
-                                            कार्यालय का नाम
+                                            स्कूल का नाम
                                         </th>
                                         <th>Is Warden Teacher<br />
                                             क्या वार्डन शिक्षक है?
@@ -246,246 +258,113 @@
                         <div class="modal-body">
                             <fieldset>
                                 <legend>Warden Details / वार्डन विवरण</legend>
-                                <div class="row align-items-end mb-0">
-                                    <div class="col-xl-9">
-                                        <div class="row align-items-end">
-                                            <div class="col-md-4">
-                                                <div class="form-group">
 
-                                                    <label>
-                                                        Enter Warden Name<br />
-                                                        वार्डन का नाम दर्ज करें<span style="color: red;">*</span></label>
-                                                    <input type="text" class="form-control" value="Radhika Arora" readonly="readonly" />
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label>
-                                                        Select Date of Birth
-                                    <br />
-                                                        जन्म तिथि का चयन करें<span style="color: red">*</span></label>
-                                                    <input name="ename" id="dob" type="date" class="form-control" autocomplete="off" value="1990-01-10" readonly="readonly" />
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label>
-                                                        Enter Age
-                                    <br />
-                                                        उम्र<span style="color: red">*</span></label>
-                                                    <input readonly="readonly" name="ename" id="txtAge" type="text" class="form-control" autocomplete="off" placeholder="34" />
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label>
-                                                        Select Gender
-                 <br />
-                                                        लिंग का चयन करें<span style="color: red">*</span></label>
-                                                    <select class="form-control select2" disabled="disabled">
-                                                        <option value="--Select--">--Select--</option>
-                                                        <option value="--Select--">Male</option>
-                                                        <option selected="selected">Female</option>
-                                                        <option value="--Select--">Other</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label asp-for="MobileNo" class="control-label">
-                                                        Enter Mobile Number/<br />
-                                                        मोबाइल नंबर दर्ज करें<span style="color: red"> *</span>
-                                                    </label>
-                                                    <input asp-for="MobileNo" id="MobileNo" placeholder="Enter Mobile Number" maxlength="10" class="form-control" onkeypress="return NumberOnly();" required data-msg="Field is requied" pattern="^([6-9][0-9]{9,11})$" value="8945678901" readonly="readonly"/>
-                                                    <span asp-validation-for="MobileNo" class="text-danger"></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label>
-                                                        Enter Email Id
-              <br />
-                                                        ईमेल आई.डी.<span style="color: red">*</span>
-                                                    </label>
-                                                    <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Email Id" value="radhika@gmail.com" readonly="readonly"/>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <div class="row align-items-end mb-0 p-0">
+                                    <div class="col-md-9 col-sm-2">
 
+                                        <table class="table-bordered table">
+                                            <tr class="h-25">
+                                                <td colspan="2" class="align-content-center">
+                                                        Warden Name
+                                                   <br />
+                                                        वार्डन का नाम
+                                                </td>
+                                                <td colspan="2" class="align-content-center">Radhika Arora
+                                                </td>
+                                            </tr>
+                                            <tr class="h-25">
+                                                <td colspan="2" class="align-content-center">
+                                                        Date of Birth
+                                                      <br />
+                                                        जन्म तिथि
+                                                </td>
+                                                <td colspan="2" class="align-content-center">01-05-1990
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </div>
+                                    <div class="col-md-3 col-sm-3">
+                                        <img class="profileimage" src="../dist/images/avatar-13.png" id="uploadedImage" alt="Image Not Available" />
+                                        <br />
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered text-center">
+                                        <thead class="nowrap">
+                                            <tr>
+                                                <th>Age<br />
+                                                    उम्र
+                                                </th>
+                                                <td>34</td>
+                                                <th>Gender<br />
+                                                    जेंडर</th>
+                                                <td>Female</td>
+                                                <th>Mobile Number<br />
+                                                    मोबाइल नंबर</th>
+                                                <td>6845878902</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Email Id<br />
+                                                    ईमेल आई.डी.</th>
+                                                <td>radhika@gmail.com</td>
+                                                <th>PAN No.
+                                                            <br />
+                                                    पैन नंबर
+                                                </th>
+                                                <td>XXXXXX234D</td>
+                                                <th>Aadhaar No
+                                                            <br />
+                                                    आधार नंबर
+                                                </th>
+                                                <td>XXXXXXXX0987</td>
+                                            </tr>
+                                            <tr>
+                                                <th>ID Proof Type
+                                                            <br />
+                                                    आईडी प्रूफ प्रकार 
+                                                </th>
+                                                <td>Aadhar Card</td>
+                                                <th>Upload Document
+                                                            <br />
+                                                    दस्तावेज़ अपलोड
+                                                </th>
+                                                <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye"></i></span></td>
+                                                <th>Work Exeperience
+                                             <br />
+                                                    कार्य अनुभव
+                                                </th>
+                                                <td>5 Years</td>
+                                            </tr>
+                                            <tr>
 
-                                    <div class="col-xl-3">
-                                        <div class="row align-items-end">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <img class="profileimage" src="../dist/images/avatar-13.png" id="uploadedImage" alt="Image Not Available"/>
+                                                <th>Highest Qualification
+                                                            <br />
+                                                    उच्चतम योग्यता
+                                                </th>
+                                                <td>Bachelor of Science</td>
+                                                <th>Address
+                                                            <br />
+                                                    पता
+                                                </th>
+                                                <td>Mr John Smith. 132, My Street,
                                                     <br />
-                                                    <input type="file" id="fileInpaut" class="form-control" onchange="displayImage(this)"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                                    Kingston, Bhopal</td>
+                                                <td colspan="2"></td>
+                                            </tr>
+                                        </thead>
+                                    </table>
                                 </div>
-                                <div class="row align-items-end">
 
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label>
-                                                Enter PAN No. 
-      <br />
-                                                पैन न. दर्ज करें<span style="color: red">*</span></label>
-                                            <input name="ename" type="text" class="form-control" autocomplete="off" value="AFZPK7190K" readonly="readonly"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label>
-                                                Enter Aadhaar No.
-                                                <br />
-                                                आधार न. दर्ज करें<span style="color: red">*</span></label>
-                                            <input name="ename" type="text" class="form-control" autocomplete="off" value="623187093465" readonly="readonly"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label asp-for="IdProofId" class="control-label">
-                                                Select ID Proof Type/<br />
-                                                आईडी प्रूफ प्रकार का चयन करें<span style="color: red"> *</span>
-                                            </label>
-                                            <select asp-for="IdProofId" id="IdProofId"
-                                                class="form-select" disabled="disabled">
-                                                <option value="">-- Select --</option>
-                                                <option value="" selected="selected">Adhaar Card</option>
-                                                <option value="">Voter ID</option>
-                                                <option value="">Pan Card</option>
-                                                <option value="">Driving Licence</option>
-                                                <option value="">Passport</option>
-                                            </select>
-                                            <span asp-validation-for="IdProofId" class="text-danger"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label asp-for="IdProofDoc" class="control-label">
-                                                Upload Document/<br />
-                                                दस्तावेज़ अपलोड करें<span style="color: red"> *</span>
-                                            </label>
-                                            <input type="text" asp-for="IdProofDoc" id="IdProofDoc" class="form-control" required data-msg="Field is requied" value="Adhar.jpg" readonly="readonly" />
-                                            <span asp-validation-for="MobileNo" class="text-danger"></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label asp-for="IdProofId" class="control-label">
-                                                Is a Teacher/<br />
-                                                क्या यह शिक्षक हे?<span style="color: red"> *</span>
-                                            </label>
-                                            <select asp-for="IdProofId"
-                                                class="form-select" disabled="disabled">
-                                                <option value="">-- Select --</option>
-                                                <option value="" selected="selected">Yes </option>
-                                                <option value="">No </option>
-                                            </select>
-                                            <span asp-validation-for="IdProofId" class="text-danger"></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label class="control-label">
-                                                Enter Work Exeperience/<br />
-                                                कार्य अनुभव दर्ज करें  <span style="color: red">*</span>
-                                            </label>
-                                            <input placeholder="Enter Work Exeperience" class="form-control" value="5 Years" readonly="readonly" />
-                                            <span asp-validation-for="IdProofId" class="text-danger"></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label>
-                                                Highest Qualification
-            <br />
-                                                उच्चतम योग्यता<span style="color: red">*</span></label>
-                                            <select id="Education" class="form-control select2" disabled="disabled">
-                                                <option value="----">--Select--</option>
-                                                <option value="BALLB">BALLB</option>
-                                                <option value="BachelorOfArts">Bachelor of Arts</option>
-                                                <option value="BachelorOfCommerce" selected="selected">Bachelor of Commerce</option>
-                                                <option value="Architecture">Architecture</option>
-                                                <option value="BCA">BCA</option>
-                                                <option value="ComputerScience">Computer Science</option>
-                                                <option value="Education">Education</option>
-                                                <option value="BBA">BBA</option>
-                                                <option value="MBBS">MBBS</option>
-                                                <option value="BachelorOfScience">Bachelor of Science</option>
-                                                <option value="BDesInDesign">BDes in Design</option>
-                                                <option value="Biotechnology">Biotechnology</option>
-                                                <option value="BScIT">BSc IT</option>
-                                                <option value="Engineering">Engineering</option>
-                                                <option value="Humanities">Humanities</option>
-                                                <option value="Management">Management</option>
-                                                <option value="Arts">Arts</option>
-                                                <option value="Aviation">Aviation</option>
-                                                <option value="Bsc">Bsc</option>
-                                                <option value="ChemicalEngineering">Chemical Engineering</option>
-                                                <option value="CivilEngineering">Civil Engineering</option>
-                                                <option value="Economics">Economics</option>
-                                                <option value="ElectricalEngineering">Electrical Engineering</option>
-                                                <option value="FashionDesigning">Fashion designing</option>
-                                                <option value="MBA">MBA</option>
-                                                <option value="EducationLaw">Education Law</option>
-                                                <option value="HospitalAdministration">Hospital Administration</option>
-                                                <option value="MasterOfScienceBiochemistry">Master of Science Biochemistry</option>
-                                                <option value="MBAFinance">MBA Finance</option>
-                                                <option value="MD">MD</option>
-                                                <option value="MassCommunications">Mass communications</option>
-                                                <option value="MastersOfPhysician">Masters Of Physician</option>
-                                                <option value="MCA">MCA</option>
-                                                <option value="PGDiplomaInEntrepreneurshipDevelopment">PG Diploma in Entrepreneurship Development</option>
-                                                <option value="ExecutivePGProgramInManagement">Executive PG program in Management</option>
-                                                <option value="HumanResourceManagement">Human Resource Management</option>
-                                                <option value="InternationalBusiness">International business</option>
-                                                <option value="MasterOfArts">Master of Arts</option>
-                                                <option value="MasterOfDataScience">Master of Data Science</option>
-                                                <option value="MBABusinessAnalytics">MBA Business Analytics</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label asp-for="Address" class="control-label">
-                                                Enter Address/<br />
-                                                पता दर्ज करें<span style="color: red"> *</span></label>
-                                            <input asp-for="Address" id="HostelAddress" value="Mr John Smith. 132, My Street, Kingston, Bhopal" maxlength="150" multiple="true" class="form-control" required data-msg="Field is requied" readonly="readonly"/>
-                                            <span asp-validation-for="Address" class="text-danger"></span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <hr />
-                                <div class="col-md-12 align-items-end">
-                                    <div class="form-group">
-                                        <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border" data-bs-dismiss="modal">Save</button>
-                                        <a href="Rpt_WardenRegistration.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-                                        <button type="button" class="btn btn-outline-info w-lg btn-border">Print Card</button>
-                                    </div>
-                                </div>
+                                <button type="button" class="btn btn-outline-info w-lg btn-border">Print Card</button>
                             </fieldset>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-
     <script type="text/javascript">
         function showHideRemarkView() {
             var ddlSelect = document.getElementById('ddlSelect');

@@ -9,19 +9,6 @@
             background-color: transparent;
             opacity: 1;
         }
-
-        /* th {
-          white-space: nowrap;
-      }
-
-      table-bordered th, .table-bordered td {
-          border: 1px solid #808080d2;
-      }*/
-
-        #workdescription1 {
-            resize: vertical;
-            min-height: 40px; /* Set a minimum height */
-        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -71,7 +58,7 @@
             <fieldset>
                 <legend>Mess Report / मेस रिपोर्ट</legend>
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <label>
                             Select Office Type<br />
                             कार्यालय प्रकार का चयन करें<span style="color: red">*</span>
@@ -79,25 +66,24 @@
                         <select class="form-control select2">
                             <option>Select</option>
                             <option>School</option>
-                            <option>Office</option>
                             <option>Institude</option>
                         </select>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <label>
-                            Select Office Name<br />
-                            कार्यालय नाम का चयन करें<span style="color: red">*</span></label>
+                            Select School Name<br />
+                            स्कूल नाम का चयन करें<span style="color: red">*</span></label>
                         <select class="form-control select2">
                             <option>Select</option>
-                            <option value="3">GOVT HSS MAHARANA PRATAP</option>
-                            <option value="3">GOVT HSS BOYS, KOTRA SULTANABAD</option>
-                            <option value="3">GOVT HSS EX, SUBHASH,SHIVAJI</option>
-                            <option value="3">GOVT HSS KHAJURI KALAN</option>
+                            <option value="3">GOVT HSS MAHARANA PRATAP(23320400117)</option>
+                            <option value="3">GOVT HSS BOYS, KOTRA SULTANABAD(23320303134)</option>
+                            <option value="3">GOVT HSS EX, SUBHASH,SHIVAJI(23320212709)</option>
+                            <option value="3">GOVT HSS KHAJURI KALAN(23320110008)</option>
                         </select>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <label>
                             Select Hostel Type<br />
                             छात्रावास प्रकार का चयन करें<span style="color: red">*</span>
@@ -108,7 +94,8 @@
                             <option>Co-Education</option>
                         </select>
                     </div>
-
+                    </div>
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <label>
                             Select Hostel Name<br />
@@ -162,7 +149,8 @@
                                         <th>Hostel Name<br />
                                             छात्रावास का नाम
                                         </th>
-                                        <th>Mess Fees<br />मेस शुल्क</th>
+                                        <th>Mess Fees<br />
+                                            मेस शुल्क</th>
                                         <th>Student Name<br />
                                             विद्यार्थी का नाम</th>
                                         <th>Contact No.<br />
@@ -191,7 +179,6 @@
             </fieldset>
         </div>
     </div>
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

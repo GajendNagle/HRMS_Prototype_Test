@@ -71,7 +71,7 @@
                 <legend>Hostel Registration Report / छात्रावास पंजीकरण रिपोर्ट</legend>
 
                 <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <label>
                             Select Office Type<br />
                             कार्यालय प्रकार का चयन करें<span style="color: red">*</span>
@@ -79,12 +79,11 @@
                         <select class="form-control select2">
                             <option>Select</option>
                             <option>School</option>
-                            <option>Office</option>
                             <option>Institude</option>
                         </select>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <label>
                             Select Hostel Type<br />
                             छात्रावास प्रकार का चयन करें<span style="color: red">*</span>
@@ -96,20 +95,21 @@
                         </select>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <label>
-                            Select Office Name<br />
-                            कार्यालय नाम का चयन करें<span style="color: red">*</span></label>
+                            Select School Name<br />
+                            स्कूल नाम का चयन करें<span style="color: red">*</span></label>
                         <select class="form-control select2">
                             <option>Select</option>
-                            <option value="3">GOVT HSS MAHARANA PRATAP</option>
-                            <option value="3">GOVT HSS BOYS, KOTRA SULTANABAD</option>
-                            <option value="3">GOVT HSS EX, SUBHASH,SHIVAJI</option>
-                            <option value="3">GOVT HSS KHAJURI KALAN</option>
+                            <option value="3">GOVT HSS MAHARANA PRATAP(23320400117)</option>
+                            <option value="3">GOVT HSS BOYS, KOTRA SULTANABAD(23320303134)</option>
+                            <option value="3">GOVT HSS EX, SUBHASH,SHIVAJI(23320212709)</option>
+                            <option value="3">GOVT HSS KHAJURI KALAN(23320110008)</option>
                         </select>
                     </div>
-
-                    <div class="col-md-3">
+                </div>
+                <div class="row align-items-end">
+                    <div class="col-md-4">
                         <label>
                             Select Category<br />
                             श्रेणी का चयन करें<span style="color: red">*</span></label>
@@ -121,9 +121,8 @@
                             <option>Gen</option>
                         </select>
                     </div>
-                </div>
-                <div class="row align-items-end">
-                    <div class="col-md-3">
+
+                    <div class="col-md-4">
                         <label>
                             Select Mess Facility<br />
                             मेस सुविधा का चयन करें<span style="color: red">*</span></label>
@@ -204,13 +203,13 @@
                                     </tr>
 
                                     <tr>
-                                        <td>1</td>
+                                        <td>2</td>
                                         <td>Co-Education</td>
-                                        <td>Obc</td>
+                                        <td>St</td>
                                         <td>Kanha Shri Boys and Girls Hostel</td>
                                         <td>7823456790</td>
                                         <td>Not Available</td>
-                                        <td>150</td>
+                                        <td>160</td>
                                         <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg3"></i></span></td>
                                     </tr>
 
@@ -359,142 +358,97 @@
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header" id="myDIV3">
-                            <h4 class="modal-title" id="myLargeModalLabel3">Hostel Registration / छात्रावास पंजीकरण</h4>
+                            <h4 class="modal-title" id="myLargeModalLabel3">Hostel Details / छात्रावास का विवरण</h4>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                         </div>
                         <div class="modal-body">
                             <fieldset>
-                                <legend>Hostel Registration / छात्रावास पंजीकरण</legend>
-                                <div class="row align-items-end">
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <div class="form-group">
-                                                <label>
-                                                    Select Hostel Type<br />
-                                                    छात्रावास प्रकार का चयन करें<span style="color: red;">*</span></label>
-                                                <select class="form-control select2" disabled="disabled">
-                                                    <option selected="selected" value="0">--Select --</option>
-                                                    <option value="1" selected="selected">Girls </option>
-                                                    <option value="2">Boys </option>
-                                                    <option value="3">Combine </option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label>
-                                                Enter Hostel Name<br />
-                                                छात्रावास का नाम दर्ज करें<span style="color: red;">*</span></label>
-                                            <input type="text" class="form-control" value="Kanha Shri Boys and Girls Hostel" readonly="readonly" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label>
-                                                Select Category<br />
-                                                वर्ग का चयन करें<span style="color: red;">*</span></label>
-                                            <select class="form-control select2" disabled="disabled">
-                                                <option selected="selected" value="0">-Select-</option>
-                                                <option value="1">General </option>
-                                                <option value="2">OBC </option>
-                                                <option value="3" selected="selected">SC </option>
-                                                <option value="4">ST </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label>
-                                                Enter Total Number of Rooms<br />
-                                                कक्ष की कुल संख्या दर्ज करें<span style="color: red;">*</span></label>
-                                            <input type="text" class="form-control" value="200" readonly="readonly" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label>
-                                                Enter Intake Capacity of Students<br />
-                                                छात्रों की प्रवेश क्षमता दर्ज करें<span style="color: red;">*</span></label>
-                                            <input type="text" class="form-control" value="100" readonly="readonly"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label>
-                                                Enter Hostel Address<br />
-                                                छात्रावास पता दर्ज करें<span style="color: red;">*</span></label>
-                                            <input type="text" class="form-control" value="Kanha Shri Boys and Girls Hostel near by Shivaji Nagar" readonly="readonly" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label>
-                                                Select Mess Facility Availability
-                    <br />
-                                                मेस सुविधा उपलब्धता का चयन करें<span style="color: red;">*</span></label>
-                                            <select class="form-control select2" disabled="disabled">
-                                                <option value="1" selected="selected">Yes</option>
-                                                <option value="2">No</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label>
-                                                Enter Mess Fees<br />
-                                                मेस शुल्क दर्ज करें
-                                            </label>
-                                            <input type="text" class="form-control" value="3000" readonly="readonly" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label>
-                                                Applicable From<br />
-                                                दिनांक से लागू
-                                            </label>
-                                            <input name="ename" id="DOB" type="date" class="form-control" autocomplete="off" value="2021-01-05" readonly="readonly" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label>
-                                                Enter Police Station Name<br />
-                                                पुलिस स्टेशन का नाम दर्ज करें<span style="color: red;">*</span></label>
-                                            <input type="text" class="form-control" value="ASHOKA GARDEN Police Station" readonly="readonly" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label>
-                                                Enter Incharge Name<br />
-                                                प्रभारी का नाम दर्ज करें<span style="color: red;">*</span></label>
-                                            <input type="text" class="form-control" value="Devendra Thakur" readonly="readonly" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label>
-                                                Enter Incharge Contact No.<br />
-                                                प्रभारी संपर्क नंबर दर्ज करें<span style="color: red;">*</span></label>
-                                            <input type="text" class="form-control" value="9176874356" readonly="readonly" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label>
-                                                Enter Police station Full Address<br />
-                                                पुलिस स्टेशन पता दर्ज करें दर्ज करें<span style="color: red;">*</span></label>
-                                            <input type="text" class="form-control" value="ASHOKA GARDEN Police Station near by Arera Colony" readonly="readonly" />
-                                        </div>
-                                    </div>
+                                <legend>Hostel Details / छात्रावास का विवरण</legend>
+
+                                <div class="row form-group">
                                     <div class="col-md-12">
-                                        <hr />
-                                        <div class="form-group">
-                                            <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border" data-bs-dismiss="modal">Save</button>
-                                            <a href="Rpt_HostelRegistration.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-                                            <button type="button" class="btn btn-outline-info w-lg btn-border">Print Card</button>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered text-center">
+                                                <thead class="nowrap">
+                                                    <tr>
+                                                        <th>Hostel Type
+                 <br />
+                                                            छात्रावास का प्रकार
+                                                        </th>
+                                                        <td>Girls</td>
+                                                        <th>Hostel Name<br />
+                                                            छात्रावास का नाम </th>
+                                                        <td>Kanha Shri Boys and
+                                                            <br />
+                                                            Girls Hostel</td>
+                                                        <th>Category<br />
+                                                            श्रेणी</th>
+                                                        <td>Obc</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <th>Total Number of Rooms
+                 <br />
+                                                            कक्ष की कुल संख्या 
+                                                        </th>
+                                                        <td>150</td>
+                                                        <th>Intake Capacity of Students
+                                                           <br />
+                                                            छात्रों की प्रवेश क्षमता</th>
+                                                        <td>100</td>
+                                                        <th>Hostel Address
+                                                            <br />
+                                                            छात्रावास का पता
+                                                        </th>
+                                                        <td>Kanha Shri Boys and Girls<br />
+                                                            Hostel near by Shivaji Nagar</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Mess Facility Availability
+                                                            <br />
+                                                            मेस सुविधा की उपलब्धता
+                                                        </th>
+                                                        <td>Yes</td>
+                                                        <th>Mess Fees
+                                                            <br />
+                                                            मेस शुल्क
+                                                        </th>
+                                                        <td>5000</td>
+                                                        <th>Applicable From
+                                                            <br />
+                                                            दिनांक से लागू
+                                                        </th>
+                                                        <td>05/07/2022</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Police Station Name
+                                                            <br />
+                                                            पुलिस स्टेशन का नाम
+                                                        </th>
+                                                        <td>ASHOKA GARDEN
+                                                            <br />
+                                                            Police Station</td>
+                                                        <th>Incharge Name
+                                                            <br />
+                                                            प्रभारी का नाम
+                                                        </th>
+                                                        <td>Devendra Thakur</td>
+                                                        <th>Incharge Contact No.
+                                                            <br />
+                                                            प्रभारी संपर्क नंबर</th>
+                                                        <td>9823546798</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Police station Full Address:
+                                                            <br />
+                                                            पुलिस स्टेशन का पूरा पता
+                                                        </th>
+                                                        <td>ASHOKA GARDEN Police Station<br />
+                                                            near by Arera Colony</td>
+                                                        <td colspan="4"></td>
+                                                    </tr>
+                                                </thead>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>

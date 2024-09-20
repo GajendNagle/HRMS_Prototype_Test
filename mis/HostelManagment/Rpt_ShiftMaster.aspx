@@ -3,7 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -25,7 +24,6 @@
             </div>
         </div>
     </div>
-
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
@@ -58,25 +56,24 @@
                         <select class="form-control select2">
                             <option>Select</option>
                             <option>School</option>
-                            <option>Office</option>
                             <option>Institude</option>
                         </select>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <label>
-                            Select Office Name<br />
-                            कार्यालय नाम का चयन करें<span style="color: red">*</span></label>
+                            Select School Name<br />
+                            स्कूल नाम का चयन करें<span style="color: red">*</span></label>
                         <select class="form-control select2">
                             <option>Select</option>
-                            <option value="3">GOVT HSS MAHARANA PRATAP</option>
-                            <option value="3">GOVT HSS BOYS, KOTRA SULTANABAD</option>
-                            <option value="3">GOVT HSS EX, SUBHASH,SHIVAJI</option>
-                            <option value="3">GOVT HSS KHAJURI KALAN</option>
+                            <option value="3">GOVT HSS MAHARANA PRATAP(23320400117)</option>
+                            <option value="3">GOVT HSS BOYS, KOTRA SULTANABAD(23320303134)</option>
+                            <option value="3">GOVT HSS EX, SUBHASH,SHIVAJI(23320212709)</option>
+                            <option value="3">GOVT HSS KHAJURI KALAN(23320110008)</option>
                         </select>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <label>
                             Select Hostel Name<br />
                             छात्रावास नाम का चयन करें<span style="color: red">*</span></label>
@@ -129,9 +126,9 @@
                                         <th>Shift Name<br />
                                             शिफ्ट का नाम</th>
                                         <th>Start Time<br />
-                                           प्रारंभ समय</th>
+                                            प्रारंभ समय</th>
                                         <th>End Time<br />
-                                           समाप्ति समय</th>
+                                            समाप्ति समय</th>
 
                                     </tr>
                                 </thead>
