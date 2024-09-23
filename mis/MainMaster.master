@@ -1773,25 +1773,7 @@
                                         <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/StudendRoomChangeProcess.aspx"><i class="ri-file-list-3-line"></i>Student Hostel/Room Change Process</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/RoomApprovalPandingDetails.aspx"><i class="ri-file-list-3-line"></i>Hostel/Room Approval/Pending Process</a></li>
 
-                                        <li class="nav-item">
-                                            <a class="nav-link menu-link" href="#HostelReport" data-bs-toggle="collapse" role="button"
-                                                aria-expanded="false" aria-controls="HostelReport">
-                                                <i class="ri-menu-line"></i>Hostel Management Report
-                                            </a>
-                                            <div class="collapse menu-dropdown dropdown-custom-left" id="HostelReport">
-                                                <ul class="nav nav-sm flex-column">
-
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/Rpt_HostelRegistration.aspx"><i class="ri-file-list-3-line"></i>Hostel Registration Report</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/Rpt_WardenRegistration.aspx"><i class="ri-file-list-3-line"></i>Warden Registration Report</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/Rpt_Mess.aspx"><i class="ri-file-list-3-line"></i>Mess Report</a></li>
-
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/Rpt_ShiftMaster.aspx"><i class="ri-file-list-3-line"></i>Shift Master Report</a></li>
-
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/Rpt_RoomHostelChange.aspx"><i class="ri-file-list-3-line"></i>Room/Hostel Change Report</a></li>
-
-                                                </ul>
-                                            </div>
-                                        </li>
+                                         
 
 
                                         <%--<li class="nav-item"><a class="nav-link" href="/mis/HostelManagment/MessDetails.aspx"><i class="ri-file-list-3-line"></i>Mess Details</a></li>--%>
