@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-     <div class="row">
+    <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
@@ -27,9 +27,17 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
-                <div class="col-lg-6">
-                    <h4 class="card-title">Mess Details / मेस विवरण
-                    </h4>
+                <div class="col-xl-10 col-md-12">
+                    <div class="marqueecontainerinfo">
+                        <div class="headertext btn btn-primary rounded-pill">
+                            विवरण
+                        </div>
+                        <div class="">
+                            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext text-black">
+                                Mess Details / मेस विवरण
+                            </marquee>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -41,17 +49,17 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select Hostel Name<br />
-                                    हॉस्टल नाम चुनें<span style="color: red;">*</span></label>
+                                    Select Hostel Name/<br />
+                                    हॉस्टल का नाम चयन करे<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
-                        <option selected="selected" value="0">--Select --</option>
-                        <option value="1">KGBV Girls Hostel</option>
-                        <option value="2">KGBV Boys Hostel</option>
-                        <option value="3">KGBV Combine Hostel</option>
-                    </select>
+                                    <option selected="selected" value="0">--Select --</option>
+                                    <option value="1">KGBV Girls Hostel</option>
+                                    <option value="2">KGBV Boys Hostel</option>
+                                    <option value="3">KGBV Combine Hostel</option>
+                                </select>
                             </div>
                         </div>
-                       <%-- <div class="col-md-3">
+                        <%-- <div class="col-md-3">
                             <div class="form-group">
                                 <label>
                                     Select Mess Fees Gender/
@@ -67,7 +75,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Applicable Category<br />
+                                    Applicable Category/<br />
                                     उपयुक्त वर्ग का चयन करें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
@@ -81,7 +89,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Mess Fees<br />
+                                    Mess Fees/<br />
                                     मेस शुल्क
                                 </label>
                                 <input type="text" class="form-control" placeholder="Enter Mess Fees" />
@@ -90,92 +98,92 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Applicable From<br />
+                                    Applicable From/<br />
                                     दिनांक से लागू
                                 </label>
                                 <input name="ename" id="DOB" type="date" class="form-control" autocomplete="off" />
                             </div>
                         </div>
-                   </div>
-                      <div class="col-md-12">
-                          <hr />
-                    <div class="form-group text-center">
-                        <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border" onclick="document.getElementById('FS_Details').style.display = 'block'">Save</button>
-                        <a href="MessDetails.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
-                </div>
-                </fieldset>
-              
-                <fieldset id="FS_Details" style="display: none">
-        <legend>Mess Details / मेस विवरण</legend>
-        <div class="row justify-content-end">
-            <div class="col-md-4 text-end">
-                <div class="form-group">
-                    <button class="btn btn-info btn-rounded w-55">Excel</button>
-                    <button class="btn btn-info btn-rounded w-55">PDF</button>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="form-group">
-                    <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-end">
-
-            <div class="col-lg-12" runat="server" id="dvStudentDetails">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="table-responsive">
-                            <table class="table table-bordered text-center">
-                                <thead>
-                                    <tr role="row">
-                                        <th>Sr. No.
-                                    <br />
-                                            क्र.सं.
-                                        </th>
-                                        <th> Hostel Name 
-                                            <br />
-                                            हॉस्टल नाम </th>
-                                        <%--<th>Mess Fees Gender
-                                            <br />
-                                            लिंग के अनुसार मेस</th>--%>
-                                        <th>Applicable Category 
-                                            <br />
-                                            उपयुक्त वर्ग</th>
-                                        <th>Mess Fees 
-                                            <br />
-                                            मेस शुल्क</th>
-                                        <th>Applicable From 
-                                            <br />
-                                            दिनांक से लागू
-                                        </th>
-                                        <th scope="col">Action
-                                            <br />
-                                            कार्यवाही </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr role="row" class="odd">
-                                        <td>1</td>
-                                        <td>KGBV Girls Hostel</td>
-                                        <%--<td>Girls</td>--%>
-                                        <td>Primary</td>
-                                        <td>1000/-</td>
-                                        <td>4/6/2024</td>
-                                        <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
-                                    </tr>
-
-                                </tbody>
-
-                            </table>
+                    <div class="col-md-12">
+                        <hr />
+                        <div class="form-group">
+                            <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border" onclick="document.getElementById('FS_Details').style.display = 'block'">Save</button>
+                            <a href="MessDetails.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
                     </div>
+                </fieldset>
 
-                </div>
-            </div>
-        </div>
-    </fieldset>
+                <fieldset id="FS_Details" style="display: none">
+                    <legend>Mess Details / मेस विवरण</legend>
+                    <div class="row justify-content-end">
+                        <div class="col-md-4 text-end">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-end">
+
+                        <div class="col-lg-12" runat="server" id="dvStudentDetails">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered text-center">
+                                            <thead>
+                                                <tr role="row">
+                                                    <th>Sr. No./
+                                    <br />
+                                                        क्र.सं.
+                                                    </th>
+                                                    <th>Hostel Name/
+                                            <br />
+                                                        हॉस्टल नाम </th>
+                                                    <%--<th>Mess Fees Gender
+                                            <br />
+                                            लिंग के अनुसार मेस</th>--%>
+                                                    <th>Applicable Category/ 
+                                            <br />
+                                                        उपयुक्त वर्ग</th>
+                                                    <th>Mess Fees/ 
+                                            <br />
+                                                        मेस शुल्क</th>
+                                                    <th>Applicable From/ 
+                                            <br />
+                                                        दिनांक से लागू
+                                                    </th>
+                                                    <th scope="col">Action/
+                                            <br />
+                                                        कार्यवाही </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr role="row" class="odd">
+                                                    <td>1</td>
+                                                    <td>KGBV Girls Hostel</td>
+                                                    <%--<td>Girls</td>--%>
+                                                    <td>Primary</td>
+                                                    <td>1000/-</td>
+                                                    <td>4/6/2024</td>
+                                                    <td><a class="Alert-Edit me-2"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete ms-2"><i class="fa fa-trash"></i></a></td>
+                                                </tr>
+
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
             </div>
         </div>
     </div>

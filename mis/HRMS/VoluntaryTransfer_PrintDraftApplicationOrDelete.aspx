@@ -50,6 +50,44 @@
                 display: none;
             }
         }
+
+
+        
+
+        table th {
+            font-weight: bold;
+          
+        }
+
+
+
+
+
+        .header-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .sub-title {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .order-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .qr-code {
+            float: right;
+        }
+
+        .table-title {
+            font-weight: bold;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -68,33 +106,46 @@
                         </li>
                         <li class="breadcrumb-item">
                             <a href="#VoluntaryTransfer" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Employee Voluntary Transfer</span></a>
+                                <span>Transfer Request</span></a>
                         </li>
-                        <li class="breadcrumb-item">Print Draft Application Or Update</li>
+                        <li class="breadcrumb-item">Print Draft Application</li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row mb-1">
+    <%-- <div class="row mb-1">
         <div class="col-md-4 ">
 
             <img src="../../img/OTTMS.png" style="height: 70px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
             <p></p>
         </div>
-    </div>
-    <div class="card card-border-primary">
+    </div>--%>
+    <div class="card mt-3 border card-border-primary">
         <div class="card-header">
-            <div class="row align-items-end">
-                <div class="col-lg-9">
-                    <h4 class="card-title">Print Draft Application Or Update /
-                        ड्राफ्ट एप्लिकेशन प्रिंट या अपडेट करें</h4>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="marqueecontainer border-0">
+                        <div class=" p-3 headertext btn btn-primary rounded-pill  d-flex align-items-center" style="font-size: 16px; font-weight: 900;">
+                            ड्राफ्ट आवेदन प्रिंट करें, विवरण
+                        </div>
+                        <div>
+                            <marquee style="width: 100%; color: black; font-size: 16px;"
+                                onmouseover="this.stop();" onmouseout="this.start();"
+                                direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+                                ड्राफ्ट आवेदन का प्रिंट लेकर स्वतः हस्ताक्षरित कर लॉक एप्लीकेशन में जाकर आवेदन अपलोड करें। 
+                            </marquee>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Print Draft Application Or Update / ड्राफ्ट एप्लिकेशन प्रिंट या अपडेट करें
+                <legend class="border border-dark border-2">Print Draft Application Of Voluntary Or Mutual Transfer/<br />
+
+                    स्वैच्छिक या पारस्परिक स्थानांतरण का मसौदा आवेदन प्रिंट करें।
                 </legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -114,49 +165,73 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
                                 <tr class="card-header">
-                                    <th>Sr.No
-                                        <br />
+                                    <th style="font-weight: bold;">Sr.No./<br />
                                         सरल क्र.</th>
-                                    <th>Application No.
-                                        <br />
-                                        आवेदन नंबर</th>
-                                    <th>Employee Name
-                                        <br />
-                                        कर्मचारी का नाम</th>
-                                    <th>Unique Id 
-    <br />
-                                        यूनिक आईडी</th>
-                                    <th>Print
-                                        <br />
+
+                                    <th style="font-weight: bold;">Transfer Request Number/<br />
+                                        स्थानांतरण अनुरोध संख्या</th>
+
+
+                                    <th style="font-weight: bold;">Employee Name (Unique ID)/<br />
+                                        कर्मचारी का नाम (यूनिक आई.डी.)</th>
+
+                                    <th style="font-weight: bold;">Current OIS (UDISE Code)/<br />
+                                        वर्तमान ओ.आई.एस.(यूडाइस कोड)</th>
+
+                                    <th style="font-weight: bold;">Preferred Location/<br />
+                                        वरीयता का स्थान</th>
+
+                                    <th style="font-weight: bold;">Print<br />
                                         प्रिंट</th>
-                                    <th>Update
-                                        <br />
-                                        अपडेट</th>
+
+
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td>12546</td>
-                                    <td>Arjun Talwar</td>
-                                    <td>BT9430</td>
+                                    <td>TR2024089950</td>
+                                    <td>Sajeda Hameed (AA1142)</td>
+                                    <td>GOVT HSS BAGH SEVANIA (23320302539)</td>
+                                    <td>GOVT HSS BAGH SEVANIA (23320302539)</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"><i class="fa fa-print" aria-hidden="true"></i></button>
+                                    </td>
+
+
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+
+                                    <td>TR7648364789</td>
+
+                                    <td>Rounak Nath(AR4781)</td>
+
+                                    <td>BEERPUR, Principal HSS BEERPUR-(4012003012)</td>
+                                    <td>BEERPUR, Principal HSS BEERPUR-(4012003012)</td>
+
                                     <td>
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
                                     </td>
-                                    <td><a class="Alert-Edit"><i class="fa fa-edit"></i></a></td>
+
 
                                 </tr>
+
                             </table>
                         </div>
                     </div>
                 </div>
                 <div class="row">
 
-                    <div class="col-md-12">
-                        <p class="font-16"><span style="color: red">नोट:- स्वैच्छिक स्थानांतरण ड्राफ्ट आवेदन का प्रिंट लेकर स्वतः हस्ताक्षर करें ।</span></p>
+                    <div class="col-md-12 text-center">
+                        <p class="font-16"><span style="color: blue;">नोट:- स्वैच्छिक/पारस्परिक स्थानांतरण ड्राफ्ट आवेदन का प्रिंट लेकर स्वतः हस्ताक्षर करें ।</span></p>
                     </div>
                 </div>
             </fieldset>
+
+
+
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
+                <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -194,6 +269,9 @@
                                                     <h4 class="text-center mt-4 mb-4 font-bold"><u>:: ई-सेवा पुस्तिका अनुसार व्यक्तिगत जानकारी ::</u></h4>
                                                 </div>
                                                 <table class="table">
+                                                  
+                                                   
+                                                   
                                                     <tr>
                                                         <th>आवेदन क्रमांक :</th>
                                                         <td>132240</td>
@@ -202,7 +280,7 @@
                                                     </tr>
                                                     <tr>
                                                         <th>कर्मचारी का नाम</th>
-                                                        <td>Arjun Talwar</td>
+                                                        <td>Rounak Nath</td>
                                                         <th>यूनिक आई.डी</th>
                                                         <td>AR4781</td>
                                                     </tr>
@@ -221,10 +299,10 @@
                                                     </tr>
                                                     <tr>
                                                         <th>संकुल कोड / नाम</th>
-                                                        <td>15151235256-PVT VINAYAK PUBLIC SCHOOL TARRAKHURD</td>
+                                                        <td> BEERPUR, Principal HSS BEERPUR-(4012003012)	</td>
 
                                                         <th>वर्तमान कार्यालय/संस्था/विद्यालय नाम</th>
-                                                        <td>52125212542-Naveen HHS school Bhopal</td>
+                                                        <td> BEERPUR, Principal HSS BEERPUR-(4012003012)	</td>
                                                     </tr>
                                                     <tr>
                                                         <th>जन्मतिथि</th>
@@ -319,6 +397,8 @@
                                                                     <td>SSS-1 Mathematics</td>
                                                                     <td>01</td>
                                                                 </tr>
+
+
                                                             </table>
                                                         </div>
                                                     </div>
@@ -354,8 +434,139 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+           <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <fieldset>
+                    <div class="row mt-2">
+                        <div class="col-sm-2">
+                            <img id="imgLogoP2" src="../../img/image-260nw-1902805156.jpg" style="width: 100px; height: auto; background: none" class="responsive" />
+                        </div>
+
+                        <div class="col-sm-8 text-center">
+                            <p class="header-title">
+                                लोक शिक्षण संचालनालय मध्य प्रदेश<br />
+                                गौतम नगर, भोपाल - 462021
+                            </p>
+                        </div>
+
+                        <div class="col-sm-2">
+                            <img id="imgLogo2" src="../../img/qr-code-logo-27ADB92152-seeklogo.com.png" style="width: 100px; height: auto" class="responsive" />
+                        </div>
+                    </div>
+                    <hr />
+                    <div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span class="fw-bold" style="font-size: 18px;">CA/24-25/3835</span>
+                            </div>
+                            <div class="fw-bold col-md-6 text-end">
+
+                                <span >दिनांक : 30/08/2024</span>
+                            </div>
+                        </div>
+                        <!-- Order Title -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="order-title">:: आदेश ::</p>
+                                <p class="sub-title" style="font-size: 15px">मध्य प्रदेश शासन स्कूल शिक्षा विभाग के परिपत्र 01-09/2022/20-1 दिनांक 30/08/2024 द्वारा स्कूल शिक्षा विभाग अंतर्गत कार्यरत अगले के स्थानांतरण हेतु निर्धारित नीति के तहत निम्नलिखित लोक सेवक को उनके नाम के सम्मुख तालिका के कॉलम क्रमांक 7 एवं 8 में अंकित संस्था एवं जिले के समान मान्यता एवं वेतनमान में स्थानांतरित कर अस्थायी रूप से आगामी आदेश तक पदस्थ किया जाता है ।</p>
+                            </div>
+                        </div>
+
+                        <!-- Table Section -->
+                        <div class="row">
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th style="font-weight:bold; background-color:white;" scope="col">क्र.</th>
+                                        <th style="font-weight:bold; background-color:white;" scope="col">यूनिक आई.डी</th>
+                                        <th style="font-weight:bold; background-color:white;" scope="col">नाम और पद</th>
+                                        <th style="font-weight:bold; background-color:white;" scope="col">विषय</th>
+                                        <th style="font-weight:bold; background-color:white;" scope="col">कार्यरत संस्था एवं UDISE कोड</th>
+                                        <th style="font-weight:bold; background-color:white;" scope="col">कार्यरत जिला</th>
+                                        <th style="font-weight:bold; background-color:white;" scope="col">नवीन संस्था एवं UDISE कोड</th>
+                                        <th style="font-weight:bold; background-color:white;" scope="col">नवीन पदस्थापन का जिला</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" style="background-color:white;">1</th>
+                                        <td>AA1142</td>
+                                        <td>Sajeda Hameed- Prathmik Shikshak</td>
+                                        <td>HM-PS</td>
+                                        <td>GOVT HSS BAGH SEVANIA (23320302539)</td>
+                                        <td>Bhopal (32)</td>
+                                        <td>GOVT HSS BAGH SEVANIA (23320302539)</td>
+                                        <td>Bhopal (32)</td>
+                                    </tr>
+                                   <%-- <tr>
+                                        <th scope="row">2</th>
+                                        <td>AA1143</td>
+                                        <td>Sushma Gour- Prathmik Shikshak</td>
+                                        <td>HM-PS</td>
+                                        <td>GOVT HSS BAGH SEVANIA (23320302539)</td>
+                                        <td>Bhopal (32)</td>
+                                        <td>GOVT HSS BAGH SEVANIA (23320302539)</td>
+                                        <td>Bhopal (32)</td>
+                                    </tr>--%>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="footer-text" style="font-size: 12px; line-height: 2">
+                                    उपरोक्त स्थानांतरण निम्न शर्तों के अधीन रहेगा:
+                                    <br />
+                                    01. संबंधित लोक सेवक का स्थानांतरण आदेश जारी होने पर उसी दिन या उसके ई-सेवा प्रलेख/सेवा पुस्तक में स्थानांतरण आदेश में उल्लेखित जानकारी को प्रविष्ट करने के उपरांत नई पद स्थापना से कार्य ग्रहण करें एवं उसकी सूचना संबंधित संकुल प्राचार्य एवं जिला शिक्षा अधिकारी को दें।
+                                    <br />
+                                    02. आदेश प्राप्त लोक सेवक/लोक सेविका के जिला शिक्षा अधिकारी कार्यालय में अविलंब में सूचना देने के उपरांत कार्यमुक्ति आदेश एवं स्थानांतरित संस्था में कार्य ग्रहण करने तथा उसी दिन की डिजिटल उपस्थिति भेजें ताकि उनके वेतन एवं भत्तों का दावा प्रस्तुत किया जा सके, अन्यथा विलंब से वेतन भत्तों की देयता स्वीकार नहीं की जाएगी।
+                                    <br />
+                                    03. स्थानांतरित लोक सेवक का कार्य ग्रहण तथा कार्यमुक्ति (जिसका भी लागू) प्रकरण में देरी की स्थिति में संबंधित संस्था के प्रमुख का उत्तरदायित्व होगा जिसके स्थानांतरण के लिए शपथ पत्र प्रस्तुत करना अनिवार्य होगा।
+                                    <br />
+                                    04. स्थानांतरित लोक सेवक अपने कार्य ग्रहण की सूचना के संबंध में निर्देशों का पालन करेंगे।
+                                    <br />
+                                    05. यदि संबंधित लोक सेवक उपरोक्त आदेश के पालन में किसी भी प्रकार की अनदेखी या देरी करेगा तो संबंधित को नई संस्था में नियुक्त नहीं किया जाएगा एवं उसकी स्थिति की सूचना मध्यप्रदेश शासन को दी जाएगी।
+                                    <br />
+                                    06. उक्त आदेश का पालन नहीं करने पर मप्र शासन द्वारा कड़ी अनुशासनात्मक कार्यवाही की जाएगी।
+                                    <br />
+                                    07. कार्यभार ग्रहण करने के पश्चात पदस्थापन पर कार्यभार ग्रहण करने के आदेश की प्रतिलिपि भी संलग्न करें और सभी जानकारी लोक शिक्षण विभाग के माध्यम से मप्र शासन को प्रेषित की जाए।
+                                </p>
+                                <br />
+                                <p class="signature text-end fw-bold">(शिवा गुप्ता)<br />
+                                    आयुक्त<br />
+                                    लोक शिक्षण, मध्य प्रदेश</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </fieldset>
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
+            </div>
         </div>
     </div>
+</div>
+
+        </div>
+
+
+
+
+    </div>
+    
 
 
 

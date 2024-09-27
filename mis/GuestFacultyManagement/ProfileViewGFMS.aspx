@@ -701,7 +701,7 @@
                             </div>
                             <div class="col-md-12 px-4 d-print-none text-center">
                                 <button onclick="printModalContent('printCard');" type="button" class=" btn btn-outline-success btn-border w-lg">Print</button>
-                                <a role="button" class=" btn btn-outline-secondary btn-border w-lg" download="EKYC_Details" href="/mis/Document/GFMS_EKYCDetails.pdf">Download</a>
+                                <%--<a role="button" class=" btn btn-outline-secondary btn-border w-lg" download="EKYC_Details" href="/mis/Document/GFMS_EKYCDetails.pdf">Download</a>--%>
                             </div>
                         </div>
                     </div>

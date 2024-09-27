@@ -89,6 +89,10 @@
                         <div class="form-group">
                             <label>Authority Name:<span style="color: red">*</span></label>
                             <select class="form-control select2">
+
+
+
+
                                 <option value="Select">-Select-</option>
                                 <option value="1">RMSA</option>
                                 <option value="2">Est-1</option>

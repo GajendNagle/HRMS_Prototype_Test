@@ -33,8 +33,7 @@
       <div class="col-md-5 ">
           <img src="../../img/Confidential.png" style="height: 60px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
       </div>
-  </div> 
-    <div class="card card-border-primary">
+  </div>    <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
@@ -62,7 +61,7 @@
                 </p>
             </div>
         </div>
-    
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

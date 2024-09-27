@@ -27,7 +27,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-6">
-                    <h4 class="card-title">Security Guard Registration / सुरक्षा गार्ड पंजीकरण
+                    <h4 class="card-title">Security Guard Registration /सुरक्षा गार्ड पंजीकरण
                     </h4>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>
-                                        Enter Security Guard Name<br />
+                                        Enter Security Guard Name/<br />
                                         सुरक्षा गार्ड का नाम दर्ज करें<span style="color: red;">*</span></label>
                                     <input type="text" class="form-control" placeholder="Enter Security Guard Name" />
                                 </div>
@@ -49,13 +49,13 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>
-                                        Select Date of Birth
+                                        Select Date of Birth/
                                     <br />
                                         जन्म तिथि का चयन करें<span style="color: red">*</span></label>
                                     <input name="ename" id="dob" type="date" class="form-control" autocomplete="off" onchange="calculateAge()" />
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <%--<div class="col-md-4">
                                 <div class="form-group">
                                     <label>
                                         Age
@@ -63,32 +63,55 @@
                                         उम्र<span style="color: red">*</span></label>
                                     <input readonly="readonly" name="ename" id="txtAge" type="text" class="form-control" autocomplete="off" placeholder=" Age" />
                                 </div>
-                            </div>
+                            </div>--%>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>
-                                        Select Gender
+                                        Select Gender/
                                                 <br />
                                         लिंग का चयन करें<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="--Select--">--Select--</option>
                                         <option value="--Select--">Male</option>
                                         <option value="--Select--">Female</option>
-                                        <option value="--Select--">Other</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label asp-for="MobileNo" class="control-label">
-                                        Enter Mobile Number<br />
+                                        Enter Mobile Number/<br />
                                         मोबाइल नंबर दर्ज करें<span style="color: red">*</span>
                                     </label>
                                     <input asp-for="MobileNo" id="MobileNo" placeholder="Enter Mobile Number" maxlength="10" class="form-control" onkeypress="return NumberOnly();" required data-msg="Field is requied" pattern="^([6-9][0-9]{9,11})$" />
                                     <span asp-validation-for="MobileNo" class="text-danger"></span>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+       <div class="col-md-4">
+                        <div class="form-group">
+                            <label>
+                                Select State/<br /> राज्य का चयन करें<span style="color: red;">*</span></label>
+                            <select class="form-control select2">
+                                <option selected="selected" value="0">--Select --</option>
+                                <option value="1">Madhya Pradesh</option>
+                                <option value="2">Punjab</option>
+                                <option value="3">Himachal</option>
+                            </select>
+                        </div>
+                    </div>
+
+ <div class="col-md-4">
+     <div class="form-group">
+         <label asp-for="PinCode" class="control-label">
+             Enter Pin Code/<br />
+             पिन कोड दर्ज करें<span style="color: red">*</span>
+         </label>
+         <input id="PinCode" placeholder="Enter Pin Code" maxlength="6" class="form-control" />
+     </div>
+ </div>
+                            
+
+                            <%--<div class="col-md-4">
                                 <div class="form-group">
                                     <label>
                                         Enter Email Id
@@ -97,7 +120,7 @@
                                     </label>
                                     <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Email Id" />
                                 </div>
-                            </div>
+                            </div>--%>
                         </div>
                     </div>
                     <div class="col-xl-3">
@@ -113,7 +136,57 @@
                     </div>
                 </div>
                 <div class="row align-items-end">
+
+
                     <div class="col-md-3">
+                        <div class="form-group">
+                            <label asp-for="City" class="control-label">
+                                Enter City/<br />
+                                शहर दर्ज करें<span style="color: red">*</span>
+                            </label>
+                            <input id="City" placeholder="Enter City" maxlength="100" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+    <div class="form-group">
+        <label asp-for="StreetAddress1" class="control-label">
+            Enter Address /<br />
+             पता दर्ज करें<span style="color: red">*</span>
+        </label>
+        <textarea class="form-control w-100" id="StreetAddress1" placeholder="Enter Street Address 1" rows="1" oninput="autoResize(this)" autocomplete="off"></textarea>
+        <%--<input id="StreetAddress1" placeholder="Enter Street Address 1" maxlength="150" class="form-control" />
+   --%> </div>
+</div>
+                          <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Select Security Type/<br /> सुरक्षा प्रकार का चयन करें<span style="color: red;">*</span></label>
+                            <select class="form-control select2" id="ab" onchange="toggleSection1()">
+                                <option selected="selected" value="0">--Select --</option>
+                                <option value="1">Individual</option>
+                                <option value="2">IsCompany</option>
+                              <%--//  <option value="3">Himachal</option>--%>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3" id="abc">
+                        <div class="form-group">
+                            <label class="control-label">
+                                Select Security Services Company /<br /> सुरक्षा सेवाएँ कंपनी चयन करें<span style="color: red">*</span>
+                            </label>
+                            <select
+                                class="form-control select2">
+                                <option value="">-- Select --</option>
+                                <option value="">All Indian Service Provider </option>
+                                <option value="">Maa Ambey Security Service</option>
+                                <option value="">J&K Security Service</option>
+                               
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <%-- <div class="col-md-3">
                         <div class="form-group">
                             <label asp-for="IdProofId" class="control-label">
                                 Select ID Proof Type<br />
@@ -151,8 +224,6 @@
                             <span asp-validation-for="IdProofId" class="text-danger"></span>
                         </div>
                     </div>
-
-
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
@@ -209,18 +280,29 @@
                             <label asp-for="Address" class="control-label">
                                 Enter Company Name<br />
                                 कंपनी का नाम दर्ज करें<span style="color: red">*</span></label>
-                            <input id="df" placeholder=" Enter Company Name" maxlength="150"  class="form-control" required data-msg="Field is requied" />
+                            <input id="df" placeholder=" Enter Company Name" maxlength="150" class="form-control" required data-msg="Field is requied" />
                         </div>
                     </div>
-
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label asp-for="Address" class="control-label">
-                                Enter Address<br />
-                                पता दर्ज करें<span style="color: red">*</span></label>
-                            <input  id="HostelAddress" placeholder="Enter Address" maxlength="150" class="form-control" />
+                            <label asp-for="PANCard" class="control-label">
+                                Enter PAN Card Number<br />
+                                पैन कार्ड नंबर दर्ज करें<span style="color: red">*</span>
+                            </label>
+                            <input id="PANCard" placeholder="Enter PAN Card Number" maxlength="10" class="form-control" />
                         </div>
                     </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label asp-for="GSTIN" class="control-label">
+                                Enter GSTIN Number<br />
+                                जीएसटीआईएन नंबर दर्ज करें<span style="color: red">*</span>
+                            </label>
+                            <input id="GSTIN" placeholder="Enter GSTIN Number" maxlength="15" class="form-control" />
+                        </div>
+                    </div>--%>
+
+
                     <div class="col-md-12">
                         <hr />
                         <div class="form-group">
@@ -251,25 +333,25 @@
                             <table class="table table-bordered text-center">
                                 <thead class="nowrap">
                                     <tr>
-                                        <th>Sr.No.<br />
+                                        <th>Sr.No./<br />
                                             क्र.सं.</th>
-                                        <th>Security Gaurd Name<br />
+                                        <th>Security Gaurd Name/<br />
                                             सुरक्षा गार्ड का नाम</th>
-                                        <th>Mobile Number<br />
+                                        <th>Mobile Number/<br />
                                             मोबाइल नंबर</th>
-                                        <th>Email<br />
+                                        <th>Email/<br />
                                             ईमेल </th>
-                                        <th>Age<br />
+                                        <th>Age/<br />
                                             उम्र</th>
-                                        <th>Gender<br />
+                                        <th>Gender/<br />
                                             लिंग</th>
-                                        <th>Highest Qualification<br />
+                                        <th>Highest Qualification/<br />
                                             उच्चतम योग्यता</th>
-                                        <th>Work Experience
+                                        <th>Work Experience/
                                                 <br />
                                             कार्य अनुभव
                                         </th>
-                                        <th>Action
+                                        <th>Action/
                                             <br />
                                             कार्रवाई
                                         </th>
@@ -299,7 +381,22 @@
             </fieldset>
         </div>
     </div>
+    <script>
+        function toggleSection1() {
+            var A = document.getElementById("ab");
+            console.log(A);
+            var C = document.getElementById("abc");
+            if (A.value === "1") {
+                C.style.display = "none";
+
+            }
+            else {
+                C.style.display = "block";
+            }
+        };
+    </script>
 </asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>
 

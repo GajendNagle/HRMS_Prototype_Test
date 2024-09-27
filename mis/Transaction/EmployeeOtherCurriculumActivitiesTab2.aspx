@@ -13,6 +13,16 @@
             color: white;
         }
     </style>
+    <style>
+        #Button2 {
+            display: none;
+        }
+    </style>
+
+
+
+    <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
@@ -37,12 +47,12 @@
             </div>
         </div>
     </div>
-      <div class="row" >
-  <div class="col-md-4" >
-     
-          <img src="/img/Employee.png" style="height: 70px" >
-  </div>
-  </div>
+    <div class="row">
+        <div class="col-md-4">
+
+            <img src="/img/Employee.png" style="height: 70px">
+        </div>
+    </div>
     <div class="content-wrapper">
         <div class="container-fluid">
             <div class="card card-border-primary">
@@ -145,67 +155,89 @@
                             <legend>Details of National or State Level Awards And Honors
                              /
                                 राष्ट्रीय या राज्य स्तर के पुरस्कार व सम्मान का विवरण </legend>
-                            <div class="row ">
+                            <div class="row mt-4 align-items-end">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Select Level Type<br />
+                                            स्तर प्रकार का चयन करे<span style="color: red">*</span>
+                                        </label>
+                                        <select id="Panel" class="form-control select2">
+                                            <option value="">--Select--</option>
+                                            <option value="राष्ट्रीय स्तर">राष्ट्रीय स्तर </option>
+                                            <option value="राज्य स्तर">राज्य स्तर </option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Enter Name of Honor and Award<br />
+                                            सम्मान व पुरस्कार का नाम दर्ज करें<span style="color: red">*</span>
+                                        </label>
+                                        <input type="text" id="Award" class="form-control" placeholder="Enter Name of Honor and Award" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Select Year<br />
+                                            वर्ष का चयन करें<span style="color: red">*</span>
+                                        </label>
+                                        <%--<input type="date" id="Year" class="form-control datepickeryear" placeholder="Enter To Date" />--%>
+
+                                        <input maxlength="4" id="Year" autocomplete="off" class="form-control datepickerYear" type="text" data-val="true" value="2024" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Enter Order number if Any /<br />
+                                            आदेश क्रमांक यदि है तो
+                 <span style="color: red">*</span>
+                                        </label>
+                                        <input type="text" id="Order" class="form-control" placeholder="Enter Order Number" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <button type="button" onclick="AddCurriculm()" id="btnQualification" class="btn btn-outline-success w-lg btn-border"><b>Add</b></button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-md-12">
                                     <div class="table-responsive">
-                                        <table class="table text-center table table-hover table-bordered">
-                                            <tbody>
-                                                <tr>
-                                                    <th>Sr. No.<br />
-                                                        सरल क्र.</th>
-                                                    <th>Name of Honor and Award<br />
-                                                        सम्मान व पुरस्कार का नाम</th>
-                                                    <th>Year of Award<br />
-                                                        पुरस्कार प्राप्ति का वर्ष</th>
-                                                    <th>Order number if Any<br />
-                                                        आदेश क्रमांक यदि है तो</th>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
+                                        <table class="table table-bordered" id="tblExperience" style="display: none;">
+                                            <tr>
+                                                <th>Sr. No.<br />
+                                                    सरल क्र.</th>
+                                                <th>Level Type<br />
+                                                    स्तर प्रकार</th>
+                                                <th>Name of Honor and Award<br />
+                                                    सम्मान व पुरस्कार का नाम</th>
+                                                <th>Year of Award<br />
+                                                    पुरस्कार प्राप्ति का वर्ष</th>
+                                                <th>Order number if Any<br />
+                                                    आदेश क्रमांक यदि है तो</th>
 
-                                                    <td>
-                                                        <input type="text" class="form-control" autocomplete="off" />
-
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" autocomplete="off" />
-
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" autocomplete="off" />
-
-                                                    </td>
-
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-
-                                                    <td>
-                                                        <input type="text" class="form-control" autocomplete="off" />
-
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" autocomplete="off" />
-
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" autocomplete="off" />
-
-                                                    </td>
-
-                                                </tr>
-
-                                            </tbody>
+                                            </tr>
                                         </table>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
-                                    <hr />
-                                    <button id="Button2" type="button" class="btn btn-outline-success w-lg btn-border Alert-Confirmation" onclick="myFunction()">Save</button>
-                                </div>
+                            </div>
+
+                            <hr />
+                            <div>
+                                <button type="button" id="Button2" onclick="pageload()" class="btn btn-outline-success btn-border Alert-Confirmation w-lg">Save</button>
                             </div>
                         </fieldset>
                     </div>
+
+
                 </div>
             </div>
         </div>
@@ -219,52 +251,115 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-    <%--<script>
-        debugger;
-        !function ($) {
-            "use strict";
-            var SweetAlert = function () { };
-            //examples
-            SweetAlert.prototype.init = function () {
 
-                $('.Alert-Save').click(function () {
-                    Swal.fire({
-                        title: 'Are you sure?',
-                        text: "Do you want to Save This Record?",
-                        type: 'warning',
-                        showCancelButton: true,
-                        confirmButtonColor: '#3085D6',
-                        cancelButtonColor: '#d33',
-                        confirmButtonText: 'Yes'
+    <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
-                    }).then((result) => {
-                        if (result.value) {
-                            Swal.fire({
-                                type: 'success',
-                                title: 'Success!',
-                                text: 'Tour Apply Successfully!',
-                                timer: 2000
-                            }
-                            )
-                            var x = document.getElementById("EmployeeDetails2");
+    <script>
+        var entryCount = 0;
+        function pageload() {
+            //location.reload();
+        }
 
-                            if (x.style.display === "none") {
-                                x.style.display = "block";
-                            }
-                            else {
-                                x.style.display = "block";
-                            }
-                        }
-                    })
-                });
-            },
-                //init
-                $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
-        }(window.jQuery),
-            //initializing
-            function ($) {
-                "use strict";
-                $.SweetAlert.init()
-            }(window.jQuery);
-    </script>--%>
+        function AddCurriculm() {
+            // Maximum number of entries
+            var maxEntries = 4;
+            if (entryCount >= maxEntries) {
+                Swal.fire("Warning", "You can only add up to 4 entries.", "warning");
+                return;
+            }
+
+            // Get form values
+            var levelType = $('#Panel').val();
+            var award = $('#Award').val();
+            var year = $('#Year').val();
+            var orderNumber = $('#Order').val();
+
+            // Validate form values
+            if (!levelType) {
+                Swal.fire("Warning", "Required to select Level Type.", "warning");
+                return;
+            }
+            if (!award) {
+                Swal.fire("Warning", "Required to enter Name of Honor and Award.", "warning");
+                return;
+            }
+            if (!year) {
+                Swal.fire("Warning", "Required to select Year.", "warning");
+                return;
+            }
+            if (!orderNumber) {
+                Swal.fire("Warning", "Required to enter Order Number.", "warning");
+                return;
+            }
+
+            // Increment the entry count
+            entryCount++;
+
+            // Display the table if it's hidden
+            $('#tblExperience').show();
+
+            // Add entry to the table
+            var newRow = `
+            <tr>
+                <td>${entryCount}</td>
+                <td>${levelType}</td>
+                <td>${award}</td>
+                <td>${year}</td>
+                <td>${orderNumber}</td>
+            </tr>
+        `;
+            $('#tblExperience').append(newRow);
+
+            // Clear form inputs
+            $('#Panel').val('');
+            $('#Award').val('');
+            $('#Year').val('');
+            $('#Order').val('');
+            document.getElementById("Button2").style.display = "block";
+        }
+
+
+
+        //function myFunction() {
+        //    Swal.fire("Success", "Data Saved Successfully.", "success");
+        //}
+
+
+    </script>
+
+    <script>
+        $('.datepickerYear').datepicker({
+            format: "yyyy",
+            minViewMode: 2,
+            autoclose: true,
+            orientation: 'bottom'
+        }).on('hide', function (e) {
+            var inputYear = e.target.value.trim();
+            if (/^\d+$/.test(inputYear)) {
+                var selectedYear = parseInt(inputYear);
+                var nextYear = selectedYear + 1;
+                //var financialYear = selectedYear + '-' + (nextYear % 100); // Example: 2023-24 for financial year 2023-2024
+                //$(".datepickerYear").val(financialYear);
+            }
+            else if (inputYear === '') { // If input is empty
+                setDefaultFinancialYear();
+            }
+            else {
+                alert("Please enter a valid year.");
+            }
+        });
+
+        // Function to set default value to current financial year
+        function setDefaultFinancialYear() {
+            var currentDate = new Date();
+            var currentYear = currentDate.getFullYear();
+            var nextYear = currentYear + 1;
+            var financialYear = currentYear + '-' + (nextYear % 100);
+            $(".datepickerYear").val(financialYear);
+        }
+
+        // Set default value to current financial year on page load
+    </script>
+
 </asp:Content>

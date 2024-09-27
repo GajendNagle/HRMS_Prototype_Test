@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Mst_RoomRegistration.aspx.cs" Inherits="mis_HostelManagment_Mst_RoomRegistration" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
@@ -30,36 +29,44 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
-                <div class="col-lg-6">
-                    <h4 class="card-title"> Room Registration / कक्ष पंजीकरण
-                    </h4>
+                <div class="col-xl-10 col-md-12">
+                    <div class="marqueecontainerinfo">
+                        <div class="headertext btn btn-primary rounded-pill">
+                            विवरण
+                        </div>
+                        <div class="">
+                            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext text-black">
+                                Room Registration / कक्ष पंजीकरण
+                            </marquee>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <div runat="server" id="divOffice">
                 <fieldset>
-                    <legend> Room Registration / कक्ष पंजीकरण</legend>
+                    <legend>Room Registration / कक्ष पंजीकरण</legend>
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select Hostel Name<br />
-                                    हॉस्टल नाम चुनें<span style="color: red;">*</span></label>
-                                 <select class="form-control select2">
-                        <option selected="selected" value="0">--Select --</option>
-                        <option value="1">KGBV Girls Hostel</option>
-                        <option value="2">KGBV Boys Hostel</option>
-                        <option value="3">KGBV Combine Hostel</option>
-                    </select>
+                                    Select Hostel Name/<br />
+                                    हॉस्टल नाम चयन करे<span style="color: red;">*</span></label>
+                                <select class="form-control select2">
+                                    <option selected="selected" value="0">--Select --</option>
+                                    <option value="1">KGBV Girls Hostel</option>
+                                    <option value="2">KGBV Boys Hostel</option>
+                                    <option value="3">KGBV Combine Hostel</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select Room Type
+                                    Select Room Type/
                                     <br />
-                                    कक्ष के प्रकार चुनें<span style="color: red;">*</span></label>
+                                    कक्ष के प्रकार चयन करे<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
 
                                     <option value="--Select--">--Select--</option>
@@ -73,8 +80,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Enter Room Number<br />
-                                     कक्ष नंबर दर्ज करें<span style="color: red;">*</span></label>
+                                    Enter Room Number/<br />
+                                    कक्ष नंबर दर्ज करें<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Hostel Room Number" />
                                 <%--<select class="form-control select2">
                                     <option value="--Select--">--Select--</option>
@@ -86,58 +93,61 @@
                             </div>
                         </div>
                     </div>
-                     <div class="row">
-                    <div class="col-sm-5">
-                        <div class="table-responsive">
-                            <table class="table table-bordered text-center">
-                                <thead>
-                                    <tr role="row">
-                                        <th scope="col">Sr.No.<br />
-                                            क्र.सं.</th>
-                                        <th scope="col">Bed Number<br />
-                                            बिस्तर नंबर</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr role="row">
-                                        <td align="center" valign="middle"><span>1</span>
-                                        </td>
-                                        <td><input type="text" name="input1" placeholder="Enter Bed Number" Class="form-control">
-                                        </td>
-                                    </tr>
-                                    <tr role="row">
-                                        <td align="center" valign="middle"><span>2</span>
-                                        </td>
-                                        <td><input type="text" name="input1" placeholder="Enter Bed Number" Class="form-control">
-                                        </td>
-                                    </tr>
-                                    <tr role="row">
-                                        <td align="center" valign="middle" ><span>3</span>
-                                        </td>
-                                        <td><input type="text" name="input1" placeholder="Enter Bed Number" Class="form-control">
-                                        </td>
-                                    </tr>
-                                </tbody>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="table-responsive">
+                                <table class="table table-bordered text-center">
+                                    <thead>
+                                        <tr role="row">
+                                            <th scope="col">Sr.No./<br />
+                                                क्र.सं.</th>
+                                            <th scope="col">Bed Number/<br />
+                                                बिस्तर नंबर</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr role="row">
+                                            <td align="center" valign="middle"><span>1</span>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="input1" placeholder="Enter Bed Number" class="form-control">
+                                            </td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td align="center" valign="middle"><span>2</span>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="input1" placeholder="Enter Bed Number" class="form-control">
+                                            </td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td align="center" valign="middle"><span>3</span>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="input1" placeholder="Enter Bed Number" class="form-control">
+                                            </td>
+                                        </tr>
+                                    </tbody>
 
-                            </table>
+                                </table>
+                            </div>
                         </div>
-                    </div>
-                         <div class="col-md-3">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-weight-bold">Is Active &nbsp</label>
                                 <br />
                                 <input id="ContentBody_ctl03" type="checkbox" name="ctl00$ContentBody$ctl03" checked="checked" />
                             </div>
                         </div>
-                     </div>
+                    </div>
 
-                        <%--<div class="col-md-4">
+                    <%--<div class="col-md-4">
                             <div class="form-group">
                                 <label>
                                     Select No. of Bed<br />
-                                    बिस्तर की संख्या चुनें<span style="color: red;">*</span></label>
+                                    बिस्तर की संख्या चयन करे<span style="color: red;">*</span></label>
                                 <%--<input type="text" class="form-control" placeholder="Enter No. of Bed" />--%>
-                               <%-- <div class="form-control">
+                    <%-- <div class="form-control">
                                     <input type="checkbox" id="one">
                                     <label for="one">1 Bed</label>
                                     <input type="checkbox" id="two">
@@ -149,13 +159,13 @@
                                 </div>
                             </div>
                         </div>--%>
-                       <%-- <div class="col-md-3">
+                    <%-- <div class="col-md-3">
                             <div class="form-group">
                                 <label>
                                     Rent Per Bed<br />
                                     प्रति बिस्तर किराया<span style="color: red;">*</span></label>
                                 <%--<input type="text" class="form-control" placeholder="Enter Rent per Bed" />--%>
-                                <%--<select class="form-control select2" id="fees">
+                    <%--<select class="form-control select2" id="fees">
                                     <option value="--Select--">--Select--</option>
                                     <option value="1">700</option>
                                     <option value="2">500</option>
@@ -166,7 +176,7 @@
                         </div>--%>
                 </fieldset>
                 <div class="col-md-12">
-                    <div class="form-group text-center">
+                    <div class="form-group">
                         <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border" onclick="document.getElementById('HostlInfo').style.display = 'block'">Save</button>
                         <a href="Mst_RoomRegistration.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
@@ -175,7 +185,7 @@
         </div>
     </div>
     <fieldset id="HostlInfo" style="display: none;">
-        <legend> Room Detail/ कक्ष विवरण</legend>
+        <legend>Room Detail/ कक्ष विवरण</legend>
         <div class="row justify-content-end">
             <div class="col-md-1">
                 <div class="form-group">
@@ -202,17 +212,17 @@
                             <table class="table table-bordered text-center">
                                 <thead>
                                     <tr role="row">
-                                        <th scope="col">Sr.No.<br />
+                                        <th scope="col">Sr.No./<br />
                                             क्र.सं.</th>
-                                        <th scope="col">Hostel Name<br />
+                                        <th scope="col">Hostel Name/<br />
                                             हॉस्टल नाम</th>
-                                        <th scope="col">Room Type<br />
+                                        <th scope="col">Room Type/<br />
                                             कक्ष प्रकार   </th>
-                                        <th scope="col"> Room Number<br />
-                                             कक्ष संख्या </th>
-                                        <th scope="col">Bed Number<br />
+                                        <th scope="col">Room Number/<br />
+                                            कक्ष संख्या </th>
+                                        <th scope="col">Bed Number/<br />
                                             बिस्तर संख्या </th>
-                                        <th scope="col">Action
+                                        <th scope="col">Action/
                                             <br />
                                             कार्यवाही </th>
                                     </tr>
@@ -235,7 +245,7 @@
                                         <td align="center" valign="middle">
                                             <span>1011</span>
                                         </td>
-                                       
+
                                         <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                     <tr role="row" class="odd">
@@ -255,7 +265,7 @@
                                         <td align="center" valign="middle">
                                             <span>2011, 2012</span>
                                         </td>
-                                       
+
                                         <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                     </tr>
 

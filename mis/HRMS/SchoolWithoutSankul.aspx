@@ -127,7 +127,7 @@
                             <div class="col-md-3">
                                 <label>
                                     Select School Dise Code<br />
-                                    स्कूल डाईस कोड चुनें</label>
+                                    स्कूल डीआईएसई कोड का चयन करें</label>
                                 <asp:DropDownList runat="server" ID="ddlSchoolDise" CssClass="form-control select2 mt-2">
                                     <asp:ListItem>--Select--</asp:ListItem>
                                     <asp:ListItem>23320400117-GOVT HSS AHAMDABAD</asp:ListItem>
@@ -176,8 +176,8 @@
                                     <table class="table table-bordered text-center" id="districtD">
                                         <thead>
                                             <tr>
-                                                <th>Sr. No.<br />
-                                                    सरल क्र.</th>
+                                                <th>S.NO.<br />
+                                                    क्र.सं</th>
                                                 <th>District Name<br />
                                                     जिले का नाम</th>
                                                 <th>School No.<br />

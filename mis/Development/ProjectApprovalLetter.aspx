@@ -187,7 +187,7 @@
                 <hr />
                 <div class="row">
                     <div class="col-md-12">
-                        <button type="button" class="Alert-Save btn btn-outline-success btn-border  w-lg">Generated Letter</button>
+                        <button type="button" class="btn btn-outline-success btn-border  w-lg" onclick="openPDF()">Generated Letter</button>
                         <a href="ProjectApprovalLetter.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                 </div>
@@ -222,54 +222,14 @@
             }
         }
     </script>
-    <script>
-        debugger;
-        !function ($) {
-            "use strict";
-            var SweetAlert = function () { };
-            //examples
-            SweetAlert.prototype.init = function () {
-                //Basic
-                //Success Message
-                $('.Alert-Save').click(function () {
-                    Swal.fire({
-                        title: 'Are you sure?',
-                        text: "Do you want to Generate this Letter ?",
-                        type: 'warning',
-                        showCancelButton: true,
-                        confirmButtonColor: '#3085D6',
-                        cancelButtonColor: '#d33',
-                        confirmButtonText: 'Yes'
-                        // animation: false,
-                        // customClass: {
-                        //     popup: 'animated tada'
-                        // }
-                    }).then((result) => {
-                        if (result.value) {
-                            Swal.fire({
-                                type: 'success',
-                                title: 'Success!',
-                                text: 'Generate Letter Successfully!',
-                                timer: 2020,
-                            }     
-                            ).then(() => {
-                                var pdfUrl = '../../img/blankpdf.pdf';
-                                window.open(pdfUrl, '_blank');
-                                
-                            });
 
-                        }
-                    })
-                });
-            },
-                //init
-                $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
-        }(window.jQuery),
-            //initializing
-            function ($) {
-                "use strict";
-                $.SweetAlert.init()
-            }(window.jQuery);
+    <script>
+        function openPDF() {
+            // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
+            var pdfUrl = '../../img/blankpdf.pdf';
+            // Open the PDF in a new window or tab
+            window.open(pdfUrl, '_blank');
+        }
     </script>
     
 </asp:Content>

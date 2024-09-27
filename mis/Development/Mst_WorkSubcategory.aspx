@@ -85,6 +85,24 @@
                         </div>
                     </div>
 
+                         <div class="col-md-6 col-lg-4 col-xl-4">
+                        <div class="form-group">
+                            <label>
+                               Select Unit 
+                                <br />
+                                इकाई का चयन करें
+                               <span style="color: red">*</span></label>
+                            <select id="unit" class="form-control select2">
+                                <option value="--Select--">--Select--</option>
+                                <option value="A">Number	</option>
+                                <option value="B">Square Meter</option>
+                                <option value="C">Meter</option>
+                                <option value="D">Kilo Meter</option>
+
+                            </select>
+                        </div>
+                    </div>
+
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
@@ -133,6 +151,8 @@
                                         कार्य की उपश्रेणी(अंग्रेजी में)</th>
                                     <th>Work Subcategory(In Hindi)<br />
                                         कार्य की उपश्रेणी(हिन्दी में)</th>
+                                    <th>Unit<br />
+                                        इकाई</th>
                                     <th>Status(Active/InActive)
        <br />
                                         स्थिति (सक्रिय/निष्क्रिय)</th>
@@ -144,6 +164,7 @@
                                     <td>विद्यालय का रख-रखाव कार्य</td>
                                     <td>Building Repair</td>
                                     <td>इमारत मरम्मत</td>
+                                    <td>Number</td>
                                     <td>Active</td>
                                     <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
@@ -152,6 +173,7 @@
                                     <td>पेयजल व्यवस्था</td>
                                     <td>Hand Pump Mining</td>
                                     <td>हेंडपंप खनन</td>
+                                    <td>Number</td>
                                     <td>InActive</td>
                                     <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
@@ -160,6 +182,7 @@
                                     <td>पेयजल व्यवस्था</td>
                                     <td>Water Tank Construction</td>
                                     <td>पानी की टंकी निर्माण</td>
+                                    <td>Number</td>
                                     <td>InActive</td>
                                     <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
@@ -168,6 +191,7 @@
                                     <td>स्कूल मार्ग निर्माण</td>
                                     <td>CC Road Construction</td>
                                     <td>सी.सी.रोड निर्माण</td>
+                                        <td> Kilo Meter</td>
                                     <td>InActive</td>
                                     <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>

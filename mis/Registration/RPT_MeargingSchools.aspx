@@ -19,8 +19,8 @@
                             <span>Home</span>
                         </li>
 
-                        <li class="breadcrumb-item"><a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a></li>
-                        <li class="breadcrumb-item"><a href="#SchoolReports" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>School Reports</span></a></li>
+                         <li class="breadcrumb-item">  <a href="#SchoolDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>School Directory</span></a></li>
+                        <li class="breadcrumb-item"> <a href="#SchoolReports" data-bs-toggle="collapse" onclick="SidebarToggle('SchoolDirectory')" role="button" aria-expanded="false"><span>Reports</span></a></li>
                         <li class="breadcrumb-item">School Merge Report</li>
                     </ol>
                 </div>
@@ -28,277 +28,267 @@
         </div>
     </div>
 
-    <div class="card card-border-primary">
-        <div class="card-header">
-            <div class="row align-items-end">
+        <div class="card card-border-primary">
+            <div class="card-header">
+                <div class="row align-items-end">
                 <div class="col-lg-6">
-                    <h4 class="card-title">School Merge Report / स्कूल मर्ज रिपोर्ट
+                    <h4 class="card-title">School Merge Report/स्कूल मर्ज रिपोर्ट
                     </h4>
                 </div>
             </div>
-        </div>
-        <div class="card-body">
+            </div>
+            <div class="card-body">
 
-            <fieldset>
-                <legend>School Merge Report / स्कूल मर्ज रिपोर्ट</legend>
-                <div class="row align-items-end">
-                    <div class="col-md-3">
-                        <label>
-                            Select Division<br />
-                            संभाग चुनें<span style="color: red">*</span></label>
-                        <asp:DropDownList runat="server" CssClass="form-control select2">
-                            <asp:ListItem>--Select--</asp:ListItem>
-                            <asp:ListItem>Bhopal</asp:ListItem>
-                            <asp:ListItem>Gwalior</asp:ListItem>
-                            <asp:ListItem>Narmadapuram</asp:ListItem>
-                            <asp:ListItem>Indore</asp:ListItem>
-                            <asp:ListItem>Jabalpur</asp:ListItem>
-                            <asp:ListItem>Rewa</asp:ListItem>
-                            <asp:ListItem>Sagar</asp:ListItem>
-                            <asp:ListItem>Shahdol</asp:ListItem>
-                            <asp:ListItem>Ujjain</asp:ListItem>
-                        </asp:DropDownList>
-                    </div>
-                    <div class="col-md-3">
-                        <label>
-                            Select District<br />
-                            जिला चुनें<span style="color: red">*</span></label>
-                        <asp:DropDownList runat="server" CssClass="form-control select2">
-                            <asp:ListItem>--Select--</asp:ListItem>
-                            <asp:ListItem>Bhopal</asp:ListItem>
-                            <asp:ListItem>Raisen</asp:ListItem>
-                            <asp:ListItem>Rajgarh</asp:ListItem>
-                            <asp:ListItem>Sehore</asp:ListItem>
-                            <asp:ListItem>Vidisha</asp:ListItem>
-                            <asp:ListItem>Ashoknagar</asp:ListItem>
-                            <asp:ListItem>Shivpuri</asp:ListItem>
-                            <asp:ListItem>Datia</asp:ListItem>
-                            <asp:ListItem>Guna</asp:ListItem>
-                            <asp:ListItem>Gwalior</asp:ListItem>
-                            <asp:ListItem>Harda</asp:ListItem>
-                            <asp:ListItem>Hoshangabad</asp:ListItem>
-                            <asp:ListItem>Betul</asp:ListItem>
-                            <asp:ListItem>Morena</asp:ListItem>
-                            <asp:ListItem>Sheopur</asp:ListItem>
-                            <asp:ListItem>Bhind</asp:ListItem>
-                            <asp:ListItem>Barwani</asp:ListItem>
-                            <asp:ListItem>Burhanpur</asp:ListItem>
-                            <asp:ListItem>Dhar</asp:ListItem>
-                            <asp:ListItem>Indore</asp:ListItem>
-                            <asp:ListItem>Jhabua</asp:ListItem>
-                            <asp:ListItem>Khandwa</asp:ListItem>
-                            <asp:ListItem>Khargone</asp:ListItem>
-                            <asp:ListItem>Alirajpur</asp:ListItem>
-                            <asp:ListItem>Balaghat</asp:ListItem>
-                            <asp:ListItem>Chhindwara</asp:ListItem>
-                            <asp:ListItem>Jabalpur</asp:ListItem>
-                            <asp:ListItem>Katni</asp:ListItem>
-                            <asp:ListItem>Mandla</asp:ListItem>
-                            <asp:ListItem>Narsinghpur</asp:ListItem>
-                            <asp:ListItem>Seoni</asp:ListItem>
-                            <asp:ListItem>Rewa</asp:ListItem>
-                            <asp:ListItem>Satna</asp:ListItem>
-                            <asp:ListItem>Sidhi</asp:ListItem>
-                            <asp:ListItem>Singroli</asp:ListItem>
-                            <asp:ListItem>Chhatarpur</asp:ListItem>
-                            <asp:ListItem>Damoh</asp:ListItem>
-                            <asp:ListItem>Panna</asp:ListItem>
-                            <asp:ListItem>Sagar</asp:ListItem>
-                            <asp:ListItem>Tikamgarh</asp:ListItem>
-                            <asp:ListItem>Shahdol</asp:ListItem>
-                            <asp:ListItem>Umaria</asp:ListItem>
-                            <asp:ListItem>Dindori</asp:ListItem>
-                            <asp:ListItem>Anuppur</asp:ListItem>
-                            <asp:ListItem>Dewas</asp:ListItem>
-                            <asp:ListItem>Mandsaur</asp:ListItem>
-                            <asp:ListItem>Neemuch</asp:ListItem>
-                            <asp:ListItem>Ratlam</asp:ListItem>
-                            <asp:ListItem>Shajapur</asp:ListItem>
-                            <asp:ListItem>Ujjain</asp:ListItem>
-                        </asp:DropDownList>
-                    </div>
-                    <div class="col-md-3">
-                        <label>
-                            Select Block<br />
-                            ब्लॉक चुनें</label>
-                        <asp:DropDownList runat="server" CssClass="form-control select2">
-                            <asp:ListItem>--Select--</asp:ListItem>
-                            <asp:ListItem>Agar</asp:ListItem>
-                            <asp:ListItem>Barod</asp:ListItem>
-                            <asp:ListItem>Nalkheda</asp:ListItem>
-                            <asp:ListItem>Susner</asp:ListItem>
-                            <asp:ListItem>Alirajpur</asp:ListItem>
-                            <asp:ListItem>Bhabra</asp:ListItem>
-                            <asp:ListItem>Katthiwara</asp:ListItem>
-                            <asp:ListItem>Sondwa</asp:ListItem>
-                            <asp:ListItem>Udaygarh</asp:ListItem>
-                            <asp:ListItem>Jobat</asp:ListItem>
-                            <asp:ListItem>Anuppur</asp:ListItem>
-                            <asp:ListItem>Jaithari</asp:ListItem>
-                            <asp:ListItem>Kotma</asp:ListItem>
+                <fieldset>
+                    <legend>School Merge Report/स्कूल मर्ज रिपोर्ट</legend>
 
-                        </asp:DropDownList>
-                    </div>
-                    <div class="col-md-3">
-                        <label>
-                            Select Sankul Name<br />
-                            संकुल नाम का चयन करें</label>
-                        <asp:DropDownList CssClass="form-control select2" runat="server">
-                            <asp:ListItem>All</asp:ListItem>
-                            <asp:ListItem>AKBARPUR GOVT. HS</asp:ListItem>
-                            <asp:ListItem>BERASIA (BOYS) GOVT.HSS</asp:ListItem>
-                            <asp:ListItem>DHAMARRA GOVT. HS</asp:ListItem>
-                            <asp:ListItem>EENT KHEDI GOVT. HSS</asp:ListItem>
-                            <asp:ListItem>BAIRAGARH (BOYS) GOVT.HSS</asp:ListItem>
-                            <asp:ListItem>BERAISA (GIRLS) SN HSS</asp:ListItem>
-                            <asp:ListItem>BAGRODA GOVT. HS</asp:ListItem>
-                            <asp:ListItem>BARKHEDI (GIRLS) GOVT.HSS</asp:ListItem>
-                            <asp:ListItem>GOVINDPURA (GIRLS) GO.HSS</asp:ListItem>
-                            <asp:ListItem>GUNGA GOVT. HSS</asp:ListItem>
-                        </asp:DropDownList>
-                    </div>
-                </div>
-                <div class="row align-items-end">
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                From Date<br />
-                                दिनांक से</label>
-                            <input type="date" class="form-control" placeholder="17/11/2023" />
+                    <div class="row align-items-end">
 
+                        <div class="col-md-3">
+                            <label class="font-bold">Select Division Name/संभाग का नाम चुनें<span style="color: red">*</span></label>
+                            <asp:DropDownList runat="server" CssClass="form-control select2">
+                                <asp:ListItem>--Select--</asp:ListItem>
+                                <asp:ListItem>Bhopal</asp:ListItem>
+                                <asp:ListItem>Gwalior</asp:ListItem>
+                                <asp:ListItem>Narmadapuram</asp:ListItem>
+                                <asp:ListItem>Indore</asp:ListItem>
+                                <asp:ListItem>Jabalpur</asp:ListItem>
+                                <asp:ListItem>Rewa</asp:ListItem>
+                                <asp:ListItem>Sagar</asp:ListItem>
+                                <asp:ListItem>Shahdol</asp:ListItem>
+                                <asp:ListItem>Ujjain</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="font-bold">Select District Name/ जिले का नाम चुनें<span style="color: red">*</span></label>
+                            <asp:DropDownList runat="server" CssClass="form-control select2">
+                                <asp:ListItem>--Select--</asp:ListItem>
+                                <asp:ListItem>Bhopal</asp:ListItem>
+                                <asp:ListItem>Raisen</asp:ListItem>
+                                <asp:ListItem>Rajgarh</asp:ListItem>
+                                <asp:ListItem>Sehore</asp:ListItem>
+                                <asp:ListItem>Vidisha</asp:ListItem>
+                                <asp:ListItem>Ashoknagar</asp:ListItem>
+                                <asp:ListItem>Shivpuri</asp:ListItem>
+                                <asp:ListItem>Datia</asp:ListItem>
+                                <asp:ListItem>Guna</asp:ListItem>
+                                <asp:ListItem>Gwalior</asp:ListItem>
+                                <asp:ListItem>Harda</asp:ListItem>
+                                <asp:ListItem>Hoshangabad</asp:ListItem>
+                                <asp:ListItem>Betul</asp:ListItem>
+                                <asp:ListItem>Morena</asp:ListItem>
+                                <asp:ListItem>Sheopur</asp:ListItem>
+                                <asp:ListItem>Bhind</asp:ListItem>
+                                <asp:ListItem>Barwani</asp:ListItem>
+                                <asp:ListItem>Burhanpur</asp:ListItem>
+                                <asp:ListItem>Dhar</asp:ListItem>
+                                <asp:ListItem>Indore</asp:ListItem>
+                                <asp:ListItem>Jhabua</asp:ListItem>
+                                <asp:ListItem>Khandwa</asp:ListItem>
+                                <asp:ListItem>Khargone</asp:ListItem>
+                                <asp:ListItem>Alirajpur</asp:ListItem>
+                                <asp:ListItem>Balaghat</asp:ListItem>
+                                <asp:ListItem>Chhindwara</asp:ListItem>
+                                <asp:ListItem>Jabalpur</asp:ListItem>
+                                <asp:ListItem>Katni</asp:ListItem>
+                                <asp:ListItem>Mandla</asp:ListItem>
+                                <asp:ListItem>Narsinghpur</asp:ListItem>
+                                <asp:ListItem>Seoni</asp:ListItem>
+                                <asp:ListItem>Rewa</asp:ListItem>
+                                <asp:ListItem>Satna</asp:ListItem>
+                                <asp:ListItem>Sidhi</asp:ListItem>
+                                <asp:ListItem>Singroli</asp:ListItem>
+                                <asp:ListItem>Chhatarpur</asp:ListItem>
+                                <asp:ListItem>Damoh</asp:ListItem>
+                                <asp:ListItem>Panna</asp:ListItem>
+                                <asp:ListItem>Sagar</asp:ListItem>
+                                <asp:ListItem>Tikamgarh</asp:ListItem>
+                                <asp:ListItem>Shahdol</asp:ListItem>
+                                <asp:ListItem>Umaria</asp:ListItem>
+                                <asp:ListItem>Dindori</asp:ListItem>
+                                <asp:ListItem>Anuppur</asp:ListItem>
+                                <asp:ListItem>Dewas</asp:ListItem>
+                                <asp:ListItem>Mandsaur</asp:ListItem>
+                                <asp:ListItem>Neemuch</asp:ListItem>
+                                <asp:ListItem>Ratlam</asp:ListItem>
+                                <asp:ListItem>Shajapur</asp:ListItem>
+                                <asp:ListItem>Ujjain</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="font-bold">Select Block Name/ ब्लॉक का नाम चुनें</label>
+                            <asp:DropDownList runat="server" CssClass="form-control select2">
+                                <asp:ListItem>--Select--</asp:ListItem>
+                                <asp:ListItem>Agar</asp:ListItem>
+                                <asp:ListItem>Barod</asp:ListItem>
+                                <asp:ListItem>Nalkheda</asp:ListItem>
+                                <asp:ListItem>Susner</asp:ListItem>
+                                <asp:ListItem>Alirajpur</asp:ListItem>
+                                <asp:ListItem>Bhabra</asp:ListItem>
+                                <asp:ListItem>Katthiwara</asp:ListItem>
+                                <asp:ListItem>Sondwa</asp:ListItem>
+                                <asp:ListItem>Udaygarh</asp:ListItem>
+                                <asp:ListItem>Jobat</asp:ListItem>
+                                <asp:ListItem>Anuppur</asp:ListItem>
+                                <asp:ListItem>Jaithari</asp:ListItem>
+                                <asp:ListItem>Kotma</asp:ListItem>
+
+                            </asp:DropDownList>
+                        </div>
+                        <div class="col-md-3">
+                                <label class="font-bold">Select Sankul Name/संकुल नाम का चयन करें</label>
+                                <asp:DropDownList CssClass="form-control select2" runat="server">
+                                    <asp:ListItem>All</asp:ListItem>
+                                    <asp:ListItem>AKBARPUR GOVT. HS</asp:ListItem>
+                                    <asp:ListItem>BERASIA (BOYS) GOVT.HSS</asp:ListItem>
+                                    <asp:ListItem>DHAMARRA GOVT. HS</asp:ListItem>
+                                    <asp:ListItem>EENT KHEDI GOVT. HSS</asp:ListItem>
+                                    <asp:ListItem>BAIRAGARH (BOYS) GOVT.HSS</asp:ListItem>
+                                    <asp:ListItem>BERAISA (GIRLS) SN HSS</asp:ListItem>
+                                    <asp:ListItem>BAGRODA GOVT. HS</asp:ListItem>
+                                    <asp:ListItem>BARKHEDI (GIRLS) GOVT.HSS</asp:ListItem>
+                                    <asp:ListItem>GOVINDPURA (GIRLS) GO.HSS</asp:ListItem>
+                                    <asp:ListItem>GUNGA GOVT. HSS</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
+                        </div>
+                         <div class="row align-items-end">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="font-bold">From Date/की तिथि से</label>
+                                <%--<asp:TextBox ID="TextBox1" placeholder="Select Date..." runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>--%>
+                                <input type="date" class="form-control" placeholder="17/11/2023" />
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="font-bold">To Date/तारीख तक</label>
+                                <%--<asp:TextBox ID="txtPurchase" placeholder="Select Date..." runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>--%>
+                                <input type="date" class="form-control" placeholder="17/11/2023" />
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-5">
+                            <div class="form-group ">
+                                <asp:Button runat="server" Text="Search" OnClick="View1_Click" CssClass="btn w-lg btn-outline-success btn-rounded" />
+
+                                <a href="RPT_MeargingSchools.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                To Date<br />
-                                दिनांक तक</label>
-                            <input type="date" class="form-control" placeholder="17/11/2023" />
+
+                    <%--</div>--%>
+                </fieldset>
+                <fieldset runat="server" id="report" visible="false">
+                    <legend>Details/विवरण</legend>
+                    <div class="row justify-content-end">
+                        <div class="col-md-4 text-end">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <hr />
-                <div class="row align-items-end">
-                    <div class="col-md-12">
-                        <div class="form-group ">
-                            <asp:Button runat="server" Text="Search" OnClick="View1_Click" CssClass="btn w-lg btn-outline-success btn-border" />
 
-                            <a href="RPT_MeargingSchools.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="table table-bordered table-responsive-lg" style="border: 2px">
+
+                                <tbody>
+                                    <tr class="card-header">
+                                        <th colspan="4">Anchor School to be Merged (स्कूल जिसमे विलय करना हैं)</th>
+                                        <th colspan="5">School to merge (स्कूल जिसका विलय करना हैं)</th>
+
+                                    </tr>
+                                    <tr>
+                                        <th style="width: 5%">Sr. No./क्रमांक</th>
+                                        <th>UDISE Code/UDISE कोड</th>
+                                    <th>School Name/स्कूल के नाम</th>
+                                        <th>Category/वर्ग</th>
+                                        <th>Sr.No./क्रमांक</th>
+                                        <th>Effective Date/प्रभावी तिथि</th>
+                                        <th>UDISE Code/UDISE कोड</th>
+                                         <th>School Name/स्कूल के नाम</th>
+                                        <th>Category/वर्ग</th>
+
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">1</td>
+                                        <td rowspan="2">23354946579</td>
+                                        <td rowspan="2">Sarasvati Vidhya Mandir</td>
+                                        <td rowspan="2">Upper Primary</td>
+                                        <td>1</td>
+                                        <td>07/12/2023</td>
+                                        <td>23354566851</td>
+                                        <td>Crist Academy School</td>
+                                        <td>Primary</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>10/12/2023</td>
+                                        <td>23359924351</td>
+                                        <td>Rose Mary School</td>
+                                        <td>Upper Primary</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">2</td>
+                                        <td rowspan="2">23354912798</td>
+                                        <td rowspan="2">Bal Bharti School</td>
+                                        <td rowspan="2">Higher Secondary</td>
+                                        <td>1</td>
+                                        <td>07/12/2023</td>
+                                        <td>23354932167</td>
+                                        <td>Delhi Public School</td>
+                                        <td>Primary</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>10/12/2023</td>
+                                        <td>23321684564</td>
+                                        <td>Priyanka Convent School</td>
+                                        <td>Secondary</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="3">3</td>
+                                        <td rowspan="3">23247946556</td>
+                                        <td rowspan="3">Geetanjali Public School</td>
+                                        <td rowspan="3">Higher Secondary</td>
+                                        <td>1</td>
+                                        <td>07/12/2023</td>
+                                        <td>23124568523</td>
+                                        <td>Modern Convent School</td>
+                                        <td>Primary</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>10/12/2023</td>
+                                        <td>23154698521</td>
+                                        <td>MVM Public School</td>
+                                        <td>Primary</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>10/12/2023</td>
+                                        <td>23654896523</td>
+                                        <td>Reema Vidhya Mandir</td>
+                                        <td>Upper Primary</td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                </div>
 
-                <%--</div>--%>
-            </fieldset>
-            <fieldset runat="server" id="report" visible="false">
-                <legend>Details / विवरण</legend>
-                <div class="row justify-content-end">
-                    <div class="col-md-4 text-end">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-55">Excel</button>
-                            <button class="btn btn-info btn-rounded w-55">PDF</button>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..."/>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <table class="table table-bordered table-responsive-lg" style="border: 2px">
-
-                            <tbody>
-                                <tr class="text-center">
-                                    <th colspan="4">Anchor School to be Merged <br />स्कूल जिसमे विलय करना हैं</th>
-                                    <th colspan="5">School to merge <br />स्कूल जिसका विलय करना हैं</th>
-
-                                </tr>
-                                <tr>
-                                    <th>Sr. No.<br />सरल क्र.</th>
-                                    <th>UDISE Code<br />UDISE कोड</th>
-                                    <th>School Name<br />स्कूल का नाम</th>
-                                    <th>Category<br />वर्ग</th>
-                                    <th>Sr.No.<br />क्रमांक</th>
-                                    <th>Effective Date<br />प्रभावी तिथि</th>
-                                    <th>UDISE Code<br />UDISE कोड</th>
-                                    <th>School Name<br />स्कूल का नाम</th>
-                                    <th>Category<br />वर्ग</th>
-
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">1</td>
-                                    <td rowspan="2">23354946579</td>
-                                    <td rowspan="2">Sarasvati Vidhya Mandir</td>
-                                    <td rowspan="2">Upper Primary</td>
-                                    <td>1</td>
-                                    <td>07/12/2023</td>
-                                    <td>23354566851</td>
-                                    <td>Crist Academy School</td>
-                                    <td>Primary</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>10/12/2023</td>
-                                    <td>23359924351</td>
-                                    <td>Rose Mary School</td>
-                                    <td>Upper Primary</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">2</td>
-                                    <td rowspan="2">23354912798</td>
-                                    <td rowspan="2">Bal Bharti School</td>
-                                    <td rowspan="2">Higher Secondary</td>
-                                    <td>1</td>
-                                    <td>07/12/2023</td>
-                                    <td>23354932167</td>
-                                    <td>Delhi Public School</td>
-                                    <td>Primary</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>10/12/2023</td>
-                                    <td>23321684564</td>
-                                    <td>Priyanka Convent School</td>
-                                    <td>Secondary</td>
-                                </tr>
-
-                                <tr>
-                                    <td rowspan="3">3</td>
-                                    <td rowspan="3">23247946556</td>
-                                    <td rowspan="3">Geetanjali Public School</td>
-                                    <td rowspan="3">Higher Secondary</td>
-                                    <td>1</td>
-                                    <td>07/12/2023</td>
-                                    <td>23124568523</td>
-                                    <td>Modern Convent School</td>
-                                    <td>Primary</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>10/12/2023</td>
-                                    <td>23154698521</td>
-                                    <td>MVM Public School</td>
-                                    <td>Primary</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>10/12/2023</td>
-                                    <td>23654896523</td>
-                                    <td>Reema Vidhya Mandir</td>
-                                    <td>Upper Primary</td>
-                                </tr>
-
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-            </fieldset>
-            <%-- <fieldset>
+                </fieldset>
+                <%-- <fieldset>
                     <legend>Description</legend>
                     <div class="row">
                         <div class="col-md-12">
@@ -387,9 +377,9 @@
                         </div>
                     </div>
                 </fieldset>--%>
-        </div>
+            </div>
 
-    </div>
+        </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <%--<script type="text/javascript">

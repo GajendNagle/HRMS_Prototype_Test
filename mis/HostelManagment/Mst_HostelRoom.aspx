@@ -1,5 +1,4 @@
-﻿
-<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Mst_HostelRoom.aspx.cs" Inherits="mis_HostelManagment_Mst_HostelRoom" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Mst_HostelRoom.aspx.cs" Inherits="mis_HostelManagment_Mst_HostelRoom" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
@@ -47,9 +46,17 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
-                <div class="col-lg-6">
-                    <h4 class="card-title">Hostel Room Details / छात्रावास कक्ष का विवरण
-                    </h4>
+                <div class="col-xl-10 col-md-12">
+                    <div class="marqueecontainerinfo">
+                        <div class="headertext btn btn-primary rounded-pill">
+                            विवरण
+                        </div>
+                        <div class="">
+                            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext text-black">
+                                Hostel Room Details / छात्रावास कक्ष का विवरण
+                            </marquee>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,7 +67,7 @@
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <label>
-                                Select Hostel Name<br />
+                                Select Hostel Name/<br />
                                 हॉस्टल का चयन करें<span style="color: red;">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -71,7 +78,7 @@
                         </div>
                         <div class="col-md-3">
                             <label>
-                                Select Room Type
+                                Select Room Type/
                                     <br />
                                 कक्ष प्रकार का चयन करें<span style="color: red;">*</span></label>
                             <select class="form-control select2">
@@ -85,7 +92,7 @@
                         </div>
                         <div class="col-md-3">
                             <label>
-                                Select Hostel Room Number<br />
+                                Select Hostel Room Number/<br />
                                 हॉस्टल कक्ष नंबर का चयन करें<span style="color: red;">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
@@ -99,13 +106,13 @@
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <label>
-                                Enter No. of Bed<br />
+                                Enter No. of Bed/<br />
                                 बिस्तर की संख्या दर्ज करें<span style="color: red;">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter No. of Bed" />
                         </div>
                         <div class="col-md-3">
                             <label>
-                                Enter Rent Per Bed<br />
+                                Enter Rent Per Bed/<br />
                                 प्रति बिस्तर किराया दर्ज करें<span style="color: red;">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Rent per Bed" />
                         </div>
@@ -113,7 +120,7 @@
 
                     <hr />
                     <div class="col-md-12">
-                        <div class="form-group text-center">
+                        <div class="form-group">
                             <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border" onclick="document.getElementById('HostlInfo').style.display = 'block'">Save</button>
                             <a href="Mst_HostelRoom.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
@@ -147,19 +154,21 @@
                             <table class="table table-bordered text-center">
                                 <thead>
                                     <tr role="row">
-                                        <th scope="col">Sr.No.<br />
+                                        <th scope="col">Sr.No./<br />
                                             क्र.सं.</th>
-                                        <th scope="col">Hostel Name<br />
+                                        <th scope="col">Hostel Name/<br />
                                             हॉस्टल का नाम</th>
-                                        <th scope="col">Room Type<br />
+                                        <th scope="col">Room Type/<br />
                                             कक्ष प्रकार   </th>
-                                        <th scope="col">Hostel Room Number<br />
+                                        <th scope="col">Hostel Room Number/<br />
                                             हॉस्टल का कक्ष नंबर </th>
-                                        <th scope="col">No. of Bed<br />
+                                        <th scope="col">No. of Bed/<br />
                                             बिस्तर की संख्या </th>
-                                        <th scope="col">Rent Per Bed<br />
+                                        <th scope="col">Rent Per Bed/<br />
                                             प्रति बिस्तर किराया</th>
-                                        <th scope="col">Action
+                                        <th scope="col">Action/
+                                            <br />
+                                            कार्रवाई
                                         </th>
                                     </tr>
                                 </thead>

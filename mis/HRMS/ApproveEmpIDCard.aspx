@@ -368,36 +368,40 @@
                     </div>
                     <hr />
                     <div class="row">
-    <div class="col-md-12">
-        <button type="button" class="btn btn-success btn-border" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Get DSC</button>
-        <a href="ApproveEmpIDCard.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
-    </div>
-</div>
-                </fieldset>
-
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-modal="true" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 id="staticBackdropLabel" class="modal-title"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <fieldset>
-                    <legend>Verification</legend>
-                    <div class="row">
-                        <label>OTP (one time Password)</label>
-                        <input class="form-control" placeholder="Enter Verification Code">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-success btn-border" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Get DSC</button>
+                            <a href="ApproveEmpIDCard.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                        </div>
                     </div>
                 </fieldset>
-                <div class="modal-footer text-center">
-                    <button type="button" class="Alert-Confirmation btn btn-success" data-bs-dismiss="modal" onclick="document.getElementById('tblFields').style.display='none'">Submit</button>
-                    <button type="button" id="ContentBody_clearfirst" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog ">
+                        <div class="modal-content">
+                            <div class="modal-header">
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <fieldset>
+                                    <legend>Verification</legend>
+
+                                    <div class="row">
+                                        <label>OTP(one time Password)</label>
+                                        <input class="form-control" placeholder="Enter Verification Code" />
+                                    </div>
+
+                                </fieldset>
+                                <div class="modal-footer text-center">
+
+                                    <button type="button" class="Alert-Confirmation btn btn-success" data-bs-dismiss="modal" onclick="document.getElementById('tblFields').style.display='none'">Submit</button>
+                                    <button type="button" id="ContentBody_clearfirst" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
 
                 <%--  <div class="row" id="generateorder">
                     <div class="col-md-12 text-center">

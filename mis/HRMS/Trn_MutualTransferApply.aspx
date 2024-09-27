@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Trn_MutualTransferApply.aspx.cs" Inherits="mis_HRMS_Trn_ApplMutualTransfer" %>
+﻿ <%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Trn_MutualTransferApply.aspx.cs" Inherits="mis_HRMS_Trn_ApplMutualTransfer" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
@@ -27,7 +27,7 @@
                         </li>
                         <li class="breadcrumb-item">
                             <a href="#EmployeeMutualTransfer" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                                <span>Employee Mutual Transfer</span></a>
+                                <span>Transfer Request</span></a>
                         </li>
                         <li class="breadcrumb-item">Apply Mutual Transfer</li>
                     </ol>
@@ -35,186 +35,192 @@
             </div>
         </div>
     </div>
-    <div class="row mb-1">
+    <%-- <div class="row mb-1">
         <div class="col-md-4 ">
 
             <img src="../../img/OTTMS.png" style="height: 70px" itle="Compassionate Appointment Facilitation &amp; Monitoring System (CAFMS)">
             <p></p>
         </div>
-    </div>
+    </div>--%>
     <div class="card card-border-primary">
         <div class="card-header">
-            <div class="row align-items-end">
-                <div class="col-lg-7">
-                    <h4 class="card-title">Apply Mutual Transfer / पारस्परिक स्थानांतरण लागू करें</h4>
+            <div class="row">
+                <div class="col-xxl-10 col-md-12">
+                    <div class="marqueecontainer border-0">
+                        <div class="headertext btn btn-primary rounded-pill py-2 d-flex align-items-center">
+                            &#x92A;&#x93E;&#x930;&#x938;&#x94D;&#x92A;&#x930;&#x93F;&#x915; &#x938;&#x94D;&#x925;&#x93E;&#x928;&#x93E;&#x902;&#x924;&#x930;&#x923;  &#x915;&#x947; &#x932;&#x93F;&#x90F; &#x906;&#x935;&#x947;&#x926;&#x928; &#x915;&#x930;&#x947;&#x902;,
+                        विवरण
+                        </div>
+                        <div>
+                            <marquee style="width: 100%;"
+                                onmouseover="this.stop();" onmouseout="this.start();"
+                                direction="left" behavior="scroll" scrollamount="7" class="Marqueetext text-black mt-1">
+                                कर्मचारी इस पेज के माध्यम से पारस्परिक स्थानांतरण  के लिए आवेदन कर सकता  हैं।
+                            </marquee>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Employee Personal Information / कर्मचारी की व्यक्तिगत जानकारी
+                <legend class="border border-dark border-2">Employee Personal Information / कर्मचारी की व्यक्तिगत जानकारी
                 </legend>
                 <div class="row align align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                         <div class="form-group">
                             <label>
-                                Employee Name
-                                <br />
-                                कर्मचारी का नाम<span style="color: red">*</span></label>
-                            <input name="txtEmpName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Employee Name" value="Arjun Talwar" />
+                                Employee Name (Code)/<br />
+                                कर्मचारी का नाम (कोड)</label>
+                            <input name="txtEmpName" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="Enter Employee Name" value="Sajeda  Hameed (AA1142)" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                         <div class="form-group">
                             <label>
-                                Unique ID
-                                <br />
-                                यूनिक आई.डी<span style="color: red">*</span></label>
-                            <input name="txtUniqueID" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Unique ID" value="AR4781" />
+                                Unique ID/<br />
+                                यूनिक आई.डी</label>
+                            <input name="txtUniqueID" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="Enter Unique ID" value="AA1142" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                         <div class="form-group">
                             <label>
-                                Designation
-                                <br />
-                                पदनाम<span style="color: red">*</span></label>
-                            <input name="txtDesignation" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Designation" value="Teacher (UDT)" />
+                                Designation/<br />
+                                पदनाम</label>
+                            <input name="txtDesignation" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="Enter Designation" value="Prathmik Shikshak" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                         <div class="form-group">
                             <label>
-                                District
-                                <br />
-                                ज़िला<span style="color: red">*</span></label>
-                            <input name="txtDistrict" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter District" value="Bhopal" />
+                                District Name (Code)/<br />
+                                जिले का नाम (कोड)</label>
+                            <input name="txtDistrict" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="Enter District" value="Bhopal (32)" />
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                         <div class="form-group">
                             <label>
-                                Block
-                                <br />
-                                विकासखण्ड<span style="color: red">*</span></label>
-                            <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Block" value="Govindapura" />
+                                Block Name (Code)/<br />
+                                विकासखण्ड का नाम (कोड)</label>
+                            <input name="txtBlock" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="Enter Block" value="Phanda URBAN- New City (211)" />
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                         <div class="form-group">
                             <label>
-                                Area
-                                <br />
-                                क्षेत्र<span style="color: red">*</span></label>
-                            <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Area" value="Urban" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Sankul Code/ Name 
-                 <br />
-                                संकुल कोड / नाम<span style="color: red">*</span></label>
-                            <input name="txtSankulName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Sankul Name" value="15151235256-PVT VINAYAK PUBLIC SCHOOL TARRAKHURD" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                School Code/ Name 
-                 <br />
-                                स्कूल कोड / नाम<span style="color: red">*</span></label>
-                            <input name="txtSchoolName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter School Name" value="15151235256-PVT VINAYAK PUBLIC SCHOOL TARRAKHURD" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Subject 
-                            <br />
-                                विषय<span style="color: red">*</span></label>
-                            <input name="txtSubject" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Subject" value="Mathematics" />
+                                Sankul Name (Code)/<br />
+                                संकुल का नाम (कोड)</label>
+                            <input name="txtSankulName" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="Enter Area" value="0" />
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                         <div class="form-group">
                             <label>
-                                Date of Birth 
-                                    <br />
-                                जन्मतिथि<span style="color: red">*</span></label>
-                            <input name="DOB" id="txtDOB1" class="form-control" readonly autocomplete="off" value="17/07/1992" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Age (As On 01.07.2024)
-                                <br />
-                                आयु (वर्तमान की स्थिति में)<span style="color: red">*</span></label>
-                            <input name="DOB" id="txtAgeCrrnt1" class="form-control" readonly autocomplete="off" value="32 years" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Professional Qualifications 
-                                <br />
-                                शैक्षणिक योग्यता<span style="color: red">*</span></label>
-                            <input name="txtQualification" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Educational And Professional Qualifications" value="B Tech" />
+                                Present OIS (UDISE Code)/<br />
+                                वर्तमान ओ.आई.एस.(कोड)</label>
+                            <input name="txtOIScode" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="GOVT HSS BAGH SEVANIA (23320302539)" value="GOVT HSS BAGH SEVANIA (23320302539)" />
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+
+
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                         <div class="form-group">
                             <label>
-                                Panel Group 
-                                <br />
-                                पैनल समूह<span style="color: red">*</span></label>
-                            <input name="txtPanel" type="text" class="form-control" readonly autocomplete="off" value="SSS-1 Mathematics" />
+                                Area (Urban/Rural)/<br />
+                                क्षेत्र (शहरी/ग्रामीण)</label>
+                            <input name="txtArea" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="Enter Sankul Name" value="NA" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
+                        <div class="form-group">
+                            <label>
+                                Date of Birth/<br />
+                                जन्मतिथि</label>
+                            <input name="txtDob" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="Enter School Name" value="05/10/1962" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
+                        <div class="form-group">
+                            <label>
+                                Age (Current age in years )/<br />
+                                आयु (वर्तमान आयु वर्षों में)</label>
+                            <input name="txtAge" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="Enter Subject" value="61" />
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                         <div class="form-group">
                             <label>
-                                Date Posted in Current Organization 
-                              <br />
-                                वर्तमान संस्था में पदस्थ दिनांक<span style="color: red">*</span></label>
-                            <input name="DOB" id="txtDatePostedCrrnOrg1" class="form-control" readonly autocomplete="off" value="15/04/2002" />
+                                Panel Name/<br />
+                                पैनल का नाम</label>
+                            <input name="txtPanel" id="txtDOB1" class="form-control" disabled style="color: black" autocomplete="off" value="SSS-2 Social Science" />
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                         <div class="form-group">
                             <label>
-                                Total Duration in Years 
-                                <br />
-                                कुल अवधि वर्षो में<span style="color: red">*</span></label>
-                            <input name="txtTotalDurantionYears" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Total Duration in Years" value="4" />
+                                Subject of Teaching/<br />
+                                शिक्षण का विषय</label>
+                            <input name="txtSubject" id="txtAgeCrrnt1" class="form-control" disabled style="color: black" autocomplete="off" value="HM-PS" />
                         </div>
                     </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
+                        <div class="form-group">
+                            <label>
+                                Professional Qualification/<br />
+                                व्यावसायिक योग्यता</label>
+                            <input name="txtQualification" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="Enter Educational And Professional Qualifications" value="NA" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
+                        <div class="form-group">
+                            <label>
+                                Posting Date in Current Organization/<br />
+                                वर्तमान संस्था में पदस्थी दिनांक</label>
+                            <input name="txtPostingDate" type="text" class="form-control" disabled style="color: black" autocomplete="off" value="04/09/2024" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
+                        <div class="form-group">
+                            <label>
+                                Total Service Duration in Current Organization(In Years)/<br />
+                                वर्तमान संस्था में कुल सेवा अवधि (वर्षो में)</label>
+                            <input name="DOB" id="txtDatePostedCrrnOrg1" class="form-control" disabled style="color: black" autocomplete="off" value="0" />
+                        </div>
+                    </div>
+
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Unique Code of the Person With Whom Mutual Transfer is Desired
-                    <br />
-                    जिसके साथ पारस्परिक स्थानांतरण चाहा गया है उसका यूनिक कोड
+                <legend  class="border border-dark border-2">Unique ID of the Second Employee is Required For Mutual Transfer / पारस्परिक स्थानांतरण हेतु द्वितीय कर्मचारी की यूनिक आई.डी.आवश्यक है|
                 </legend>
                 <div class="row align-items-end">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>
-                                Unique code of the person with whom mutual transfer is desired  
-                                <br />
-                                जिसके साथ पारस्परिक स्थानांतरण चाहा गया है उसका यूनिक कोड<span style="color: red">*</span></label>
-                            <input name="txtTotalEnrolledCrrnPost" type="text" class="form-control" autocomplete="off" placeholder="Enter Unique code " />
+                                Enter Unique Id With Whom Mutual Transfer is Desired/<br />
+                                जिसके साथ पारस्परिक स्थान्तरण चाहा गया है उसकी यूनिक आई.डी.<span style="color: red">*</span></label>
+                            <input name="txtTotalEnrolledCrrnPost" id="txtMutualUniqueId" type="text" class="form-control" autocomplete="off" placeholder="Enter Unique Id With Whom Mutual Transfer is Desired " />
+                            <%--<div id="autocomplete-list" class="autocomplete-items"></div>--%>
+                            <span id="mutualEmpUniqueIdError" style="display:none; color:red;">Data Required*</span>
+
+
+
                         </div>
                     </div>
                     <div class="col-md-5">
                         <div class="form-group">
-                            <button id="Button1" type="button" class="btn w-lg btn-success btn-border" onclick="myFunction()">View</button>
+                            <button id="Button1" type="button" class="btn btn-outline-info btn-border w-lg" onclick="myFunction()">View Employee Information</button>
 
                         </div>
                     </div>
@@ -223,154 +229,138 @@
             </fieldset>
             <div id="empDetail">
                 <fieldset>
-                    <legend>Employee Personal Information whom mutual transfer is desired
-                        <br />
-                        कर्मचारी की व्यक्तिगत जानकारी जिसका पारस्परिक स्थानांतरण चाहा गया है
+                    <legend class="border border-dark border-2">Employee Personal Information whom Mutual Transfer is Desired / कर्मचारी की व्यक्तिगत जानकारी जिसका पारस्परिक स्थानांतरण वांछित है
                     </legend>
-                    <div class="row align align-items-end">
-                        <div class="col-md-3">
+                    <div class="row align align-items-baseline">
+                        <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                             <div class="form-group">
                                 <label>
-                                    Employee Name
-                                    <br />
-                                    कर्मचारी का नाम<span style="color: red">*</span></label>
-                                <input name="txtEmpName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Employee Name" value="Aman Patidar" />
+                                    Employee Name (Code)/<br />
+                                    कर्मचारी का नाम (कोड)<span style="color: red">*</span></label>
+                                <input name="txtEmpName" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="Dinesh Kumar Baghel Kumar Baghel (BL5715)" value="Dinesh Kumar Baghel Kumar Baghel (BL5715) " />
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                             <div class="form-group">
                                 <label>
-                                    Unique ID
-                                    <br />
-                                    यूनिक आई.डी<span style="color: red">*</span></label>
-                                <input name="txtUniqueID" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Unique ID" value="AR4890" />
+                                    Unique ID/<br />
+                                    यूनिक आई.डी.<span style="color: red">*</span></label>
+                                <input name="txtUniqueID" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="BL5715" value="BL5715" />
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                             <div class="form-group">
                                 <label>
-                                    Designation
+                                    Designation/
                                     <br />
                                     पदनाम<span style="color: red">*</span></label>
-                                <input name="txtDesignation" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Designation" value="Teacher (UDT)" />
+                                <input name="txtDesignation" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="Asstt Teacher(LDT)" value="Asstt Teacher(LDT)" />
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                             <div class="form-group">
                                 <label>
-                                    District
-                                    <br />
-                                    ज़िला<span style="color: red">*</span></label>
-                                <input name="txtDistrict" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter District" value="Bhopal" />
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Block
-                                    <br />
-                                    ब्लॉक<span style="color: red">*</span></label>
-                                <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Block" value="Govindapura" />
+                                    District Name(Code)/<br />
+                                    जिले का नाम(कोड)<span style="color: red">*</span></label>
+                                <input name="txtDistrict" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="Jhabua (24)" value="Jhabua (24)" />
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                             <div class="form-group">
                                 <label>
-                                    Area
-                                    <br />
-                                    क्षेत्र<span style="color: red">*</span></label>
-                                <input name="txtBlock" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Area" value="Urban" />
+                                    Block Name(Code)/<br />
+                                    विकासखण्ड का नाम(कोड)<span style="color: red">*</span></label>
+                                <input name="txtBlock" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="Jhabua (150)" value="Jhabua (150)" />
                             </div>
                         </div>
-                        <div class="col-md-3">
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                             <div class="form-group">
                                 <label>
-                                    Sankul Code/ Name 
-                 <br />
-                                    संकुल कोड / नाम<span style="color: red">*</span></label>
-                                <input name="txtSankulName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Sankul Name" value="15151236526-GOV VINAYAK PUBLIC SCHOOL TARRAKHURD" />
+                                    Sankul Name(Code)/<br />
+                                    संकुल का नाम(कोड)<span style="color: red">*</span></label>
+                                <input name="txtBlock" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="BRC, JHABUA (232408OBs02)" value="BRC, JHABUA (232408OBs02)" />
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                             <div class="form-group">
                                 <label>
-                                    School Code/ Name 
-                 <br />
-                                    स्कूल कोड / नाम<span style="color: red">*</span></label>
-                                <input name="txtSchoolName" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter School Name" value="15151235256-PVT VINAYAK PUBLIC SCHOOL TARRAKHURD" />
+                                   Present OIS(UDISE Code)/<br />
+                                    वर्तमान ओ.आई.एस.(कोड)<span style="color: red">*</span></label>
+                                <input name="txtSankulName" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="BRC, JHABUA (232408OBs02)" value="BRC, JHABUA (232408OBs02)" />
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                             <div class="form-group">
                                 <label>
-                                    Subject 
-                                <br />
-                                    विषय <span style="color: red">*</span></label>
-                                <input name="txtSubject" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Subject" value="Mathematics" />
+                                    Area (Urban/Rural)/<br />
+                                    क्षेत्र (शहरी/ग्रामीण)<span style="color: red">*</span></label>
+                                <input name="txtSchoolName" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="NA" value="NA" />
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                             <div class="form-group">
                                 <label>
-                                    Date of Birth 
-                                    <br />
+                                    Date of Birth/<br />
                                     जन्मतिथि<span style="color: red">*</span></label>
-                                <input name="DOB" id="txtDOB" class="form-control" readonly autocomplete="off" value="17/07/1992" />
+                                <input name="txtSubject" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="07/08/1973" value="07/08/1973" />
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                             <div class="form-group">
                                 <label>
-                                    Age (As On 01.07.2024)
-                                    <br />
-                                    आयु (वर्तमान की स्थिति में)<span style="color: red">*</span></label>
-                                <input name="DOB" id="txtAgeCrrnt" class="form-control" readonly autocomplete="off" value="32 years" />
+                                   Current Age (in years )/<br />
+                                    वर्तमान आयु (वर्षों में)<span style="color: red">*</span></label>
+                                <input name="DOB" id="txtDOB" class="form-control" disabled style="color: black" autocomplete="off" value="51" />
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                             <div class="form-group">
                                 <label>
-                                    Professional Qualifications 
-                                    <br />
+                                    Panel Panel/<br />
+                                    शिक्षण का पैनल<span style="color: red">*</span></label>
+                                <input name="DOB" id="txtAgeCrrnt" class="form-control" disabled style="color: black" autocomplete="off" value="SSS-2 Social Science" />
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
+                            <div class="form-group">
+                                <label>
+                                    Subject of Teaching/<br />
+                                    शिक्षण का विषय<span style="color: red">*</span></label>
+                                <input name="txtQualification" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="Social Science  - MS Teacher" value="Social Science  - MS Teacher" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
+                            <div class="form-group">
+                                <label>
+                                   Professional Qualification/<br />
                                     शैक्षणिक योग्यता<span style="color: red">*</span></label>
-                                <input name="txtQualification" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Educational And Professional Qualifications" value="B Tech" />
+                                <input name="txtPanel" type="text" class="form-control" disabled style="color: black" autocomplete="off" value="NA" />
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                             <div class="form-group">
                                 <label>
-                                    Panel Group 
-                                    <br />
-                                    पैनल समूह<span style="color: red">*</span></label>
-                                <input name="txtPanel" type="text" class="form-control" readonly autocomplete="off" value="SSS-1 Mathematics" />
+                                   Posting Date in Current Organization/<br />
+                                    वर्तमान संस्था में पदस्थी दिनांक<span style="color: red">*</span></label>
+                                <input name="DOB" id="txtDatePostedCrrnOrg" class="form-control" disabled style="color: black" autocomplete="off" value="21/10/2010" />
                             </div>
                         </div>
-
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
                             <div class="form-group">
                                 <label>
-                                    Date Posted in Current Organization 
-                              <br />
-                                    वर्तमान संस्था में पदस्थ दिनांक<span style="color: red">*</span></label>
-                                <input name="DOB" id="txtDatePostedCrrnOrg" class="form-control" readonly autocomplete="off" value="15/04/2002" />
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Total Duration in Years 
-                                    <br />
-                                    कुल अवधि वर्षो में<span style="color: red">*</span></label>
-                                <input name="txtTotalDurantionYears" type="text" class="form-control" readonly autocomplete="off" placeholder="Enter Total Duration in Years" value="4" />
+                                    Total Service Duration in Current Organization(In Years)/<br />
+                                    वर्तमान संस्था में कुल सेवा अवधि (वर्षो में)<span style="color: red">*</span></label>
+                                <input name="txtTotalDurantionYears" type="text" class="form-control" disabled style="color: black" autocomplete="off" placeholder="Enter Total Duration in Years" value="13" />
                             </div>
                         </div>
                     </div>
                     <hr />
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 text-center">
                             <button id="Button2" type="button" class="btn btn-success btn w-lg btn-border Alert-Save" onclick="myFunction()">Request Mutual Transfer</button>
 
                             <a href="Trn_MutualTransferApply.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
@@ -380,14 +370,33 @@
             </div>
         </div>
     </div>
-    <script>
-        function myFunction() {
-            document.getElementById("empDetail").style.display = "block";
-
-        }
-    </script>
+   
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+
+     <script>
+         function myFunction() {
+             var txtMutualUniqueId = document.getElementById("txtMutualUniqueId").value; // Get the value of the input field
+             var empDetail = document.getElementById("empDetail");
+             var mutualEmpUniqueIdError = document.getElementById("mutualEmpUniqueIdError");
+
+             if (txtMutualUniqueId === "") {
+                 empDetail.style.display = "none"; // hide empDetail if input is empty
+                 mutualEmpUniqueIdError.style.display = "block";
+
+             } else {
+                 empDetail.style.display = "block"; // show empDetail if input is not empty
+                 mutualEmpUniqueIdError.style.display = "none";
+             }
+
+
+
+            
+         }
+
+     </script>
+
+
     <script>
         debugger;
         !function ($) {

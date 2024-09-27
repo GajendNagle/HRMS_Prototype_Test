@@ -243,7 +243,7 @@
                                     <!-- Add other blocks as needed -->
                                 </select>
                             </div>
-                            <div class="col-md-3">
+                           <%-- <div class="col-md-3">
                                 <label>
                                    Select Village
                                     <br />
@@ -255,7 +255,7 @@
                                     <option value="Arjun Nagar" selected>Arjun Nagar</option>
                                     <!-- Add other villages as needed -->
                                 </select>
-                            </div>
+                            </div>--%>
                             <div class="col-md-3">
                                 <label>
                                    Enter Pincode
@@ -269,6 +269,8 @@
                                     <br />
                                     पता दर्ज करें</label>
                                 <textarea class="form-control" rows="1">123, Main Street, Kalapipal, Bhopal</textarea>
+
+
                             </div>
                             <hr />
                             <div class="col-md-12 ">

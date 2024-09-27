@@ -114,6 +114,14 @@
         #Una {
             display: none;
         }
+
+        #Samviliandate {
+            display: none;
+        }
+
+        #Samvilianno {
+            display: none;
+        }
     </style>
     <style>
         .profileimage {
@@ -192,12 +200,48 @@
                                                 <div class="row align-items-end mb-0">
                                                     <div class="col-xl-9">
                                                         <div class="row align-items-end">
+
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label class="control-label">
+                                                                        Select Employee Registration Type /<br />
+                                                                        कर्मचारी पंजीकरण प्रकार का चयन करें</label>
+                                                                    <select asp-for="MstEmployeeRegistrationVM.EmpRegistrationType" id="EmpRegistrationType" onchange="RegistrationTypeChange();" class="form-select select2">
+                                                                        <option value="1">Counseling Roll No.</option>
+                                                                        <option value="2">Anukampa Niyukty Reg No.</option>
+                                                                    </select>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4" id="dvEmployeeRegistration" style="display: none">
+                                                                <div class="form-group">
+                                                                    <label class="control-label">
+                                                                        Enter Employee Registration No. /<br />
+                                                                        कर्मचारी पंजीकरण संख्या दर्ज करें.</label>
+                                                                    <input asp-for="MstEmployeeRegistrationVM.EmpRegistrationNo" autocomplete="off" class="form-control" maxlength="20" placeholder="Enter Employee Registration No." />
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4" id="dvEmployeeRollNo">
+                                                                <div class="form-group">
+                                                                    <label class="control-label">
+                                                                        Enter Employee Roll No /<br />
+                                                                        कर्मचारी रोल संख्या दर्ज करें
+                                                                    </label>
+                                                                    <input asp-for="MstEmployeeRegistrationVM.EmpRollNo" id="EmpRollNo" autocomplete="off" class="form-control" maxlength="20" placeholder="Enter Employee Roll No." />
+
+                                                                </div>
+                                                            </div>
+
                                                             <div class="col-md-4" hidden="hidden">
                                                                 <div class="form-group">
                                                                     <label>Employee Unique ID<span style="color: red">*</span></label>
                                                                     <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Unique ID" />
                                                                 </div>
                                                             </div>
+
+
+
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label>
@@ -225,6 +269,8 @@
                                                                     <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Last Name" />
                                                                 </div>
                                                             </div>
+
+
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label>
@@ -234,24 +280,7 @@
                                                                     <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Father/Husband Name" />
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-4">
-                                                                <div class="form-group">
-                                                                    <label>
-                                                                        Date of Birth
-                                                                        <br />
-                                                                        जन्म तिथि<span style="color: red">*</span></label>
-                                                                    <input name="ename" id="dob" type="date" class="form-control" autocomplete="off" onchange="calculateAge()" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <div class="form-group">
-                                                                    <label>
-                                                                        Age
-                                                                        <br />
-                                                                        उम्र<span style="color: red">*</span></label>
-                                                                    <input name="ename" id="txtAge" type="text" class="form-control" autocomplete="off" placeholder="Employee Age" />
-                                                                </div>
-                                                            </div>
+
                                                         </div>
                                                     </div>
                                                     <div class="col-xl-3 ">
@@ -267,7 +296,25 @@
                                                     </div>
                                                 </div>
                                                 <div class="row align-items-end">
-                                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                                    <div class="col-md-4 col-lg-4 col-xl-3">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Date of Birth
+                <br />
+                                                                जन्म तिथि<span style="color: red">*</span></label>
+                                                            <input name="ename" id="dob" type="date" class="form-control" autocomplete="off" onchange="calculateAge()" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-xl-3">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Age
+                <br />
+                                                                उम्र<span style="color: red">*</span></label>
+                                                            <input readonly="readonly" name="ename" id="txtAge" type="text" class="form-control" autocomplete="off" placeholder="Employee Age" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-xl-3">
                                                         <div class="form-group">
                                                             <label>
                                                                 Gender
@@ -1511,9 +1558,22 @@
                                                             </select>
                                                         </div>
                                                     </div>
-
-
                                                     <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Is Samvilian No.
+              <br />
+                                                                क्या संविलियन न. हें<span style="color: red">*</span></label>
+                                                            <select id="ddlIsSamvilian" onchange="ShowHidesamvilliondetais()" class="form-control select2">
+                                                                <option value="Select">--Select--</option>
+                                                                <option value="Yes">Yes</option>
+                                                                <option value="No">No</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div id="Samvilianno" class="col-md-6 col-lg-4 col-xl-3 mt-4">
                                                         <div class="form-group">
                                                             <label>
                                                                 Samvilian Order No.
@@ -1522,7 +1582,7 @@
                                                             <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Samvilian Order No" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4">
+                                                    <div id="Samviliandate" class="col-md-6 col-lg-4 col-xl-3 mt-4">
                                                         <div class="form-group">
                                                             <label>
                                                                 Samvilian Order Date
@@ -3702,7 +3762,7 @@
         }
 
         function ShowBankDetails(value) {
-            if (value != "" && value!= " ") {
+            if (value != "" && value != " ") {
 
                 $(".bank").each(function () {
                     if (this.style.display === "none") {
@@ -3839,6 +3899,22 @@
                 idCurDeptName.style.display = "none";
             }
         }
+        function ShowHidesamvilliondetais() {
+            var ddlIsSamvilian = document.getElementById("ddlIsSamvilian");
+            var Samvilianno = document.getElementById("Samvilianno");
+            var Samviliandate = document.getElementById("Samviliandate");
+            if (ddlIsSamvilian.value === "Yes") {
+                Samvilianno.style.display = "block";
+                Samviliandate.style.display = "block";
+
+            } else if (ddlCurWorkingDept.value === "No") {
+                Samvilianno.style.display = "none";
+                Samviliandate.style.display = "none";
+            } else {
+                Samvilianno.style.display = "none";
+                Samviliandate.style.display = "none";
+            }
+        }
         function displayImage(input) {
             var file = input.files[0];
 
@@ -3973,5 +4049,17 @@
                 handleConfirmationAndActivate('navpills-4');
             });
         });
+
+        function RegistrationTypeChange() {
+            var _RegTypeValuet = document.getElementById("EmpRegistrationType");
+            var _RegTypeValue = _RegTypeValuet.value;
+            if (_RegTypeValue == '1') {
+                document.getElementById("dvEmployeeRegistration").style.display = "none";  // Hide other elements if needed
+                document.getElementById("dvEmployeeRollNo").style.display = "block";
+            } else if (_RegTypeValue == '2') {
+                document.getElementById("dvEmployeeRegistration").style.display = "block";
+                document.getElementById("dvEmployeeRollNo").style.display = "none";  // Hide other elements if needed
+            }
+        }
     </script>
 </asp:Content>

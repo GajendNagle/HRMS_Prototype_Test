@@ -31,6 +31,12 @@
             </div>
         </div>
     </div>
+
+
+    <%-- <div class="row page-titles mb-4">
+            <%--<div class="col-md-5 align-self-center">
+                <h4 class="text-themecolor ">School Report Card/स्कूल रिपोर्ट कार्ड</h4>
+            </div>--%>
     <div class="content-wrapper">
         <div class="container-fluid">
             <div class="card card-border-primary">
@@ -43,22 +49,21 @@
                 </div>
                 <div class="card-body">
                     <div class="row align-items-end">
-                        <div class="col-md-4">
-                             <div class="form-group"><label>
+                        <div class="col-md-6">
+                            <label>
                                 DISE Code<br />
                                 डाईस कोड<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="23510817802" />
                         </div>
-                        </div>
-                        <div class="col-md-4">
-                             <div class="form-group"><label>
+                        <div class="col-md-6">
+                            <label>
                                 Confirm DISE Code<br />
                                 डाईस कोड की पुष्टि करें<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="23510817802" />
                         </div>
-                        </div>
-
-                        <div class="col-md-4 mt-4">
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-12 mt-4">
                             <div class="form-group">
                                 <asp:Button runat="server" CssClass="btn w-lg btn-outline-success btn-border" OnClick="btnSave_Click" Text="View Details" ID="btnSave" />
                             </div>
@@ -116,35 +121,35 @@
                                 <div class="form-group">
                                     <label>
                                         Cateogry Details<br />
-                                        वर्ग विवरण<span style="color: red">*</span></label>
+                                        श्रेणी विवरण<span style="color: red">*</span></label>
                                     <asp:TextBox runat="server" CssClass="form-control">Class 1 to 12</asp:TextBox>
                                 </div>
                             </div>
-                            <%-- <div class="row align-items-end" id="dv_rpt2" runat="server">--%>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>
-                                        Urban / Rural<br />
-                                        शहरी / ग्रामीण<span style="color: red">*</span></label>
-                                    <asp:TextBox runat="server" CssClass="form-control">Urban</asp:TextBox>
+                           <%-- <div class="row align-items-end" id="dv_rpt2" runat="server">--%>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>
+                                            Urban/Rural<br />
+                                            शहरी ग्रामीण<span style="color: red">*</span></label>
+                                        <asp:TextBox runat="server" CssClass="form-control">Urban</asp:TextBox>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>
-                                        Special School<br />
-                                        विशेष विद्यालय<span style="color: red">*</span></label>
-                                    <asp:TextBox runat="server" CssClass="form-control">Yes</asp:TextBox>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>
+                                            Special School<br />
+                                            विशेष विद्यालय<span style="color: red">*</span></label>
+                                        <asp:TextBox runat="server" CssClass="form-control">Yes</asp:TextBox>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>
-                                        School-Dise<br />
-                                        स्कूल-डाईस<span style="color: red">*</span></label>
-                                    <asp:TextBox runat="server" CssClass="form-control">JNV-23510817802</asp:TextBox>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>
+                                            School-Dise<br />
+                                            स्कूल-डाईस<span style="color: red">*</span></label>
+                                        <asp:TextBox runat="server" CssClass="form-control">JNV-23510817802</asp:TextBox>
+                                    </div>
                                 </div>
-                            </div>
                             <%--</div>--%>
                             <div runat="server" class="mt-4 col-12" id="divTables" visible="false">
                                 <fieldset>
@@ -157,7 +162,7 @@
                                                     <thead>
                                                         <tr class="card-header text-center">
                                                             <th>Sr. No.<br />
-                                                                सरल क्र.</th>
+                                                                क्र.सं</th>
                                                             <th>1st - 5th<br />
                                                                 पहली-पांचवीं</th>
                                                             <th>6th - 10th<br />
@@ -205,22 +210,14 @@
                                             <div class="table-responsive">
                                                 <table class="table table-bordered">
                                                     <tr class="card-header">
-                                                        <th>Sr. No.<br />
-                                                            सरल क्र.</th>
-                                                        <th>Employee Code<br />
-                                                            कर्मचारी कोड</th>
-                                                        <th>Name<br />
-                                                            नाम</th>
-                                                        <th>Present Posting Date<br />
-                                                            वर्तमान पोस्टिंग दिनांक</th>
-                                                        <th>Designation<br />
-                                                            पदनाम</th>
-                                                        <th>Panel<br />
-                                                            पैनल</th>
-                                                        <th>Subject<br />
-                                                            विषय</th>
-                                                        <th>Status<br />
-                                                            स्थिति</th>
+                                                        <th>Sr. No.<br />क्र.सं</th>
+                                                        <th>Employee<br />कर्मचारी</th>
+                                                        <th>Name<br />नाम</th>
+                                                        <th>Present Posting Date<br />वर्तमान पोस्टिंग तिथि</th>
+                                                        <th>Designation<br />पद</th>
+                                                        <th>Panel<br />पैनल</th>
+                                                        <th>Subject<br />विषय</th>
+                                                        <th>Status<br />स्थिति</th>
                                                     </tr>
                                                     <tr>
                                                         <td>1</td>
@@ -438,22 +435,14 @@
                                             <div class="table-responsive">
                                                 <table class="table table-bordered">
                                                     <tr class="card-header">
-                                                        <th>Sr. No.<br />
-                                                            सरल क्र.</th>
-                                                        <th>Panel<br />
-                                                            पैनल</th>
-                                                        <th>Post Code<br />
-                                                            पोस्ट कोड</th>
-                                                        <th>Sanctioned Posts<br />
-                                                            स्वीकृत पद</th>
-                                                        <th>Working<br />
-                                                            कार्यरत</th>
-                                                        <th>Vacant<br />
-                                                            रिक्त</th>
-                                                        <th>Surplus<br />
-                                                            अतिरिक्त</th>
-                                                        <th>Remarks<br />
-                                                            टिप्पणी</th>
+                                                        <th>Sr. No.<br />क्र.सं</th>
+                                                        <th>Panel<br />पैनल</th>
+                                                        <th>Post Code<br />पोस्ट कोड</th>
+                                                        <th>Sanctioned Posts<br />स्वीकृत पद</th>
+                                                        <th>Working<br />कार्यरत</th>
+                                                        <th>Vacant<br />रिक्त</th>
+                                                        <th>Surplus<br />आधिक्य</th>
+                                                        <th>Remarks<br />टिप्पणी</th>
                                                     </tr>
                                                     <tr>
                                                         <td>1</td>
@@ -510,172 +499,172 @@
                                                         <td>
                                                             <input class="form-control" /></td>
                                                     </tr>
-                                                    <tr>
-                                                        <td>6</td>
-                                                        <td>SSS-1 Chemistry</td>
-                                                        <td>2686584</td>
-                                                        <td>8</td>
-                                                        <td>8</td>
-                                                        <td>0</td>
-                                                        <td style="color: #c258ff">0</td>
-                                                        <td>
-                                                            <input class="form-control" /></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>7</td>
-                                                        <td>SSS-1 Maths</td>
-                                                        <td>2686559</td>
-                                                        <td>9</td>
-                                                        <td>10</td>
-                                                        <td>0</td>
-                                                        <td style="color: #fa382b">1</td>
-                                                        <td>
-                                                            <input class="form-control" /></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>8</td>
-                                                        <td>SSS-1 Biology</td>
-                                                        <td>2686562</td>
-                                                        <td>8</td>
-                                                        <td>10</td>
-                                                        <td>0</td>
-                                                        <td style="color: #fa382b">2</td>
-                                                        <td>
-                                                            <input class="form-control" /></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>9</td>
-                                                        <td>SSS-1 History</td>
-                                                        <td>2686567</td>
-                                                        <td>9</td>
-                                                        <td>10</td>
-                                                        <td>0</td>
-                                                        <td style="color: #fa382b">1</td>
-                                                        <td>
-                                                            <input class="form-control" /></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>10</td>
-                                                        <td>SSS-1 Geography</td>
-                                                        <td>2686570</td>
-                                                        <td>5</td>
-                                                        <td>4</td>
-                                                        <td>1</td>
-                                                        <td style="color: #c258ff">0</td>
-                                                        <td>
-                                                            <input class="form-control" /></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>11</td>
-                                                        <td>SSS-1 Sociology</td>
-                                                        <td>2686573</td>
-                                                        <td>7</td>
-                                                        <td>10</td>
-                                                        <td>0</td>
-                                                        <td style="color: #fa382b">3</td>
-                                                        <td>
-                                                            <input class="form-control" /></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>12</td>
-                                                        <td>SSS-1 Commerce</td>
-                                                        <td>2686575</td>
-                                                        <td>9</td>
-                                                        <td>8</td>
-                                                        <td>1</td>
-                                                        <td style="color: #c258ff">0</td>
-                                                        <td>
-                                                            <input class="form-control" /></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>13</td>
-                                                        <td>SSS-1 Agriculture</td>
-                                                        <td>2686579</td>
-                                                        <td>12</td>
-                                                        <td>11</td>
-                                                        <td>1</td>
-                                                        <td style="color: #c258ff">0</td>
-                                                        <td>
-                                                            <input class="form-control" /></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>14</td>
-                                                        <td>SSS-2 Hindi</td>
-                                                        <td>2686580</td>
-                                                        <td>11</td>
-                                                        <td>13</td>
-                                                        <td>0</td>
-                                                        <td style="color: #fa382b">2</td>
-                                                        <td>
-                                                            <input class="form-control" /></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>15</td>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>SSS-1 Chemistry</td>
+                                                            <td>2686584</td>
+                                                            <td>8</td>
+                                                            <td>8</td>
+                                                            <td>0</td>
+                                                            <td style="color: #c258ff">0</td>
+                                                            <td>
+                                                                <input class="form-control" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>SSS-1 Maths</td>
+                                                            <td>2686559</td>
+                                                            <td>9</td>
+                                                            <td>10</td>
+                                                            <td>0</td>
+                                                            <td style="color: #fa382b">1</td>
+                                                            <td>
+                                                                <input class="form-control" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td>SSS-1 Biology</td>
+                                                            <td>2686562</td>
+                                                            <td>8</td>
+                                                            <td>10</td>
+                                                            <td>0</td>
+                                                            <td style="color: #fa382b">2</td>
+                                                            <td>
+                                                                <input class="form-control" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td>SSS-1 History</td>
+                                                            <td>2686567</td>
+                                                            <td>9</td>
+                                                            <td>10</td>
+                                                            <td>0</td>
+                                                            <td style="color: #fa382b">1</td>
+                                                            <td>
+                                                                <input class="form-control" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10</td>
+                                                            <td>SSS-1 Geography</td>
+                                                            <td>2686570</td>
+                                                            <td>5</td>
+                                                            <td>4</td>
+                                                            <td>1</td>
+                                                            <td style="color: #c258ff">0</td>
+                                                            <td>
+                                                                <input class="form-control" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>11</td>
+                                                            <td>SSS-1 Sociology</td>
+                                                            <td>2686573</td>
+                                                            <td>7</td>
+                                                            <td>10</td>
+                                                            <td>0</td>
+                                                            <td style="color: #fa382b">3</td>
+                                                            <td>
+                                                                <input class="form-control" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12</td>
+                                                            <td>SSS-1 Commerce</td>
+                                                            <td>2686575</td>
+                                                            <td>9</td>
+                                                            <td>8</td>
+                                                            <td>1</td>
+                                                            <td style="color: #c258ff">0</td>
+                                                            <td>
+                                                                <input class="form-control" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>13</td>
+                                                            <td>SSS-1 Agriculture</td>
+                                                            <td>2686579</td>
+                                                            <td>12</td>
+                                                            <td>11</td>
+                                                            <td>1</td>
+                                                            <td style="color: #c258ff">0</td>
+                                                            <td>
+                                                                <input class="form-control" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>14</td>
+                                                            <td>SSS-2 Hindi</td>
+                                                            <td>2686580</td>
+                                                            <td>11</td>
+                                                            <td>13</td>
+                                                            <td>0</td>
+                                                            <td style="color: #fa382b">2</td>
+                                                            <td>
+                                                                <input class="form-control" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15</td>
 
-                                                        <td>SSS-2 English</td>
-                                                        <td>2686569</td>
-                                                        <td>15</td>
-                                                        <td>10</td>
-                                                        <td>5</td>
-                                                        <td style="color: #c258ff">0</td>
-                                                        <td>
-                                                            <input class="form-control" /></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>16</td>
-                                                        <td>SSS-2 Sanskrit</td>
-                                                        <td>2686556</td>
-                                                        <td>10</td>
-                                                        <td>15</td>
-                                                        <td>0</td>
-                                                        <td style="color: #fa382b">5</td>
-                                                        <td>
-                                                            <input class="form-control" /></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>17</td>
-                                                        <td>SSS-2 Urdu</td>
-                                                        <td>2686578</td>
-                                                        <td>7</td>
-                                                        <td>3</td>
-                                                        <td>4</td>
-                                                        <td style="color: #c258ff">0</td>
-                                                        <td>
-                                                            <input class="form-control" /></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>18</td>
-                                                        <td>SSS-2 Maths</td>
-                                                        <td>2686566</td>
-                                                        <td>10</td>
-                                                        <td>6</td>
-                                                        <td>4</td>
-                                                        <td style="color: #c258ff">0</td>
-                                                        <td>
-                                                            <input class="form-control" /></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>19</td>
-                                                        <td>SSS-2 Science</td>
-                                                        <td>2686582</td>
-                                                        <td>8</td>
-                                                        <td>12</td>
-                                                        <td>0</td>
-                                                        <td style="color: #fa382b">4</td>
-                                                        <td>
-                                                            <input class="form-control" /></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>20</td>
-                                                        <td>SSS-2 Social Science</td>
-                                                        <td>2686576</td>
-                                                        <td>10</td>
-                                                        <td>12</td>
-                                                        <td>0</td>
-                                                        <td style="color: #fa382b">2</td>
-                                                        <td>
-                                                            <input class="form-control" /></td>
-                                                    </tr>
+                                                            <td>SSS-2 English</td>
+                                                            <td>2686569</td>
+                                                            <td>15</td>
+                                                            <td>10</td>
+                                                            <td>5</td>
+                                                            <td style="color: #c258ff">0</td>
+                                                            <td>
+                                                                <input class="form-control" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>16</td>
+                                                            <td>SSS-2 Sanskrit</td>
+                                                            <td>2686556</td>
+                                                            <td>10</td>
+                                                            <td>15</td>
+                                                            <td>0</td>
+                                                            <td style="color: #fa382b">5</td>
+                                                            <td>
+                                                                <input class="form-control" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>17</td>
+                                                            <td>SSS-2 Urdu</td>
+                                                            <td>2686578</td>
+                                                            <td>7</td>
+                                                            <td>3</td>
+                                                            <td>4</td>
+                                                            <td style="color: #c258ff">0</td>
+                                                            <td>
+                                                                <input class="form-control" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>18</td>
+                                                            <td>SSS-2 Maths</td>
+                                                            <td>2686566</td>
+                                                            <td>10</td>
+                                                            <td>6</td>
+                                                            <td>4</td>
+                                                            <td style="color: #c258ff">0</td>
+                                                            <td>
+                                                                <input class="form-control" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>19</td>
+                                                            <td>SSS-2 Science</td>
+                                                            <td>2686582</td>
+                                                            <td>8</td>
+                                                            <td>12</td>
+                                                            <td>0</td>
+                                                            <td style="color: #fa382b">4</td>
+                                                            <td>
+                                                                <input class="form-control" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>20</td>
+                                                            <td>SSS-2 Social Science</td>
+                                                            <td>2686576</td>
+                                                            <td>10</td>
+                                                            <td>12</td>
+                                                            <td>0</td>
+                                                            <td style="color: #fa382b">2</td>
+                                                            <td>
+                                                                <input class="form-control" /></td>
+                                                        </tr>
                                                 </table>
                                             </div>
                                         </div>
@@ -692,32 +681,19 @@
                                             <div class="table-responsive">
                                                 <table class="table table-bordered">
                                                     <tr class="card-header">
-                                                        <th>Sr. No.<br />
-                                                            सरल क्र.</th>
-                                                        <th>Employee Code<br />
-                                                            कर्मचारी कोड</th>
-                                                        <th>Employee Name<br />
-                                                            कर्मचारी का नाम</th>
-                                                        <th>Designation<br />
-                                                            पद </th>
-                                                        <th>Panel<br />
-                                                            पैनल</th>
-                                                        <th>Present Posting Date<br />
-                                                            वर्तमान पोस्टिंग तिथि</th>
-                                                        <th>DOB<br />
-                                                            जन्म दिनांक</th>
-                                                        <th>Age<br />
-                                                            आयु</th>
-                                                        <th>Stop Payment Reason Code<br />
-                                                            भुगतान रोकने का कारण कोड</th>
-                                                        <th>Stop Payment Reason<br />
-                                                            भुगतान रोकने का कारण</th>
-                                                        <th>Stopped By<br />
-                                                            द्वारा रोका गया</th>
-                                                        <th>Status<br />
-                                                            स्थिति</th>
-                                                        <th>Remark<br />
-                                                            टिप्पणी</th>
+                                                        <th>Sr. No.<br />क्र.सं</th>
+                                                        <th>Employee Code<br />कर्मचारी कोड</th>
+                                                        <th>Employee Name<br />कर्मचारी का नाम</th>
+                                                        <th>Designation<br />पद </th>
+                                                        <th>Panel<br />पैनल</th>
+                                                        <th>Present Posting Date<br />वर्तमान पोस्टिंग तिथि</th>
+                                                        <th>DOB<br />न्म तिथि</th>
+                                                        <th>Age<br />आयु</th>
+                                                        <th>Stop Payment Reason Code<br />गतान रोकें कारण कोड</th>
+                                                        <th>Stop Payment Reason<br />भुगतान रोकने का कारण</th>
+                                                        <th>Stop By<br />द्वारा रोका</th>
+                                                        <th>Status<br />स्थिति</th>
+                                                        <th>Remark<br />टिप्पणी</th>
                                                     </tr>
                                                     <tr>
                                                         <td>1</td>

@@ -2,6 +2,10 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <style>
+        table, thead, th {
+            white-space: nowrap;
+        }
+
         @media print {
             /* Show modal content in full page */
             .modal-dialog {
@@ -10,11 +14,13 @@
                 margin: 0;
                 padding: 0;
             }
+
             .modal-content {
                 height: 200%;
                 border: none;
                 box-shadow: none;
             }
+
             .modal-body {
                 width: 210%;
                 height: auto;
@@ -25,21 +31,53 @@
             body.modal-open {
                 visibility: hidden;
             }
+
                 body.modal-open .modal .modal-header,
                 body.modal-open .modal .modal-body {
                     visibility: visible;
                 }
+
             .modal-footer {
                 display: none;
             }
+
             .modal-header {
                 display: none;
             }
         }
+
+        .btn_print:hover {
+            background-color: mediumpurple;
+            color: white;
+        }
+
+        th {
+            font-size: 16px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
-   <%-- <div class="row">
+    <%--  <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                <h4 class="mb-sm-0"></h4>
+                <div class="=page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <span>home</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <span>hrms</span>
+                        </li>
+                        <li class="breadcrumb-item">compassionate appointment</li>
+                        <li class="breadcrumb-item">compassionate appointment print application</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>--%>
+
+    <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
@@ -49,57 +87,63 @@
                             <span>Home</span>
                         </li>
                         <li class="breadcrumb-item">
-                            <span>HRMS</span>
+                            <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
-                        <li class="breadcrumb-item">Compassionate Appointment</li>
-                        <li class="breadcrumb-item">Compassionate Appointment Print Application</li>
+                        <li class="breadcrumb-item">
+                            <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
+                                <span>Compassion</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><span>Application Print And Status</span></li>
                     </ol>
                 </div>
+
             </div>
         </div>
     </div>
-   --%>
-                    <div class="row">
-    <div class="col-12">
-        <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-            <h4 class="mb-sm-0"></h4>
-            <div class="=page-title-right">
-                <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item">
-                        <span>Home</span>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#EmployeeCompassionate" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HRMS')">
-                            <span>Compassionate Appointment </span></a>
-                    </li>
-                    <li class="breadcrumb-item"><span>Compassionate Appointment Print Application</span></li>
-                </ol>
-            </div>
-        </div>
-    </div>
-</div>
-        <div class="col-md-5" style="position:relative; bottom:20px;">
-    <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom:-0.2rem;">
-        <img src="../../img/Anukampa Logo.png" style="height: 70px" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
-        </u>
-    </p>
-</div>
-    <div class="card card-border-primary">
-        <div class="card-header">
+    <div class="card" style="margin-bottom: 4px; padding-bottom: -5px; height: 74px;">
+        <div class="col-md-12 align-self-center">
             <div class="row">
-                <div class="col-lg-12">
-                    <h4 class="card-title">Compassionate Appointment Print Application/
-                        अनुकम्पा नियुक्ति प्रिंट आवेदन करें</h4>
+                <div class="col-md-4">
+                    <p style="font-style: oblique; color: green; font-weight: bolder; font-size: xx-large; font-family: Helvetica, Arial, sans-serif; margin-bottom: -0.2rem;">
+                        <img src="../../img/Anukampa Logo.png" style="height: 70px; background-color: white" itle="Compassionate Appointment Facilitation & Monitoring System (CAFMS)"><u><br />
+                        </u>
+                    </p>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="card border card-border-primary">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-xxl-10 col-md-12">
+                    <div class="marqueecontainer" style="border: none;">
+                        <div class="headertext btn btn-primary rounded-pill ">
+                            <h5 class="card-title" style="color: white; font-size: 15px; padding: 5px 5px 0 5px;">&#x906;&#x935;&#x947;&#x926;&#x928; &#x92A;&#x94D;&#x930;&#x93F;&#x902;&#x91F; &#x914;&#x930; &#x938;&#x94D;&#x925;&#x93F;&#x924;&#x93F;
+						विवरण</h5>
+                        </div>
+                        <div>
+                            <marquee style="width: 100%; padding-top: 5px; color: black;"
+                                onmouseover="this.stop();" onmouseout="this.start();"
+                                direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+                                कर्मचारी इस पेज के माध्यम से आवेदन का प्रिंट ले सकते हैं तथा उसकी स्थिति की जांच कर सकते हैं।
+                            </marquee>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-end">
+                </div>
+            </div>
+        </div>
+
+
         <div class="card-body">
             <fieldset>
-                <legend>Compassionate Appointment Print Application/अनुकम्पा नियुक्ति प्रिंट आवेदन     
+                <legend>Compassionate Appointment Print Application/
+                    <br />
+                    अनुकम्पा नियुक्ति प्रिंट आवेदन     
                 </legend>
+
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -113,83 +157,93 @@
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
+
+                <%--<div class="row">
+                    <div class="col-md-12 text-end" >
+                        <button type="button" style="background-color:none; border-color:purple; padding:10px;">ExportToExcel</button>
+                    </div>
+                </div>--%>
                 <div class="row form-group">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <table class="table table-bordered" style="margin-right: 0.5rem;">
-                                <thead>
+                            <table class="table table-bordered align-content-start" style="margin-right: 0.5rem;">
+                                <thead style="background-color: rgb(0, 0, 0)">
                                     <tr style="white-space: nowrap">
-                                        <th>Sr. No.<br />
-                                            सरल क्र.</th>
-                                        <th>Applicant's Name<br />
+                                        <th style="font-weight: bold; vertical-align: inherit;">Sr.No./<br />
+                                            क्रमांक</th>
+                                        <th style="font-weight: bold; vertical-align: inherit">Applicant No./<br />
+                                            आवेदन क्रमांक</th>
+                                        <th style="font-weight: bold; vertical-align: inherit">Applicant Name/<br />
                                             आवेदक का नाम</th>
-                                        <th>Gender<br />
+                                        <th style="font-weight: bold; vertical-align: inherit">Gender/<br />
                                             लिंग</th>
-                                        <th>Caste<br />
+                                        <th style="font-weight: bold; vertical-align: inherit">Caste/<br />
                                             जाति</th>
-                                        <th>Date of Birth<br />
-                                            जन्म की दिनांक</th>
-                                        <th>Mobile No.<br />
-                                            मोबाइल</th>
-                                        <th>Applicant's Relationship With The Deceased Teacher<br />
-                                            आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
-                                        <th>Marital Status<br />
+
+                                        <th style="font-weight: bold; vertical-align: inherit">Date of Birth/<br />
+                                            जन्म दिनांक</th>
+                                        <th style="font-weight: bold; vertical-align: inherit">Mobile No./<br />
+                                            मोबाइल नंबर</th>
+                                        <th style="font-weight: bold; vertical-align: inherit" >Relationship of the <br />
+                                            with the decreased <br />public servant/teacher/<br />
+                                            आवेदक का दिवंगत लोकसेवक /<br /> शिक्षक के साथ संबंध</th>
+                                        <th style="font-weight: bold; vertical-align: inherit">Marital Status/<br />
                                             वैवाहिक स्थिति</th>
-                                        <th>Cadre For Appointment<br />
+                                        <th style="font-weight: bold; vertical-align: inherit">Cadre For Appointment/<br />
                                             नियुक्ति हेतु संवर्ग</th>
-                                        <th>Designation For Appointment<br />
-                                            नियुक्ति हेतु पदनाम</th>
-                                        <th>Status of Passing Primary Teacher Eligibility Test<br />
-                                            for Primary Teacher<br />
-                                            प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण की स्थिति</th>
-                                        <th>Year of Eligibility Test<br />
+                                        <th style="font-weight: bold; vertical-align: inherit">Status of Passing TET Exam<br /> for Primary Teacher/<br />
+                                            प्राथमिक शिक्षक हेतु प्राथमिक<br /> शिक्षक पात्रता परीक्षा उत्तीर्ण की स्थिति</th>
+                                        <th style="font-weight: bold; vertical-align: inherit">Year of Eligibility Test/<br />
                                             पात्रता परीक्षा का वर्ष</th>
-                                        <th>Professional Qualification<br />
+                                        <th style="font-weight: bold; vertical-align: inherit">Professional Qualification/<br />
                                             व्यावसायिक योग्यता</th>
-                                        <th>Print<br />
-                                            प्रिंट</th>
-                                        <th>Status<br />
-                                            स्टेटस</th>
+                                        <th style="font-weight: bold; vertical-align: inherit">Application Status/<br />
+                                            आवेदन स्थिति</th>
+                                        <th style="font-weight: bold; vertical-align: inherit">Type of Objection<br />
+                                            आपत्ति का प्रकार</th>
+                                        <th style="font-weight: bold; vertical-align: inherit">Remark/<br />
+                                            टिपण्णी</th>
+                                        <th style="font-weight: bold; vertical-align: inherit">Reject/Return Reason/<br />
+                                            अस्वीकार/वापसी का कारण</th>
+                                        <th style="font-weight: bold; vertical-align: inherit">NOC Document/<br />
+                                            एनओसी दस्तावेज</th>
+                                        <th style="font-weight: bold; vertical-align: inherit">Note Sheet/<br />
+                                            नोटशीट</th>
                                     </tr>
                                 </thead>
                                 <tr>
                                     <td>1</td>
-                                    <td>Aniket Kumar</td>
+                                    <td>CA/BO2784/2401</td>
+                                    <td>ABC</td>
                                     <td>Male</td>
-                                    <td>O.B.C</td>
-                                    <td>15/10/1995</td>
-                                    <td>9856325685</td>
+                                    <td>ST<br /> (Scheduled<br /> Tribe)</td>
+                                    <td>19/06/1997</td>
+                                    <td>9856153212</td>
                                     <td>Son</td>
-                                    <td>Unmarried</td>
+                                    <td>Un-Married</td>
                                     <td>शैक्षणिक संवर्ग</td>
-                                    <td>प्रयोगशाला शिक्षक</td>
-                                    <td>हाँ</td>
-                                    <td>2015</td>
-                                    <td>B.Ed</td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
-                                    </td>
-                                    <td>Pending From DEO</td>
+                                    <td>Yes</td>
+                                    <td>2024</td>
+                                    <td>Graduation</td>
+                                    <td>Objection on application</td>
+                                    <td>regular post not vacant</td>
+                                    <td>cfd</td>
+                                    <td>NA</td>
+                                    <td></td>
+                                   <td class="dx-command-edit dx-cell-focus-disabled" role="gridcell" aria-colindex="19" style="text-align: center; min-width: 110px; max-width: 110px; width: 110px;" tabindex="0"><span class="btn btn-outline-primary"><i class="print">Print</i></span>&nbsp;</td>
+
+
+
+
                                 </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Raj Kumar</td>
-                                    <td>Male</td>
-                                    <td>O.B.C</td>
-                                    <td>15/10/1999</td>
-                                    <td>9856425685</td>
-                                    <td>Son</td>
-                                    <td>Unmarried</td>
-                                    <td>शैक्षणिक संवर्ग</td>
-                                    <td>प्रयोगशाला शिक्षक</td>
-                                    <td>हाँ</td>
-                                    <td>2016</td>
-                                    <td>B.Sc</td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-print" aria-hidden="true"></i></button>
-                                    </td>
-                                    <td>Pending From JD</td>
-                                </tr>
+
                             </table>
                         </div>
                     </div>

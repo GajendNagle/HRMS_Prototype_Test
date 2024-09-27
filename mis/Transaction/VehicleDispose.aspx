@@ -18,14 +18,14 @@
                             <span>Home</span>
                         </li>
 
-                        <li class="breadcrumb-item">
-                            <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
-                        </li>
+                     <li class="breadcrumb-item">
+    <a href="#TransPortManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Transport Management</span></a>
+</li>
 
-                        <li class="breadcrumb-item">
-                            <a href="#TransportManagementSystem" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
-                                <span>Transport Management System</span></a>
-                        </li>
+<li class="breadcrumb-item">
+    <a href="#TransportManagementSystem" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('TransPortManagement')">
+        <span>Transport Management System</span></a>
+</li>
                         <li class="breadcrumb-item"><span>Vehicle Dispose</span></li>
                     </ol>
                 </div>
@@ -33,18 +33,10 @@
         </div>
     </div>
     <div class="card card-border-primary">
-               <div class="card-header">
+        <div class="card-header">
             <div class="row">
-                <div class="col-xxl-10 col-md-12">
-                    <div class="marqueecontainerinfo">
-                        <div class="headertext btn btn-primary rounded-pill">Vehicle Dispose</div>
-                        <div>
-                            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">Empty </marquee>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-2 col-md-12 text-end">
-                    <a role="button" href="VehicleDisposeReport.aspx" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i class="bx bx-plus label-icon align-middle fs-16 me-2"></i>View Details</a>
+                <div class="col-lg-6">
+                    <h4 class="card-title">Vehicle Dispose / वाहन डिस्पोज़ </h4>
                 </div>
             </div>
         </div>
@@ -56,7 +48,7 @@
                         <div class="form-group">
                             <span>Vehicle Number
                                 <br />
-                            गाड़ी का नंबर<span style="color: red">*</span></span>
+                                गाडी नंबर<span style="color: red">*</span></span>
                             <asp:DropDownList runat="server" class="form-control select2 select2-hidden-accessible" AutoPostBack="true" OnSelectedIndexChanged="ddlVehicleNumber_SelectedIndexChanged" ID="ddlVehicleNumber">
                                 <asp:ListItem Value="0" Text="--Select--" />
                                 <asp:ListItem Value="1" Text="MP04HC4163" />
@@ -69,7 +61,7 @@
                             Vehicle Model
                             <br />
                             वाहन मॉडल<span style="color: red">*</span>
-                            <asp:TextBox class="form-control" placeholder="Vehicle Model" ReadOnly="true" ID="txt2" runat="server" Text="" />
+                            <asp:TextBox class="form-control" ReadOnly="true" ID="txt2" runat="server" Text="" />
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -77,7 +69,7 @@
                             Vehicle Chassis Number
                             <br />
                             वाहन चेसिस नंबर<span style="color: red">*</span>
-                            <asp:TextBox class="form-control" placeholder="Vehicle Chassis Number" ReadOnly="true" ID="txt3" runat="server" Text="" />
+                            <asp:TextBox class="form-control" ReadOnly="true" ID="txt3" runat="server" Text="" />
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -85,7 +77,7 @@
                             Vehicle Registration Number
                             <br />
                             वाहन पंजीकरण संख्या<span style="color: red">*</span>
-                            <asp:TextBox class="form-control" placeholder="Vehicle Registration Number" ReadOnly="true" ID="txt4" runat="server" Text="" />
+                            <asp:TextBox class="form-control" ReadOnly="true" ID="txt4" runat="server" Text="" />
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -93,7 +85,7 @@
                             Vehicle Company
                             <br />
                             वाहन कंपनी<span style="color: red">*</span>
-                            <asp:TextBox class="form-control" placeholder="Vehicle Company" ReadOnly="true" ID="txt5" runat="server" Text="" />
+                            <asp:TextBox class="form-control" ReadOnly="true" ID="txt5" runat="server" Text="" />
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -101,7 +93,7 @@
                             Year of Manufacture
                             <br />
                             निर्माण वर्ष<span style="color: red">*</span>
-                            <asp:TextBox class="form-control" placeholder="Year of Manufacture" ReadOnly="true" ID="txt6" runat="server" Text="" />
+                            <asp:TextBox class="form-control" ReadOnly="true" ID="txt6" runat="server" Text="" />
                         </div>
                     </div>
                 </div>
@@ -113,7 +105,7 @@
                         <div class="form-group">
                             <span>Order Number
                                     <br />
-                                आदेश क्रमांक<span style="color: red">*</span></span>
+                                आदेश संख्या<span style="color: red">*</span></span>
                             <input name="ctl00$ContentBody$txtYearOfManufacture" placeholder="Enter Order No." type="text" id="ctl00_ContentBody_txtYearOfManufacture" class="form-control">
                         </div>
                     </div>
@@ -129,7 +121,7 @@
                         <div class="form-group">
                             <span>Current Reading(Km)
                                     <br />
-                                वर्तमान रीडिंग(कि.मी. में)<span style="color: red">*</span></span>
+                                वर्तमान रीडिंग(किमी)<span style="color: red">*</span></span>
                             <input name="ctl00$ContentBody$txtCurrentReadingKm" placeholder="Enter Current Reading" type="text" maxlength="7" id="ctl00_ContentBody_txtCurrentReadingKm" class="form-control" autocomplete="off" onpaste="return false" />
                         </div>
                     </div>
@@ -148,7 +140,7 @@
             <div runat="server" id="VEHICLEALLOTMENTDetails" visible="false">
 
                 <fieldset>
-                    <legend>Bidding / बिडिंग/नीलामी</legend>
+                    <legend>Bidding / बिडिंग</legend>
                     <div class="row align-items-end">
                         <div class="col-md-3">
                             <div class="form-group">
@@ -162,7 +154,7 @@
                             <div class="form-group">
                                 <span>Name of Buyer
                                     <br />
-                                    क्रेता का नाम<span style="color: red">*</span></span>
+                                    खरीददार का नाम<span style="color: red">*</span></span>
                                 <input name="ctl00$ContentBody$txtNameOfBuyer" type="text" maxlength="50" id="ctl00_ContentBody_txtNameOfBuyer" class="form-control " autocomplete="off" placeholder="Enter Name of Buyer" onkeypress="return lettersOnly()" onpaste="return false">
                             </div>
                         </div>
@@ -216,13 +208,13 @@
                                             <th scope="col">S.No.<br />
                                                 सरल क्र.</th>
                                             <th scope="col">Vehicle Number<br />
-                                            गाड़ी का नंबर</th>
+                                                गाडी नंबर</th>
                                             <th scope="col">Vehicle Model<br />
                                                 वाहन मॉडल</th>
                                             <th scope="col">Vehicle Chassis Number<br />
                                                 वाहन चेसिस नंबर</th>
                                             <th scope="col">Order Number<br />
-                                                आदेश क्रमांक</th>
+                                                आदेश संख्या</th>
                                             <th scope="col">Order Date<br />
                                                 आदेश तारीख</th>
                                             <th scope="col">Selling Amount<br />

@@ -40,7 +40,7 @@
 
                 <div class="row form-group align-items-end">
                     <div class="col-md-3">
-                        <label>Select Division<br />संभाग चुनें<span style="color: red">*</span></label>
+                        <label>Select Division Name<br />संभाग चुनें<span style="color: red">*</span></label>
                         <asp:DropDownList runat="server" CssClass="form-control select2">
                             <asp:ListItem>--Select--</asp:ListItem>
                             <asp:ListItem>Bhopal</asp:ListItem>
@@ -55,7 +55,7 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label >Select District<br /> जिला चुनें<span style="color: red">*</span></label>
+                        <label >Select District Name<br /> जिला चुनें<span style="color: red">*</span></label>
                         <asp:DropDownList runat="server" CssClass="form-control select2">
                             <asp:ListItem>--Select--</asp:ListItem>
                             <asp:ListItem>Bhopal</asp:ListItem>
@@ -111,7 +111,7 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-3">
-                        <label>Select Block<br /> ब्लॉक चुनें<span style="color: red">*</span></label>
+                        <label>Select Block Name<br /> ब्लॉक चुनें<span style="color: red">*</span></label>
                         <asp:DropDownList runat="server" CssClass="form-control select2">
                             <asp:ListItem>--Select--</asp:ListItem>
                             <asp:ListItem>Agar</asp:ListItem>
@@ -143,7 +143,7 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <asp:Button ID="View1" CssClass="btn w-lg btn-outline-success btn-border" OnClick="View1_Click" runat="server" Text="Search" />
-                            <a href="Rpt_Sankul.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
+                            <a href="RPT_UnMeargingSchools.aspx" class="btn w-lg btn-outline-danger btn-border">Clear</a>
                         </div> </div>
                 </div>
             </fieldset>
@@ -167,7 +167,7 @@
                         <div class="table-responsive">
                             <table class="table table-bordered">
                                 <tr class="card-header">
-                                    <th>Sr. No.<br />सरल क्र.</th>
+                                    <th>Sr. No.<br />क्रमांक</th>
                                     <th>Division Name<br />संभाग का नाम</th>
                                     <th>District Name<br />जिले का नाम </th>
                                     <th>Block Name<br />ब्लॉक का नाम </th>

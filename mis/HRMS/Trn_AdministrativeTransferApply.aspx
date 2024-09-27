@@ -109,9 +109,9 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Employee Name / Unique ID <br />
+                                        Employee Name/ Unique ID <br />
                                         कर्मचारी का नाम यूनिक आई.डी<span style="color: red">*</span></label>
-                                    <input name="txtUniqueID" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Name / Unique ID" />
+                                    <input name="txtUniqueID" type="text" class="form-control" autocomplete="off" placeholder="Enter Employee Name/ Unique ID" />
                                 </div>
                             </div>
                             <hr />
@@ -332,10 +332,10 @@
                                     <tr>
                                         <th>Sr. No. <br />
                                             सरल क्र.</th>
-                                        <th>Employee ID - Name <br />
-                                            कर्मचारी का आईडी - नाम</th>
-                                        <th>Current OIS - Udise Code <br />
-                                            वर्तमान ओ.आई.एस. - यूडाईस कोड</th>
+                                        <th>Employee ID-Name <br />
+                                            कर्मचारी का आईडी-नाम</th>
+                                        <th>Current OIS-Udise Code <br />
+                                            वर्तमान ओ.आई.एस.कोड</th>
                                         <th>Current Sankul Code 
                                     <br />
                                             वर्तमान संकुल कोड</th>
@@ -385,19 +385,19 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Effective Date
+                                            Effective Date/
                  <br />
                                             प्रभावी दिनांक<span style="color: red">*</span></label>
-                                        <input name="txtSankulName" type="date" class="form-control" autocomplete="off"/>
+                                        <input name="txtSankulName" type="text" class="form-control" autocomplete="off" placeholder="Enter Sankul Name" />
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Relaving Date
+                                            Relaving Date/
                  <br />
                                             कार्यमुक्ति दिनांक<span style="color: red">*</span></label>
-                                        <input name="txtSchoolName" type="date" class="form-control" autocomplete="off"/>
+                                        <input name="txtSchoolName" type="text" class="form-control" autocomplete="off" placeholder="Enter School Name" />
                                     </div>
                                 </div>
 

@@ -19,7 +19,7 @@
                             <a href="#HostelManagement" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HostelManagement')">
                                 <span>Hostel Management</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Student Wise IN/Out Entry</span></li>
+                        <li class="breadcrumb-item"><span>Shift Master</span></li>
                     </ol>
                 </div>
             </div>
@@ -31,11 +31,11 @@
                 <div class="col-xl-10 col-md-12">
                     <div class="marqueecontainerinfo">
                         <div class="headertext btn btn-primary rounded-pill">
-                            सुरक्षा गार्ड ड्यूटी चार्ट पंजीकरण का विवरण
+                             शिफ्ट मास्टर
                         </div>
                         <div>
                             <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
-                                Security guard duty chart registration/सुरक्षा गार्ड ड्यूटी चार्ट पंजीकरण
+                                Shift Master / शिफ्ट मास्टर
                             </marquee>
                         </div>
                     </div>
@@ -44,14 +44,12 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Security guard duty chart registration /सुरक्षा गार्ड ड्यूटी चार्ट पंजीकरण</legend>
+                <legend>Shift Master /शिफ्ट मास्टर </legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Hostel Name/
-                  <br />
-                                हॉस्टल नाम चुनें<span style="color: red;">*</span></label>
+                               Select Hostel Name /<br /> हॉस्टल का नाम चयन करे<span style="color: red;">*</span></label>
                             <select class="form-control select2">
                                 <option selected="selected" value="0">--Select --</option>
                                 <option value="1">KGBV Girls Hostel</option>
@@ -63,31 +61,54 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Shift/
-                                <br />
-                                शिफ्ट चुनें<span style="color: red;">*</span></label>
-                            <select class="form-control select2">
+                                Enter Shift Name /<br /> शिफ्ट का नाम दर्ज करें<span style="color: red;">*</span></label>
+                            <input type="text" class="form-control" placeholder="Enter Shift Name" />
+                            <%--<select class="form-control select2">
                                 <option selected="selected" value="0">--Select --</option>
                                 <option value="1">Morning Shift</option>
                                 <option value="2">Evening Shift</option>
                                 <option value="3">Night Shift</option>
-                            </select>
+                            </select>--%>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Gourd Name/
+                                Start Time /<br /> प्रारंभ समय
+             <span style="color: red">*</span></label>
+                            <input name="ename" id="OUTTIME" type="time" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                End Time /<br /> समाप्ति समय
+             <span style="color: red">*</span></label>
+                            <input name="ename" id="INTIME" type="time" class="form-control" />
+                        </div>
+                    </div>
+                    <%--<div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Date<br />
+                                दिनांक<span style="color: red">*</span></label>
+                            <input name="ename" id="DOB" type="date" class="form-control" />
+                        </div>
+                    </div>--%>
+                    <%-- <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Select Guard Name/
                                 <br />
-                                गार्ड नाम चुनें<span style="color: red;">*</span></label>
+                                गार्ड नाम चयन करे<span style="color: red;">*</span></label>
                             <select class="form-control select2">
-                                <option selected="selected" value="0">--Select --</option>
+                                <option selected="selected" value="0">All</option>
                                 <option value="1">Vikas Namdev</option>
                                 <option value="2">Shivraj Goutam</option>
                                 <option value="3">Ashish Gupta</option>
                             </select>
                         </div>
-                    </div>
+                    </div>--%>
                 </div>
 
                 <hr />
@@ -100,7 +121,65 @@
                     </div>
                 </div>
             </fieldset>
+                        <fieldset id="FS_Details" >
+                <legend>Details / विवरण </legend>
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="text" id="searchInput2" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
 
+                            <table class="table table-bordered text-center" id="mainTable">
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No./<br />
+                   
+                                          क्रमांक
+                                        </th>
+                                        <th>Hostel Name/<br /> 
+                            
+                                            छात्रावास का नाम
+                                        </th>
+                                        <th>Shift Name /<br />
+शिफ्ट का नाम
+                                        </th>
+                                        <th>Start Time /<br />
+प्रारंभ समय</th>
+                                        <th>End  Time/<br />
+समाप्ति समय</th>
+                                        <th>Action
+ 
+                            
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Day-Shift</td>
+                                        <td>Ram Lal</td>
+                                        <td>7:00 AM</td>
+                                        <td>5:00 PM</td>
+                                        <td><button class="btn-sm ">Edit</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        
         </div>
     </div>
 </asp:Content>

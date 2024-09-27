@@ -89,7 +89,7 @@
          <div class="row align-items-end">
              <div class="col-lg-12">
                  <div class="card-title color_black">
-                     School-wise Surplus Teachers/स्कूलवार अतिरिक्त शिक्षक
+                     School-wise Surplus Teachers/स्कूलवार अधिशेष शिक्षक
                  </div>
              </div>
          </div>
@@ -99,7 +99,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">School-Wise Surplus Teachers / स्कूलवार अतिरिक्त शिक्षक</h5>
+                    <h5 class="card-title">School-Wise Surplus Teachers / स्कूलवार अधिशेष शिक्षक</h5>
                 </div>
             </div>
         </div>
@@ -117,7 +117,7 @@
                             <th scope="col">Working<br />
                                 कार्यरत</th>
                             <th scope="col">Surplus Teachers<br />
-                                अतिरिक्त शिक्षक</th>
+                                अधिशेष शिक्षक</th>
                         </tr>
 
                     </thead>
@@ -288,7 +288,7 @@
                     <th scope="col">Working<br />
                         कार्यरत</th>
                     <th scope="col">Surplus Teachers<br />
-                        अतिरिक्त शिक्षक</th>
+                        अधिशेष शिक्षक</th>
                 </tr>
 
             </thead>

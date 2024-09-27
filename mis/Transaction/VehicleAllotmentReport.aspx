@@ -34,16 +34,8 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row">
-                <div class="col-xxl-10 col-md-12">
-                    <div class="marqueecontainerinfo">
-                        <div class="headertext btn btn-primary rounded-pill">Vehicle Allotment Report</div>
-                        <div>
-                            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">Empty </marquee>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-2 col-md-12 text-end">
-                    <a role="button" href="VehicleAllotment.aspx" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i class="ri-arrow-go-back-line label-icon align-middle fs-16 me-2"></i>Back</a>
+                <div class="col-lg-6">
+                    <h4 class="card-title">Vehicle Allotment Report / वाहन आवंटन विवरण</h4>
                 </div>
             </div>
         </div>
@@ -67,11 +59,11 @@
                             <input name="ctl00$ContentBody$txtTodate" type="date" id="ctl00_ContentBody_txtTodate" class="form-control " data-provide="datepicker" data-date-end-date="0d" placeholder="dd/mm/yyyy" autocomplete="off" data-date-format="dd/mm/yyyy" data-date-autoclose="true">
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <%--<div class="col-md-3">
                         <div class="form-group">
-                            <span>Select Office<br />
-                                कार्यालय प्रकार का चयन करें<span style="color: red">*</span></span>
-                            <select name="ctl00$ContentBody$ddlOfficeType" id="ddlOfficeType" class="form-select">
+                            <span>Office Type /<br />
+                                कार्यालय का प्रकार<span style="color: red">*</span></span>
+                            <select name="ctl00$ContentBody$ddlOfficeType" id="ddlOfficeType" class="form-control">
                                 <option value=" -Select-">--Select--</option>
                                 <option value="Bhopal">Head Office</option>
                                 <option value="Bhopal">JOINT DIRECTORS</option>
@@ -79,40 +71,13 @@
                                 <option value="Bhopal">BLOCK EDUCATION OFFICERS</option>
                             </select>
                         </div>
-                    </div>
+                    </div>--%>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <span>Select Office Name<br />
-                                कार्यालय नाम का चयन करें<span style="color: red">*</span></span>
-                            <select name="ctl00$ContentBody$ddlOfficeType" id="ddlOfficeName" class="form-select">
-                                <option value=" -Select-">--Select--</option>
-                                <option value=" -Select-">All</option>
-                                <option value="Bhopal">HO Office</option>
-                                <option value="Bhopal">JD Office</option>
-                                <option value="Bhopal">DEO Office</option>
-                                <option value="Bhopal">BEO Office</option>
-                                <option value="Bhopal">Sankul Office</option>
-                                <option value="Bhopal">School Office</option>
-                            </select>
-                        </div>
-                    </div>              <div class="col-md-3">
-                        <div class="form-group">
-                            <span>Select Allotment Type<br />
-                               आवंटन प्रकार का चयन करें<span style="color: red">*</span></span>
-                            <select name="ctl00$ContentBody$ddlOfficeType" id="ddlallotmentType" class="form-select">
-                                <option value=" -Select-">--Select--</option>
-                                <option value=" -Select-">All</option>
-                                <option value="Bhopal">Allotment (Vehicle)</option>
-                                <option value="Bhopal">Transfer New Allotment</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <span>Select District
+                            <span>District
                                 <br />
-                                जिला का चयन करें<span style="color: red">*</span></span>
-                            <select class="form-select ">
+                               जिला <span style="color: red">*</span></span>
+                            <select class="form-select form-control">
                                 <option value="0">--Select--</option>
                                 <option value="51">Agar Malwa</option>
                                 <option value="49">Alirajpur</option>
@@ -169,6 +134,15 @@
                             </select>
                         </div>
                     </div>
+                    <%--<div class="col-md-3">
+                        <div class="form-group">
+                            <span>Vehicle Number /<br />
+                                गाडी नंबर<span style="color: red">*</span></span>
+                            <select name="ctl00$ContentBody$ddlVehicleNumber" id="ctl00_ContentBody_ddlVehicleNumber" class="form-control " disabled="disabled" tabindex="-1" aria-hidden="true">
+                                <option value="1" selected="selected">MP04CB4473</option>
+                            </select>
+                        </div>
+                    </div>--%>
                 </div>
                 <hr />
                 <div class="row">
@@ -221,14 +195,14 @@
                                                 कर्मचारी का नाम कोड सहित</th>
                                             <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Order Date: activate to sort column ascending" style="width: 55.9921px;">Order Date
                                             <br />
-                                                आदेश की तारीख</th>
+                                               आदेश की तारीख</th>
                                             <%-- <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Office Type: activate to sort column ascending" style="width: 56.2197px;">Office Type<br />
                                                 कार्यालय का प्रकार</th>--%>
                                             <th scope="col" style="width: 59.7542px;">District
                                                 <br />
-                                                जिला </th>
+                                               जिला </th>
                                             <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Vehicle Number: activate to sort column ascending" style="width: 80.355px;">Vehicle Number<br />
-                                                गाड़ी का नंबर</th>
+                                              गाड़ी का नंबर</th>
 
                                             <th scope="col" aria-controls="ctl00_ContentBody_grvVehicleAllotment" rowspan="1" colspan="1" aria-label="Designation: activate to sort column ascending" style="width: 74.4084px;">Designation<br />
                                                 पद का नाम  </th>

@@ -219,14 +219,14 @@
             </fieldset>--%>
 
             <fieldset id="FS_FillApr">
-                <legend>Fill APR Form / APR फार्म भरे</legend>
+                <legend>Upload APR Form Document / ए.पी.आर फॉर्म दस्तावेज़ अपलोड करें</legend>
 
 
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Year of APR
+                                 Select Year of APR
                 <br />
                                 अचल संपत्ति के विवरण का वर्ष <span style="color: red">*</span>
                             </label>
@@ -237,9 +237,9 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Uplode APR form
+                                Upload APR Details Form
                 <br />
-                                अचल संपत्ति के विवरण का फार्म अपलोड करे <span style="color: red">*</span>
+                                अचल संपत्ति विवरण फ़ॉर्म अपलोड करें <span style="color: red">*</span>
                             </label>
                             <input type="file" class="form-control" accept=".pdf" onchange="checkFileSize('FuAprForm', 200, 'MsgErr')" id="FuAprForm" />
                             <div style="color: red; font-size: 12px; margin: 0px; padding: 0px; display: inline" id="MsgErr">

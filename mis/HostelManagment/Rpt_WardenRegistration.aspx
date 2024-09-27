@@ -58,8 +58,9 @@
             <fieldset>
                 <legend>Warden Registration Report / वार्डन पंजीकरण रिपोर्ट</legend>
 
-                <div class="row align-items-end">
-                    <div class="col-md-4">
+                <div class="row align-items-end ">
+      <%--              <div class="col-md-4">
+                          <div class="form-group">
                         <label>
                             Select Office Type<br />
                             कार्यालय प्रकार का चयन करें<span style="color: red">*</span>
@@ -70,8 +71,98 @@
                             <option>Institude</option>
                         </select>
                     </div>
+                    </div>--%>
+                                   <div class="col-md-4">
+                        <div class="form-group">
+                            <label>
+                                Select Division<br />
+                                संभाग का नाम चुनें<span style="color: red">*</span></label>
+                            <select class="form-control select2" id="ddlDivision">
+                                <option value="--Select--">--Select--</option>
+                                <option value="Bhopal">Bhopal(भोपाल)</option>
+                                <option value="Gwalior">Gwalior(ग्वालियर)</option>
+                                <option value="Narmadapuram">Narmadapuram(नर्मदापुरम)</option>
+                                <option value="Indore">Indore(इंदौर)</option>
+                                <option value="Jabalpur">Jabalpur(जबलपुर)</option>
+                                <option value="Rewa">Rewa(रीवा)</option>
+                                <option value="Sagar">Sagar(सागर)</option>
+                                <option value="Shahdol">Shahdol(शाहडोल)</option>
+                                <option value="Ujjain">Ujjain(उज्जैन)</option>
+                            </select>
+                        </div>
+                    </div>
 
                     <div class="col-md-4">
+                        <div class="form-group">
+                            <label>
+                                Select District<br />
+                                जिले का नाम चुनें<span style="color: red">*</span></label>
+                            <select class="form-control select2" id="ddlDistrict">
+                                <option value="--Select--">--Select--</option>
+                                <option value="Bhopal">Bhopal(भोपाल)</option>
+                                <option value="Raisen">Raisen(रायसेन)</option>
+                                <option value="Rajgarh">Rajgarh(राजगढ़)</option>
+                                <option value="Sehore">Sehore(सीहोर)</option>
+                                <option value="Vidisha">Vidisha(विदिशा)</option>
+                                <option value="Ashoknagar">Ashoknagar(अशोकनगर)</option>
+                                <option value="Shivpuri">Shivpuri(शिवपुरी)</option>
+                                <option value="Datia">Datia(दतिया)</option>
+                                <option value="Guna">Guna(गुना)</option>
+                                <option value="Gwalior">Gwalior(ग्वालियर)</option>
+                                <option value="Harda">Harda(हरदा)</option>
+                                <option value="Hoshangabad">Hoshangabad(होशंगाबाद)</option>
+                                <option value="Betul">Betul(बेतुल)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>
+                                Select Block<br />
+                                विकासखंड का नाम चुनें <span style="color: red">*</span></label>
+                            <select class="form-control select2" id="ddlBlock">
+                                <option value="--Select--">--Select--</option>
+                                <option value="Agar">Agar(आगर)</option>
+                                <option value="Barod">Barod(बड़ौद)</option>
+                                <option value="Nalkheda">Nalkheda(नलखेड़ा)</option>
+                                <option value="Susner">Susner(सुसनेर)</option>
+                                <option value="Alirajpur">Alirajpur(आलीराजपुर)</option>
+                                <option value="Bhabra">Bhabra(भाबरा)</option>
+                                <option value="Katthiwara">Katthiwara(कट्ठीवाड़ा)</option>
+                                <option value="Sondwa">Sondwa(सोंडवा)</option>
+                                <option value="Udaygarh">Udaygarh(उदयगढ़)</option>
+                                <option value="Jobat">Jobat(जोबट)</option>
+                                <option value="Anuppur">Anuppur(अनुपपुर)</option>
+                                <option value="Jaithari">Jaithari(जैतहरी)</option>
+                                <option value="Kotma">Kotma(कोतमा)</option>
+                            </select>
+                        </div>
+                    </div>
+                        <div class="col-md-4">
+                        <div class="form-group">
+                            <label>
+                                Select  Sankul
+              <br />
+                                संकुल चुनें<span style="color: red">*</span></label>
+                            <select class="form-select select2">
+                                <option value="--Select--">--Select--</option>
+
+                                <option value="--Select--">0512003001 - MAHARANA PRATAP, JAHANGIRABAD, BHOPAL, PRINCIPAL, GOVT. HSS</option>
+                                <option value="--Select--">0512003007 - M.L.B. BHEL, BARKHEDA, BHOPAL, PRINCIPAL, GOVT. HSS</option>
+                                <option value="--Select--">0502003027 - PHANDA, PRINCIPAL, GOVT. HS</option>
+                                <option value="--Select--">0532003003 - GUNGA, BERASIA, PRINCIPAL, GOVT. HSS</option>
+                                <option value="--Select--">2912003045 - BADI- Govt. Girls H.S.S BADI</option>
+                                <option value="--Select--">2922003023 - BEGUMGANJ- Girls H.S.S. BEGUMGANJ</option>
+                                <option value="--Select--">2932003031 - GAIRATGANJ Govt. Boys H.S.S. GAIRATGANJ</option>
+                                <option value="--Select--">2942003041 - OBEDULLAGANJ-Govt. H.S.S. UMRAOGANJ</option>
+                                <option value="--Select--">2902003003 - SANCHI- Girls H.S.S. RAISEN</option>
+                                <option value="--Select--">2952003030 - SILWANI- Govt.H.S.S. BIKALPUR</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                         <div class="form-group">
                         <label>
                             Select School Name<br />
                             स्कूल नाम का चयन करें<span style="color: red">*</span></label>
@@ -83,8 +174,10 @@
                             <option value="3">GOVT HSS KHAJURI KALAN(23320110008)</option>
                         </select>
                     </div>
+                    </div>
 
                     <div class="col-md-4">
+                         <div class="form-group">
                         <label>
                             Is Warden Teacher ?
                             <br />
@@ -95,6 +188,7 @@
                             <option value="2">Yes</option>
                             <option value="3">No</option>
                         </select>
+                    </div>
                     </div>
                 </div>
                 <hr />

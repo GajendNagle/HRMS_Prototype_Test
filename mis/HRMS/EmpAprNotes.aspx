@@ -99,9 +99,9 @@
                     <br />--%>
                     <div class="row">
                         <div class="col-md-8">
-                            <h4 style="color: brown; background-color: bisque; padding: 20px; height: 30px; font-weight: bold; width: fit-content; border-radius: 10px; padding-top: 5px; margin-bottom: 20px" class="font-20"><i class="far fa-hand-point-right"></i>&emsp;वार्षिक संपत्ति रिटर्न के दिशानिर्देश :-</h4>
+                            <h4 style="color: brown; background-color: bisque; padding: 20px; height: 30px; font-weight: bold; width: fit-content; border-radius: 10px; padding-top: 5px; margin-bottom: 5px" class="font-20"><i class="far fa-hand-point-right"></i>&emsp;वार्षिक संपत्ति रिटर्न के दिशानिर्देश :-</h4>
                         </div>
-                        <div class="col-md-4 text-end">
+               <%--         <div class="col-md-4 text-end">
                             <div class="m-2">
                                 <a href="../Document/APR_Form.pdf" target="_blank" download="APR_Form" class="btn btn-info btn-rounded w-55">डाउनलोड अचल संपत्ति फॉरमेट</a>
                             </div>
@@ -109,7 +109,7 @@
                                 <a href="../Document/DepartmentalCircular.pdf" target="_blank" class="btn btn-info btn-rounded w-55">विभागीय सर्कुलर देखें</a>
                             </div>
 
-                        </div>
+                        </div>--%>
                     </div>
                     <%-- <h4 class="text-md-left bg-bisque text-brown p-2 rounded-pill mb-4"><i class="far fa-hand-point-right"></i>&emsp;कर्मचारी पंजीयन दिशानिर्देश:-</h4>--%>
 

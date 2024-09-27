@@ -82,7 +82,7 @@
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-6">
                             <h4 class="card-title">Generate Transfer Order / स्थानांतरण आदेश जनरेट करें<br />
                             </h4>
                         </div>
@@ -135,7 +135,7 @@
                                 <div class="form-group">
                                     <label>
                                         Designation Type <br />
-                                        पदनाम प्रकार<span style="color: red">*</span></label>
+                                        पदनाम<span style="color: red">*</span></label>
                                     <select class="form-control select2">
                                         <option value="----">--Select--</option>
                                         <option value="----">All</option>
@@ -151,7 +151,7 @@
 
                                     <label>
                                         District <br />
-                                        जिला <span style="color: red">*</span></label>
+                                        ज़िला<span style="color: red">*</span></label>
                                     <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                         <option value="--Select--">--Select--</option>
                                         <option value="----">All</option>
@@ -267,7 +267,7 @@
                                 <div class="table-responsive">
                                     <table class="table table-hover">
                                         <tr>
-                                            <th>Sr. No. <br />
+                                            <th>Sr.No. <br />
                                                 सरल क्र. </th>
                                             <th>Get DSC <br />
                                                 DSC प्राप्त करें</th>

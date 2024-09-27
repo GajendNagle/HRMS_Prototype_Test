@@ -134,7 +134,7 @@
                                         <td>6567234567</td>
                                         <td>DL1420110012345</td>
                                         <td>
-                                            <input type="time" name="time" value="10:00" class="form-control" /></td>
+                                            <input type="time" name="time" value="17:38" class="form-control" /></td>
                                         <td><a role="button" class="btn btn-primary"><i class="fa fa-print" aria-hidden="true" onclick="openPDF()"></i></a></td>
                                     </tr>
                                 </tbody>

@@ -100,8 +100,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Budget Head  /<br />
-                                बजट मद<span style="color: red">*</span></label>
+                                Work Type  /<br />
+                                कार्य का प्रकार चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="3">CM Rise Building Construction</option>
@@ -151,8 +151,8 @@
                                         कार्यालय का प्रकार</th>
                                     <th>Office Name /<br>
                                         कार्यालय का नाम</th>
-                                    <th>Budget Head/<br>
-                                        बजट मद</th>
+                                    <th>Work Type/<br>
+                                        कार्य का प्रकार</th>
                                     <th>Order Number/<br>
                                         स्वीकृति आदेश क्रमांक</th>
                                     <%--     <th>Village /<br />
@@ -176,7 +176,7 @@
                                     <td>School</td>
                                     <td>Maharishi Mahavidyalaya
                                     </td>
-                                    <td>Approval awaited at DEO</td>
+                                    <td>CM Rise Building Construction</td>
                                     <td>P00019</td>
 
                                     <%--  <td>Usridhana[उसरीढाना]</td>

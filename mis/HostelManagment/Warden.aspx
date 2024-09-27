@@ -34,243 +34,276 @@
             </div>
         </div>
         <div class="card-body">
-            <div runat="server" id="divOffice">
-                <fieldset>
-                    <legend>Add Warden Details / वार्डन विवरण जोड़ें</legend>
-                    <div class="row align-items-end mb-0">
-                        <div class="col-xl-9">
-                            <div class="row align-items-end">
-                                <div class="col-md-4">
-                                    <div class="form-group">
+            <%--<div runat="server" id="divOffice">--%>
+            <fieldset>
+                <legend>Add Warden Details / वार्डन विवरण जोड़ें</legend>
+                <%--   <div class="row align-items-end mb-0">
+           
+                    
+                    <div class="col-xl-9">--%>
+                <div class="row  align-items-end" style="position: relative; bottom: 20px;">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label asp-for="IdProofId" class="control-label">
+                                Is Warden Teacher /<br /> क्या वार्डन शिक्षक हैं?<span style="color: red"> *</span>
+                            </label>
+                            <select asp-for="IdProofId" id="teacherSelect" class="form-select">
+                                <option value="">-- Select --</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                            <span asp-validation-for="IdProofId" class="text-danger"></span>
+                        </div>
+                    </div>
 
-                                        <label>
-                                            Enter Warden Name<br />
-                                            वार्डन का नाम दर्ज करें<span style="color: red;">*</span></label>
-                                        <input type="text" class="form-control" placeholder="Enter Warden Name" />
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>
-                                            Select Date of Birth
-                                    <br />
-                                            जन्म तिथि का चयन करें<span style="color: red">*</span></label>
-                                        <input name="ename" id="dob" type="date" class="form-control" autocomplete="off" onchange="calculateAge()" />
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Age
-                                    <br />
-                                            उम्र<span style="color: red">*</span></label>
-                                        <input readonly="readonly" name="ename" id="txtAge" type="text" class="form-control" autocomplete="off" placeholder="Age" />
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>
-                                            Select Gender
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Enter Employee ID /<br />
+                                कर्मचारी आईडी दर्ज करें<span style="color: red;">*</span></label>
+                            <input type="text" id="txtEid" class="form-control" placeholder="Enter Unique ID" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+
+                            <label>
+                               Enter Warden Name (In English) /<br /> वार्डन का नाम (अंग्रेज़ी में) दर्ज करें<span style="color: red;">*</span></label>
+                            <input type="text" class="form-control" placeholder="Enter Warden Name" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 top-50">
+
+
+                        <div class="form-group">
+                            <img class="profileimage w-50 h-50" src="../dist/images/avatar-13.png" id="uploadedImage" alt="Image Not Available" />
+                            <br />
+                            <input type="file" id="fileInpaut" class="form-control" onchange="displayImage(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3" id="txt_office">
+                        <div class="form-group">
+                            <label>
+                                Enter Office Name /<br />
+                                कार्यालय का नाम दर्ज करें<span style="color: red;">*</span></label>
+                            <input type="text" id="txtoffice" class="form-control" placeholder="Enter Office Name" />
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3" id="dob">
+                        <div class="form-group">
+                            <label>
+                                Select Date of Birth/
+                                <br />
+                                जन्म तिथि का चयन करें<span style="color: red">*</span></label>
+                            <input name="ename" type="date" class="form-control" autocomplete="off" onchange="calculateAge()" />
+                        </div>
+                    </div>
+
+
+
+
+                    <%-- <div class="col-md-3" style="display: none;" id="WardenName1">
+                        <div class="form-group">
+
+                            <label>
+                                Enter Warden Name<br />
+                                वार्डन का नाम दर्ज करें<span style="color: red;">*</span></label>
+                            <input type="text" class="form-control" placeholder="Enter Warden Name" />
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="display: none;" id="dob1">
+                        <div class="form-group">
+                            <label>
+                                Select Date of Birth
+                                <br />
+                                जन्म तिथि का चयन करें<span style="color: red">*</span></label>
+                            <input name="ename" type="date" class="form-control" autocomplete="off" onchange="calculateAge()" />
+                        </div>
+                    </div>--%>
+
+<%--                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Enter Age /<br />उम्र दर्ज करें<span style="color: red">*</span></label>
+                            <input readonly="readonly" name="ename" id="txtAge" type="text" class="form-control" autocomplete="off" placeholder="Age" />
+                        </div>
+                    </div>--%>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Select Gender/
                  <br />
-                                            लिंग का चयन करें<span style="color: red">*</span></label>
-                                        <select class="form-control select2">
-                                            <option value="--Select--">--Select--</option>
-                                            <option value="--Select--">Male</option>
-                                            <option value="--Select--">Female</option>
-                                            <option value="--Select--">Other</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label asp-for="MobileNo" class="control-label">
-                                            Enter Mobile Number/<br />
-                                            मोबाइल नंबर दर्ज करें<span style="color: red"> *</span>
-                                        </label>
-                                        <input asp-for="MobileNo" id="MobileNo" placeholder="Enter Mobile Number" maxlength="10" class="form-control" onkeypress="return NumberOnly();" required data-msg="Field is requied" pattern="^([6-9][0-9]{9,11})$" />
-                                        <span asp-validation-for="MobileNo" class="text-danger"></span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Email Id
-              <br />
-                                            ईमेल आई.डी.<span style="color: red">*</span>
-                                        </label>
-                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Email Id" />
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col-xl-3">
-                            <div class="row align-items-end">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <img class="profileimage" src="../dist/images/avatar-13.png" id="uploadedImage" alt="Image Not Available" />
-                                        <br />
-                                        <input type="file" id="fileInpaut" class="form-control" onchange="displayImage(this)" />
-                                    </div>
-                                </div>
-                            </div>
+                                लिंग का चयन करें<span style="color: red">*</span></label>
+                            <select class="form-control select2" id="ddl_gender">
+                                <%--<option value="0">--Select--</option>--%>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                                <option value="3">Other</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="row align-items-end">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label asp-for="MobileNo" class="control-label">
+                                Enter Mobile Number/<br />
+                                मोबाइल नंबर दर्ज करें<span style="color: red"> *</span>
+                            </label>
+                            <input asp-for="MobileNo" id="MobileNo" placeholder="Enter Mobile Number" maxlength="10" class="form-control" onkeypress="return NumberOnly();" required data-msg="Field is requied" pattern="^([6-9][0-9]{9,11})$" />
+                            <span asp-validation-for="MobileNo" class="text-danger"></span>
+                        </div>
+                    </div>
 
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Enter PAN No. 
+
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Enter Email ID/<br /> ईमेल आईडी दर्ज करें<span style="color: red">*</span>
+                            </label>
+                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Email Id" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Enter PAN No./ 
       <br />
-                                    पैन न. दर्ज करें<span style="color: red">*</span></label>
-                                <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter PAN No." />
-                            </div>
+                                पैन न. दर्ज करें<span style="color: red">*</span></label>
+                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter PAN No." />
                         </div>
-                                  <div class="col-md-3">
-               <div class="form-group">
-                   <label>
-                       Enter Aadhaar No.
-<br />
-                       आधार न. दर्ज करें<span style="color: red">*</span></label>
-                   <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Aadhaar No." />
-               </div>
-           </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label asp-for="IdProofId" class="control-label">
-                                    Select ID Proof Type/<br />
-                                    आईडी प्रूफ प्रकार का चयन करें<span style="color: red"> *</span>
-                                </label>
-                                <select asp-for="IdProofId" id="IdProofId"
-                                    class="form-select">
-                                    <option value="">-- Select --</option>
-                                    <option value="">Adhaar Card</option>
-                                    <option value="">Voter ID</option>
-                                    <option value="">Pan Card</option>
-                                    <option value="">Driving Licence</option>
-                                    <option value="">Passport</option>
-                                </select>
-                                <span asp-validation-for="IdProofId" class="text-danger"></span>
-                            </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Enter Aadhaar No./
+                                    <br />
+                                आधार न. दर्ज करें<span style="color: red">*</span></label>
+                            <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Enter Aadhaar No." />
                         </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label asp-for="IdProofDoc" class="control-label">
-                                    Upload Document/<br />
-                                    दस्तावेज़ अपलोड करें<span style="color: red"> *</span>
-                                </label>
-                                <input type="file" asp-for="IdProofDoc" id="IdProofDoc" class="form-control" required data-msg="Field is requied" accept="image/*" />
-                                <span asp-validation-for="MobileNo" class="text-danger"></span>
-                            </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label asp-for="IdProofId" class="control-label">
+                                Select ID Proof Type/<br />
+                                आईडी प्रूफ प्रकार का चयन करें<span style="color: red"> *</span>
+                            </label>
+                            <select asp-for="IdProofId" id="IdProofId"
+                                class="form-select">
+                                <option value="0">-- Select --</option>
+                                <option value="1">Adhaar Card</option>
+                                <option value="2">Voter ID</option>
+                                <option value="3">Pan Card</option>
+                                <option value="4">Driving Licence</option>
+                                <option value="5">Passport</option>
+                            </select>
+                            <span asp-validation-for="IdProofId" class="text-danger"></span>
                         </div>
+                    </div>
+           
 
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label asp-for="IdProofId" class="control-label">
-                                    Is a Teacher/<br />
-                                    क्या यह शिक्षक हे?<span style="color: red"> *</span>
-                                </label>
-                                <select asp-for="IdProofId"
-                                    class="form-select">
-                                    <option value="">-- Select --</option>
-                                    <option value="">Yes </option>
-                                    <option value="">No </option>
-                                </select>
-                                <span asp-validation-for="IdProofId" class="text-danger"></span>
-                            </div>
-                        </div>
 
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label class="control-label">
-                                    Enter Work Exeperience/<br />
-                                    कार्य अनुभव दर्ज करें  <span style="color: red">*</span>
-                                </label>
-                                <input placeholder="Enter Work Exeperience" class="form-control" required data-msg="Field is requied" />
-                                <span asp-validation-for="IdProofId" class="text-danger"></span>
-                            </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label class="control-label">
+                                Enter Work Exeperience/<br />
+                                कार्य अनुभव दर्ज करें  <span style="color: red">*</span>
+                            </label>
+                            <input placeholder="Enter Work Exeperience" class="form-control" required data-msg="Field is requied" />
+                            <span asp-validation-for="IdProofId" class="text-danger"></span>
                         </div>
+                    </div>
 
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Highest Qualification
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Highest Qualification/
             <br />
-                                    उच्चतम योग्यता<span style="color: red">*</span></label>
-                                <select id="Education" class="form-control select2">
-                                    <option value="----">--Select--</option>
-                                    <option value="BALLB">BALLB</option>
-                                    <option value="BachelorOfArts">Bachelor of Arts</option>
-                                    <option value="BachelorOfCommerce">Bachelor of Commerce</option>
-                                    <option value="Architecture">Architecture</option>
-                                    <option value="BCA">BCA</option>
-                                    <option value="ComputerScience">Computer Science</option>
-                                    <option value="Education">Education</option>
-                                    <option value="BBA">BBA</option>
-                                    <option value="MBBS">MBBS</option>
-                                    <option value="BachelorOfScience">Bachelor of Science</option>
-                                    <option value="BDesInDesign">BDes in Design</option>
-                                    <option value="Biotechnology">Biotechnology</option>
-                                    <option value="BScIT">BSc IT</option>
-                                    <option value="Engineering">Engineering</option>
-                                    <option value="Humanities">Humanities</option>
-                                    <option value="Management">Management</option>
-                                    <option value="Arts">Arts</option>
-                                    <option value="Aviation">Aviation</option>
-                                    <option value="Bsc">Bsc</option>
-                                    <option value="ChemicalEngineering">Chemical Engineering</option>
-                                    <option value="CivilEngineering">Civil Engineering</option>
-                                    <option value="Economics">Economics</option>
-                                    <option value="ElectricalEngineering">Electrical Engineering</option>
-                                    <option value="FashionDesigning">Fashion designing</option>
-                                    <option value="MBA">MBA</option>
-                                    <option value="EducationLaw">Education Law</option>
-                                    <option value="HospitalAdministration">Hospital Administration</option>
-                                    <option value="MasterOfScienceBiochemistry">Master of Science Biochemistry</option>
-                                    <option value="MBAFinance">MBA Finance</option>
-                                    <option value="MD">MD</option>
-                                    <option value="MassCommunications">Mass communications</option>
-                                    <option value="MastersOfPhysician">Masters Of Physician</option>
-                                    <option value="MCA">MCA</option>
-                                    <option value="PGDiplomaInEntrepreneurshipDevelopment">PG Diploma in Entrepreneurship Development</option>
-                                    <option value="ExecutivePGProgramInManagement">Executive PG program in Management</option>
-                                    <option value="HumanResourceManagement">Human Resource Management</option>
-                                    <option value="InternationalBusiness">International business</option>
-                                    <option value="MasterOfArts">Master of Arts</option>
-                                    <option value="MasterOfDataScience">Master of Data Science</option>
-                                    <option value="MBABusinessAnalytics">MBA Business Analytics</option>
-                                </select>
-                            </div>
+                                उच्चतम योग्यता<span style="color: red">*</span></label>
+                            <select id="Education" class="form-control select2">
+                                <option value="0">--Select--</option>
+                                <option value="1">BALLB</option>
+                                <option value="2">Bachelor of Arts</option>
+                                <option value="3">Bachelor of Commerce</option>
+                                <option value="4">Architecture</option>
+                                <option value="5">BCA</option>
+                                <option value="6">Computer Science</option>
+                                <option value="7">Education</option>
+                                <option value="8">BBA</option>
+                                <option value="9">MBBS</option>
+                                <option value="10">Bachelor of Science</option>
+                                <option value="11">BDes in Design</option>
+                                <option value="12">Biotechnology</option>
+                                <option value="13">BSc IT</option>
+                                <option value="14">Engineering</option>
+                                <option value="15">Humanities</option>
+                                <option value="16">Management</option>
+                                <option value="17">Arts</option>
+                                <option value="18">Aviation</option>
+                                <option value="19">Bsc</option>
+                                <option value="20">Chemical Engineering</option>
+                                <option value="21">Civil Engineering</option>
+                                <option value="22">Economics</option>
+                                <option value="23">Electrical Engineering</option>
+                                <option value="24">Fashion designing</option>
+                                <option value="25">MBA</option>
+                                <option value="26">Education Law</option>
+                                <option value="27">Hospital Administration</option>
+                                <option value="28">Master of Science Biochemistry</option>
+                                <option value="29">MBA Finance</option>
+                                <option value="30">MD</option>
+                                <option value="31">Mass communications</option>
+                                <option value="32">Masters Of Physician</option>
+                                <option value="33">MCA</option>
+                                <option value="34">PG Diploma in Entrepreneurship Development</option>
+                                <option value="35">Executive PG program in Management</option>
+                                <option value="36">Human Resource Management</option>
+                                <option value="37">International business</option>
+                                <option value="38">Master of Arts</option>
+                                <option value="39">Master of Data Science</option>
+                                <option value="40">MBA Business Analytics</option>
+                            </select>
                         </div>
+                    </div>
 
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label asp-for="Address" class="control-label">
-                                    Enter Address/<br />
-                                    पता दर्ज करें<span style="color: red"> *</span></label>
-                                <input asp-for="Address" id="HostelAddress" placeholder="Enter Address" maxlength="150" multiple="true" class="form-control" required data-msg="Field is requied" />
-                                <span asp-validation-for="Address" class="text-danger"></span>
-                            </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label asp-for="Address" class="control-label">
+                                Enter Address/<br />
+                                पता दर्ज करें<span style="color: red"> *</span></label>
+                            <input asp-for="Address" id="HostelAddress" placeholder="Enter Address" maxlength="150" multiple="true" class="form-control" required data-msg="Field is requied" />
+                            <span asp-validation-for="Address" class="text-danger"></span>
                         </div>
-
+                    </div>
+                             <div class="col-md-3">
+                        <div class="form-group">
+                            <label asp-for="IdProofDoc" class="control-label">
+                                Upload Document/<br />
+                                दस्तावेज़ अपलोड करें<span style="color: red"> *</span>
+                            </label>
+                            <input type="file" asp-for="IdProofDoc" id="IdProofDoc" class="form-control" required data-msg="Field is requied" accept="image/*" />
+                            <span asp-validation-for="MobileNo" class="text-danger"></span>
+                        </div>
                     </div>
 
 
+                </div>
 
-                    <hr />
-                    <div class="col-md-12">
-                        <div class="form-group text-center">
-                            <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border" onclick="document.getElementById('HostlInfo').style.display = 'block'">Save</button>
-                            <a href="Warden.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-                        </div>
+
+
+                <hr />
+                <div class="col-md-12">
+                    <div class="form-group text-center">
+                        <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border" onclick="document.getElementById('HostlInfo').style.display = 'block'">Save</button>
+                        <a href="Warden.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
-                </fieldset>
-            </div>
+                </div>
+            </fieldset>
         </div>
     </div>
-    <fieldset id="HostlInfo" style="display: none;">
+
+<%--    <fieldset id="HostlInfo" style="display: none;">
         <legend>Hostel Room Detail / छात्रावास कक्ष विवरण</legend>
         <div class="row justify-content-end">
 
@@ -295,19 +328,19 @@
                             <table class="table table-bordered text-center">
                                 <thead>
                                     <tr role="row">
-                                        <th scope="col">Sr.No.<br />
+                                        <th scope="col">Sr.No./<br />
                                             क्र.सं.</th>
-                                        <th scope="col">Hostel Name<br />
+                                        <th scope="col">Hostel Name/<br />
                                             हॉस्टल का नाम</th>
-                                        <th scope="col">Room Type<br />
+                                        <th scope="col">Room Type/<br />
                                             कक्ष प्रकार   </th>
-                                        <th scope="col">Hostel Room Number<br />
+                                        <th scope="col">Hostel Room Number/<br />
                                             हॉस्टल का कक्ष नंबर </th>
-                                        <th scope="col">No. of Bed<br />
+                                        <th scope="col">No. of Bed/<br />
                                             बिस्तर की संख्या </th>
-                                        <th scope="col">Rent Per Bed<br />
+                                        <th scope="col">Rent Per Bed/<br />
                                             प्रति बिस्तर किराया</th>
-                                        <th scope="col">Action
+                                        <th scope="col">Action/<br />कार्य
                                         </th>
                                     </tr>
                                 </thead>
@@ -344,7 +377,7 @@
                 </div>
             </div>
         </div>
-    </fieldset>
+    </fieldset>--%>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
@@ -361,5 +394,82 @@
             calculateRetirementDate();
         }
     </script>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var teacherSelect = document.getElementById('teacherSelect');
+            var empid = document.getElementById('txtEid');
+            var officename = document.getElementById('txtoffice');
+            var wardenName = document.querySelector('input[placeholder="Enter Warden Name"]');
+            var dob = document.getElementById('dob');
+            var age = document.getElementById('txtAge');
+            var gender = document.getElementById('ddl_gender');
+            var mobileNo = document.getElementById('MobileNo');
+            var email = document.querySelector('input[placeholder="Enter Email Id"]');
+            var panNo = document.querySelector('input[placeholder="Enter PAN No."]');
+            var aadhaarNo = document.querySelector('input[placeholder="Enter Aadhaar No."]');
+            var idProof = document.getElementById('IdProofId');
+            var workExperience = document.querySelector('input[placeholder="Enter Work Exeperience"]');
+            var education = document.getElementById('Education');
+            var address = document.getElementById('HostelAddress');
+
+            teacherSelect.addEventListener('change', function () {
+                if (teacherSelect.value === 'Yes') {
+                    // Auto-fill fields for "Yes"
+                    wardenName.value = 'Amit';
+                    dob.value = '01-01-1991';
+                    calculateAge(); // Ensure this function updates the age field
+                    age.value = '34'; // Example Age
+                    gender.value = 'Male';
+                    mobileNo.value = '9876543210';
+                    email.value = 'john.doe@example.com';
+                    panNo.value = 'ABCDE1234F';
+                    aadhaarNo.value = '1234-5678-9012';
+                    idProof.value = '1'; // Assuming '1' corresponds to 'Adhaar Card'
+                    workExperience.value = '5 years';
+                    education.value = '3';
+                    address.value = '123 Main Street, City, Country';
+                    empid.value = '123456'
+                    officename.value ='ABC'
+                } else if (teacherSelect.value === 'No') {
+                    // Clear fields for "No"
+                    wardenName.value = '';
+                    dob.value = '';
+                    age.value = '';
+                    gender.value = '0';
+                    mobileNo.value = '';
+                    email.value = '';
+                    panNo.value = '';
+                    aadhaarNo.value = '';
+                    idProof.value = '0'; // Assuming '0' corresponds to '-- Select --'
+                    workExperience.value = '';
+                    education.value = '----';
+                    address.value = '';
+                    empid.value = ''
+                    officename.value = ''
+                }
+            });
+        });
+
+        function calculateAge() {
+            var dob = document.getElementById('dob').value;
+            var age = document.getElementById('txtAge');
+            if (dob) {
+                var birthDate = new Date(dob);
+                var today = new Date();
+                var ageValue = today.getFullYear() - birthDate.getFullYear();
+                var monthDifference = today.getMonth() - birthDate.getMonth();
+                if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+                    ageValue--;
+                }
+                age.value = ageValue;
+            }
+        }
+
+    </script>
+   
+
 </asp:Content>
 

@@ -12,9 +12,19 @@
             text-align: left;
             color: white;
         }
+
+        #Button2 {
+            display: none;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
+        <div class="row">
+        <div class="col-md-4">
+
+            <img src="/img/Employee.png" style="height: 70px">
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -37,12 +47,12 @@
             </div>
         </div>
     </div>
-     <div class="row" >
-  <div class="col-md-4" >
-     
-          <img src="/img/Employee.png" style="height: 70px" >
-  </div>
-  </div>
+    <div class="row">
+        <div class="col-md-4">
+
+            <img src="/img/Employee.png" style="height: 70px">
+        </div>
+    </div>
     <div class="content-wrapper">
         <div class="container-fluid">
             <div class="card card-border-primary">
@@ -147,7 +157,107 @@
                        /
                        
                                 Are You Involved in National or State Level Training or State Level Group</legend>
+                            <div class="row mt-4 align-items-end">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Select Level Type<br />
+                                            स्तर प्रकार का चयन करे<span style="color: red">*</span>
+                                        </label>
+                                        <select id="Panel" class="form-control select2">
+                                            <option value="">--Select--</option>
+                                            <option value="राष्ट्रीय स्तर">राष्ट्रीय स्तर </option>
+                                            <option value="राज्य स्तर">राज्य स्तर </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Select Source Group Area<br />
+                                            स्त्रोत समूह क्षेत्र का चयन करे<span style="color: red">*</span>
+                                        </label>
+                                        <select class="form-control select2" id="SourceGroupArea">
+                                            <option value="">--Select--</option>
+                                            <option value="पुस्तक लेखन">पुस्तक लेखन</option>
+                                            <option value="रिसर्च">रिसर्च</option>
+                                            <option value="मूल्यांकन- ब्लूप्रिंट/प्रश्नपत्र निर्माण">मूल्यांकन- ब्लूप्रिंट/प्रश्नपत्र निर्माण</option>
+                                            <option value="आईईडी">आईईडी</option>
+                                            <option value="कंप्यूटर आधारित शिक्षण">कंप्यूटर आधारित शिक्षण</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Select From Date<br />
+                                            दिनांक से का चयन करें<span style="color: red">*</span>
+                                        </label>
+                                        <input type="date" id="WorkedYear" class="form-control datepicker" value="-" placeholder="Enter From Date" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Select To Date<br />
+                                            दिनांक तक का चयन करें<span style="color: red">*</span>
+                                        </label>
+                                        <input type="date" id="ToDate" class="form-control datepicker" placeholder="Enter To Date" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Working Day /<br />
+                                            कार्य दिवस
+                                            <span style="color: red">*</span>
+                                        </label>
+                                        <input type="text" id="WorkingDays" class="form-control" placeholder="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <button type="button" onclick="AddCurriculm()" id="btnQualification" class="btn btn-outline-success w-lg btn-border"><b>Add</b></button>
+
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="tblExperience" style="display: none;">
+                                            <tr>
+                                                <th>Sr. No.<br />
+                                                    सरल क्र.</th>
+                                                <th>Level Type<br />
+                                                    स्तर प्रकार</th>
+                                                <th>Source Group Area<br />
+                                                    स्त्रोत समूह क्षेत्र</th>
+                                                <th>From Date<br />
+                                                    दिनांक से</th>
+                                                <th>To Date<br />
+                                                    दिनांक तक</th>
+                                                <th>Working Day<br />
+                                                    कार्य दिवस</th>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr />
+                            <div class="col-md-2">
+
+                                <button id="Button2" type="button" class="btn btn-outline-success btn-border Alert-Confirmation w-lg" onclick="myFunction()">Save</button>
+                            </div>
+                            <%--  <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <button type="button" class="Alert-Save3 btn btn-outline-success btn-border  w-lg">Save & Next</button>
+                                    <a data-bs-toggle="tab" href="#Experience" onclick="document.getElementsByTagName('form').reset" role="tab" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                                </div>
+                            </div>--%>
+                            <%--<div class="row">
                                 <div class="col-md-12">
                                     <div class="table-responsive ">
                                         <table class="table text-center">
@@ -243,7 +353,7 @@
                                 </div>
 
 
-                            </div>
+                            </div>--%>
                         </fieldset>
 
 
@@ -258,6 +368,47 @@
             document.getElementById("empDetail").style.display = "block";
 
         }
+
+        function AddCurriculm() {
+            var tableAdd = document.getElementById("tblQualification");
+            tableAdd.style.display = "table";
+            if ((tableAdd.rows.length - 1) == 4) {
+                alert('Maximum four entries allowed !!');
+            }
+            else {
+                tableAdd.style.display = "table";
+                var rows = tableAdd.rows.length;
+                var r = tableAdd.insertRow(rows);
+                var Education = document.getElementById("Education");
+                var Board = document.getElementById("Board");
+                var AcademicYear = document.getElementById("AcademicYear");
+                var Subject = document.getElementById("Subject");
+                var Passing = document.getElementById("PassingYear");
+                var rollnumber = document.getElementById("rollnumber");
+                var total = document.getElementById("ddlPercentage");
+                var fileInputs = document.getElementById("fileInput");
+                var c1 = r.insertCell(0);
+                c1.innerHTML = tableAdd.rows.length - 1;
+                var c2 = r.insertCell(1);
+                c2.innerHTML = Education.value;
+                var c3 = r.insertCell(2);
+                c3.innerHTML = Board.value;
+                var c4 = r.insertCell(3);
+                c4.innerHTML = AcademicYear.value;
+                var c5 = r.insertCell(4);
+
+                c5.innerHTML = Subject.value;
+                var c6 = r.insertCell(5);
+                c6.innerHTML = Passing.value;
+                var c7 = r.insertCell(6);
+                c7.innerHTML = rollnumber.value;
+                var c8 = r.insertCell(7);
+                c8.innerHTML = total.value;
+                var c9 = r.insertCell(8);
+                c9.style = "text-align:center";
+                c9.innerHTML = '<a role="button" class=" btn btn-outline-secondary btn-border btnShow" data-bs-toggle="modal" data-bs-target="#pdfModal"><i class="fas fa-eye"></a>';
+            }
+        };
     </script>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
@@ -309,5 +460,61 @@
                 $.SweetAlert.init()
             }(window.jQuery);
     </script>--%>
+
+
+    <script>
+        var entryCount = 0;
+
+        function AddCurriculm() {
+            // Maximum number of entries
+            var maxEntries = 5;
+            if (entryCount >= maxEntries) {
+                Swal.fire("Warning", "You can only add up to 5 entries.", "warning");
+                return;
+            }
+
+            // Get form values
+            var levelType = $('#Panel').val();
+            var sourceGroupArea = $('#SourceGroupArea').val();
+            var fromDate = $('#WorkedYear').val();
+            var toDate = $('#ToDate').val();
+            var workingDays = $('#WorkingDays').val();
+
+
+
+            // Increment the entry count
+            entryCount++;
+
+            // Display the table if it's hidden
+            $('#tblExperience').show();
+
+            // Add entry to the table
+            var newRow = `
+            <tr>
+                <td>${entryCount}</td>
+                <td>${levelType}</td>
+                <td>${sourceGroupArea}</td>
+                <td>${fromDate}</td>
+                <td>${toDate}</td>
+                <td>${workingDays}</td>
+            </tr>
+        `;
+            $('#tblExperience').append(newRow);
+
+            // Clear form inputs
+            $('#Panel').val('');
+            $('#SourceGroupArea').val('');
+            $('#WorkedYear').val('');
+            $('#ToDate').val('');
+            $('#WorkingDays').val('');
+
+            document.getElementById("Button2").style.display = "block";
+
+        }
+    </script>
+
+
+
+
 </asp:Content>
 

@@ -17,6 +17,11 @@
                 display: none;
             }
 
+            .boldnote {
+                font: bold;
+                font-size: 20px;
+            }
+
             #logpImage2 {
                 display: block;
                 margin-top: 2rem;
@@ -254,6 +259,10 @@
         <div class="col-lg-12">
             <img src="../../img/emp_ser_book.png" width="35%" />
         </div>
+        <div>
+            <h6>&nbsp&nbsp&nbsp&nbsp <span class="boldnote">Note</span>: किसी भी प्रकार की वैधानिक कार्यवाही हेतु शासकीय कार्यालय में यथोचित स्तर पर सेवा पुस्तिका के रूप में संधारित मूल सेवा पुस्तिका ही अंतिम रूप से मान्य होगी |
+            </h6>
+        </div>
     </div>
     <div class="content-wrapper">
         <div class="container-fluid">
@@ -266,7 +275,7 @@
                                 <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#firsttimeModel" aria-hidden="true"></button>
                             </div>
                             <div class="modal-body">
-
+                                '
                                 <img src="../../img/AppointmentOrder.jpg" class="img-fluid" />
                             </div>
 
@@ -389,13 +398,17 @@
                     </div>
                 </div>
 
-                <div class="card-body printable-border" id="printableArea">
-                    <div class="row text-center" id="logpImage2">
+                <div class="card-body printable-border mt-4" id="printableArea">
+                    <div class="row text-center" id="logpImage2" style="margin-top: -15px">
                         <div class="col-lg-12">
-                            <img src="../../img/Service%20Book%20Logo.png" width="35%" />
+                            <img src="../../img/Service%20Book%20Logo.png" width="50%" height="35%" />
+                        </div>
+                        <div class="row">
+                            <h6>&nbsp&nbsp&nbsp&nbsp <span class="boldnote">Note</span>: किसी भी प्रकार की वैधानिक कार्यवाही हेतु शासकीय कार्यालय में यथोचित स्तर पर सेवा पुस्तिका के रूप में संधारित मूल सेवा पुस्तिका ही अंतिम रूप से मान्य होगी |
+                            </h6>
                         </div>
                     </div>
-                    <fieldset id="fdInformation">
+                    <fieldset id="fdInformation" style="margin-top: -15px">
                         <legend id="Li1">Personal Information / व्यक्तिगत जानकारी</legend>
                         <div class="row align-items-end mb-0">
                             <div class="col-md-9 col-sm-9">
@@ -426,7 +439,7 @@
                             </div>
 
                             <div class="col-md-3 col-sm-3">
-                                <img class="profileimage" src="../../img/Dheeraj.jpg" id="uploadedImage" alt="Image Not Available" />
+                                <img class="profileimage" src="../../img/Dheeraj.jpg" id="uploadedImage" alt="Image Not Available" style="height: 120px; width: 130px" />
                                 <br />
                             </div>
                         </div>
@@ -493,15 +506,14 @@
                                         <td>ajay@gmail.com</td>
                                         <th>Employee Roll No. :</th>
                                         <td>A45687</td>
-                                        <th>Aadhaar No. :</th>
-                                        <td>334512098765</td>
+                                        <th>Rank In TET :</th>
+                                        <td>3rd</td>
                                     </tr>
 
                                     <tr>
-                                        <th>Employee Rank :</th>
-                                        <td>3rd</td>
+
                                         <th>Hobbies :</th>
-                                        <td colspan="3">Reading Books</td>
+                                        <td colspan="5">Reading Books</td>
 
                                     </tr>
                                 </tbody>
@@ -514,6 +526,7 @@
                             <table class="table table-bordered">
 
                                 <tr>
+                                    <th>Sr.No.</th>
                                     <th>Nominee Name</th>
                                     <th>Relationship with Nominee</th>
                                     <th>Nominee Percentage</th>
@@ -521,9 +534,18 @@
                                 </tr>
 
                                 <tr>
+                                    <td>1</td>
                                     <td>Sourya Verma</td>
-                                    <td>Brother</td>
-                                    <td>100%</td>
+                                    <td>Father</td>
+                                    <td>50%</td>
+                                    <%--<td><i class="fa fa-pen"></i>|&nbsp <i class="fa fa-trash"></i></td>--%>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+
+                                    <td>Sudha Verma</td>
+                                    <td>Mother</td>
+                                    <td>50%</td>
                                     <%--<td><i class="fa fa-pen"></i>|&nbsp <i class="fa fa-trash"></i></td>--%>
                                 </tr>
                             </table>
@@ -597,6 +619,8 @@
                             </div>
                         </fieldset>
                     </fieldset>
+
+                    <div id="fdEducationQualification"></div>
                     <fieldset>
 
                         <legend id="l5">Marital Status and Spouse Details / वैवाहिक स्थिति और जीवनसाथी का विवरण</legend>
@@ -616,40 +640,15 @@
                             </table>
                         </div>
                     </fieldset>
-                    <div id="fdEducationQualification"></div>
-                    <fieldset>
-                        <legend id="l6">Education Qualification / शैक्षणिक योग्यता</legend>
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <tr>
-                                    <th>Qualification :</th>
-                                    <td>BCA</td>
-                                    <th>Subject :
-                                    </th>
-                                    <td>Computer</td>
-                                </tr>
-                                <tr>
-                                    <th>Board / Univercity Name :</th>
-                                    <td>MP Board</td>
-                                    <th>Passing Year :
-                                    </th>
-                                    <td>03/05/2022</td>
-                                </tr>
-                                <tr>
-                                    <th>Grade / Percentage :</th>
-                                    <td colspan="3">75%</td>
-                                </tr>
 
-                            </table>
-                        </div>
-                    </fieldset>
-                    <fieldset id="FieldsetAppointment">
+
+                    <fieldset>
 
                         <legend id="l7">First Appointment Details / प्रथम नियुक्ति विवरण</legend>
 
                         <div class="table-responsive">
 
-                            <table class="table table-bordered">
+                            <table class="table table-bordered tbl-appointment">
 
                                 <tr>
                                     <th>OIS Type :</th>
@@ -670,19 +669,16 @@
                                     <td>Badi</td>
                                     <th>DDO / Sankul :
                                     </th>
-                                    <td>MVM School</td>
+                                    <td>MVM School (584858548401)</td>
                                 </tr>
                                 <tr>
 
                                     <th>Office/Institute/School Code & Name :
                                     </th>
-                                    <td>Reem Higher Secondary School</td>
-                                    <th>Office/Institute/School 
-                                        <br />
-                                        Address of first Posting
+                                    <td>Reem Higher Secondary School (6595685484)</td>
+                                    <th>Office/Institute/School Address of first Posting
                                                    :</th>
-                                    <td>Robertson, 1234 NW Bobcat Lane,<br />
-                                        St. Robert</td>
+                                    <td>Robertson, 1234 NW Bobcat Lane, St. Robert</td>
                                 </tr>
                                 <tr>
 
@@ -704,7 +700,7 @@
 
                                     <th>First Appointment Designation :
                                     </th>
-                                    <td>Director</td>
+                                    <td>Prathmik Shikshak</td>
                                     <th>Appointment Joining Date :</th>
                                     <td>09/11/2021</td>
                                 </tr>
@@ -716,13 +712,18 @@
                                     <th>Subject :</th>
                                     <td>English</td>
                                 </tr>
+                                <%--  <tr>
+                                    <th>IF Samvilian :
+                                    </th>
+                                    <td>Yes</td>
+                                </tr>--%>
                                 <tr>
 
                                     <th>Samvilian Order No. :
                                     </th>
-                                    <td>56789</td>
+                                    <td>2018/100144 02/10/2018</td>
                                     <th>Samvilian Order Date :</th>
-                                    <td>23/12/2018</td>
+                                    <td>29/07/2011</td>
                                 </tr>
                                 <tr>
 
@@ -784,56 +785,52 @@
                         </div>
                     </fieldset>
                     <fieldset>
-                        <legend id="l8">Current Appointment Details / वर्तमान नियुक्ति विवरण</legend>
+
+                        <legend id="l8">Current Posting Details / वर्तमान पदस्थापना का विवरण</legend>
 
                         <div class="table-responsive">
 
-                            <table class="table table-bordered">
+                            <table class="table table-bordered tbl-appointment">
 
                                 <tr>
                                     <th>OIS Type :</th>
                                     <td>Institude</td>
-                                    <th>Office Type :
-                                    </th>
-                                    <td>Deputy Secretary</td>
+                                    <th>Office Type :</th>
+                                    <td>DPI</td>
                                 </tr>
                                 <tr>
-                                    <th>First Appointment Division :</th>
+                                    <th>Current Appointment Division :</th>
                                     <td>Narmadapuram</td>
-                                    <th>First Appointment District :
+                                    <th>Current Appointment District :
                                     </th>
                                     <td>Sehore</td>
                                 </tr>
                                 <tr>
-                                    <th>First Appointment Block :</th>
+                                    <th>Current Appointment Block :</th>
                                     <td>Ashta</td>
                                     <th>DDO / Sankul :
                                     </th>
-                                    <td>Geetanjali Public School</td>
+                                    <td>Geetanjali Public School (614258475168)</td>
                                 </tr>
                                 <tr>
                                     <th>Office/Institute/School Code & Name :
                                     </th>
-                                    <td>Reem Higher Secondary School</td>
-                                    <th>Office/Institute/School 
-                                        <br />
-                                        Address of first Posting
+                                    <td>OM Higher Secondary School (6859475168)</td>
+                                    <th>Office/Institute/School Address of first Posting
 :</th>
-                                    <td>Robertson, 1234 NW Bobcat Lane,
-                                        <br />
-                                        St. Robert</td>
+                                    <td>Robertson, 1234 NW Bobcat Lane, St. Robert</td>
                                 </tr>
                                 <tr>
 
-                                    <th>First Appointment Order No :
+                                    <th>Current Appointment Order No :
                                     </th>
                                     <td>9840</td>
-                                    <th>First Appointment Order Date :</th>
+                                    <th>Current Appointment Order Date :</th>
                                     <td>09/10/2020</td>
                                 </tr>
                                 <tr>
 
-                                    <th>First Appointment Department :
+                                    <th>Current Appointment Department :
                                     </th>
                                     <td>DPI</td>
                                     <th>Employee’s Designation Type :</th>
@@ -841,10 +838,10 @@
                                 </tr>
                                 <tr>
 
-                                    <th>First Appointment Designation :
+                                    <th>Current Appointment Designation :
                                     </th>
-                                    <td>Joint Director</td>
-                                    <th>Appointment Joining Date :</th>
+                                    <td>Prathmik Shikshak</td>
+                                    <th>Current Appointment Joining Date :</th>
                                     <td>01/11/2021</td>
                                 </tr>
                                 <tr>
@@ -867,8 +864,7 @@
 
                                     <th>Working in other Department
                                         <br />
-                                        Organization 
-                                        on Deputation Transfer :
+                                        Organization on Deputation Transfer :
                                     </th>
                                     <td>No</td>
                                     <th>Is Regular :</th>
@@ -879,22 +875,7 @@
                                     <th>Increment Month :
                                     </th>
                                     <td>January</td>
-                                    <th>Provision Period From Month :</th>
-                                    <td>01/03/2017</td>
-                                </tr>
-                                <tr>
 
-                                    <th>Provision Period To Month :
-                                    </th>
-                                    <td>04/07/2021</td>
-                                    <th>If Provision Extend :</th>
-                                    <td>No</td>
-                                </tr>
-                                <tr>
-
-                                    <th>Provision Type :
-                                    </th>
-                                    <td>Regular Employee</td>
                                     <th>Employee Retirement Date</th>
                                     <td>09/10/2026</td>
 
@@ -926,10 +907,36 @@
                     </fieldset>
                     <div id="fdEmployeeAccountInfo"></div>
                     <fieldset>
-                        <legend id="l9">Employee Account Info / कर्मचारी खाता जानकारी</legend>
+                        <legend id="l6">Education Qualification / शैक्षणिक योग्यता</legend>
                         <div class="table-responsive">
                             <table class="table table-bordered">
                                 <tr>
+                                    <th>Qualification :</th>
+                                    <td>BCA</td>
+                                    <th>Subject :
+                                    </th>
+                                    <td>Computer</td>
+                                </tr>
+                                <tr>
+                                    <th>Board / Univercity Name :</th>
+                                    <td>MP Board</td>
+                                    <th>Passing Year :
+                                    </th>
+                                    <td>03/05/2022</td>
+                                </tr>
+                                <tr>
+                                    <th>Grade / Percentage :</th>
+                                    <td colspan="3">75%</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend id="l9">Employee Account Info / कर्मचारी खाता जानकारी</legend>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <%--           <tr>
                                     <th>IFSC Code :</th>
                                     <td>SBIN0005943 </td>
                                     <th>Bank Name</th>
@@ -947,7 +954,7 @@
                                     <th>Provident Fund :</th>
                                     <td>DPF No.</td>
 
-                                </tr>
+                                </tr>--%>
                                 <tr>
                                     <th>DPF No. :</th>
                                     <td>34567</td>
@@ -970,32 +977,44 @@
                         </div>
                     </fieldset>
                     <fieldset>
-                        <legend id="20">Promotion Details / प्रमोशन का विवरण </legend>
+                        <legend id="20">Promotion Details / पदोन्नति का विवरण </legend>
                         <div class="table-responsive">
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
                                         <th>Sr. No.<br />
                                             सरल क्र.</th>
+                                        <th>Promotion Type<br />
+                                            पदोन्नति का प्रकार</th>
                                         <th>Order  Number<br />
                                             आदेश  क्रमांक  </th>
                                         <th>Order Date<br />
                                             आदेश  दिनांक </th>
-                                        <th>Name of the issuing office<br />
-                                            जारीकर्ता  कार्यालय का नाम </th>
-                                        <th>District In Case of District/Division Level Authority<br />
-                                            जिला/मंडल स्तरीय प्राधिकरण के मामले में जिला</th>
+                                        <th>Name of the
+                                            <br />
+                                            issuing office<br />
+                                            जारीकर्ता  कार्यालय
+                                            <br />
+                                            का नाम </th>
+                                        <th>District In Case of<br />
+                                            District/ Division<br />
+                                            Level Authority<br />
+                                            जिला/मंडल स्तरीय प्राधिकरण<br />
+                                            के मामले में जिला</th>
                                         <th>Designation<br />
                                             पदनाम </th>
-                                        <th>Pay Scale of the Post<br />
+                                        <th>Pay Scale
+                                            <br />
+                                            of the Post<br />
                                             पद का वेतनमान </th>
-                                        <th>Date of Taking over the Post<br />
-                                            पद का  कार्यभार दिनांक  </th>
+                                        <th>Joining Date<br />
+                                            कार्यभार दिनांक  </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th>1</th>
+                                        <th>Without Transfer</th>
                                         <th>231/22</th>
                                         <td>22/02/2022</td>
                                         <td>DPI</td>
@@ -1003,6 +1022,42 @@
                                         <td>Assistant Grate-I</td>
                                         <td>50000</td>
                                         <td>23/2/2022</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend id="24">Transfer Details / स्थानांतरण विवरण </legend>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No.<br />
+                                            सरल क्र.</th>
+                                        <th>Transfer Type<br />
+                                            स्थानांतरण का प्रकार</th>
+                                        <th>Order  Number<br />
+                                            आदेश  क्रमांक  </th>
+                                        <th>Order Date<br />
+                                            आदेश  दिनांक </th>
+                                        <th>Designation(Type)
+                        <br />
+                                            पदनाम(प्रकार)</th>
+                                        <th>Posted School/Institute/Office Name(DISE Code)
+                        <br />
+                                            पदस्थापित विद्यालय/संस्थान/कार्यालय का नाम (DISE कोड)  
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Administrative Transfer</td>
+                                        <td>135924</td>
+                                        <td>09/08/2023</td>
+                                        <td>Prathmik Shikshak(teaching)</td>
+                                        <td>GMS Kudana 1 To 8 [23220403602]</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1042,7 +1097,7 @@
                         </div>
                     </fieldset>
                     <fieldset>
-                        <legend id="22">Annual Increment  Details / वार्षिक वेतन वृद्धि आदेश का विवरण </legend>
+                        <legend id="22">Increment  Details / वेतन वृद्धि आदेश का विवरण </legend>
                         <div class="table-responsive">
                             <table class="table table-bordered">
                                 <thead>
@@ -1068,7 +1123,7 @@
                             </table>
                         </div>
                     </fieldset>
-                    <fieldset>
+                    <%--<fieldset>
                         <legend id="23">Special Increment Order Details / विशेष वेतन वृद्धि आदेश का विवरण </legend>
                         <div class="table-responsive">
                             <table class="table table-bordered">
@@ -1102,35 +1157,50 @@
                                 </tbody>
                             </table>
                         </div>
-                    </fieldset>
+                    </fieldset>--%>
+
                     <fieldset>
-                        <legend id="24">Transfer Details / विशेष वेतन वृद्धि आदेश का विवरण </legend>
+                        <legend id="28">Approved  Leave Details / स्वीकृत अवकाश का विवरण</legend>
                         <div class="table-responsive">
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
                                         <th>Sr. No.<br />
                                             सरल क्र.</th>
-                                        <th>Order  Number<br />
-                                            आदेश  क्रमांक  </th>
-                                        <th>Order Date<br />
-                                            आदेश  दिनांक </th>
-                                        <th>Designation(Type)
+                                        <th>Type of leave
                                             <br />
-                                            पदनाम(प्रकार)</th>
-                                        <th>Posted School/Institute/Office Name(DISE Code)
-                                            <br />
-                                            पदस्थापित विद्यालय/संस्थान/कार्यालय का नाम (DISE कोड)  
+                                            अवकाश का प्रकार </th>
+                                        <th>Duration in days<br />
+                                            अवधि दिनों में </th>
+                                        <th>From  date
+                                           <br />
+                                            दिनांक से
                                         </th>
+                                        <th>To Date
+                        <br />
+                                            दिनांक तक</th>
+                                        <th>Acceptance Date
+                                           <br />
+                                            स्वीकृति दिनांक
+                                        </th>
+                                        <th>approver
+                    <br />
+                                            स्वीकृतकर्ता</th>
+                                        <th>Date of return from leave<br />
+                                            अवकाश में वापसी की तिथि </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>135924</td>
-                                        <td>09/08/2023</td>
-                                        <td>Prathmik Shikshak(teaching)</td>
-                                        <td>GMS Kudana 1 To 8 [23220403602]</td>
+                                        <td>CL</td>
+                                        <td>5</td>
+                                        <td>01/08/2024</td>
+                                        <td>05/08/2024</td>
+                                        <td>24/07/0224</td>
+                                        <td>AB1120-अशोक कुमार </td>
+                                        <td>06/08/2024</td>
+
                                     </tr>
                                 </tbody>
                             </table>
@@ -1144,16 +1214,14 @@
                                     <tr>
                                         <th>Sr. No.<br />
                                             सरल क्र.</th>
-                                        <th>Year
-                         <br />
+                                        <th>Year<br />
                                             वर्ष</th>
                                         <th>Month<br />
                                             महीना</th>
                                         <th>Earned Leave (in Day)<br />
                                             अर्जित अवकाश 
                                         </th>
-                                        <th>Available Leave (in Day)
-     <br />
+                                        <th>Available Leave (in Day)<br />
                                             उपलब्ध अवकाश </th>
                                     </tr>
                                 </thead>
@@ -1166,9 +1234,9 @@
                             </table>
                         </div>
                     </fieldset>
-                    <div id="fdHalfPayLeaveRecords">
-                    </div>
-                    <fieldset>
+                    <%--<div id="fdHalfPayLeaveRecords">
+                    </div>--%>
+                    <%--<fieldset>
                         <legend id="27">Half Pay  Leave Records / अर्ध वेतन अवकाश का विवरण  </legend>
                         <div class="table-responsive">
                             <table class="table table-bordered">
@@ -1197,55 +1265,12 @@
                                 </tbody>
                             </table>
                         </div>
-                    </fieldset>
-                    <div id="PageBreak4"></div>
-                    <fieldset>
-                        <legend id="28">Approved  Leave Details / स्वीकृत अवकाश का विवरण</legend>
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>Sr. No.<br />
-                                            सरल क्र.</th>
-                                        <th>Type of leave
- <br />
-                                            अवकाश का प्रकार </th>
-                                        <th>Duration in days<br />
-                                            अवधि दिनों में </th>
-                                        <th>From  date
-                                            <br />
-                                            दिनांक से
-                                        </th>
-                                        <th>To Date
-                         <br />
-                                            दिनांक तक</th>
-                                        <th>Acceptance Date
-                                            <br />
-                                            स्वीकृति दिनांक
-                                        </th>
-                                        <th>approver
-                     <br />
-                                            स्वीकृतकर्ता</th>
-                                        <th>Date of return from leave<br />
-                                            अवकाश में वापसी की तिथि </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>CL</td>
-                                        <td>5</td>
-                                        <td>01/08/2024</td>
-                                        <td>05/08/2024</td>
-                                        <td>24/07/0224</td>
-                                        <td>AB1120-अशोक कुमार </td>
-                                        <td>06/08/2024</td>
+                    </fieldset>--%>
 
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </fieldset>
+
+                    <div id="fdHalfPayLeaveRecords">
+                    </div>
+                    <%--                             <div id="PageBreak4"></div>--%>
                     <fieldset>
                         <legend id="2">Unathorized   Absence Details / अनधिकृत अनुपस्थिति का विवरण</legend>
                         <div class="table-responsive">
@@ -1293,17 +1318,24 @@
                                         <th>Name of the Issuer<br />
                                             जारीकर्ता का नाम
                                         </th>
-                                        <th>Order Number<br />
-                                            आदेश क्रमांक
+                                        <th>Punishment Order Number<br />
+                                            दंड आदेश क्रमांक
                                         </th>
-                                        <th>Order Date
+                                        <th>Punishment Order Date
                         <br />
-                                            आदेश दिनांक</th>
+                                            दंड आदेश दिनांक</th>
+                                        <th>Restore Order Number<br />
+                                            बहाली आदेश क्रमांक
+                                        </th>
+                                        <th>Restore Order Date
+                                            <br />
+                                            बहाली आदेश दिनांक</th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td colspan="5">Punishment  Details Not Available </td>
+                                        <td colspan="7">Punishment  Details Not Available </td>
 
                                 </tbody>
                             </table>
@@ -1340,10 +1372,9 @@
                         </div>
                     </fieldset>
                     <fieldset>
-                        <legend>क्या आप राष्ट्रीय या राज्य स्तरीय प्रशिक्षण या राज्य स्तरीय समूह में शामिल हैं 
-/
-
-         Are You Involved in National or State Level Training or State Level Group</legend>
+                        <legend>Are You Involved in National or State Level Training or State Level Group / 
+                            क्या आप राष्ट्रीय या राज्य स्तरीय प्रशिक्षण या राज्य स्तरीय समूह में शामिल हैं 
+                        </legend>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="table-responsive ">
@@ -1411,7 +1442,7 @@
                             </div>
                         </div>
                     </fieldset>
-                    <div id="fdDetailsofAwards"></div>
+                    <%--<div id="fdDetailsofAwards"></div>--%>
                     <fieldset>
                         <legend>Details of National or State Level Awards And Honors / राष्ट्रीय या राज्य स्तर के पुरस्कार व सम्मान का विवरण </legend>
                         <div class="row ">

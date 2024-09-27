@@ -87,7 +87,7 @@
         <div class="card-header">
             <div class="row align-items-end">
                 <div class="col-lg-12">
-                    <h5 class="card-title">Surplus Status / अतिरिक्त स्थिति
+                    <h5 class="card-title">Surplus Status / अधिशेष स्थिति
                     </h5>
                 </div>
             </div>
@@ -164,7 +164,7 @@
                         </div>
                     </div>
                     <fieldset class="mt-5">
-                        <legend>Panel-Wise Teacher's Surplus Details / पैनल-वार अतिरिक्त शिक्षक विवरण</legend>
+                        <legend>Panel-Wise Teacher's Surplus Details / पैनल-वार शिक्षक अधिशेष विवरण</legend>
                         <div class="row justify-content-end">
                             <div class="col-md-4 text-end">
                                 <div class="form-group">
@@ -189,10 +189,10 @@
                                                 स्वीकृत पद</th>
                                             <th>Working<br />
                                                 कार्यरत</th>
-                                            <th>Proposed Surplus Posts<br />
-                                                प्रस्तावित अतिरिक्त पद</th>
+                                            <th>Proposed Surplus<br />
+                                                प्रस्तावित अधिशेष</th>
                                             <th>Marked Surplus<br />
-                                                चिह्नित अतिरिक्त</th>
+                                                चिह्नित अधिशेष</th>
                                         </tr>
 
                                         <tr>
@@ -208,7 +208,7 @@
                         </div>
                     </fieldset>
                     <fieldset class="mt-5">
-                        <legend>All Employee With Surplus Details / अतिरिक्त विवरण वाले सभी कर्मचारी</legend>
+                        <legend>All Employee With Surplus Details / अधिशेष विवरण वाले सभी कर्मचारी</legend>
                         <div class="row justify-content-end">
                             <div class="col-md-4 text-end">
                                 <div class="form-group">
@@ -237,12 +237,12 @@
                                                 विकलांग</th>
                                             <th>Critical Illeness<br />
                                                 गंभीर बीमारी</th>
-                                            <th>Present Posting Date<br />
-                                                वर्तमान पोस्टिंग दिनांक</th>
-                                            <th>Age (In Year)<br />
+                                            <th>Present Posting<br />
+                                                वर्तमान पद</th>
+                                            <th>AgeInYear<br />
                                                 आयु (वर्षों में)</th>
                                             <th>Surplus<br />
-                                                अतिरिक्त</th>
+                                                अधिशेष</th>
                                         </tr>
 
                                         <tr>

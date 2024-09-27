@@ -54,7 +54,6 @@
     }
 </style>
 
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <%--  <div class="row">

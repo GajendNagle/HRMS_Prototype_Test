@@ -1,57 +1,58 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="JdProjectDetails.aspx.cs" Inherits="mis_Development_JdProjectDetails" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" Runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<style>
-    .modal-body {
-        display: flex;
-        justify-content: center !important;
-        align-items: center;
-    }
-
-    .modal fade {
-        justify-content: center !important;
-    }
-
-    @media print {
-        @page {
-            size: A4;
-            margin: 10mm;
-        }
-
-        body {
-            font-size: 12px;
-            transform-origin: top left;
-            transform: scale(calc(100% / var(--print-scale, 1)))
-        }
-
-        .page-break {
-            page-break-after: always;
-        }
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
         .modal-body {
             display: flex;
-            justify-content: center;
+            justify-content: center !important;
             align-items: center;
-            text-align: center; /* added this line */
         }
-    }
 
-    textarea {
-        resize: vertical;
-        min-height: 60px; /* Set a minimum height */
-    }
+        .modal fade {
+            justify-content: center !important;
+        }
 
-    .table th {
-        background-color: white;
-    }
-    .form-control:read-only{
-         background-color: white;
-    }
-</style>
+        @media print {
+            @page {
+                size: A4;
+                margin: 10mm;
+            }
+
+            body {
+                font-size: 12px;
+                transform-origin: top left;
+                transform: scale(calc(100% / var(--print-scale, 1)))
+            }
+
+            .page-break {
+                page-break-after: always;
+            }
+
+            .modal-body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center; /* added this line */
+            }
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 60px; /* Set a minimum height */
+        }
+
+        .table th {
+            background-color: white;
+        }
+
+        .form-control:read-only {
+            background-color: white;
+        }
+    </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
@@ -87,14 +88,14 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-6">
-                    <h4 class="card-title"> Project Details / परियोजना विवरण </h4>
+                    <h4 class="card-title">Project Details / परियोजना विवरण </h4>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <span id="ContentBody_lblMsg"></span>
             <fieldset>
-                <legend> Project Details / परियोजना विवरण</legend>
+                <legend>Project Details / परियोजना विवरण</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -162,7 +163,7 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend> Project Details / परियोजना विवरण</legend>
+                <legend>Project Details / परियोजना विवरण</legend>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
@@ -196,15 +197,15 @@
                                         गतिविधि स्थिति</th>--%>
                                         <%--  <th>Work Place  /<br />
                                         कार्य स्थल</th>--%>
-                                      
+
                                         <th>Estimated Budget Cost(In Rs) 
                                             <br />
                                             अनुमानित बजट</th>
-                                          <th>Work Description<br />
-      कार्य का विवरण</th>
+                                        <th>Work Description<br />
+                                            कार्य का विवरण</th>
                                         <th id="View">View Document<br>
                                             दस्तावेज़ देखें</th>
-                                     <%--   <th id="edit">Edit<br>
+                                        <%--   <th id="edit">Edit<br>
                                             एडिट करें</th>
                                         <th id="Send">Send To Request<br />
                                             अनुरोध करने के लिए भेजें</th>
@@ -228,13 +229,14 @@
                                         <td>Delhi Public School_44561</td>
                                         <td>Bhopal M.P</td>
                                         <%--<td>Working Mode</td>--%>
-                                      
+
                                         <td>10000.00</td>
-                                                                            <td>
-<button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#WorkDescription"><i class="	far fa-comment-alt"></i></button></td>
+                                        <td>
+                                            <button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#WorkDescription"><i class="	far fa-comment-alt"></i></button>
+                                        </td>
 
                                         <td id="Document"><%--<a class="btn btn-info btn-rounded" href="#">--%>  <a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-file"></i></a></td>
-                                       <%-- <td id="Edit">
+                                        <%-- <td id="Edit">
                                             <a class="btn btn-info btn-rounded" href="CreateProject.aspx"><i class="fa fa-pen"></i></a>
                                         </td>--%>
                                         <%--   <td>
@@ -243,10 +245,9 @@
 </td>--%><%--<td id="Request">
     <button id="BtnBack" type="button" class="Alert-Save btn btn-outline-primary w-xl  fs-13 me-4 rounded-4 ">Send To Request HO</button></td>
                                         <td id="InputBox" style="display: none;">--%>
-                                            <%--<input type="text" class="form-control" style="width: 150px;" />--%> <%--Panding For HO</td>
+                                        <%--<input type="text" class="form-control" style="width: 150px;" />--%> <%--Panding For HO</td>
                                         <td id="remark" style="display: none;">--%>
-                                            <%--<textarea class="form-control" style="width: 150px;" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>--%><%-- Work in Progress</td>--%>
-
+                                        <%--<textarea class="form-control" style="width: 150px;" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="Enter Reason"></textarea>--%><%-- Work in Progress</td>--%>
                                     </tr>
                                 </tbody>
                             </table>
@@ -261,7 +262,7 @@
                     <div class="modal-content">
                         <!-- Modal Header -->
                         <div class="modal-header">
-                            <h4 class="modal-title" id="exampleModalLabel1">Project Details</h4>
+                            <h4 class="modal-title" id="exampleModal">Project Details</h4>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true"></span>
                             </button>
@@ -426,45 +427,46 @@
             </div>
 
             <%--Work Description--%>
-              <div class="modal" id="WorkDescription">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header" style="background-color: var(--vz-primary); color: white">
-                  <h4 class="modal-title text-white">Work Description</h4>
-                  <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
-              </div>
-              <!-- Modal Body -->
-              <div class="modal-body">
-                  <div class="row">
-                      <div class="col-md-12">
+            <div class="modal" id="WorkDescription">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header" style="background-color: var(--vz-primary); color: white">
+                            <h4 class="modal-title text-white">Work Description</h4>
+                            <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12">
 
-                      
-                  <div class="form-group">
-                    <%--  <h5>Work Description</h5>--%>
-                      <p class="border p-2 border-primary fs-5 rounded-4">Buildings serve several needs of society primarily as shelter from weather, security, living space, privacy, to store belongings, and to comfortably live and work. A building as a shelter represents a physical division of the human habitat (a place of comfort and safety) and the outside (a place that at times may be harsh and harmful),
 
-</p>
-                   <%--   <textarea class="form-control" rows="1" style="resize: vertical" placeholder="project approval & Installment Creation/ परियोजना अनुमोदन एवं किस्त निर्माण
+                                    <div class="form-group">
+                                        <%--  <h5>Work Description</h5>--%>
+                                        <p class="border p-2 border-primary fs-5 rounded-4">
+                                            Buildings serve several needs of society primarily as shelter from weather, security, living space, privacy, to store belongings, and to comfortably live and work. A building as a shelter represents a physical division of the human habitat (a place of comfort and safety) and the outside (a place that at times may be harsh and harmful),
+
+                                        </p>
+                                        <%--   <textarea class="form-control" rows="1" style="resize: vertical" placeholder="project approval & Installment Creation/ परियोजना अनुमोदन एवं किस्त निर्माण
 
 "></textarea>--%>
-                  </div>
-              </div>
-                          </div>
+                                    </div>
+                                </div>
+                            </div>
 
-              <!-- Modal Footer -->
-          <%--    <div class="modal-footer justify-content-center">
+                            <!-- Modal Footer -->
+                            <%--    <div class="modal-footer justify-content-center">
 
                   <button type="button" class="btn btn-success Alert-Reject btn-rounded" data-dismiss="modal" id="saveButton">Reject</button>
                   <button type="button" class="btn btn-danger btn-rounded" data-dismiss="modal">Close</button>
               </div>--%>
-          </div>
-              </div>
-      </div>
-  </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         </div>
     </div>
 </asp:Content>
@@ -511,7 +513,7 @@
             });
         });
 </script>--%>
- <%--   <script>
+    <%--   <script>
          function printModalContent(modalId) {
              var modalContent = document.querySelector('#' + modalId + ' .modal-body').cloneNode(true);
              document.body.innerHTML = modalContent.innerHTML
@@ -588,7 +590,7 @@
             ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
         };</script>--%>
     <script>function autoResize(textarea) {
-                                              textarea.style.height = 'auto'; // Reset height to auto
-                                              textarea.style.height = (textarea.scrollHeight) + 'px'; // Set the height to the scroll height
-                                          }</script>
+            textarea.style.height = 'auto'; // Reset height to auto
+            textarea.style.height = (textarea.scrollHeight) + 'px'; // Set the height to the scroll height
+        }</script>
 </asp:Content>

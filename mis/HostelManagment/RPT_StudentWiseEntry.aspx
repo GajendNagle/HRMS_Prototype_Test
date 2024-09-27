@@ -19,10 +19,11 @@
                             <a href="#HostelManagement" data-bs-toggle="collapse" role="button" onclick="SidebarToggle('HostelManagement')">
                                 <span>Hostel Management</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Student Wise IN/Out Entry</span></li>
+                        <li class="breadcrumb-item"><span> Student In/Out Report</span></li>
                     </ol>
                 </div>
             </div>
+
         </div>
     </div>
     <div class="card card-border-primary">
@@ -31,11 +32,11 @@
                 <div class="col-xl-10 col-md-12">
                     <div class="marqueecontainerinfo">
                         <div class="headertext btn btn-primary rounded-pill">
-                            छात्रवार इन/आउट प्रवेश रिपोर्ट का विवरण
+                            छात्र इन/आउट रिपोर्ट का विवरण
                         </div>
                         <div>
                             <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
-                                Student Wise IN/Out Enter Report/छात्रवार इन/आउट प्रवेश रिपोर्ट
+                                Student In/Out Report/ छात्र इन/आउट रिपोर्ट
                             </marquee>
                         </div>
                     </div>
@@ -44,17 +45,15 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Student Wise IN/Out Enter Report /छात्रवार इन/आउट प्रवेश</legend>
+                <legend> Student In/Out Report /छात्र इन/आउट रिपोर्ट</legend>
 
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Hostel Name/
-      <br />
-                                हॉस्टल नाम चुनें<span style="color: red;">*</span></label>
+                                Select Hostel Name /<br /> हॉस्टल का चयन करे<span style="color: red;">*</span></label>
                             <select class="form-control select2">
-                                <option selected="selected" value="0">--Select --</option>
+                                <option selected="selected" value="0">All</option>
                                 <option value="1">KGBV Girls Hostel</option>
                                 <option value="2">KGBV Boys Hostel</option>
                                 <option value="3">KGBV Combine Hostel</option>
@@ -64,11 +63,9 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Student Name(ID)/
-   <br />
-                                छात्र नाम(आई.डी) चयन करे</label>
+                                Select Student Name (ID) /<br /> विद्यार्थी का नाम (आईडी) चयन करें</label>
                             <select class="form-control select2">
-                                <option>select</option>
+                                <option>All</option>
                                 <option value="1">Raadha Dawar(103201441)</option>
                                 <option value="2">JEANA RAWAT(188599791)</option>
                                 <option value="3">Ramesh Nargawa (108875539)</option>
@@ -94,6 +91,7 @@
                             <input name="ename" id="toDOB" type="date" class="form-control" />
                         </div>
                     </div>
+
                 </div>
                 <hr />
                 <div class="row">
@@ -107,8 +105,8 @@
                     </div>
                 </div>
             </fieldset>
-            <fieldset id="show"  style="display: none;">
-                <legend>Details / विवरण</legend>
+            <fieldset id="show" style="display: none;">
+                <legend>Details/विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
@@ -125,17 +123,19 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server">
+                            <table id="Table1" class="table table-bordered table-responsive-lg text-center" runat="server" style="white-space:nowrap">
                                 <thead>
                                     <tr valign="middle" style="background-color: #1B5B5C;" class="text-white">
-                                        <th>S.No
-                                 <br />
-                                            सरल क्र.</th>
-                                        <th>Date<br />
+                                        <th>S.No/
+                                         <br />
+                                         सरल क्र.</th>
+                                        <th>Date/<br />
                                             दिनांक</th>
-                                        <th>Day<br />
+                                        <th>Day/<br />
                                             दिन</th>
-                                        <th>Unique ID/Student Name
+                                           <th>Hostel Name /<br />
+                                            छात्रावास का नाम</th>
+                                        <th>Unique ID/Student Name/
                                  <br />
                                             आईडी/विद्यार्थी का नाम </th>
 
@@ -143,6 +143,7 @@
                                             बाहर जाने का समय</th>
                                         <th>In Time/<br />
                                             वापस आने का समय</th>
+                                        <th>Remark / टिप्पणी</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -150,23 +151,27 @@
                                         <td>1</td>
                                         <td>23/08/2024</td>
                                         <th>Friday</th>
+                                            <th>KGBV Combine Hostel</th>
                                         <td>Ashish Gupta/<br />
                                             EDP4454445</td>
                                         <td>9:45 AM</td>
                                         <td>4:00 PM</td>
+                                        <td>A demo is what you give to show how something works.</td>
 
 
                                     </tr>
                                 </tbody>
                                 <tbody>
                                     <tr valign="middle">
-                                        <td>1</td>
+                                        <td>2</td>
                                         <td>23/08/2024</td>
                                         <th>Friday</th>
+                                            <th>KGBV Combine Hostel</th>
                                         <td>Sita Verma/<br />
                                             EDP4454445</td>
-                                        <td>6:45 AM</td>
-                                        <td>9:00 PM</td>
+                                        <td>9:45 AM</td>
+                                        <td>4:15 PM</td>
+                                        <td>A demo is what you give to show how something works. </td>
 
 
                                     </tr>
@@ -183,7 +188,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>
-        function div(){
+        function div() {
 
             document.getElementById("show").style.display = (document.getElementById("show").style.display == 'block') ? 'none' : 'block';
 

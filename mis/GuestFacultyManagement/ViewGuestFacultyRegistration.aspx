@@ -69,7 +69,7 @@
                                     </select>
                                 </div>
                             </div>
-                          <%--  <div class="col-md-6 col-lg-4 col-xl-3">
+                            <%--  <div class="col-md-6 col-lg-4 col-xl-3">
                                 <div class="form-group">
                                     <label>
                                         Profile ID
@@ -86,7 +86,7 @@
                                     <input type="text" class="form-control" value="Enter Mobile number as registered in the Application" />
                                 </div>
                             </div>
-                           <%-- <div class="col-md-6 col-lg-4 col-xl-3">
+                            <%-- <div class="col-md-6 col-lg-4 col-xl-3">
                                 <div class="form-group">
                                     <label>
                                         Select Qualification
@@ -102,7 +102,7 @@
                                     </select>
                                 </div>
                             </div>--%>
-                            <div class="col-md-6 col-lg-4">
+                          <%--  <div class="col-md-6 col-lg-4">
                                 <div class="form-group">
                                     <label>
                                         Date of Birth
@@ -110,7 +110,7 @@
                                         जन्म तिथि दर्ज करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="4" class="form-control" autocomplete="off" value="2023-12-10" />
                                 </div>
-                            </div>
+                            </div>--%>
 
                             <hr />
                             <div class="col-md-12 justify-content-center">
@@ -191,7 +191,7 @@
                                                     <a>State govt university</a>
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                  <button type="button" class="btn btn-outline-success btn-border" onclick="document.getElementById('FS_Details').style.display = 'block';">View</button>
+                                                    <button type="button" class="btn btn-outline-success btn-border" onclick="document.getElementById('FS_Details').style.display = 'block';">View</button>
                                                 </td>
 
                                             </tr>
@@ -228,16 +228,16 @@
                             <div class="col-md-6 col-lg-4 col-xl-3">
                                 <div class="form-group">
                                     <label>
-                                         Guest Faculty  ID
+                                        Guest Faculty  ID
  <br />
-                                     अतिथि शिक्षक आई.डी<span style="color: red;"> *</span></label>
+                                        अतिथि शिक्षक आई.डी<span style="color: red;"> *</span></label>
                                     <input type="text" class="form-control" value="GF0012" />
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 col-xl-3">
                                 <div class="form-group">
                                     <label>
-                                       Guest Faculty Name
+                                        Guest Faculty Name
  <br />
                                         अतिथि शिक्षक का नाम  <span style="color: red;">*</span></label>
                                     <input type="text" class="form-control" value="Ramesh Nanda" />
@@ -249,7 +249,7 @@
                                         Father's/Husband's Name 
  <br />
                                         पिता/पति का नाम दर्ज करें<span style="color: red;"> *</span></label>
-                                    <input type="text" class="form-control" value="Vinod Nanda"/>
+                                    <input type="text" class="form-control" value="Vinod Nanda" />
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 col-xl-3">
@@ -297,7 +297,7 @@
                                         Mobile No.
  <br />
                                         मोबाइल नंबर दर्ज करें<span style="color: red;"> *</span></label>
-                                    <input type="text" class="form-control" value="9638527410"/>
+                                    <input type="text" class="form-control" value="9638527410" />
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 col-xl-3">
@@ -475,7 +475,7 @@
                         <div class="row align-items-end">
                             <div class="col-md-4">
                                 <label for="chck1">Verify </label>
-                                <input id="chck1" type="radio" name="Process" />
+                                <input id="chck1" type="radio" name="Process" onclick="function ()" />
                             </div>
                             <div class="col-md-4">
                                 <label for="chck2">Reject</label>
@@ -511,6 +511,10 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>
+
+
+
+
         $('.Alert-Save').click(function () {
             Swal.fire({
                 title: 'Are you sure?',
@@ -548,6 +552,7 @@
 
 
         const checkbox = document.getElementById('chck2');
+        const chck1 = document.getElementById('chck1');
         const remarkSection = document.getElementById('remark');
 
         checkbox.addEventListener('change', function () {
@@ -557,6 +562,20 @@
                 remarkSection.style.display = 'none'; // Hide the remark section
             }
         });
+
+
+        chck1.addEventListener('change', function () {
+            if (this.checked) {
+                remarkSection.style.display = 'none';
+            }
+        })
+
+
+        //function hidediv() {
+        //    if (this.checked) {
+        //        remarkSection.style.display = 'none'; // Show the remark section
+        //    }
+        //}
     </script>
 </asp:Content>
 

@@ -289,7 +289,7 @@
         </div>
         <div class="col-md-12 m-4 text-center">
             <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="printModalContent('PrintDiv')">Print</button>
-            <a type="button" class="btn btn-outline-danger  btn-border w-lg" href="GenerateScoreCard.aspx">Clear</a>
+            <%--<a type="button" class="btn btn-outline-danger  btn-border w-lg" href="GenerateScoreCard.aspx">Clear</a>--%>
         </div>
     </div>
 </asp:Content>

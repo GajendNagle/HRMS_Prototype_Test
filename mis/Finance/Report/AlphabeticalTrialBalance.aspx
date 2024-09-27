@@ -28,15 +28,15 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h4 class="card-title">Alphabetical Trial Balance/
-                                वर्णमाला संतुलन परीक्षण</h4>
+                            <h4 class="card-title">Alphabetical Ledger Report/
+                                वर्णानुक्रमिक लेजर रिपोर्ट</h4>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
                     <fieldset>
-                        <legend>Alphabetical Trial Balance/
-                                वर्णमाला संतुलन परीक्षण</legend>
+                        <legend>Alphabetical Ledger Report/
+                                वर्णानुक्रमिक लेजर रिपोर्ट</legend>
                         <div class="row align-items-end">
                             <div class="col-md-3">
                                 <div class="form-group">

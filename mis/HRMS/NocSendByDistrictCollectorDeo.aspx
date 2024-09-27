@@ -95,47 +95,76 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h5 class="card-title">NOC Report was sent to the District Collector at the DEO level
-                        <br />
-                        डी.ई.ओ. लेवल पर जिला कलेक्टर को एन.ओ.सी. रिपोर्ट भेजी गई </h5>
+                    <div class="marqueecontainer border-0">
+                        <div class="headertext btn btn-primary rounded-pill " style="padding-top: 11px;">
+                            अपडेट एनओसी जॉब स्टेटस
+						विवरण
+				
+                        </div>
+                        <div>
+                            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext text-black">
+                                Empty
+					
+                            </marquee>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <div runat="server" clientidmode="static" id="DataFirstTime">
                 <fieldset>
-                    <legend>NOC Report Sent to District Collector / एन.ओ.सी. रिपोर्ट जिला कलेक्टर को भेजी गई</legend>
+                    <legend>Issue NOC Application /एनओसी जारी आवेदन</legend>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    District  
-                                    <br />
-                                    जिला <span style="color: red">*</span></label>
+                                    Select District/<br />
+                                    जिले का चयन करें <span style="color: red">*</span></label>
                                 <asp:DropDownList runat="server" CssClass="form-control" Enabled="false" ID="ddlDistrict">
                                     <asp:ListItem Text="selected" Value="0">--Select--</asp:ListItem>
                                     <asp:ListItem Value="32" Selected="True">Bhopal</asp:ListItem>
                                 </asp:DropDownList>
                             </div>
                         </div>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Details / विवरण</legend>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Select Designation /<br />
+                                    पद का चयन करें<span style="color: red">*</span>
+                                </label>
+                                <select class="form-control select2" id="slctdesignation">
+                                    <option value="0">-Select-</option>
+                                    <option value="1">शैक्षणिक संवर्ग</option>
+                                    <option value="2">लिपिक संवर्ग</option>
+                                    <option value="3">चतुर्थ श्रेणी</option>
+                                </select>
+                            </div>
+                        </div>
+                              
+                        <div class="col-md-3">
+                            <div class="form-group" style="margin-top: 3.3rem !important">
+                                <input type="button" id="btnSearch" class="btn shadow btn-outline-success btn-rounded w-lg" value="Search">
+                            </div>
+                        </div>
+                        </div>
+                       </fieldset>
+                   <div  id="details" style="display:none ;max-width:100%; min-width:100%;">
+                       <fieldset>
+    <legend>Details/विवरण</legend>
                     <div class="row justify-content-end">
-                        <div class="col-md-3 text-end">
+                         <div class="col-md-6 text-end">
                             <div class="form-group">
                                 <button class="btn btn-info btn-rounded ">Excel</button>
                                 <button class="btn btn-info btn-rounded ">PDF</button>
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group">
+                            <div class="">
                                 <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                             </div>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
@@ -143,91 +172,61 @@
                                     <table class="table table-bordered text-center">
                                         <thead>
                                             <tr>
-                                                <th scope="col">Sr.No.<br />
-                                                    सरल क्र.</th>
-                                                <th scope="col">Deceased Staff Officer<br />
-                                                    दिवंगत कर्मचारी अधिकरी </th>
-                                                <th scope="col">Designation<br />
+                                                <th scope="col">Sr.No./
+                                                    <br />
+                                                    क्रमांक</th>
+                                                <th scope="col">Name of the Deceased Employee Officer/<br />
+                                                    दिवंगत कर्मचारी का नाम</th>
+                                                <th scope="col">Designation/
+                                                    <br />
                                                     पद</th>
-                                                <th scope="col">Date of Death<br />
-                                                    मृत्यु  दिनांक</th>
-                                                <th scope="col">Applicant's Name<br />
-                                                    आवेदक का नाम</th>
-                                                <th scope="col">Gender<br />
-                                                    लिंग</th>
-                                                <th scope="col">Caste<br />
+                                                <th scope="col">Date Of Death/<br />
+                                                    मृत्यु दिनांक</th>
+                                                <th scope="col">Name of the Compassionate Appointment Applicant/<br />
+                                                    अनुकंपा नियुक्ति आवेदक का नाम</th>
+                                                <th scope="col">Date Of Birth/<br />
+                                                    जन्म दिनांक</th>
+                                                <th scope="col">Caste/<br />
                                                     जाति</th>
-                                                <th scope="col">Applicant's Date Od Birth<br />
-                                                    आवेदक की जन्म तिथि </th>
-                                                <th scope="col">Mobile No.<br />
-                                                    मोबाईल  नंबर</th>
-                                                <th scope="col">Applicant's Relationship with the Deceased Teacher<br />
-                                                    आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
-                                                <th scope="col">Applicant's Marital Status<br />
-                                                    आवेदक की वैवाहिक स्थिति</th>
-                                                <th scope="col">Selected Option of Post for Appointment<br />
-                                                    नियुक्ति हेतु पद का चयनित विकल्प</th>
-                                                <th scope="col">Educational Qualification of the Applicant<br />
-                                                    आवेदक की शैक्षणिक योग्यता </th>
-                                                <th scope="col">Status of Passing Primary teacher<br />
-                                                    Eligibility Test for Primary Teacher<br />
-                                                    प्राथमिक शिक्षक हेतु  प्राथमिक  शिक्षक पात्रता<br />
-                                                    परीछा उत्तीर्ण की स्थिति</th>
-                                                <th scope="col">Action</th>
+                                                <th scope="col">Mobile No./<br />
+                                                    मोबाईल नंबर</th>
+                                                <th scope="col">Relationship of the applicant with the deceased public servant/teacher/<br />
+                                                    आवेदक का दिवंगत लोकसेवक/ शिक्षक के साथ संबंध</th>
+                                                <th scope="col">Marital Status/<br />
+                                                    वैवाहिक स्थिति</th>
+                                                <th scope="col">To which Post Applicant Want to be Appointed/<br />
+                                                    आवेदक किस पद पर नियुक्ति चाहता है</th>
+                                                <th scope="col">Applicant's Qualification/<br />
+                                                    आवेदक की शैक्षणिक योग्यता</th>
+                                                <th scope="col">Applicantion No./<br />
+                                                    आवेदन नंबर</th>
+                                                <th scope="col">Application Status /<br />
+                                                    आवेदन स्तिथि</th>
+                                                <th scope="col">NOC Document/<br>
+                                                    एनओसी दस्तावेज</th>
+                                                <th scope="col">Action/कार्यवाही</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
-                                                <td>Puran Singh Kushawah</td>
-                                                <td>Asstt Teacher(LDT)</td>
-                                                <td>28/12/2021</td>
-                                                <td>BRAJESH KUSHVAH</td>
-                                                <td>Male</td>
-                                                <td>S.C.</td>
-                                                <td>10/08/1997</td>
+                                                <td>Ramadhar Vaikar (AG9835)</td>
+                                                <td>Teacher PPTI</td>
+                                                <td>08/08/2024</td>
+                                                <td>fhhfhf</td>
+                                                <td>12/07/2000</td>
+                                                <td>s.c.</td>
                                                 <td>70477701125</td>
                                                 <td>Son</td>
-                                                <td>अविवाहित  </td>
-                                                <td>शैक्षणिक संवर्ग </td>
-                                                <td>12 PCM B SC COMPUTER SCIENCE</td>
-                                                <td>नहीं </td>
-                                                <td><a class="btn btn-success">Action</a></td>
+                                                <td>Married</td>
+                                                <td>शैक्षणिक संवर्ग  </td>
+                                                <td>Graduation </td>
+                                                <td>CA/AG9835/24/01</td>
+                                                <td>NOC has been released, the case has been sent to the District Collector</td>
+                                                <td style="text-align: center; min-width: 210px; max-width: 210px; width: 210px;" class="dx-cell-focus-disabled"><a href="#" class="btn btn-outline-primary"><i class="ri-eye-line"></i></a></td>
+                                                <td><a class="btn btn-outline-primary"><i class="ri-edit-2-line"></i></a></td>
                                             </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Satendra Bahadur Singh</td>
-                                                <td>Madhyami8k Shaishak</td>
-                                                <td>15/04/2022</td>
-                                                <td>SHAKSHAM SHINGH </td>
-                                                <td>Male</td>
-                                                <td>S.C.</td>
-                                                <td>12/12/1996</td>
-                                                <td>70477701125</td>
-                                                <td>Son</td>
-                                                <td>अविवाहित  </td>
-                                                <td>लिपिकीय संवर्ग  </td>
-                                                <td>GRADUATE</td>
-                                                <td>नहीं </td>
-                                                <td><a class="btn btn-success">Action</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Achhe Lal patel </td>
-                                                <td>Asstt Grade-2</td>
-                                                <td>16/01/2023</td>
-                                                <td>PRAMOD KUMAR PATEL</td>
-                                                <td>Male</td>
-                                                <td>S.C.</td>
-                                                <td>02/10/2000</td>
-                                                <td>70477701125</td>
-                                                <td>Son</td>
-                                                <td>अविवाहित  </td>
-                                                <td>लिपिकीय संवर्ग  </td>
-                                                <td>GRADUATE</td>
-                                                <td>नहीं </td>
-                                                <td><a class="btn btn-success">Action</a></td>
-                                            </tr>
+
                                         </tbody>
                                         <tfoot>
                                         </tfoot>
@@ -238,127 +237,129 @@
                         </div>
 
                     </div>
-                </fieldset>
+                              </fieldset></div>
+               
             </div>
             <div class="container-fluid" hidden="hidden" id="divRegisrationUpdate">
                 <fieldset>
-                    <legend>Details of Deceased Employee / दिवंगत कर्मचारी का विवरण </legend>
+                    <legend>Details of Deceased Employee/
+                        दिवंगत कर्मचारी का विवरण </legend>
                     <div class="row align-items-end">
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label>
-                                    Employee Code<br />
-                                    कर्मचारी कोड<span style="color: Red;">*</span></label>
+                                    Deceased Officer/Employee Code/<br />
+                                    दिवंगत अधिकारी/कर्मचारी कोड<span style="color: Red;">*</span></label>
                                 <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtU_Id" type="text" value="AK7328" maxlength="6" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_txtU_Id" disabled="disabled"
                                     class="form-control vd_Required m-0" />
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label>
-                                    Name of Deceased Employee<br />
-                                    दिवंगत कर्मचारी का नाम<span style="color: Red;">*</span></label>
+                                    Name of Deceased Government servant/<br />
+                                    दिवंगत शासकीय सेवक का नाम<span style="color: Red;">*</span></label>
                                 <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtName" type="text"
                                     value="Phul Singh Kushawah" maxlength="20" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_txtName"
                                     disabled="disabled" class="form-control vd_Required" onkeypress="return CharspaceOnly(event)" />
 
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label>
-                                    Gender<br />
+                                    Gender/<br />
                                     लिंग<span style="color: Red;">*</span></label>
                                 <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="Male" maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label>
-                                    Caste<br />
+                                    Caste/<br />
                                     जाति<span style="color: Red;">*</span></label>
                                 <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="SC" maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
                             <br />
                             <div class="form-group">
                                 <label>
-                                    Last Posting District<br />
+                                    Last Posting District/<br />
                                     अंतिम पोस्टिंग जिला<span style="color: Red;">*</span></label>
                                 <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="Vidisha" maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
 
 
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
                             <br />
                             <div class="form-group">
                                 <label>
-                                    Deceased Employee Cadre<br />
-                                    दिवंगत कर्मचारी कैडर<span style="color: Red;">*</span></label>
+                                    Deceased Officer/Staff Cadre/<br />
+                                    दिवंगत अधिकारी/कर्मचारी कैडर<span style="color: Red;">*</span></label>
                                 <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="Regular Class- III " maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
 
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label>
-                                    Deceased Officer/Employee Designation<br />
+                                    Deceased Officer/Employee Designation/<br />
                                     दिवंगत अधिकारी/कर्मचारी पदनाम<span style="color: Red;">*</span></label>
                                 <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtL_S_C_Address" type="text" value="Work Assistant" maxlength="50" disabled="disabled" class="form-control vd_Required " />
 
 
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label>
-                                    Last school/Office and Employee Address
+                                    Last school/Office and Employee Address/
                                     <br />
                                     अंतिम स्कूल/ कार्यालय और कर्मचारी का पता<span style="color: Red;">*</span></label>
                                 <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtL_S_C_Address" type="text" value="NGPS VEERPUR BANDH ( 1 to 5)" maxlength="50" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_txtL_S_C_Address" disabled="disabled" class="form-control vd_Required " />
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label>
-                                    Cause of Death<br />
+                                    Cause of Death/<br />
                                     मृत्यु का कारण :<span style="color: Red;">*</span></label>
                                 <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtL_S_C_Address" type="text" value="कोविड-19 संक्रमण " maxlength="50" disabled="disabled" class="form-control vd_Required " />
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label>
-                                    Date Of Death<br />
+                                    Date Of Death/<br />
                                     मृत्यु दिनाँक<span style="color: Red;">*</span></label>
                                 <div class="input-group">
                                     <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="28/12/2021" maxlength="10" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_txtD_O_Death" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label>
-                                    Number of Family Members of Deceased Employee<br />
-                                    दिवंगत कर्मचारी के परिवार के सदस्यों की संख्या :<span style="color: Red;">*</span></label>
+                                    Number of Surviving Family Members/<br />
+                                    परिवार के जीवित सदस्यों की संख्या<span style="color: Red;">*</span></label>
                                 <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtD_O_Death" type="text" value="4" maxlength="10" disabled="disabled" class="form-control vd_Required dummy" onkeypress="return isNumberKey(event)" />
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label>
-                                    Department Name<br />
+                                    Department Name/<br />
                                     विभाग का नाम<span style="color: Red;">*</span></label>
                                 <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtDepartment_Name" type="text" value="Education" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_txtDepartment_Name" disabled="disabled" class="form-control vd_Required" />
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label>
-                                    Date of Receiving of Application<br />
+                                    Application Date/<br />
                                     आवेदन प्राप्त तिथि<span style="color: Red;">*</span></label>
 
                                 <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtaaprecievedate" type="text" value="21/04/2023" maxlength="10" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_txtaaprecievedate" disabled="disabled" class="form-control vd_Required dummy" />
@@ -366,6 +367,35 @@
                         </div>
                     </div>
                 </fieldset>
+                <br />
+                <fieldset>
+                    <legend>Nominee Details /
+                        उम्मीदवार की जानकारी</legend>
+                    <table class="table table-bordered table-responsive-lg">
+                        <thead>
+                            <tr>
+                                <th>Sr.No. /<br>
+                                    क्रमांक</th>
+                                <th>Nominee Name /<br>
+                                    उम्मीदवार का नाम</th>
+                                <th>Relation With Employee /<br>
+                                    कर्मचारी के साथ संबंध</th>
+                                <th>Nominee Percentage /<br>
+                                    उम्मीदवार प्रतिशत</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>1</td>
+                                <td>Kumar singh</td>
+                                <td>Freind</td>
+                                <td>100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+                <br />
                 <fieldset>
                     <legend>Information About All the Family Members of the Deceased Public Servant/Teacher
                         <br />
@@ -382,7 +412,7 @@
                                                 सदस्य का नाम</th>
                                             <th data-hide="phone,tablet" scope="col">Relationship with the Deceased<br />
                                                 दिवंगत के साथ संबंध </th>
-                                            <th data-hide="phone,tablet" scope="col">Business<br />
+                                            <th data-hide="phone,tablet" scope="col">Occupation/<br />
                                                 व्यवसाय</th>
                                             <th data-hide="phone,tablet" scope="col">Date of Birth<br />
                                                 जन्म दिनांक</th>
@@ -520,6 +550,7 @@
                         </div>
                     </div>
                 </fieldset>
+                <br />
                 <fieldset>
                     <legend>Details of the Family Member who has Applied for Appointment
                         <br />
@@ -530,32 +561,45 @@
                                 <table class="table table-bordered text-center">
                                     <thead>
                                         <tr>
-                                            <th>Sr. No.<br />
-                                                सरल क्र</th>
-                                            <th>Applicant's Name<br />
+                                            <th>Sr.No./<br>
+                                                क्रंमाक</th>
+                                            <th>Name of Applicant/<br>
                                                 आवेदक का नाम</th>
-                                            <th>Gender<br />
+                                            <th>Gender/<br>
                                                 लिंग</th>
-                                            <th>Date of Birth<br />
+                                            <th>Date of Birth/<br>
                                                 जन्म तिथि</th>
-                                            <th>Mobile No.<br />
-                                                मोबाइल</th>
-                                            <th>Applicant's Relationship with the Deceased Teacher<br />
-                                                आवेदक का दिवंगत शिक्षक के साथ संबंध</th>
-                                            <th>Marital Status<br />
-                                                वैवाहिक स्थिति</th>
-                                            <th>Educational Qualification<br />
+                                            <th>Relationship With the Deceased/<br>
+                                                दिवंगत के साथ संबंध </th>
+                                            <th>Marital Status/<br>
+                                                वैवाहिक स्तिथि</th>
+                                            <th>Educational Qualification/<br>
                                                 शैक्षिक योग्यता</th>
-                                            <th>Cadre for Appointment<br />
+                                            <th>Cadre for Appointment/<br>
                                                 नियुक्ति हेतु संवर्ग</th>
-                                            <th>Designation for Appointment<br />
-                                                नियुक्ति हेतु पदनाम </th>
-                                            <th>Status of Passing Primary Teacher Eligibility Test for Primary Teacher
-                                                <br />
-                                                प्राथमिक शिक्षक हेतु प्राथमिक शिक्षक पात्रता परीक्षा उत्तीर्ण की स्थिति</th>
+                                            <th>Designation for Appointment/<br>
+                                                नियुक्ति हेतु पदनाम</th>
+                                            <th>Have Passed the PTET/<br>
+                                                प्राथमिक शिक्षक हेतु प्राथमिक<br>
+                                                शिक्षक पात्रता परीक्षा उत्तीर्ण की है
+                                            </th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>fffffdg</td>
+                                            <td>Male</td>
+                                            <td>09/02/2000</td>
+                                            <td>Son</td>
+                                            <td>Married</td>
+                                            <td>Graduation</td>
+                                            <td>शैक्षणिक संवर्ग</td>
+                                            <td>प्राथमिक शिक्षक</td>
+                                            <td>Yes</td>
+                                        </tr>
+                                    </tbody>
+                                    <%--<tbody>
                                         <tr>
                                             <td>
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblRowNumber">1</span>
@@ -592,89 +636,93 @@
                                                 <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_grdCAFMS_ctl02_lblIs_TET"></span>
                                             </td>
                                         </tr>
-                                    </tbody>
+                                    </tbody>--%>
                                 </table>
                             </div>
                         </div>
                     </div>
+
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>Applicant's Documents/
+                        आवेदक के दस्तावेज</legend>
                     <div class="row">
                         <div class="col-md-12">
-
-                            <table class="footable table  table-striped table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_Grd2" style="border-collapse: collapse;">
+                            <table class="table table-bordered table-responsive-lg">
                                 <thead>
                                     <tr>
-                                        <th data-class="expand" scope="col">Sr. No.
-                                            <br />
-                                            सरल क्र.</th>
-                                        <th data-class="phone,tablet" scope="col">Document<br />
-                                            दस्तावेज़</th>
-                                        <th data-hide="phone,tablet" scope="col">View Document<br />
-                                            डॉकयुमेंट देखे</th>
+                                        <th>Sr.No./<br>
+                                            क्रंमाक</th>
+                                        <th>Document Name/<br>
+                                            दस्तावेज का नाम</th>
+                                        <th style="text-align: center">View document/<br>
+                                            दस्तावेज देंखे</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>दिवंगत शासकीय सेवक का मृत्यु प्रमाण पत्र</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">View</button>
-                                            <%--<a class="btn btn-success">View</a>--%>
+                                        <td><b>Death Certificate Of Deceased Government Servant:/<br>
+                                            दिवंगत शासकीय सेवक का मृत्यु प्रमाण पत्र :</b></td>
+                                        <td style="text-align: center;">
+                                            <a href="#" disabled="" class="btn btn-outline-primary"><i class="ri-eye-line"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>जन्मतिथि के प्रमाणीकरण हेतु हाई स्कूल की अंक सूची अथवा सक्षम अधिकारी द्वारा जारी किया गया  जन्म प्रमाण पत्र </td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">View</button>
-                                            <%--<a class="btn btn-success">View</a>--%>
+                                        <td><b>Certificate of Date Of Birth of the Applicant:/<br>
+                                            आवेदक का जन्म तिथि का प्रमाण पत्र :</b></td>
+                                        <td style="text-align: center;">
+                                            <a href="#" disabled="" class="btn btn-outline-primary"><i class="ri-eye-line"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>स्थानीय / मूल निवासी होने का प्रमाण पत्र</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">View</button>
-                                            <%--<a class="btn btn-success">View</a>--%>
+                                        <td><b>Certificate Of Residence/Native:/<br>
+                                            निवास/मूल निवासी होने का प्रमाण पत्र :</b></td>
+                                        <td style="text-align: center;">
+                                            <a href="#" disabled="" class="btn btn-outline-primary"><i class="ri-eye-line"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
-                                        <td>यदि आवेदक अनुसूचित जाति/जनजाति तथा अन्य पिछड़े वर्ग का हो तो प्रमाण पत्र.</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">View</button>
-                                            <%--<a class="btn btn-success">View</a>--%>
+                                        <td><b>Caste Certificate:/<br>
+                                            जाती प्रमाण पत्र :</b></td>
+                                        <td style="text-align: center;">
+                                            <a href="#" disabled="" class="btn btn-outline-primary"><i class="ri-eye-line"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
-                                        <td>हायर सेकेण्डरी /स्नातक या अन्य परीक्षा उत्तीर्ण करने के प्रमाण पत्र.</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">View</button>
-                                            <%--<a class="btn btn-success">View</a>--%>
+                                        <td><b>Certificate Of Passing Higher Secondary/Graduation or Other Examination:/<br>
+                                            हायर सेकेण्डरी / स्नातक या अन्य परीक्षा उत्तीर्ण करने का प्रमाण पत्र :</b></td>
+                                        <td style="text-align: center;">
+                                            <a href="#" disabled="" class="btn btn-outline-primary"><i class="ri-eye-line"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>6</td>
-                                        <td>परिवार के सभी सदस्यों द्वारा आवेदक को अनुकंपा नियुक्ति का लाभ लेने की सहमति का शपथ पत्र </td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">View</button>
-                                            <%--<a class="btn btn-success">View</a>--%>
+                                        <td><b>Consent Certificate From the Head of the Family:/<br>
+                                            परिवार के मुखिया द्वारा सहमति प्रमाण पत्र :</b></td>
+                                        <td style="text-align: center;">
+                                            <a href="#" disabled="" class="btn btn-outline-primary"><i class="ri-eye-line"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>7</td>
-                                        <td>आवेदक का फोटो  अपलोड करे.</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">View</button>
-                                            <%--<a class="btn btn-success">View</a>--%>
+                                        <td><b>Applicant's Photo:/<br>
+                                            आवेदक का फोटो :</b></td>
+                                        <td style="text-align: center;">
+                                            <a disabled="" href="#" class="btn btn-outline-primary"><i class="ri-eye-line"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>8</td>
-                                        <td>राशन कार्ड / सेवा पुस्तिका अथवा अन्य प्रमाणित दस्तावेज जिसमे परिवार के सदस्यों की जानकारी हो</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">View</button>
-                                            <%--<a class="btn btn-success">View</a>--%>
+                                        <td><b>Family Samagra Id/<br>
+                                            परिवार की समग्र आईडी :</b></td>
+                                        <td style="text-align: center;">
+                                            <a href="#" disabled="" class="btn btn-outline-primary"><i class="ri-eye-line"></i></a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -682,73 +730,113 @@
                         </div>
                     </div>
                 </fieldset>
+                <br />
                 <fieldset>
-                    <legend>Job Status / जॉब की स्थिति</legend>
+                    <legend>Job Status /
+                        जॉब की स्थिति</legend>
                     <div class="row">
-                        <div class="col-md-3">
-                            <label>
-                                Enter Job Status<br />
-                                जॉब की स्थिति दर्ज करें  <span style="color: Red;">*</span></label>
-                            <select name="ctl00$ContentBody$ddlkaryvahi" id="ddlkaryvahi" class="form-control form-select" onchange="showHideRemarkView()">
-                                <option value="0">--Select--</option>
-                                <option value="1">Pending by collector</option>
-                                <option value="2">Pending by DEO</option>
-                                <option value="3">Got a job</option>
-                            </select>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="form-group">
+                                <label>
+                                    Enter Job Status<br />
+                                    जॉब की स्थिति दर्ज करें  <span style="color: Red;">*</span></label>
+                                <select name="ctl00$ContentBody$ddlkaryvahi" id="ddlkaryvahi" class="form-control select2" onchange="showHideRemarkView()">
+                                    <option value="0">--Select--</option>
+                                    <option value="1">Pending by collector</option>
+                                    <option value="2">Pending by DEO</option>
+                                    <option value="3">Got a job</option>
+                                </select>
+                            </div>
+
                         </div>
                         <div class="row align-items-end mt-4" id="divApattiHai" style="display: none">
-                            <div class="col-md-3">
-                                <label>
-                                    Appointment Letter Number<br />
-                                    नियुक्ति पत्र संख्या<span style="color: Red;">*</span>
-                                </label>
-                                <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="form-group">
+                                    <label>
+                                        Enter Appointment Letter No./<br />
+                                        नियुक्ति पत्र संख्या दर्ज करें<span style="color: Red;">*</span>
+                                    </label>
+                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Enter Appointment Letter No."></asp:TextBox>
+                                </div>
+
                             </div>
-                            <div class="col-md-3">
-                                <label>
-                                    Appointment Order Number<br />
-                                    नियुक्ति आदेश संख्या :<span style="color: Red;">*</span>
-                                </label>
-                                <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="form-group">
+                                    <label>
+                                        Entr Appointment Order No./<br />
+                                        नियुक्ति आदेश संख्या दर्ज करें<span style="color: Red;">*</span>
+                                    </label>
+                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Entr Appointment Order No."></asp:TextBox>
+                                </div>
+
                             </div>
-                            <div class="col-md-3">
-                                <label>
-                                    Date of Letter<br />
-                                    पत्र की तारीख <span style="color: Red;">*</span>
-                                </label>
-                                <asp:TextBox runat="server" CssClass="form-control" TextMode="Date"></asp:TextBox>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="form-group">
+                                    <label>
+                                        Select Letter Date/<br />
+                                        पत्र की तारीख का चयन करें <span style="color: Red;">*</span>
+                                    </label>
+                                    <asp:TextBox runat="server" CssClass="form-control" TextMode="Date"></asp:TextBox>
+                                </div>
+
                             </div>
-                            <div class="col-md-3">
-                                <label>
-                                    Department Name<br />
-                                    विभाग का नाम<span style="color: Red;">*</span>
-                                </label>
-                                <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="form-group">
+                                    <label>
+                                        Applied Cadre/<br />
+                                        आवेदित संवर्ग <span style="color: Red;">*</span>
+                                    </label>
+                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Enter Applied Cadre"></asp:TextBox>
+                                </div>
+
                             </div>
-                            <div class="col-md-3">
-                                <label>
-                                    To What Position has the Applicant Been Appointed<br />
-                                    आवेदक को किस पद पर नियुक्त किया गया है<span style="color: Red;">*</span>
-                                </label>
-                                <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="form-group">
+                                    <label>
+                                        Applied Designation/<br />
+                                        आवेदित पदनाम <span style="color: Red;">*</span>
+                                    </label>
+                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Enter Applied Designation"></asp:TextBox>
+                                </div>
+
                             </div>
-                            <div class="col-md-3">
-                                <label>
-                                    Place of Posting<br />
-                                    पोस्टिंग की जगह<span style="color: Red;">*</span>
-                                </label>
-                                <asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="form-group">
+                                    <label>
+                                        Select Posting District/<br />
+                                        पोस्टिंग जिला का चयन करें<span style="color: Red;">*</span>
+                                    </label>
+                                    <asp:DropDownList runat="server" CssClass="form-control">
+                                        <asp:ListItem>Select</asp:ListItem>
+                                        <asp:ListItem>Bhopal</asp:ListItem>
+                                        <asp:ListItem>Indore</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+
                             </div>
-                            <div class="col-md-3">
-                                <label>
-                                    Appointment Letter<br />
-                                    नियुक्ति पत्र :<span style="color: Red;">*</span>
-                                </label>
-                                <asp:FileUpload runat="server" CssClass="form-control" />
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="form-group">
+                                    <label>
+                                        Enter Name of the organization in which appointed/<br />
+                                        नियुक्त संस्था का नाम दर्ज करें <span style="color: Red;">*</span>
+                                    </label>
+                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Enter Name of the organization in which appointed"></asp:TextBox>
+
+                                </div>
                             </div>
-                            <p style="color: red; font-size: 1.0em">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="form-group">
+                                    <label>
+                                        Upload Order Document/<br />
+                                        अपलोड आदेश दस्तावेज <span style="color: Red;">*</span>
+                                    </label>
+                                    <asp:FileUpload runat="server" CssClass="form-control" />
+                                </div>
+
+                            </div>
+                            <%-- <p style="color: red; font-size: 1.0em">
                                 <b>Upload PDF Format Size 200 KB</b>
-                            </p>
+                            </p>--%>
                         </div>
                         <script type="text/javascript">
                             function showHideRemarkView() {
@@ -771,14 +859,15 @@
                         </script>
                         <br />
                     </div>
-                </fieldset>
-                <hr />
-                <div class="row ">
-                    <div class="col-md-12">
-                        <button id="toggleButton4" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-outline-success btn-border">Save</button>
-                        <a href="NocSendByDistrictCollectorDeo.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <button id="toggleButton4" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-outline-success btn-border">Save</button>
+                            <%-- <a href="NocSendByDistrictCollectorDeo.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>--%>
+                        </div>
                     </div>
-                </div>
+                </fieldset>
+
+
             </div>
         </div>
     </div>
@@ -998,4 +1087,24 @@
             });
         });
     </script>
+     <script>
+         document.getElementById("btnSearch").addEventListener("click", function () {
+
+             var selectedValue = document.getElementById("slctdesignation").value;
+
+
+             if (selectedValue == "1") {
+
+                 details.style.display = "";
+             } else {
+
+                 Swal.fire({
+                     type: "warning",
+                     title: "Warning",
+                     text: "Record Not Found.",
+
+                 });
+             }
+         });
+         </script>
 </asp:Content>

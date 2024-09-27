@@ -105,72 +105,72 @@
                 <div class="row align-items-end">
 
                     <div class="col-md-3">
-                            <label>
-                                From Date<br />
-                                प्रारंभिक दिनांक से<span style="color: red">*</span></label>
-                            <input type="date" id="Fdate" name="birthday" class="form-control">
-                        </div>
-                    <div class="col-md-3">
-                            <label>
-                                To Date
-             <br />
-                                अंतिम दिनांक तक<span style="color: red">*</span></label>
-                            <input type="date" id="Tdate" name="birthday" class="form-control">
-                        </div>
-                    <div class="col-md-3">
-                            <label>
-                                Select Work Category
-        <br />
-                                कार्य की श्रेणी का चयन करें<span style="color: red">*</span></label>
-                            <select id="work-category" class="form-control select2">
-                                <option value="--Select--">--Select--</option>
-                                <option value="A">स्कूल मरम्मत/निर्माण</option>
-                                <option value="B">पेयजल व्यवस्था</option>
-                                <option value="C">स्कूल मार्ग निर्माण</option>
-                                <option value="D">अन्य कार्य</option>
-                            </select>
-                        </div>
-                    <div class="col-md-3" id="school-subcategory-container">
-                            <label>
-                                Select Work Subcategory
-        <br />
-                                कार्य के प्रकार का चयन करें<span style="color: red">*</span></label>
-                            <select id="school-subcategory" class="form-control select2">
-                                <option value="--Select--">--Select--</option>
-                                <option value="A">कक्षा निमार्ण</option>
-                                <option value="A">इमारत मरम्मत</option>
-                                <option value="A">स्कूल नया निमार्ण</option>
-                                <option value="B">हेंडपंप खनन</option>
-                                <option value="B">बोरबेल खनन</option>
-                                <option value="B">पानी की टंकी निर्माण</option>
-                                <option value="B">पेयजल हेतु पाइपलाइन निर्माण</option>
-                                <option value="C">WBM / कच्ची सड़क निमार्ण</option>
-                                <option value="C">CC Road निर्माण</option>
-                                <option value="C">मार्ग मरम्मत</option>
-                                <option value="C">मुरम रोड निर्माण</option>
-                                <option value="C">डामर रोड निर्माण</option>
-                                <option value="D">नाली निर्माण</option>
-                                <option value="D">पेपर ब्लाक निर्माण</option>
-
-                                <%--selection of this next textbox will visible--%>
-                            </select>
-                        </div>
+                        <label>
+                            From Date<br />
+                            प्रारंभिक दिनांक से<span style="color: red">*</span></label>
+                        <input type="date" id="Fdate" name="birthday" class="form-control">
                     </div>
-                    <div class="row align-items-end">
+                    <div class="col-md-3">
+                        <label>
+                            To Date
+             <br />
+                            अंतिम दिनांक तक<span style="color: red">*</span></label>
+                        <input type="date" id="Tdate" name="birthday" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            Select Work Category
+        <br />
+                            कार्य की श्रेणी का चयन करें<span style="color: red">*</span></label>
+                        <select id="work-category" class="form-control select2">
+                            <option value="--Select--">--Select--</option>
+                            <option value="A">स्कूल मरम्मत/निर्माण</option>
+                            <option value="B">पेयजल व्यवस्था</option>
+                            <option value="C">स्कूल मार्ग निर्माण</option>
+                            <option value="D">अन्य कार्य</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3" id="school-subcategory-container">
+                        <label>
+                            Select Work Subcategory
+        <br />
+                            कार्य के प्रकार का चयन करें<span style="color: red">*</span></label>
+                        <select id="school-subcategory" class="form-control select2">
+                            <option value="--Select--">--Select--</option>
+                            <option value="A">कक्षा निमार्ण</option>
+                            <option value="A">इमारत मरम्मत</option>
+                            <option value="A">स्कूल नया निमार्ण</option>
+                            <option value="B">हेंडपंप खनन</option>
+                            <option value="B">बोरबेल खनन</option>
+                            <option value="B">पानी की टंकी निर्माण</option>
+                            <option value="B">पेयजल हेतु पाइपलाइन निर्माण</option>
+                            <option value="C">WBM / कच्ची सड़क निमार्ण</option>
+                            <option value="C">CC Road निर्माण</option>
+                            <option value="C">मार्ग मरम्मत</option>
+                            <option value="C">मुरम रोड निर्माण</option>
+                            <option value="C">डामर रोड निर्माण</option>
+                            <option value="D">नाली निर्माण</option>
+                            <option value="D">पेपर ब्लाक निर्माण</option>
+
+                            <%--selection of this next textbox will visible--%>
+                        </select>
+                    </div>
+                </div>
+                <div class="row align-items-end">
                     <div class="col-md-3  col-lg-3 col-xl-3">
-                            <label>
-                                Project Code
+                        <label>
+                            Project Code
                                 <br />
-                                परियोजना कोड</label>
-                            <select id="Project_Code" class="form-control select2">
-                                <option value="--Select--">--Select--</option>
-                                <option value="D" selected="selected">All</option>
-                                <option value="A">P00017</option>
-                                <option value="B">P00018</option>
-                                <option value="C">P00019</option>
-                                
-                            </select>
-                        </div>
+                            परियोजना कोड</label>
+                        <select id="Project_Code" class="form-control select2">
+                            <option value="--Select--">--Select--</option>
+                            <option value="D" selected="selected">All</option>
+                            <option value="A">P00017</option>
+                            <option value="B">P00018</option>
+                            <option value="C">P00019</option>
+
+                        </select>
+                    </div>
                 </div>
                 <div class="col-md-12">
                     <hr />
@@ -226,8 +226,8 @@
 
                                         <th>Estimated Budget Cost(In Rs) 
                                       <br />
-                                            अनुमानित बजट</th>
-                                        <th>Acceptor Amount(In Rs) 
+                                            स्वीकृत राशि</th>
+                                        <th>Approved Amount(In Rs) 
                                       <br />
                                             स्वीकर्ता राशि</th>
                                         <th>Work Description<br />
@@ -295,10 +295,10 @@
                                     <th>Document Upload
                                     <br />
                                         दस्तावेज अपलोड</th>
-                                    <th style="width: 150px;" class="text-center">Remark
+                                    <%-- <th style="width: 150px;" class="text-center">Remark
                                     <br />
                                         टिप्पणी
-                                    </th>
+                                    </th>--%>
                                     <th>Utilization Certificate<br />
                                         उपयोगिता प्रमाण पत्र</th>
                                     <th style="width: 50px;">Send To Request<br />
@@ -326,9 +326,9 @@
                                    <%-- <input type="Text" value="15000" name="birthday" class="form-control text-center" disabled>--%></td>
 
                                     <td class="text-center"><a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-file"></i></a></td>
-                                    <td>
+                                    <%--  <td>
                                         <textarea class="form-control" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="completed tasks" style="width: 200px;"></textarea>
-                                    </td>
+                                    </td>--%>
                                     <td>
                                         <button id="Btn1" class="Alert-Save5 btn btn-outline-primary  fs-13 me-4 rounded-4 w-xl" type="button">Utilization Certificate</button>
                                         <button id="Btn5" onclick="#Btn5" class="btn btn-outline-primary  fs-13 me-4 rounded-4 w-lg" type="button" style="display: none;">View</button>
@@ -360,9 +360,9 @@
                                   <%-- <input type="Text" value="15000" name="birthday" class="form-control text-center" disabled>--%></td>
 
                                     <td class="text-center"><a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-file"></i></a></td>
-                                    <td>
+                                    <%--      <td>
                                         <textarea class="form-control" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="completed tasks"></textarea>
-                                    </td>
+                                    </td>--%>
 
                                     <td>
                                         <button id="Btn2" class="Alert-Save6 btn btn-outline-primary  fs-13 me-4 rounded-4 w-xl" type="button" disabled="disabled">Utilization Certificate</button>
@@ -406,9 +406,9 @@
                                  <%--  <input type="Text"  value="15000" name="birthday" class="form-control text-center" disabled>--%></td>
 
                                     <td class="text-center"><a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-file"></i></a></td>
-                                    <td>
+                                    <%--  <td>
                                         <textarea class="form-control" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="completed tasks"></textarea>
-                                    </td>
+                                    </td>--%>
 
                                     <td>
                                         <button id="Btn3" disabled="disabled" class="Alert-Save7 btn btn-outline-primary  fs-13 me-4 rounded-4 w-xl" type="button">Utilization Certificate</button>
@@ -444,9 +444,9 @@
                                    <span asp-validation-for="docDeathCertificate" class="text-danger"></span>
                                </td>--%>
                                     <td class="text-center"><a role="button" class="btn btn-info btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-file"></i></a></td>
-                                    <td>
+                                    <%--  <td>
                                         <textarea class="form-control" rows="1" oninput="autoResize(this)" autocomplete="off" placeholder="completed tasks"></textarea>
-                                    </td>
+                                    </td>--%>
 
                                     <td>
                                         <button id="Btn4" disabled="disabled" class="Alert-Save8 btn btn-outline-primary  fs-13 me-4 rounded-4 w-xl" type="button">Utilization Certificate</button>
@@ -702,8 +702,8 @@
                                                                 <th>Work Subcategory<br />
                                                                     कार्य उपश्रेणी</th>
                                                                 <td class="text-center ">इमारत मरम्मत</td>
-                                                                <th>Estimated Budget Cost(In Rs)<br />
-                                                                    अनुमानित बजट</th>
+                                                                <th>Approved Amount(In Rs)<br />
+                                                                    स्वीकृत राशि</th>
                                                                 <td class="text-center ">60000</td>
                                                             </tr>
                                                             <tr class="text-center">

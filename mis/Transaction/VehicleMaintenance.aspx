@@ -33,18 +33,10 @@
         </div>
     </div>
     <div class="card card-border-primary">
-           <div class="card-header">
+        <div class="card-header">
             <div class="row">
-                <div class="col-xxl-10 col-md-12">
-                    <div class="marqueecontainerinfo">
-                        <div class="headertext btn btn-primary rounded-pill">Vehicle Maintenance</div>
-                        <div>
-                            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">Empty </marquee>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-2 col-md-12 text-end">
-                    <a role="button" href="VehicleMaintenanceReport.aspx" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i class="bx bx-plus label-icon align-middle fs-16 me-2"></i>View Details</a>
+                <div class="col-lg-6">
+                    <h4 class="card-title">Vehicle Maintenance / वाहन रखरखाव</h4>
                 </div>
             </div>
         </div>
@@ -57,11 +49,20 @@
                             <span>Vehicle Number
                                 <br />
                        गाड़ी का नंबर<span style="color: red">*</span></span>
+                            <%--<select class="form-control select2 select2-hidden-accessible">
+                                <option>--Select--</option>
+                                <option></option>
+                                <option>MP04CV7194</option>
+                                <option>MP04CG9580MP04CG9580</option>
+                                <option>MP12CA3652</option>
+                                <option>MP04ZB8269</option>
+                            </select>--%>
                             <asp:DropDownList ID="ddlVehicleNumber" runat="server" CssClass="form-control" OnSelectedIndexChanged="ddlVehicleNumber_SelectedIndexChanged" AutoPostBack="true">
                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                                 <asp:ListItem Value="1"> MP04CB4473</asp:ListItem>
                                 <asp:ListItem Value="2"> MP04CG9580</asp:ListItem>
                             </asp:DropDownList>
+                            <%--<input type="text"  class="form-control" placeholder="Enter Vehicle Number"  autocomplete="off" />--%>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -166,9 +167,9 @@
                             <textarea name="ctl00$ContentBody$txtVehicleExpensesDetails" rows="4" cols="60" id="ctl00_ContentBody_txtVehicleExpensesDetails" class="form-control" placeholder="Enter Vehicle Expenses Details" onkeyup="countChars(this);"></textarea>
                         </div>
                     </div>
-                   <hr />
+                    <hr />
                     <div class="row">
-                        <div class="col-md-12"> 
+                        <div class="col-md-12">
                             <button id="toggleButton" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-outline-success btn-border">Save</button>
                             <a href="VehicleMaintenance.aspx" class="fw-bold btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
@@ -213,6 +214,8 @@
                                         <tr>
                                             <th scope="col">Sr.No.<br />
                                                 सरल क्र.</th>
+                                            <%-- <th scope="col">Office Name<br />
+                                                कार्यालय का नाम</th>--%>
                                             <th scope="col">Vehicle Number<br />
                                                 गाड़ी का नंबर</th>
                                             <th scope="col">Maintenance Type<br />
@@ -236,6 +239,9 @@
                                             <td style="width: 10%;">
                                                 <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblOffice_Name">1</span>
                                             </td>
+                                            <%--<td>
+                                                <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblOfficeName"></span>Head Office</td>
+                                            --%>
                                             <td>
                                                 <span id="ctl00_ContentBody_gvVehicleMaintenanceHOApproval_ctl02_lblVehicle_Number">MP04CB4473</span>
                                             </td>
@@ -263,6 +269,13 @@
                                                 </button>
                                             </td>
                                         </tr>
+                                        <%--<tr style="font-weight: bold;">
+                                            <td align="right" colspan="7">Total</td>
+                                            <td>5000.00</td>
+
+                                            <td></td>
+                                            <td></td>
+                                        </tr>--%>
                                     </tbody>
                                 </table>
                             </div>

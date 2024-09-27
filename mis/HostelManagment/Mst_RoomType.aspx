@@ -40,9 +40,17 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
-                <div class="col-lg-6">
-                    <h4 class="card-title">Room Type / कक्ष का प्रकार
-                    </h4>
+                <div class="col-xl-10 col-md-12">
+                    <div class="marqueecontainerinfo">
+                        <div class="headertext btn btn-primary rounded-pill">
+                            विवरण
+                        </div>
+                        <div class="">
+                            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext text-black">
+                                Room Type / कक्ष का प्रकार
+                            </marquee>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -54,7 +62,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select Hostel Name<br />
+                                    Select Hostel Name/<br />
                                     हॉस्टल का चयन करें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
                                     <option selected="selected" value="0">--Select --</option>
@@ -67,7 +75,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Enter Room Type<br />
+                                    Enter Room Type/<br />
                                     कक्ष प्रकार दर्ज करें<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Room Type" />
                             </div>
@@ -75,8 +83,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Enter Number of Beds<br />
-                                    बिस्तर की संख्या दर्ज करें</label>
+                                    Enter Number of Beds/<br />
+                                    बिस्तर की संख्या दर्ज करें<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Number of Beds" />
                             </div>
                         </div>
@@ -87,11 +95,11 @@
                                 <table class="table table-bordered text-center">
                                     <thead>
                                         <tr role="row">
-                                            <th scope="col">Sr.No.<br />
+                                            <th scope="col">Sr.No./<br />
                                                 सरल क्र.</th>
-                                            <th scope="col">Category<br />
+                                            <th scope="col">Category/<br />
                                                 वर्ग</th>
-                                            <th scope="col">Rent Per Bed<br />
+                                            <th scope="col">Rent Per Bed/<br />
                                                 प्रति बिस्तर किराया</th>
                                         </tr>
                                     </thead>
@@ -161,7 +169,7 @@
                         </div>--%>
                     <hr />
                     <div class="col-md-12">
-                        <div class="form-group text-center">
+                        <div class="form-group ">
                             <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border" onclick="document.getElementById('HostlInfo').style.display = 'block'">Save</button>
                             <a href="Mst_RoomType.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                         </div>
@@ -193,15 +201,16 @@
                             <table class="table table-bordered text-center">
                                 <thead>
                                     <tr role="row">
-                                        <th scope="col">Sr.No.<br />
+                                        <th scope="col">Sr.No./<br />
                                             क्र.सं.</th>
-                                        <th scope="col">Hostel Name<br />
+                                        <th scope="col">Hostel Name/<br />
                                             हॉस्टल का नाम</th>
-                                        <th scope="col">Room Type<br />
+                                        <th scope="col">Room Type/<br />
                                             कक्ष प्रकार </th>
-                                        <th scope="col">No. of Bed<br />
+                                        <th scope="col">No. of Bed/<br />
                                             बिस्तर की संख्या</th>
-                                        <th scope="col">Action<br />कार्यवाही
+                                        <th scope="col">Action/<br />
+                                            कार्यवाही
                                         </th>
 
                                     </tr>

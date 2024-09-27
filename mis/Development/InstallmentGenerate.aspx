@@ -48,77 +48,253 @@
                 <legend>Installment Generate / किस्त जनरेट</legend>
 
                 <div class="row align-items-end">
+
+                    <%--       <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Select OIS Type
+                          <br />
+                                OIS प्रकार का चयन करें
+                            </label>
+                            <span style="color: red; font-weight: bold">*</span>
+                            <select class="form-control select2" id="ddlProjectNo1">
+                                <option>Select</option>
+                                <option value="1">Office</option>
+                                <option value="2">Institude</option>
+                                <option value="3">School</option>
+                            </select>
+                        </div>
+                        </div>--%>
                     <div class="col-md-3">
-                        <label>
-                            Select Project Year<br />
-                            प्रोजेक्ट वर्ष का चयन करें<span style="color: red">*</span>
-                        </label>
-                        <select class="form-control select2">
-                            <option>Select</option>
-                            <option>2024</option>
-                            <option>2023</option>
-                            <option>2022</option>
-                            <option>2021</option>
-                        </select>
+                        <div class="form-group">
+                            <label>
+                                Select Offiice  /<br />
+                                कार्यालय का चयन करें
+                            </label>
+                            <span style="color: red; font-weight: bold">*</span>
+                            <select class="form-control select2" id="ddlProjectNo2">
+                                <option>Select</option>
+                                <option value="1">GOVT HSS MAHARANA PRATAP </option>
+                                <option value="2">GOVT HSS BOYS, KOTRA SULTANABAD </option>
+                                <option value="3">GOVT HSS EX, SUBHASH,SHIVAJI </option>
+                                <option value="3">GOVT HSS KHAJURI KALAN </option>
+                                <option value="3">GOVT HSS NAYSAMAND</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Select Finacial Year<br />
+                                वित्तीय वर्ष चुनें<span style="color: red">*</span>
+                            </label>
+                            <select class="form-control select2">
+                                <option>Select</option>
+                                <option>2024-25</option>
+                                <option>2023-24</option>
+                                <option>2022-23</option>
+                                <option>2021-22</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="col-md-3">
-                        <label>
-                            Select Work Category
-        <br />
-                            कार्य श्रेणी का चयन करें<span style="color: red">*</span></label>
+                        <div class="form-group">
+                            <label>
+                                Select Work Group
+                                <br />
+                                कार्य समूह का चयन करें<span style="color: red">*</span></label>
 
-                        <select class="form-control select2">
-                            <option>Select</option>
-                            <option>स्कूल निर्माण	</option>
-                            <option>पेयजल व्यवस्था</option>
-                            <option>सी.सी रोड कार्य</option>
-                        </select>
+                            <select class="form-control select2">
+                                <option>Select</option>
+                                <option>स्कूल निर्माण	</option>
+                                <option>पेयजल व्यवस्था</option>
+                                <option>सी.सी रोड कार्य</option>
+                            </select>
+                        </div>
                     </div>
-
                     <div class="col-md-3">
-                        <label>
-                            Select Project No<br />
-                            प्रोजेक्ट नंबर का चयन करें<span style="color: red;">*</span>
-                        </label>
-                        <select class="form-control select2" id="ddlProjectNo" onchange="showHideRemarkView()">
-                            <option>Select</option>
-                            <option value="1">PWDMP001</option>
-                            <option value="2">PWDMP002</option>
-                            <option value="3">PWDMP003</option>
-                            <option value="4">PWDMP004</option>
-                        </select>
+                        <div class="form-group">
+                            <label>
+                                Select Project No<br />
+                                प्रोजेक्ट नंबर का चयन करें<span style="color: red;">*</span>
+                            </label>
+                            <select class="form-control select2" id="ddlProjectNo">
+                                <option>Select</option>
+                                <option value="1">PWDMP001</option>
+                                <option value="2">PWDMP002</option>
+                                <option value="3">PWDMP003</option>
+                                <option value="4">PWDMP004</option>
+                            </select>
+                        </div>
                     </div>
 
                     <div class="col-md-3" style="display: none;" id="ddlOfficeN">
-                        <label>
-                            Select Office Name<br />
-                            कार्यालय का चयन करें
-                        </label>
-                        <select class="form-control select2" disabled>
-                            <option selected>BEO</option>
-                            <option>DEO</option>
-                            <option>JD</option>
-                            <option>HO</option>
-                        </select>
+                        <div class="form-group">
+                            <label>
+                                Select Office Name<br />
+                                कार्यालय का चयन करें
+                            </label>
+                            <select class="form-control select2" disabled>
+                                <option selected>BEO</option>
+                                <option>DEO</option>
+                                <option>JD</option>
+                                <option>HO</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-
-                <div class="row align-items-end">
                     <div class="col-md-3">
-                        <label>
-                            Enter Order No.<br />
-                            ऑर्डर संख्या दर्ज करें<span style="color: red">*</span>
-                        </label>
-                        <input type="text" class="form-control" placeholder="Enter Order No." />
+                        <div class="form-group">
+                            <label>
+                                Enter Installment Order No.<br />
+                                किस्त आदेश संख्या दर्ज करें<span style="color: red">*</span>
+                            </label>
+                            <input type="text" class="form-control" placeholder="Enter Order No." />
+                        </div>
                     </div>
 
                     <div class="col-md-3">
-                        <label>
-                            Order Date<br />
-                            आर्डर की तारीख<span style="color: red">*</span>
-                        </label>
-                        <input type="date" class="form-control" placeholder="Enter Order No." />
+                        <div class="form-group">
+                            <label>
+                                Installment Order Date<br />
+                                किस्त आदेश की तारीख का चयन करें<span style="color: red">*</span>
+                            </label>
+                            <input type="date" class="form-control" placeholder="Enter Order No." />
+                        </div>
                     </div>
+                    <%-- <div class="row align-items-end">--%>
+                            <%--<div class="col-md-3">
+
+                                <label>
+                                    Select Area Name<br />
+                                    क्षेत्र का नाम का चयन करें</label>
+                                <select class="form-control select2" id="ddlWorkCat1">
+                                    <option>Select</option>
+                                    <option selected>RKMP School Ground </option>
+                                  
+                                </select>
+                            </div>--%>
+
+                            <div class="col-md-3">
+                                 <div class="form-group">
+                                <label>
+                                    Select Work Category
+            <br />
+                                    कार्य श्रेणी का चयन करें<span style="color: red">*</span></label>
+
+                     
+                                            <select class="form-control select2" id="ddlProjectNo1">
+                                 <option>Select</option>
+                                    <option>विद्यालय का रख-रखाव कार्य	</option>
+                                    <option>पेयजल व्यवस्था</option>
+                                    <option>स्कूल मार्ग निर्माण</option>
+                            </select>
+                            </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                 <div class="form-group">
+                                <label>
+                                    Select Work Subcategory
+                                        <br />
+                                    कार्य उपश्रेणी का चयन करें<span style="color: red">*</span></label>
+
+                                <select class="form-control select2" id="ddlSubCat1">
+                                    <option>Select</option>
+                                    <option>इमारत मरम्मत</option>
+                                    <option>हेंडपंप खनन</option>
+                                    <option>सी.सी. सड़क निर्माण</option>
+                                </select>
+                            </div>
+                            </div>
+
+                            <%--<div class="col-md-3">
+                                <label>
+                                    Enter Work Area<br />
+                                    कार्य क्ष्रेत्र दर्ज करें</label>
+                                <input type="text" class="form-control" placeholder="Enter Work Area" id="txtWorkArea" />
+                            </div>--%>
+
+
+                            <%--<div class="col-md-3">
+                                <label>
+                                   Select Unit<br />
+                                    यूनिट का चयन करें</label>
+                                <select class="form-control select2" id="ddlSubCat1">
+                                    <option>Select</option>
+                                    <option>Number </option>
+                                    <option>Square Meter</option>
+                                    <option>Meter</option>
+                                    <option>Kilo Meter</option>
+                                </select>
+                            </div>--%>
+
+                            <div class="col-md-3">
+                                 <div class="form-group">
+                                <label>
+                                    Select Installment No.<br />
+                                    इन्सटॉलमेंट नंबर का चयन करें</label>
+                                <select class="form-control select2" id="ddlSubCat51">
+                                    <option>Select</option>
+                                    <option>First Installment </option>
+                                    <option>Second Installment</option>
+                                    <option>Third Installment</option>
+                                    <option>Fourth Installment</option>
+
+                                </select>
+                            </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                 <div class="form-group">
+                                <label>
+                                    Cost Amount<br />
+                                    लागत राशि</label>
+                                <input type="text" class="form-control" value="20000" readonly="readonly" id="txtCostAmt1" />
+                            </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                 <div class="form-group">
+                                <label>
+                                    Select Installment %<br />
+                                    इन्सटॉलमेंट प्रतिशत का चयन करें</label>
+                                <select class="form-control select2" id="ddlInstallment1" onchange="OnChange()">
+                                    <option>Select</option>
+                                    <option value="10%">10%</option>
+                                    <option value="20%">20%</option>
+                                    <option value="30%">30%</option>
+                                    <option value="40%">40%</option>
+                                    <option value="40%">50%</option>
+                                    <option value="40%">60%</option>
+                                    <option value="40%">70%</option>
+                                    <option value="40%">80%</option>
+                                    <option value="40%">90%</option>
+                                    <option value="40%">100%</option>
+                                </select>
+                            </div>
+                            </div>
+
+                         <%--   <div class="row align-items-end">--%>
+                                <div class="col-md-3" id="txtReleaseAmt" style="display: none;">
+                                 <div class="form-group">
+                                    <label>
+                                        Release Amount<br />
+                                        रिलीज़ राशि</label>
+                                    <input type="text" class="form-control" value="23546" readonly="readonly" id="txtRelease" />
+                                </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                     <div class="form-group">
+                                    <label>
+                                        Enter Remark<br />
+                                        टिप्पणी दर्ज करें</label>
+                                    <input type="text" class="form-control" placeholder="Enter Remark" id="txtRemark" />
+                                </div>
+                            </div>
+                <%--        </div>--%>
+
                 </div>
                 <hr />
                 <div class="row">
@@ -154,15 +330,15 @@
                                         <th>Sr.No.
                                 <br />
                                             क्रमांक</th>
-                                        <th>Add Work Details<br />
+                                        <%--<th>Add Work Details<br />
                                             कार्य विवरण जोड़ें
-                                        </th>
-                                        <th>Project Year<br />
-                                            परियोजना वर्ष</th>
+                                        </th>--%>
+                                        <th>Finacial Year<br />
+                                            वित्तीय वर्ष </th>
                                         <th>Project No.<br />
                                             परियोजना नंबर</th>
-                                        <th>Work Type<br />
-                                            कार्य प्रकार
+                                        <th>Work Group<br />
+                                            कार्य समूह
                                         </th>
                                         <th>Order No.<br />
                                             आदेश संख्या</th>
@@ -175,8 +351,8 @@
 
                                 <tr>
                                     <td>1</td>
-                                    <td><a role="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2">Add</a></td>
-                                    <td>2022</td>
+<%--                                    <td><a role="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg2">Add</a></td>--%>
+                                    <td>2022-23</td>
                                     <td>PWDMP001</td>
                                     <td>स्कूल निर्माण</td>
                                     <td>OR456</td>
@@ -201,22 +377,24 @@
                     <fieldset>
                         <legend>Details / विवरण</legend>
                         <div class="row align-items-end">
-                            <div class="col-md-3">
+                            <%--<div class="col-md-3">
+
                                 <label>
                                     Select Area Name<br />
                                     क्षेत्र का नाम का चयन करें</label>
-                                <select class="form-control select2" id="ddlAreaN">
+                                <select class="form-control select2" id="ddlWorkCat1">
                                     <option>Select</option>
                                     <option selected>RKMP School Ground </option>
-
+                                  
                                 </select>
-                            </div>
+                            </div>--%>
 
                             <div class="col-md-3">
                                 <label>
                                     Select Work Category
-                                    <br />
-                                    कार्य श्रेणी का चयन करें</label>
+            <br />
+                                    कार्य श्रेणी का चयन करें<span style="color: red">*</span></label>
+
                                 <select class="form-control select2" id="ddlWorkCat">
                                     <option>Select</option>
                                     <option>विद्यालय का रख-रखाव कार्य	</option>
@@ -239,32 +417,32 @@
                                 </select>
                             </div>
 
-                            <div class="col-md-3">
+                            <%--<div class="col-md-3">
                                 <label>
                                     Enter Work Area<br />
                                     कार्य क्ष्रेत्र दर्ज करें</label>
                                 <input type="text" class="form-control" placeholder="Enter Work Area" id="txtWorkArea" />
-                            </div>
-                        </div>
-                        <div class="row align-items-end">
-                            <div class="col-md-3">
+                            </div>--%>
+
+
+                            <%--<div class="col-md-3">
                                 <label>
-                                    Select Unit<br />
+                                   Select Unit<br />
                                     यूनिट का चयन करें</label>
-                                <select class="form-control select2" id="ddlUnit">
+                                <select class="form-control select2" id="ddlSubCat1">
                                     <option>Select</option>
                                     <option>Number </option>
                                     <option>Square Meter</option>
                                     <option>Meter</option>
                                     <option>Kilo Meter</option>
                                 </select>
-                            </div>
+                            </div>--%>
 
                             <div class="col-md-3">
                                 <label>
                                     Select Installment No.<br />
                                     इन्सटॉलमेंट नंबर का चयन करें</label>
-                                <select class="form-control select2" id="ddlInstallment">
+                                <select class="form-control select2" id="ddlSubCat5">
                                     <option>Select</option>
                                     <option>First Installment </option>
                                     <option>Second Installment</option>
@@ -285,7 +463,7 @@
                                 <label>
                                     Select Installment %<br />
                                     इन्सटॉलमेंट प्रतिशत का चयन करें</label>
-                                <select class="form-control select2" id="ddlInstallment1" onchange="OnChange()">
+                                <select class="form-control select2" id="ddlInstallment" onchange="OnChange()">
                                     <option>Select</option>
                                     <option value="10%">10%</option>
                                     <option value="20%">20%</option>
@@ -299,20 +477,21 @@
                                     <option value="40%">100%</option>
                                 </select>
                             </div>
-                        </div>
-                        <div class="row align-items-end">
-                            <div class="col-md-3" id="txtReleaseAmt" style="display: none;">
-                                <label>
-                                    Release Amount<br />
-                                    रिलीज़ राशि</label>
-                                <input type="text" class="form-control" value="23546" readonly="readonly" id="txtRelease" />
-                            </div>
 
-                            <div class="col-md-4">
-                                <label>
-                                    Enter Remark<br />
-                                    टिप्पणी दर्ज करें</label>
-                                <input type="text" class="form-control" placeholder="Enter Remark" id="txtRemark" />
+                            <div class="row align-items-end">
+                                <div class="col-md-3" id="txtReleaseAmt" style="display: none;">
+                                    <label>
+                                        Release Amount<br />
+                                        रिलीज़ राशि</label>
+                                    <input type="text" class="form-control" value="23546" readonly="readonly" id="txtRelease" />
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label>
+                                        Enter Remark<br />
+                                        टिप्पणी दर्ज करें</label>
+                                    <input type="text" class="form-control" placeholder="Enter Remark" id="txtRemark" />
+                                </div>
                             </div>
                         </div>
                         <div class="row align-items-end">
@@ -324,19 +503,7 @@
                     </fieldset>
                     <fieldset id="Fieldset1" style="display: none">
                         <legend>Details / विवरण</legend>
-                        <div class="row justify-content-end">
-                            <div class="col-md-4 text-end">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-rounded w-55">Excel</button>
-                                    <button class="btn btn-info btn-rounded w-55">PDF</button>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="form-group">
-                                    <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                                </div>
-                            </div>
-                        </div>
+
 
                         <div class="row form-group">
                             <div class="col-md-12">
@@ -377,8 +544,8 @@
                                                 </th>
                                                 <th>Remark<br />
                                                     टिप्पणी</th>
-                                                <th>
-                                                Action</th>
+                                                <th>Action
+                                                </th>
                                             </tr>
                                         </thead>
                                         <tbody id="tbody"></tbody>
@@ -442,14 +609,14 @@
         function addData2() {
             debugger;
             document.getElementById("Fieldset1").style.display = 'block';
-            let name = document.getElementById("ddlAreaN").value;
+            let name = document.getElementById("txtAreaN").value;
             let email = document.getElementById("ddlWorkCat").value;
             let mobile = document.getElementById("ddlSubCat").value;
             let PreviousGradea = document.getElementById("txtWorkArea").value;
-            let PreviousGradeab = document.getElementById("ddlUnit").value;
-            let PreviousGradec = document.getElementById("ddlInstallment").value;
+            let PreviousGradeab = document.getElementById("txtunit").value;
+            let PreviousGradec = document.getElementById("txtInstallmentNo").value;
             let PreviousGraded = document.getElementById("txtCostAmt").value;
-            let PreviousGradee = document.getElementById("ddlInstallment1").value;
+            let PreviousGradee = document.getElementById("ddlInstallment").value;
             let Gradea = document.getElementById("txtRelease").value;
             let Gradeb = document.getElementById("txtRemark").value;
             <%--let Gradec = document.getElementById("ddlGram").value;
@@ -496,10 +663,10 @@
             //newRow.insertCell(21);
             //const actionButtonTd = newRow.cells[21];
             //actionButtonTd.innerHTML += aidfujfh;
-             //Add action field
-            newRow.insertCell(11);
-            const actionButtonTd = newRow.cells[11];
-            actionButtonTd.innerHTML += '<a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a>';
+            // Add action field
+            //newRow.insertCell(22);
+            //const actionButtonTd = newRow.cells[22];
+            //actionButtonTd.innerHTML += '<a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a>';
 
             // Clear input fields after adding the row
             clearInputs2();

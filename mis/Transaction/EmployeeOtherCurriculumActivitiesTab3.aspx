@@ -12,6 +12,10 @@
             text-align: left;
             color: white;
         }
+
+        #btnsave {
+            display: none;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -36,12 +40,12 @@
                 </div>
             </div>
         </div>
-     <div class="row" >
-  <div class="col-md-4" >
-     
-          <img src="/img/Employee.png" style="height: 70px" >
-  </div>
-  </div>
+        <div class="row">
+            <div class="col-md-4">
+
+                <img src="/img/Employee.png" style="height: 70px">
+            </div>
+        </div>
     </div>
     <div class="content-wrapper">
         <div class="container-fluid">
@@ -146,7 +150,7 @@
                         </fieldset>
                         <fieldset>
                             <legend>प्रशिक्षण का विवरण (In-service, induction, CWSN, Computer, Dakshata, ABL, 90 Days IED) :-</legend>
-                            <div class="row form-group">
+                            <%--<div class="row form-group">
                                 <div class="col-md-12">
                                     <div class="table-responsive">
                                         <table class="table text-center">
@@ -253,6 +257,101 @@
                                     <hr />
                                     <button id="Button2" type="button" class="btn btn-outline-success btn-border w-lg Alert-Confirmation" onclick="myFunction()">Save</button>
                                 </div>
+                            </div>--%>
+
+                            <div class="row mt-4 align-items-end">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Select Training Type<br />
+                                            प्रशिक्षण प्रकार का चयन करे<span style="color: red">*</span>
+                                        </label>
+                                        <select id="TrainingType" class="form-control select2">
+                                            <option value="">--Select--</option>
+                                            <option value="राष्ट्रीय स्तर">राष्ट्रीय स्तर </option>
+                                            <option value="राज्य स्तर">राज्य स्तर </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Select Level of Training<br />
+                                            प्रशिक्षण के स्तर का चयन करे<span style="color: red">*</span>
+                                        </label>
+                                        <select id="LevelOfTraining" class="form-control select2">
+                                            <option value="">--Select--</option>
+                                            <option value="राज्य">राज्य</option>
+                                            <option value="संभाग">संभाग</option>
+                                            <option value="जिला">जिला</option>
+                                            <option value="विकासखंड">विकासखंड</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Select From Date<br />
+                                            दिनांक से का चयन करें<span style="color: red">*</span>
+                                        </label>
+                                        <input type="date" id="From" class="form-control datepicker" value="-" placeholder="Enter From Date" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Select To Date<br />
+                                            दिनांक तक का चयन करें<span style="color: red">*</span>
+                                        </label>
+                                        <input type="date" id="ToDate" class="form-control datepicker" placeholder="Enter To Date" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Enter Duration of Training  /<br />
+                                            प्रशिक्षण की अवधि दर्ज करें
+                                            <span style="color: red">*</span>
+                                        </label>
+                                        <input type="text" id="DurationOfTraining" class="form-control" placeholder="Enter Duration of Training (In Day's)" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <button type="button" onclick="AddCurriculm()" id="btnQualification" class="btn btn-outline-success w-lg btn-border"><b>Add</b></button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="tblExperience" style="display: none;">
+                                            <tr>
+                                                <th>Sr. No.<br />
+                                                    सरल क्र.</th>
+                                                <th>Training Type<br />
+                                                    प्रशिक्षण प्रकार</th>
+                                                <th>Level of Training
+                                                    <br />
+                                                    प्रशिक्षण का स्तर </th>
+                                                <th>From Date<br />
+                                                    दिनांक से</th>
+                                                <th>To Date<br />
+                                                    दिनांक तक</th>
+                                                <th>Duration of Training
+                                                    <br />
+                                                    प्रशिक्षण की अवधि</th>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr />
+                            <div class="col-md-2">
+                                <button id="btnsave" type="button" class="btn btn-outline-success btn-border Alert-Confirmation w-lg" onclick="myFunction()">Save</button>
                             </div>
                         </fieldset>
                     </div>
@@ -317,5 +416,104 @@
                 $.SweetAlert.init()
             }(window.jQuery);
     </script>--%>
+
+    <script>
+        var entryCount = 0; // Track the number of entries
+        var maxEntries = 4; // Maximum number of entries allowed
+
+        //function AddCurriculm() {
+        //    if (entryCount >= maxEntries) {
+        //        alert("You can only add up to 4 entries.");
+        //        return;
+        //    }
+
+        //    var trainingType = $('#TrainingType').val();
+        //    var levelOfTraining = $('#LevelOfTraining').val();
+        //    var From = $('#From').val();
+        //    var ToDate = $('#ToDate').val();
+        //    var durationOfTraining = $('#DurationOfTraining').val();
+
+        //    //if (!trainingType || !levelOfTraining || !durationOfTraining) {
+        //    //    alert("Please fill in all required fields.");
+        //    //    return;
+        //    //}
+
+        //    entryCount++;
+
+        //    var table = $('#tblExperience');
+        //    table.show();
+
+        //    var newRow = '<tr>' +
+        //        '<td>' + entryCount + '</td>' +
+        //        '<td>' + trainingType + '</td>' +
+        //        '<td>' + levelOfTraining + '</td>' +
+        //        '<td>' + From + '</td>' +
+        //        '<td>' + ToDate + '</td>' +
+        //        '<td>' + durationOfTraining + '</td>' +
+        //        '</tr>';
+
+        //    table.find('tbody').append(newRow);
+
+        //    // Clear the input fields after adding
+        //    $('#TrainingType').val('');
+        //    $('#LevelOfTraining').val('');
+        //    $('#From').val('');
+        //    $('#ToDate').val('');
+        //    $('#DurationOfTraining').val('');
+
+
+        //    document.getElementById("Button2").style.display = "block";
+        //}
+
+
+        var entryCount = 0; // Track the number of entries
+        var maxEntries = 4; // Maximum number of entries allowed
+
+        function AddCurriculm() {
+            if (entryCount >= maxEntries) {
+                alert("You can only add up to 4 entries.");
+                return;
+            }
+
+            var trainingType = $('#TrainingType').val();
+            var levelOfTraining = $('#LevelOfTraining').val();
+            var from = $('#From').val();
+            var toDate = $('#ToDate').val();
+            var durationOfTraining = $('#DurationOfTraining').val();
+
+            // Validate required fields
+            //if (!trainingType || !levelOfTraining || !from || !toDate || !durationOfTraining) {
+            //    alert("Please fill in all required fields.");
+            //    return;
+            //}
+
+            entryCount++;
+
+            var table = $('#tblExperience');
+            table.show();
+
+            var newRow = '<tr>' +
+                '<td>' + entryCount + '</td>' +
+                '<td>' + trainingType + '</td>' +
+                '<td>' + levelOfTraining + '</td>' +
+                '<td>' + from + '</td>' +
+                '<td>' + toDate + '</td>' +
+                '<td>' + durationOfTraining + '</td>' +
+                '</tr>';
+
+            table.find('tbody').append(newRow);
+
+            // Clear the input fields after adding
+            $('#TrainingType').val('');
+            $('#LevelOfTraining').val('');
+            $('#From').val('');
+            $('#ToDate').val('');
+            $('#DurationOfTraining').val('');
+
+            //document.getElementById("btnadd").style.display = "block";
+        }
+
+
+    </script>
 </asp:Content>
 

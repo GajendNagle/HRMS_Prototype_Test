@@ -48,17 +48,19 @@
                 <legend>Utilization Certificate Generate Process / उपयोगिता प्रमाण पत्र बनाने की प्रक्रिया</legend>
                 <div class="row align-items-end">
                     <div class="col-md-3">
-                        <label>
-                            Select Project Year<br />
-                            प्रोजेक्ट वर्ष का चयन करें<span style="color: red">*</span>
-                        </label>
-                        <select class="form-control select2">
-                            <option>Select</option>
-                            <option>2024</option>
-                            <option>2023</option>
-                            <option>2022</option>
-                            <option>2021</option>
-                        </select>
+                        
+                            <label>
+                                Select Finacial Year<br />
+                                वित्तीय वर्ष चुनें<span style="color: red">*</span>
+                            </label>
+                            <select class="form-control select2">
+                                <option>Select</option>
+                                <option>2024-25</option>
+                                <option>2023-24</option>
+                                <option>2022-23</option>
+                                <option>2021-22</option>
+                            </select>
+                        
                     </div>
 
                     <div class="col-md-3">

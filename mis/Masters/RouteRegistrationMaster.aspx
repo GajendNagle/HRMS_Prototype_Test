@@ -41,93 +41,93 @@
                         onclick="funBack()"><i class="bx bx-plus label-icon align-middle  me-2"></i>View Details</a>
                 </div>
             </div>
-        </div>
-        <div class="card-body">
-            <asp:Label runat="server" ID="lblMsg"></asp:Label>
-            <fieldset id="RegDetail">
-                <legend>Add Route Registration / मार्ग पंजीकरण जोड़े</legend>
-                <div class="row align-items-end">
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                        <div class="form-group">
-                            <label>
-                                Enter Route Details<br />
-                                मार्ग की जानकारी दर्ज करे<span style="color: red">*</span></label>
-                            <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Route Number" onkeypress="return hindiOnly();" />
+            <div class="card-body">
+                <asp:Label runat="server" ID="lblMsg"></asp:Label>
+                <fieldset id="RegDetail">
+                    <legend>Add Route Registration / मार्ग पंजीकरण जोड़े</legend>
+                    <div class="row align-items-end">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="form-group">
+                                <label>
+                                    Enter Route Details<br />
+                                    मार्ग की जानकारी दर्ज करे<span style="color: red">*</span></label>
+                                <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Route Number" onkeypress="return hindiOnly();" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <hr />
+                            <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Save</button>
+                            <a href="RouteRegistrationMaster.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <hr />
-                        <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Save</button>
-                        <a href="RouteRegistrationMaster.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
-                    </div>
-                </div>
-            </fieldset>
-            <fieldset id="FsDetails" class="d-none">
-                <legend>Route Details / मार्ग विवरण</legend>
-                <div class="row justify-content-end">
-                    <div class="col-md-4 text-end">
-                        <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-55">Excel</button>
-                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                </fieldset>
+                <fieldset id="FsDetails" class="d-none">
+                    <legend>Route Details / मार्ग विवरण</legend>
+                    <div class="row justify-content-end">
+                        <div class="col-md-4 text-end">
+                            <div class="form-group">
+                                <button class="btn btn-info btn-rounded w-55">Excel</button>
+                                <button class="btn btn-info btn-rounded w-55">PDF</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2" id="searchbtn">
+                            <div class="form-group">
+                                <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-2" id="searchbtn">
-                        <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
-                        </div>
-                    </div>
-                </div>
-                <div class="row" id="tableData">
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <table class="table table-bordered text-center">
-                                <thead class="nowrap">
+                    <div class="row" id="tableData">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table table-bordered text-center">
+                                    <thead class="nowrap">
+                                        <tr>
+                                            <th>Sr. No.
+                                     <br />
+                                                सरल क्र.</th>
+                                            <th>Route Detail
+                                     <br />
+                                                मार्ग का विवरण</th>
+                                            <th>Action<br />
+                                                कार्यवाहीं</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
-                                        <th>Sr. No.
-                                     <br />
-                                            सरल क्र.</th>
-                                        <th>Route Detail
-                                     <br />
-                                            मार्ग का विवरण</th>
-                                        <th>Action<br />
-                                            कार्यवाहीं</th>
+                                        <td>1</td>
+                                        <td>RUT001</td>
+                                        <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
+                                            <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                     </tr>
-                                </thead>
-                                <tr>
-                                    <td>1</td>
-                                    <td>RUT001</td>
-                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
-                                        <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>RUT002</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
-                                        <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>RUT003</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
-                                        <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>RUT004</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
-                                        <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>RUT005</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
-                                        <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-                                </tr>
-                            </table>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>RUT002</td>
+                                        <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
+                                            <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>RUT003</td>
+                                        <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
+                                            <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>RUT004</td>
+                                        <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
+                                            <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>RUT005</td>
+                                        <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>
+                                            <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </fieldset>
+                </fieldset>
+            </div>
         </div>
     </div>
 </asp:Content>

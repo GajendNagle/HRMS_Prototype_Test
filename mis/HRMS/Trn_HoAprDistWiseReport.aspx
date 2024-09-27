@@ -10,6 +10,10 @@
         th {
             white-space: nowrap;
         }
+         div.form-group{
+            margin: 0px 0px 0px;
+
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -119,8 +123,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                District<br />
-                                ज़िला
+                                Select District<br />
+                               जिले का नाम का चयन करें
           
                                 <span class="fa-pull-right" style="color: red">*</span>
                             </label>
@@ -140,8 +144,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Department<br />
-                                विभाग</label>
+                                Select  Department<br />
+                                विभाग का नाम का चयन करें</label>
                             <select class="form-control select2">
                                 <option selected="selected" value="0">--Select All--</option>
                                 <option value="1">Commissioner, Public Instructions </option>
@@ -159,8 +163,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Annual Year<br />
-                                वित्तीय वर्ष
+                               Select Annual Year<br />
+                               वार्षिक वर्ष का चयन करें
                             </label>
                             <input maxlength="4" autocomplete="off" class="form-control datepickerYear" placeholder="2024-25" type="text" data-val="true" value="2024-25" />
 

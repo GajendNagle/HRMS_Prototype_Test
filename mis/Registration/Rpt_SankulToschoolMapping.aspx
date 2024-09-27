@@ -34,122 +34,109 @@
         <div class="card-body">
             <asp:Label runat="server" ID="lblMsg"></asp:Label>
             <fieldset>
-                <legend>Sankul To School Mapping Report / संकुल से स्कूल मैपिंग रिपोर्ट</legend>
-                <div class="row align-items-end">
+                <legend>Sankul To School Mapping Report/संकुल से स्कूल मैपिंग रिपोर्ट</legend>
+                <div class="row form-group align-items-end">
                     <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Select Division<br />
-                                संभाग चुनें <span style="color: red">*</span></label>
-                            <asp:DropDownList runat="server" CssClass="form-control select2">
-                                <asp:ListItem>--Select--</asp:ListItem>
-                                <asp:ListItem>Bhopal</asp:ListItem>
-                                <asp:ListItem>Gwalior</asp:ListItem>
-                                <asp:ListItem>Narmadapuram</asp:ListItem>
-                                <asp:ListItem>Indore</asp:ListItem>
-                                <asp:ListItem>Jabalpur</asp:ListItem>
-                                <asp:ListItem>Rewa</asp:ListItem>
-                                <asp:ListItem>Sagar</asp:ListItem>
-                                <asp:ListItem>Shahdol</asp:ListItem>
-                                <asp:ListItem>Ujjain</asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
+                        <label>Select Division Name<br />
+                            संभाग चुनें <span style="color: red">*</span></label>
+                        <asp:DropDownList runat="server" CssClass="form-control select2">
+                            <asp:ListItem>--Select--</asp:ListItem>
+                            <asp:ListItem>Bhopal</asp:ListItem>
+                            <asp:ListItem>Gwalior</asp:ListItem>
+                            <asp:ListItem>Narmadapuram</asp:ListItem>
+                            <asp:ListItem>Indore</asp:ListItem>
+                            <asp:ListItem>Jabalpur</asp:ListItem>
+                            <asp:ListItem>Rewa</asp:ListItem>
+                            <asp:ListItem>Sagar</asp:ListItem>
+                            <asp:ListItem>Shahdol</asp:ListItem>
+                            <asp:ListItem>Ujjain</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Select District Name<br />
+                            जिले चुनें<span style="color: red">*</span></label>
+                        <asp:DropDownList runat="server" CssClass="form-control select2">
+                            <asp:ListItem>--Select--</asp:ListItem>
+                            <asp:ListItem>Bhopal</asp:ListItem>
+                            <asp:ListItem>Raisen</asp:ListItem>
+                            <asp:ListItem>Rajgarh</asp:ListItem>
+                            <asp:ListItem>Sehore</asp:ListItem>
+                            <asp:ListItem>Vidisha</asp:ListItem>
+                            <asp:ListItem>Ashoknagar</asp:ListItem>
+                            <asp:ListItem>Shivpuri</asp:ListItem>
+                            <asp:ListItem>Datia</asp:ListItem>
+                            <asp:ListItem>Guna</asp:ListItem>
+                            <asp:ListItem>Gwalior</asp:ListItem>
+                            <asp:ListItem>Harda</asp:ListItem>
+                            <asp:ListItem>Hoshangabad</asp:ListItem>
+                            <asp:ListItem>Betul</asp:ListItem>
+                            <asp:ListItem>Morena</asp:ListItem>
+                            <asp:ListItem>Sheopur</asp:ListItem>
+                            <asp:ListItem>Bhind</asp:ListItem>
+                            <asp:ListItem>Barwani</asp:ListItem>
+                            <asp:ListItem>Burhanpur</asp:ListItem>
+                            <asp:ListItem>Dhar</asp:ListItem>
+                            <asp:ListItem>Indore</asp:ListItem>
+                            <asp:ListItem>Jhabua</asp:ListItem>
+                            <asp:ListItem>Khandwa</asp:ListItem>
+                            <asp:ListItem>Khargone</asp:ListItem>
+                            <asp:ListItem>Alirajpur</asp:ListItem>
+                            <asp:ListItem>Balaghat</asp:ListItem>
+                            <asp:ListItem>Chhindwara</asp:ListItem>
+                            <asp:ListItem>Jabalpur</asp:ListItem>
+                            <asp:ListItem>Katni</asp:ListItem>
+                            <asp:ListItem>Mandla</asp:ListItem>
+                            <asp:ListItem>Narsinghpur</asp:ListItem>
+                            <asp:ListItem>Seoni</asp:ListItem>
+                            <asp:ListItem>Rewa</asp:ListItem>
+                            <asp:ListItem>Satna</asp:ListItem>
+                            <asp:ListItem>Sidhi</asp:ListItem>
+                            <asp:ListItem>Singroli</asp:ListItem>
+                            <asp:ListItem>Chhatarpur</asp:ListItem>
+                            <asp:ListItem>Damoh</asp:ListItem>
+                            <asp:ListItem>Panna</asp:ListItem>
+                            <asp:ListItem>Sagar</asp:ListItem>
+                            <asp:ListItem>Tikamgarh</asp:ListItem>
+                            <asp:ListItem>Shahdol</asp:ListItem>
+                            <asp:ListItem>Umaria</asp:ListItem>
+                            <asp:ListItem>Dindori</asp:ListItem>
+                            <asp:ListItem>Anuppur</asp:ListItem>
+                            <asp:ListItem>Dewas</asp:ListItem>
+                            <asp:ListItem>Mandsaur</asp:ListItem>
+                            <asp:ListItem>Neemuch</asp:ListItem>
+                            <asp:ListItem>Ratlam</asp:ListItem>
+                            <asp:ListItem>Shajapur</asp:ListItem>
+                            <asp:ListItem>Ujjain</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Select Block Name<br />
+                            ब्लॉक चुनें</label>
+                        <asp:DropDownList runat="server" CssClass="form-control select2">
+                            <asp:ListItem>--Select--</asp:ListItem>
+                            <asp:ListItem>Agar</asp:ListItem>
+                            <asp:ListItem>Barod</asp:ListItem>
+                            <asp:ListItem>Nalkheda</asp:ListItem>
+                            <asp:ListItem>Susner</asp:ListItem>
+                            <asp:ListItem>Alirajpur</asp:ListItem>
+                            <asp:ListItem>Bhabra</asp:ListItem>
+                            <asp:ListItem>Katthiwara</asp:ListItem>
+                            <asp:ListItem>Sondwa</asp:ListItem>
+                            <asp:ListItem>Udaygarh</asp:ListItem>
+                            <asp:ListItem>Jobat</asp:ListItem>
+                            <asp:ListItem>Anuppur</asp:ListItem>
+                            <asp:ListItem>Jaithari</asp:ListItem>
+                            <asp:ListItem>Kotma</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                    <div class="col-md-3">
+                        <label>From Date<br />
+                            दिनांक से</label>
+                        <input type="date" class="form-control" placeholder="17/11/2023" />
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>
-                                Select District<br />
-                                जिले चुनें<span style="color: red">*</span></label>
-                            <asp:DropDownList runat="server" CssClass="form-control select2">
-                                <asp:ListItem>--Select--</asp:ListItem>
-                                <asp:ListItem>Bhopal</asp:ListItem>
-                                <asp:ListItem>Raisen</asp:ListItem>
-                                <asp:ListItem>Rajgarh</asp:ListItem>
-                                <asp:ListItem>Sehore</asp:ListItem>
-                                <asp:ListItem>Vidisha</asp:ListItem>
-                                <asp:ListItem>Ashoknagar</asp:ListItem>
-                                <asp:ListItem>Shivpuri</asp:ListItem>
-                                <asp:ListItem>Datia</asp:ListItem>
-                                <asp:ListItem>Guna</asp:ListItem>
-                                <asp:ListItem>Gwalior</asp:ListItem>
-                                <asp:ListItem>Harda</asp:ListItem>
-                                <asp:ListItem>Hoshangabad</asp:ListItem>
-                                <asp:ListItem>Betul</asp:ListItem>
-                                <asp:ListItem>Morena</asp:ListItem>
-                                <asp:ListItem>Sheopur</asp:ListItem>
-                                <asp:ListItem>Bhind</asp:ListItem>
-                                <asp:ListItem>Barwani</asp:ListItem>
-                                <asp:ListItem>Burhanpur</asp:ListItem>
-                                <asp:ListItem>Dhar</asp:ListItem>
-                                <asp:ListItem>Indore</asp:ListItem>
-                                <asp:ListItem>Jhabua</asp:ListItem>
-                                <asp:ListItem>Khandwa</asp:ListItem>
-                                <asp:ListItem>Khargone</asp:ListItem>
-                                <asp:ListItem>Alirajpur</asp:ListItem>
-                                <asp:ListItem>Balaghat</asp:ListItem>
-                                <asp:ListItem>Chhindwara</asp:ListItem>
-                                <asp:ListItem>Jabalpur</asp:ListItem>
-                                <asp:ListItem>Katni</asp:ListItem>
-                                <asp:ListItem>Mandla</asp:ListItem>
-                                <asp:ListItem>Narsinghpur</asp:ListItem>
-                                <asp:ListItem>Seoni</asp:ListItem>
-                                <asp:ListItem>Rewa</asp:ListItem>
-                                <asp:ListItem>Satna</asp:ListItem>
-                                <asp:ListItem>Sidhi</asp:ListItem>
-                                <asp:ListItem>Singroli</asp:ListItem>
-                                <asp:ListItem>Chhatarpur</asp:ListItem>
-                                <asp:ListItem>Damoh</asp:ListItem>
-                                <asp:ListItem>Panna</asp:ListItem>
-                                <asp:ListItem>Sagar</asp:ListItem>
-                                <asp:ListItem>Tikamgarh</asp:ListItem>
-                                <asp:ListItem>Shahdol</asp:ListItem>
-                                <asp:ListItem>Umaria</asp:ListItem>
-                                <asp:ListItem>Dindori</asp:ListItem>
-                                <asp:ListItem>Anuppur</asp:ListItem>
-                                <asp:ListItem>Dewas</asp:ListItem>
-                                <asp:ListItem>Mandsaur</asp:ListItem>
-                                <asp:ListItem>Neemuch</asp:ListItem>
-                                <asp:ListItem>Ratlam</asp:ListItem>
-                                <asp:ListItem>Shajapur</asp:ListItem>
-                                <asp:ListItem>Ujjain</asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Select Block<br />
-                                ब्लॉक चुनें</label>
-                            <asp:DropDownList runat="server" CssClass="form-control select2">
-                                <asp:ListItem>--Select--</asp:ListItem>
-                                <asp:ListItem>Agar</asp:ListItem>
-                                <asp:ListItem>Barod</asp:ListItem>
-                                <asp:ListItem>Nalkheda</asp:ListItem>
-                                <asp:ListItem>Susner</asp:ListItem>
-                                <asp:ListItem>Alirajpur</asp:ListItem>
-                                <asp:ListItem>Bhabra</asp:ListItem>
-                                <asp:ListItem>Katthiwara</asp:ListItem>
-                                <asp:ListItem>Sondwa</asp:ListItem>
-                                <asp:ListItem>Udaygarh</asp:ListItem>
-                                <asp:ListItem>Jobat</asp:ListItem>
-                                <asp:ListItem>Anuppur</asp:ListItem>
-                                <asp:ListItem>Jaithari</asp:ListItem>
-                                <asp:ListItem>Kotma</asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                From Date<br />
-                                दिनांक से</label>
-                            <input type="date" class="form-control" placeholder="17/11/2023" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                To Date<br />
+                            <label>To Date<br />
                                 दिनांक तक</label>
                             <input type="date" class="form-control" placeholder="17/11/2023" />
                         </div>
@@ -176,7 +163,7 @@
                     </div>
                     <div class="col-md-2">
                         <div class="form-group">
-                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search..." />
+                            <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
                         </div>
                     </div>
                 </div>
@@ -185,22 +172,13 @@
                         <div class="table-responsive">
                             <table class="table table-bordered">
                                 <tr class="card-header">
-                                    <th>Sr. No.
-                                        <br />
-                                        सरल क्र.</th>
-                                    <th>Division Name<br />
-                                        संभाग का नाम </th>
-                                    <th>District Name<br />
-                                        <br />
-                                        जिले का नाम </th>
-                                    <th>Block Name<br />
-                                        ब्लॉक का नाम </th>
-                                    <th>Sankul Name<br />
-                                        संकुल का नाम </th>
-                                    <th>School Name<br />
-                                        स्कूल के नाम</th>
-                                    <th>View More<br />
-                                        और देखें</th>
+                                    <th>Sr. No. <br />सरल क्र.</th>
+                                    <th>Division Name<br />संभाग का नाम </th>
+                                    <th>District Name<br /><br />जिले का नाम </th>
+                                    <th>Block Name<br />ब्लॉक का नाम </th>
+                                    <th>Sankul Name<br />संकुल का नाम </th>
+                                    <th>School Name<br />स्कूल के नाम</th>
+                                    <th>View More<br />और देखें</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>

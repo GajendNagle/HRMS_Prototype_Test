@@ -242,7 +242,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Select School Medium
+                                <label>Select School Medium<br />
                                     <br />
                                     स्कूल माध्यम चुनें</label>
                                 <select class="form-control" data-live-search="true">
@@ -378,7 +378,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Select District Panchayat<br />
+                                <label>Select Zila Panchayat<br />
                                     जिला पंचायत चुनें</label>
                                 <select class="form-control">
                                     <option value="--Select--">--Select--</option>

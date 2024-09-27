@@ -192,7 +192,8 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
         show1.Visible = false;
         show2.Visible = false;
         show3.Visible = false;
-        show4.Visible = false;       
+        show4.Visible = false;
+       
         Fieldset2.Visible = false;
         Fieldset3.Visible = false;
         Fieldset4.Visible = false;
@@ -209,7 +210,8 @@ public partial class mis_HRMS_Trn_HoAprDistWiseReport : System.Web.UI.Page
             show1.Visible = false;
             show2.Visible = false;
             show3.Visible = false;
-            show4.Visible = false;            
+            show4.Visible = false;
+            
             Fieldset2.Visible = false;
             Fieldset3.Visible = false;
             Fieldset4.Visible = false;

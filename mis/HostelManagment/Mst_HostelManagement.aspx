@@ -25,10 +25,18 @@
     <div class="card card-border-primary">
         <div class="card-header">
             <div class="row align-items-end">
-                <div class="col-lg-6">
-                    <h4 class="card-title">Hostel Management/छात्रावास प्रबंधन
-                    </h4>
-                </div>
+                <div class="col-xl-10 col-md-12">
+    <div class="marqueecontainerinfo">
+        <div class="headertext btn btn-primary rounded-pill">
+            विवरण
+        </div>
+        <div class="">
+            <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext text-black">
+                Hostel Management/छात्रावास प्रबंधन
+            </marquee>
+        </div>
+    </div>
+</div>
             </div>
         </div>
         <div class="card-body">
@@ -38,13 +46,13 @@
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Hostel Name<br />छात्रावास का नाम दर्ज करें<span style="color: red;">*</span></label>
+                            <label>Enter Hostel Name/<br />छात्रावास का नाम दर्ज करें<span style="color: red;">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Office Name" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Select Hostel Type<br />छात्रावास का प्रकार चुनें<span style="color: red;">*</span></label>
+                            <label>Select Hostel Type/<br />छात्रावास का प्रकार चयन करे<span style="color: red;">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Boy">Boy</option>
@@ -55,26 +63,26 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Address<br />पता दर्ज करें<span style="color: red;">*</span></label>
+                            <label>Enter Address/<br />पता दर्ज करें<span style="color: red;">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Address" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Intake Capacity of Students<br />छात्रों की प्रवेश क्षमता दर्ज करें<span style="color: red;">*</span></label>
+                            <label>Enter Intake Capacity of Students/<br />छात्रों की प्रवेश क्षमता दर्ज करें<span style="color: red;">*</span></label>
                             <input type="text" class="form-control" placeholder="कार्यालय का नाम दर्ज करे" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Enter Description<br />विवरण दर्ज करें<span style="color: red;">*</span></label>
+                            <label>Enter Description/<br />विवरण दर्ज करें<span style="color: red;">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Office Code No." />
                         </div>
                     </div>
                 </div>
             </fieldset>
             <div class="col-md-12">
-                <div class="form-group text-center">
+                <div class="form-group">
                     <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border" onclick="document.getElementById('HostlInfo').style.display = 'block'">Save</button>
                     <a href="Mst_HostelManagement.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                 </div>
@@ -109,13 +117,13 @@
                                     <table class="table table-bordered text-center" >
                                         <thead>
                                             <tr role="row">
-                                                <th scope="col">Sr.No.<br />क्र.सं.</th>
-                                                <th scope="col"> Hostel Name<br />छात्रावास का नाम </th>
-                                                <th scope="col">    Hostel Type<br />छात्रावास प्रकार   </th>
-                                                <th scope="col" > Address<br />पता </th>
-                                               <th scope="col"> Intake Capacity of Students<br />छात्रों की प्रवेश क्षमता</th>
-                                                <th scope="col">    Description<br />विवरण </th>
-                                                <th scope="col">   Action <br /> कार्रवाई </th>
+                                                <th scope="col">Sr.No./<br />क्र.सं.</th>
+                                                <th scope="col"> Hostel Name/<br />छात्रावास का नाम </th>
+                                                <th scope="col">    Hostel Type/<br />छात्रावास प्रकार   </th>
+                                                <th scope="col" > Address/<br />पता </th>
+                                               <th scope="col"> Intake Capacity of Students/<br />छात्रों की प्रवेश क्षमता</th>
+                                                <th scope="col">    Description/<br />विवरण </th>
+                                                <th scope="col">   Action/<br /> कार्रवाई </th>
                                             </tr>
                                         </thead>
                                         <tbody>

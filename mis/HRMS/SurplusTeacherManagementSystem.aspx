@@ -50,7 +50,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="card-title">District-Wise Surplus Teachers Report / जिलेवार अतिरिक्त शिक्षकों की रिपोर्ट</h4>
+                    <h4 class="card-title">District-Wise Surplus Teachers Report / जिलेवार अधिशेष शिक्षकों की रिपोर्ट</h4>
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@
                                             <th scope="col">Working<br />
                                                 कार्यरत</th>
                                             <th scope="col">Surplus Teachers<br />
-                                                अतिरिक्त शिक्षक</th>
+                                                अधिशेष शिक्षक</th>
                                         </tr>
                                     </thead>
 
@@ -494,7 +494,7 @@
                                 <th scope="col">Working<br />
                                     कार्यरत</th>
                                 <th scope="col">Surplus Teachers<br />
-                                    अतिरिक्त शिक्षक</th>
+                                    अधिशेष शिक्षक</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -545,7 +545,7 @@
                                 <th scope="col">Working<br />
                                     कार्यरत</th>
                                 <th scope="col">Surplus Teachers<br />
-                                    अतिरिक्त शिक्षक</th>
+                                    अधिशेष शिक्षक</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -610,7 +610,7 @@
                                 <th scope="col">Working<br />
                                     कार्यरत</th>
                                 <th scope="col">Surplus Teachers<br />
-                                    अतिरिक्त शिक्षक</th>
+                                    अधिशेष शिक्षक</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -661,7 +661,7 @@
                                 <th scope="col">Working<br />
                                     कार्यरत</th>
                                 <th scope="col">Surplus Teachers<br />
-                                    अतिरिक्त शिक्षक</th>
+                                    अधिशेष शिक्षक</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -712,7 +712,7 @@
                                 <th scope="col">Working<br />
                                     कार्यरत</th>
                                 <th scope="col">Surplus Teachers<br />
-                                    अतिरिक्त शिक्षक</th>
+                                    अधिशेष शिक्षक</th>
                             </tr>
                         </thead>
                         <tbody>
