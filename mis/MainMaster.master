@@ -790,8 +790,8 @@
                                                     <li class="nav-item"><a class="nav-link" href="/mis/AcademicManagement/TeacherToClassMapping.aspx"><i class="ri-file-list-3-line"></i>Teacher To Class Mapping</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/AcademicManagement/TeacherToClassUnMapping.aspx"><i class="ri-file-list-3-line"></i>Teacher To Class Unmapping</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/AcademicManagement/TeachingAndClassroomReport.aspx"><i class="ri-file-list-3-line"></i>Teaching To Classroom Mapping Report</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>Teacher Attendance </a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="#"><i class="ri-file-list-3-line"></i>Teacher Attendance Report</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/AcademicManagement/TeacherAttendance.aspx"><i class="ri-file-list-3-line"></i>Teacher Attendance </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/AcademicManagement/Rpt_TeacherAttendance.aspx"><i class="ri-file-list-3-line"></i>Teacher Attendance Report</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/AcademicManagement/TeacherManagement.aspx"><i class="ri-file-list-3-line"></i>Student Daily Activity</a></li>
 
                                                     <li class="nav-item"><a class="nav-link" href="/mis/Student/StudentComplaint.aspx"><i class="ri-file-list-3-line"></i>Student Complaint By Teacher</a></li>
@@ -799,6 +799,24 @@
                                                 </ul>
                                             </div>
                                         </li>
+                                        <li class="nav-item">
+                                            <a href="#Learning" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="Learning"><i class="ri-menu-line"></i>Learning Resource Repository</a>
+                                            <div class="collapse menu-dropdown" id="Learning">
+
+                                                <ul class="nav nav-sm flex-column">
+
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/AcademicManagement/MstBook.aspx"><i class="ri-file-list-3-line"></i>Book Master</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/AcademicManagement/Mst_LearningVideo.aspx"><i class="ri-file-list-3-line"></i>Learning Video Master</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/AcademicManagement/BookUpload.aspx"><i class="ri-file-list-3-line"></i>Book Upload</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/AcademicManagement/LearningBook.aspx"><i class="ri-file-list-3-line"></i>Learning Book </a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/AcademicManagement/Rpt_LearningVideo.aspx"><i class="ri-file-list-3-line"></i>Learning Video Report</a></li>
+                                                   
+
+                                                </ul>
+                                            </div>
+                                        </li>
+
                                     </ul>
                                 </div>
                             </li>
@@ -2174,7 +2192,7 @@
                                     </ul>
                                 </div>
                             </li>
-                          
+
 
                             <li class="nav-item">
                                 <a class="nav-link menu-link" href="#MobileAppScreen" data-bs-toggle="collapse" role="button"
