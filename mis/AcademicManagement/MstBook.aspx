@@ -17,7 +17,7 @@
                         <li class="breadcrumb-item">
                             <a href="#AcademicManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Learning Resource Repository</span></a>
                         </li>
-                        <li class="breadcrumb-item">Book Master</li>
+                        <li class="breadcrumb-item">Learning Book Master</li>
                     </ol>
                 </div>
             </div>
@@ -29,7 +29,7 @@
                 <div class="col-lg-12">
                     <div class="marqueecontainer border-0">
                         <div class="headertext btn btn-primary rounded-pill " style="padding-top: 11px;">
-                            Book Master
+                            Learning Book Master
 
                         </div>
                         <div>
@@ -45,8 +45,8 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Book Master /
-बुक मास्टर
+                <legend>Learning Book Master /
+लर्निंग बुक मास्टर
                 </legend>
                 <div class="row">
                     <div class="col-md-3">
@@ -56,7 +56,7 @@
                                 कक्षा का चयन करें<span style="color: red">*</span>
                             </label>
                             <select class="form-control select2" id="ddl_class">
-                                <option value="0">-Select-</option>
+                                <option value="0">Select</option>
                                 <option value="1">1st Class</option>
                                 <option value="2">2nd Class</option>
                                 <option value="3">3rd Class</option>

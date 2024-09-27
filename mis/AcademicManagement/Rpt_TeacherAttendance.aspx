@@ -60,8 +60,7 @@
                                 Select From Date
                                 <br />
                                 प्रारंभ तिथि का चयन करें<span style="color: red">*</span></label>
-                            <input type="text" class="form-control datepicker" id="fromDate" placeholder="dd/mm/yyyy">
-                            <span id="fromDateError" class="error text-danger"></span>
+                            <input type="date" class="form-control datepicker" id="fromDate" placeholder="dd/mm/yyyy">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -69,8 +68,7 @@
                             <label>
                                 Select To Date<br />
                                 समाप्ति तिथि का चयन करें<span style="color: red">*</span></label>
-                            <input type="text" class="form-control datepicker" id="toDate" placeholder="dd/mm/yyyy" />
-                            <span id="toDateError" class="error text-danger"></span>
+                            <input type="date" class="form-control datepicker" id="toDate" placeholder="dd/mm/yyyy" />
                         </div>
                     </div>
                 </div>
@@ -130,7 +128,7 @@
                                                 कुल अनुपस्थित दिन</th>
                                             <th>Attendance Percent
                                                 <br />
-                                                उपस्थिति %
+                                                उपस्थिति प्रतिशत
                                             </th>
                                         </tr>
                                     </thead>
@@ -188,13 +186,6 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <hr />
-                            <div class="col-md-3">
-                                <div class="form-group" style="margin-top: 1rem !important">
-                                    <button id="btnSave" type="button" class="Alert-Confirmation fw-bold btn w-lg btn-outline-success btn-border">Save</button>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>

@@ -57,7 +57,7 @@
                                 कक्षा का चयन करें<span style="color: red">*</span>
                             </label>
                             <select class="form-control select2" id="ddl_class">
-                                <option value="0">-Select-</option>
+                                <option value="0">Select</option>
                                 <option value="1">1st Class</option>
                                 <option value="2">2nd Class</option>
                                 <option value="3">3rd Class</option>
@@ -93,7 +93,7 @@
                         <div class="form-group">
                             <label>
                                 Enter Content Type<br />
-                                कंटेंट प्रकार दर्ज करें<span style="color: red">*</span></label>
+                                कंटेंट का प्रकार दर्ज करें<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Content Type" />
                         </div>
                     </div>
@@ -101,9 +101,9 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Video Link<br />
-                                वीडियो लिंक<span style="color: red">*</span></label>
-                            <input type="text" class="form-control" />
+                                Enter Video Link<br />
+                                वीडियो लिंक दर्ज करें<span style="color: red">*</span></label>
+                            <input type="text" class="form-control" placeholder="Enter Video Link"/>
                         </div>
                     </div>
                 </div>

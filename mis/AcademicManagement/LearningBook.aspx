@@ -57,7 +57,7 @@
                                 कक्षा का चयन करें<span style="color: red">*</span>
                             </label>
                             <select class="form-control select2" id="ddl_class">
-                                <option value="0">-Select-</option>
+                                <option value="0">Select</option>
                                 <option value="1">1st Class</option>
                                 <option value="2">2nd Class</option>
                                 <option value="3">3rd Class</option>
@@ -122,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <hr />
                 <div class="col-md-12">
                     <div class="form-group">
@@ -165,9 +165,9 @@
                                             विषय का नाम</th>
                                         <th>Book Name<br />
                                             पुस्तक का नाम</th>
-                                        <th>Action
-                                <br />
-                                            कार्यवाही
+                                        <th>View Document
+    <br />
+                                            दस्तावेज़ देखें
                                         </th>
                                     </tr>
                                 </thead>
@@ -178,8 +178,7 @@
                                         <td>Hindi</td>
                                         <td>Science</td>
                                         <td>Anna Karenina</td>
-                                        <td><a class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></a>
-                                            <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="btn btn-outline-primary"><i class="fa fa-eye" onclick="openPDF()"></i></a></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
@@ -187,8 +186,7 @@
                                         <td>English</td>
                                         <td>Mathematics</td>
                                         <td>The Great Gatsby</td>
-                                        <td><a class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></a>
-                                            <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                        <td><a class="btn btn-outline-primary"><i class="fa fa-eye" onclick="openPDF()"></i></a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -203,5 +201,14 @@
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+
+    <script>
+        function openPDF() {
+            // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
+            var pdfUrl = '../../img/CasteCertificate1.jpg';
+            // Open the PDF in a new window or tab
+            window.open(pdfUrl, '_blank');
+        }
+    </script>
 </asp:Content>
 

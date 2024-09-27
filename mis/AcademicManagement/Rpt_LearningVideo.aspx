@@ -6,10 +6,9 @@
     <link href="../dist/dashboard/hrmsdashboard.css" rel="stylesheet" />
 
     <style>
-
-         .radius-defalt {
-     border-radius: var(--vz-card-border-radius) !important;
- }
+        .radius-defalt {
+            border-radius: var(--vz-card-border-radius) !important;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
@@ -33,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div class="card card-border-primary radius-defalt"">
+    <div class="card card-border-primary radius-defalt">
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12">
@@ -57,7 +56,7 @@
             <fieldset>
                 <legend>Learning Video Report / लर्निंग वीडियो रिपोर्ट 
                 </legend>
-                <div class="row">
+                <div class="row align-items-end">
                     <div class="col-md-4">
                         <div class="form-group">
                             <label>
@@ -66,7 +65,7 @@
                                 कक्षा का चयन करें<span style="color: red">*</span>
                             </label>
                             <select class="form-control select2" id="ddl_class">
-                                <option value="0">-Select-</option>
+                                <option value="0">Select</option>
                                 <option value="1">1st Class</option>
                                 <option value="2">2nd Class</option>
                                 <option value="3">3rd Class</option>
@@ -107,13 +106,14 @@
                                 <option>Select</option>
                                 <option>Educational</option>
                                 <option>Motivational</option>
+                                <option>Cultural</option>
                             </select>
                         </div>
                     </div>
 
                 </div>
                 <hr />
-                <div class="col-md-12">
+                <div class="col-md-12 align-items-end">
                     <div class="form-group">
                         <button type="button" class="btn btn-success w-lg btn-border" onclick="document.getElementById('tbl_class').style.display ='block'">Search</button>
                         <a href="Rpt_LearningVideo.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
@@ -122,46 +122,52 @@
             </fieldset>
             <fieldset id="tbl_class" style="display: none">
                 <legend>Videos</legend>
-              
-                    <div class="row justify-content-center">
-                        <div class="col-lg-12 col-sm-12 col-md-12">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-4">
-                                    <div class="card-wrap">
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-sm-12 col-md-12">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4">
+                                <div class="card-wrap">
+                                    <div class="card-content">
+                                        <img src="../../img/Educational.jpg" width="280" height="160" />
+                                    </div>
+                                    <div class="card-header text-nowrap">
+                                        <h4>Motivational Video</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card-wrap">
+                                    <div class="card-content">
                                         <div class="card-content">
                                             <img src="../../img/Educational.jpg" width="280" height="160" />
                                         </div>
-                                        <%-- <div class="card-header card-header1 two">
-                                            <h4 class="">Motivational Video</h4>
-                                        </div>--%>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="card-wrap">
-                                        <div class="card-content">
-                                            <div class="card-content">
-                                                <img src="../../img/Educational.jpg" width="280" height="160" />
-                                            </div>
+                                        <div class="card-header text-nowrap">
+                                            <h4>Cultural Video</h4>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <div class="card-wrap">
-                                        <div class="card-content">
-                                            <div class="card-content">
-                                                <img src="../../img/Educational.jpg" width="280" height="160" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
+                            <div class="col-lg-4">
+                                <div class="card-wrap">
+                                    <div class="card-content">
+                                        <div class="card-content">
+                                            <img src="../../img/Educational.jpg" width="280" height="160" />
+                                        </div>
+                                        <div class="card-header text-nowrap">
+                                            <h4>Educational Video</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+                </div>
             </fieldset>
         </div>
     </div>
-   
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

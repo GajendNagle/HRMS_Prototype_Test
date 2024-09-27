@@ -17,7 +17,7 @@
                         <li class="breadcrumb-item">
                             <a href="#AcademicManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Learning Resource Repository</span></a>
                         </li>
-                        <li class="breadcrumb-item">Book Upload</li>
+                        <li class="breadcrumb-item">Learning Book Master</li>
                     </ol>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                 <div class="col-lg-12">
                     <div class="marqueecontainer border-0">
                         <div class="headertext btn btn-primary rounded-pill " style="padding-top: 11px;">
-                            Book Upload
+                            Learning Book Master
 
                         </div>
                         <div>
@@ -46,11 +46,11 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Book Upload /
-पुस्तक अपलोड करें
+                <legend>Learning Book Master /
+लर्निंग बुक मास्टर
                 </legend>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="form-group">
                             <label>
                                 Select Class
@@ -58,7 +58,7 @@
                                 कक्षा का चयन करें<span style="color: red">*</span>
                             </label>
                             <select class="form-control select2" id="ddl_class">
-                                <option value="0">-Select-</option>
+                                <option value="0">Select</option>
                                 <option value="1">1st Class</option>
                                 <option value="2">2nd Class</option>
                                 <option value="3">3rd Class</option>
@@ -75,7 +75,7 @@
                             <span id="ddl_classError" class="error text-danger"></span>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="form-group">
                             <label>
                                 Select Medium<br />
@@ -89,7 +89,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="form-group">
                             <label>
                                 Select Subject Name<br />
@@ -105,26 +105,17 @@
                             </select>
                         </div>
                     </div>
-
-                    <div class="col-md-3">
+                    </div>
+                <div class="row align-items-end">
+                    <div class="col-md-4">
                         <div class="form-group">
                             <label>
-                                Select Book Name<br />
-                                पुस्तक का चयन करें<span style="color: red">*</span></label>
-                            <select class="form-control select2">
-                                <option>Select</option>
-                                <option>Alice in Wonderland</option>
-                                <option>Treasure Island </option>
-                                <option>The Tempest</option>
-                                <option>The Great Gatsby</option>
-                                <option>Wealth of Nations</option>
-                                <option>Cherry Orchard</option>
-                            </select>
+                                Enter Book Name<br />
+                                पुस्तक का नाम दर्ज करें<span style="color: red">*</span></label>
+                            <input type="text" class="form-control" placeholder="Enter Book Name" />
                         </div>
                     </div>
-                </div>
-                <div class="row align-items-end">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="form-group">
                             <label>
                                 Upload Document<br />
@@ -133,9 +124,9 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="form-group">
-                            <button type="button" class="btn btn-success w-lg btn-border" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg3">View</button>
+                            <a class="btn btn-outline-primary"><i class="fa fa-eye" onclick="openPDF()"></i></a>
                         </div>
                     </div>
                 </div>
@@ -143,7 +134,7 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <button type="button" class="Alert-Confirmation btn btn-success w-lg btn-border" onclick="document.getElementById('tbl_class').style.display ='block'">Save</button>
-                        <a href="MstBook.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                        <a href="BookUpload.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                     </div>
                 </div>
             </fieldset>
@@ -181,6 +172,10 @@
                                             विषय का नाम</th>
                                         <th>Book Name<br />
                                             पुस्तक का नाम</th>
+                                        <th>View Document
+                                            <br />
+                                            दस्तावेज़ देखें
+                                        </th>
                                         <th>Action
                                 <br />
                                             कार्यवाही
@@ -194,6 +189,7 @@
                                         <td>Hindi</td>
                                         <td>Science</td>
                                         <td>Anna Karenina</td>
+                                        <td><a class="btn btn-outline-primary"><i class="fa fa-eye" onclick="openPDF()"></i></a></td>
                                         <td><a class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></a>
                                             <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                     </tr>
@@ -203,6 +199,7 @@
                                         <td>English</td>
                                         <td>Mathematics</td>
                                         <td>The Great Gatsby</td>
+                                        <td><a class="btn btn-outline-primary"><i class="fa fa-eye" onclick="openPDF()"></i></a></td>
                                         <td><a class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></a>
                                             <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                     </tr>
@@ -217,23 +214,15 @@
         </div>
     </div>
 
-    <div class="modal bs-example-modal-lg3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xxl">
-            <div class="modal-content">
-                <div class="modal-header" id="myDIV3">
-                    <h4 class="modal-title" id="myLargeModalLabel3"></h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="../../img/CasteCertificate1.jpg" class="img-fluid" />
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-</asp:Content>
 
+    <script>
+        function openPDF() {
+            // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
+            var pdfUrl = '../../img/CasteCertificate1.jpg';
+            // Open the PDF in a new window or tab
+            window.open(pdfUrl, '_blank');
+        }
+    </script>
+</asp:Content>
