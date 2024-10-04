@@ -313,14 +313,30 @@
                                 <input type="date" class="form-control" />
                             </div>
                         </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Seniority Sequence<span style="color: red">*</span>
+                                    <br />
+                                    वरिष्ठता अनुक्रम
+
+                                </label>
+                                <input type="text" class="form-control" placeholder="Enter Seniority Sequence" />
+                            </div>
+
+                        </div>
                     </div>
-        </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border w-lg" onclick="document.getElementById('table1').style.display = 'block'">Save</button>
+                            <a href="Gradation.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                        </div>
+                    </div>
 
-
-        </fieldset>
+                </fieldset>
             </fieldset>
-    </div>
-
+        </div>
     </div>
 
 </asp:Content>
