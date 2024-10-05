@@ -817,6 +817,19 @@
                                             </div>
                                         </li>
 
+
+                                        <li class="nav-item">
+                                            <a href="#Career" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="Learning"><i class="ri-menu-line"></i>Career Guidance</a>
+                                            <div class="collapse menu-dropdown" id="Career">
+
+                                                <ul class="nav nav-sm flex-column">
+
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/AcademicManagement/CareerGuidance.aspx"><i class="ri-file-list-3-line"></i>Career Guidance</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
@@ -1375,6 +1388,19 @@
                                     </ul>
                                 </div>
                             </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#HRIMS" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="HRIMS">
+                                    <i class="ri-stack-line"></i><span data-key="t-Payroll">HRIMS</span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="HRIMS">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Gradation.aspx"><i class="ri-file-list-3-line"></i>Gradation </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_Gradation.aspx"><i class="ri-file-list-3-line"></i>Gradation Report </a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
                             <%--HRMS--%>
                             <li class="nav-item">
                                 <a class="nav-link menu-link" href="#Payroll" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Payroll">
