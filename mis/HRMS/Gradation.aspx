@@ -106,22 +106,12 @@
 
                         <div class="col-md-4">
                             <label>
-                                Date Of Birth<br />
-                                जन्म तिथि<span style="color: red">*</span>
-                            </label>
-                            <input type="text" class="form-control" value="2000-02-03" readonly="readonly" />
-                        </div>
-
-                        <div class="col-md-4">
-                            <label>
                                 Appointment Type<br />
                                 नियुक्ति का प्रकार<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" value="DIR" readonly="readonly" />
                         </div>
-                    </div>
 
-                    <div class="row align-items-end">
                         <div class="col-md-4">
                             <label>
                                 Profession ai Qualification<br />
@@ -129,6 +119,10 @@
                             </label>
                             <input type="text" class="form-control" value="BED" readonly="readonly" />
                         </div>
+                    </div>
+
+                    <div class="row align-items-end">
+
 
                         <div class="col-md-4">
                             <label>
@@ -146,18 +140,18 @@
                             </label>
                             <input type="text" class="form-control" value="Political Science" readonly="readonly" />
                         </div>
-                    </div>
 
-                    <div class="row align-items-end">
                         <div class="col-md-4">
                             <label>
                                 PG Subject-2
-                                <br />
+        <br />
                                 पीजी विषय-2<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" value="Physics" readonly="readonly" />
                         </div>
+                    </div>
 
+                    <div class="row align-items-end">
                         <div class="col-md-4">
                             <label>
                                 Home District
@@ -175,17 +169,19 @@
                             </label>
                             <input type="text" class="form-control" value="2024-02-05" readonly="readonly" />
                         </div>
-                    </div>
 
-                    <div class="row align-items-end">
                         <div class="col-md-4">
                             <label>
                                 First Appointment Designation
-                                <br />
+         <br />
                                 पहला नियुक्ति पदनाम<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" value="UDT" readonly="readonly" />
                         </div>
+                    </div>
+
+                    <div class="row align-items-end">
+
 
                         <div class="col-md-4">
                             <label>
@@ -204,18 +200,18 @@
                             </label>
                             <input type="text" class="form-control" value="MS Bargwan" readonly="readonly" />
                         </div>
-                    </div>
 
-                    <div class="row align-items-end">
                         <div class="col-md-4">
                             <label>
                                 UDISE in Case of School
-                                <br />
+          <br />
                                 यू-डायस<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" value="23380200101" readonly="readonly" />
                         </div>
+                    </div>
 
+                    <div class="row align-items-end">
                         <div class="col-md-4">
                             <label>
                                 Present Posting District
@@ -225,14 +221,12 @@
                             </label>
                             <input type="text" class="form-control" value="23380200101" readonly="readonly" />
                         </div>
-
                     </div>
-
                     <div class="row align-items-end">
                         <div class="col-md-4">
                             <label>
                                 Date Of Appointment in UDT By Promotion
-         <br />
+                                <br />
                                 यूडीटी में पदोन्नति द्वारा नियुक्ति की तिथि<span style="color: red">*</span>
 
                             </label>
@@ -242,7 +236,7 @@
                         <div class="col-md-4">
                             <label>
                                 Date Of Appointment in Present Cadre
-                                <br />
+           <br />
                                 वर्तमान कैडर में नियुक्ति की तिथि<span style="color: red">*</span>
 
                             </label>
@@ -252,15 +246,16 @@
                         <div class="col-md-4">
                             <label>
                                 Date Of Seniority in Present Cadre
-                                <br />
+         <br />
                                 वर्तमान कैडर में नियुक्ति की तिथि<span style="color: red">*</span>
 
                             </label>
                             <input type="date" class="form-control" />
                         </div>
-
                     </div>
+
                     <div class="row align-items-end">
+
 
                         <div class="col-md-4">
                             <label>
@@ -278,8 +273,9 @@
                                 टिप्पणी<span style="color: red">*</span>
 
                             </label>
-                            <input type="text" class="form-control" />
+                            <input type="text" class="form-control" placeholder="Enter Remark"/>
                         </div>
+
                         <div class="col-md-4">
                             <label>
                                 Seniority Sequence
@@ -298,7 +294,6 @@
                             <a href="Gradation.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                         </div>
                     </div>
-
                 </fieldset>
 
                 <fieldset id="table1" style="display: none">

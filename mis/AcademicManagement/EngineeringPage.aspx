@@ -62,17 +62,18 @@
                 <div class="col-lg-12 col-sm-12 col-md-12">
                     <div class="row justify-content-center">
                         <div class="col-lg-3">
-                            <div class="card-wrap">
-                                <div class="card-content">
+                            <a href="SoundPage.aspx">
+                                <div class="card-wrap">
+                                    <div class="card-content">
+                                        <img src="https://lmes-mars-cdn.jujube.in/images/departments/1593427043067_image.png" alt="Sound" class="StreamImage">
+                                    </div>
 
-                                    <a href="SoundPage.aspx"><img src="https://lmes-mars-cdn.jujube.in/images/departments/1593427043067_image.png" alt="Sound" class="StreamImage"></a>
-                                </div>
-
-                                <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">
-                                    <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Sound
+                                    <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">
+                                        <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Sound
                   </h1>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="col-lg-3">
@@ -98,7 +99,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-lg-3">
                             <div class="card-wrap">
                                 <div class="card-content">
@@ -112,7 +112,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="row justify-content-center">
                         <div class="col-lg-3">
                             <div class="card-wrap">
@@ -169,11 +168,11 @@
                         <div class="col-lg-3">
                             <div class="card-wrap">
                                 <div class="card-content">
-                                   <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589874250001_image.png" alt="Bio-tech/Bio-medical" class="StreamImage">
+                                    <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589874250001_image.png" alt="Bio-tech/Bio-medical" class="StreamImage">
                                 </div>
 
                                 <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">
-                                    <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2"> Bio-tech/Bio-medical
+                                    <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Bio-tech/Bio-medical
                   </h1>
                                 </div>
                             </div>
@@ -185,7 +184,7 @@
                                     <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589878484238_image.png" alt="Mechatronics" class="StreamImage">
                                 </div>
                                 <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">
-                                    <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">  Mechatronics
+                                    <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Mechatronics
 </h1>
                                 </div>
                             </div>
@@ -194,10 +193,10 @@
                         <div class="col-lg-3">
                             <div class="card-wrap">
                                 <div class="card-content">
-                                   <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589873546406_image.png" alt="Aeronautical" class="StreamImage">
+                                    <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589873546406_image.png" alt="Aeronautical" class="StreamImage">
                                 </div>
                                 <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">
-                                    <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">  Aeronautical 
+                                    <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Aeronautical 
                   </h1>
                                 </div>
                             </div>
@@ -210,7 +209,7 @@
                                 </div>
 
                                 <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">
-                                    <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">  Marine
+                                    <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Marine
 </h1>
                                 </div>
                             </div>
@@ -247,7 +246,7 @@
                         <div class="col-lg-3">
                             <div class="card-wrap">
                                 <div class="card-content">
-                                   <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589815677162_image.png" alt="Artificial Intelligence" class="StreamImage">
+                                    <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589815677162_image.png" alt="Artificial Intelligence" class="StreamImage">
                                 </div>
                                 <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">
                                     <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Artificial Intelligence 
@@ -269,7 +268,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

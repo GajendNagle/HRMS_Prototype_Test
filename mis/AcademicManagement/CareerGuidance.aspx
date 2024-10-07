@@ -54,9 +54,9 @@
                 <div class="col-lg-12 col-sm-12 col-md-12">
                     <div class="row justify-content-center">
                         <div class="col-lg-3">
-                            <div class="card-wrap">
+                            <a href="EngineeringPage.aspx"><div class="card-wrap">
                                 <div class="card-content">
-                                    <a href="EngineeringPage.aspx"><img src="https://lmes-mars-cdn.jujube.in/images/streams/1589815770124_image.png" alt="Engineering" class="StreamImage"></a>
+                                    <img src="https://lmes-mars-cdn.jujube.in/images/streams/1589815770124_image.png" alt="Engineering" class="StreamImage">
                                 </div>
                                 <div class="card-header text-nowrap text-center">
                                     <div class="media-content has-text-centered is-vcentered" style="height: 100px;">
@@ -66,7 +66,7 @@
                   </span>
                                     </div>
                                 </div>
-                            </div>
+                            </div></a>
                         </div>
 
                         <div class="col-lg-3">
