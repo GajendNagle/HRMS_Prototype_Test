@@ -40,7 +40,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
-
     <div class="card card-border-primary radius-defalt">
         <div class="card-header">
             <div class="row">
@@ -77,30 +76,34 @@
                         </div>
 
                         <div class="col-lg-3">
-                            <div class="card-wrap">
-                                <div class="card-content">
-                                    <img src="https://lmes-mars-cdn.jujube.in/images/departments/1593427002446_image.png" alt="Industrial " class="StreamImage">
-                                </div>
-                                <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">
-                                    <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Industrial
+                            <a href="IndustrialSummary.aspx">
+                                <div class="card-wrap">
+                                    <div class="card-content">
+                                        <img src="https://lmes-mars-cdn.jujube.in/images/departments/1593427002446_image.png" alt="Industrial " class="StreamImage">
+                                    </div>
+                                    <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">
+                                        <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Industrial
 </h1>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="col-lg-3">
-                            <div class="card-wrap">
-                                <div class="card-content">
-                                    <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589878454560_image.png" alt="Mechanical " class="StreamImage">
-                                </div>
-                                <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">
-                                    <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Mechanical 
+                            <a href="MechanicalSummary.aspx">
+                                <div class="card-wrap">
+                                    <div class="card-content">
+                                        <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589878454560_image.png" alt="Mechanical " class="StreamImage">
+                                    </div>
+                                    <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">
+                                        <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Mechanical 
                   </h1>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-lg-3">
-                            <div class="card-wrap">
+                            <a href="ElectricalSummary.aspx"><div class="card-wrap">
                                 <div class="card-content">
                                     <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589875874385_image.png" alt="Electrical" class="StreamImage">
                                 </div>
@@ -109,7 +112,7 @@
                                     <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Electrical
 </h1>
                                 </div>
-                            </div>
+                            </div></a>
                         </div>
                     </div>
                     <div class="row justify-content-center">

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="SoundPage.aspx.cs" Inherits="mis_AcademicManagement_SoundPage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="MechanicalSummary.aspx.cs" Inherits="mis_AcademicManagement_MechanicalSummary" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
 
@@ -42,10 +42,10 @@
             color: #fff !important;
         }
 
-        .column.is-2, .column.is-2-tablet {
+        /*  .column.is-2, .column.is-2-tablet {
             flex: none;
             width: 16.66666674%;
-        }
+        }*/
 
         .column {
             display: block;
@@ -65,7 +65,7 @@
             <div class="row">
                 <div class="col-lg-12">
 
-                    <h1 class="text-center text-primary">Sound Summary</h1>
+                    <h1 class="text-center text-primary">Mechanical Summary</h1>
 
                     <div class="p-2 mb-0 content is-medium customContent has-text-left">
                         <div class="Overlay">
@@ -73,24 +73,22 @@
                                 <div class="columns is-tablet is-multiline">
                                     <div class="column is-6 has-text-white has-text-left">
 
-                                        <div class="p-0 mb-0 customContent">
-                                            <p>Engineering pokes its nose on everything, from food to space. But sound? Why not! Sound engineering has been demanding its importance in this modern world lately. It has strongly established its throne, especially in the music and film industry. “Without music, life would be a mistake”, Friedrich Nietzsche. Sound Engineers are magic makers in today’s Cinematic world. Every song you hear and every movie you enjoy, each and every inch of sound would have been carefully tuned and tailored by a sound engineer. The 21st century is a world of DTS and Dolby Atmos.&nbsp;</p>
-
-                                            <p>
-                                                Sound engineers add a sensational touch to a prerecorded and fascinating mind. Sound Engineers are diverse in various fields of Audio production. Music makes the world move; Sound Engineering makes music’s move. Be it AR Rahman’s music or Shreya Ghoshal voice, it will be your hands that adds the final touch of the magical spice to their symphony.&nbsp; Exercise your ears every day as it would be your primary weapon of choice in your daily life as a sound engineer. With a handsome of experience and skill, you can expect a good cash flow, but popularity would not be your piece of cake.<br>
-                                                <br>
-                                                <strong>So, what do you do on a daily basis?</strong>
-                                            </p>
+                                        <div class="p-2 mb-0 customContent">
+                                            <p>Mechanical Engineering is actually a “Physics at work”. Whatever you want to do in this physical world, you can make it with this knowledge. Farmer’s ploughing machines, medical devices, turbo engines, power generators, Camera zooming setup in phones and name any machines, those all are&nbsp; evolved out of a Mechanical engineering part of someone’s brain. If you love to play with machines and gears, enroll!</p>
+                                            <p><strong>What would you do in daily life?</strong></p>
 
                                             <ul>
                                                 <li>
-                                                    <p>Set up and maintain audio equipment. Ensure the safety concern of the equipment, so the instrument doesn’t trip during a concert.</p>
+                                                    <p>Analyze problems to see how mechanical and thermal devices might help solve the problem.</p>
                                                 </li>
                                                 <li>
-                                                    <p>Enhancing and Enriching audio tracks by mixing multiple layers to deliver the desired output.</p>
+                                                    <p>Design machines and build products</p>
                                                 </li>
                                                 <li>
-                                                    <p>Sound Engineers work as a part of the audio-visual part to capture events, big concerts and recordings.</p>
+                                                    <p>Analyze the test results and change the design as needed</p>
+                                                </li>
+                                                <li>
+                                                    <p>Oversee the manufacturing process for the device</p>
                                                 </li>
                                             </ul>
                                         </div>
@@ -104,24 +102,23 @@
 
         </div>
         <div class="card-body mt-3">
-            <div class="container pb-2 has-text-left ms-0">
+            <div class="container pb-2 has-text-left">
                 <div>
 
-                    <div class="columns PathView" style="min-height: 98px;">
+                    <div class="columns PathView" style="min-height: 95px;">
                         <div class="column hasArrow is-3 dark">
                             <div class="column is-2">
-                                <p class="is-size-6 has-text-weight-light fs-3 text-nowrap"><b>Stream : 12th in any stream</b></p>
-
+                                <p class="is-size-6 has-text-weight-light fs-5 text-nowrap ms-2"><b>Stream</b> :1) Class 12th</p>
+                                <span class="has-text-weight-light fs-5 text-nowrap" style="margin-left:74px">2) Diploma in Mechnanical Engineering After Class 10</span>
                             </div>
+                            <p class="pl-4 is-size-5 has-text-weight-light fs-5">
+                                <b>Graduation</b> : B.E /B.Tech in Mechanical Engineering<br />
 
-                            <p class="pl-4 is-size-6 has-text-weight-light text-nowrap fs-5">
-                                Graduation : 1) Diploma in sound engineering<br />
                             </p>
-                            <p style="margin-left: 126px;" class="fs-5">2) Certificate in creative arts digital sound</p>
 
                             <div class="column is-2">
-                                <p class="is-size-6 has-text-weight-light fs-4 text-nowrap"><b>After Graduation : Certificate in audio technology</b></p>
-
+                                <p class="is-size-6 has-text-weight-light fs-5 text-nowrap"><b>After Graduation</b> : 1) Certification in Solid works/AUTOCAD</p>
+                                <span class="is-size-6 has-text-weight-light fs-5" style="margin-left: 157px">2) M.E /M.Tech in Corrosion Science/Solid Mechanics/ Cryogenic Engineering</span>
                             </div>
                         </div>
 
@@ -134,7 +131,6 @@
             </div>
         </div>
     </div>
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 </asp:Content>

@@ -54,55 +54,61 @@
                 <div class="col-lg-12 col-sm-12 col-md-12">
                     <div class="row justify-content-center">
                         <div class="col-lg-3">
-                            <a href="EngineeringPage.aspx"><div class="card-wrap">
-                                <div class="card-content">
-                                    <img src="https://lmes-mars-cdn.jujube.in/images/streams/1589815770124_image.png" alt="Engineering" class="StreamImage">
-                                </div>
-                                <div class="card-header text-nowrap text-center">
-                                    <div class="media-content has-text-centered is-vcentered" style="height: 100px;">
-                                        <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Engineering
+                            <a href="EngineeringPage.aspx">
+                                <div class="card-wrap">
+                                    <div class="card-content">
+                                        <img src="https://lmes-mars-cdn.jujube.in/images/streams/1589815770124_image.png" alt="Engineering" class="StreamImage">
+                                    </div>
+                                    <div class="card-header text-nowrap text-center">
+                                        <div class="media-content has-text-centered is-vcentered" style="height: 100px;">
+                                            <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Engineering
                   </h1>
-                                        <span class="mb-3 d-block">( 30 Career Options )
+                                            <span class="mb-3 d-block">( 30 Career Options )
                   </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div></a>
+                            </a>
                         </div>
 
                         <div class="col-lg-3">
-                            <div class="card-wrap">
-                                <div class="card-content">
-                                    <img src="https://lmes-mars-cdn.jujube.in/images/streams/1589809570021_image.png" alt="Computer Science &amp; IT" class="StreamImage">
-                                </div>
-                                <div class="card-header text-nowrap text-center">
-                                    <div class="media-content has-text-centered is-vcentered" style="height: 100px;">
-                                        <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Computer Science &amp; IT
+                            <a href="ComputerScience.aspx">
+                                <div class="card-wrap">
+                                    <div class="card-content">
+                                        <img src="https://lmes-mars-cdn.jujube.in/images/streams/1589809570021_image.png" alt="Computer Science &amp; IT" class="StreamImage">
+                                    </div>
+                                    <div class="card-header text-nowrap text-center">
+                                        <div class="media-content has-text-centered is-vcentered" style="height: 100px;">
+                                            <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Computer Science &amp; IT
 </h1>
-                                        <span class="mb-3 d-block">( 16 Career Options )
+                                            <span class="mb-3 d-block">( 16 Career Options )
 </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="col-lg-3">
-                            <div class="card-wrap">
-                                <div class="card-content">
-                                    <img src="https://lmes-mars-cdn.jujube.in/images/streams/1589815643810_image.png" alt="Architecture " class="StreamImage">
-                                </div>
-                                <div class="card-header text-nowrap text-center">
-                                    <div class="media-content has-text-centered is-vcentered" style="height: 100px;">
-                                        <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Architecture 
+                            <a href="Architecture.aspx">
+                                <div class="card-wrap">
+                                    <div class="card-content">
+                                        <img src="https://lmes-mars-cdn.jujube.in/images/streams/1589815643810_image.png" alt="Architecture " class="StreamImage">
+                                    </div>
+                                    <div class="card-header text-nowrap text-center">
+                                        <div class="media-content has-text-centered is-vcentered" style="height: 100px;">
+                                            <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Architecture 
                   </h1>
-                                        <span class="mb-3 d-block">( 4 Career Options )
+                                            <span class="mb-3 d-block">( 4 Career Options )
                   </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="col-lg-3">
-                            <div class="card-wrap">
+                             <a href="MedicalScience.aspx"><div class="card-wrap">
                                 <div class="card-content">
                                     <img src="https://lmes-mars-cdn.jujube.in/images/streams/1589807763667_image.png" alt="Medical Science" class="StreamImage">
                                 </div>
@@ -114,7 +120,7 @@
 </span>
                                     </div>
                                 </div>
-                            </div>
+                            </div></a>
                         </div>
                     </div>
 
