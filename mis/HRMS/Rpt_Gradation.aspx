@@ -140,8 +140,8 @@
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">DEO</option>
                                 <option value="Gwalior">JD</option>
-                                <option value="Narmadapuram">Uchchh Madhayamic</option>
-                                <option value="Narmadapuram">Madhayamic</option>
+                                <option value="Narmadapuram">Ucch Madhyamik Shikshak</option>
+                                <option value="Narmadapuram">Madhyamik Shikshak</option>
 
                             </select>
                         </div>
