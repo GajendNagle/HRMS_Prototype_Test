@@ -817,7 +817,19 @@
                                             </div>
                                         </li>
 
-                                        <li class="nav-item"><a class="nav-link" href="/mis/AcademicManagement/CareerGuidance.aspx"><i class="ri-file-list-3-line"></i>Career Guidance</a></li>
+                                        <li class="nav-item">
+                                            <a href="#career" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                                aria-controls="Learning"><i class="ri-menu-line"></i>Career Guidance & Test Preparation</a>
+                                            <div class="collapse menu-dropdown" id="career">
+
+                                                <ul class="nav nav-sm flex-column">
+
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/AcademicManagement/CareerGuidance.aspx"><i class="ri-file-list-3-line"></i>Career Library</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/AcademicManagement/#.aspx"><i class="ri-file-list-3-line"></i>List Of Colleges</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>

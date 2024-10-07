@@ -65,7 +65,7 @@
             <div class="row">
                 <div class="col-lg-12">
 
-                    <h1 class="text-center text-primary">Sound Summary</h1>
+                    <h1 class="text-center text-primary"><u>Sound Summary</u></h1>
 
                     <div class="p-2 mb-0 content is-medium customContent has-text-left">
                         <div class="Overlay">
@@ -74,9 +74,9 @@
                                     <div class="column is-6 has-text-white has-text-left">
 
                                         <div class="p-0 mb-0 customContent">
-                                            <p>Engineering pokes its nose on everything, from food to space. But sound? Why not! Sound engineering has been demanding its importance in this modern world lately. It has strongly established its throne, especially in the music and film industry. “Without music, life would be a mistake”, Friedrich Nietzsche. Sound Engineers are magic makers in today’s Cinematic world. Every song you hear and every movie you enjoy, each and every inch of sound would have been carefully tuned and tailored by a sound engineer. The 21st century is a world of DTS and Dolby Atmos.&nbsp;</p>
+                                            <p class="text-justify">Engineering pokes its nose on everything, from food to space. But sound? Why not! Sound engineering has been demanding its importance in this modern world lately. It has strongly established its throne, especially in the music and film industry. “Without music, life would be a mistake”, Friedrich Nietzsche. Sound Engineers are magic makers in today’s Cinematic world. Every song you hear and every movie you enjoy, each and every inch of sound would have been carefully tuned and tailored by a sound engineer. The 21st century is a world of DTS and Dolby Atmos.&nbsp;</p>
 
-                                            <p>
+                                            <p class="text-justify">
                                                 Sound engineers add a sensational touch to a prerecorded and fascinating mind. Sound Engineers are diverse in various fields of Audio production. Music makes the world move; Sound Engineering makes music’s move. Be it AR Rahman’s music or Shreya Ghoshal voice, it will be your hands that adds the final touch of the magical spice to their symphony.&nbsp; Exercise your ears every day as it would be your primary weapon of choice in your daily life as a sound engineer. With a handsome of experience and skill, you can expect a good cash flow, but popularity would not be your piece of cake.<br>
                                                 <br>
                                                 <strong>So, what do you do on a daily basis?</strong>
@@ -103,14 +103,14 @@
             </div>
 
         </div>
-        <div class="card-body mt-3">
+        <div class="card-body mt-2">
             <div class="container pb-2 has-text-left ms-0">
                 <div>
 
                     <div class="columns PathView" style="min-height: 98px;">
                         <div class="column hasArrow is-3 dark">
                             <div class="column is-2">
-                                <p class="is-size-6 has-text-weight-light fs-3 text-nowrap"><b>Stream : 12th in any stream</b></p>
+                                <p class="is-size-6 has-text-weight-light fs-3 ms-3 text-nowrap"><b>Stream : 12th in any stream</b></p>
 
                             </div>
 

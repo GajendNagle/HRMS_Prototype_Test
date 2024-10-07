@@ -17,13 +17,6 @@
             margin: 0 auto;
         }
 
-        .media-content {
-            flex-basis: auto;
-            flex-grow: 1;
-            flex-shrink: 1;
-            text-align: inherit;
-        }
-
         .has-text-left {
             text-align: left !important;
         }
@@ -45,11 +38,11 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="">
-                        <h1>Medical Science</h1>
+                        <h1  class="text-center text-primary"><u>Medical Science</u></h1>
                     </div>
 
                     <div class="p-2 mb-0 content is-medium customContent has-text-left">
-                        <p>
+                        <p class="text-justify">
                             If you are going to pursue your career in medical science, it means that you are going to help people who are having trouble with their physical health condition. You will contribute to saving and improving lives. It’s all about treatments, cures, medicine and drugs, and about researches, innovations, and breakthroughs. There are so many specializations you can opt for within each of these sectors. Some professionals in this field might require a greater amount of medical, technical and scientific knowledge. Hence, doctors, surgeons, dentists, pharmacologists and medical scientists have to expertise in their specialized areas. Therefore, people who choose these careers will require strong academic records. Regardless, many other career choices do exist in medicine, health sciences and research, which simply need people with an expertise practical or care skills, such as nurses, technical assistants and laboratory subordinates. Every single job in this field would be challenging and have a significant impact on other people’s lives. Everybody is dependent on the special skills of medical staff, dentists and medical scientists at some point in their lives. Without doctors, nurses and medical science experts, surviving a decent life would be even more challenging. So before you derive a conclusion to get into medicine, health sciences and research, you should primarily explore what it’s really all about.
                         </p>
 

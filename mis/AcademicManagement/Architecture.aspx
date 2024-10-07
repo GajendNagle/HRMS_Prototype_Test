@@ -45,13 +45,13 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="">
-                        <h1>Architecture</h1>
+                        <h1  class="text-center text-primary"><u>Architecture</u></h1>
                     </div>
 
                     <div class="p-2 mb-0 content is-medium customContent has-text-left">
-                        <p>Architecture, the chief creation is what it means in Greek. It is a field that dates back to the beginning of civilization. The beautifully laid out cities of Mesopotamia, the gigantic Egyptian pyramids, the unique underground drainage system of Indus valley civilization are the evidence for their superiority. Likewise, now everything that is built will have a mastermind architect and a planner behind it applying all the senses considering various requirements and constraints to bring up an efficient and sophisticated output. Architecture jobs in the sector of urban city planning are in high demand. This is due to the rising interest that more and more cities show in ''green'' planning, renewal of urban spaces, and increased efficiency of their existing spaces.</p>
+                        <p class="text-justify">Architecture, the chief creation is what it means in Greek. It is a field that dates back to the beginning of civilization. The beautifully laid out cities of Mesopotamia, the gigantic Egyptian pyramids, the unique underground drainage system of Indus valley civilization are the evidence for their superiority. Likewise, now everything that is built will have a mastermind architect and a planner behind it applying all the senses considering various requirements and constraints to bring up an efficient and sophisticated output. Architecture jobs in the sector of urban city planning are in high demand. This is due to the rising interest that more and more cities show in ''green'' planning, renewal of urban spaces, and increased efficiency of their existing spaces.</p>
 
-                        <p>In order to find yourself in architecture engineering jobs in an urban setting, you should have an educational background in architectural engineering. This can include a Masters or Bachelor’s degree in architecture or a similar field. Experience in engineering and the use of programs like AutoCAD, 3DModeling, or other visualization software coupled with proficiency in Revit, Sketchup, 3D Studio, or Photoshop is generally favouring these days.</p>
+                        <p class="text-justify">In order to find yourself in architecture engineering jobs in an urban setting, you should have an educational background in architectural engineering. This can include a Masters or Bachelor’s degree in architecture or a similar field. Experience in engineering and the use of programs like AutoCAD, 3DModeling, or other visualization software coupled with proficiency in Revit, Sketchup, 3D Studio, or Photoshop is generally favouring these days.</p>
 
                     </div>
                 </div>

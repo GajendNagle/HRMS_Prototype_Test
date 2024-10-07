@@ -45,11 +45,11 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="">
-                        <h1>Computer Science & IT</h1>
+                        <h1  class="text-center text-primary"><u>Computer Science & IT</u></h1>
                     </div>
 
                     <div class="p-2 mb-0 content is-medium customContent has-text-left">
-                       <p>Computer Science course is designed in a way that covers all the aspects, to prepare the students in making a career in the software industry. This systematic study and their application would help students to sharpen their logical and analytical skills for excelling in their field. In this course, you will be exposed to subjects like Digital Electronics, Operating System, Analysis Design of Algorithm, Programming Languages, Microprocessor, Computer Software, System Software, Database Management System, Mobile Communications, Cryptography and Network Security, Performance Evaluation, Ad-Hoc Networks, and more. As these may sound complicated but they are simple once you could understand their application in the practical world. So, a bachelor's degree in computer science should be sufficient for most software engineers. Yet a master's degree is nice to have and usually comes with a higher starting salary, but not mandatory. </p>
+                       <p class="text-justify">Computer Science course is designed in a way that covers all the aspects, to prepare the students in making a career in the software industry. This systematic study and their application would help students to sharpen their logical and analytical skills for excelling in their field. In this course, you will be exposed to subjects like Digital Electronics, Operating System, Analysis Design of Algorithm, Programming Languages, Microprocessor, Computer Software, System Software, Database Management System, Mobile Communications, Cryptography and Network Security, Performance Evaluation, Ad-Hoc Networks, and more. As these may sound complicated but they are simple once you could understand their application in the practical world. So, a bachelor's degree in computer science should be sufficient for most software engineers. Yet a master's degree is nice to have and usually comes with a higher starting salary, but not mandatory. </p>
                     </div>
                 </div>
 

@@ -65,16 +65,16 @@
             <div class="row">
                 <div class="col-lg-12">
 
-                    <h1 class="text-center text-primary">Mechanical Summary</h1>
+                    <h1 class="text-center text-primary"><u>Mechanical Summary</u></h1>
 
-                    <div class="p-2 mb-0 content is-medium customContent has-text-left">
+                    <div class="p-1 mb-0 content is-medium customContent has-text-left">
                         <div class="Overlay">
                             <div class="container mt-2">
                                 <div class="columns is-tablet is-multiline">
                                     <div class="column is-6 has-text-white has-text-left">
 
                                         <div class="p-2 mb-0 customContent">
-                                            <p>Mechanical Engineering is actually a “Physics at work”. Whatever you want to do in this physical world, you can make it with this knowledge. Farmer’s ploughing machines, medical devices, turbo engines, power generators, Camera zooming setup in phones and name any machines, those all are&nbsp; evolved out of a Mechanical engineering part of someone’s brain. If you love to play with machines and gears, enroll!</p>
+                                            <p class="text-justify">Mechanical Engineering is actually a “Physics at work”. Whatever you want to do in this physical world, you can make it with this knowledge. Farmer’s ploughing machines, medical devices, turbo engines, power generators, Camera zooming setup in phones and name any machines, those all are&nbsp; evolved out of a Mechanical engineering part of someone’s brain. If you love to play with machines and gears, enroll!</p>
                                             <p><strong>What would you do in daily life?</strong></p>
 
                                             <ul>
@@ -109,7 +109,7 @@
                         <div class="column hasArrow is-3 dark">
                             <div class="column is-2">
                                 <p class="is-size-6 has-text-weight-light fs-5 text-nowrap ms-2"><b>Stream</b> :1) Class 12th</p>
-                                <span class="has-text-weight-light fs-5 text-nowrap" style="margin-left:74px">2) Diploma in Mechnanical Engineering After Class 10</span>
+                                <span class="has-text-weight-light fs-5 text-nowrap" style="margin-left:74px">2) Diploma in Mechnanical Engineering After Class 10th</span>
                             </div>
                             <p class="pl-4 is-size-5 has-text-weight-light fs-5">
                                 <b>Graduation</b> : B.E /B.Tech in Mechanical Engineering<br />

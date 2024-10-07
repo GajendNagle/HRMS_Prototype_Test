@@ -17,13 +17,6 @@
             margin: 0 auto;
         }
 
-        .media-content {
-            flex-basis: auto;
-            flex-grow: 1;
-            flex-shrink: 1;
-            text-align: inherit;
-        }
-
         .has-text-left {
             text-align: left !important;
         }
@@ -42,10 +35,6 @@
             color: #fff !important;
         }
 
-      /*  .column.is-2, .column.is-2-tablet {
-            flex: none;
-            width: 16.66666674%;
-        }*/
 
         .column {
             display: block;
@@ -65,16 +54,15 @@
             <div class="row">
                 <div class="col-lg-12">
 
-                    <h1 class="text-center text-primary">Industrial Summary</h1>
-
-                    <div class="p-2 mb-0 content is-medium customContent has-text-left">
+                    <h1 class="text-center text-primary"><u>Industrial Summary</u></h1>
+                    <div class="p-1 mb-0 content is-medium customContent has-text-left">
                         <div class="Overlay">
                             <div class="container mt-2">
                                 <div class="columns is-tablet is-multiline">
                                     <div class="column is-6 has-text-white has-text-left">
 
                                         <div class="p-2 mb-2 customContent">
-                                            <p>
+                                            <p class="text-justify">
                                                 Industrial engineering focuses on making devices more efficient by integrating, data, machines, workers, and energy for optimal function. They find ways to improve efficiency in manufacturing, transportation, health care, storage, and distribution. And this is done in turn to save more time, resources, manpower, money and energy.&nbsp;&nbsp;<br>
                                             </p>
 
