@@ -67,13 +67,13 @@
 
                     <h1 class="text-center text-primary">Electrical Summary</h1>
 
-                    <div class="p-2 mb-0 content is-medium customContent has-text-left">
+                    <div class="p-0 mb-0 content is-medium customContent has-text-left">
                         <div class="Overlay">
-                            <div class="container mt-2">
+                            <div class="container">
                                 <div class="columns is-tablet is-multiline">
                                     <div class="column is-6 has-text-white has-text-left">
 
-                                        <div class="p-2 mb-2 customContent">
+                                        <div class="p-2 mb-0 customContent">
                                             <p>Addressing the power needs of India is one of the biggest tasks. Electrical updates for us are shifting to solar technology but it’s not economical for all yet. There is a good opportunity to play a role of converting India’s power thirst from Coal and nuclear sources to Renewable sources like the Sun. Electrical engineers design, develop, and test electrical devices and equipment, including communications systems, power generators, motors and navigation systems, and electrical systems for automobiles and aircraft. They also oversee the manufacture of these devices, systems, and equipment. Next Gen Electric Motors and battery inventions are going to revolutionize the fast moving world! Want to join?</p>
 
                                             <p><strong>What would you do in daily life?</strong></p>
@@ -107,8 +107,8 @@
                     <div class="columns PathView" style="min-height: 95px;">
                         <div class="column hasArrow is-3 dark">
                             <div class="column is-2">
-                                <p class="is-size-6 has-text-weight-light fs-5 text-nowrap"><b>Stream</b> :1) Class 12th</p>
-                                <span class="has-text-weight-light fs-5 text-nowrap" style="margin-left:70px">2) Electrical and Electronics Engineering after Class 10</span>
+                                <p class="is-size-6 has-text-weight-light fs-5 text-nowrap ms-3"><b>Stream</b> :1) Class 12th</p>
+                                <span class="has-text-weight-light fs-5 text-nowrap" style="margin-left:82px">2) Electrical and Electronics Engineering after Class 10</span>
                             </div>
                             <p class="pl-4 is-size-5 has-text-weight-light fs-5">
                                 <b>Graduation</b> :  B.E /B.Tech in Electrical and Electronics Engineering<br />

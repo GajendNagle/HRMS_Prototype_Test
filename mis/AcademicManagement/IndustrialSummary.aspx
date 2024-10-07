@@ -107,7 +107,7 @@
                     <div class="columns PathView" style="min-height: 95px;">
                         <div class="column hasArrow is-3 dark">
                             <div class="column is-2">
-                                <p class="is-size-6 has-text-weight-light fs-4 text-nowrap"><b>Stream</b> : Class 12th</p>
+                                <p class="is-size-6 has-text-weight-light fs-4 text-nowrap ms-3"><b>Stream</b> : Class 12th</p>
                             </div>
                             <p class="pl-4 is-size-5 has-text-weight-light fs-5">
                                 <b>Graduation</b> : B.E/B.Tech in Industrial Engineering/ Production Engineering/ Production<br />
