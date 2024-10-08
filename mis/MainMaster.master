@@ -825,7 +825,7 @@
                                                 <ul class="nav nav-sm flex-column">
 
                                                     <li class="nav-item"><a class="nav-link" href="/mis/AcademicManagement/CareerGuidance.aspx"><i class="ri-file-list-3-line"></i>Career Library</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/AcademicManagement/#.aspx"><i class="ri-file-list-3-line"></i>List Of Colleges</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/AcademicManagement/ListOfColleges.aspx"><i class="ri-file-list-3-line"></i>List Of Colleges</a></li>
 
                                                 </ul>
                                             </div>

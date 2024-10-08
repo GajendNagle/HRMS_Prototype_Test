@@ -64,7 +64,11 @@
         <div class="card-header bg-light">
             <div class="row">
                 <div class="col-lg-12">
+                    <div class="text-right">
+                        <a href="EngineeringPage.aspx" class="btn btn-info mt-1 me-4 text-right">Back</a>
+                    </div>
                     <h1 class="text-center text-primary"><u>Electrical Summary</u></h1>
+
                     <div class="p-0 mb-0 content is-medium customContent has-text-left">
                         <div class="Overlay">
                             <div class="container">
@@ -76,7 +80,6 @@
 
                                             <p><strong>What would you do in daily life?</strong></p>
 
-                                            
                                             <ul>
                                                 <li>
                                                     <p>Designing, maintaining, implementing, or improving electrical instruments, facilities, components, equipment products, or systems for industrial, commercial or domestic purposes.</p>
@@ -106,7 +109,7 @@
                         <div class="column hasArrow is-3 dark">
                             <div class="column is-2">
                                 <p class="is-size-6 has-text-weight-light fs-5 text-nowrap ms-3"><b>Stream</b> :1) Class 12th</p>
-                                <span class="has-text-weight-light fs-5 text-nowrap" style="margin-left:82px">2) Electrical and Electronics Engineering after Class 10th</span>
+                                <span class="has-text-weight-light fs-5 text-nowrap" style="margin-left: 82px">2) Electrical and Electronics Engineering after Class 10th</span>
                             </div>
                             <p class="pl-4 is-size-5 has-text-weight-light fs-5">
                                 <b>Graduation</b> :  B.E /B.Tech in Electrical and Electronics Engineering<br />
@@ -115,10 +118,10 @@
 
                             <div class="column is-2">
                                 <p class="is-size-6 has-text-weight-light fs-5 text-nowrap"><b>After Graduation</b> :  M.E /M.Tech in Power and Energy System/Control Systems/Industrial Drives and Control</p>
-                               
+
                             </div>
 
-                           <%-- <div class="column is-2">
+                            <%-- <div class="column is-2">
                                 <p class="is-size-6 has-text-weight-light fs-4 text-nowrap"><b>Stream</b> :  Diploma in Electrical and Electronics Engineering after Class 10</p>
                             </div>--%>
                         </div>

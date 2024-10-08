@@ -42,8 +42,8 @@
             flex-grow: 1;
             flex-shrink: 1;
             padding: .75rem;
-            border-top-left-radius:90px;
-            border-bottom-right-radius:80px;
+            border-top-left-radius: 90px;
+            border-bottom-right-radius: 80px;
         }
     </style>
 </asp:Content>
@@ -53,15 +53,18 @@
         <div class="card-header bg-light">
             <div class="row">
                 <div class="col-lg-12">
-
+                    <div class="text-right">
+                        <a href="EngineeringPage.aspx" class="btn btn-info mt-1 me-4 text-right">Back</a>
+                    </div>
                     <h1 class="text-center text-primary"><u>Industrial Summary</u></h1>
+
                     <div class="p-1 mb-0 content is-medium customContent has-text-left">
                         <div class="Overlay">
                             <div class="container mt-2">
                                 <div class="columns is-tablet is-multiline">
                                     <div class="column is-6 has-text-white has-text-left">
 
-                                        <div class="p-2 mb-2 customContent">
+                                        <div class="p-2 mb-0 customContent">
                                             <p class="text-justify">
                                                 Industrial engineering focuses on making devices more efficient by integrating, data, machines, workers, and energy for optimal function. They find ways to improve efficiency in manufacturing, transportation, health care, storage, and distribution. And this is done in turn to save more time, resources, manpower, money and energy.&nbsp;&nbsp;<br>
                                             </p>

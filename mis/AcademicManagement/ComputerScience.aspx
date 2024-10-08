@@ -44,12 +44,16 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12 text-center">
+
+                    <div class="text-right">
+                        <a href="CareerGuidance.aspx" class="btn btn-info mt-2 me-4">Back</a>
+                    </div>
                     <div class="">
-                        <h1  class="text-center text-primary"><u>Computer Science & IT</u></h1>
+                        <h1 class="text-center text-primary"><u>Computer Science & IT</u></h1>
                     </div>
 
-                    <div class="p-2 mb-0 content is-medium customContent has-text-left">
-                       <p class="text-justify">Computer Science course is designed in a way that covers all the aspects, to prepare the students in making a career in the software industry. This systematic study and their application would help students to sharpen their logical and analytical skills for excelling in their field. In this course, you will be exposed to subjects like Digital Electronics, Operating System, Analysis Design of Algorithm, Programming Languages, Microprocessor, Computer Software, System Software, Database Management System, Mobile Communications, Cryptography and Network Security, Performance Evaluation, Ad-Hoc Networks, and more. As these may sound complicated but they are simple once you could understand their application in the practical world. So, a bachelor's degree in computer science should be sufficient for most software engineers. Yet a master's degree is nice to have and usually comes with a higher starting salary, but not mandatory. </p>
+                    <div class="p-2 mb-1 content is-medium customContent has-text-left">
+                        <p class="text-justify">Computer Science course is designed in a way that covers all the aspects, to prepare the students in making a career in the software industry. This systematic study and their application would help students to sharpen their logical and analytical skills for excelling in their field. In this course, you will be exposed to subjects like Digital Electronics, Operating System, Analysis Design of Algorithm, Programming Languages, Microprocessor, Computer Software, System Software, Database Management System, Mobile Communications, Cryptography and Network Security, Performance Evaluation, Ad-Hoc Networks, and more. As these may sound complicated but they are simple once you could understand their application in the practical world. So, a bachelor's degree in computer science should be sufficient for most software engineers. Yet a master's degree is nice to have and usually comes with a higher starting salary, but not mandatory. </p>
                     </div>
                 </div>
 
@@ -61,16 +65,16 @@
                 <div class="col-lg-12 col-sm-12 col-md-12">
                     <div class="row justify-content-center">
                         <div class="col-lg-3">
-                                <div class="card-wrap">
-                                    <div class="card-content">
-                                        <img src="https://lmes-mars-cdn.jujube.in/images/departments/1598934195029_image.png" alt="Technical Writer" class="StreamImage">
-                                    </div>
-
-                                    <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">
-                                        <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Technical Writer
-                  </h1>
-                                    </div>
+                            <div class="card-wrap">
+                                <div class="card-content">
+                                    <img src="https://lmes-mars-cdn.jujube.in/images/departments/1598934195029_image.png" alt="Technical Writer" class="StreamImage">
                                 </div>
+
+                                <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">
+                                    <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Technical Writer
+                  </h1>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="col-lg-3">
@@ -88,7 +92,7 @@
                         <div class="col-lg-3">
                             <div class="card-wrap">
                                 <div class="card-content">
-                                   <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589806210663_image.png" alt="Data Mining" class="StreamImage">
+                                    <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589806210663_image.png" alt="Data Mining" class="StreamImage">
                                 </div>
                                 <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">
                                     <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Data Mining 
@@ -115,7 +119,7 @@
                             <div class="card-wrap">
                                 <div class="card-content">
 
-                                   <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589807612940_image.png" alt="Machine Learning" class="StreamImage">
+                                    <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589807612940_image.png" alt="Machine Learning" class="StreamImage">
                                 </div>
                                 <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">
                                     <h1 class="title is-5 is-size-6-mobile has-text-weight-bold mb-2 mt-2">Machine Learning
@@ -166,7 +170,7 @@
                         <div class="col-lg-3">
                             <div class="card-wrap">
                                 <div class="card-content">
-                                   <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589809126330_image.png" alt="System Analyst" class="StreamImage">
+                                    <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589809126330_image.png" alt="System Analyst" class="StreamImage">
                                 </div>
 
                                 <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">
@@ -203,7 +207,7 @@
                         <div class="col-lg-3">
                             <div class="card-wrap">
                                 <div class="card-content">
-                                   <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589808957047_image.png" alt="Software consultant" class="StreamImage">
+                                    <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589808957047_image.png" alt="Software consultant" class="StreamImage">
                                 </div>
 
                                 <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">

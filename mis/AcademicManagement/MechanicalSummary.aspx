@@ -65,8 +65,10 @@
             <div class="row">
                 <div class="col-lg-12">
 
+                    <div class="text-right">
+                        <a href="EngineeringPage.aspx" class="btn btn-info mt-1 me-4 text-right">Back</a>
+                    </div>
                     <h1 class="text-center text-primary"><u>Mechanical Summary</u></h1>
-
                     <div class="p-1 mb-0 content is-medium customContent has-text-left">
                         <div class="Overlay">
                             <div class="container mt-2">
@@ -109,7 +111,7 @@
                         <div class="column hasArrow is-3 dark">
                             <div class="column is-2">
                                 <p class="is-size-6 has-text-weight-light fs-5 text-nowrap ms-2"><b>Stream</b> :1) Class 12th</p>
-                                <span class="has-text-weight-light fs-5 text-nowrap" style="margin-left:74px">2) Diploma in Mechnanical Engineering After Class 10th</span>
+                                <span class="has-text-weight-light fs-5 text-nowrap" style="margin-left: 74px">2) Diploma in Mechnanical Engineering After Class 10th</span>
                             </div>
                             <p class="pl-4 is-size-5 has-text-weight-light fs-5">
                                 <b>Graduation</b> : B.E /B.Tech in Mechanical Engineering<br />

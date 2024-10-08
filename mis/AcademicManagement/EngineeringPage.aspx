@@ -36,12 +36,13 @@
     <div class="card card-border-primary radius-defalt">
         <div class="card-header">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="">
-                        <h1 class="text-center text-primary"><u>Engineering</u></h1>
+                <div class="col-lg-12 ">
+                    <div class="text-right">
+                        <a href="CareerGuidance.aspx" class="btn btn-info mt-2 me-4" style="margin-bottom: 5px">Back</a>
                     </div>
+                    <h1 class="text-center text-primary"><u>Engineering</u></h1>
 
-                    <div class="p-2 mb-0 content is-medium customContent has-text-left">
+                    <div class="p-2 mt-1 content is-medium customContent has-text-left">
                         <p class="text-justify">Stand and take a look around yourself. What do you find? Maybe phones, chairs, fans, a television, or even your clothes all the day to day things that are man-made. You can be sure that an engineer helped to make it. There are many different kinds of engineers from aeronautical, automobile, civil, chemical, mechanical, electrical, electronics, textile, agricultural etc. etc... Our civilization would be as advanced as the Stone Age without these people. This career demands a wide knowledge of subjects such as science, English, and a strong foundation of mathematics. Engineering also requires imagination because the engineer will have to invent objects used for everyday life or improve existing objects to upgrade the environment for people. Day to day work on any field in engineering will be about solving problems using technical and practical skills, maths, science, research, prototypes, design, manufacturing, production and maintenance. Strong communication skill, technical expertise in a subject will make you shine in your career on a long run. The field’s advantages include interesting, creative work and working with the latest technological advances in the field you choose to go into. As an engineer, your workplace can be anywhere. Maybe in an office, in a factory, on an oil rig in the middle of the ocean, in a laboratory, or even in outer space. Once you set yourself in the right place, Engineers are very secure with respect to material compensation. &nbsp;</p>
                     </div>
                 </div>

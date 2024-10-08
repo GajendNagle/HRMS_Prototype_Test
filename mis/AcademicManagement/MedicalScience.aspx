@@ -37,8 +37,11 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-12 text-center">
+                    <div class="text-right">
+                        <a href="CareerGuidance.aspx" class="btn btn-info mt-2 me-4">Back</a>
+                    </div>
                     <div class="">
-                        <h1  class="text-center text-primary"><u>Medical Science</u></h1>
+                        <h1 class="text-center text-primary"><u>Medical Science</u></h1>
                     </div>
 
                     <div class="p-2 mb-0 content is-medium customContent has-text-left">
@@ -110,7 +113,7 @@
                         <div class="col-lg-3">
                             <div class="card-wrap">
                                 <div class="card-content">
-                                   <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589807996921_image.png" alt="Naturopathy" class="StreamImage">
+                                    <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589807996921_image.png" alt="Naturopathy" class="StreamImage">
                                 </div>
 
                                 <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">
@@ -147,7 +150,7 @@
                         <div class="col-lg-3">
                             <div class="card-wrap">
                                 <div class="card-content">
-                                   <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589805389763_image.png" alt="Ayurveda" class="StreamImage">
+                                    <img src="https://lmes-mars-cdn.jujube.in/images/departments/1589805389763_image.png" alt="Ayurveda" class="StreamImage">
                                 </div>
 
                                 <div class="media-content has-text-centered is-vcentered text-center" style="height: 100px;">

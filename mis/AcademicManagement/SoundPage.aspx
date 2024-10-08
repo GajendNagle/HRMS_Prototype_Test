@@ -64,7 +64,9 @@
         <div class="card-header bg-light">
             <div class="row">
                 <div class="col-lg-12">
-
+                    <div class="text-right">
+                        <a href="EngineeringPage.aspx" class="btn btn-info mt-2 me-4 text-right">Back</a>
+                    </div>
                     <h1 class="text-center text-primary"><u>Sound Summary</u></h1>
 
                     <div class="p-2 mb-0 content is-medium customContent has-text-left">
