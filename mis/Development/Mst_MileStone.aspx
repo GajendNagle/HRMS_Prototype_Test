@@ -61,22 +61,22 @@
                     <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="form-group">
                             <label>
-                                Enter Milestone Name (in English)
+                                Enter Milestone Type (in English)
              <br />
-                                माइलस्टोन का नाम अंग्रेजी में दर्ज करें<span style="color: red">*</span></label>
+                                माइलस्टोन का प्रकार अंग्रेजी में दर्ज करें<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Milestone Name" />
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="form-group">
                             <label>
-                                Enter Milestone Name (in Hindi)
+                                Enter Milestone Type (in Hindi)
                                 <br />
-                                माइलस्टोन का नाम हिंदी में दर्ज करें<span style="color: red">*</span></label>
+                                माइलस्टोन का प्रकार हिंदी में दर्ज करें<span style="color: red">*</span></label>
                             <input type="text" class="form-control" placeholder="माइलस्टोन का नाम हिंदी में दर्ज करें" />
                         </div>
                     </div>
-                   <%-- <div class="col-md-6 col-lg-4 col-xl-4">
+                    <%-- <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="form-group">
                             <label>
                                 Select MileStone Type
@@ -130,13 +130,11 @@
                                         <th>Sr. No.
                                             <br />
                                             सरल क्र.</th>
-                                        <th>MileStone Name
-                                      <br /> 
-                                            माइल स्टोन नाम</th>
-                                        
-                                        <%-- <th>MileStone Category
-                                            <br />माइल स्टोन श्रेणी
-                                        </th>--%>
+                                        <th>MileStone Type
+                                      <br />
+                                        </th>
+                                        <th>माइलस्टोन का प्रकार
+                                        </th>
                                         <th>Status(Active/InActive)
        <br />
                                             स्थिति (सक्रिय/निष्क्रिय)</th>
@@ -147,16 +145,18 @@
                                 <tr>
                                     <td>1</td>
                                     <td>Technical</td>
+                                    <td>तकनीकी</td>
                                     <td>Active</td>
                                     <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
                                     <td>Financial</td>
+                                    <td>वित्तीय</td>
                                     <td>Active</td>
                                     <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
-                               
+
                                 <%--<tr>
                                     <td>3</td>
                                     <td>Foundation</td>
@@ -164,7 +164,6 @@
                                     <td>Active</td>
                                     <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>--%>
-                               
                             </table>
                         </div>
                     </div>

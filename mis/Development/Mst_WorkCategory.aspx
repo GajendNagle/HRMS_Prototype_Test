@@ -51,7 +51,7 @@
                             <label>
                                 Enter Work Category Name(in English)
                                 <br />
-                                कार्य की श्रेणी का नाम दर्ज अंग्रेजी में करें<span style="color: red">*</span></label>
+                                कार्य की श्रेणी का नाम अंग्रेजी में दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" placeholder="Enter Work Category" onkeypress="return hindiOnly();" />
                         </div>
                     </div>

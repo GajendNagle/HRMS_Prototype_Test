@@ -45,7 +45,7 @@
             </div>
         </div>
         <div class="card-body">
-         <%--   <fieldset>
+            <%--   <fieldset>
                 <legend>Project Location / परियोजना स्थान</legend>
 
                 <div class="row align-items-end">
@@ -218,10 +218,11 @@
                             <label>
                                 Select Project Finacial Year
                                 <br />
-                               परियोजना वित्तीय वर्ष का चयन करें
-                            </label><span style="color: red; font-weight: bold">*</span>
+                                परियोजना वित्तीय वर्ष का चयन करें
+                           <span style="color: red; font-weight: bold">*</span>
+                            </label>
 
-                            <select class="form-control select2" >
+                            <select class="form-control select2">
                                 <option value="0">Select</option>
                                 <option value="3">2024-25</option>
                                 <option value="3">2023-24</option>
@@ -233,32 +234,32 @@
                         </div>
                     </div>
 
-               
-                         <div class="col-md-3">
+
+                    <div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 Enter Project Work Order No.
                                 <br />
                                 परियोजना कार्य आदेश संख्या दर्ज करें
-                            </label><span style="color: red; font-weight: bold">*</span>
+                            <span style="color: red; font-weight: bold">*</span></label>
 
                             <input type="text" class="form-control" placeholder="Enter Project Number" />
 
                         </div>
                     </div>
-                         <div class="col-md-3">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 Enter Project Number
                                 <br />
                                 परियोजना  क्रमांक दर्ज करें
-                            </label><span style="color: red; font-weight: bold">*</span>
+                            <span style="color: red; font-weight: bold">*</span></label>
 
                             <input type="text" class="form-control" placeholder="Enter Project Number" />
 
                         </div>
                     </div>
-                          <div class="col-md-3">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 Select Project Group
@@ -282,7 +283,7 @@
                                 Select Project Category
                                 <br />
                                 परियोजना श्रेणी का चयन करें</label>
-                            <select class="form-control select2" >
+                            <select class="form-control select2">
                                 <option value="0">Select</option>
                                 <option value="3">विद्यालय का रख-रखाव कार्य	</option>
                                 <option value="3">पेयजल व्यवस्था		</option>
@@ -301,7 +302,8 @@
                                 Enter Project Name
                                 <br />
                                 परियोजना का नाम दर्ज करें
-                            </label><span style="color: red; font-weight: bold">*</span>
+                           <span style="color: red; font-weight: bold">*</span>
+                            </label>
 
                             <input type="text" class="form-control" placeholder="Enter Project Name" />
 
@@ -310,8 +312,8 @@
 
 
 
-              
-                    <div class="col-md-3">
+
+                    <%-- <div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 Enter Project Location
@@ -329,23 +331,15 @@
                                 <option value="3">GOVT HSS NAYSAMAND</option>
 
                             </select>
-
-
-
-
-
-
-                            
-
                         </div>
-                    </div>
+                    </div>--%>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 Select Project Start Date
                                 <br />
                                 परियोजना प्रारंभ तिथि का चयन करें
-                            </label><span style="color: red; font-weight: bold">*</span>
+                            <span style="color: red; font-weight: bold">*</span></label>
 
                             <input type="date" class="form-control" placeholder="Enter Project Location" />
 
@@ -357,7 +351,7 @@
                                 Select Project End Date
                                 <br />
                                 परियोजना समाप्ति तिथि का चयन करें
-                            </label><span style="color: red; font-weight: bold">*</span>
+                            <span style="color: red; font-weight: bold">*</span></label>
 
                             <input type="date" class="form-control" placeholder="Enter Project Location" />
 
@@ -369,7 +363,8 @@
                                 Project Duration
                                 <br />
                                 परियोजना की अवधि  
-                            </label><span style="color: red; font-weight: bold">*</span>
+                           <span style="color: red; font-weight: bold">*</span>
+                            </label>
 
                             <input type="text" class="form-control" value="15 Days" readonly />
 
@@ -380,40 +375,39 @@
                             <label>
                                 Enter Work (Project) Cost 
                                 <br />
-                               कार्य (परियोजना) लागत दर्ज करें
-                            </label><span style="color: red; font-weight: bold">*</span>
+                                कार्य (परियोजना) लागत दर्ज करें<span style="color: red; font-weight: bold">*</span></label>
 
                             <input type="text" class="form-control" placeholder="Enter Project Cost" />
 
                         </div>
                     </div>
 
-                          <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Upload R.F.P Document
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Upload R.F.P Document
                                 <br />
-                                    आर.एफ.पी दस्तावेज़ अपलोड करें
-                                </label><span style="color: red; font-weight: bold">*</span>
+                                आर.एफ.पी दस्तावेज़ अपलोड करें
+                                <span style="color: red; font-weight: bold">*</span></label>
 
-                                <input type="file" class="form-control" />
+                            <input type="file" class="form-control" />
 
-                            </div>
                         </div>
-                       <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Upload Project Refernce Document
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>
+                                Upload Project Refernce Document
                                 <br />
-                                    परियोजना संदर्भ दस्तावेज़ अपलोड करें
-                                </label><span style="color: red; font-weight: bold">*</span>
+                                परियोजना संदर्भ दस्तावेज़ अपलोड करें
+                               <span style="color: red; font-weight: bold">*</span></label>
 
-                                <input type="file" class="form-control" />
+                            <input type="file" class="form-control" />
 
-                            </div>
                         </div>
+                    </div>
 
-           <%--         <div class="col-md-3">
+                    <%--         <div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 Select Penalty %
@@ -435,9 +429,6 @@
 
 
                     </div>--%>
-
-
-
                 </div>
 
 
@@ -451,9 +442,7 @@
                                 <label>
                                     Select Vender Name
                                 <br />
-                                    कार्य प्रतिनिधि  नाम का चयन करें
-                                </label><span style="color: red; font-weight: bold">*</span>
-
+                                    कार्य प्रतिनिधि  नाम का चयन करें<span style="color: red; font-weight: bold">*</span></label>
                                 <select class="form-control select2">
                                     <option value="0">Select</option>
                                     <option selected="selected">R.K Construction (23AAAAA0000A1Z5)</option>
@@ -464,10 +453,9 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                     Address
+                                    Address
                                 <br />
-                                    पता 
-                                </label><span style="color: red; font-weight: bold">*</span>
+                                    पता<span style="color: red; font-weight: bold">*</span></label>
 
                                 <input type="text" class="form-control" placeholder="Bhopal M.P Nagar" readonly />
 
@@ -477,13 +465,14 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                     GSTIN No
+                                    GSTIN No
 
                                 <br />
                                     जीएसटीआईएन नंबर	 
-                                </label><span style="color: red; font-weight: bold">*</span>
+                                </label>
+                                <span style="color: red; font-weight: bold">*</span>
 
-                                <input type="text" class="form-control" value="23AAAAA0000A1Z5"  readonly/>
+                                <input type="text" class="form-control" value="23AAAAA0000A1Z5" readonly />
 
                             </div>
                         </div>
@@ -495,7 +484,8 @@
 
                                 <br />
                                     निविदा संख्या दर्ज करें
-                                </label><span style="color: red; font-weight: bold">*</span>
+                                </label>
+                                <span style="color: red; font-weight: bold">*</span>
 
                                 <input type="text" class="form-control" placeholder="Enter Tender No" />
 
@@ -509,25 +499,27 @@
 
                                 <br />
                                     सुरक्षा राशि दर्ज करें
-                                </label><span style="color: red; font-weight: bold"></span>
+                                </label>
+                                <span style="color: red; font-weight: bold"></span>
 
                                 <input type="text" class="form-control" placeholder="Enter Security/EMD Amount" />
 
                             </div>
                         </div>
-                              <div class="col-md-3">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label>
                                     Select Security Issue Date
                                 <br />
                                     सुरक्षा जारी करने की तिथि	
-                                </label><span style="color: red; font-weight: bold"></span>
+                                </label>
+                                <span style="color: red; font-weight: bold"></span>
 
                                 <input type="date" class="form-control" />
 
                             </div>
                         </div>
-                               <div class="col-md-3">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label>
                                     Select Security Exp. Date
@@ -535,26 +527,28 @@
                                 <br />
                                     सुरक्षा समाप्ति तिथि
 
-                                </label><span style="color: red; font-weight: bold"></span>
+                                </label>
+                                <span style="color: red; font-weight: bold"></span>
 
                                 <input type="date" class="form-control" />
 
                             </div>
                         </div>
-            
-                                <div class="col-md-3">
+
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label>
                                     Upload Security Document
                                 <br />
                                     सुरक्षा दस्तावेज़ अपलोड करें
-                                </label><span style="color: red; font-weight: bold"></span>
+                                </label>
+                                <span style="color: red; font-weight: bold"></span>
 
                                 <input type="file" class="form-control" />
 
                             </div>
                         </div>
-                                  <div class="col-md-3">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label>
                                     Enter E.M.D Amount
@@ -562,7 +556,8 @@
 
                                 <br />
                                     ई.एम.डी राशि दर्ज करें
-                                </label><span style="color: red; font-weight: bold"></span>
+                                </label>
+                                <span style="color: red; font-weight: bold"></span>
 
                                 <input type="text" class="form-control" placeholder="Enter Security/E.M.D Amount" />
 
@@ -570,14 +565,15 @@
                         </div>
 
 
-                  
-                           <div class="col-md-3">
+
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label>
                                     Select E.M.D Issue Date
                                 <br />
                                     ई.एम.डी जारी करने की तिथि	
-                                </label><span style="color: red; font-weight: bold"></span>
+                                </label>
+                                <span style="color: red; font-weight: bold"></span>
 
                                 <input type="date" class="form-control" />
 
@@ -593,21 +589,23 @@
                                 <br />
                                     ई.एम.डी समाप्ति तिथि
 
-                                </label><span style="color: red; font-weight: bold"></span>
+                                </label>
+                                <span style="color: red; font-weight: bold"></span>
 
                                 <input type="date" class="form-control" />
 
                             </div>
                         </div>
-            
-                
-                                <div class="col-md-3">
+
+
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label>
                                     Upload E.M.D Document
                                 <br />
-                                   ई.एम.डी दस्तावेज़ अपलोड करें
-                                </label><span style="color: red; font-weight: bold"></span>
+                                    ई.एम.डी दस्तावेज़ अपलोड करें
+                                </label>
+                                <span style="color: red; font-weight: bold"></span>
 
                                 <input type="file" class="form-control" />
 
@@ -679,6 +677,87 @@
                         </div>
                     </div>--%>
                 </fieldset>
+
+                <fieldset>
+                    <legend>Project Implementation Location Details / परियोजना कार्यान्वयन स्थान विवरण</legend>
+                    <div class="row align-items-end">
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Select Division (Code) /
+         <br />
+                                    संभाग (कोड) का चयन करें<span style="color: red; font-weight: bold">*</span></label>
+                                <select class="form-control select2">
+                                    <option value="0">Select</option>
+                                    <option value="3">Chambal-(01)</option>
+                                    <option value="3">Gwalior-(02)</option>
+                                    <option value="3">Ujjain-(03)</option>
+                                    <option value="3">Indore-(04)</option>
+                                    <option value="3">Bhopal-(05)</option>
+
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Select District (Code) /
+                                    <br />
+                                    जिला (कोड) का चयन करें<span style="color: red; font-weight: bold">*</span></label>
+                                <select class="form-control select2">
+                                    <option value="0">Select</option>
+                                    <option value="3">Sheopur-(01)</option>
+                                    <option value="3">Morena-(02)</option>
+                                    <option value="3">Bhind-(03)</option>
+
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Select Block (Code) /
+                                    <br />
+                                    विकास खंड (कोड) का चयन करें<span style="color: red; font-weight: bold">*</span></label>
+                                <select class="form-control select2">
+                                    <option value="0">Select</option>
+                                    <option value="3">Berasia-(209)</option>
+                                    <option value="3">Phanda Gramin-(210)</option>
+                                    <option value="3">Phanda-(211)</option>
+
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Select Project Location
+             <br />
+                                    परियोजना स्थान का चयन करें
+                                </label>
+                                <span style="color: red; font-weight: bold">*</span>
+
+
+                                <select class="form-control " name="field2" id="field2" multiple multiselect-search="true" multiselect-select-all="true" multiselect-max-items="2">
+
+                                    <option value="1">GOVT HSS MAHARANA PRATAP </option>
+                                    <option value="2">GOVT HSS BOYS, KOTRA SULTANABAD </option>
+                                    <option value="3">GOVT HSS EX, SUBHASH,SHIVAJI </option>
+                                    <option value="3">GOVT HSS KHAJURI KALAN </option>
+                                    <option value="3">GOVT HSS NAYSAMAND</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
                 <fieldset>
 
                     <legend>Project Order Details / परियोजना आदेश विवरण</legend>
@@ -692,8 +771,7 @@
                                 <label>
                                     Select Project Order Date
                                 <br />
-                                    परियोजना ऑर्डर दिनांक दर्ज करें
-                                </label><span style="color: red; font-weight: bold">*</span>
+                                    परियोजना ऑर्डर दिनांक दर्ज करें<span style="color: red; font-weight: bold">*</span></label>
 
                                 <input type="date" class="form-control" />
 
@@ -704,8 +782,7 @@
                                 <label>
                                     Enter Project Order No.
                                 <br />
-                                    परियोजना आदेश संख्या	 दर्ज करें
-                                </label><span style="color: red; font-weight: bold">*</span>
+                                    परियोजना आदेश संख्या दर्ज करें<span style="color: red; font-weight: bold">*</span></label>
 
                                 <input type="text" class="form-control" placeholder="Enter Project Order No." />
 
@@ -717,7 +794,8 @@
                                     Upload Order Copy
                                 <br />
                                     ऑर्डर कॉपी अपलोड करें
-                                </label><span style="color: red; font-weight: bold">*</span>
+                                </label>
+                                <span style="color: red; font-weight: bold">*</span>
 
                                 <input type="file" class="form-control" />
 
@@ -784,8 +862,7 @@
                             <label>
                                 Select Document Type
                                 <br />
-                                दस्तावेज़ प्रकार	का चयन करें
-                            </label><span style="color: red; font-weight: bold">*</span>
+                                दस्तावेज़ प्रकार	का चयन करें<span style="color: red; font-weight: bold">*</span></label>
 
                             <select class="form-control select2" id="A1">
                                 <option value="Select">Select</option>
@@ -804,8 +881,9 @@
                                 Select Document Type Details
 
                                 <br />
-                                दस्तावेज़ प्रकार विवरण का चयन करें
-                            </label><span style="color: red; font-weight: bold">*</span>
+                                दस्तावेज़ प्रकार विवरण का चयन करें<span style="color: red; font-weight: bold">*</span></label>
+
+
 
                             <select class="form-control select2" id="A2">
                                 <option value="Select">Select</option>
@@ -826,7 +904,8 @@
 
                                 <br />
                                 दस्तावेज़ अपलोड करें	
-                            </label><span style="color: red; font-weight: bold">*</span>
+                            </label>
+                            <span style="color: red; font-weight: bold">*</span>
 
                             <input type="file" class="form-control" />
 
@@ -936,7 +1015,8 @@
 
                                 <br />
                                 कार्य का नाम का चयन करें
-                            </label><span style="color: red; font-weight: bold">*</span>
+                            </label>
+                            <span style="color: red; font-weight: bold">*</span>
 
                             <select class="form-control select2" id="B1">
                                 <option value="Select">Select</option>
@@ -952,32 +1032,34 @@
                             <label>
                                 Select Work Completion Date
                                 <br />
-                                कार्य पूरा करने की दिनांक	 चयन करें
-                            </label><span style="color: red; font-weight: bold">*</span>
+                                कार्य पूरा करने की दिनांक	 चयन करें<span style="color: red; font-weight: bold">*</span>
+                            </label>
+                            
                             <input type="date" class="form-control" id="B2" />
 
 
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 Enter Work Completion %
                                 <br />
                                 कार्य प्रतिशत दर्ज करें
-                            </label><span style="color: red; font-weight: bold">*</span>
+                           <span style="color: red; font-weight: bold">*</span></label>
                             <input type="text" class="form-control" placeholder="Enter Work Completion % " id="B3" />
 
 
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 Enter Payment %
                                 <br />
                                 भुगतान प्रतिशत	 दर्ज करें
-                            </label><span style="color: red; font-weight: bold">*</span>
+                            </label>
+                            <span style="color: red; font-weight: bold">*</span>
                             <input type="text" class="form-control" placeholder="Enter Enter Payment %" id="B4" />
 
 
@@ -1129,7 +1211,8 @@
                             <label>
                                 Enter Employee Id<br />
                                 कर्मचारी आईडी दर्ज करें<span style="color: red">*</span>
-                            </label><span style="color: red; font-weight: bold">*</span>
+                            </label>
+                          
                             <input type="text" class="form-control" id="txtempid" placeholder="Enter OIS Code" onchange="DIVShow()" />
                         </div>
                     </div>
@@ -1139,8 +1222,9 @@
                         <div class="form-group">
                             <label>
                                 Name<br />
-                                नाम
-                            </label><span style="color: red; font-weight: bold">*</span>
+                                नाम 
+                            </label>
+                           
                             <input type="text" class="form-control" id="txtname" value="Niraj Verma" readonly />
                         </div>
                     </div>
@@ -1149,8 +1233,9 @@
                         <div class="form-group">
                             <label>
                                 Designation<br />
-                                पद का नाम
-                            </label><span style="color: red; font-weight: bold">*</span>
+                                पद का नाम 
+                            </label>
+                           
                             <input type="text" class="form-control" id="txtDesignation" value="executive director" readonly />
                         </div>
                     </div>
@@ -1160,7 +1245,8 @@
                             <label>
                                 Office Location<br />
                                 कार्यालय स्थान
-                            </label><span style="color: red; font-weight: bold">*</span>
+                            </label>
+                            
                             <input type="text" class="form-control" id="txtOffice" value="Bhopal" readonly />
                         </div>
                     </div>
@@ -1456,6 +1542,6 @@
             //document.getElementById("address").value = "";
         }
     </script>
-        <script src="../../js/multiselect-dropdown.js"></script>
+    <script src="../../js/multiselect-dropdown.js"></script>
 </asp:Content>
 

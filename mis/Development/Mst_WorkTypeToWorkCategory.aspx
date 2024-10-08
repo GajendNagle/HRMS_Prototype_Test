@@ -61,16 +61,16 @@
         <div class="card-body">
 
             <fieldset>
-                <legend>Work Type To Work SubCategory Mapping / कार्य प्रकार से कार्य उपश्रेणी जोड़े</legend>
+                <legend>Work Group To Work SubCategory Mapping / कार्य समूह से कार्य उपश्रेणी मानचित्रण</legend>
 
                 <div class="row align-items-end">
 
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Select Work Type Name
+                                Select Work Group
     <br />
-                                कार्य प्रकार का चयन करें<span style="color: red">*</span></label>
+                                कार्य समूह का चयन करें<span style="color: red">*</span></label>
                             <select class="select2">
                                 <option>Select</option>
                                 <option>स्कूल निर्माण</option>
@@ -150,7 +150,14 @@
                                 </tr>
 
                             </table>
+
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border  w-lg">Save</button>
+                        <a href="Mst_WorkTypeToWorkCategory.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                 </div>
             </fieldset>
@@ -194,7 +201,10 @@
                                                         <th>Sr.No.
                                                             <br />
                                                             क्रमांक</th>
-
+                                                        <th>Work Group Name
+                                                            <br />
+                                                            कार्य समूह का नाम
+                                                        </th>
                                                         <th>Work Subcategory Name<br />
                                                             कार्य उपश्रेणी का नाम</th>
 
@@ -207,6 +217,7 @@
 
                                                 <tr>
                                                     <td>1</td>
+                                                    <td>School Maintenance</td>
                                                     <td>इमारत मरम्मत</td>
                                                     <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                                 </tr>
@@ -224,7 +235,10 @@
                                                         <th>Sr.No.
                             <br />
                                                             क्रमांक</th>
-
+                                                        <th>Work Group Name
+    <br />
+                                                            कार्य समूह का नाम
+                                                        </th>
                                                         <th>Work Subcategory Name<br />
                                                             कार्य उपश्रेणी का नाम</th>
 
@@ -237,6 +251,7 @@
 
                                                 <tr>
                                                     <td>1</td>
+                                                    <td>पेयजल व्यवस्था</td>
                                                     <td>हेंडपंप खनन</td>
                                                     <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                                 </tr>

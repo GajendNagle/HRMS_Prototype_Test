@@ -54,9 +54,9 @@
 
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-12 text-end">
+               <%-- <div class="col-xl-3 col-md-12 text-end">
                     <a role="button" href="MileStoneReport.aspx" class="btn btn-primary rounded-pill">View Report</a>
-                </div>
+                </div>--%>
             </div>
         </div>
         <div class="card-body">
