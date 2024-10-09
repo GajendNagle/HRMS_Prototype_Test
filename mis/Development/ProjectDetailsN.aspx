@@ -51,7 +51,62 @@
                 <legend>Project Details / परियोजना विवरण</legend>
 
                 <div class="row align-items-end">
-      <%--                         <div class="col-md-3">
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>
+                                Select Division (Code) /
+                                <br />
+                                संभाग (कोड) का चयन करें<span style="color: red; font-weight: bold">*</span></label>
+                            <select class="form-control select2">
+                                <option value="0">Select</option>
+                                <option value="3">Chambal-(01)</option>
+                                <option value="3">Gwalior-(02)</option>
+                                <option value="3">Ujjain-(03)</option>
+                                <option value="3">Indore-(04)</option>
+                                <option value="3">Bhopal-(05)</option>
+
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>
+                                Select District (Code) /
+                           <br />
+                                जिला (कोड) का चयन करें<span style="color: red; font-weight: bold">*</span></label>
+                            <select class="form-control select2">
+                                <option value="0">Select</option>
+                                <option value="3">Sheopur-(01)</option>
+                                <option value="3">Morena-(02)</option>
+                                <option value="3">Bhind-(03)</option>
+
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>
+                                Select Block (Code) /
+                           <br />
+                                विकास खंड (कोड) का चयन करें<span style="color: red; font-weight: bold">*</span></label>
+                            <select class="form-control select2">
+                                <option value="0">Select</option>
+                                <option value="3">Berasia-(209)</option>
+                                <option value="3">Phanda Gramin-(210)</option>
+                                <option value="3">Phanda-(211)</option>
+
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-end">
+                    <%--                         <div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 Select OIS Type
@@ -67,11 +122,12 @@
                             </select>
                         </div>
                     </div>--%>
-                               <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="form-group">
-                           <label>
-                           Select Offiice  /<br /> कार्यालय का चयन करें
-                        </label>
+                            <label>
+                                Select Project Location  /<br />
+                                परियोजना स्थान का चयन करें
+                            </label>
                             <span style="color: red; font-weight: bold">*</span>
                             <select class="form-control select2" id="ddlProjectNo1">
                                 <option>Select</option>
@@ -83,10 +139,10 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="form-group">
                             <label>
-                                Select Work Category
+                                Select Work Category /
              <br />
                                 कार्य श्रेणी का चयन करें<span style="color: red">*</span></label>
 
@@ -99,10 +155,10 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="form-group">
                             <label>
-                                Select Work Subcategory
+                                Select Work Subcategory /
     <br />
                                 कार्य उपश्रेणी का चयन करें<span style="color: red">*</span></label>
 
@@ -115,7 +171,7 @@
                         </div>
                     </div>
 
-           <%--         <div class="col-md-3">
+                    <%--         <div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 Status
@@ -308,7 +364,7 @@
                 </div>
             </fieldset>
 
-            <fieldset id="table3" >
+            <fieldset id="table3">
                 <legend>Details / विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -359,12 +415,12 @@
                                             तकनीकी दस्तावेज़
                                         </th>
 
-                                                <th>MileStone Document
+                                        <th>MileStone Document
                    <br />
                                             माइलस्टोन दस्तावेज़
                                         </th>
 
-                                        
+
                                     </tr>
                                 </thead>
 
@@ -372,29 +428,35 @@
                                     <td>1</td>
                                     <td>POR2024CV001</td>
                                     <td>02/05/2023</td>
-                                    <td >GOVT HSS MAHARANA PRATAP</td>
+                                    <td>GOVT HSS MAHARANA PRATAP</td>
                                     <td>स्कूल मरम्मत/निर्माण</td>
                                     <td>इमारत मरम्मत</td>
                                     <td>Bhopal M.p.</td>
                                     <td class="text-end">60000.00</td>
-                                                    <td class="text-center">
-                                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#examplesModal"><i class="ri-eye-line"></i></button></td>
-                                     <td class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#examplesModal1"><i class="ri-eye-line"></i></button></td>
-                                   
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#examplesModal"><i class="ri-eye-line"></i></button>
+                                    </td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#examplesModal1"><i class="ri-eye-line"></i></button>
+                                    </td>
+
                                 </tr>
                                 <tr>
                                     <td>2</td>
                                     <td>POR2024CV002</td>
                                     <td>06/10/2023</td>
-                                                  <td>GOVT HSS BOYS, KOTRA SULTANABAD </td>
+                                    <td>GOVT HSS BOYS, KOTRA SULTANABAD </td>
                                     <td>पेयजल व्यवस्था</td>
                                     <td>हेंडपंप खनन</td>
                                     <td>Bhopal M.p.</td>
                                     <td class="text-end">60000.00</td>
-                                                     <td class="text-center">
-                                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#examplesModal"><i class="ri-eye-line"></i></button></td>
-                                     <td class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#examplesModal1"><i class="ri-eye-line"></i></button></td>
-                                   
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#examplesModal"><i class="ri-eye-line"></i></button>
+                                    </td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#examplesModal1"><i class="ri-eye-line"></i></button>
+                                    </td>
+
                                 </tr>
 
                                 <tr>
@@ -406,10 +468,13 @@
                                     <td>CC सड़क निर्माण</td>
                                     <td>Bhopal M.p.</td>
                                     <td class="text-end">60000.00</td>
-                                                    <td class="text-center">
-                                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#examplesModal"><i class="ri-eye-line"></i></button></td>
-                                              <td class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#examplesModal1"><i class="ri-eye-line"></i></button></td>
-       
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#examplesModal"><i class="ri-eye-line"></i></button>
+                                    </td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#examplesModal1"><i class="ri-eye-line"></i></button>
+                                    </td>
+
                                 </tr>
 
                             </table>
@@ -421,149 +486,139 @@
     </div>
 
 
-                <div class="modal fade" id="examplesModal" tabindex="-1" aria-labelledby="examplesModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl ">
-                    <div class="modal-content">
-                        <div class="modal-header">
+    <div class="modal fade" id="examplesModal" tabindex="-1" aria-labelledby="examplesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl ">
+            <div class="modal-content">
+                <div class="modal-header">
 
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <fieldset>
-                                <legend>Technical Document /तकनीकी दस्तावेज़	</legend>
-                              <div class="row form-group">
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <table class="table table-bordered text-center" id="Table1">
-                                <thead class="nowrap">
-                                    <tr>
-                                        <th>Sr.No.
-                                            <br />
-                                            क्रमांक</th>
-                                        <th>Document Type<br />
-                                            दस्तावेज़ प्रकार</th>
-                                        <th>Document Type Details<br />
-                                            दस्तावेज़ प्रकार विवरण</th>
-                                        <th>Upload Document
-                                            <br />
-                                            दस्तावेज़ अपलोड करें</th>
-                                   
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td >1</td>
-                                        <td >
-                                           Financial</td>
-
-                                        <td >
-                                   Budget Approval</td>
-
-                                        <td>
-                                            <a class="Alert-Edit"><i class="fa fa-eye"></i></a>
-                                
-                                    </tr>
-                                                <tr>
-                                        <td >2</td>
-                                        <td >
-                                           Financial</td>
-
-                                        <td >
-                                   Tender Copy</td>
-
-                                        <td>
-                                            <a class="Alert-Edit"><i class="fa fa-eye"></i></a>
-                                
-                                    </tr>
-                                                          <tr>
-                                        <td >3</td>
-                                        <td >
-                                           Technical</td>
-
-                                        <td >
-                                   Map</td>
-
-                                        <td>
-                                            <a class="Alert-Edit"><i class="fa fa-eye"></i></a>
-                                
-                                    </tr>
-
-               
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                            </fieldset>
-                       
+                <div class="modal-body">
+                    <fieldset>
+                        <legend>Technical Document /तकनीकी दस्तावेज़	</legend>
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered text-center" id="Table1">
+                                        <thead class="nowrap">
+                                            <tr>
+                                                <th>Sr.No.
+                                            <br />
+                                                    क्रमांक</th>
+                                                <th>Document Type<br />
+                                                    दस्तावेज़ प्रकार</th>
+                                                <th>Document Type Details<br />
+                                                    दस्तावेज़ प्रकार विवरण</th>
+                                                <th>Upload Document
+                                            <br />
+                                                    दस्तावेज़ अपलोड करें</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Financial</td>
+
+                                                <td>Budget Approval</td>
+
+                                                <td>
+                                                    <a class="Alert-Edit"><i class="fa fa-eye"></i></a>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Financial</td>
+
+                                                <td>Tender Copy</td>
+
+                                                <td>
+                                                    <a class="Alert-Edit"><i class="fa fa-eye"></i></a>
+
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Technical</td>
+
+                                                <td>Map</td>
+
+                                                <td>
+                                                    <a class="Alert-Edit"><i class="fa fa-eye"></i></a>
+
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </fieldset>
+
                 </div>
             </div>
+        </div>
+    </div>
 
-     <div class="modal fade" id="examplesModal1" tabindex="-1" aria-labelledby="examplesModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl ">
-                    <div class="modal-content">
-                        <div class="modal-header">
+    <div class="modal fade" id="examplesModal1" tabindex="-1" aria-labelledby="examplesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl ">
+            <div class="modal-content">
+                <div class="modal-header">
 
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <fieldset>
-                                <legend>Milestones   /माइलस्टोन 	</legend>
-                              <div class="row form-group">
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <table class="table table-bordered text-center" id="Table8">
-                                <thead class="nowrap">
-                                    <tr>
-                                        <th>Sr.No.
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <legend>Milestones   /माइलस्टोन 	</legend>
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered text-center" id="Table8">
+                                        <thead class="nowrap">
+                                            <tr>
+                                                <th>Sr.No.
                                             <br />
-                                            क्रमांक</th>
-                                      <th>Work  Name<br />
-                                            कार्य  का नाम</th>
-                                        <th>Work Completion Date<br />
-                                            कार्य पूरा करने की दिनांक</th>
-                                        <th>Work Completion %
+                                                    क्रमांक</th>
+                                                <th>Work  Name<br />
+                                                    कार्य  का नाम</th>
+                                                <th>Work Completion Date<br />
+                                                    कार्य पूरा करने की दिनांक</th>
+                                                <th>Work Completion %
                             <br />
-                                            प्रतिशत
-                                        </th>
-                                        <th>Payment %<br />
-                                            भुगतान प्रतिशत
-                                        </th>
-                                   
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td >1</td>
-                                        <td >
-                                           इमारत मरम्मत</td>
+                                                    प्रतिशत
+                                                </th>
+                                                <th>Payment %<br />
+                                                    भुगतान प्रतिशत
+                                                </th>
 
-                                        <td >
-                                   17/09/2024</td>
-                                              <td >
-                      20%</td>
-                                              <td >
-                                    10%</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>इमारत मरम्मत</td>
 
-                               
-                                
-                                    </tr>
-                   
+                                                <td>17/09/2024</td>
+                                                <td>20%</td>
+                                                <td>10%</td>
 
-               
-                                </tbody>
-                            </table>
+
+
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                            </fieldset>
-                       
-                        </div>
-                    </div>
+                    </fieldset>
+
                 </div>
             </div>
+        </div>
+    </div>
 
 
 </asp:Content>

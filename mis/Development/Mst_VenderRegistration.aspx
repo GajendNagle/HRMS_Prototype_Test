@@ -55,7 +55,7 @@
 
                             <label>
                                 Select State Name<br />
-                                राज्य का चयन करें
+                                राज्य का चयन करें<span style="color: red">*</span>
                             </label>
                             <select class="select2">
                                 <option>Select</option>
@@ -71,7 +71,7 @@
                         <div class="form-group">
                             <label>
                                 Enter GSTIN No.<br />
-                                जीएसटीआईएन नंबर दर्ज करें
+                                जीएसटीआईएन नंबर दर्ज करें<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter GSTIN No." />
                         </div>
@@ -81,7 +81,7 @@
                         <div class="form-group">
                             <label>
                                 Enter PAN No.<br />
-                                पैन नंबर दर्ज करें
+                                पैन नंबर दर्ज करें<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter GSTIN No." />
                         </div>
@@ -91,7 +91,7 @@
                         <div class="form-group">
                             <label>
                                 Enter Firm Name<br />
-                                संस्था का नाम दर्ज करें
+                                संस्था का नाम दर्ज करें<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter Firm Name" />
                         </div>
@@ -103,7 +103,7 @@
                         <div class="form-group">
                             <label>
                                 Enter Firm Mail Id<br />
-                                संस्था का मेल आईडी दर्ज करें
+                                संस्था का मेल आईडी दर्ज करें<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter  Firm Mail Id" />
                         </div>
@@ -113,7 +113,7 @@
                         <div class="form-group">
                             <label>
                                 Enter Firm Address<br />
-                                संस्था का पता दर्ज करें
+                                संस्था का पता दर्ज करें<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter Firm Address" />
                         </div>
@@ -123,7 +123,7 @@
                         <div class="form-group">
                             <label>
                                 Enter Pin Code No<br />
-                                पिन कोड नंबर दर्ज करें
+                                पिन कोड नंबर दर्ज करें<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter Pin Code No" />
                         </div>
@@ -133,7 +133,7 @@
                         <div class="form-group">
                             <label>
                                 Enter Contact Person Name<br />
-                                संपर्क व्यक्ति का नाम दर्ज करें
+                                संपर्क व्यक्ति का नाम दर्ज करें<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter Contact Person Name" />
                         </div>
@@ -145,7 +145,7 @@
                         <div class="form-group">
                             <label>
                                 Enter Contact Person No.<br />
-                                संपर्क व्यक्ति का नंबर दर्ज करें
+                                संपर्क व्यक्ति का नंबर दर्ज करें<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter Contact Person No." />
                         </div>
@@ -170,6 +170,17 @@
                             <input type="file" class="form-control" placeholder="Enter Contact Person No." />
                         </div>
                     </div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input class="form-check-input" checked="checked" type="checkbox" data-val="true" data-val-required="The IsActive field is required." id="IsActive" name="IsActive" value="true">
+                            <label class="form-check-label">
+                                Status
+					<small>(Active/InActive)</small><br>
+                                स्थिति (सक्रिय/निष्क्रिय)
+                            </label>
+                        </div>
+                    </div>
                 </div>
 
             </fieldset>
@@ -178,6 +189,32 @@
                 <legend>Firm Bank Account Details / संस्था बैंक खाता विवरण</legend>
 
                 <div class="row align-items-end">
+                    <div class="col-md-3">
+                        <label>
+                            Select Bank Type /
+        <br />
+                            बैंक के प्रकार का चयन करें<span style="color: red">*</span></label>
+                        <select class="select2">
+                            <option>Select</option>
+                            <option>Public Sector Commercial Banks</option>
+                            <option>Private Sector Commercial Banks</option>
+                            <option>Regional Rural Banks</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label>
+                            Select IFSC Code /
+                            <br />
+                            आईएफएससी कोड का चयन करें<span style="color: red">*</span></label>
+                        <select class="select2">
+                            <option>Select</option>
+                            <option>IDFB004214</option>
+                            <option>IDFB007890</option>
+                            <option>IDFB002367</option>
+
+                        </select>
+                    </div>
                     <div class="col-md-3">
                         <label>
                             Select Bank Name
@@ -191,6 +228,16 @@
                             <option>Axis Bank</option>
                         </select>
                     </div>
+
+                    <div class="col-md-3">
+                        <label>
+                            Enter Bank Account No.
+                            <br />
+                            बैंक खाता नंबर दर्ज करें.</label>
+                        <input type="text" class="form-control" placeholder="Enter Bank Account No." />
+                    </div>
+                </div>
+                <div class="row align-items-end">
                     <div class="col-md-3">
                         <label>
                             Enter Account Holder Name
@@ -198,24 +245,6 @@
                             खाताधारक का नाम दर्ज करें</label>
                         <input type="text" class="form-control" placeholder="Enter Account Holder Name" />
                     </div>
-
-                    <div class="col-md-3">
-                        <label>
-                            Enter Bank Account No.
- <br />
-                            बैंक खाता नंबर दर्ज करें.</label>
-                        <input type="text" class="form-control" placeholder="Enter Bank Account No." />
-                    </div>
-
-                    <div class="col-md-3">
-                        <label>
-                            Enter IFSC Code
-                        <br />
-                            IFSC कोड दर्ज करें</label>
-                        <input type="text" class="form-control" placeholder="Enter IFSC Code" />
-                    </div>
-
-
                 </div>
             </fieldset>
             <hr />
@@ -250,8 +279,6 @@
                                         <th>Sr.No.
                             <br />
                                             क्रमांक</th>
-                                        <th>State Name<br />
-                                            राज्य का नाम</th>
                                         <th>GSTIN No.<br />
                                             जीएसटीआईएन नं.</th>
                                         <th>PAN No.
@@ -266,28 +293,34 @@
                                         <th>Pin Code No.
                                             <br />
                                             पिन कोड नं.</th>
+                                        <th>Firm Email Id<br />
+                                            संस्था ईमेल आईडी</th>
                                         <th>Contact Person Name
                                             <br />
                                             संपर्क व्यक्ति का नाम</th>
-                                        <%--<th>Firm Registration Copy
+                                        <th>Contact Person No.
                                             <br />
-                                            संस्था का पंजीकरण प्रतिलिपि</th>--%>
-                                        <th>Firm GSTIN Copy
+                                            संपर्क व्यक्ति का नंबर</th>
+                                        <th>Status(Active/InActive)<br />
+                                            स्थिति (सक्रिय/निष्क्रिय)</th>
+                                        <th>View GSTIN Document
                                             <br />
-                                            संस्था का जीएसटीआईएन पंजीकरण</th>
+                                            जीएसटीआईएन दस्तावेज़ देखें</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tr>
                                     <td>1</td>
-                                    <td>Madhaya Pradesh</td>
                                     <td>23AAAAA0000A1Z5</td>
                                     <td>ABCTY1234D</td>
                                     <td>R.K Construction</td>
                                     <td>Plot No 889 Shyamla Hills Main Road Bhopal</td>
                                     <td>462021</td>
+                                    <td>Rk@gmail.com</td>
                                     <td>Rajendra Sharma</td>
-                                    <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye" ></i></span></td>
+                                    <td>8934567890</td>
+                                    <td>Active</td>
+                                    <td class="nowrap"><span class="btn btn-outline-primary"><i class="fa fa-eye"></i></span></td>
                                     <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
 
