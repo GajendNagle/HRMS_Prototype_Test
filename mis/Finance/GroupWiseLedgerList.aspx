@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="GroupWiseLedgerList.aspx.cs" Inherits="mis_Finance_GroupWiseLedgerList" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" Runat="Server">
+    <style>
+        .placeholder {
+         background-color: transparent ; 
+         opacity: 1;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
      <div class="row">
@@ -22,8 +28,6 @@
             </div>
         </div>
     </div>
-
-
       <div class="content-wrapper">
         <div class="container-fluid">
             <div class="card card-border-primary">
@@ -45,8 +49,9 @@
                                     <label>
                                         Select Group Name<br />
                                         समूह नाम का चयन करें<span style="color: red;">*</span></label>
-                                    <select class="form-control select2">
-                                        <option selected="selected" value="0">--All --</option>
+                                    <select multiple="" multiselect-search="true" multiselect-select-all="true" multiselect-max-items="0" class="form-select" id="DestinationDistrictId" name="DestinationDistrictId">
+
+                                       
                                         <option value="1">Direct Expenses(Expenses) </option>
                                         <option value="2">Indirect Expenses (Expenses)</option>
                                         <option value="3">Current Assets (Assets)</option>
@@ -60,7 +65,8 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            </div>
+                           <%-- <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
                                         Select Office Type
@@ -93,7 +99,7 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
+                        </div>--%>
                       
                         <hr />
                         <div class="col-md-12 justify-content-center">
@@ -134,11 +140,11 @@
                                         <th> Ledger Code 
                                             <br />
                                             बहीखाता कोड  </th>
-                                        <th>Head Name
+                                        <th>Group Name
                                             <br />
-                                            हेड नाम 
+                                            ग्रुप नाम 
                                         </th>
-                                        <th>Office Name 
+                                        <th>Create Office Name 
                                             <br />
                                             कार्यालय नाम
                                         </th>
@@ -218,5 +224,7 @@
             document.body.removeChild(a);
         }
     </script>
+    <script src="https://schooledutest.tserver.co.in/assets/js/multiselect-dropdown.js"></script>
+
 </asp:Content>
 

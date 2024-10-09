@@ -82,7 +82,7 @@
                                     <div class="form-group">
                                         <label>
                                             Select Group Name<br />
-                                            सूची से समूह का चयन करें<span style="color: red;">*</span></label>
+                                            ग्रुप सूचि से ग्रुप का चयन करें<span style="color: red;">*</span></label>
                                         <select class="form-control select2">
                                             <option selected="selected" value="0">--Select --</option>
                                             <option value="1">Direct Expenses(Expenses)</option>
@@ -139,7 +139,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Enter Account No.<br />
+                                            Enter Bank Account No.<br />
                                             खाता संख्या दर्ज करें
                                         </label>
                                         <input type="text" class="form-control" placeholder="Enter Account No." />
@@ -177,8 +177,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Enter Name in English<br />
-                                            नाम दर्ज करें
+                                            Enter Mailing Name in English<br />
+                                            मैलिंग नाम दर्ज करें
                                         </label>
                                         <input type="text" class="form-control" placeholder="Enter Name in English" />
                                     </div>
@@ -187,7 +187,7 @@
                                     <div class="form-group">
                                         <label>
                                             Select State Name in English<br />
-                                            राज्य नाम का चयन करे
+                                            राज्य के नाम का चयन करे
                                         </label>
                                         <select class="form-control select2">
                                             <option selected="selected" value="0">--Select --</option>
@@ -240,7 +240,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Enter Email in English<br />
+                                            Enter Email I'D in English<br />
                                             ईमेल दर्ज करें</label>
                                         <input type="text" class="form-control" placeholder="Enter Email in English" />
                                     </div>

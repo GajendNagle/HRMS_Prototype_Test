@@ -44,8 +44,8 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
-                                            Select Group<br />
-                                            सूची से समूह का चयन करें<span style="color: red;">*</span></label>
+                                            Select Group Name<br />
+                                           ग्रुप सूची से ग्रुप का चयन करें<span style="color: red;">*</span></label>
                                         <select class="form-control select2">
                                             <option selected="selected" value="0">--Select --</option>
                                             <option value="1">Liabilities</option>
@@ -59,7 +59,7 @@
                                     <div class="form-group">
                                         <label>
                                             Enter Group Name in English<br />
-                                            समूह का नाम अंग्रेजी में दर्ज करें
+                                            ग्रुप का नाम अंग्रेजी में दर्ज करें
                                     <span style="color: red;">*</span></label>
                                         <input type="text" class="form-control" placeholder="Enter Group Name in English" />
                                     </div>
@@ -68,7 +68,7 @@
                                     <div class="form-group">
                                         <label>
                                             Enter Group Name in Hindi<br />
-                                            समूह का नाम हिंदी में दर्ज करें</label>
+                                            ग्रुप का नाम हिंदी में दर्ज करें</label>
                                         <input type="text" class="form-control" placeholder="Enter Group Name in Hindi" />
                                     </div>
                                 </div>
@@ -76,7 +76,7 @@
                                     <div class="form-group">
                                         <label>
                                             Enter Group Code<br />
-                                            समूह कोड दर्ज करें</label>
+                                            ग्रुप कोड दर्ज करें</label>
                                         <input type="text" class="form-control" placeholder="Enter Group Code" />
                                     </div>
                                 </div>
@@ -86,7 +86,7 @@
                                     <div class="form-group">
                                         <label>
                                             Enter Group Order No.<br />
-                                            समूह ऑर्डर नंबर दर्ज करें.</label>
+                                            ग्रुप ऑर्डर नंबर दर्ज करें.</label>
                                         <input type="text" class="form-control" placeholder="Enter Group Order No." />
                                     </div>
                                 </div>
@@ -128,13 +128,13 @@
                                                     <th scope="col">Sr.No.<br />
                                                         क्रमांक</th>
                                                     <th scope="col">Group Name in English<br />
-                                                        समूह का नाम अंग्रेजी में
+                                                        ग्रुप का नाम अंग्रेजी में
                                                     </th>
                                                     <th scope="col">Group Name in Hindi<br />
-                                                        समूह का नाम हिंदी में
+                                                        ग्रुप का नाम हिंदी में
                                                     </th>
                                                     <th scope="col">Group Code<br />
-                                                        समूह कोड</th>
+                                                        ग्रुप कोड</th>
                                                     <th scope="col">Group Order No.<br />
                                                         ग्रुप ऑर्डर नंबर</th>
                                                     <th scope="col">Parent Group<br />

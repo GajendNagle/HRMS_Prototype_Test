@@ -50,9 +50,9 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Head Type
+                                         Head Type
                                         <br />
-                                        हेड प्रकार का चयन करें<span style="color: red;">*</span></label>
+                                        हेड प्रकार  <span style="color: red;">*</span></label>
                                     <select class="form-control select2">
                                         <option value="2">Expense</option>
                                     </select>
@@ -61,8 +61,8 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                       Select Budget Ledger Name<br />
-                                        बहीखाता नाम का चयन करें<span style="color: red;"> *</span>
+                                       Select Budget Head Name<br />
+                                        बजट हेड नाम का चयन करें<span style="color: red;"> *</span>
                                     </label>
                                     <select class="form-control select2">
                                         <option selected="selected" value="0">--Select --</option>
@@ -75,16 +75,16 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Enter Amount Request<br />
-                                        मांग राशि दर्ज करें<span style="color: red;">*</span></label>
+                                        Enter Budget Amount Request<br />
+                                       बजट मांग राशि दर्ज करें<span style="color: red;">*</span></label>
                                     <input type="text" id="numberInput" class="form-control" placeholder="Enter Amount Request" onkeyup="convertNumbers()" />
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Amount in Words<br />
-                                        राशि शब्दों में<span style="color: red;">*</span></label>
+                                   Budget Amount in Words<br />
+                                      बजट  राशि शब्दों में<span style="color: red;">*</span></label>
                                     <input type="text" id="wordOutput" class="form-control" placeholder="Amount in Words" readonly />
                                 </div>
                             </div>
@@ -123,19 +123,19 @@
                                                     <br />
                                                     क्रमांक
                                                 </th>
-                                                <th>Head Type
+                                                <%--<th>Head Type
                                                     <br />
-                                                    हेड प्रकार </th>
+                                                    हेड प्रकार </th>--%>
                                                 <th>Head Code 
                                             <br />
-                                                    हेड कोड</th>
-                                                <th>Budget Ledger Name 
+                                                    बजट कोड</th>
+                                                <th>Budget Head Name 
                                             <br />
-                                                   बजट बहीखाता नाम
+                                                   बजट हेड नाम
                                                 </th>
-                                                <th>Amount Request 
+                                                <th>Budget Amount Request 
                                             <br />
-                                                    राशि मांग
+                                                   बजट राशि मांग
                                                 </th>
                                                 <th>Action 
                                             <br />
@@ -147,9 +147,9 @@
                                             <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>1</span>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <%--<td align="center" valign="middle">
                                                     <span>Expense</span>
-                                                </td>
+                                                </td>--%>
                                                 <td align="center" valign="middle">
                                                     <a>10.01.01</a>
 
@@ -166,15 +166,15 @@
                                             <tr role="row" class="odd">
                                                 <td align="center" valign="middle"><span>2</span>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                               <%-- <td align="center" valign="middle">
                                                     <span>Expense</span>
-                                                </td>
+                                                </td>--%>
                                                 <td align="center" valign="middle">
                                                     <a>10.02.01</a>
 
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>Medical Expense Reimbursement</a>
+                                                    <a>Medical Expense Reimbursement </a>
                                                 </td>
                                                 <td align="center" valign="middle">
                                                     <a>100054.00</a>
@@ -182,18 +182,18 @@
                                                 <td><a class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></a>
                                                     <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                             </tr>
-                                            <tr role="row" class="odd">
+                                            <tr role="row">
                                                 <td align="center" valign="middle"><span>3</span>
                                                 </td>
-                                                <td align="center" valign="middle">
+                                                <%--<td align="center" valign="middle">
                                                     <span>Expense</span>
-                                                </td>
+                                                </td>--%>
                                                 <td align="center" valign="middle">
                                                     <a>10.01.01</a>
 
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a>Statusionery, Font Copy, Bidding</a>
+                                                    <a>Stationery, Photo Copy, Bidding</a>
                                                 </td>
                                                 <td align="center" valign="middle">
                                                     <a>10000.00</a>
@@ -202,13 +202,13 @@
                                                     <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                             </tr>
                                             <tr role="row" class="odd">
-                                                <td align="center" valign="middle"><span></span>
+                                                <td align="center" valign="middle">
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <span></span>
+                                               
                                                 </td>
                                                 <td align="center" valign="middle">
-                                                    <a></a>
+                                                  
 
                                                 </td>
                                                 <td align="center" valign="middle">
@@ -217,9 +217,7 @@
                                                 <td align="center" valign="middle">
                                                     <a>743054.00</a>
                                                 </td>
-                                                <td align="center" valign="middle">
-                                                    <a></a>
-                                                </td>
+                                               
                                             </tr>
                                             <!-- Add more rows as needed -->
                                         </tbody>
@@ -228,19 +226,19 @@
 
                             </div>
                         </div>
-                        <div class="row">
+                       <div class="row">
                             <div id="DocAppointment1" class="col-md-4">
+                                <label>Uplode Demand Order/<br />मांग पत्र अपलोड करें</label>
                                 <input type="file" id="fileInput" style="margin-left: 0px;" class="form-control" onchange="displayImage(this)">
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group text-center">
+                            <div class="col-md-6 ">
+                                <div class="form-group text-center mt-5">
 
                                     <button type="button" class="Alert-Confirmation btn btn-outline-success w-lg btn-border">Save</button>
                                     <a href="BudgetDemandRequest.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
                                 </div>
-                            </div>
-                        </div>
-
+                       </div>
+                                </div>
                     </fieldset>
                 </div>
             </div>
