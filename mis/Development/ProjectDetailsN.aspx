@@ -142,9 +142,9 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label>
-                                Select Work Category /
+                               Select Project Group /
              <br />
-                                कार्य श्रेणी का चयन करें<span style="color: red">*</span></label>
+                                प्रोजेक्ट समूह का चयन करें<span style="color: red">*</span></label>
 
                             <select class="form-control select2">
                                 <option>Select</option>
@@ -158,9 +158,9 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label>
-                                Select Work Subcategory /
+                                Select Project Category /
     <br />
-                                कार्य उपश्रेणी का चयन करें<span style="color: red">*</span></label>
+                                प्रोजेक्ट श्रेणी का चयन करें<span style="color: red">*</span></label>
 
                             <select class="form-control select2">
                                 <option>Select</option>
@@ -225,12 +225,12 @@
                                             परियोजना संख्या</th>
                                         <th>Project Request Date<br />
                                             परियोजना अनुरोध तिथि</th>
-                                        <th>Work Category
+                                        <th>Project Group
  <br />
-                                            कार्य श्रेणी</th>
-                                        <th>Work Sub Category
+                                            प्रोजेक्ट समूह</th>
+                                        <th>Project Category
                                 <br />
-                                            कार्य उप श्रेणी
+                                            प्रोजेक्ट श्रेणी
                                         </th>
                                         <th>Address
                                 <br />

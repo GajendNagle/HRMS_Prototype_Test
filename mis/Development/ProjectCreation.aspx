@@ -685,6 +685,104 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
+                                    Select Office Type /
+         <br />
+                                    कार्यालय प्रकार का चयन करें<span style="color: red; font-weight: bold">*</span></label>
+                                <select class="form-control select2" id="OIS" onchange="OisType()">
+                                    <option value="0">Select</option>
+                                    <option value="1">School</option>
+                                    <option value="2">Institute</option>
+                                    <option value="3">Office</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-3" id="ddlmngG" style="display: none">
+                            <div class="form-group">
+                                <label>
+                                    Select Management Group /
+                                    <br />
+                                    प्रबंधन समूह का चयन करें<span style="color: red; font-weight: bold">*</span></label>
+                                <select class="form-control select2">
+                                    <option value="0">Select</option>
+                                    <option value="3">Government Aided- (B)</option>
+                                    <option value="3">Private Unaided(Recognized)- (C)</option>
+                                    <option value="3">Central Government- (D)</option>
+                                    <option value="3">Other- (E)</option>
+                                    <option value="3">State Government- (V)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" id="ddlmngd" style="display: none">
+                            <div class="form-group">
+                                <label>
+                                    Select Management Group Details (Code) /
+                                    <br />
+                                    प्रबंधन समूह विवरण (कोड) का चयन करें<span style="color: red; font-weight: bold">*</span></label>
+                                <select class="form-control select2">
+                                    <option value="0">Select</option>
+                                    <option value="3">Government Aided-(4)</option>
+                                    <option value="3">Partially Govt. Aided-(7)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" id="ddlcat" style="display: none">
+                            <div class="form-group">
+                                <label>
+                                    Select Category (Code) /
+                                    <br />
+                                    श्रेणी (कोड) का चयन करें<span style="color: red; font-weight: bold">*</span></label>
+                                <select class="form-control select2">
+                                    <option value="0">Select</option>
+                                    <option value="3">Primary School-(01)</option>
+                                    <option value="3">Upper Primary School-(02)</option>
+                                    <option value="3">Secondary School-(03)</option>
+                                    <option value="3">Higher Secondary School-(04)</option>
+                                    <option value="3">Pre-Primary School-(05)</option>
+                                    <option value="3">Government Higher Secondary School-(62)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" id="ddlcatdetail" style="display: none">
+                            <div class="form-group">
+                                <label>
+                                    Select Category Details (Code) /
+             <br />
+                                    श्रेणी विवरण (कोड) का चयन करें<span style="color: red; font-weight: bold">*</span></label>
+                                <select class="form-control select2">
+                                    <option value="0">Select</option>
+                                    <option value="3">Primary Only with grades 1 to 5(PRY)-(1)</option>
+                                    <option value="3">Primary Only with grades K.G to 5-(12)</option>
+                                    <option value="3">Upper Primary with  grades 1 to 8(PRY-UPR)-(2)</option>
+                                    <option value="3">Upper Primary with  grades 6 to 8(UPR)-(4)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" id="ddlspc" style="display: none">
+                            <div class="form-group">
+                                <label>
+                                    Select Special School (Code) /
+             <br />
+                                    विशेष स्कूल (कोड) का चयन करें<span style="color: red; font-weight: bold">*</span></label>
+                                <select class="form-control select2">
+                                    <option value="0">Select</option>
+                                    <option value="3">CM Rise School(01)</option>
+                                    <option value="3">Model School-(02)</option>
+                                    <option value="3">CM Rise/Model (Both) School-(03)</option>
+                                    <option value="3">District Excellence School-(04)</option>
+                                    <option value="3">Block Excellence School-(05)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" id="ddldivision" style="display: none">
+                            <div class="form-group">
+                                <label>
                                     Select Division (Code) /
          <br />
                                     संभाग (कोड) का चयन करें<span style="color: red; font-weight: bold">*</span></label>
@@ -701,7 +799,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3" id="ddldistrict" style="display: none">
                             <div class="form-group">
                                 <label>
                                     Select District (Code) /
@@ -717,7 +815,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3" id="ddlblock" style="display: none">
                             <div class="form-group">
                                 <label>
                                     Select Block (Code) /
@@ -737,8 +835,8 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
-                                    Select Project Location
-             <br />
+                                    Select Project Location /
+            <br />
                                     परियोजना स्थान का चयन करें
                                 </label>
                                 <span style="color: red; font-weight: bold">*</span>
@@ -850,105 +948,105 @@
                         </div>
                     </div>--%>
                 </fieldset>
-            </fieldset>
-            <fieldset>
-                <legend>Project Documents / परियोजना दस्तावेज़</legend>
+
+                <fieldset>
+                    <legend>Project Documents / परियोजना दस्तावेज़</legend>
 
 
-                <div class="row align-items-end">
+                    <div class="row align-items-end">
 
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Select Document Type
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Select Document Type
                                 <br />
-                                दस्तावेज़ प्रकार	का चयन करें<span style="color: red; font-weight: bold">*</span></label>
+                                    दस्तावेज़ प्रकार	का चयन करें<span style="color: red; font-weight: bold">*</span></label>
 
-                            <select class="form-control select2" id="A1">
-                                <option value="Select">Select</option>
-                                <option value="Technical">Technical	</option>
-                                <option value="Financial">Financial	</option>
-
-
-                            </select>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Select Document Type Details
-
-                                <br />
-                                दस्तावेज़ प्रकार विवरण का चयन करें<span style="color: red; font-weight: bold">*</span></label>
+                                <select class="form-control select2" id="A1">
+                                    <option value="Select">Select</option>
+                                    <option value="Technical">Technical	</option>
+                                    <option value="Financial">Financial	</option>
 
 
+                                </select>
 
-                            <select class="form-control select2" id="A2">
-                                <option value="Select">Select</option>
-                                <option value="Map">Map</option>
-                                <option value="Tender Copy">Tender Copy</option>
-                                <option value="Cost Sheet	">Cost Sheet	</option>
-                                <option value="Budget Approval	">Budget Approval	</option>
-
-                            </select>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Upload Document
-
-
-                                <br />
-                                दस्तावेज़ अपलोड करें	
-                            </label>
-                            <span style="color: red; font-weight: bold">*</span>
-
-                            <input type="file" class="form-control" />
-
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="button" class="btn-sm btn-success text-white" value="Add" onclick="addData1()" />
-
-                    </div>
-                </div>
-                <fieldset id="fielset1" style="display: none">
-                    <legend>Details / विवरण</legend>
-                    <div class="row form-group">
-                        <div class="col-md-12">
-                            <div class="table-responsive">
-                                <table class="table table-bordered text-center" id="Table1">
-                                    <thead class="nowrap">
-                                        <tr>
-                                            <th>Sr.No.
-                                            <br />
-                                                क्रमांक</th>
-                                            <th>Document Type<br />
-                                                दस्तावेज़ प्रकार</th>
-                                            <th>Document Type Details<br />
-                                                दस्तावेज़ प्रकार विवरण</th>
-                                            <th>Upload Document
-                                            <br />
-                                                दस्तावेज़ अपलोड करें</th>
-
-                                            <%-- <th>View</th>--%>
-                                            <th>Action</th>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody id="tbody1"></tbody>
-                                </table>
                             </div>
                         </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Select Document Type Details
+
+                                <br />
+                                    दस्तावेज़ प्रकार विवरण का चयन करें<span style="color: red; font-weight: bold">*</span></label>
+
+
+
+                                <select class="form-control select2" id="A2">
+                                    <option value="Select">Select</option>
+                                    <option value="Map">Map</option>
+                                    <option value="Tender Copy">Tender Copy</option>
+                                    <option value="Cost Sheet	">Cost Sheet	</option>
+                                    <option value="Budget Approval	">Budget Approval	</option>
+
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Upload Document
+
+
+                                <br />
+                                    दस्तावेज़ अपलोड करें	
+                                </label>
+                                <span style="color: red; font-weight: bold">*</span>
+
+                                <input type="file" class="form-control" />
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn-sm btn-success text-white" value="Add" onclick="addData1()" />
+
+                        </div>
                     </div>
+                    <fieldset id="fielset1" style="display: none">
+                        <legend>Details / विवरण</legend>
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered text-center" id="Table1">
+                                        <thead class="nowrap">
+                                            <tr>
+                                                <th>Sr.No.
+                                            <br />
+                                                    क्रमांक</th>
+                                                <th>Document Type<br />
+                                                    दस्तावेज़ प्रकार</th>
+                                                <th>Document Type Details<br />
+                                                    दस्तावेज़ प्रकार विवरण</th>
+                                                <th>Upload Document
+                                            <br />
+                                                    दस्तावेज़ अपलोड करें</th>
 
-                </fieldset>
+                                                <%-- <th>View</th>--%>
+                                                <th>Action</th>
 
-                <%--<div class="row form-group">
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tbody1"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                    <%--<div class="row form-group">
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center" id="Table1">
@@ -1003,113 +1101,113 @@
                         </div>
                     </div>
                 </div>--%>
-            </fieldset>
-            <fieldset>
-                <legend>Milestones / माइलस्टोन</legend>
-                <div class="row align-items-end">
+                </fieldset>
+                <fieldset>
+                    <legend>Milestones / माइलस्टोन</legend>
+                    <div class="row align-items-end">
 
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Select Work Name
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Select Work Name
 
                                 <br />
-                                कार्य का नाम का चयन करें
-                            </label>
-                            <span style="color: red; font-weight: bold">*</span>
+                                    कार्य का नाम का चयन करें
+                                </label>
+                                <span style="color: red; font-weight: bold">*</span>
 
-                            <select class="form-control select2" id="B1">
-                                <option value="Select">Select</option>
-                                <option value="इमारत मरम्मत">इमारत मरम्मत</option>
-                                <option value="हेंडपंप खनन">हेंडपंप खनन</option>
-                                <option value="सी.सी. सड़क निर्माण">सी.सी. सड़क निर्माण</option>
-                            </select>
+                                <select class="form-control select2" id="B1">
+                                    <option value="Select">Select</option>
+                                    <option value="इमारत मरम्मत">इमारत मरम्मत</option>
+                                    <option value="हेंडपंप खनन">हेंडपंप खनन</option>
+                                    <option value="सी.सी. सड़क निर्माण">सी.सी. सड़क निर्माण</option>
+                                </select>
 
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Select Work Completion Date
-                                <br />
-                                कार्य पूरा करने की दिनांक	 चयन करें<span style="color: red; font-weight: bold">*</span>
-                            </label>
-                            
-                            <input type="date" class="form-control" id="B2" />
-
-
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Enter Work Completion %
-                                <br />
-                                कार्य प्रतिशत दर्ज करें
-                           <span style="color: red; font-weight: bold">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter Work Completion % " id="B3" />
-
-
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Enter Payment %
-                                <br />
-                                भुगतान प्रतिशत	 दर्ज करें
-                            </label>
-                            <span style="color: red; font-weight: bold">*</span>
-                            <input type="text" class="form-control" placeholder="Enter Enter Payment %" id="B4" />
-
-
-                        </div>
-                    </div>
-                    <div class="form-group ">
-                        <div class="col-md-2">
-                            <input type="button" class="btn-sm btn-success text-white" value="Add" onclick="addData3()" />
-                        </div>
-                    </div>
-
-                </div>
-
-                <fieldset id="fielset2" style="display: none">
-                    <legend>Details / विवरण</legend>
-                    <div class="row form-group">
-                        <div class="col-md-12">
-                            <div class="table-responsive">
-                                <table class="table table-bordered text-center" id="Table2">
-                                    <thead class="nowrap">
-                                        <tr>
-                                            <th>Sr.No.
-                                            <br />
-                                                क्रमांक</th>
-                                            <th>Work  Name<br />
-                                                कार्य  का नाम</th>
-                                            <th>Work Completion Date<br />
-                                                कार्य पूरा करने की दिनांक</th>
-                                            <th>Work Completion %
-                            <br />
-                                                प्रतिशत
-                                            </th>
-                                            <th>Payment %<br />
-                                                भुगतान प्रतिशत
-                                            </th>
-                                            <th>Action
-                                           
-                                            </th>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody id="tbody2"></tbody>
-                                </table>
                             </div>
                         </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Select Work Completion Date
+                                <br />
+                                    कार्य पूरा करने की दिनांक	 चयन करें<span style="color: red; font-weight: bold">*</span>
+                                </label>
+
+                                <input type="date" class="form-control" id="B2" />
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Enter Work Completion %
+                                <br />
+                                    कार्य प्रतिशत दर्ज करें
+                           <span style="color: red; font-weight: bold">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter Work Completion % " id="B3" />
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Enter Payment %
+                                <br />
+                                    भुगतान प्रतिशत	 दर्ज करें
+                                </label>
+                                <span style="color: red; font-weight: bold">*</span>
+                                <input type="text" class="form-control" placeholder="Enter Enter Payment %" id="B4" />
+
+
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <div class="col-md-2">
+                                <input type="button" class="btn-sm btn-success text-white" value="Add" onclick="addData3()" />
+                            </div>
+                        </div>
+
                     </div>
 
-                </fieldset>
+                    <fieldset id="fielset2" style="display: none">
+                        <legend>Details / विवरण</legend>
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered text-center" id="Table2">
+                                        <thead class="nowrap">
+                                            <tr>
+                                                <th>Sr.No.
+                                            <br />
+                                                    क्रमांक</th>
+                                                <th>Work  Name<br />
+                                                    कार्य  का नाम</th>
+                                                <th>Work Completion Date<br />
+                                                    कार्य पूरा करने की दिनांक</th>
+                                                <th>Work Completion %
+                            <br />
+                                                    प्रतिशत
+                                                </th>
+                                                <th>Payment %<br />
+                                                    भुगतान प्रतिशत
+                                                </th>
+                                                <th>Action
+                                           
+                                                </th>
 
-                <%--  <div class="row form-group">
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tbody2"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                    <%--  <div class="row form-group">
                     <div class="col-md-12">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center">
@@ -1197,122 +1295,126 @@
                         </div>
                     </div>
                 </div>--%>
-            </fieldset>
+                </fieldset>
 
 
 
-            <fieldset>
-                <legend>Project Monitoring Authority / परियोजना निगरानी प्राधिकरण</legend>
+                <fieldset>
+                    <legend>Project Monitoring Authority / परियोजना निगरानी प्राधिकरण</legend>
 
-                <div class="row align-items-end">
+                    <div class="row align-items-end">
 
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Enter Employee Id<br />
-                                कर्मचारी आईडी दर्ज करें<span style="color: red">*</span>
-                            </label>
-                          
-                            <input type="text" class="form-control" id="txtempid" placeholder="Enter OIS Code" onchange="DIVShow()" />
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-end" id="NewField">
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Name<br />
-                                नाम 
-                            </label>
-                           
-                            <input type="text" class="form-control" id="txtname" value="Niraj Verma" readonly />
-                        </div>
-                    </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Enter Employee Id<br />
+                                    कर्मचारी आईडी दर्ज करें<span style="color: red">*</span>
+                                </label>
 
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Designation<br />
-                                पद का नाम 
-                            </label>
-                           
-                            <input type="text" class="form-control" id="txtDesignation" value="executive director" readonly />
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Office Location<br />
-                                कार्यालय स्थान
-                            </label>
-                            
-                            <input type="text" class="form-control" id="txtOffice" value="Bhopal" readonly />
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Select Role
-            <br />
-                                भूमिका का चयन करें</label>
-
-                            <select class="form-control select2" id="ddlrole">
-                                <option>Select</option>
-                                <option>Side Engg.</option>
-                                <option>Inspection Officer</option>
-                                <option>Purchase Officer</option>
-                                <option>Auditor</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <hr />
-                <div class="row align-items-end">
-                    <div class="col-md-6">
-                        <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="addData2()">Add</button>
-                        <button type="button" class="btn btn-outline-danger waves-effect  w-lg" data-bs-dismiss="modal">Clear</button>
-                    </div>
-                </div>
-                <fieldset id="fielset" style="display: none">
-                    <legend>Details / विवरण</legend>
-                    <div class="row form-group">
-                        <div class="col-md-12">
-                            <div class="table-responsive">
-                                <table class="table table-bordered text-center" id="table1">
-                                    <thead class="nowrap">
-                                        <tr>
-                                            <th>Sr.No.
-                                            <br />
-                                                क्रमांक</th>
-                                            <th>Name<br />
-                                                नाम</th>
-                                            <th>Designation<br />
-                                                पद का नाम</th>
-                                            <th>Office Location
-                                            <br />
-                                                कार्यालय स्थान</th>
-                                            <th>Role
-                               <br />
-                                                भूमिका
-                                            </th>
-                                            <th>Action</th>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody id="tbody"></tbody>
-                                </table>
+                                <input type="text" class="form-control" id="txtempid" placeholder="Enter OIS Code" onchange="DIVShow()" />
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border w-lg" data-bs-dismiss="modal">Final Save</button>
+                    <div class="row align-items-end" id="NewField">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Name<br />
+                                    नाम 
+                                </label>
+
+                                <input type="text" class="form-control" id="txtname" value="Niraj Verma" readonly />
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Designation<br />
+                                    पद का नाम 
+                                </label>
+
+                                <input type="text" class="form-control" id="txtDesignation" value="executive director" readonly />
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Office Location<br />
+                                    कार्यालय स्थान
+                                </label>
+
+                                <input type="text" class="form-control" id="txtOffice" value="Bhopal" readonly />
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Select Role
+            <br />
+                                    भूमिका का चयन करें</label>
+
+                                <select class="form-control select2" id="ddlrole">
+                                    <option>Select</option>
+                                    <option>Side Engg.</option>
+                                    <option>Inspection Officer</option>
+                                    <option>Purchase Officer</option>
+                                    <option>Auditor</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
+                    <hr />
+                    <div class="row align-items-end">
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="addData2()">Add</button>
+
+                        </div>
+                    </div>
+                    <fieldset id="fielset" style="display: none">
+                        <legend>Details / विवरण</legend>
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered text-center" id="table1">
+                                        <thead class="nowrap">
+                                            <tr>
+                                                <th>Sr.No.
+                                            <br />
+                                                    क्रमांक</th>
+                                                <th>Name<br />
+                                                    नाम</th>
+                                                <th>Designation<br />
+                                                    पद का नाम</th>
+                                                <th>Office Location
+                                            <br />
+                                                    कार्यालय स्थान</th>
+                                                <th>Role
+                               <br />
+                                                    भूमिका
+                                                </th>
+                                                <th>Action</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tbody"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
                 </fieldset>
             </fieldset>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border w-lg" data-bs-dismiss="modal">Final Save</button>
+
+                    <button type="button" class="btn btn-outline-danger waves-effect  w-lg" data-bs-dismiss="modal">Clear</button>
+                </div>
+            </div>
         </div>
     </div>
 </asp:Content>
@@ -1543,5 +1645,59 @@
         }
     </script>
     <script src="../../js/multiselect-dropdown.js"></script>
+
+    <script>
+        function OisType() {
+            var ForwordTo = document.getElementById("OIS").value;
+            if (ForwordTo == "1") {
+                document.getElementById('ddlmngG').style.display = "block";
+                document.getElementById('ddlmngd').style.display = "block";
+                document.getElementById('ddlcat').style.display = "block";
+                document.getElementById('ddlcatdetail').style.display = "block";
+                document.getElementById('ddlspc').style.display = "block";
+                document.getElementById('ddldivision').style.display = "none";
+                document.getElementById('ddldistrict').style.display = "none";
+                document.getElementById('ddlblock').style.display = "none";
+
+
+            }
+            else if (ForwordTo == "2") {
+
+                document.getElementById('ddldivision').style.display = "block";
+                document.getElementById('ddldistrict').style.display = "block";
+                document.getElementById('ddlblock').style.display = "block";
+
+                document.getElementById('ddlmngG').style.display = "none";
+                document.getElementById('ddlmngd').style.display = "none";
+                document.getElementById('ddlcat').style.display = "none";
+                document.getElementById('ddlcatdetail').style.display = "none";
+                document.getElementById('ddlspc').style.display = "none";
+
+            } else if (ForwordTo == "3") {
+
+                document.getElementById('ddldivision').style.display = "block";
+                document.getElementById('ddldistrict').style.display = "block";
+                document.getElementById('ddlblock').style.display = "block";
+
+                document.getElementById('ddlmngG').style.display = "none";
+                document.getElementById('ddlmngd').style.display = "none";
+                document.getElementById('ddlcat').style.display = "none";
+                document.getElementById('ddlcatdetail').style.display = "none";
+                document.getElementById('ddlspc').style.display = "none";
+            }
+            else {
+                document.getElementById('ddlmngG').style.display = "none";
+                document.getElementById('ddlmngd').style.display = "none";
+                document.getElementById('ddlcat').style.display = "none";
+                document.getElementById('ddlcatdetail').style.display = "none";
+                document.getElementById('ddlspc').style.display = "none";
+                document.getElementById('ddldivision').style.display = "none";
+                document.getElementById('ddldistrict').style.display = "none";
+                document.getElementById('ddlblock').style.display = "none";
+
+
+            }
+        }
+    </script>
 </asp:Content>
 

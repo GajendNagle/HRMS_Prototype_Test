@@ -54,7 +54,7 @@
                         <div class="form-group">
 
                             <label>
-                                Select State Name<br />
+                                Select State Name /<br />
                                 राज्य का चयन करें<span style="color: red">*</span>
                             </label>
                             <select class="select2">
@@ -70,7 +70,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter GSTIN No.<br />
+                                Enter GSTIN No. /<br />
                                 जीएसटीआईएन नंबर दर्ज करें<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter GSTIN No." />
@@ -80,7 +80,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter PAN No.<br />
+                                Enter PAN No. /<br />
                                 पैन नंबर दर्ज करें<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter GSTIN No." />
@@ -90,7 +90,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Firm Name<br />
+                                Enter Firm Name /<br />
                                 संस्था का नाम दर्ज करें<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter Firm Name" />
@@ -102,7 +102,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Firm Mail Id<br />
+                                Enter Firm Mail Id /<br />
                                 संस्था का मेल आईडी दर्ज करें<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter  Firm Mail Id" />
@@ -112,7 +112,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Firm Address<br />
+                                Enter Firm Address /<br />
                                 संस्था का पता दर्ज करें<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter Firm Address" />
@@ -122,7 +122,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Pin Code No<br />
+                                Enter Pin Code No /<br />
                                 पिन कोड नंबर दर्ज करें<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter Pin Code No" />
@@ -132,7 +132,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Contact Person Name<br />
+                                Enter Contact Person Name /<br />
                                 संपर्क व्यक्ति का नाम दर्ज करें<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter Contact Person Name" />
@@ -144,7 +144,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Enter Contact Person No.<br />
+                                Enter Contact Person No. /<br />
                                 संपर्क व्यक्ति का नंबर दर्ज करें<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" placeholder="Enter Contact Person No." />
@@ -164,7 +164,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Upload GSTIN Copy<br />
+                                Upload GSTIN Copy /<br />
                                 संस्था का जीएसटीआईएन पंजीकरण अपलोड करें
                             </label>
                             <input type="file" class="form-control" placeholder="Enter Contact Person No." />
@@ -217,9 +217,9 @@
                     </div>
                     <div class="col-md-3">
                         <label>
-                            Select Bank Name
+                            Select Bank Name/
         <br />
-                            बैंक का चयन करें</label>
+                            बैंक का चयन करें<span style="color: red">*</span></label>
                         <select class="select2">
                             <option>Select</option>
                             <option>Bank of Baroda</option>
@@ -231,18 +231,18 @@
 
                     <div class="col-md-3">
                         <label>
-                            Enter Bank Account No.
+                            Enter Bank Account No./
                             <br />
-                            बैंक खाता नंबर दर्ज करें.</label>
+                            बैंक खाता नंबर दर्ज करें<span style="color: red">*</span></label>
                         <input type="text" class="form-control" placeholder="Enter Bank Account No." />
                     </div>
                 </div>
                 <div class="row align-items-end">
                     <div class="col-md-3">
                         <label>
-                            Enter Account Holder Name
+                            Enter Account Holder Name/
                          <br />
-                            खाताधारक का नाम दर्ज करें</label>
+                            खाताधारक का नाम दर्ज करें<span style="color: red">*</span></label>
                         <input type="text" class="form-control" placeholder="Enter Account Holder Name" />
                     </div>
                 </div>
