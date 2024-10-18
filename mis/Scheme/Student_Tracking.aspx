@@ -74,28 +74,26 @@
                 <fieldset runat="server" id="Student">
                     <legend>Student Tracking / छात्र ट्रैकिंग</legend>
                     <div class="student-profile py-12">
-                        <div class="container">
+                        <div class="">
                             <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="card shadow-sm">
-                                        <div class="col-md-12">
-                                            <div class="col-md-3">
-                                                <label>
-                                                    Enter Samagra Id<br />
-                                                    समग्र आईडी दर्ज करें
-                                                    <span style="color: red">*</span></label>
-                                                <input type="text" class="form-control" autocomplete="off" placeholder="Enter samagra ID" />
-                                            </div>
-                                            <hr />
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <asp:Button Text="Search" runat="server" OnClick="btnSerch_Click" ID="btnSerch" class="Alert-Confirmation btn btn-success btn-border w-lg"></asp:Button>
-                                                    <a href="Student_Tracking.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
-                                                </div>
+                                <div class="col-md-12">
 
-                                            </div>
-                                        </div>
+                                    <div class="col-md-3">
+                                        <label>
+                                            Enter Samagra Id<br />
+                                            समग्र आईडी दर्ज करें
+                                                    <span style="color: red">*</span></label>
+                                        <input type="text" class="form-control" autocomplete="off" placeholder="Enter samagra ID" />
                                     </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <asp:Button Text="Search" runat="server" OnClick="btnSerch_Click" ID="btnSerch" class="Alert-Confirmation btn btn-success btn-border w-lg"></asp:Button>
+                                            <a href="Student_Tracking.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+                                        </div>
+
+                                    </div>
+
 
                                 </div>
                             </div>
@@ -106,10 +104,10 @@
                 <fieldset runat="server" id="Studenttraking" visible="false">
                     <legend>Student Tracking / छात्र ट्रैकिंग</legend>
                     <div class="student-profile py-12">
-                        <div class="container">
+                        <div class="">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <div class="card shadow-sm">
+                                    <div class="">
                                         <div class="card-header bg-transparent text-center">
 
                                             <img class="profile_img" src="../dist/images/avatar-13.png" alt="">
@@ -123,7 +121,7 @@
 
                                         <div style="min-height: 12rem;" class="card-body">
                                             <div class="col-lg-12">
-                                                <div class="card shadow-sm">
+                                                <div class="">
                                                     <div class="card-header bg-transparent border-0">
                                                         <h3 style="color: black;"><i class="far fa-clone pr-1"></i>General Information</h3>
                                                     </div>
@@ -131,29 +129,34 @@
                                                         <div class="table-responsive-lg">
                                                             <table class="table table-bordered">
                                                                 <tr>
-                                                                    <th width="30%">Date of birth<br />जन्म-दिनांक : </th>
+                                                                    <th width="30%">Date of birth<br />
+                                                                        जन्म-दिनांक : </th>
                                                                     <td width="2%">:</td>
                                                                     <td>03/03/2007</td>
-                                                                    <th width="30%" class="text-gray-lighter">Gender<br />लिंग	</th>
+                                                                    <th width="30%" class="text-gray-lighter">Gender<br />
+                                                                        लिंग	</th>
                                                                     <td width="2%">:</td>
-                                                                    <td>Boy</td>
+                                                                    <td>Male</td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <th width="30%">Father's Name<br />पिता का नाम </th>
+                                                                    <th width="30%">Father's Name<br />
+                                                                        पिता का नाम </th>
                                                                     <td width="2%">:</td>
                                                                     <td>Bhagvan Singh</td>
-                                                                    <th width="30%">Mother's Name<br />माता का नाम</th>
+                                                                    <th width="30%">Mother's Name<br />
+                                                                        माता का नाम</th>
                                                                     <td width="2%">:</td>
                                                                     <td>Gulab Bai</td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <th>Address<br />पता</th>
+                                                                    <th>Address<br />
+                                                                        पता</th>
                                                                     <td>:</td>
                                                                     <td colspan="4">ग्राम / वार्ड -Birha Shym Khedi  जिला -Bhopal</td>
                                                                 </tr>
                                                             </table>
-                                                            </div>
                                                         </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -162,7 +165,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <div class="card shadow-sm">
+                                    <div class="">
                                         <div class="card-header bg-transparent border-0">
                                         </div>
 
@@ -172,34 +175,34 @@
                                         <%--     <div class="container">
                                             <h2>Example 3 </h2>
                                         </div>--%>
-                                        <div id="exTab3" class="container">
+                                        <div id="exTab3">
                                             <ul class="nav nav-pills">
                                                 <li class="active">
-                                                    <button type="button" class="btn btn-primary" href="#1b" data-toggle="tab">अकादमिक ट्रैकिंग</button>
+                                                    <button type="button" class="btn btn-outline-primary mb-2" href="#1b" data-toggle="tab">अकादमिक ट्रैकिंग</button>&nbsp
 
                                                 </li>
                                                 <li>
-                                                    <button type="button" class="btn btn-success" href="#2b" data-toggle="tab">छात्रवृत्ति</button>
+                                                    <button type="button" class="btn btn-outline-success" href="#2b" data-toggle="tab">छात्रवृत्ति</button>&nbsp
 
                                                 </li>
                                                 <li>
-                                                    <button type="button" class="btn btn-danger" href="#3b" data-toggle="tab">साइकिल (9 th)</button>
+                                                    <button type="button" class="btn btn-outline-danger" href="#3b" data-toggle="tab">साइकिल (9 th)</button>&nbsp
 
                                                 </li>
                                                 <li>
-                                                    <button type="button" class="btn btn-warning" href="#4a" data-toggle="tab">साइकिल (6 th)</button>
+                                                    <button type="button" class="btn btn-outline-warning" href="#4a" data-toggle="tab">साइकिल (6 th)</button>&nbsp
 
                                                 </li>
                                                 <li>
-                                                    <button type="button" class="btn btn-info" href="#5a" data-toggle="tab">CWSN ट्रैकिंग</button>
+                                                    <button type="button" class="btn btn-outline-info" href="#5a" data-toggle="tab">CWSN ट्रैकिंग</button>&nbsp
 
                                                 </li>
                                                 <li>
-                                                    <button type="button" class="btn btn-dark" href="#6a" data-toggle="tab">गणवेश वितरण</button>
+                                                    <button type="button" class="btn btn-outline-dark" href="#6a" data-toggle="tab">गणवेश वितरण</button>&nbsp
                                                     <%--<a href="#6a" data-toggle="tab">गणवेश वितरण</a> - |--%>
                                                 </li>
                                                 <li>
-                                                    <button type="button" class="btn btn-success" href="#7a" data-toggle="tab">सैनिटरी पैड वितरण</button>
+                                                    <button type="button" class="btn btn-outline-success" href="#7a" data-toggle="tab">सैनिटरी पैड वितरण</button>
                                                     <%--                                                    <a href="#7a" data-toggle="tab">सैनिटरी पैड वितरण </a>--%>
                                                 </li>
                                             </ul>
@@ -208,17 +211,25 @@
                                                 <div class="tab-pane active" id="1b">
                                                     <div class="card-body pt-0">
 
-                                                        <table class="table table-bordered table-responsive">
+                                                        <table class="footable table  table-striped table-bordered" cellspacing="0" rules="all" border="1" style="border-collapse: collapse;">
                                                             <thead>
                                                                 <tr>
 
-                                                                    <th scope="col">#</th>
-                                                                    <th scope="col">Academic Year<br />शैक्षणिक वर्ष</th>
-                                                                    <th scope="col">District<br />जिला</th>
-                                                                    <th scope="col">Block<br />ब्लॉक</th>
-                                                                    <th scope="col">School<br />शाला</th>
-                                                                    <th scope="col">Class<br />कक्षा</th>
-                                                                    <th scope="col">%</th>
+                                                                    <th scope="col">Sr.No. /<br />
+                                                                        सरल क्रमांक</th>
+                                                                    <th scope="col">Academic Year /<br />
+                                                                        शैक्षणिक वर्ष</th>
+                                                                    <th scope="col">District /<br />
+                                                                        जिला</th>
+                                                                    <th scope="col">Block /<br />
+                                                                        ब्लॉक</th>
+                                                                    <th scope="col">School Name-UDISE Code /<br />
+                                                                        शाला का नाम-UDISE कोड </th>
+                                                                    <th scope="col">Class /
+                                                                        <br />
+                                                                        कक्षा</th>
+                                                                    <th scope="col">Percentage /<br />
+                                                                        प्रतिशत</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -332,13 +343,20 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col">#</th>
-                                                                    <th scope="col">Class<br />क्लास</th>
-                                                                    <th scope="col">Academic Year<br />शैक्षणिक वर्ष</th>
-                                                                    <th scope="col">Department<br />विभाग</th>
-                                                                    <th scope="col">Scheme<br />योजना</th>
-                                                                    <th  scope="col">Approved Date<br />स्वीकृत दिनाँक</th>
-                                                                    <th scope="col">Amount<br />राशि</th>
-                                                                    <th scope="col">Description<br />विवरण</th>
+                                                                    <th scope="col">Class<br />
+                                                                        क्लास</th>
+                                                                    <th scope="col">Academic Year<br />
+                                                                        शैक्षणिक वर्ष</th>
+                                                                    <th scope="col">Department<br />
+                                                                        विभाग</th>
+                                                                    <th scope="col">Scheme<br />
+                                                                        योजना</th>
+                                                                    <th scope="col">Approved Date<br />
+                                                                        स्वीकृत दिनाँक</th>
+                                                                    <th scope="col">Amount<br />
+                                                                        राशि</th>
+                                                                    <th scope="col">Description<br />
+                                                                        विवरण</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>

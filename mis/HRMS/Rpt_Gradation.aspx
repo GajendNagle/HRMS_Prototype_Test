@@ -51,7 +51,7 @@
                             <label>
                                 Select Division Name
      <br />
-                                संभाग का चयन करें</label>
+                                संभाग का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Bhopal</option>
@@ -72,7 +72,7 @@
                             <label>
                                 Select District Name
              <br />
-                                जिला का चयन करें</label>
+                                जिला का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl02" class="form-control select2">
                                 <option value="--Select--">--Select--</option>
                                 <option value="Bhopal">Bhopal</option>
@@ -137,7 +137,7 @@
                                 <br />
                                 पदनाम का चयन करें</label>
                             <select class="form-control select2">
-                                <option value="--Select--">--Select--</option>
+                                <option>All</option>
                                 <option value="Bhopal">DEO</option>
                                 <option value="Gwalior">JD</option>
                                 <option value="Narmadapuram">Ucch Madhyamik Shikshak</option>
@@ -180,10 +180,10 @@
                                 <thead class="nowrap">
                                     <tr>
                                         <th>Sr.No.
-                <br />
+                                            <br />
                                             क्रमांक</th>
                                         <th>Unique Id
-                                <br />
+                <br />
                                             यूनिक आईडी
                                         </th>
                                         <th>Name<br />
@@ -197,68 +197,65 @@
                                             जन्म तिथि</th>
                                         <th>Appointment Type<br />
                                             नियुक्ति का प्रकार</th>
-                                        <th>Profession Ai Qualification On<br />
-                                            प्रोफेशन एआई योग्यता पर</th>
-                                        <th>UG Subject
-                                <br />
-                                            यूजी विषय
-                                        </th>
-                                        <th>PG Subject-1
-                                <br />
-                                            पीजी विषय-2
-                                        </th>
-                                        <th>PG Subject-2
-                                <br />
-                                            पीजी विषय-2
-                                        </th>
+                                        <th>Subject Panel<br />
+                                             विषय पैनल</th>
                                         <th>Home District
-                                <br />
-                                            गृह जिला
+                <br />
+                                            होम जिला
                                         </th>
                                         <th>Date Of First Appointment in Gov Service
-                                <br />
+                <br />
                                             सरकारी सेवा में प्रथम नियुक्ति की तिथि
                                         </th>
                                         <th>First Appointment Designation
-                                <br />
+                <br />
                                             प्रथम नियुक्ति पदनाम
                                         </th>
                                         <th>Date Of Appointment in UDT By Promotion
-                                <br />
-                                            यूडीटी में पदोन्नति द्वारा नियुक्ति की तिथि
+                <br />
+                                            यू.डी.टी. में पदोन्नति द्वारा नियुक्ति की तिथि
                                         </th>
                                         <th>Date Of Appointment in Present Cadre
-                                <br />
+                <br />
                                             वर्तमान कैडर में नियुक्ति की तिथि
                                         </th>
                                         <th>Date Of Seniority in Present Cadre
-                                <br />
+                <br />
                                             वर्तमान कैडर में वरिष्ठता की तिथि
                                         </th>
                                         <th>Date Of Appointment in HM
-                                <br />
+                <br />
                                             एचएम में नियुक्ति की तिथि
                                         </th>
                                         <th>Inter Division/Local body Samvilion/Transfer Date
-                                <br />
+                <br />
                                             अंतर संभाग/स्थानीय निकाय संविलियन/स्थानांतरण तिथि
                                         </th>
-                                        <th>Present Posting Place
-                                <br />
+                                      <%--  <th>Present Posting Place
+                <br />
                                             वर्तमान पोस्टिंग स्थान
+                                        </th>--%>
+                                        <th>Present DDO/Sankul Name Code
+                <br />
+                                            वर्तमान डीडीओ/संकुल नाम कोड
                                         </th>
-                                        <th>Udise Code
-                                <br />
-                                            यू डायस कोड 
+                                        <th>Present OIS Name Code
+                <br />
+                                            वर्तमान OIS नाम कोड 
                                         </th>
                                         <th>Present Posting District
-                                <br />
+                <br />
                                             वर्तमान पोस्टिंग जिला
                                         </th>
+                                        <th>Employee Qualification
+                <br />
+                                            कर्मचारी योग्यता
+                                        </th>
                                         <th>Remark
-                                <br />
+                <br />
                                             टिप्पणी
                                         </th>
+
                                     </tr>
                                 </thead>
 
@@ -268,79 +265,72 @@
                                     <td>Mamta Kori</td>
                                     <td>Sc</td>
                                     <td>Female</td>
-                                    <td>25-02-2024</td>
+                                    <td>25-07-1962</td>
                                     <td>Dir</td>
-                                    <td>BED</td>
-                                    <td>Social Science</td>
-                                    <td>Political Science</td>
-                                    <td>Physics</td>
+                                    <td>HS-2 Science</td>
                                     <td>Katni</td>
-                                    <td>24-02-2000</td>
+                                    <td>24-02-1981</td>
                                     <td>UDT</td>
                                     <td>Nil</td>
-                                    <td>20-04-2001</td>
-                                    <td>02-06-2022</td>
-                                    <td>05-07-2023</td>
+                                    <td>24-02-1981</td>
+                                    <td>20-04-1981</td>
+                                    <td>02-06-1981</td>
                                     <td>Nil</td>
-                                    <td>MS Kishanpur</td>
-                                    <td>23380200101</td>
+                                    <%--<td>MS BARGWAN</td>--%>
+                                    <td>GHS ADARSH GIRLS SIDHI-23380200101</td>
+                                    <td>Govt.HSS KERPANI SARSALA-23802OS356</td>
                                     <td>Panna</td>
+                                    <td>Architecture</td>
                                     <td>NO</td>
-
                                 </tr>
-
                                 <tr>
                                     <td>2</td>
-                                    <td>An345</td>
-                                    <td>Ankita Singh</td>
+                                    <td>MA4567</td>
+                                    <td>Maniram Ahirvar</td>
                                     <td>Sc</td>
-                                    <td>Female</td>
-                                    <td>25-02-2024</td>
+                                    <td>Male</td>
+                                    <td>18-10-1961</td>
                                     <td>Dir</td>
-                                    <td>BED</td>
-                                    <td>Social Science</td>
-                                    <td>Political Science</td>
-                                    <td>Physics</td>
+                                    <td>HS-1 Hindi</td>
                                     <td>Katni</td>
-                                    <td>24-02-2000</td>
+                                    <td>24-02-1981</td>
                                     <td>UDT</td>
                                     <td>Nil</td>
-                                    <td>20-04-2001</td>
-                                    <td>02-06-2022</td>
-                                    <td>05-07-2023</td>
+                                    <td>24-02-1981</td>
+                                    <td>20-04-1981</td>
+                                    <td>02-06-1981</td>
                                     <td>Nil</td>
-                                    <td>MS Kishanpur</td>
-                                    <td>23380200101</td>
-                                    <td>Panna</td>
+                                    <%--<td>MS BARGWAN</td>--%>
+                                    <td>GHS ADARSH GIRLS SIDHI-23380200101</td>
+                                    <td>Govt.HSS KERPANI SARSALA-23802OS356</td>
+                                    <td>Katni</td>
+                                    <td>Architecture</td>
                                     <td>NO</td>
-
                                 </tr>
 
                                 <tr>
                                     <td>3</td>
-                                    <td>R2346</td>
-                                    <td>Rahul Verma</td>
+                                    <td>Ganga Ram Maravi</td>
+                                    <td>Mamta Kori</td>
                                     <td>Sc</td>
                                     <td>Male</td>
-                                    <td>25-02-2024</td>
+                                    <td>25-07-1963</td>
                                     <td>Dir</td>
-                                    <td>BED</td>
-                                    <td>Social Science</td>
-                                    <td>Political Science</td>
-                                    <td>Physics</td>
+                                    <td>HS-3 English</td>
                                     <td>Katni</td>
-                                    <td>24-02-2000</td>
+                                    <td>24-02-1981</td>
                                     <td>UDT</td>
                                     <td>Nil</td>
-                                    <td>20-04-2001</td>
-                                    <td>02-06-2022</td>
-                                    <td>05-07-2023</td>
+                                    <td>24-02-1981</td>
+                                    <td>20-04-1981</td>
+                                    <td>02-06-1981</td>
                                     <td>Nil</td>
-                                    <td>MS Kishanpur</td>
-                                    <td>23380200101</td>
-                                    <td>Panna</td>
+                                    <%--<td>MS BARGWAN</td>--%>
+                                    <td>GHS ADARSH GIRLS SIDHI-23380200101</td>
+                                    <td>Govt.HSS KERPANI SARSALA-23802OS356</td>
+                                    <td>Rewa</td>
+                                    <td>Architecture</td>
                                     <td>NO</td>
-
                                 </tr>
 
                                 <tr>
@@ -349,25 +339,23 @@
                                     <td>Mamta Kori</td>
                                     <td>Sc</td>
                                     <td>Female</td>
-                                    <td>25-02-2024</td>
+                                    <td>25-07-1962</td>
                                     <td>Dir</td>
-                                    <td>BED</td>
-                                    <td>Social Science</td>
-                                    <td>Political Science</td>
-                                    <td>Physics</td>
+                                    <td>HS-2 Science</td>
                                     <td>Katni</td>
-                                    <td>24-02-2000</td>
+                                    <td>24-02-1981</td>
                                     <td>UDT</td>
                                     <td>Nil</td>
-                                    <td>20-04-2001</td>
-                                    <td>02-06-2022</td>
-                                    <td>05-07-2023</td>
+                                    <td>24-02-1981</td>
+                                    <td>20-04-1981</td>
+                                    <td>02-06-1981</td>
                                     <td>Nil</td>
-                                    <td>MS Kishanpur</td>
-                                    <td>23380200101</td>
-                                    <td>Panna</td>
+                                    <%--<td>MS BARGWAN</td>--%>
+                                    <td>GHS ADARSH GIRLS SIDHI-23380200101</td>
+                                    <td>Govt.HSS KERPANI SARSALA-23802OS356</td>
+                                    <td>Mandsaur</td>
+                                    <td>Architecture</td>
                                     <td>NO</td>
-
                                 </tr>
 
                                 <tr>
@@ -376,135 +364,75 @@
                                     <td>Mamta Kori</td>
                                     <td>Sc</td>
                                     <td>Female</td>
-                                    <td>25-02-2024</td>
+                                    <td>25-07-1962</td>
                                     <td>Dir</td>
-                                    <td>BED</td>
-                                    <td>Social Science</td>
-                                    <td>Political Science</td>
-                                    <td>Physics</td>
+                                    <td>HS-2 Science</td>
                                     <td>Katni</td>
-                                    <td>24-02-2000</td>
+                                    <td>24-02-1981</td>
                                     <td>UDT</td>
                                     <td>Nil</td>
-                                    <td>20-04-2001</td>
-                                    <td>02-06-2022</td>
-                                    <td>05-07-2023</td>
+                                    <td>24-02-1981</td>
+                                    <td>20-04-1981</td>
+                                    <td>02-06-1981</td>
                                     <td>Nil</td>
-                                    <td>MS Kishanpur</td>
-                                    <td>23380200101</td>
-                                    <td>Panna</td>
+                                    <%--<td>MS BARGWAN</td>--%>
+                                    <td>GHS ADARSH GIRLS SIDHI-23380200101</td>
+                                    <td>Govt.HSS KERPANI SARSALA-23802OS356</td>
+                                    <td>Sidhi</td>
+                                    <td>Architecture</td>
                                     <td>NO</td>
-
                                 </tr>
 
-                                
                                 <tr>
                                     <td>6</td>
                                     <td>AN5449</td>
                                     <td>Mamta Kori</td>
                                     <td>Sc</td>
                                     <td>Female</td>
-                                    <td>25-02-2024</td>
+                                    <td>25-07-1962</td>
                                     <td>Dir</td>
-                                    <td>BED</td>
-                                    <td>Social Science</td>
-                                    <td>Political Science</td>
-                                    <td>Physics</td>
+                                    <td>HS-2 Science</td>
                                     <td>Katni</td>
-                                    <td>24-02-2000</td>
+                                    <td>24-02-1981</td>
                                     <td>UDT</td>
                                     <td>Nil</td>
-                                    <td>20-04-2001</td>
-                                    <td>02-06-2022</td>
-                                    <td>05-07-2023</td>
+                                    <td>24-02-1981</td>
+                                    <td>20-04-1981</td>
+                                    <td>02-06-1981</td>
                                     <td>Nil</td>
-                                    <td>MS Kishanpur</td>
-                                    <td>23380200101</td>
-                                    <td>Panna</td>
+                                    <%--<td>MS BARGWAN</td>--%>
+                                    <td>GHS ADARSH GIRLS SIDHI-23380200101</td>
+                                    <td>Govt.HSS KERPANI SARSALA-23802OS356</td>
+                                    <td>Gwalior</td>
+                                    <td>Architecture</td>
                                     <td>NO</td>
-
                                 </tr>
-                                
+
                                 <tr>
                                     <td>7</td>
                                     <td>AN5449</td>
                                     <td>Mamta Kori</td>
                                     <td>Sc</td>
                                     <td>Female</td>
-                                    <td>25-02-2024</td>
+                                    <td>25-07-1962</td>
                                     <td>Dir</td>
-                                    <td>BED</td>
-                                    <td>Social Science</td>
-                                    <td>Political Science</td>
-                                    <td>Physics</td>
+                                    <td>HS-2 Science</td>
                                     <td>Katni</td>
-                                    <td>24-02-2000</td>
+                                    <td>24-02-1981</td>
                                     <td>UDT</td>
                                     <td>Nil</td>
-                                    <td>20-04-2001</td>
-                                    <td>02-06-2022</td>
-                                    <td>05-07-2023</td>
+                                    <td>24-02-1981</td>
+                                    <td>20-04-1981</td>
+                                    <td>02-06-1981</td>
                                     <td>Nil</td>
-                                    <td>MS Kishanpur</td>
-                                    <td>23380200101</td>
-                                    <td>Panna</td>
+                                    <%--<td>MS BARGWAN</td>--%>
+                                    <td>GHS ADARSH GIRLS SIDHI-23380200101</td>
+                                    <td>Govt.HSS KERPANI SARSALA-23802OS356</td>
+                                    <td>Narsighpur</td>
+                                    <td>Architecture</td>
                                     <td>NO</td>
-
                                 </tr>
-                                
-                                <tr>
-                                    <td>8</td>
-                                    <td>AN5449</td>
-                                    <td>Mamta Kori</td>
-                                    <td>Sc</td>
-                                    <td>Female</td>
-                                    <td>25-02-2024</td>
-                                    <td>Dir</td>
-                                    <td>BED</td>
-                                    <td>Social Science</td>
-                                    <td>Political Science</td>
-                                    <td>Physics</td>
-                                    <td>Katni</td>
-                                    <td>24-02-2000</td>
-                                    <td>UDT</td>
-                                    <td>Nil</td>
-                                    <td>20-04-2001</td>
-                                    <td>02-06-2022</td>
-                                    <td>05-07-2023</td>
-                                    <td>Nil</td>
-                                    <td>MS Kishanpur</td>
-                                    <td>23380200101</td>
-                                    <td>Panna</td>
-                                    <td>NO</td>
 
-                                </tr>
-                                
-                                <tr>
-                                    <td>9</td>
-                                    <td>AN5449</td>
-                                    <td>Mamta Kori</td>
-                                    <td>Sc</td>
-                                    <td>Female</td>
-                                    <td>25-02-2024</td>
-                                    <td>Dir</td>
-                                    <td>BED</td>
-                                    <td>Social Science</td>
-                                    <td>Political Science</td>
-                                    <td>Physics</td>
-                                    <td>Katni</td>
-                                    <td>24-02-2000</td>
-                                    <td>UDT</td>
-                                    <td>Nil</td>
-                                    <td>20-04-2001</td>
-                                    <td>02-06-2022</td>
-                                    <td>05-07-2023</td>
-                                    <td>Nil</td>
-                                    <td>MS Kishanpur</td>
-                                    <td>23380200101</td>
-                                    <td>Panna</td>
-                                    <td>NO</td>
-
-                                </tr>
                             </table>
                         </div>
                     </div>

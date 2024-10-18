@@ -264,7 +264,7 @@
                                     <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="8956231478" readonly />
                                 </div>
                             </div>
-                         
+
                             <div class="col-md-3">
 
                                 <div class="form-group">
@@ -880,7 +880,7 @@
                         <div id="guardianField" class="col-md-3" style="display: none;">
                             <div class="form-group">
                                 <label>
-                                  Enter Name of Guardian<br />
+                                    Enter Name of Guardian<br />
                                     पालक का नाम दर्ज करे   <span style="color: red">*</span>
                                 </label>
                                 <input type="text" class="form-control" placeholder="Enter Name of Guardian" />
@@ -891,7 +891,7 @@
                                 <label>
                                     Select Father  Disability<br />
                                     पिता की विकलांगता का चयन करें<span style="color: red">*</span></label>
-                                <select class="form-control select2" >
+                                <select class="form-control select2">
                                     <option value="0">Select</option>
                                     <option value="1">Yes</option>
                                     <option value="2">No</option>
@@ -918,7 +918,7 @@
                         <div id="FamilyddlDepartment" class="col-md-3" style="display: none;">
                             <div class="form-group">
                                 <label>
-                                 Select Family Occupation<br />
+                                    Select Family Occupation<br />
                                     परिवार का व्यवसाय चुनें
        
                                 </label>
@@ -963,7 +963,7 @@
                         <div class="col-md-3" id="GuardianddlDepartment" style="display: none;">
                             <div class="form-group">
                                 <label>
-                                   Select Guardian Occupation<br />
+                                    Select Guardian Occupation<br />
                                     पालक  का व्यवसाय चुनें</label>
                                 <select id="dropdown1" onchange="toggleSection1()" class="form-control select2">
                                     <option>Select</option>
@@ -977,7 +977,7 @@
                             </div>
                         </div>
 
-                        
+
                         <div class="col-md-3" id="DepartmentName" style="display: none;">
                             <div class="form-group">
                                 <label>
@@ -1057,9 +1057,6 @@
                                 </select>
                             </div>
                         </div>--%>
-
-                   
-
                     </div>
                 </fieldset>
                 <fieldset>
@@ -1116,6 +1113,22 @@
                                 </select>
                             </div>
                         </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Select Section<br />
+                                    कक्षा का चयन करें</label>
+                                <select class="form-control select2" id="Section">
+                                    <option value="0">Select</option>
+                                    <option value="A Section">A Section</option>
+                                    <option value="B Section">B Section</option>
+                                    <option value="C Section">C Section</option>
+
+                                </select>
+                            </div>
+                        </div>
+
                         <div class="col-md-3" id="subject" style="display: none;">
                             <div class="form-group">
                                 <label>
@@ -1275,6 +1288,21 @@
                                     <option value="10">10th Class</option>
                                     <option value="11">11th Class</option>
                                     <option value="12">12th Class</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Select Section<br />
+                                    कक्षा का चयन करें</label>
+                                <select class="form-control select2" id="SectionC">
+                                    <option value="0">Select</option>
+                                    <option value="A Section">A Section</option>
+                                    <option value="B Section">B Section</option>
+                                    <option value="C Section">C Section</option>
+
                                 </select>
                             </div>
                         </div>
@@ -1975,55 +2003,55 @@
             }
         }
     </script>
-         <script>
-             function toggleGuardianField() {
-                 var orphanSelect = document.getElementById("orphanSelect");
-                 var guardianField = document.getElementById("guardianField");
-                 var GuardianddlDepartment = document.getElementById("GuardianddlDepartment");
-                 var FamilyddlDepartment = document.getElementById("FamilyddlDepartment");
-                 var FamilydianIncome = document.getElementById("FamilydianIncome");
-                 var GuardianIncome = document.getElementById("GuardianIncome");
+    <script>
+        function toggleGuardianField() {
+            var orphanSelect = document.getElementById("orphanSelect");
+            var guardianField = document.getElementById("guardianField");
+            var GuardianddlDepartment = document.getElementById("GuardianddlDepartment");
+            var FamilyddlDepartment = document.getElementById("FamilyddlDepartment");
+            var FamilydianIncome = document.getElementById("FamilydianIncome");
+            var GuardianIncome = document.getElementById("GuardianIncome");
 
-                 if (orphanSelect.value === "1") {
-                     guardianField.style.display = "block";
-                     GuardianddlDepartment.style.display = "block";
-                     GuardianIncome.style.display = "block";
-                     FamilyddlDepartment.style.display = "none";
-                     FamilydianIncome.style.display = "none";
-                 } else if (orphanSelect.value === "2") {
-                     guardianField.style.display = "none";
-                     GuardianddlDepartment.style.display = "none";
-                     GuardianIncome.style.display = "none";
-                     FamilyddlDepartment.style.display = "block";
-                     FamilydianIncome.style.display = "block";
-                 } else {
-                     guardianField.style.display = "none";
-                     GuardianddlDepartment.style.display = "none";
-                     GuardianIncome.style.display = "none";
-                     FamilyddlDepartment.style.display = "none";
-                     FamilydianIncome.style.display = "none";
-                 }
-             }
+            if (orphanSelect.value === "1") {
+                guardianField.style.display = "block";
+                GuardianddlDepartment.style.display = "block";
+                GuardianIncome.style.display = "block";
+                FamilyddlDepartment.style.display = "none";
+                FamilydianIncome.style.display = "none";
+            } else if (orphanSelect.value === "2") {
+                guardianField.style.display = "none";
+                GuardianddlDepartment.style.display = "none";
+                GuardianIncome.style.display = "none";
+                FamilyddlDepartment.style.display = "block";
+                FamilydianIncome.style.display = "block";
+            } else {
+                guardianField.style.display = "none";
+                GuardianddlDepartment.style.display = "none";
+                GuardianIncome.style.display = "none";
+                FamilyddlDepartment.style.display = "none";
+                FamilydianIncome.style.display = "none";
+            }
+        }
 
 
-         </script>
-     <script>
-    function Backclickfn() {
-//    var show1 = document.getElementById('show1');
-//    var BtnBack = document.getElementById('BtnBack');
+    </script>
+    <script>
+        function Backclickfn() {
+            //    var show1 = document.getElementById('show1');
+            //    var BtnBack = document.getElementById('BtnBack');
 
-//    if (show1.style.display === 'block') {
-//        show1.style.display = 'block';
-//        BtnBack.style.display = 'block';
-//    } else {
-//        show1.style.display = 'none';
-//        BtnBack.style.display = 'none';
-//    }
-        //}
-        document.getElementById("show2").style.display = (document.getElementById("show2").style.display == 'block') ? 'none' : 'block';
-        BtnBack.style.display = 'none';
-    }
-     </script>
+            //    if (show1.style.display === 'block') {
+            //        show1.style.display = 'block';
+            //        BtnBack.style.display = 'block';
+            //    } else {
+            //        show1.style.display = 'none';
+            //        BtnBack.style.display = 'none';
+            //    }
+            //}
+            document.getElementById("show2").style.display = (document.getElementById("show2").style.display == 'block') ? 'none' : 'block';
+            BtnBack.style.display = 'none';
+        }
+    </script>
     <script>
         function myFunction4() {
             var selectedValue = document.getElementById("child").value;

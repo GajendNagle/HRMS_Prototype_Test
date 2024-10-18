@@ -45,7 +45,7 @@
                                     <div class="form-group">
                                         <label>
                                             Select Group Name<br />
-                                           ग्रुप सूची से ग्रुप का चयन करें<span style="color: red;">*</span></label>
+                                            ग्रुप सूची से ग्रुप का चयन करें<span style="color: red;">*</span></label>
                                         <select class="form-control select2">
                                             <option selected="selected" value="0">--Select --</option>
                                             <option value="1">Liabilities</option>
@@ -80,8 +80,8 @@
                                         <input type="text" class="form-control" placeholder="Enter Group Code" />
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row align-items-end">
+
+
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label>
@@ -90,16 +90,32 @@
                                         <input type="text" class="form-control" placeholder="Enter Group Order No." />
                                     </div>
                                 </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Is Closing forward<br />
+
+                                        </label>
+                                        <select class="form-control select2">
+
+                                            <option value="1" selected>No</option>
+                                            <option value="2">Yes</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group text-center">
+                                    <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border w-lg" onclick="document.getElementById('HostlInfo').style.display = 'block'">Save</button>
+                                    <a href="Group_Master.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                                </div>
                             </div>
 
                         </fieldset>
-                        <hr />
-                        <div class="col-md-12">
-                            <div class="form-group text-center">
-                                <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border w-lg" onclick="document.getElementById('HostlInfo').style.display = 'block'">Save</button>
-                                <a href="Group_Master.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-                            </div>
-                        </div>
+
+
                     </div>
                 </div>
                 <fieldset id="HostlInfo" style="display: none;">
@@ -137,8 +153,10 @@
                                                         ग्रुप कोड</th>
                                                     <th scope="col">Group Order No.<br />
                                                         ग्रुप ऑर्डर नंबर</th>
-                                                    <th scope="col">Parent Group<br />
-                                                        अभिभावक समूह</th>
+                                                    <th scope="col">Parent Group
+                                                         </th>
+                                                    <th scope="col">Closing Forward
+                                                         </th>
                                                     <th scope="col">Action<br />
                                                         कार्यवाही </th>
 
@@ -163,6 +181,9 @@
                                                     <td align="center" valign="middle">
                                                         <span>Liabilities</span>
                                                     </td>
+                                                      <td align="center" valign="middle">
+                                                        <span>YES</span>
+                                                    </td>
                                                     <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
 
                                                 </tr>
@@ -184,6 +205,9 @@
                                                     <td align="center" valign="middle">
                                                         <span>Liabilities</span>
                                                     </td>
+                                                      <td align="center" valign="middle">
+                                                        <span>YES</span>
+                                                    </td>
                                                     <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                                 </tr>
                                                 <tr role="row" class="odd">
@@ -203,6 +227,9 @@
                                                     </td>
                                                     <td align="center" valign="middle">
                                                         <span>Assets</span>
+                                                    </td>
+                                                      <td align="center" valign="middle">
+                                                        <span>YES</span>
                                                     </td>
                                                     <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                                 </tr>
@@ -224,6 +251,9 @@
                                                     <td align="center" valign="middle">
                                                         <span>Assets</span>
                                                     </td>
+                                                      <td align="center" valign="middle">
+                                                        <span>YES</span>
+                                                    </td>
                                                     <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                                 </tr>
                                                 <tr role="row" class="odd">
@@ -243,6 +273,9 @@
                                                     </td>
                                                     <td align="center" valign="middle">
                                                         <span>Income </span>
+                                                    </td>
+                                                      <td align="center" valign="middle">
+                                                        <span>NO</span>
                                                     </td>
                                                     <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                                 </tr>
@@ -264,6 +297,9 @@
                                                     <td align="center" valign="middle">
                                                         <span>Expenses </span>
                                                     </td>
+                                                      <td align="center" valign="middle">
+                                                        <span>NO</span>
+                                                    </td>
                                                     <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                                 </tr>
                                                 <tr role="row" class="odd">
@@ -283,6 +319,9 @@
                                                     </td>
                                                     <td align="center" valign="middle">
                                                         <span>Expenses </span>
+                                                    </td>
+                                                      <td align="center" valign="middle">
+                                                        <span>NO</span>
                                                     </td>
                                                     <td><a class="Alert-Edit"><i class="fa fa-pen"></i></a>| <a class="Alert-Delete"><i class="fa fa-trash"></i></a></td>
                                                 </tr>

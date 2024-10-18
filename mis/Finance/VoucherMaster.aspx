@@ -67,9 +67,18 @@
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Voucher Code 
+                                Enter Voucher Series 
                                 <br />
-                                वाउचर कोड दर्ज करें<span style="color: red">*</span></label>
+                                वाउचर सीरीज दर्ज करें<span style="color: red">*</span></label>
+                            <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Enter Voucher Series " onkeypress="return lettersOnly();" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="form-group">
+                            <label>
+                                Select Voucher Series Type 
+                                <br />
+                                वाउचर सीरीज प्रकार का चयन करें<span style="color: red">*</span></label>
                             <select class="form-control select2" id="ddlLedger">
                                 <option selected="selected" value="0">--Select --</option>
                                 <option value="1">Auto</option>

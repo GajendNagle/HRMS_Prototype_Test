@@ -78,9 +78,9 @@
                                 <div class="col-md-6 col-lg-4 col-xl-3 mt-3">
                                     <div class="form-group">
                                         <label>
-                                           Employee designation /
+                                            Employee Description /
                                         <br />
-                                          कर्मचारी पदनाम
+                                            कर्मचारी विवरण
                                         </label>
                                         <input name="edescription" type="text" class="form-control" placeholder="Senior Project Manager" autocomplete="off" readonly />
 
@@ -206,7 +206,7 @@
                             <div class="table-responsive">
                                 <table class="table text-center">
                                     <thead>
-                                        <tr style="white-space:nowrap;">
+                                        <tr>
                                             <th>S.No./<br /> सरल क्र.</th>
                                             <th>CheckBox/ <br /> चेकबॉक्स
                                             </th>

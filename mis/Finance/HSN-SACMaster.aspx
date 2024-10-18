@@ -108,7 +108,7 @@
                                 </div>
                             </div>
                             <fieldset id="taxdetails" style="display: none">
-                                <legend>IGST/SGCT/CGCT% 
+                                <legend>IGST/SGST/CGST% 
                                 </legend>
                                 <div class="row align-items-end">
                                     <div class="col-md-3">

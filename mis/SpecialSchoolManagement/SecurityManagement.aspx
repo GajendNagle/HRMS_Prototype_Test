@@ -16,7 +16,7 @@
                             <a href="#Security Management" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Special School Management</span></a>
                         </li>
 
-                        <li class="breadcrumb-item">Security Management</li>
+                        <li class="breadcrumb-item">OIS Security Management</li>
                     </ol>
                 </div>
             </div>
@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-xl-10 col-md-12">
                     <div class="marqueecontainerinfo">
-                        <div class="headertext btn btn-primary rounded-pill">Security Management / सुरक्षा प्रबंधन</div>
+                        <div class="headertext btn btn-primary rounded-pill">OIS Security Management /ओ.आई.एस सुरक्षा प्रबंधन</div>
                         <div>
                             <marquee style="width: 100%;" onmouseover="this.stop();" onmouseout="this.start();" direction="left" behavior="scroll" scrollamount="7" class="Marqueetext ">स्कूल शिक्षा विभाग (मध्य प्रदेश)</marquee>
                         </div>
@@ -40,7 +40,7 @@
         <div class="card-body">
             <div runat="server" id="divSecurity">
                 <fieldset>
-                    <legend>School Security / स्कूल सुरक्षा
+                    <legend>OIS Security / ओ.आई.एस सुरक्षा
                       
                     </legend>
                     <div class="row align-items-end">
@@ -74,7 +74,7 @@
 
             <div id="divsecurity1" runat="server" class="d-none">
                 <fieldset>
-                    <legend>Security Facilities Available at School </legend>
+                    <legend>Available Security Facilities </legend>
 
                     <div class="row align-items-end">
 
@@ -86,18 +86,18 @@
                                             <thead>
 
                                                 <tr role="row">
-                                                    <th class="mt-0 " style="font-size: large" scope="col">Sr No. /<br />
+                                                    <th class="mt-0">Sr No. /<br />
                                                         सरल क्रमांक
                                                     </th>
-                                                    <th class="mt-0 " style="font-size: large" scope="col">Security Facilities /
+                                                    <th class="mt-0 " >Security Facilities /
                                                         <br />
                                                         सुरक्षा सुविधा
                                                     </th>
-                                                    <th class="mt-0 " style="font-size: large" scope="col">Actions /
+                                                    <th class="mt-0 ">Actions /
                                                         <br />
                                                         कार्यवाही
                                                     </th>
-                                                    <th class="mt-0 " style="font-size: large" scope="col">Numbers of Facilities /<br />
+                                                    <th class="mt-0 " >Numbers of Facilities /<br />
                                                         सुविधाओ की संख्या
                                                     </th>
                                                 </tr>
@@ -105,9 +105,9 @@
 
 
                                                 <tr role="row">
-                                                    <td class="mt-0" style="font-size: large" scope="col">1
+                                                    <td class="mt-0">1
                                                     </td>
-                                                    <td class="mt-0" style="font-size: large" scope="col">Guards
+                                                    <td class="mt-0" >Guards
                                                     </td>
                                                     <td scope="col">
 
@@ -131,9 +131,9 @@
 
 
                                                 <tr role="row">
-                                                    <td class="mt-0" style="font-size: large" scope="col">2
+                                                    <td class="mt-0">2
                                                     </td>
-                                                    <td class="mt-0" style="font-size: large" scope="col">Camera
+                                                    <td class="mt-0">Camera
                                                     </td>
                                                     <td scope="col">
 

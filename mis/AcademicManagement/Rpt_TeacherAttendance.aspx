@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Rpt_TeacherAttendance.aspx.cs" Inherits="mis_AcademicManagement_Rpt_TeacherAttendance" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <link href="https://schooledutest.tserver.co.in/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
@@ -60,7 +62,9 @@
                                 Select From Date
                                 <br />
                                 प्रारंभ तिथि का चयन करें<span style="color: red">*</span></label>
-                            <input type="date" class="form-control datepicker" id="fromDate" placeholder="dd/mm/yyyy">
+                            <asp:TextBox runat="server" ID="fromDate" CssClass="form-control" AutoComplete="off" data-provide="datepicker" data-date-end-date="0d" data-date-autoclose="true" data-date-format="dd/mm/yyyy" placeholder="DD/MM/YYYY"></asp:TextBox>
+
+                            <span id="fromDateError" class="error text-danger"></span>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -68,7 +72,9 @@
                             <label>
                                 Select To Date<br />
                                 समाप्ति तिथि का चयन करें<span style="color: red">*</span></label>
-                            <input type="date" class="form-control datepicker" id="toDate" placeholder="dd/mm/yyyy" />
+                            <asp:TextBox runat="server" ID="toDate" CssClass="form-control" AutoComplete="off" data-provide="datepicker" data-date-end-date="0d" data-date-autoclose="true" data-date-format="dd/mm/yyyy" placeholder="DD/MM/YYYY"></asp:TextBox>
+
+                            <span id="toDateError" class="error text-danger"></span>
                         </div>
                     </div>
                 </div>
@@ -120,11 +126,14 @@
                                                 पैनल</th>
                                             <th>Attendance<br />
                                                 उपस्थिति</th>
-                                            <th>Total Month Days <br />
+                                            <th>Total Month Days
+                                                <br />
                                                 कुल मासिक दिन</th>
-                                            <th>Total Present Days <br />
+                                            <th>Total Present Days
+                                                <br />
                                                 कुल उपस्थित दिन</th>
-                                            <th>Total Absent Days <br />
+                                            <th>Total Absent Days
+                                                <br />
                                                 कुल अनुपस्थित दिन</th>
                                             <th>Attendance Percent
                                                 <br />
@@ -195,5 +204,18 @@
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+
+        <script src="https://schooledutest.tserver.co.in/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $('#fromDate').datepicker({
+            autoclose: true,
+            format: 'dd/mm/yyyy'
+        });
+        $('#todate').datepicker({
+            autoclose: true,
+            format: 'dd/mm/yyyy'
+        });
+    </script>
 </asp:Content>
 

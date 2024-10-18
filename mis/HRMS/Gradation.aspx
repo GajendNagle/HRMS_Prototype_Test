@@ -101,7 +101,7 @@
                                 Date Of Birth<br />
                                 जन्म तिथि<span style="color: red">*</span>
                             </label>
-                            <input type="text" class="form-control" value="2000-02-03" readonly="readonly" />
+                            <input type="text" class="form-control" value="1962-07-25" readonly="readonly" />
                         </div>
 
                         <div class="col-md-4">
@@ -114,48 +114,20 @@
 
                         <div class="col-md-4">
                             <label>
-                                Profession ai Qualification<br />
-                                प्रोफेशन एआई योग्यता पर<span style="color: red">*</span>
+                                Subject Panel<br />
+                                विषय पैनल<span style="color: red">*</span>
                             </label>
-                            <input type="text" class="form-control" value="BED" readonly="readonly" />
+                            <input type="text" class="form-control" value="HS-5 Science" readonly="readonly" />
                         </div>
+
                     </div>
 
                     <div class="row align-items-end">
 
-
-                        <div class="col-md-4">
-                            <label>
-                                UG Subject<br />
-                                यूजी विषय<span style="color: red">*</span>
-                            </label>
-                            <input type="text" class="form-control" value="Social Science" readonly="readonly" />
-                        </div>
-
-                        <div class="col-md-4">
-                            <label>
-                                PG Subject-1
-                                <br />
-                                पीजी विषय-1<span style="color: red">*</span>
-                            </label>
-                            <input type="text" class="form-control" value="Political Science" readonly="readonly" />
-                        </div>
-
-                        <div class="col-md-4">
-                            <label>
-                                PG Subject-2
-        <br />
-                                पीजी विषय-2<span style="color: red">*</span>
-                            </label>
-                            <input type="text" class="form-control" value="Physics" readonly="readonly" />
-                        </div>
-                    </div>
-
-                    <div class="row align-items-end">
                         <div class="col-md-4">
                             <label>
                                 Home District
-                                <br />
+          <br />
                                 गृह ज़िला<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" value="Katni" readonly="readonly" />
@@ -164,7 +136,7 @@
                         <div class="col-md-4">
                             <label>
                                 Date Of First Appointment in Gov Service
-                                <br />
+        <br />
                                 सरकारी सेवा में प्रथम नियुक्ति की तिथि<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" value="2024-02-05" readonly="readonly" />
@@ -173,7 +145,7 @@
                         <div class="col-md-4">
                             <label>
                                 First Appointment Designation
-         <br />
+                                <br />
                                 पहला नियुक्ति पदनाम<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" value="UDT" readonly="readonly" />
@@ -182,20 +154,19 @@
 
                     <div class="row align-items-end">
 
-
                         <div class="col-md-4">
                             <label>
-                                Inter division/local body samvillion/Transfer Date
-                                <br />
+                                Inter Division/Local Body Samvillion/Transfer Date
+         <br />
                                 इंटर डिवीजन/स्थानीय निकाय सैमविलियन/ट्रांसफर तिथि<span style="color: red">*</span>
                             </label>
-                            <input type="text" class="form-control" value="2024-02-05" readonly="readonly" />
+                            <input type="text" class="form-control" value="Nil" readonly="readonly" />
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4" style="display: none">
                             <label>
                                 Present Posting Place
-                                <br />
+          <br />
                                 वर्तमान पोस्टिंग स्थान<span style="color: red">*</span>
                             </label>
                             <input type="text" class="form-control" value="MS Bargwan" readonly="readonly" />
@@ -203,15 +174,27 @@
 
                         <div class="col-md-4">
                             <label>
-                                UDISE in Case of School
-          <br />
-                                यू-डायस<span style="color: red">*</span>
+                                Present DDO/Sankul Name Code
+                                <br />
+                                वर्तमान डीडीओ/संकुल नाम कोड<span style="color: red">*</span>
                             </label>
-                            <input type="text" class="form-control" value="23380200101" readonly="readonly" />
+                            <input type="text" class="form-control" value="Govt.HSS KERPANI SARSALA-23380200101" readonly="readonly" />
+                        </div>
+                        <div class="col-md-4">
+                            <label>
+                                Present OIS Name Code
+                                <br />
+                                वर्तमान OIS नाम कोड<span style="color: red">*</span>
+
+                            </label>
+                            <input type="text" class="form-control" value="GMS GIRSLS MALHARGARH-23802OS345" readonly="readonly" />
                         </div>
                     </div>
 
                     <div class="row align-items-end">
+
+
+
                         <div class="col-md-4">
                             <label>
                                 Present Posting District
@@ -219,43 +202,70 @@
                                 वर्तमान पोस्टिंग जिला<span style="color: red">*</span>
 
                             </label>
-                            <input type="text" class="form-control" value="23380200101" readonly="readonly" />
+                            <input type="text" class="form-control" value="katni" readonly="readonly" />
                         </div>
-                    </div>
-                    <div class="row align-items-end">
+                        <div class="col-md-4">
+                            <label>
+                                Employee Qualification<br />
+                                कर्मचारी योग्यता<span style="color: red">*</span>
+                            </label>
+                            <select id="Education" class="form-control select2">
+                                <option value="----">--Select--</option>
+                                <option value="BALLB">BALLB</option>
+                                <option value="BachelorOfArts">Bachelor of Arts</option>
+                                <option value="BachelorOfCommerce">Bachelor of Commerce</option>
+                                <option value="Architecture">Architecture</option>
+                                <option value="BCA">BCA</option>
+                                <option value="ComputerScience">Computer Science</option>
+                                <option value="Education">Education</option>
+                                <option value="BBA">BBA</option>
+                                <option value="MBBS">MBBS</option>
+                                <option value="BachelorOfScience">Bachelor of Science</option>
+                                <option value="Biotechnology">Biotechnology</option>
+                                <option value="BScIT">BSc IT</option>
+                                <option value="Engineering">Engineering</option>
+                                <option value="Humanities">Humanities</option>
+                            </select>
+                        </div>
                         <div class="col-md-4">
                             <label>
                                 Date Of Appointment in UDT By Promotion
-                                <br />
-                                यूडीटी में पदोन्नति द्वारा नियुक्ति की तिथि<span style="color: red">*</span>
+        <br />
+                                यू.डी.टी में पदोन्नति द्वारा नियुक्ति की तिथि<span style="color: red">*</span>
 
                             </label>
                             <input type="date" class="form-control" />
                         </div>
+                    </div>
+                  
 
-                        <div class="col-md-4">
-                            <label>
-                                Date Of Appointment in Present Cadre
-           <br />
-                                वर्तमान कैडर में नियुक्ति की तिथि<span style="color: red">*</span>
 
-                            </label>
-                            <input type="date" class="form-control" />
-                        </div>
+
+
+
+                    
+                    
+
+                    <div class="row align-items-end">
+                                     <div class="col-md-4">
+                 <label>
+                     Date Of Appointment in Present Cadre
+<br />
+                     वर्तमान कैडर में नियुक्ति की तिथि<span style="color: red">*</span>
+
+                 </label>
+                 <input type="date" class="form-control" />
+             </div>
 
                         <div class="col-md-4">
                             <label>
                                 Date Of Seniority in Present Cadre
-         <br />
+                                <br />
                                 वर्तमान कैडर में नियुक्ति की तिथि<span style="color: red">*</span>
 
                             </label>
                             <input type="date" class="form-control" />
                         </div>
-                    </div>
-
-                    <div class="row align-items-end">
-
 
                         <div class="col-md-4">
                             <label>
@@ -266,26 +276,28 @@
                             </label>
                             <input type="date" class="form-control" />
                         </div>
-                        <div class="col-md-4">
-                            <label>
-                                Remark
-                                <br />
-                                टिप्पणी<span style="color: red">*</span>
+                      
+                    </div>
 
-                            </label>
-                            <input type="text" class="form-control" placeholder="Enter Remark"/>
-                        </div>
+                    <div class="row align-items-end">
+                          <div class="col-md-4">
+      <label>
+          Remark
+          <br />
+          टिप्पणी<span style="color: red">*</span>
 
+      </label>
+      <input type="text" class="form-control" placeholder="Enter Remark" />
+  </div>
                         <div class="col-md-4">
                             <label>
                                 Seniority Sequence
-                                <br />
+          <br />
                                 वरिष्ठता अनुक्रम<span style="color: red">*</span>
 
                             </label>
                             <input type="text" class="form-control" placeholder="Enter Seniority Sequence" />
                         </div>
-
                     </div>
                     <hr />
                     <div class="row">
@@ -336,20 +348,8 @@
                                                 जन्म तिथि</th>
                                             <th>Appointment Type<br />
                                                 नियुक्ति का प्रकार</th>
-                                            <th>Profession Ai Qualification On<br />
-                                                प्रोफेशन एआई योग्यता पर</th>
-                                            <th>UG Subject
-                                                <br />
-                                                यूजी विषय
-                                            </th>
-                                            <th>PG Subject-1
-                                                <br />
-                                                पीजी विषय-2
-                                            </th>
-                                            <th>PG Subject-2
-                                                <br />
-                                                पीजी विषय-2
-                                            </th>
+                                            <th>Subject Panel t<br />
+                                                विषय पैनल</th>
                                             <th>Home District
                                                 <br />
                                                 होम जिला
@@ -364,7 +364,7 @@
                                             </th>
                                             <th>Date Of Appointment in UDT By Promotion
                                                 <br />
-                                                यूडीटी में पदोन्नति द्वारा नियुक्ति की तिथि
+                                                यू.डी.टी. में पदोन्नति द्वारा नियुक्ति की तिथि
                                             </th>
                                             <th>Date Of Appointment in Present Cadre
                                                 <br />
@@ -382,17 +382,25 @@
                                                 <br />
                                                 अंतर संभाग/स्थानीय निकाय संविलियन/स्थानांतरण तिथि
                                             </th>
-                                            <th>Present Posting Place
+                                            <%--  <th>Present Posting Place
                                                 <br />
                                                 वर्तमान पोस्टिंग स्थान
-                                            </th>
-                                            <th>Udise Code
+                                            </th>--%>
+                                            <th>Present DDO/Sankul Name Code
                                                 <br />
-                                                यू डायस कोड 
+                                                वर्तमान डीडीओ/संकुल नाम कोड
+                                            </th>
+                                            <th>Present OIS Name Code
+                                                <br />
+                                                वर्तमान OIS नाम कोड 
                                             </th>
                                             <th>Present Posting District
                                                 <br />
                                                 वर्तमान पोस्टिंग जिला
+                                            </th>
+                                            <th>Employee Qualification
+                                                <br />
+                                                कर्मचारी योग्यता
                                             </th>
                                             <th>Remark
                                                 <br />
@@ -416,23 +424,22 @@
                                         <td>Mamta Kori</td>
                                         <td>Sc</td>
                                         <td>Female</td>
-                                        <td>25-02-2024</td>
+                                        <td>25-07-1962</td>
                                         <td>Dir</td>
-                                        <td>BED</td>
-                                        <td>Social Science</td>
-                                        <td>Political Science</td>
-                                        <td>Physics</td>
+                                        <td>HS-2 Science</td>
                                         <td>Katni</td>
-                                        <td>24-02-2000</td>
+                                        <td>24-02-1981</td>
                                         <td>UDT</td>
                                         <td>Nil</td>
-                                        <td>20-04-2001</td>
-                                        <td>02-06-2022</td>
-                                        <td>05-07-2023</td>
+                                        <td>24-02-1981</td>
+                                        <td>20-04-1981</td>
+                                        <td>02-06-1981</td>
                                         <td>Nil</td>
-                                        <td>MS Kishanpur</td>
-                                        <td>23380200101</td>
+                                        <%--<td>MS BARGWAN</td>--%>
+                                        <td>GHS ADARSH GIRLS SIDHI-23380200101</td>
+                                        <td>Govt.HSS KERPANI SARSALA-23802OS356</td>
                                         <td>Panna</td>
+                                        <td>Architecture</td>
                                         <td>NO</td>
                                         <td>2</td>
                                         <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span>&nbsp<a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>

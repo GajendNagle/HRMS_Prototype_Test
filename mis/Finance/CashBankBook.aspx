@@ -12,7 +12,10 @@
                         <li class="breadcrumb-item">
                             <span>Home</span>
                         </li>
-                        <li class="breadcrumb-item"><a href="../mis/Module.aspx?ID=Finance" title="click to go on">Finance</a></li>
+                        <li class="breadcrumb-item">
+                            <a href="#Finance" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Finance</span></a>
+                        </li>
+                        <li class="breadcrumb-item"><a href="#FinanceReport" data-bs-toggle="collapse" onclick="SidebarToggle('Finance')" role="button" aria-expanded="false"><span>Finance Report</span></a></li>
                         <li class="breadcrumb-item active"><a title="click to go on">Cash Bank Book</a></li>
                     </ol>
                 </div>
@@ -26,7 +29,7 @@
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <h4 class="card-title">Cash Bank Book/
                                 कैश बैंक बुक</h4>
                         </div>
@@ -40,7 +43,8 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select From Date /
+                                        Select From Date
+                                        <br />
                                         प्रारंभिक दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="date" class="form-control" autocomplete="off" value="2024-04-01" />
                                 </div>
@@ -48,23 +52,13 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>
-                                        Select To Date /
+                                        Select To Date
+                                        <br />
                                         अंतिम दिनांक का चयन करें<span style="color: red;"> *</span></label>
                                     <input name="ctl00$ContentBody$TextBox5" type="date" id="date1" class="form-control" autocomplete="off" value="2024-06-30" />
                                 </div>
                             </div>
-                                                    <div class="col-md-3">
-                             <div class="form-group">
-                                 <label>
-                                     Head Type
-                                     <br />
-                                     हेड का प्रकार  <span style="color: red;">*</span></label>
-                                 <select class="form-control select2">
-                                     <option value="2">Expense</option>
-                                 </select>
-                             </div>
-                         </div>
-                         <div class="col-md-3">
+                                                                            <div class="col-md-3">
                              <div class="form-group">
                                  <label>
                                      Select OIS Type
@@ -260,7 +254,7 @@
                                      Select School Name<br />
                                      स्कूल का नाम चुनें</label>
                                  <select class="form-control select2">
-
+                                      <option>Select</option>
                                      <option>GOVT HSS AHAMDABAD</option>
                                      <option>GOVT HSS KHAJURI KALAN</option>
                                      <option>GOVT HSS MAHARANA PRATAP PHANDA KALAN (HARIHAR NAGAR)</option>
@@ -274,34 +268,36 @@
                                  </select>
                              </div>
                          </div>
-                               <div class="col-md-6 mb-4" >
-       <label for="opening-balance">
-           Filter Amount:
-   
-           <input type="checkbox" id="opening-balance" text="Opening Balance"  />
-           Opening Bal.
- 
-       </label>
-       <label for="transaction">
-           <input type="checkbox" id="transaction" text="Transaction"  />
-           Transaction
- 
-       </label>
-       <label for="closing-balance" >
-           <input type="checkbox" id="closing-balance" text="Closing Balance"/>
-           Closing Bal.
- 
-       </label>
-   </div>
                         </div>
-                       
-                            <hr />
-                            <div class="col-md-12 justify-content-center">
-                                <div class="form-group text-center">
-                                    <button type="button" class="btn btn-outline-success btn-border w-lg Alert-Save" onclick="document.getElementById('FS_Details').style.display = 'block';">Search</button>
-                                    <a id="clearfirst" href="CashBankBook.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
-                                </div>
+                        <div class="row">
+                            <div class="col-md-6 mt-5">
+                                <label for="opening-balance">
+                                    Filter Amount:
+   
+                                    <input type="checkbox" id="opening-balance" text="Opening Balance" />
+                                    Opening Bal.
+ 
+                                </label>
+                                <label for="transaction">
+                                    <input type="checkbox" id="transaction" text="Transaction" />
+                                    Transaction
+ 
+                                </label>
+                                <label for="closing-balance">
+                                    <input type="checkbox" id="closing-balance" text="Closing Balance" />
+                                    Closing Bal.
+ 
+                                </label>
                             </div>
+                        </div>
+
+                        <hr />
+                        <div class="col-md-12 justify-content-center">
+                            <div class="form-group text-center">
+                                <button type="button" class="btn btn-outline-success btn-border w-lg Alert-Save" onclick="document.getElementById('FS_Details').style.display = 'block';">Search</button>
+                                <a id="clearfirst" href="CashBankBook.aspx" class="btn w-lg btn-outline-danger btn-rounded">Clear</a>
+                            </div>
+                        </div>
                     </fieldset>
                     <fieldset id="FS_Details" style="display: none">
                         <legend>Expenses Report/
@@ -323,11 +319,11 @@
                             </h5>
                         </div>
                         <div class="row justify-content-center mb-0">
-                            <h5>[Head Office]
+                            <h5>Office Name :- [Head Office]
                             </h5>
                         </div>
                         <div class="row justify-content-center mb-0">
-                            <h5>01-04-2024  To 31-06-2023 
+                            <h5>01-04-2024  To 31-06-2024 
                             </h5>
                         </div>
                         <div class="row">
@@ -339,15 +335,17 @@
                                                 <table class="table table-bordered" id="mainTable">
                                                     <thead>
                                                         <tr>
-                                                            <th>Group Name/<br />
-                                                                समूह का नाम</th>
-                                                            <th>Opening/<br />
-                                                                प्रारंभिक</th>
-                                                            <th>Txn [Debit Amt.] /<br />
-                                                                कर [डेबिट राशि]</th>
-                                                            <th>Txn [Credit Amt.] /<br />
-                                                                कर [क्रेडिट राशि]</th>
-                                                            <th>Closing/<br />
+                                                            <th>Group Name<br />
+                                                                ग्रुप नाम</th>
+                                                            <th>Opening Bal.<br />
+                                                                प्रारंभिक राशि</th>
+                                                            <th>Transaction [Debit Amt.]
+                                                                <br />
+                                                                 डेबिट राशि</th>
+                                                            <th>Transaction [Credit Amt.]
+                                                                <br />
+                                                                क्रेडिट राशि</th>
+                                                            <th>Closing<br />
                                                                 समाप्ति</th>
                                                         </tr>
                                                     </thead>
@@ -393,17 +391,18 @@
     <script>
         function openPDF() {
             // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
-            var pdfUrl = '../Document/HRMS_Document%20(1).pdf';
+            var pdfUrl = '../../../img/Finance.pdf';
+           
 
             // Open the PDF in a new window or tab
             window.open(pdfUrl, '_blank');
         }
 
         function exportFile() {
-            var fileUrl = '../Document/HRMS_Document%20(1).pdf';
+            var fileUrl = '../../../img/Finance.pdf';
             var a = document.createElement('a');
             a.href = fileUrl;
-            a.download = 'HRMS_Document.pdf';  // Replace with the desired file name
+            a.download = 'Finance.pdf';  // Replace with the desired file name
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);

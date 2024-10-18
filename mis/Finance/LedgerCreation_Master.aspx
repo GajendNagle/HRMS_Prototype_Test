@@ -406,7 +406,6 @@
                                 </div>
                             </fieldset>
                         </fieldset>
-
                         <fieldset>
                             <legend>Opening Balance /प्रारंभिक शेष </legend>
                             <div class="row align-items-end">

@@ -41,7 +41,7 @@
         <div class="card-body">
             <div runat="server" id="divSecurity">
                 <fieldset>
-                    <legend>School Security / स्कूल सुरक्षा
+                    <legend>OIS Security /ओ.आई.एस सुरक्षा
                       
                     </legend>
                     <div class="row align-items-end">
@@ -54,7 +54,7 @@
                         <div class="col-md-3">
                             <label>
                                 UDISE Code/<br />
-                                यूडीआईएसई कोड<span style="color: red;">*</span>
+                                UDISE कोड<span style="color: red;">*</span>
 
                             </label>
                             <input type="text" id="inputUDISE" class="form-control">
@@ -76,7 +76,7 @@
 
             <div id="Divsecurityguard" runat="server" class="d-none divs_open_close">
                 <fieldset>
-                    <legend>School Security / स्कूल सुरक्षा </legend>
+                    <legend>OIS Security / ओ.आई.एस सुरक्षा </legend>
 
                     <div class="row align-items-end">
 

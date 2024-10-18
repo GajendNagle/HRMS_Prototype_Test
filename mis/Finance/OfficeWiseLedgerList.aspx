@@ -22,13 +22,14 @@
             </div>
         </div>
     </div>
+
     <div class="content-wrapper">
         <div class="container-fluid">
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h5 class="card-title">Office Wise Ledger List/
+                            <h5 class="card-title">Office Wise Ledger List /
                                 कार्यालय अनुसार खाता बही सूची</h5>
                         </div>
                     </div>
@@ -50,13 +51,16 @@
                                      <option value="1">Office</option>
                                      <option value="2">Institute</option>
                                      <option value="3">School</option>
+
                                  </select>
                              </div>
                          </div>
                          <div class="col-md-3" id="OfficeType" style="display: none;">
                              <div class="form-group">
                                  <label>
-                                     Select Office Type<br />कार्यालय प्रकार का चयन करें<span style="color: red;">*</span>
+                                     Select Office Type
+<br />
+                                     कार्यालय प्रकार का चयन करें<span style="color: red;">*</span>
                                  </label>
                                  <select class="form-control select2">
                                      <option selected="selected" value="0">--Select --</option>
@@ -87,9 +91,12 @@
                          <div class="col-md-3" id="Division" style="display: none;">
                              <div class="form-group">
                                  <label>
-                                     Select  Division Name<br />संभाग  का नाम चुनें
+                                     Select  Division Name
+           <br />
+                                     संभाग  का नाम चुनें
                                  </label>
                                  <select class="form-control select2">
+
                                      <option value="Select">Select</option>
                                      <option value="Bhopal">Bhopal</option>
                                      <option value="Indore">Indore</option>
@@ -169,8 +176,11 @@
                          <div class="col-md-3" id="Block" style="display: none;">
                              <div class="form-group">
                                  <label>
-                                     Select  Block Name<br />विकासखण्ड  का नाम चुनें<span style="color: red">*</span></label>
+                                     Select  Block Name
+           <br />
+                                     विकासखण्ड  का नाम चुनें<span style="color: red">*</span></label>
                                  <select name="ctl00$ContentBody$ctl03" class="form-control select2">
+
                                      <option value="Select">Select</option>
                                      <option value="Agar">Agar</option>
                                      <option value="Barod">Barod</option>
@@ -383,6 +393,7 @@
                 document.getElementById('Division').style.display = "none";
                 document.getElementById('District').style.display = "none";
                 document.getElementById('Block').style.display = "none";
+
                 document.getElementById('Institute').style.display = "none";
                 document.getElementById('Sankul').style.display = "none";
                 document.getElementById('school').style.display = "none";

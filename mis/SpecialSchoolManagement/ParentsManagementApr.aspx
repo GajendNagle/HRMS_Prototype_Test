@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="ParentsManagementApr.aspx.cs" Inherits="mis_HRMS_PerentsManagementApr" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
-    <style>
+    <%-- <style>
         .table-container {
             max-width: 100%;
             overflow-x: auto;
@@ -27,8 +27,7 @@
                 .pagination-container .pagination-controls button {
                     margin: 0 5px;
                 }
-    </style>
-
+    </style>--%>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
 
@@ -103,7 +102,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group" style="margin-top: 3.3rem !important">
-                            <button id="btnSearch" type="button" onclick="showdiv()" class="fw-bold btn w-lg btn-outline-success btn-border">Search</button>
+                            <button id="btnSearch" type="button" onclick="showdiv()" class="fw-bold btn w-lg btn-outline-info btn-border">Search</button>
                         </div>
                     </div>
 
@@ -151,10 +150,10 @@
                                     <td>Present</td>
 
                                     <td>
-                                        <input id="txtHomeWork" value="View" type="button" class="btn btn-outline-info mx-2" data-bs-toggle="modal" data-bs-target="#viewModal" />
+                                        <input id="txtHomeWork" value="View" type="button" class="btn btn-outline-info mx-2" onclick="openBootstrapModal()" />
                                     </td>
                                     <td>
-                                        <input id="txtHomeWork2" value="View" type="button" class="btn btn-outline-info mx-2" data-bs-toggle="modal" data-bs-target="#viewModal" />
+                                        <input id="txtHomeWork2" value="View" type="button" class="btn btn-outline-info mx-2" onclick="openBootstrapModal2()" />
                                     </td>
                                 </tr>
                             </tbody>
@@ -164,8 +163,40 @@
 
 
             </fieldset>
+            <div class="modal" tabindex="-1" role="dialog" id="OTPModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">OTP Details / OTP विवरण</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                        </div>
+                        <div class="modal-body">
+                            <fieldset>
+                                <legend>OTP Details / OTP विवरण</legend>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>
+                                                OTP (One Time Password)<br />
+                                                OTP (वन टाइम पासवर्ड)</label>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn w-lg btn-outline-success Alert-VerifySchool" data-bs-dismiss="modal">Submit</button>
+                            <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <div class="modal  fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+
+            <div class="modal" id="exampleModal2" tabindex="-1" role="dialog">
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -232,11 +263,13 @@
                             <hr />
 
                         </div>
-
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-danger w-lg btn-border" data-bs-dismiss="modal">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="modal  fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal" id="exampleModal3" tabindex="-1" role="dialog">
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -269,17 +302,7 @@
 
     </div>
 
-    <script>
-        document.getElementById("txtHomeWork").addEventListener("click", function () {
-            var myModal = new bootstrap.Modal(document.getElementById('exampleModal2'));
-            myModal.show();
-        });
-
-        document.getElementById("txtHomeWork2").addEventListener("click", function () {
-            var myModal = new bootstrap.Modal(document.getElementById('exampleModal3'));
-            myModal.show();
-        });
-    </script>
+   
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
 
@@ -304,15 +327,21 @@
         };
 </script>
     <script>
-        document.getElementById("txtHomeWork").addEventListener("click", function () {
-            var myModal = new bootstrap.Modal(document.getElementById('exampleModal2'));
-            myModal.show();
-        });
+        function openBootstrapModal() {
+            $('#exampleModal2').modal('show');
+        }
+        function openBootstrapModal2() {
+            $('#exampleModal3').modal('show');
+        }
+        //document.getElementById("txtHomeWork").addEventListener("click", function () {
+        //    var myModal = new bootstrap.Modal(document.getElementById('exampleModal2'));
+        //    myModal.show();
+        //});
 
-        document.getElementById("txtHomeWork2").addEventListener("click", function () {
-            var myModal = new bootstrap.Modal(document.getElementById('exampleModal3'));
-            myModal.show();
-        });
+        //document.getElementById("txtHomeWork2").addEventListener("click", function () {
+        //    var myModal = new bootstrap.Modal(document.getElementById('exampleModal3'));
+        //    myModal.show();
+        //});
     </script>
 </asp:Content>
 

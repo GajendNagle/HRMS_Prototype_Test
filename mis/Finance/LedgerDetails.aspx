@@ -39,7 +39,7 @@
                         <div class="row align-items-end">
                              <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>
+                                    <label>Select Type<br /> प्रकार का चयन करें
                                         </label>
                                     <select class="form-control select2">
                                         <option value="2">Unmapped</option>

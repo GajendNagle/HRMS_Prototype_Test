@@ -96,7 +96,8 @@
 
                         <div class="col-md-12">
                             <input id="checkbox2" onclick="showhidesavebtn3()" type="checkbox" />
-                            <label for="checkbox2" class="text-danger fw-bold fs-5">विधार्थी की जानकारी समग्र पोर्टल से  
+                            <label for="checkbox2" class="text-danger fw-bold fs-5">
+                                विधार्थी की जानकारी समग्र पोर्टल से  
 लाने के लिये चेक बॉक्स पर क्लिक करे ।</label>
                         </div>
 
@@ -1074,6 +1075,20 @@
                                 </select>
                             </div>
                         </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Select Section<br />
+                                    कक्षा का चयन करें</label>
+                                <select class="form-control select2" id="Section">
+                                    <option value="0">Select</option>
+                                    <option value="A Section">A Section</option>
+                                    <option value="B Section">B Section</option>
+                                    <option value="C Section">C Section</option>
+
+                                </select>
+                            </div>
+                        </div>
                         <div class="col-md-3" id="subject" style="display: none;">
                             <div class="form-group">
                                 <label>
@@ -1233,6 +1248,20 @@
                                     <option value="10">10th Class</option>
                                     <option value="11">11th Class</option>
                                     <option value="12">12th Class</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
+                                    Select Section<br />
+                                    कक्षा का चयन करें</label>
+                                <select class="form-control select2" id="Sectionc">
+                                    <option value="0">Select</option>
+                                    <option value="A Section">A Section</option>
+                                    <option value="B Section">B Section</option>
+                                    <option value="C Section">C Section</option>
+
                                 </select>
                             </div>
                         </div>

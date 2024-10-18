@@ -226,14 +226,16 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Office Name (In English)<br />
+                                <label>
+                                    Office Name (In English)<br />
                                     कार्यालय का नाम (अंग्रेजी में)<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Office Name" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Name of Office (in Hindi)<br />
+                                <label>
+                                    Name of Office (in Hindi)<br />
                                     कार्यालय नाम (हिंदी में)<span style="color: red;">*</span></label>
                                 <input type="text" class="form-control" placeholder="कार्यालय का नाम दर्ज करे" />
                             </div>
@@ -588,14 +590,16 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Institute Name (In English)<br />
+                                <label>
+                                    Institute Name (In English)<br />
                                     संस्थान का नाम (अंग्रेजी में)<span style="color: red;"> *</span></label>
                                 <input type="text" class="form-control" placeholder="Enter Institute Name (In English)" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Name of Institute (in Hindi)<br />
+                                <label>
+                                    Name of Institute (in Hindi)<br />
                                     संस्थान का नाम (हिंदी में)<span style="color: red;"> *</span></label>
                                 <input type="text" class="form-control" placeholder="संस्थान का नाम दर्ज करे|" />
                             </div>
@@ -861,7 +865,8 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Select Area
+                                <label>
+                                    Select Area
                                     <br />
                                     क्षेत्र का चयन करें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
@@ -1243,14 +1248,16 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>School Name (In English)<br />
+                                <label>
+                                    School Name (In English)<br />
                                     स्कूल का नाम (अंग्रेजी में)<span style="color: red;"> *</span></label>
                                 <input type="text" class="form-control" placeholder="Enter School Name (In English)" />
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Name of School (in Hindi)<br />
+                                <label>
+                                    Name of School (in Hindi)<br />
                                     स्कूल का नाम (हिंदी में)<span style="color: red;"> *</span></label>
                                 <input type="text" class="form-control" placeholder="स्कूल का नाम दर्ज करे|" />
                             </div>
@@ -1506,6 +1513,35 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>
+                                    Is Vocational Subject<br />
+                                    क्या वोकेशनल विषय <span style="color: red;">*</span>
+                                </label>
+                                <select class="form-control select2" id="vocationalSubject" onchange="showVoca()">
+                                    <option value="-Select-">-Select-</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3" id="vocationalDropdown" style="display: none;">
+                            <div class="form-group">
+                                <label>
+                                    Select Vocational Subject<br />
+                                    वोकेशनल विषय का चयन करें<span style="color: red;">*</span>
+                                </label>
+                                <select class="form-control select2">
+                                    <option value="-Select-">-Select-</option>
+                                    <option value="Healthcare,IT/ITeS">Healthcare, IT/ITeS</option>
+                                    <option value="Electrical & Electronics,IT/ITeS">Electrical & Electronics, IT/ITeS</option>
+                                    <option value="Banking & Financial Services,Electrical & Electronics">Banking & Financial Services, Electrical & Electronics</option>
+                                    <option value="Retail,Travel & Tourism">Retail, Travel & Tourism</option>
+                                    <option value="Beauty & Wellness,Travel & Tourism">Beauty & Wellness, Travel & Tourism</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>
                                     Select School Status<br />
                                     स्कूल की स्थिति का चयन करें<span style="color: red;">*</span></label>
                                 <select class="form-control select2">
@@ -1531,12 +1567,12 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                                <label>
-                                    IsActive<br />
-                                    सक्रिय है
+                            <label>
+                                IsActive<br />
+                                सक्रिय है
          <i style="color: red;">*</i></label>
-                                <asp:CheckBox Checked="true" runat="server" />
-                            </div>
+                            <asp:CheckBox Checked="true" runat="server" />
+                        </div>
 
                     </div>
                 </fieldset>
@@ -1851,7 +1887,9 @@
                         </div>
                         <div id="divhabitation" class="col-md-3">
                             <div class="form-group">
-                                <label>Select Habitation<br />आवास का चयन करें<span style="color: red">*</span></label>
+                                <label>
+                                    Select Habitation<br />
+                                    आवास का चयन करें<span style="color: red">*</span></label>
                                 <select class="form-control select2">
                                     <option value="-Select-">-Select-</option>
                                     <option value="Berasia">Berasia</option>
@@ -1910,7 +1948,9 @@
                     <div class="row" data-select2-id="104">
                         <div class="col-md-3" data-select2-id="103">
                             <div class="form-group" data-select2-id="102">
-                                <label class="control-label" for="SankulId">Select Sankul/AEO Code<br />संकुल/एईओ कोड चुनें<span style="color: red">*</span></label>
+                                <label class="control-label" for="SankulId">
+                                    Select Sankul/AEO Code<br />
+                                    संकुल/एईओ कोड चुनें<span style="color: red">*</span></label>
                                 <select class="form-control select2 select2-hidden-accessible" id="SankulId" name="SankulId" data-select2-id="SankulId" tabindex="-1" aria-hidden="true">
                                     <option value="" data-select2-id="109">Select</option>
                                     <option value="4" data-select2-id="113"></option>
@@ -2139,6 +2179,18 @@
     <script src="../dist/js/select2.full.min.js"></script>
     <script src="../dist/js/jquery.multi-select.js"></script>
     <script>
+
+
+        function showVoca() {
+            var vocationalSelect = document.getElementById("vocationalSubject").value;
+            var vocationalDropdown = document.getElementById("vocationalDropdown");
+
+            if (vocationalSelect === "Yes") {
+                vocationalDropdown.style.display = "block";
+            } else {
+                vocationalDropdown.style.display = "none";
+            }
+        }
         function FbotonOn() {
             confirm("Are you sure you want to save this record?");
         }

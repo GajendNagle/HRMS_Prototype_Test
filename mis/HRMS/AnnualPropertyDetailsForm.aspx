@@ -365,9 +365,9 @@
                                 <select id="ddlpropertyowner" onchange="HidedivOwner();" class="form-control">
                                     <option value="0">--Select--</option>
                                     <option value="1">Self(स्वयं)</option>
-                                    <option value="2">Wife(पत्नी के नाम)</option>
-                                    <option value="3">Son(पुत्र के नाम)</option>
-                                    <option value="4">Daughter(पुत्री के नाम)</option>
+                                    <option value="2">Wife(पत्नी)</option>
+                                    <option value="3">Son(पुत्र)</option>
+                                    <option value="4">Daughter(पुत्री)</option>
                                     <option value="5">Other(अन्य)</option>
                                 </select>
                             </div>
@@ -393,15 +393,24 @@
                                         संपत्ति स्रोत का चयन करें <span style="color: red">*</span></label>
                                     <select class="form-control select2" id="ddlPropertySource">
                                         <option value="Select">--Select--</option>
-                                        <option value="0">संपत्ति रसीद</option>
-                                        <option value="1">संपत्ति पट्टा </option>
-                                        <option value="2">बंधक विरासत</option>
-                                        <option value="3">उपहार</option>
-                                        <option value="4">अन्य</option>
+                                        <option value="0">खरीद</option>
+                                        <option value="1">पट्टा </option>
+                                        <option value="2">बंधक</option>
+                                        <option value="3">विरासत</option>
+                                        <option value="4">भेंट</option>
+                                        <option value="5">अन्य</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3" id="hideremark">
+                                <div class="form-group">
+                                    <label>
+                                        Enter Remark<br />
+                                        टिप्पणी दर्ज करें<span style="color: red">*</span></label>
+                                    <input name="remark" id="remark" type="text" placeholder="Enter Remark" class="form-control" autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3" id="hidedate">
                                 <div class="form-group">
                                     <label>
                                         Select  Purchase Date<br />
@@ -409,7 +418,7 @@
                                     <input name="Purchase Date" id="txtPurchase" type="date" class="form-control" autocomplete="off" />
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3" id="hidemobile">
                                 <div class="form-group">
                                     <label>
                                         Enter Seller Mobile No<br />
@@ -417,7 +426,7 @@
                                     <input name="SellerMblNo" id="monumber" type="text" class="form-control" autocomplete="off" placeholder="विक्रेता का मोबाइल नंबर दर्ज करे" />
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3" id="hideaddress">
                                 <div class="form-group">
                                     <label>
                                         Enter Seller Address<br />
@@ -547,6 +556,31 @@
 
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+
+
+    <script>
+        $(document).ready(function () {
+            $('#ddlPropertySource').on('change', function () {
+                var selectedValue = $(this).val();
+                if (selectedValue == "3") {
+                    $('#hideremark').show(); // Show remark field
+                    $('#hidedate').hide();   // Hide date field
+                    $('#hidemobile').hide();   // Hide date field
+                    $('#hideaddress').hide();   // Hide date field
+
+                } else {
+                    $('#hideremark').hide(); // Hide remark field
+                    $('#hidedate').show();   // Show date field
+                    $('#hidemobile').show();   // Hide date field
+                    $('#hideaddress').show();   // Hide date field
+                }
+            });
+
+            // Trigger change event to handle default state on page load
+            $('#ddlPropertySource').trigger('change');
+        });
+
+    </script>
     <script>
         debugger;
         !function ($) {

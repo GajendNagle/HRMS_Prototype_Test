@@ -16,7 +16,7 @@
                         <li class="breadcrumb-item">
                             <a href="#StudentManage" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Student Management</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Student Attendence Report</span></li>
+                        <li class="breadcrumb-item"><span>Student Attendance Report</span></li>
                     </ol>
                 </div>
             </div>
@@ -127,7 +127,7 @@
             <br />
             <div class="row form-group" id="tbl_class" style="display: none">
                 <fieldset>
-                    <legend>Class 1st Attendence /
+                    <legend>Class 1st Attendance /
                         कक्षा 1 की उपस्थिति</legend>
                     <div class="mt-5">
                         <div class="row justify-content-end">
@@ -165,7 +165,7 @@
                                             <th>Total Absent Days /<br />
                                                 कुल अनुपस्थित दिन</th>
                                             <th>Attendance Percentage /<br />
-                                                कुल अनुपस्थित दिन</th>
+                                               उपस्थिति प्रतिशत</th>
 
                                         </tr>
                                     </thead>
@@ -180,6 +180,7 @@
                                             <td>30</td>
                                             <td>28</td>
                                             <td>2</td>
+                                            <td>50%</td>
                                         </tr>
                                         <tr data-class="1">
                                             <td>2</td>
@@ -190,6 +191,7 @@
                                             <td>30</td>
                                             <td>26</td>
                                             <td>4</td>
+                                            <td>40%</td>
                                         </tr>
                                         <tr data-class="1">
                                             <td>3</td>
@@ -200,6 +202,7 @@
                                             <td>30</td>
                                             <td>27</td>
                                             <td>3</td>
+                                            <td>30%</td>
                                         </tr>
                                         <tr data-class="1">
                                             <td>4</td>
@@ -210,6 +213,7 @@
                                             <td>30</td>
                                             <td>29</td>
                                             <td>1</td>
+                                            <td>10%</td>
                                         </tr>
                                         <tr data-class="1">
                                             <td>5</td>
@@ -220,6 +224,7 @@
                                             <td>30</td>
                                             <td>30</td>
                                             <td>0</td>
+                                            <td>10%</td>
                                         </tr>
 
                                     </tbody>
@@ -233,7 +238,7 @@
             </div>
             <div class="row form-group" id="tbl_class2" style="display: none">
                 <fieldset>
-                    <legend>Class 2nd Attendence /
+                    <legend>Class 2nd Attendance /
                         कक्षा 2 की उपस्थिति</legend>
                     <div class="mt-5">
                         <div class="row justify-content-end">
@@ -270,6 +275,8 @@
 
                                             <th>Total Absent Days /<br />
                                                 कुल अनुपस्थित दिन</th>
+                                            <th>Attendance Percentage /<br />
+                                                उपस्थिति प्रतिशत</th>
 
                                         </tr>
                                     </thead>
@@ -284,6 +291,7 @@
                                             <td>30</td>
                                             <td>28</td>
                                             <td>2</td>
+                                            <td>20%</td>
                                         </tr>
                                         <tr data-class="1">
                                             <td>2</td>
@@ -294,6 +302,7 @@
                                             <td>30</td>
                                             <td>26</td>
                                             <td>4</td>
+                                            <td>40%</td>
                                         </tr>
                                         <tr data-class="1">
                                             <td>3</td>
@@ -304,6 +313,7 @@
                                             <td>30</td>
                                             <td>27</td>
                                             <td>3</td>
+                                            <td>30%</td>
                                         </tr>
                                         <tr data-class="1">
                                             <td>4</td>
@@ -314,6 +324,7 @@
                                             <td>30</td>
                                             <td>29</td>
                                             <td>1</td>
+                                            <td>10%</td>
                                         </tr>
                                         <tr data-class="1">
                                             <td>5</td>
@@ -324,6 +335,7 @@
                                             <td>30</td>
                                             <td>30</td>
                                             <td>0</td>
+                                            <td>50%</td>
                                         </tr>
 
                                     </tbody>
@@ -337,7 +349,7 @@
             </div>
             <div class="row form-group" id="tbl_class3" style="display: none">
                 <fieldset>
-                    <legend>Class 3rd Attendence /
+                    <legend>Class 3rd Attendance /
                         कक्षा 3 की उपस्थिति</legend>
                     <div class="mt-5">
                         <div class="row justify-content-end">
@@ -441,7 +453,7 @@
             </div>
             <div class="row form-group" id="tbl_class4" style="display: none">
                 <fieldset>
-                    <legend>Class 4th Attendence /
+                    <legend>Class 4th Attendance /
                         कक्षा 4 की उपस्थिति</legend>
                     <div class="mt-5">
                         <div class="row justify-content-end">
@@ -545,7 +557,7 @@
             </div>
             <div class="row form-group" id="tbl_class5" style="display: none">
                 <fieldset>
-                    <legend>Class 5th Attendence /
+                    <legend>Class 5th Attendance /
                         कक्षा 5 की उपस्थिति</legend>
                     <div class="mt-5">
                         <div class="row justify-content-end">
@@ -649,7 +661,7 @@
             </div>
             <div class="row form-group" id="tbl_class6" style="display: none">
                 <fieldset>
-                    <legend>Class 6th Attendence /
+                    <legend>Class 6th Attendance /
                         कक्षा 6 की उपस्थिति</legend>
                     <div class="mt-5">
                         <div class="row justify-content-end">
@@ -753,7 +765,7 @@
             </div>
             <div class="row form-group" id="tbl_class7" style="display: none">
                 <fieldset>
-                    <legend>Class 7th Attendence /
+                    <legend>Class 7th Attendance /
                         कक्षा 7 की उपस्थिति</legend>
                     <div class="mt-5">
                         <div class="row justify-content-end">
@@ -857,7 +869,7 @@
             </div>
             <div class="row form-group" id="tbl_class8" style="display: none">
                 <fieldset>
-                    <legend>Class 8th Attendence /
+                    <legend>Class 8th Attendance /
                         कक्षा 8 की उपस्थिति</legend>
                     <div class="mt-5">
                         <div class="row justify-content-end">
@@ -959,7 +971,7 @@
             </div>
             <div class="row form-group" id="tbl_class9" style="display: none">
                 <fieldset>
-                    <legend>Class 9th Attendence /
+                    <legend>Class 9th Attendance /
                         कक्षा 9 की उपस्थिति</legend>
                     <div class="mt-5">
                         <div class="row justify-content-end">
@@ -1063,7 +1075,7 @@
             </div>
             <div class="row form-group" id="tbl_class10" style="display: none">
                 <fieldset>
-                    <legend>Class 10th Attendence /
+                    <legend>Class 10th Attendance /
                         कक्षा 10 की उपस्थिति</legend>
                     <div class="mt-5">
                         <div class="row justify-content-end">
@@ -1167,7 +1179,7 @@
             </div>
             <div class="row form-group" id="tbl_class11" style="display: none">
                 <fieldset>
-                    <legend>Class 11th Attendence /
+                    <legend>Class 11th Attendance /
                         कक्षा 11 की उपस्थिति</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-3 text-end">
@@ -1269,7 +1281,7 @@
             </div>
             <div class="row form-group" id="tbl_class11pcb" style="display: none">
                 <fieldset>
-                    <legend>Class 11th Attendence /
+                    <legend>Class 11th Attendance /
                         कक्षा 12 की उपस्थिति</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-3 text-end">
@@ -1371,7 +1383,7 @@
             </div>
             <div class="row form-group" id="tbl_class11arts" style="display: none">
                 <fieldset>
-                    <legend>Class 11th Attendence /
+                    <legend>Class 11th Attendance /
                         कक्षा ग्यारवीं की उपस्थिति</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-3 text-end">
@@ -1473,7 +1485,7 @@
             </div>
             <div class="row form-group" id="tbl_class11comm" style="display: none">
                 <fieldset>
-                    <legend>Class 11th Attendence /
+                    <legend>Class 11th Attendance /
                         कक्षा ग्यारवीं की उपस्थिति</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-3 text-end">
@@ -1575,7 +1587,7 @@
             </div>
             <div class="row form-group" id="tbl_class11agri" style="display: none">
                 <fieldset>
-                    <legend>Class 11th Attendence /
+                    <legend>Class 11th Attendance /
                         कक्षा ग्यारवीं की उपस्थिति</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-3 text-end">
@@ -1676,7 +1688,7 @@
             </div>
             <div class="row form-group" id="tbl_class12" style="display: none">
                 <fieldset>
-                    <legend>Class 12th Attendence /
+                    <legend>Class 12th Attendance /
                         कक्षा ग्यारवीं की उपस्थिति</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-3 text-end">
@@ -1778,7 +1790,7 @@
             </div>
             <div class="row form-group" id="tbl_class12pcb" style="display: none">
                 <fieldset>
-                    <legend>Class 12th Attendence /
+                    <legend>Class 12th Attendance /
                         कक्षा बारहवीं की उपस्थिति</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-3 text-end">
@@ -1880,7 +1892,7 @@
             </div>
             <div class="row form-group" id="tbl_class12arts" style="display: none">
                 <fieldset>
-                    <legend>Class 12th Attendence /
+                    <legend>Class 12th Attendance /
                         कक्षा बारहवीं की उपस्थिति</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-3 text-end">
@@ -1982,7 +1994,7 @@
             </div>
             <div class="row form-group" id="tbl_class12comm" style="display: none">
                 <fieldset>
-                    <legend>Class 12th Attendence /<br />
+                    <legend>Class 12th Attendance /<br />
                         कक्षा बारहवीं की उपस्थिति</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-3 text-end">
@@ -2084,7 +2096,7 @@
             </div>
             <div class="row form-group" id="tbl_class12agri" style="display: none">
                 <fieldset>
-                    <legend>Class 12th Attendence /<br />
+                    <legend>Class 12th Attendance /<br />
                         कक्षा बारहवीं की उपस्थिति</legend>
                     <div class="row justify-content-end">
                         <div class="col-md-3 text-end">
@@ -2188,7 +2200,7 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
-    <%-- Class wise Attendence Report --%>
+    <%-- Class wise Attendance Report --%>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script>

@@ -35,7 +35,7 @@
                         <li class="breadcrumb-item">
                             <a href="#StudentManage" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>Student Management</span></a>
                         </li>
-                        <li class="breadcrumb-item"><span>Student Attendence</span></li>
+                        <li class="breadcrumb-item"><span>Student Attendance</span></li>
                     </ol>
                 </div>
             </div>
@@ -63,7 +63,7 @@
         </div>
         <div class="card-body">
             <fieldset>
-                <legend>Student Attendence/
+                <legend>Student Attendance/
                     
                     विद्यार्थी उपस्थिति
                 </legend>
@@ -134,7 +134,7 @@
             </fieldset>
             <br />
             <fieldset id="tbl_class" style="display: none">
-                <legend>Attendence Details /
+                <legend>Attendance Details /
                    
                     उपस्थिति विवरण</legend>
                 <div class="row">
