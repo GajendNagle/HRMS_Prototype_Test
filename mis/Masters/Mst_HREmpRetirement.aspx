@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Mst_HREmpRetirement.aspx.cs" Inherits="mis_Payroll_Mst_HREmpRetirment" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
+        table th, td {
+            white-space: nowrap;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
@@ -15,7 +20,7 @@
                         <li class="breadcrumb-item">
                             <a href="#HRMS" data-bs-toggle="collapse" role="button" aria-expanded="false"><span>HRMS</span></a>
                         </li>
-                        <li class="breadcrumb-item">Retirement or Separation</li>
+                        <li class="breadcrumb-item">Retirement or Separation Generate Order</li>
                     </ol>
                 </div>
             </div>
@@ -26,14 +31,25 @@
             <div class="card card-border-primary">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-12">
-                            <h4 class="card-title">Retirement or Separation /
-                                सेवानिवृत्त या विभाजन</h4>
+                        <div class="col-xxl-12 col-md-12">
+                            <div class="marqueecontainerinfo">
+                                <div class="headertext btn btn-primary rounded-pill">
+                                   Details / विवरण
+                                </div>
+                                <div>
+                                    <marquee style="width: 100%;"
+                                        onmouseover="this.stop();" onmouseout="this.start();"
+                                        direction="left" behavior="scroll" scrollamount="7" class="Marqueetext">
+                                        .
+                                    </marquee>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
-                    <fieldset>
+                    <%--<fieldset>
                         <legend>Retirement or Separation /
                                 सेवानिवृत्त या विभाजन</legend>
                         <div class="row align-items-end">
@@ -66,11 +82,11 @@
                                 <div class="col-md-6 col-lg-4 col-xl-3 mt-3">
                                     <div class="form-group">
                                         <label>
-                                            Employee Name /
+                                            Employee Name-Code /
          <br />
 
-                                            कर्मचारी का नाम</label>
-                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Riya Gupta" readonly />
+                                            कर्मचारी का नाम-कोड</label>
+                                        <input name="ename" type="text" class="form-control" autocomplete="off" placeholder="Riya Gupta-E02345" readonly />
 
                                     </div>
                                 </div>
@@ -78,9 +94,9 @@
                                 <div class="col-md-6 col-lg-4 col-xl-3 mt-3">
                                     <div class="form-group">
                                         <label>
-                                           Employee designation /
+                                            Employee Designation /
                                         <br />
-                                          कर्मचारी पदनाम
+                                            कर्मचारी पदनाम
                                         </label>
                                         <input name="edescription" type="text" class="form-control" placeholder="Senior Project Manager" autocomplete="off" readonly />
 
@@ -101,41 +117,71 @@
                                 <div class="col-md-6 col-lg-4 col-xl-3 mt-3">
                                     <div class="form-group">
                                         <label>
-                                            Date Of Retirement /
-                                        <br />
-                                            सेवानिवृत्ति की तारीख
-                                        </label>
-                                        <input type="text" class="form-control" placeholder="2025-12-31" autocomplete="off" readonly />
-
+                                            DDO/Sankul Name Code /
+         <br />
+                                            डीडीओ/संकुल का नाम कोड</label>
+                                        <input type="text" class="form-control" placeholder="Govt.HSS BISTAN-2380298356" autocomplete="off" readonly />
                                     </div>
                                 </div>
 
                                 <div class="col-md-6 col-lg-4 col-xl-3 mt-3">
                                     <div class="form-group">
                                         <label>
-                                            Employee Saperation Type /
+                                            OIS Name Code /
+         <br />
+                                            OIS का नाम/कोड</label>
+                                        <input type="text" class="form-control" placeholder="B.HSS BISTAN-2380245356" autocomplete="off" readonly />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 col-xl-3 mt-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Panel /
+         <br />
+                                            पैनल</label>
+                                        <input type="text" class="form-control" placeholder="HS-1 English" autocomplete="off" readonly />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 col-xl-3 mt-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Select Employee Retirement & Saperation Type /
                                         <br />
-                                            कर्मचारी विभाजन प्रकार
+                                            कर्मचारी सेवानिवृत्ति और विभाजन प्रकार का चयन करें
                                         <span style="color: red">*</span></label>
-                                        <select class="form-control select2">
+                                        <select class="form-control select2" id="OIS" onchange="SeparationType()">
                                             <option>Select</option>
-                                            <option>Retirement</option>
-                                            <option>Deputation</option>
-                                            <option>Termination</option>
-                                            <option>Voluntary Retirement</option>
-                                            <option>Death</option>
+                                            <option value="1">Retirement</option>
+                                            <option value="2">Deputation</option>
+                                            <option value="3">Termination</option>
+                                            <option value="4">Voluntary Retirement</option>
+                                            <option value="5">Death</option>
                                         </select>
                                     </div>
                                 </div>
 
-                                <div class="col-md-6 col-lg-4 col-xl-3 mt-3">
+                                <div class="col-md-6 col-lg-4 col-xl-3 mt-3" id="DOR" style="display: none">
                                     <div class="form-group">
                                         <label>
-                                            Date Of Saperation / 
-                                        <br />
-                                            विभाजन की तारीख<span style="color: red">*</span>
+                                            Date Of Retirement & Saperation /
+         <br />
+                                            सेवानिवृत्ति की तारीख
                                         </label>
-                                        <input id="DateOfSaperation" type="date" class="form-control" />
+                                        <input type="text" class="form-control" placeholder="2024-12-31" autocomplete="off" readonly />
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 col-xl-3 mt-3" id="DOR1" style="display: none">
+                                    <div class="form-group">
+                                        <label>
+                                            Select Date Of Retirement & Saperation /
+                                            <br />
+                                            विभाजन की तारीख और सेवानिवृत्ति का चयन करें
+                                        </label>
+                                        <input type="date" class="form-control" />
 
                                     </div>
                                 </div>
@@ -143,9 +189,9 @@
                                 <div class="col-md-6 col-lg-4 col-xl-3 mt-3">
                                     <div class="form-group">
                                         <label>
-                                            Notesheet Order No. /
+                                            Enter Notesheet Order No. /
                                         <br />
-                                            नोटशीट आदेश संख्या<span style="color: red">*</span>
+                                            नोटशीट आदेश संख्या का दर्ज करें<span style="color: red">*</span>
                                         </label>
                                         <input id="NotesheetOrderNo." placeholder="Notesheet Order No." type="number" class="form-control" />
 
@@ -155,10 +201,10 @@
                                 <div class="col-md-6 col-lg-4 col-xl-3 mt-3">
                                     <div class="form-group">
                                         <label>
-                                            Notesheet Order Date / 
+                                            Select Notesheet Order Date  / 
 
                                         <br />
-                                            नोटशीट आदेश की तारीख<span style="color: red">*</span>
+                                            नोटशीट आदेश की तारीख का चयन करें<span style="color: red">*</span>
                                         </label>
                                         <input id="NotesheetOrderDate" type="date" class="form-control" />
 
@@ -168,9 +214,9 @@
                                 <div class="col-md-6 col-lg-4 col-xl-3 mt-3">
                                     <div class="form-group">
                                         <label>
-                                            Notesheet Order Upload / 
+                                            Upload Notesheet Order / 
                                         <br />
-                                            नोटशीट आदेश अपलोड<span style="color: red">*</span>
+                                            नोटशीट ऑर्डर अपलोड करें<span style="color: red">*</span>
                                         </label>
                                         <input id="NotesheetOrderUpload" type="file" class="form-control" />
 
@@ -184,11 +230,10 @@
                             </div>
 
                         </div>
-                    </fieldset>
+                    </fieldset>--%>
 
-
-                    <fieldset id="ShowReport" style="display: none">
-                        <legend>Employee Retirement Detail / कर्मचारी का सेवानिवृत्ति विवरण </legend>
+                    <fieldset>
+                        <legend>Generate Order / ऑर्डर जनरेट करें</legend>
                         <div class="row mt-4 justify-content-end">
                             <div class="col-md-4 text-end">
                                 <div class="form-group">
@@ -206,19 +251,42 @@
                             <div class="table-responsive">
                                 <table class="table text-center">
                                     <thead>
-                                        <tr style="white-space:nowrap;">
-                                            <th>S.No./<br /> सरल क्र.</th>
-                                            <th>CheckBox/ <br /> चेकबॉक्स
+                                        <tr>
+                                            <th>S.No./<br />
+                                                सरल क्र.</th>
+                                            <th>CheckBox/
+                                                <br />
+                                                चेकबॉक्स
                                             </th>
-                                            <th>Employee Name/<br/> कर्मचारी का नाम</th>
-                                            <th>Seperation Type/<br/> सेवानिवृत्ति प्रकार</th>
-                                             <th>Last Posting OIS/<br/> अंतिम पोस्टिंग ओआईएस</th>
-                                            <th>Last Posting Designation /<br/> अंतिम पोस्टिंग पदनाम</th>
-                                            <th>Date Of Seperation /<br/> सेवानिवृत्ति की तिथि</th>
-                                            <th>Order No./<br/> आदेश संख्या</th>
-                                            <th>Order Date/<br/> आदेश तिथि</th>
-                                            <th>View Order/<br/> आदेश देखें</th>
-                                            <th>Delete/<br/> हटाएं</th>
+                                            <th>Employee Name-Code/<br />
+                                                कर्मचारी का नाम-कोड</th>
+                                            <th>Seperation Type/<br />
+                                                सेवानिवृत्ति प्रकार</th>
+                                            <th>Panel/<br />
+                                                पैनल
+                                            </th>
+                                            <th>DDO/Sankul Name-Code/
+                                                <br />
+                                                डीडीओ/संकुल नाम-कोड
+                                            </th>
+                                            <th>Last Posting OIS/<br />
+                                                अंतिम पोस्टिंग ओआईएस</th>
+                                            <th>Last Posting Designation /<br />
+                                                अंतिम पोस्टिंग पदनाम</th>
+                                            <th>Date Of Birth/
+                                                <br />
+                                                जन्म तिथि
+                                            </th>
+                                            <th>Date Of Retirement & Saperation /<br />
+                                                सेवानिवृत्ति एवं विभाजन की दिनांक</th>
+                                            <th>Order No./<br />
+                                                आदेश संख्या</th>
+                                            <th>Order Date/<br />
+                                                आदेश तिथि</th>
+                                            <th>View Order/<br />
+                                                आदेश देखें</th>
+                                            <th>Delete/<br />
+                                                हटाएं</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -226,11 +294,14 @@
                                             <td>1</td>
                                             <td>
                                                 <input type="checkbox"></td>
-                                            <td>Ankit Sharma</td>
-                                            <td>Resignation</td>
+                                            <td>Ankit Sharma-ANS123</td>
+                                            <td>Retirement</td>
+                                            <td>HS-2 Hindi</td>
+                                            <td>B.HSS BISTAN-2380298356</td>
                                             <td>Greenwood High School(274509837)</td>
                                             <td>Senior Manager</td>
-                                            <td>2024-01-15</td>
+                                            <td>09-05-1940</td>
+                                            <td>30-05-2024</td>
                                             <td>123/2024</td>
                                             <td>2024-01-12</td>
                                             <td class="text-center align-middle">
@@ -243,11 +314,14 @@
                                             <td>2</td>
                                             <td>
                                                 <input type="checkbox"></td>
-                                            <td>Priya Mehta</td>
+                                            <td>Priya Mehta-E0345</td>
                                             <td>Retirement</td>
+                                            <td>HS-2 Hindi</td>
+                                            <td>B.HSS BISTAN-2380298356</td>
                                             <td>DEO Phanda (4627883794)</td>
                                             <td>Head OfficeDirector</td>
-                                            <td>2023-11-30</td>
+                                            <td>11-05-1941</td>
+                                            <td>30-05-2024</td>
                                             <td>564/2023</td>
                                             <td>2023-11-25</td>
                                             <td class="text-center align-middle">
@@ -260,11 +334,14 @@
                                             <td>3</td>
                                             <td>
                                                 <input type="checkbox"></td>
-                                            <td>Karan Yadav</td>
-                                            <td>Transfer</td>
-                                           <td>Riverside Secondary School(2014558954)</td>
+                                            <td>Karan Yadav-E0908</td>
+                                            <td>Retirement</td>
+                                            <td>HS-2 Hindi</td>
+                                            <td>B.HSS BISTAN-2380298356</td>
+                                            <td>Riverside Secondary School(2014558954)</td>
                                             <td>Assistant Manager</td>
-                                            <td>2023-10-20</td>
+                                            <td>09-08-1940</td>
+                                            <td>30-06-2024</td>
                                             <td>789/2023</td>
                                             <td>2023-10-18</td>
                                             <td class="text-center align-middle">
@@ -276,11 +353,14 @@
                                             <td>4</td>
                                             <td>
                                                 <input type="checkbox"></td>
-                                            <td>Sakshi Gupta</td>
+                                            <td>Sakshi Gupta-E0123</td>
                                             <td>Resignation</td>
+                                            <td>HS-2 Hindi</td>
+                                            <td>B.HSS BISTAN-2380298356</td>
                                             <td>DEO Phanda (4627809658)</td>
                                             <td>HR Manager</td>
-                                            <td>2024-02-05</td>
+                                            <td>01-05-1940</td>
+                                            <td>31-06-2024</td>
                                             <td>452/2024</td>
                                             <td>2024-02-01</td>
                                             <td class="text-center align-middle">
@@ -292,11 +372,14 @@
                                             <td>5</td>
                                             <td>
                                                 <input type="checkbox"></td>
-                                            <td>Rahul Kumar</td>
+                                            <td>Rahul Kumar-E0678</td>
                                             <td>Termination</td>
+                                            <td>HS-2 Hindi</td>
+                                            <td>B.HSS BISTAN-2380298356</td>
                                             <td>Government Girls High School (5638094109)</td>
                                             <td>Senior Executive</td>
-                                            <td>2023-09-15</td>
+                                            <td>02-05-1940</td>
+                                            <td>31-06-2024</td>
                                             <td>678/2023</td>
                                             <td>2023-09-12</td>
                                             <td class="text-center align-middle">
@@ -308,11 +391,14 @@
                                             <td>6</td>
                                             <td>
                                                 <input type="checkbox"></td>
-                                            <td>Mohit Verma</td>
+                                            <td>Mohit Verma-E0567</td>
                                             <td>Resignation</td>
+                                            <td>HS-2 Hindi</td>
+                                            <td>B.HSS BISTAN-2380298356</td>
                                             <td>Jawahar Navodaya Vidyalaya (906734801)</td>
                                             <td>Marketing Head</td>
-                                            <td>2024-05-10</td>
+                                            <td>05-05-1940</td>
+                                            <td>30-08-2024</td>
                                             <td>234/2024</td>
                                             <td>2024-05-08</td>
                                             <td class="text-center align-middle">
@@ -324,11 +410,14 @@
                                             <td>7</td>
                                             <td>
                                                 <input type="checkbox"></td>
-                                            <td>Akash Tripathi</td>
-                                            <td>Transfer</td>
+                                            <td>Akash Tripathi-E0235</td>
+                                            <td>Retirement</td>
+                                            <td>HS-2 Hindi</td>
+                                            <td>B.HSS BISTAN-2380298356</td>
                                             <td>Government Higher Secondary School(2076139076)</td>
                                             <td>Assistant Manager</td>
-                                            <td>2023-10-20</td>
+                                            <td>10-05-1940</td>
+                                            <td>30-08-2024</td>
                                             <td>789/2023</td>
                                             <td>2023-10-18</td>
                                             <td class="text-center align-middle">
@@ -342,7 +431,7 @@
 
                             </div>
                         </div>
-
+                        <span style="color: red; font-size: 1.3em"><b>नोट:&nbsp चेकबॉक्स पर क्लिक करने के उपरांत आर्डर जनरेट करें|</b></span>
                         <div class="row mt-4 justify-content-center">
                             <button type="button" class="btn btn-success btn-border Alert-Generate">Generate Order</button>
                         </div>
@@ -367,9 +456,6 @@
             </div>
         </div>
     </div>
-
-
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
     <script>
@@ -424,6 +510,38 @@
     <script>
         function DeleteButton7() {
             var row7 = document.getElementById("row7").style.display = 'none';
+        }
+    </script>
+
+    <script>
+        function SeparationType() {
+            var ForwordTo = document.getElementById("OIS").value;
+            if (ForwordTo == "1") {
+                document.getElementById('DOR').style.display = "block";
+                document.getElementById('DOR1').style.display = "none";
+            }
+            else if (ForwordTo == "2") {
+
+                document.getElementById('DOR1').style.display = "block";
+                document.getElementById('DOR').style.display = "none";
+            }
+            else if (ForwordTo == "3") {
+
+                document.getElementById('DOR1').style.display = "block";
+                document.getElementById('DOR').style.display = "none";
+            } else if (ForwordTo == "4") {
+
+                document.getElementById('DOR1').style.display = "block";
+                document.getElementById('DOR').style.display = "none";
+            } else if (ForwordTo == "5") {
+
+                document.getElementById('DOR1').style.display = "block";
+                document.getElementById('DOR').style.display = "none";
+            }
+            else {
+                document.getElementById('DOR1').style.display = "none";
+                document.getElementById('DOR').style.display = "none";
+            }
         }
     </script>
 

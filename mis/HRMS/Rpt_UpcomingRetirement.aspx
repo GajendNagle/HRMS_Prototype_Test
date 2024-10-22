@@ -178,7 +178,7 @@
                 </div>
             </fieldset>
 
-            <fieldset id="table1" style="display:none;">
+            <fieldset id="table1" style="display: none;">
                 <legend>Details / विवरण</legend>
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
@@ -200,24 +200,31 @@
                             <table class="table table-bordered text-center">
                                 <thead class="nowrap">
                                     <tr>
-                                        <th>Sr.No.
-             <br />
+                                        <th>Sr.No./
+                                            <br />
                                             क्रमांक</th>
-                                        <th>Academic Year<br />
+                                        <th>Academic Year/<br />
                                             शैक्षणिक वर्ष</th>
                                         <th>Employee Name/Code<br />
                                             कर्मचारी का नाम/कोड</th>
+                                        <th>Panel/<br />
+                                            पैनल
+                                        </th>
+                                        <th>DDO/Sankul Name-Code/
+    <br />
+                                            डीडीओ/संकुल नाम-कोड
+                                        </th>
                                         <th>Employee OIS/Code
-             <br />
+     <br />
                                             कर्मचारी OIS/कोड</th>
-                                        <th>Employee Date Of Birth
-                 <br />
+                                        <th>Employee Date Of Birth/
+    <br />
                                             कर्मचारी की जन्म तिथि</th>
-                                        <th>First Joining Date
-                                            <br />
+                                        <th>First Joining Date/
+                               <br />
                                             प्रथम ज्वाइनिंग तिथि</th>
-                                        <th>Retirement Date
-                                            <br />
+                                        <th>Retirement Date/
+                               <br />
                                             सेवानिवृत्ति तिथि</th>
 
                                     </tr>
@@ -226,92 +233,115 @@
                                 <tr>
                                     <td>1</td>
                                     <td>2024</td>
-                                    <td>E00587-Ankit Verma</td>
-                                    <td>B.HSS BISTAN-2380245356</td>
-                                    <td>02-06-1950</td>
+                                    <td>Ankit Verma-E00587</td>
+                                    <td>HS-2 Hindi</td>
+                                    <td>B.HSS BISTAN-2380298356</td>
+                                     <td>B.HSS BISTAN-2380245356</td>
+                                    <td>02-06-1940</td>
                                     <td>31-07-1962</td>
                                     <td>03-05-2024</td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
                                     <td>2024</td>
-                                    <td>E00231-Ankit Verma</td>
+                                    <td>Ankit Verma-E00231</td>
+                                    <td>HS-2 Hindi</td>
                                     <td>B.HSS BISTAN-2380298356</td>
-                                    <td>02-06-1950</td>
-                                    <td>30-07-1962</td>
-                                    <td>01-05-2024</td>
+                                     <td>B.HSS BISTAN-2380298356</td>
+                                    <td>02-06-1940</td>
+                                    <td>04-07-1962</td>
+                                    <td>30-05-2024</td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
                                     <td>2024</td>
-                                    <td>E00549-Saksham Modi</td>
-                                    <td>Govt.HSS BISTAN-2380298356</td>
-                                    <td>02-03-1950</td>
-                                    <td>30-12-1962</td>
-                                    <td>09-06-2024</td>
+                                    <td>Saksham Modi-E00549</td>
+                                    <td>HS-2 Hindi</td>
+                                    <td>B.HSS BISTAN-2380298356</td>
+                                     <td>Govt.HSS BISTAN-2380298356</td>
+                                    <td>02-03-1941</td>
+                                    <td>05-12-1962</td>
+                                    <td>30-06-2024</td>
+
                                 </tr>
                                 <tr>
                                     <td>4</td>
                                     <td>2024</td>
-                                    <td>E00897-Nirmala Ahirwar</td>
-                                    <td>Govt.HSS BISTAN-2380298356</td>
-                                    <td>01-05-1950</td>
-                                    <td>31-07-1962</td>
-                                    <td>06-06-2024</td>
+                                    <td>Nirmala Ahirwar-E00897</td>
+                                    <td>HS-2 Hindi</td>
+                                    <td>B.HSS BISTAN-2380298356</td>
+                                      <td>Govt.HSS BISTAN-2380298356</td>
+                                    <td>01-05-1941</td>
+                                    <td>11-07-1962</td>
+                                    <td>30-06-2024</td>
+
                                 </tr>
                                 <tr>
                                     <td>5</td>
                                     <td>2024</td>
                                     <td>E00798-Seema Yadav</td>
+                                    <td>HS-2 Hindi</td>
+                                    <td>B.HSS BISTAN-2380298356</td>
                                     <td>Govt.HSS BISTAN-2380298356</td>
-                                    <td>08-12-1951</td>
-                                    <td>31-02-1963</td>
-                                    <td>03-07-2024</td>
+                                    <td>08-12-1940</td>
+                                    <td>05-02-1963</td>
+                                    <td>31-07-2024</td>
                                 </tr>
                                 <tr>
                                     <td>6</td>
                                     <td>2024</td>
                                     <td>E00160-Akhilesh Verma</td>
-                                    <td>Govt.HSS BISTAN-2380298356</td>
-                                    <td>04-04-1950</td>
-                                    <td>31-07-1962</td>
-                                    <td>08-07-2024</td>
+                                    <td>HS-2 Hindi</td>
+                                    <td>B.HSS BISTAN-2380298356</td>
+                                     <td>Govt.HSS BISTAN-2380298356</td>
+                                    <td>04-04-1942</td>
+                                    <td>07-07-1962</td>
+                                    <td>31-07-2024</td>
+
                                 </tr>
                                 <tr>
                                     <td>7</td>
                                     <td>2024</td>
                                     <td>E00012-Shubham Verma</td>
-                                    <td>Govt.HSS BISTAN-2380298356</td>
-                                    <td>02-03-1950</td>
-                                    <td>30-03-1962</td>
-                                    <td>07-07-2024</td>
+                                    <td>HS-2 Hindi</td>
+                                    <td>B.HSS BISTAN-2380298356</td>
+                                     <td>Govt.HSS BISTAN-2380298356</td>
+                                    <td>02-03-1941</td>
+                                    <td>06-03-1962</td>
+                                    <td>30-07-2024</td>
                                 </tr>
                                 <tr>
                                     <td>8</td>
                                     <td>2024</td>
                                     <td>E00902-Vishal Saksena</td>
-                                    <td>Govt.HSS BISTAN-2380298356</td>
-                                    <td>09-10-1951</td>
-                                    <td>31-12-1963</td>
-                                    <td>20-07-2024</td>
+                                    <td>HS-2 Hindi</td>
+                                    <td>B.HSS BISTAN-2380298356</td>
+                                     <td>Govt.HSS BISTAN-2380298356</td>
+                                    <td>09-10-1940</td>
+                                    <td>11-12-1963</td>
+                                    <td>31-07-2024</td>
                                 </tr>
                                 <tr>
                                     <td>9</td>
                                     <td>2024</td>
                                     <td>E00231-Ankit Verma</td>
-                                    <td>Govt.HSS BISTAN-2380298356</td>
-                                    <td>02-06-1950</td>
-                                    <td>31-07-1962</td>
-                                    <td>03-07-2024</td>
+                                    <td>HS-2 Hindi</td>
+                                    <td>B.HSS BISTAN-2380298356</td>
+                                     <td>Govt.HSS BISTAN-2380298356</td>
+                                    <td>02-06-1942</td>
+                                    <td>15-07-1962</td>
+                                    <td>31-07-2024</td>
                                 </tr>
                                 <tr>
                                     <td>10</td>
                                     <td>2024</td>
                                     <td>E00231-Ankit Verma</td>
-                                    <td>Govt.HSS BISTAN-2380298356</td>
-                                    <td>02-06-1950</td>
-                                    <td>30-07-1962</td>
-                                    <td>03-08-2024</td>
+                                    <td>HS-2 Hindi</td>
+                                    <td>B.HSS BISTAN-2380298356</td>
+                                     <td>Govt.HSS BISTAN-2380298356</td>
+                                    <td>02-06-1942</td>
+                                    <td>08-07-1962</td>
+                                    <td>30-08-2024</td>
                                 </tr>
 
                             </table>

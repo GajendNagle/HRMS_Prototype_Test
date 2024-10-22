@@ -932,7 +932,8 @@
                                             <a class="nav-link" href="#Retirement" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Employee"><i class="ri-menu-line"></i>Retirement Or Separation</a>
                                             <div class="collapse menu-dropdown" id="Retirement">
                                                 <ul class="nav nav-sm flex-column">
-                                                    <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_HREmpRetirement.aspx"><i class="ri-file-info-line"></i>Retirement Or Separation</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/HRMS/EmpRetirement.aspx"><i class="ri-file-info-line"></i>Retirement Or Separation</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_HREmpRetirement.aspx"><i class="ri-file-info-line"></i>Generate Order</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_UpcomingRetirement.aspx"><i class="ri-file-info-line"></i>Upcoming Retirement Report</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/RetirementAndSeperationReport.aspx"><i class="ri-file-info-line"></i>Report</a></li>
                                                 </ul>
