@@ -54,11 +54,21 @@
                     <fieldset>
                         <legend>Employee Retirement Report / कर्मचारी का सेवानिवृत्ति रिपोर्ट</legend>
                         <div class="row align-items-end">
+
+                             <div class="col-md-6 col-lg-4 col-xl-3">
+
+     <div class="form-group">
+         <label>
+             Select Academic Year /<br />
+             शैक्षणिक वर्ष का चयन करें<span style="color: red">*</span></label>
+         <input maxlength="4" autocomplete="off" placeholder="--Select Year--" id="txtAcademicYear" class="form-control datepickerYear2 form-select" type="text" data-val="true" required="required" />
+     </div>
+ </div>
                             <div class="col-md-6 col-lg-4 col-xl-3">
                                 <div class="form-group">
                                     <label>
-                                        District/<br />
-                                        जिला<span style="color: red">*</span></label>
+                                        Select District/<br />
+                                        जिला का चयन करें<span style="color: red">*</span></label>
                                     <select class="form-control select2" id="ddlApprove">
                                         <option value="0">--Select--</option>
                                         <option value="51">Agar Malwa</option>
@@ -117,18 +127,11 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6 col-lg-4 col-xl-3">
-
-                                <div class="form-group">
-                                    <label>
-                                        Select Academic Year /<br />
-                                        शैक्षणिक वर्ष का चयन करें<span style="color: red">*</span></label>
-                                    <input maxlength="4" autocomplete="off" placeholder="--Select Year--" id="txtAcademicYear" class="form-control datepickerYear2 form-select" type="text" data-val="true" required="required" />
-                                </div>
-                            </div>
+                           
                         </div>
-                        <hr />
                         <div class="row">
+
+
                             <div class="col-md-6 mb-2">
                                 <button type="button" class="btn btn-success btn-border" onclick="myFunction()">Search</button>
                                 <a href="RetirementAndSeperationReport.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
@@ -162,20 +165,16 @@
                                             <tr style="white-space: nowrap;">
                                                 <th>S.No. /<br />
                                                     सरल क्र</th>
-                                                <th>Employee Name-Code /<br />
-                                                    कर्मचारी का नाम-कोड</th>
+                                                <th>Employee Name /<br />
+                                                    कर्मचारी का नाम</th>
                                                 <th>Seperation Type /<br />
                                                     सेवानिवृत्ति प्रकार</th>
                                                 <th>Last Posting OIS /<br />
                                                     अंतिम पोस्टिंग ओआईएस</th>
                                                 <th>Last Posting Designation /<br />
                                                     अंतिम पोस्टिंग पदनाम</th>
-                                                <th>Employee Date Of Birth/
-                                        <br />
-                                                    कर्मचारी की जन्म तिथि
-                                                </th>
-                                                <th>Date Of Retirement & Saperation /<br />
-                                                    सेवानिवृत्ति एवं विभाजन की दिनांक</th>
+                                                <th>Date Of Saperation /<br />
+                                                    सेवानिवृत्ति की तिथि</th>
                                                 <th>Order No. /<br />
                                                     आदेश संख्या</th>
                                                 <th>Order Date /<br />
@@ -190,12 +189,11 @@
                                             <tr id="row1">
                                                 <td>1</td>
 
-                                                <td>Ankit Sharma-E0678</td>
+                                                <td>Ankit Sharma</td>
                                                 <td>Resignation</td>
                                                 <td>Greenwood High School(274509837)</td>
                                                 <td>Senior Manager</td>
-                                                <td>03-05-1942</td>
-                                                <td>30-07-2024</td>
+                                                <td>2024-01-15</td>
                                                 <td>123/2024</td>
                                                 <td>2024-01-12</td>
                                                 <td class="text-center align-middle">
@@ -206,12 +204,11 @@
                                             <tr id="row2">
                                                 <td>2</td>
 
-                                                <td>Priya Mehta-E0789</td>
+                                                <td>Priya Mehta</td>
                                                 <td>Retirement</td>
                                                 <td>DEO Phanda (4627883794)</td>
                                                 <td>Head OfficeDirector</td>
-                                                <td>09-05-1941</td>
-                                                <td>30-08-2024</td>
+                                                <td>2023-11-30</td>
                                                 <td>564/2023</td>
                                                 <td>2023-11-25</td>
                                                 <td class="text-center align-middle">
@@ -222,12 +219,11 @@
                                             <tr id="row3">
                                                 <td>3</td>
 
-                                                <td>Karan Yadav-E0568</td>
-                                                <td>Retirement</td>
+                                                <td>Karan Yadav</td>
+                                                <td>Transfer</td>
                                                 <td>Riverside Secondary School(2014558954)</td>
                                                 <td>Assistant Manager</td>
-                                                <td>03-05-1942</td>
-                                                <td>31-08-2024</td>
+                                                <td>2023-10-20</td>
                                                 <td>789/2023</td>
                                                 <td>2023-10-18</td>
                                                 <td class="text-center align-middle">
@@ -237,12 +233,11 @@
                                             <tr id="row4">
                                                 <td>4</td>
 
-                                                <td>Sakshi Gupta-E8908</td>
+                                                <td>Sakshi Gupta</td>
                                                 <td>Resignation</td>
                                                 <td>DEO Phanda (4627809658)</td>
                                                 <td>HR Manager</td>
-                                                <td>11-05-1942</td>
-                                                <td>31-09-2024</td>
+                                                <td>2024-02-05</td>
                                                 <td>452/2024</td>
                                                 <td>2024-02-01</td>
                                                 <td class="text-center align-middle">

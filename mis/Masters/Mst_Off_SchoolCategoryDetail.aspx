@@ -1,6 +1,66 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Mst_Off_SchoolCategoryDetail.aspx.cs" Inherits="mis_Masters_Mst_SchoolCategoryDetail" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
+        [data-theme=classic][data-sidebar=dark] {
+            --vz-vertical-menu-bg: #1f67b9;
+            --vz-vertical-menu-item-color: #ffffff;
+            --vz-font-family-secondary: "inter";
+            --vz-orange:#f36d21;
+            --vz-danger: #ff0000;
+        }
+
+        legend {
+            background: var(--vz-orange);
+            padding: 4px 8px;
+            border: 0;
+            color:var(--vz-light);
+            font-weight: 350;
+            font-size: .9rem;
+        }
+
+        fieldset {
+            border: 1px solid var(--vz-gray);
+        }
+
+        .btn-excel {
+            background: var(--vz-orange);
+            border: 0px;
+        }
+        .btn-excel:hover {
+            background: var(--vz-orange);
+           
+        }
+
+        .table tr:nth-child(even) {
+            background-color: transparent;
+        }
+
+        .table th {
+            background-color: var(--vz-orange);
+            color: var(--vz-light);
+        }
+
+        .table-responsive {
+            box-shadow: 0px 0px 5px 2px rgba(56, 65, 74, 0.15) !important;
+        }
+
+        .btn.w-55 {
+            min-width: 100px;
+        }
+
+        .navbar-menu {
+            border-right: 0px;
+        }
+
+        .marqueecontainer {
+            margin-bottom: .5rem;
+        }
+
+            .marqueecontainer .headertext {
+                background: var(--vz-vertical-menu-bg)  !important;
+            }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
@@ -104,7 +164,7 @@
                 <div class="row justify-content-end">
                     <div class="col-md-4 text-end">
                         <div class="form-group">
-                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded btn-excel w-55">Excel</button>
                             <button class="btn btn-info btn-rounded w-55">PDF</button>
                         </div>
                     </div>
@@ -116,19 +176,24 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="table-responsive">
-                            <table class="table table-bordered text-center">
+                        <div class="shadow rounded-4 table-responsive mb-4">
+                            <table class="table text-center  table-hover border mb-0 table-bordered">
                                 <thead class="nowrap">
                                     <tr>
-                                        <th>Sr.No. <br />
+                                        <th>Sr.No.
+                                            <br />
                                             सरल क्र.</th>
-                                        <th>School Category <br />
+                                        <th>School Category
+                                            <br />
                                             स्कूल श्रेणी</th>
-                                        <th>School Category Detail <br />
+                                        <th>School Category Detail
+                                            <br />
                                             स्कूल श्रेणी विवरण</th>
-                                        <th>Category Detail Code No. <br />
+                                        <th>Category Detail Code No.
+                                            <br />
                                             श्रेणी विवरण कोड संख्या</th>
-                                        <th>Status(Active/InActive) <br />
+                                        <th>Status(Active/InActive)
+                                            <br />
                                             स्थिति (सक्रिय/निष्क्रिय)</th>
                                         <th>Action<br />
                                             कार्यवाहीं</th>
@@ -140,7 +205,7 @@
                                     <td>Primary only with grades 1 to 5 (PRY)</td>
                                     <td>1</td>
                                     <td>Active</td>
-                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -148,7 +213,7 @@
                                     <td>Upper Primary with grades 1 to 8 (PRY-UPR) </td>
                                     <td>2</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
@@ -156,7 +221,7 @@
                                     <td>Higher Secondary with grades 1 to 12 (PRY-UPR-SEC-HSEC)</td>
                                     <td>3</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
@@ -164,7 +229,7 @@
                                     <td>Upper Primary only with grades 6 to 8 (UPR)</td>
                                     <td>4</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
@@ -172,7 +237,7 @@
                                     <td>Higher Secondary with grades 6 to 12 (UPR-SEC-HSEC)</td>
                                     <td>5</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>6</td>
@@ -180,7 +245,7 @@
                                     <td>Secondary with grades 1 to 10 (PRY-UPR-SEC)</td>
                                     <td>6</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>7</td>
@@ -188,7 +253,7 @@
                                     <td>Secondary with grades 6 to 10 (UPR-SEC)</td>
                                     <td>7</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>8</td>
@@ -196,7 +261,7 @@
                                     <td>Secondary only with grades 9 & 10 (SEC)</td>
                                     <td>8</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>9</td>
@@ -204,7 +269,7 @@
                                     <td>Higher Secondary with grades 9 to 12 (SEC-HSEC)</td>
                                     <td>10</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>10</td>
@@ -212,7 +277,7 @@
                                     <td>Hr. Sec. /Jr. College only with grades 11 & 12 (HSEC)</td>
                                     <td>11</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

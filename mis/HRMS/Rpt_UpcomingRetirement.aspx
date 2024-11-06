@@ -51,14 +51,10 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select Academic year<br />
-                                शैक्षणिक वर्ष का चयन करें <span style="color: red">*</span></label>
-                            <select class="form-control select2">
-                                <option>Select</option>
-                                <option>2024-25</option>
-                                <option>2023-24</option>
-                                <option>2022-23</option>
-                            </select>
+                                 Academic year<br />
+                                शैक्षणिक वर्ष <span style="color: red">*</span></label>
+                                                      <input type="text" class="form-control" value="2024-25" readonly="readonly" />
+
                         </div>
                     </div>
 
@@ -128,45 +124,23 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>
-                                Select  Block Name
+                                Select Upcoming Retirements
             <br />
-                                विकासखण्ड  का नाम चुनें<span style="color: red">*</span></label>
+                                आगामी सेवानिवृत्ति का चयन करें<span style="color: red">*</span></label>
                             <select name="ctl00$ContentBody$ctl03" class="form-control select2">
 
                                 <option value="Select">Select</option>
-                                <option value="Agar">Agar</option>
-                                <option value="Barod">Barod</option>
-                                <option value="Nalkheda">Nalkheda</option>
-                                <option value="Susner">Susner</option>
-                                <option value="Alirajpur">Alirajpur</option>
-                                <option value="Bhabra">Bhabra</option>
-                                <option value="Katthiwara">Katthiwara</option>
-                                <option value="Sondwa">Sondwa</option>
-                                <option value="Udaygarh">Udaygarh</option>
-                                <option value="Jobat">Jobat</option>
-                                <option value="Anuppur">Anuppur</option>
-                                <option value="Jaithari">Jaithari</option>
-                                <option value="Kotma">Kotma</option>
+                                <option value="With in a Month">With in a Month</option>
+                                <option value="With in a 3 Month">With in a 3 Month</option>
+                                <option value="With in a 6 Month">With in a 6 Month</option>
+                                <option value="With in a Year">With in a Year</option>
+                                
+                              
 
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>
-                                Sankul Code/ Name
-                                <br />
-                                संकुल कोड / नाम<span style="color: red">*</span></label>
-                            <select class="form-control select2" id="ddlOffice" onchange="BindSankul();">
-                                <option>Select</option>
-                                <option value="(2345040410) AAMAI HS NEW JSK">AAMAI HS NEW JSK-(2345040410)</option>
-                                <option value="(2332030006) AKBARPUR GOVT. HS">AKBARPUR GOVT. HS-(2332030006)</option>
-                                <option value="(2327100059) B.HSS BISTAN">B.HSS BISTAN-(2327100059)</option>
-                                <option value="(2345090040) BAIHAR HSS BOYS NEW JSK">BAIHAR HSS BOYS NEW JSK-(2345090040)</option>
-                                <option value="(2345030063) BAMHANI HS NEW JSK">BAMHANI HS NEW JSK-(2345030063)</option>
-                            </select>
-                        </div>
-                    </div>
+                   
                 </div>
 
                 <hr />

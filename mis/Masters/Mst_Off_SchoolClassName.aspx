@@ -1,6 +1,38 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mis/MainMaster.master" AutoEventWireup="true" CodeFile="Mst_Off_SchoolClassName.aspx.cs" Inherits="mis_HR_Mst_ClassName" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHeader" runat="Server">
+    <style>
+        .table tr:nth-child(even) {
+            background-color: #fffaec;
+        }
+
+        .table thead {
+            /*border-bottom: 2px solid #ffa800 !important;*/
+            border: 2px solid #ffa800 !important;
+        }
+
+            .table thead th {
+                background-color: #ffd580;
+                border: 2px solid #ffffff;
+            }
+
+        .table td {
+            border: 1px solid #e0dfde;
+                border-width: 0px 2px 0px 2px;
+        }
+        .table td:last-child,.table td:first-child {
+            
+            border-width: 0px 0px 0px 0px;
+        }
+
+        .table tbody tr:hover {
+            background: #fffaec !important;
+        }
+
+        .table-bordered > :not(caption) > * {
+            border-width: 0;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="Server">
     <div class="row">
@@ -36,7 +68,9 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-6">
-                    <h4 class="card-title">School Class Name Master <br /> स्कूल कक्षा का नाम मास्टर</h4>
+                    <h4 class="card-title">School Class Name Master
+                        <br />
+                        स्कूल कक्षा का नाम मास्टर</h4>
                 </div>
             </div>
         </div>
@@ -47,20 +81,25 @@
                 <div class="row align-items-end">
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter School Class Name (In English)<br />कक्षा का नाम दर्ज करे(अंग्रेज़ी में)<span style="color: red">*</span></label>
+                            <label>
+                                Enter School Class Name (In English)<br />
+                                कक्षा का नाम दर्ज करे(अंग्रेज़ी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl00" type="text" class="form-control" autocomplete="off" placeholder="Enter School Class Name" />
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
-                            <label>Enter School Class Name (In Hindi)<br />कक्षा का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
+                            <label>
+                                Enter School Class Name (In Hindi)<br />
+                                कक्षा का नाम दर्ज करे(हिंदी में)<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl01" type="text" class="form-control" autocomplete="off" placeholder="कक्षा का नाम दर्ज करे" />
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Effective Date <br />
+                                Enter Effective Date
+                                <br />
                                 प्रभावी तिथि दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$TextBox1" type="date" id="ContentBody_TextBox1" class="form-control" placeholder="Select Date..." />
                         </div>
@@ -68,7 +107,8 @@
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="form-group">
                             <label>
-                                Enter Class Code No. <br />
+                                Enter Class Code No.
+                                <br />
                                 कक्षा कोड संख्या दर्ज करें<span style="color: red">*</span></label>
                             <input name="ctl00$ContentBody$ctl02" type="text" class="form-control" placeholder="Code Number" onkeypress="return lettersOnly();" />
                         </div>
@@ -87,7 +127,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                <hr />
+                    <hr />
                     <div class="form-group">
                         <input type="submit" name="ctl00$ContentBody$btnSave" value="Save" onclick="return confirm(&#39;Are you sure you want to save this record?&#39;);" class="btn btn-success btn-border" />
                         <a href="Mst_OfficeRegistration.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
@@ -115,20 +155,28 @@
                             <table class="table table-bordered text-center">
                                 <thead class="nowrap">
                                     <tr>
-                                        <th>Sr.No. <br />
+                                        <th>Sr.No.
+                                            <br />
                                             सरल क्र.<br />
                                         </th>
-                                        <th>School Class Name<br />स्कूल कक्षा का नाम</th>
-                                        <th>कक्षा का नाम<br />Class Name</th>
-                                        <th>Effective Date <br />
+                                        <th>School Class Name<br />
+                                            स्कूल कक्षा का नाम</th>
+                                        <th>कक्षा का नाम<br />
+                                            Class Name</th>
+                                        <th>Effective Date
+                                            <br />
                                             प्रभावी तिथि
                                         </th>
-                                        <th>Class Code No. <br />
+                                        <th>Class Code No.
+                                            <br />
                                             क्लास कोड नं
                                         </th>
-                                        <th>Status(Active/InActive) <br />
+                                        <th>Status(Active/InActive)
+                                            <br />
                                             स्थिति (सक्रिय/निष्क्रिय)</th>
-                                        <th>Action <br />कार्यवाहीं</th>
+                                        <th>Action
+                                            <br />
+                                            कार्यवाहीं</th>
                                     </tr>
                                 </thead>
                                 <tr>
@@ -138,7 +186,7 @@
                                     <td>01/04/2023</td>
                                     <td>01</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -147,7 +195,7 @@
                                     <td>01/04/2023</td>
                                     <td>02</td>
                                     <td>Active</td>
-                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td class="nowrap"><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
@@ -156,7 +204,7 @@
                                     <td>01/04/2023</td>
                                     <td>03</td>
                                     <td>Active</td>
-                                   <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
@@ -165,7 +213,7 @@
                                     <td>01/04/2023</td>
                                     <td>04</td>
                                     <td>Active</td>
-                                   <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
@@ -174,7 +222,7 @@
                                     <td>01/04/2023</td>
                                     <td>05</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>6</td>
@@ -183,7 +231,7 @@
                                     <td>01/04/2023</td>
                                     <td>06</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>7</td>
@@ -192,7 +240,7 @@
                                     <td>01/04/2023</td>
                                     <td>07</td>
                                     <td>Active</td>
-                                   <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>8</td>
@@ -201,7 +249,7 @@
                                     <td>01/04/2023</td>
                                     <td>08</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>9</td>
@@ -210,7 +258,7 @@
                                     <td>01/04/2023</td>
                                     <td>09</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>10</td>
@@ -219,7 +267,7 @@
                                     <td>01/04/2023</td>
                                     <td>10</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>11</td>
@@ -228,7 +276,7 @@
                                     <td>01/04/2023</td>
                                     <td>11</td>
                                     <td>Active</td>
-                                   <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>12</td>
@@ -237,7 +285,7 @@
                                     <td>01/04/2023</td>
                                     <td>12</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>13</td>
@@ -246,7 +294,7 @@
                                     <td>01/04/2023</td>
                                     <td>13</td>
                                     <td>Active</td>
-                                   <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>14</td>
@@ -255,7 +303,7 @@
                                     <td>01/04/2023</td>
                                     <td>14</td>
                                     <td>Active</td>
-                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span> <a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                                    <td><span class="Alert-Edit btn btn-outline-primary"><i class="fa fa-pen"></i></span><a class="Alert-Delete btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             </table>
                         </div>

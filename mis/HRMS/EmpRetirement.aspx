@@ -48,32 +48,61 @@
                 <legend>Employee Retirement / कर्मचारी सेवानिवृत्ति</legend>
 
                 <div class="row align-items-end">
-
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-3">
                         <div class="form-group">
                             <label>
-                                Select Academic year<br />
-                                शैक्षणिक वर्ष का चयन करें <span style="color: red">*</span></label>
-                            <input type="text" class="form-control" value="2024-25" readonly="readonly" />
-
+                                Select Employee Retirement & Separation Type /<br />
+                                कर्मचारी सेवानिवृत्ति और विभाजन प्रकार का चयन करें
+           
+                                <span style="color: red">*</span>
+                            </label>
+                            <select class="form-control select2" id="OIS" onchange="SeparationTypea()">
+                                <option value="Select">Select</option>
+                                <option value="1">Retirement</option>
+                                <option value="2">Deputation</option>
+                                <option value="3">Termination</option>
+                                <option value="4">Voluntary Retirement</option>
+                                <option value="5">Death</option>
+                            </select>
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="uniqueIdDiv" style="display: none">
+                        <div class="form-group">
+                            <label>
+                                Enter Unique Id<br />
+                                Unique ID दर्ज करें  <span style="color: red">*</span>
+                            </label>
+                            <input type="text" id="Unique" class="form-control" placeholder="Enter Emp Unique Id (Ex:541524)" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" id="acadYearDiv" style="display: none">
+                        <div class="form-group">
+                            <label>
+                                Academic year<br />
+                                शैक्षणिक वर्ष  <span style="color: red">*</span>
+                            </label>
+                            <input type="text" id="AcadYear" class="form-control" value="2024-25" readonly="readonly" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" id="selectMonthDiv" style="display: none">
                         <div class="form-group">
                             <label>
                                 Select Month<br />
-                                माह का चयन करें<span style="color: red">*</span></label>
+                                माह का चयन करें <span style="color: red">*</span>
+                            </label>
                             <select class="form-control select2" id="ddlSelect">
                                 <option>Select</option>
                                 <option value="1">January</option>
                                 <option value="2">February</option>
                                 <option value="3">March</option>
                                 <option value="4">April</option>
-                                <option>May</option>
-                                <option>June</option>
-                                <option>July</option>
-                                <option>August</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
                             </select>
                         </div>
                     </div>
@@ -117,12 +146,13 @@
                                             शैक्षणिक वर्ष</th>
                                         <th>Employee Name/Code<br />
                                             कर्मचारी का नाम/कोड</th>
-                                        <th>Employee OIS/Code
-                                            <br />
-                                            कर्मचारी OIS/कोड</th>
+
                                         <th>Panel/<br />
                                             पैनल
                                         </th>
+                                        <th>Employee OIS/Code
+       <br />
+                                            कर्मचारी OIS/कोड</th>
                                         <th>DDO/Sankul Name-Code/
     <br />
                                             डीडीओ/संकुल नाम-कोड
@@ -148,8 +178,8 @@
                                     <td>1</td>
                                     <td>2024-25</td>
                                     <td>Ankit Verma-E00587</td>
-                                    <td>B.HSS BISTAN-2380245356</td>
                                     <td>HS-2 Hindi</td>
+                                    <td>B.HSS BISTAN-2380245356</td>
                                     <td>B.HSS BISTAN-2380298356</td>
                                     <td>02-06-1940</td>
                                     <td>09-07-1962</td>
@@ -160,8 +190,8 @@
                                     <td>2</td>
                                     <td>2024-25</td>
                                     <td>Ankit Verma-E00231</td>
-                                    <td>B.HSS BISTAN-2380298356</td>
                                     <td>HS-2 Hindi</td>
+                                    <td>B.HSS BISTAN-2380298356</td>
                                     <td>B.HSS BISTAN-2380298356</td>
                                     <td>02-06-1940</td>
                                     <td>04-07-1962</td>
@@ -441,6 +471,80 @@
                     </div>
                 </div>
             </fieldset>
+            <fieldset id="table5" style="display: none;">
+                <legend>Unique Id Wise Employee Details/ Unique id वार कर्मचारी विवरण</legend>
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-end">
+                        <div class="form-group">
+                            <button class="btn btn-info btn-rounded w-55">Excel</button>
+                            <button class="btn btn-info btn-rounded w-55">PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="text" id="searchInputID" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center">
+                                <thead class="nowrap">
+                                    <tr>
+                                        <th>Sr.No.
+                            <br />
+                                            क्रमांक</th>
+                                        <th>Academic Year/<br />
+                                            शैक्षणिक वर्ष</th>
+                                        <th>Employee Name/Code<br />
+                                            कर्मचारी का नाम/कोड</th>
+                                        <th>Employee OIS/Code
+                            <br />
+                                            कर्मचारी OIS/कोड</th>
+                                        <th>Panel/<br />
+                                            पैनल
+                                        </th>
+                                        <th>DDO/Sankul Name-Code/
+                                <br />
+                                            डीडीओ/संकुल नाम-कोड
+                                        </th>
+                                        <th>Employee Date Of Birth/
+                                <br />
+                                            कर्मचारी की जन्म तिथि</th>
+                                        <th>First Joining Date/
+               <br />
+                                            प्रथम ज्वाइनिंग तिथि</th>
+                                        <th>Retirement Date/
+               <br />
+                                            सेवानिवृत्ति तिथि</th>
+                                        <th>Action/
+                           <br />
+                                            कार्येवाही
+                                        </th>
+
+                                    </tr>
+                                </thead>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>2024</td>
+                                    <td>E00902-Vishal Saksena</td>
+                                    <td>Govt.HSS BISTAN-2380298356</td>
+                                    <td>HS-2 Hindi</td>
+                                    <td>B.HSS BISTAN-2380298356</td>
+                                    <td>09-10-1940</td>
+                                    <td>11-12-1963</td>
+                                    <td>31-04-2024</td>
+                                    <td><a class="btn btn-outline-info" style="white-space: nowrap" data-bs-toggle="modal" data-bs-target="#examplesModal">Retirement Or Separation</a></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
         </div>
     </div>
     <div class="modal fade" id="examplesModal" tabindex="-1" aria-labelledby="examplesModalLabel" aria-hidden="true">
@@ -459,20 +563,16 @@
                             <div class="col-md-6 col-lg-4 col-xl-3 mt-3">
                                 <div class="form-group">
                                     <label>
-                                        Select Employee Retirement & Saperation Type /
-                               <br />
-                                        कर्मचारी सेवानिवृत्ति और विभाजन प्रकार का चयन करें
-                               <span style="color: red">*</span></label>
-                                    <select class="form-control select2" id="OIS" onchange="SeparationType()">
-                                        <option>Select</option>
-                                        <option value="1">Retirement</option>
-                                        <option value="2">Deputation</option>
-                                        <option value="3">Termination</option>
-                                        <option value="4">Voluntary Retirement</option>
-                                        <option value="5">Death</option>
-                                    </select>
+                                        Select Date /
+                                        <br />
+                                        दिनांक का चयन करें
+                                    </label>
+                                    <input id="seelcdate" type="date" class="form-control" />
+
+
                                 </div>
                             </div>
+
 
                             <div class="col-md-6 col-lg-4 col-xl-3 mt-3" id="DOR" style="display: none">
                                 <div class="form-group">
@@ -589,7 +689,15 @@
     <script type="text/javascript">
         function showHideRemarkView() {
             var ddlSelect = document.getElementById('ddlSelect');
-            //var remarkView = document.getElementById("RemarkView");
+            var ddlsepration = document.getElementById('OIS');
+
+            if (ddlsepration.value != "1") {
+                table1.style.display = "none";
+                table2.style.display = "none";
+                table3.style.display = "none";
+                table4.style.display = "none";
+                table5.style.display = "block";
+            }
 
             if (ddlSelect.value == "1") {
                 //remarkView.style.display = "initial";
@@ -630,6 +738,7 @@
     <script>
         function SeparationType() {
             var ForwordTo = document.getElementById("OIS").value;
+
             if (ForwordTo == "1") {
                 document.getElementById('DOR').style.display = "block";
                 document.getElementById('DOR1').style.display = "none";
@@ -676,5 +785,30 @@
             }
         }
     </script>
+
+    <script>
+        function SeparationTypea() {
+            const selectedValue = document.getElementById('OIS').value;
+
+            // Get the divs for Unique ID, Academic Year, and Month
+            const uniqueIdDiv = document.getElementById('uniqueIdDiv');
+            const acadYearDiv = document.getElementById('acadYearDiv');
+            const selectMonthDiv = document.getElementById('selectMonthDiv');
+
+            // Hide all divs initially
+            uniqueIdDiv.style.display = 'none';
+            acadYearDiv.style.display = 'none';
+            selectMonthDiv.style.display = 'none';
+
+            if (selectedValue === '1') {
+                // If 'Retirement' is selected, show 'Academic Year' and 'Month'
+                acadYearDiv.style.display = 'block';
+                selectMonthDiv.style.display = 'block';
+            } else if (['2', '3', '4', '5'].includes(selectedValue)) {
+                // If 'Deputation', 'Termination', 'Voluntary Retirement', or 'Death' is selected, show 'Unique ID'
+                uniqueIdDiv.style.display = 'block';
+            }
+        }
+</script>
 </asp:Content>
 

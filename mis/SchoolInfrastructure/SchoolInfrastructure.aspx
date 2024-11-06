@@ -6,6 +6,7 @@
 
     <div class="row">
         <div class="col-12">
+
             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
                 <h4 class="mb-sm-0"></h4>
                 <div class="=page-title-right">
@@ -26,19 +27,19 @@
         </div>
     </div>
 
-   
-     <div class="container-fluid">
-         <div class="card card-border-primary">
-             <div class="card-header">
-                 <div class="row">
-                     <div class="col-12">
-                         <h4 class="card-title">School Infrastructure /
+
+    <div class="container-fluid">
+        <div class="card card-border-primary">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="card-title">School Infrastructure /
                              स्कूल इन्फ्रास्ट्रक्चर </h4>
-                     </div>
-                 </div>
-             </div>
-             
-        <div class="card-body">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
 
                 <fieldset>
 
@@ -48,16 +49,16 @@
                             <div class="form-group">
                                 <label>
                                     Enter School UDISE /<br />
-                                    स्कूल यूडीआईएसई दर्ज करें<span style="color: red">*</span></label>
+                                    स्कूल यू-डाइस दर्ज करें<span style="color: red">*</span></label>
                                 <input type="text" id="UdiseCode" placeholder=" Enter School UDISE" class="form-control" />
                             </div>
                         </div>
 
                         <div class="col-md-6">
-                             <div class="form-group">
-                            <button type="button" class="btn btn-success btn-border" onclick="myFunction()">Search</button>
-                            <a href="SchoolInfrastructure.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
-                                 </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-success btn-border" onclick="myFunction()">Search</button>
+                                <a href="SchoolInfrastructure.aspx" class="btn btn-outline-danger w-lg btn-border">Clear</a>
+                            </div>
                         </div>
                     </div>
 
@@ -80,7 +81,7 @@
                                         Enter School Management/
                                  <br />
                                         स्कूल प्रबंधन दर्ज करें<span style="color: red">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Private Management" disabled/>
+                                    <input type="text" class="form-control" placeholder="Private Management" disabled />
                                 </div>
                             </div>
 
@@ -90,7 +91,7 @@
                                         Enter School Management Detail/
                 <br />
                                         स्कूल प्रबंधन विवरण दर्ज करें<span style="color: red">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Managed by Greenwood Education Trust" disabled/>
+                                    <input type="text" class="form-control" placeholder="Managed by Greenwood Education Trust" disabled />
                                 </div>
                             </div>
 
@@ -100,7 +101,7 @@
                                         Enter School Category/
                 <br />
                                         स्कूल श्रेणी दर्ज करें<span style="color: red">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Senior Secondary School" disabled/>
+                                    <input type="text" class="form-control" placeholder="Senior Secondary School" disabled />
                                 </div>
                             </div>
 
@@ -110,7 +111,7 @@
                                         Enter School Category Detail/
                 <br />
                                         स्कूल श्रेणी विवरण दर्ज करें<span style="color: red">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Offers Classes from 6th to 12th" disabled/>
+                                    <input type="text" class="form-control" placeholder="Offers Classes from 6th to 12th" disabled />
                                 </div>
                             </div>
 
@@ -120,7 +121,7 @@
                                         Enter School Hostel/
                 <br />
                                         स्कूल हॉस्टल दर्ज करें<span style="color: red">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Available" disabled/>
+                                    <input type="text" class="form-control" placeholder="Available" disabled />
                                 </div>
                             </div>
 
@@ -133,24 +134,83 @@
                     <hr />
 
                 </fieldset>
-                <fieldset>
 
-                    <legend>School Infrastructure Report / स्कूल इंफ्रास्ट्रक्चर रिपोर्ट</legend>
+                <fieldset id="showfieldsinfo" style="display: none;">
+                    <legend>School Basic Information / स्कूल की मूल जानकारी
+                    </legend>
+
                     <div class="row align-items-end">
-                        <div class=" col-md-12">
-                            <div class="row justify-content-end">
-                                <div class="col-md-3 text-end">
-                                    <div class="form-group">
-                                        <button class="btn btn-info btn-rounded ">Excel</button>
-                                        <button class="btn btn-info btn-rounded ">PDF</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <input type="text" id="searchInput" oninput="searchFunction()" class="form-control" placeholder="Search...">
+                        <div class="col-lg-12" runat="server" id="specialAcademicsSection">
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered text-center">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Sankul Name / Code</th>
+                                                    <td>GOVT HSS MAHATMA GANDHI BHEL - 23320300049</td>
+                                                    <th>School Name / Code</th>
+                                                    <td>GOVT MS BOYS BARKHEDA (BHEL) - 23355854596</td>
+                                                </tr>
+                                                <%--   <tr>
+                                    <th>School Name (In English)</th>
+                                    <td>CMRISE  -GOVT HSS BOYS, BERASIA (Class 6 to 12)</td>
+                                    <th>School Name (हिंदी में)</th>
+                                    <td>CMRISE  -GOVT HSS BOYS, BERASIA (Class 6 to 12)</td>
+                                </tr>--%>
+                                                <tr>
+                                                    <th>Year of Establishment</th>
+                                                    <td>1956</td>
+                                                    <th>Board Type</th>
+                                                    <td>MP Board</td>
+                                                </tr>
+                                                <tr>
+                                                    <%-- <th>Board Code</th>
+                                    <td>NA</td>--%>
+                                                    <th>School Type</th>
+                                                    <td>Boys</td>
+
+                                                    <th>School Category</th>
+                                                    <td>Higher Secondary School</td>
+                                                </tr>
+                                                <tr>
+
+                                                    <th>School Category Details</th>
+                                                    <td>Higher Secondary with grades 6 to 12 (UPR-SEC-HSEC)</td>
+                                                    <th>School Management Group Details</th>
+                                                    <td>Department of Education</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>No. of Male Teachers</th>
+                                                    <td>24</td>
+                                                    <th>No. of Female Teachers</th>
+                                                    <td>20</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>No. of Male Student</th>
+                                                    <td>86</td>
+                                                    <th>No. of Female Students</th>
+                                                    <td>62</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset id="showfieldsdetails" style="display: none;">
+                    >
+
+                    <legend>School Infrastructure Details / स्कूल इंफ्रास्ट्रक्चर विवरण</legend>
+                    <div class="row align-items-end">
+                        <div class=" col-md-12">
+
                             <div class="col-md-12">
                                 <div class="table-responsive">
                                     <table class="table table-bordered text-center">
@@ -165,7 +225,9 @@
                                                 <th>Available Infrastructure /<br />
                                                     उपलब्ध इंफ्रास्ट्रक्चर
                                                 </th>
-
+                                                <th>Infrastructure Counting /<br />
+                                                    इंफ्रास्ट्रक्चर की गणना
+                                                </th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -186,6 +248,9 @@
    
                                                     </label>
                                                 </td>
+                                                <td>
+                                                    <input type="number" />
+                                                </td>
                                             </tr>
 
                                             <tr>
@@ -204,6 +269,9 @@
                                                         No
    
                                                     </label>
+                                                </td>
+                                                <td>
+                                                    <input type="number" />
                                                 </td>
                                             </tr>
 
@@ -224,6 +292,9 @@
    
                                                     </label>
                                                 </td>
+                                                <td>
+                                                    <input type="number" />
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>4</td>
@@ -241,6 +312,9 @@
                                                         No
    
                                                     </label>
+                                                </td>
+                                                <td>
+                                                    <input type="number" />
                                                 </td>
                                             </tr>
                                             <tr>
@@ -260,6 +334,9 @@
    
                                                     </label>
                                                 </td>
+                                                <td>
+                                                    <input type="number" />
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>6</td>
@@ -277,6 +354,9 @@
                                                         No
    
                                                     </label>
+                                                </td>
+                                                <td>
+                                                    <input type="number" />
                                                 </td>
                                             </tr>
                                             <tr>
@@ -296,6 +376,9 @@
    
                                                     </label>
                                                 </td>
+                                                <td>
+                                                    <input type="number" />
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>8</td>
@@ -313,6 +396,9 @@
                                                         No
    
                                                     </label>
+                                                </td>
+                                                <td>
+                                                    <input type="number" />
                                                 </td>
                                             </tr>
                                             <tr>
@@ -332,6 +418,9 @@
    
                                                     </label>
                                                 </td>
+                                                <td>
+                                                    <input type="number" />
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>10</td>
@@ -349,6 +438,9 @@
                                                         No
    
                                                     </label>
+                                                </td>
+                                                <td>
+                                                    <input type="number" />
                                                 </td>
                                             </tr>
                                             <tr>
@@ -368,6 +460,9 @@
    
                                                     </label>
                                                 </td>
+                                                <td>
+                                                    <input type="number" />
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>12</td>
@@ -385,6 +480,9 @@
                                                         No
    
                                                     </label>
+                                                </td>
+                                                <td>
+                                                    <input type="number" />
                                                 </td>
                                             </tr>
                                             <tr>
@@ -404,6 +502,9 @@
    
                                                     </label>
                                                 </td>
+                                                <td>
+                                                    <input type="number" />
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>14</td>
@@ -422,6 +523,9 @@
    
                                                     </label>
                                                 </td>
+                                                <td>
+                                                    <input type="number" />
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>15</td>
@@ -439,6 +543,9 @@
                                                         No
    
                                                     </label>
+                                                </td>
+                                                <td>
+                                                    <input type="number" />
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -462,8 +569,8 @@
         </div>
 
 
-             </div>
-         
+    </div>
+
 
 
 
@@ -476,9 +583,13 @@
             var UdiseCode = document.getElementById("UdiseCode");
 
             if (UdiseCode.value === "") {
-                showfields.style.display = 'none';
+                //showfields.style.display = 'none';
+                showfieldsinfo.style.display = 'none';
+                showfieldsdetails.style.display = 'none';
             } else {
-                showfields.style.display = 'block';
+                //showfields.style.display = 'block';
+                showfieldsinfo.style.display = 'block'
+                showfieldsdetails.style.display = 'block'
             }
         }
     </script>
