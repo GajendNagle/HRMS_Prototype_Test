@@ -814,7 +814,7 @@
                                             </div>
                                         </li>
 
-                                        <li class="nav-item">
+                                        <%--<li class="nav-item">
                                             <a href="#Vocationalmanagement" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="Vocationalmanagement"><i class="ri-menu-line"></i>Vocational management</a>
                                             <div class="collapse menu-dropdown" id="Vocationalmanagement">
@@ -826,7 +826,7 @@
 
                                                 </ul>
                                             </div>
-                                        </li>
+                                        </li>--%>
                                         <li class="nav-item">
                                             <a href="#Learning" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
                                                 aria-controls="Learning"><i class="ri-menu-line"></i>Learning Resource Repository</a>
@@ -933,7 +933,7 @@
                                             <div class="collapse menu-dropdown" id="Retirement">
                                                 <ul class="nav nav-sm flex-column">
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/EmpRetirement.aspx"><i class="ri-file-info-line"></i>Retirement Or Separation</a></li>
-                                                     <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_HREmpRetirement.aspx"><i class="ri-file-info-line"></i>Generate Order</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mis/Masters/Mst_HREmpRetirement.aspx"><i class="ri-file-info-line"></i>Generate Order</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/Rpt_UpcomingRetirement.aspx"><i class="ri-file-info-line"></i>Upcoming Retirement Report</a></li>
                                                     <li class="nav-item"><a class="nav-link" href="/mis/HRMS/RetirementAndSeperationReport.aspx"><i class="ri-file-info-line"></i>Retirement Or Separation Report</a></li>
                                                 </ul>
@@ -1670,6 +1670,26 @@
                             </li>
                             <%--Student Directory--%>
 
+                            <%--------Vocational Trade-------%>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#VocationalTrade" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="HRIMS">
+                                    <i class="ri-stack-line"></i><span data-key="t-Payroll">Vocational Management </span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="VocationalTrade">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item"><a class="nav-link" href="/mis/VocationalTrade/VocationalTradeMaster.aspx"><i class="ri-file-list-3-line"></i>Vocational Trade Master </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/VocationalTrade/VocationalTradeSubMaster.aspx"><i class="ri-file-list-3-line"></i>Vocational Trade Sub Master</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/VocationalTrade/VocationalSchemeMaster.aspx"><i class="ri-file-list-3-line"></i>Vocational Scheme Master </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/VocationalTrade/VocationalASTMappingAgency.aspx"><i class="ri-file-list-3-line"></i>Vocational A.S.T Mapping Agency</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/VocationalTrade/VocationalASTMappingAgencyReport.aspx"><i class="ri-file-list-3-line"></i>Vocational A.S.T Mapping Agency Report</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/VocationalTrade/VocationalStudentActivity.aspx"><i class="ri-file-list-3-line"></i>Vocational Student Activity</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/VocationalTrade/VocationalStudentActivityReport.aspx"><i class="ri-file-list-3-line"></i>Vocational Student Activity Report</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <%--------Vocational Trade-------%>
+
+
 
                             <%--Payroll--%>
                             <li class="nav-item">
@@ -2135,7 +2155,12 @@
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/Mst_WorkType.aspx"><i class="ri-file-list-3-line"></i>Work Group Master </a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/Mst_WorkCategory.aspx"><i class="ri-file-list-3-line"></i>Work Category Master</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/Mst_WorkSubcategory.aspx"><i class="ri-file-list-3-line"></i>Work SubCategory Master</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/Mst_WorkTypeToWorkCategory.aspx"><i class="ri-file-list-3-line"></i>Work Type To WorkCategory Mapping</a></li>
+                                        <%--                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/Mst_WorkTypeToWorkCategory.aspx"><i class="ri-file-list-3-line"></i>Work Type To WorkCategory Mapping</a></li>--%>
+                                        <%--  New--%>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/BillofMaterialMaster.aspx"><i class="ri-file-list-3-line"></i>Material Master </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/InpspectionAgency.aspx"><i class="ri-file-list-3-line"></i>Inspection Agency Master </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/LaboratoryAgencyDetails.aspx"><i class="ri-file-list-3-line"></i>Laboratory Master </a></li>
+
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/Mst_Unit.aspx"><i class="ri-file-list-3-line"></i>Unit Master </a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/Mst_MileStone.aspx"><i class="ri-file-list-3-line"></i>MileStone Type Master</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/Mst_MilestoneCategory.aspx"><i class="ri-file-list-3-line"></i>Milestone Category Master</a></li>
@@ -2145,10 +2170,23 @@
                                             <li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectRequestApproval.aspx"><i class="ri-file-list-3-line"></i>Project Request Approval</a></li>--%>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectCreation.aspx"><i class="ri-file-list-3-line"></i>Project Creation</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectDetailsN.aspx"><i class="ri-file-list-3-line"></i>Project Details</a></li>
+
+                                        <%--  New--%>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/ProgressMilestone.aspx"><i class="ri-file-list-3-line"></i>Technical Milestone Monitoring  </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/QualityControl.aspx"><i class="ri-file-list-3-line"></i>Material Quality Testing    </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/MaterialQuantityTesting.aspx"><i class="ri-file-list-3-line"></i>Material Testing InLab   </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/WorkVerification.aspx"><i class="ri-file-list-3-line"></i>Work Verfication Milestone </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/Mst_Unitsd.aspx"><i class="ri-file-list-3-line"></i>Milestone Completion  </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/VendorInvoiceVerification.aspx"><i class="ri-file-list-3-line"></i>Vendor Invoice Verification  </a></li>
+
+
                                         <%--                           <li class="nav-item"><a class="nav-link" href="/mis/Development/ProjectApprovalLetter.aspx"><i class="ri-file-list-3-line"></i>Project Approval Letter Generate</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/ApprovalLetterDetails.aspx"><i class="ri-file-list-3-line"></i>Approval Letter Details</a></li>--%>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/InstallmentGenerate.aspx"><i class="ri-file-list-3-line"></i>Installment Generate</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/WorkExpenditureProcess.aspx"><i class="ri-file-list-3-line"></i>Work Expenditure Process</a></li>
+                                        <%--                                        <li class="nav-item"><a class="nav-link" href="/mis/Development/WorkExpenditureProcess.aspx"><i class="ri-file-list-3-line"></i>Work Expenditure Process</a></li>--%>
+
+
+
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/UtilizationCertificateGenerate.aspx"><i class="ri-file-list-3-line"></i>Utilization Certificate Generate</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/FinalCompletionProcess.aspx"><i class="ri-file-list-3-line"></i>Final Completion Process</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/mis/Development/VenderPaymentProcess.aspx"><i class="ri-file-list-3-line"></i>Vender Payment Process</a></li>
