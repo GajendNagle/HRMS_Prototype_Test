@@ -50,108 +50,91 @@
 
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label>
-                                Select Project No.
-                            </label>
-                            <select class="form-control select2">
-                                <option value="3">PR0001</option>
-                                <option value="3">PR0002</option>
-                                <option value="3">PR0003</option>
-                                <option value="3">PR0004</option>
-                                <option value="3">PR0005</option>
-
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>
-                                Select Material Name<span style="color: red">*</span></label>
-                            <select type="text" id="Name" class="form-select select2" autocomplete="off" placeholder="Enter Material Name">
-                                <option>Cement</option>
-                                <option>Sand</option>
-                                <option>Steel</option>
-                                <option>Bricks</option>
-                                <option>Concrete</option>
-                                <option>Tiles</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>
-                                Enter Material ID/Code <span style="color: red">*</span></label>
-                            <input type="text" id="Code" class="form-control" autocomplete="off" readonly placeholder="MAT004 - Cement" />
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>
-                                Enter Material Unit<span style="color: red">*</span></label>
-                            <input type="text" readonly id="Unit" class="form-control" autocomplete="off" placeholder="Tons (T)" />
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>
-                                Enter Approved Brand/Company Name<span style="color: red">*</span></label>
-                            <input type="text" id="Brand" class="form-control" autocomplete="off" readonly placeholder="Brand003 - DEF Industries" />
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>
-                                Enter Material Description <span style="color: red">*</span></label>
-                            <textarea class="form-control" id="Description" rows="1" autocomplete="off" placeholder=" Enter Material Description "></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>
-                                Laboratory Name
-                            </label>
-                            <select class="form-control select2">
-                                <option>Ambile Testing and Research Labs</option>
+                            <label for="projectNo">Select Project No</label>
+                            <select id="projectNo" class="form-select select2" name="projectNo" onchange="fetchLaboratoryName()">
+                                <option value="">Select Project No</option>
+                                <option value="1001">1001</option>
+                                <option value="1002">1002</option>
+                                <option value="1003">1003</option>
                             </select>
 
                         </div>
                     </div>
-                    <%--<div class="col-md-4">
-                        <div class="form-group">
-                            <label>
-                                Select Material Name 
-                            </label>
-                            <select class="form-control select2" id="materialn">
-                                <option value="0">Select</option>
-                                <option value="Cement">Cement </option>
-                                <option value="Glass Windows">Glass Windows</option>
-                                <option value="Glass Windows">Concrete </option>
-                            </select>
-
-                        </div>
-                    </div>--%>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label>
-                                Material quantity  
-                            </label>
-                            <input type="text" class="form-control" placeholder="Enter Material quantity  " id="materialQuantity" />
+                            <label for="laboratoryName">Laboratory Name (Auto fetch)</label>
+                            <input type="text" id="laboratoryName" placeholder="Laboratory Name (Auto fetch)" class="form-control" name="laboratoryName" readonly />
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label>
-                                Material Collection Date  
-                            </label>
-                            <input type="date" class="form-control" id="collectiondate" />
+                            <label for="testingSubject">Enter Sample Testing Subject</label>
+                            <input type="text" id="testingSubject" class="form-control" placeholder="Enter Sample Testing Subject" name="testingSubject" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="materialName">Select Material Name</label>
+                            <select id="materialName" class="form-select select2" name="materialName" onchange="fetchMaterialDetails()">
+                                <option value="">Select Material</option>
+                                <option value="Cement">Cement</option>
+                                <option value="Steel Bar">Steel Bar</option>
+                                <option value="Sand">Sand</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="materialCode">Material ID/Code (Auto fetch)</label>
+                            <input type="text" class="form-control" placeholder="Material ID/Code (Auto fetch)" id="materialCode" name="materialCode" readonly />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="materialUnit">Material Unit (Auto fetch)</label>
+                            <input type="text" class="form-control" id="materialUnit" name="materialUnit" placeholder="e.g., kg, meter, ton" readonly />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="materialDescription">Material Description (Auto fetch)</label>
+                            <input type="text" class="form-control" id="materialDescription" name="materialDescription" placeholder="e.g., Portland Cement" readonly />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="projectLocation">Enter Project Location</label>
+                            <input type="text" id="projectLocation" class="form-control" name="projectLocation" placeholder="Enter the project location" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="natureOfSample">Nature Of Sample (Auto fetch)</label>
+                            <input type="text" id="natureOfSample" class="form-control" name="natureOfSample" placeholder="e.g., Fresh, Stored" readonly />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="quantityOfSample">Enter Quantity of Sample</label>
+                            <input type="number" class="form-control" id="quantityOfSample" name="quantityOfSample" placeholder="Enter the sample quantity" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="sampleReceiveDate">Sample Receive Date</label>
+                            <input type="date" class="form-control" id="sampleReceiveDate" name="sampleReceiveDate" placeholder="Select the sample receive date" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="dateOfCasting">Date of Casting</label>
+                            <input type="date" class="form-control" id="dateOfCasting" name="dateOfCasting" placeholder="Select the date of casting" />
                         </div>
                     </div>
 
                     <hr />
                     <div class="col-md-12">
-                        <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="addData2()">Add</button>
+                        <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="addData2()"">Add</button>
                         <a href="QualityControl.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
                     </div>
                 </div>
@@ -165,15 +148,18 @@
                             <table class="table table-bordered text-center" id="table1">
                                 <thead class="nowrap">
                                     <tr>
-                                        <th>Sr.No.
-                                        </th>
-                                        <th>Material Name 
-                                        </th>
-                                        <th>Material quantity 
-                                        </th>
-                                        <th>Material Collection Date 
-                                        </th>
-                                        <th>Status</th>
+                                        <th>Project No</th>
+                                        <th>Laboratory Name</th>
+                                        <th>Testing Subject</th>
+                                        <th>Material Name</th>
+                                        <th>Material ID/Code</th>
+                                        <th>Material Unit</th>
+                                        <th>Material Description</th>
+                                        <th>Project Location</th>
+                                        <th>Nature of Sample</th>
+                                        <th>Quantity of Sample</th>
+                                        <th>Sample Receive Date</th>
+                                        <th>Date of Casting</th>
                                     </tr>
                                 </thead>
                                 <tbody id="tbody">
@@ -181,58 +167,109 @@
 
                             </table>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border w-lg" onclick="ShowHide()">Save</button>
-                        <a href="QualityControl.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
-                    </div>
-                </div>
-            </fieldset>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button type="button" class="Alert-Confirmation btn btn-outline-success btn-border w-lg" onclick="ShowHide()">Save</button>
+            <a href="QualityControl.aspx" class="btn btn-outline-danger btn-border w-lg">Clear</a>
+        </div>
+    </div>
+    </fieldset>
 
         </div>
     </div>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentFooter" runat="Server">
+     <script>
+         // Function to add data to the table
+         function addData2() {
+             const projectNo = document.getElementById('projectNo').value;
+             const laboratoryName = document.getElementById('laboratoryName').value;
+             const testingSubject = document.getElementById('testingSubject').value;
+             const materialName = document.getElementById('materialName').value;
+             const materialCode = document.getElementById('materialCode').value;
+             const materialUnit = document.getElementById('materialUnit').value;
+             const materialDescription = document.getElementById('materialDescription').value;
+             const projectLocation = document.getElementById('projectLocation').value;
+             const natureOfSample = document.getElementById('natureOfSample').value;
+             const quantityOfSample = document.getElementById('quantityOfSample').value;
+             const sampleReceiveDate = document.getElementById('sampleReceiveDate').value;
+             const dateOfCasting = document.getElementById('dateOfCasting').value;
 
-    <script>
-        function addData2() {
-            // Show the fieldset (assuming it's for displaying data)
-            document.getElementById("fielset").style.display = 'block';
+             // Add new row to the table
+             const table = document.getElementById("tbody");
+             const newRow = table.insertRow();
 
-            // Get the values from input fields
-            let name = document.getElementById("materialn").value;
-            let email = document.getElementById("materialQuantity").value;
-            let mobile = document.getElementById("collectiondate").value;
+             newRow.innerHTML = `
+                <td>${projectNo}</td>
+                <td>${laboratoryName}</td>
+                <td>${testingSubject}</td>
+                <td>${materialName}</td>
+                <td>${materialCode}</td>
+                <td>${materialUnit}</td>
+                <td>${materialDescription}</td>
+                <td>${projectLocation}</td>
+                <td>${natureOfSample}</td>
+                <td>${quantityOfSample}</td>
+                <td>${sampleReceiveDate}</td>
+                <td>${dateOfCasting}</td>
+            `;
 
-            // Get the table and insert a new row at the end
-            let table = document.getElementById('table1');
-            let newRow = table.getElementsByTagName('tbody')[0].insertRow();
+             // Show the table by displaying the fieldset
+             document.getElementById('fielset').style.display = 'block';
+         }
 
-            // Insert data into cells of the new row
-            newRow.insertCell(0).innerHTML = table.rows.length - 1; // Row number
-            newRow.insertCell(1).innerHTML = name;                   // Name
-            newRow.insertCell(2).innerHTML = email;                  // Email
-            newRow.insertCell(3).innerHTML = mobile;                 // Mobile
-
-            // Add actions (Edit and Delete buttons) in the last cell
-            let actionButtonTd = newRow.insertCell(4);
-            actionButtonTd.innerHTML = '<a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a>';
-
-            // Clear input fields after adding the row
-            clearInputs2();
-        };
-
-        // Function to clear input fields after adding a row
-        function clearInputs2() {
-            // Clear values of the input fields
-            document.getElementById("materialn").value = '';
-            document.getElementById("materialQuantity").value = '';
-            document.getElementById("collectiondate").value = '';
-        };
+         // Function to show/hide the fieldset when "Save" is clicked
+         function ShowHide() {
+             const fieldset = document.getElementById('fielset');
+             fieldset.style.display = (fieldset.style.display === 'none') ? 'block' : 'none';
+         }
     </script>
+    <script>
+        // Function to simulate fetching laboratory name based on project number
+        function fetchLaboratoryName() {
+            const projectNo = document.getElementById("projectNo").value;
+            const laboratoryName = document.getElementById("laboratoryName");
+            if (projectNo === "1001") {
+                laboratoryName.value = "XYZ Lab";
+            } else if (projectNo === "1002") {
+                laboratoryName.value = "ABC Lab";
+            } else if (projectNo === "1003") {
+                laboratoryName.value = "DEF Lab";
+            } else {
+                laboratoryName.value = "";
+            }
+        }
+
+        // Function to simulate fetching material details based on material name
+        function fetchMaterialDetails() {
+            const materialName = document.getElementById("materialName").value;
+            const materialCode = document.getElementById("materialCode");
+            const materialUnit = document.getElementById("materialUnit");
+            const materialDescription = document.getElementById("materialDescription");
+
+            if (materialName === "Cement") {
+                materialCode.value = "CEM1234";
+                materialUnit.value = "kg";
+                materialDescription.value = "Portland Cement";
+            } else if (materialName === "Steel Bar") {
+                materialCode.value = "STB5678";
+                materialUnit.value = "meter";
+                materialDescription.value = "Reinforced Steel Bar";
+            } else if (materialName === "Sand") {
+                materialCode.value = "SND0012";
+                materialUnit.value = "ton";
+                materialDescription.value = "Fine River Sand";
+            } else {
+                materialCode.value = "";
+                materialUnit.value = "";
+                materialDescription.value = "";
+            }
+        }
+    </script>
+    
 
 </asp:Content>
 
