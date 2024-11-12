@@ -1308,29 +1308,29 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3" id="lab" style="display:none">
+                        <div class="col-md-3" id="lab" style="display: none">
                             <div class="form-group">
 
                                 <label>
                                     Select Laboratory<span style="color: red; font-weight: bold">*</span>
                                 </label>
-                                <select class="select2" >
+                                <select class="select2">
                                     <option value="0">Select</option>
-                                    <option value="1"> Concrete lab </option>
+                                    <option value="1">Concrete lab </option>
                                     <option value="2">Structure analysis lab</option>
                                 </select>
                             </div>
                         </div>
-                        
-                        <div class="col-md-3"  id="agency" style="display:none">
+
+                        <div class="col-md-3" id="agency" style="display: none">
                             <div class="form-group">
 
                                 <label>
                                     Select Agency<span style="color: red; font-weight: bold">*</span>
                                 </label>
-                                <select class="select2"  >
+                                <select class="select2">
                                     <option value="0">Select</option>
-                                    <option value="1"> Rakhi Agency</option>
+                                    <option value="1">Rakhi Agency</option>
                                     <option value="2">Anamika Agency</option>
                                 </select>
                             </div>
@@ -1338,426 +1338,235 @@
                     </div>
                     <div id="Bill" style="display: none">
                         <fieldset>
-                            <legend>Material Details</legend>
-                            <div class="row align-items-end    ">
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Select Material Name<span style="color: red">*</span></label>
-                                        <select type="text" id="Name" class="form-select select2" autocomplete="off" placeholder="Enter Material Name">
-                                            <option value="">Select</option>
-                                            <option>Cement</option>
-                                            <option>Sand</option>
-                                            <option>Steel</option>
-                                            <option>Bricks</option>
-                                            <option>Concrete</option>
-                                            <option>Tiles</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Material ID/Code <span style="color: red">*</span></label>
-                                        <input type="text" id="Code" class="form-control" autocomplete="off" readonly placeholder="MAT004 - Cement" />
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Material Unit<span style="color: red">*</span></label>
+    <legend>Material Details</legend>
+    <div class="row align-items-end">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Select Material Name<span style="color: red">*</span></label>
+                <select id="Name" class="form-select select2" autocomplete="off">
+                    <option value="">Select</option>
+                    <option>Cement</option>
+                    <option>Sand</option>
+                    <option>Steel</option>
+                    <option>Bricks</option>
+                    <option>Concrete</option>
+                    <option>Tiles</option>
+                </select>
+            </div>
+        </div>
 
-                                        <input type="text" readonly id="Unit" class="form-control" autocomplete="off" placeholder="Tons (T)" />
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Enter Material ID/Code <span style="color: red">*</span></label>
+                <input type="text" id="Code" class="form-control" autocomplete="off" readonly placeholder="MAT004 - Cement" />
+            </div>
+        </div>
 
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Approved Brand/Company Name<span style="color: red">*</span></label>
-                                        <input type="text" id="Brand" class="form-control" autocomplete="off" readonly placeholder="Brand003 - DEF Industries" />
-                                    </div>
-                                </div>
-                                <%-- <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Material ID/Code <span style="color: red">*</span></label>
-                                        <select type="text"  id="Code" class="form-select select2" autocomplete="off" placeholder="Enter Material ID/Code">
-                                            <option value="">Select</option>
-                                            <option value="MAT001" selected="selected">MAT001 - Concrete</option>
-                                            <option value="MAT002">MAT002 - Steel</option>
-                                            <option value="MAT003">MAT003 - Bricks</option>
-                                            <option value="MAT004">MAT004 - Cement</option>
-                                            <option value="MAT005">MAT005 - Sand</option>
-                                            <option value="MAT006">MAT006 - Gravel</option>
-                                            <option value="MAT007">MAT007 - Paint</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Material Unit<span style="color: red">*</span></label>
-                                        <select type="text" required="required" id="Unit" class="form-select select2" autocomplete="off" placeholder="Enter Material Unit">
-                                            <option value="select">select</option>
-                                            <option value="kg">Kilograms (kg)</option>
-                                            <option value="ton"  selected="selected">Tons (T)</option>
-                                            <option value="m3">Cubic Meter (m³)</option>
-                                            <option value="m2">Square Meter (m²)</option>
-                                            <option value="liter">Liter (L)</option>
-                                            <option value="piece">Piece</option>
-                                            <option value="unit">Unit</option>
-                                        </select>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Enter Material Unit<span style="color: red">*</span></label>
+                <input type="text" id="Unit" class="form-control" autocomplete="off" readonly placeholder="Tons (T)" />
+            </div>
+        </div>
 
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Approved Brand/Company Name<span style="color: red">*</span></label>
-                                        <select type="text" required="required" id="Brand" class="form-select select2" autocomplete="off" placeholder="Approved Brand/Company Name">
-                                            <option value="">Select</option>
-                                            <option value="Brand001">Brand001 - XYZ Corp</option>
-                                            <option value="Brand002">Brand002 - ABC Ltd.</option>
-                                            <option value="Brand003"  selected="selected">Brand003 - DEF Industries</option>
-                                            <option value="Brand004">Brand004 - GHI Supplies</option>
-                                            <option value="Brand005">Brand005 - JKL Enterprises</option>
-                                            <option value="Brand006">Brand006 - MNO Manufacturing</option>
-                                            <option value="Brand007">Brand007 - PQR Technologies</option>
-                                        </select>
-                                    </div>
-                                </div>--%>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Enter Approved Brand/Company Name<span style="color: red">*</span></label>
+                <input type="text" id="Brand" class="form-control" autocomplete="off" readonly placeholder="Brand003 - DEF Industries" />
+            </div>
+        </div>
 
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Enter Total Project Quantity<span style="color: red">*</span></label>
+                <input type="number" id="Project" class="form-control" autocomplete="off" placeholder="Enter Total Project Quantity" />
+            </div>
+        </div>
 
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Enter Buffer Quantity<span style="color: red">*</span></label>
+                <input type="number" id="Buffer" class="form-control" autocomplete="off" placeholder="Enter Buffer Quantity" />
+            </div>
+        </div>
 
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Enter Material Supplier Name<span style="color: red; font-weight: bold">*</span></label>
+                <input type="text" id="Supplier" class="form-control" placeholder="Enter Material Supplier Name" />
+            </div>
+        </div>
 
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Material Description <span style="color: red">*</span></label>
-                                        <textarea class="form-control" id="Description" rows="1" autocomplete="off" placeholder=" Enter Material Description "></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Enter Supplier Code<span style="color: red; font-weight: bold">*</span></label>
+                <input type="text" id="SupplierCode" class="form-control" placeholder="Enter Supplier Code" />
+            </div>
+        </div>
 
-                                        <input type="button" class="btn-sm btn-success text-white" value="Add" onclick="addDataA()" />
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Enter Material Required Date<span style="color: red;">*</span></label>
+                <input type="date" id="RequiredDate" class="form-control" placeholder="Enter Lead Time" />
+            </div>
+        </div>
 
-                                    </div>
-                                </div>
-                            </div>
-                            <fieldset id="fielsetA" style="display: none">
-                                <legend>Details / विवरण</legend>
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <div class="table-responsive">
-                                            <table class="table table-bordered text-center" id="TableA">
-                                                <thead class="nowrap">
-                                                    <tr>
-                                                        <th>Sr.No.</th>
-                                                        <th>Material Name</th>
-                                                        <th>Material ID/Code</th>
-                                                        <th>Material Unit</th>
-                                                        <th>Approved Brand/Company Name</th>
-                                                        <th>Material Description </th>
-                                                        <th>Action</th>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Enter Duration of Use<span style="color: red;">*</span></label>
+                <input type="text" id="Duration" class="form-control" placeholder="Enter Duration of Use" />
+            </div>
+        </div>
 
-                                                    </tr>
-                                                </thead>
-                                                <tbody id="tbodyA"></tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Enter Delivery Schedule<span style="color: red;">*</span></label>
+                <input type="text" id="DeliverySchedule" class="form-control" placeholder="Enter Delivery Schedule" />
+            </div>
+        </div>
 
-                            </fieldset>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Quantity Requirements</legend>
-                            <div class="row align-items-end    ">
-                                <%-- <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Total Quantity per Project<span style="color: red">*</span></label>
-                                        <input type="number" id="Quantity" class="form-control" autocomplete="off" placeholder="Enter Quantity per Project" />
-                                    </div>
-                                </div>--%>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Total Project Quantity<span style="color: red">*</span></label>
-                                        <input type="number" id="Project" class="form-control" autocomplete="off" placeholder=" Enter Total Project Quantity" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Buffer Quantity<span style="color: red">*</span></label>
-                                        <input type="number" id="Buffer" class="form-control" autocomplete="off" placeholder="Enter Buffer Quantity" />
-                                    </div>
-                                </div>
-                            </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Enter Special Instructions<span style="color: red;">*</span></label>
+                <input type="text" id="SpecialInstructions" class="form-control" placeholder="Enter Special Instructions" />
+            </div>
+        </div>
 
-                        </fieldset>
-                        <fieldset>
-                            <legend>Supplier Details</legend>
-                            <div class="row align-items-end">
-                                <%--   <div class="col-md-3">
-                  <div class="form-group">
-                      <label>
-                          Enter Supplier Name
-                 <span style="color: red;">*</span>
-                      </label>
-                      <input type="text" class="form-control" placeholder="Enter Supplier Name" id="txtSupplierName" />
-                  </div>
-              </div>--%>
+        <div class="col-md-6">
+            <div class="form-group">
+                <input type="button" class="btn-sm btn-success text-white" value="Add" onclick="addDataA()" />
+            </div>
+        </div>
+    </div>
+</fieldset>
 
-                                <div class="col-md-3">
-                                    <div class="form-group">
+<fieldset id="fielsetA" style="display: none">
+    <legend>Details / विवरण</legend>
+    <div class="row form-group">
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table class="table table-bordered text-center" id="TableA">
+                    <thead class="nowrap">
+                        <tr>
+                            <th>Sr.No.</th>
+                            <th>Material Name</th>
+                            <th>Material ID/Code</th>
+                            <th>Material Unit</th>
+                            <th>Approved Brand/Company Name</th>
+                            <th>Total Project Quantity</th>
+                            <th>Buffer Quantity</th>
+                            <th>Supplier Name</th>
+                            <th>Supplier Code</th>
+                            <th>Required Date</th>
+                            <th>Duration of Use</th>
+                            <th>Delivery Schedule</th>
+                            <th>Special Instructions</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyA"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</fieldset>
+                        </div>
 
-                                        <label>
-                                            Enter Material Supplier Name<span style="color: red; font-weight: bold">*</span>
-                                        </label>
-                                        <input type="text" class="form-control" placeholder=" Enter Material Supplier Name" />
-
-
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="form-group">
-
-                                        <label>
-                                            Enter Supplier Code<span style="color: red; font-weight: bold">*</span>
-                                        </label>
-                                        <input type="text" class="form-control" placeholder=" Enter Supplier Code" />
-
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Lead Time
-                                            <span style="color: red;">*</span>
-                                        </label>
-                                        <input type="time" class="form-control" placeholder=" Enter Lead Time" id="txtSupplierName" />
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-
-                                        <label>
-                                            Select  Procurement Status
-                                        </label>
-                                        <select class="select2">
-                                            <option>Select</option>
-                                            <option value="pending">Pending</option>
-                                            <option value="approved">Approved</option>
-                                            <option value="delivered">Delivered</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Procurement Status</legend>
-                            <div class="row align-items-end">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Material Required Date
-                          <span style="color: red;">*</span>
-                                        </label>
-                                        <input type="date" class="form-control" placeholder=" Enter Lead Time" />
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Duration of Use
-                                            <span style="color: red;">*</span>
-                                        </label>
-                                        <input type="text" class="form-control" placeholder="Enter Duration of Use" />
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Delivery Schedule
-               <span style="color: red;">*</span>
-                                        </label>
-                                        <input type="text" class="form-control" placeholder="Enter Delivery Schedule" />
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Notes and Remarks </legend>
-                            <div class="row align-items-end">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Special Instructions
-                                            <span style="color: red;">*</span>
-                                        </label>
-                                        <input type="text" class="form-control" placeholder="Enter Special Instructions" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Version/Revision
-             <span style="color: red;">*</span>
-                                        </label>
-                                        <input type="text" class="form-control" placeholder="Enter Version/Revision" />
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <%--<fieldset>
-                            <legend>Monitoring and Reporting 
-                            </legend>
-                            <div class="row align-items-end">
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Consumption Tracking
-                <span style="color: red;">*</span>
-                                        </label>
-                                        <input type="text" class="form-control" placeholder="Enter Consumption Tracking" />
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Progress Status
-                                            <span style="color: red;">*</span>
-                                        </label>
-                                        <input type="text" class="form-control" placeholder="Enter Progress Status" />
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>
-                                            Enter Variance Analysis
-              <span style="color: red;">*</span>
-                                        </label>
-                                        <input type="text" class="form-control" placeholder="Enter Variance Analysis" />
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>--%>
+                    <fieldset>
+        <legend>Project Monitoring Authority / परियोजना निगरानी प्राधिकरण</legend>
+        <div class="row align-items-end">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>
+                        Enter Employee Id<br />
+                        कर्मचारी आईडी दर्ज करें<span style="color: red">*</span>
+                    </label>
+                    <input type="text" class="form-control" id="txtempid" placeholder="Enter OIS Code" onchange="DIVShow()" />
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-end" id="NewField">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>
+                        Name<br />
+                        नाम
+                    </label>
+                    <input type="text" class="form-control" id="txtname" value="Niraj Verma" readonly />
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>
+                        Designation<br />
+                        पद का नाम
+                    </label>
+                    <input type="text" class="form-control" id="txtDesignation" value="executive director" readonly />
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>
+                        Office Location<br />
+                        कार्यालय स्थान
+                    </label>
+                    <input type="text" class="form-control" id="txtOffice" value="Bhopal" readonly />
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>
+                        Select Role
+<br />
+                        भूमिका का चयन करें</label>
+                    <select class="form-control select2" id="ddlrole">
+                        <option>Select</option>
+                        <option>Side Engg.</option>
+                        <option>Inspection Officer</option>
+                        <option>Purchase Officer</option>
+                        <option>Auditor</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row align-items-end">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="addData2()">Add</button>
+            </div>
+        </div>
+        <fieldset id="fielset" style="display: none">
+            <legend>Details / विवरण</legend>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table class="table table-bordered text-center" id="table1">
+                            <thead class="nowrap">
+                                <tr>
+                                    <th>Sr.No.
+                                <br />
+                                        क्रमांक</th>
+                                    <th>Name<br />
+                                        नाम</th>
+                                    <th>Designation<br />
+                                        पद का नाम</th>
+                                    <th>Office Location
+                                <br />
+                                        कार्यालय स्थान</th>
+                                    <th>Role
+                   <br />
+                                        भूमिका
+                                    </th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody"></tbody>
+                        </table>
                     </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Project Monitoring Authority / परियोजना निगरानी प्राधिकरण</legend>
-
-                    <div class="row align-items-end">
-
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Enter Employee Id<br />
-                                    कर्मचारी आईडी दर्ज करें<span style="color: red">*</span>
-                                </label>
-
-                                <input type="text" class="form-control" id="txtempid" placeholder="Enter OIS Code" onchange="DIVShow()" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-end" id="NewField">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Name<br />
-                                    नाम 
-                                </label>
-
-                                <input type="text" class="form-control" id="txtname" value="Niraj Verma" readonly />
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Designation<br />
-                                    पद का नाम 
-                                </label>
-
-                                <input type="text" class="form-control" id="txtDesignation" value="executive director" readonly />
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Office Location<br />
-                                    कार्यालय स्थान
-                                </label>
-
-                                <input type="text" class="form-control" id="txtOffice" value="Bhopal" readonly />
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>
-                                    Select Role
-            <br />
-                                    भूमिका का चयन करें</label>
-
-                                <select class="form-control select2" id="ddlrole">
-                                    <option>Select</option>
-                                    <option>Side Engg.</option>
-                                    <option>Inspection Officer</option>
-                                    <option>Purchase Officer</option>
-                                    <option>Auditor</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <hr />
-                    <div class="row align-items-end">
-                        <div class="col-md-6">
-                            <button type="button" class="btn btn-outline-success btn-border w-lg" onclick="addData2()">Add</button>
-
-                        </div>
-                    </div>
-                    <fieldset id="fielset" style="display: none">
-                        <legend>Details / विवरण</legend>
-                        <div class="row form-group">
-                            <div class="col-md-12">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered text-center" id="table1">
-                                        <thead class="nowrap">
-                                            <tr>
-                                                <th>Sr.No.
-                                            <br />
-                                                    क्रमांक</th>
-                                                <th>Name<br />
-                                                    नाम</th>
-                                                <th>Designation<br />
-                                                    पद का नाम</th>
-                                                <th>Office Location
-                                            <br />
-                                                    कार्यालय स्थान</th>
-                                                <th>Role
-                               <br />
-                                                    भूमिका
-                                                </th>
-                                                <th>Action</th>
-
-                                            </tr>
-                                        </thead>
-                                        <tbody id="tbody"></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-
-                    </fieldset>
-                </fieldset>
+                </div>
+            </div>
+        </fieldset>
+    </fieldset>
             </fieldset>
             <div class="row">
                 <div class="col-md-12">
@@ -1805,35 +1614,64 @@
     </script>
     <script>
         function addDataA() {
-            debugger;
-            document.getElementById("fielsetA").style.display = 'block';
-
+            // Get values from inputs
             let ddl1 = document.getElementById("Name").value;
             let ddl2 = document.getElementById("Code").value;
             let ddl3 = document.getElementById("Unit").value;
             let ddl4 = document.getElementById("Brand").value;
-            let ddl5 = document.getElementById("Description").value;
+            let ddl5 = document.getElementById("Project").value;
+            let ddl6 = document.getElementById("Buffer").value;
+            let ddl7 = document.getElementById("Supplier").value;
+            let ddl8 = document.getElementById("SupplierCode").value;
+            let ddl9 = document.getElementById("RequiredDate").value;
+            let ddl10 = document.getElementById("Duration").value;
+            let ddl11 = document.getElementById("DeliverySchedule").value;
+            let ddl12 = document.getElementById("SpecialInstructions").value;
 
+            // Validate inputs before adding to the table
+            
+
+            // Show the table if it's hidden
+            document.getElementById("fielsetA").style.display = "block";
 
             // Get the table and insert a new row at the end
             let table = document.getElementById('TableA');
             let newRow = table.getElementsByTagName('tbody')[0].insertRow();
+
             // Insert data into cells of the new row
-            newRow.insertCell(0).innerHTML = table.rows.length - 1;
-            newRow.insertCell(1).innerHTML = ddl1;
-            newRow.insertCell(2).innerHTML = ddl2;
-            newRow.insertCell(3).innerHTML = ddl3;
-            newRow.insertCell(4).innerHTML = ddl4;
-            newRow.insertCell(5).innerHTML = ddl5;
+            newRow.insertCell(0).innerHTML = table.rows.length; // Sr. No.
+            newRow.insertCell(1).innerHTML = ddl1; // Material Name
+            newRow.insertCell(2).innerHTML = ddl2; // Material ID/Code
+            newRow.insertCell(3).innerHTML = ddl3; // Material Unit
+            newRow.insertCell(4).innerHTML = ddl4; // Approved Brand
+            newRow.insertCell(5).innerHTML = ddl5; // Total Project Quantity
+            newRow.insertCell(6).innerHTML = ddl6; // Buffer Quantity
+            newRow.insertCell(7).innerHTML = ddl7; // Supplier Name
+            newRow.insertCell(8).innerHTML = ddl8; // Supplier Code
+            newRow.insertCell(9).innerHTML = ddl9; // Required Date
+            newRow.insertCell(10).innerHTML = ddl10; // Duration of Use
+            newRow.insertCell(11).innerHTML = ddl11; // Delivery Schedule
+            newRow.insertCell(12).innerHTML = ddl12; // Special Instructions
 
-            newRow.insertCell(6);
-            const actionButtonTd = newRow.cells[6];
-            actionButtonTd.innerHTML += '<a class="Alert-Edit"><i class="fa fa-pen"></i></a>|&nbsp <a class="Alert-Delete"><i class="fa fa-trash"></i></a>';
+            // Insert action buttons (edit/delete)
+            let actionButtonTd = newRow.insertCell(13);
+            actionButtonTd.innerHTML = '<a href="javascript:void(0)" class="Alert-Edit"><i class="fa fa-pen"></i></a> | <a href="javascript:void(0)" class="Alert-Delete"><i class="fa fa-trash"></i></a>';
 
-            // Clear input fields after adding the row
-            //  clearInputs2();
-        };
-    </script>
+            // Clear inputs after adding the row
+            document.getElementById("Name").value = '';
+            document.getElementById("Code").value = '';
+            document.getElementById("Unit").value = '';
+            document.getElementById("Brand").value = '';
+            document.getElementById("Project").value = '';
+            document.getElementById("Buffer").value = '';
+            document.getElementById("Supplier").value = '';
+            document.getElementById("SupplierCode").value = '';
+            document.getElementById("RequiredDate").value = '';
+            document.getElementById("Duration").value = '';
+            document.getElementById("DeliverySchedule").value = '';
+            document.getElementById("SpecialInstructions").value = '';
+        }
+</script>
     <script>function autoResize(textarea) {
             textarea.style.height = 'auto'; // Reset height to auto
             textarea.style.height = (textarea.scrollHeight) + 'px'; // Set the height to the scroll height
