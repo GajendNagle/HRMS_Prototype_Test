@@ -62,8 +62,8 @@
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="laboratoryName">Laboratory Name (Auto fetch)</label>
-                            <input type="text" id="laboratoryName" placeholder="Laboratory Name (Auto fetch)" class="form-control" name="laboratoryName" readonly />
+                            <label for="laboratoryName">Laboratory Name</label>
+                            <input type="text" id="laboratoryName" placeholder="Laboratory Name" class="form-control" name="laboratoryName" readonly />
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -85,19 +85,19 @@
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="materialCode">Material ID/Code (Auto fetch)</label>
-                            <input type="text" class="form-control" placeholder="Material ID/Code (Auto fetch)" id="materialCode" name="materialCode" readonly />
+                            <label for="materialCode">Material ID/Code</label>
+                            <input type="text" class="form-control" placeholder="Material ID/Code" id="materialCode" name="materialCode" readonly />
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="materialUnit">Material Unit (Auto fetch)</label>
+                            <label for="materialUnit">Material Unit</label>
                             <input type="text" class="form-control" id="materialUnit" name="materialUnit" placeholder="e.g., kg, meter, ton" readonly />
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="materialDescription">Material Description (Auto fetch)</label>
+                            <label for="materialDescription">Material Description</label>
                             <input type="text" class="form-control" id="materialDescription" name="materialDescription" placeholder="e.g., Portland Cement" readonly />
                         </div>
                     </div>
@@ -109,7 +109,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="natureOfSample">Nature Of Sample (Auto fetch)</label>
+                            <label for="natureOfSample">Nature Of Sample</label>
                             <input type="text" id="natureOfSample" class="form-control" name="natureOfSample" placeholder="e.g., Fresh, Stored" readonly />
                         </div>
                     </div>
